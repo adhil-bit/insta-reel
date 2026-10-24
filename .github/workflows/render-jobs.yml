@@ -20,6 +20,7 @@ env:
   VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'elevenlabs' }}
   ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
   ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL || 'eleven_v3' }}
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
   RENDER_WORKERS: ${{ vars.RENDER_WORKERS || '3' }}
 
@@ -59,6 +60,14 @@ jobs:
             gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt \
               --title "$REEL" --notes-file "$dir/review.md"
           done < output/rendered.txt
+
+      - name: Save the log if rendering failed
+        if: ${{ failure() }}
+        run: |
+          mkdir -p logs && cp output/render-log.txt logs/last-failed-render.txt || true
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -m "render failed: log" && git pull --rebase && git push || true
 
       - name: Save history
         if: ${{ always() }}

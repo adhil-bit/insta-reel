@@ -69,6 +69,7 @@ def generate_voice(text: str, out_path: Path) -> Path:
             json={"text": text, "model_id": config.ELEVENLABS_MODEL},
             timeout=120,
         )
-    resp.raise_for_status()
+    if resp.status_code >= 400:
+        raise RuntimeError(f"Voice API error {resp.status_code}: {resp.text[:500]}")
     out_path.write_bytes(resp.content)
     return out_path

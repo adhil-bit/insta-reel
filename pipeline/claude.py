@@ -65,7 +65,11 @@ Angle: {topic['angle']}
 Facts you may use (use ONLY these or common knowledge, do not invent numbers):
 {chr(10).join('- ' + f for f in topic.get('key_facts', []))}
 
-Style: a curious, confident narrator. Short sentences. Spoken English.
+Style: a curious, confident narrator. Short sentences.
+Write every voiceover line (hook_voiceover and scenes[].voiceover) in natural, spoken
+{config.VOICE_LANGUAGE} in its own script, the way a popular explainer creator talks. Keep names
+and technical terms that people say in English as they are. Captions, headline and
+image/visual fields stay in English.
 Scene 0 is the cover: the hook that makes people stop scrolling.
 End with a twist or a thought-provoking last line, not "follow for more".
 

@@ -27,7 +27,7 @@ PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
 VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "elevenlabs").lower()
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
-ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_multilingual_v2")
+ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_v3")  # v3 supports Malayalam
 OPENAI_TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")
 
@@ -37,9 +37,12 @@ IG_GRAPH_HOST = os.getenv("IG_GRAPH_HOST", "graph.facebook.com")
 GRAPH_API_VERSION = os.getenv("GRAPH_API_VERSION", "v23.0")
 
 # ---------------- Your brand ----------------
+# Voiceover language. On-screen text stays in English (like the reference page).
+VOICE_LANGUAGE = os.getenv("VOICE_LANGUAGE", "Malayalam")
+
 BRAND = {
-    "name": "YOUR PAGE NAME",
-    "handle": "@your.handle",
+    "name": "UNEXPLORED TRUTHS",
+    "handle": "@unexplored.truths",
     "niche": (
         "Short, surprising explainers about money, history, science, "
         "climate, nature and world affairs for a general audience"
