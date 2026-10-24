@@ -50,19 +50,23 @@ def concat(clips: list[Path], out: Path) -> Path:
     return out
 
 
+LOUDNORM = "loudnorm=I=-14:TP=-1.5:LRA=11"  # typical loudness for Reels
+
+
 def add_music(video: Path, out: Path) -> Path:
     """Mix a random track from /music under the voice. Skips if the folder is empty."""
     tracks = [p for p in config.MUSIC_DIR.glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a"}]
     if not tracks:
         print("  (no music in /music, exporting voice only)")
-        run(["ffmpeg", "-y", "-i", str(video), "-c", "copy", "-movflags", "+faststart", str(out)])
+        run(["ffmpeg", "-y", "-i", str(video), "-af", LOUDNORM, "-c:v", "copy", "-c:a", "aac",
+             "-b:a", "192k", "-movflags", "+faststart", str(out)])
         return out
     track = random.choice(tracks)
     dur = media_duration(video)
     vol = config.BRAND["music_volume"]
     fa = (
         f"[1:a]volume={vol},afade=t=in:d=1,afade=t=out:st={max(dur - 2, 0):.2f}:d=2[m];"
-        f"[0:a][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0[a]"
+        f"[0:a][m]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,{LOUDNORM}[a]"
     )
     run([
         "ffmpeg", "-y", "-i", str(video), "-stream_loop", "-1", "-i", str(track),
