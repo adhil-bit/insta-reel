@@ -68,13 +68,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          python main.py post "$REEL"
+          mkdir -p logs
+          python main.py post "$REEL" 2>&1 | tee logs/last-post-log.txt
+          [ "${PIPESTATUS[0]}" = "0" ] || exit 1
           gh release edit "$REEL" --title "POSTED · $REEL"
 
-      - name: Save history
+      - name: Save history and log
+        if: ${{ always() }}
         run: |
           git config user.name "autoreel-bot"
           git config user.email "autoreel-bot@users.noreply.github.com"
-          git add history.json
+          git add history.json logs 2>/dev/null || true
           git commit -m "review: $REEL" || exit 0
           git pull --rebase && git push

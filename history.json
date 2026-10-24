@@ -17,15 +17,17 @@
     "title": "Kerala grows rice below sea level",
     "category": "SCIENCE",
     "folder": "kuttanad-below-sea-level",
-    "status": "pending",
-    "created": "2026-10-24T09:54"
+    "status": "posted",
+    "created": "2026-10-24T09:54",
+    "posted": "manual"
   },
   {
     "title": "The day it rained red in Kerala",
     "category": "MYSTERY",
     "folder": "kerala-red-rain",
-    "status": "pending",
-    "created": "2026-10-24T10:57"
+    "status": "posted",
+    "created": "2026-10-24T10:57",
+    "posted": "manual"
   },
   {
     "title": "Munnar once had a train",
