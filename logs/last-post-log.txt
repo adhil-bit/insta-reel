@@ -1,0 +1,14 @@
+Publishing munnar-lost-railway...
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 255, in <module>
+    post(folder) if args.command == "post" else skip(folder)
+    ^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 171, in post
+    media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 27, in publish_reel
+    container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data={
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 18, in _check
+    raise RuntimeError(f"Instagram API error: {data}")
+RuntimeError: Instagram API error: {'error': {'message': 'The parameter video_url is required', 'type': 'IGApiException', 'code': 100, 'fbtrace_id': 'AHclQAibaHI66sCxbfD5xSj'}}
