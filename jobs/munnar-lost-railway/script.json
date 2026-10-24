@@ -1,0 +1,65 @@
+{
+  "topic": {
+    "title": "Munnar once had a train",
+    "category": "HISTORY",
+    "angle": "Munnar had its own railway carrying tea through the hills, until the great flood of 1924 (the 'Flood of 99') destroyed it for good.",
+    "key_facts": [
+      "The Kundala Valley Railway ran from Munnar towards Top Station in the early 1900s, carrying tea and supplies (monorail from 1902, narrow gauge from 1908)",
+      "From Top Station, goods were sent down the hills by ropeway towards the Tamil Nadu side",
+      "In July 1924, weeks of extreme rain caused Kerala's great flood, known as the 'Flood of 99' after the Malayalam Era year 1099",
+      "Landslides and floods destroyed the railway and badly damaged Munnar town",
+      "The railway was never rebuilt"
+    ],
+    "sources": [
+      "Kerala Tourism / Munnar history pages on the Kundala Valley Railway",
+      "Histories of the Great Flood of 1099 (1924)",
+      "Kanan Devan Hills / tea estate histories"
+    ]
+  },
+  "category": "HISTORY",
+  "headline": ["MUNNAR HAD", "A TRAIN"],
+  "accent_words": ["TRAIN"],
+  "hook_voiceover": "മൂന്നാറിൽ ഒരു കാലത്ത് ട്രെയിൻ ഓടിയിരുന്നു. ഒരൊറ്റ വെള്ളപ്പൊക്കം അത് എന്നെന്നേക്കുമായി ഇല്ലാതാക്കി.",
+  "cover_visual": "A small steam train crossing misty tea hills at dusk, headlamp glowing",
+  "scenes": [
+    {
+      "voiceover": "1900-കളുടെ തുടക്കത്തിൽ, തേയില കൊണ്ടുപോകാൻ മൂന്നാറിൽ നിന്ന് ടോപ്പ് സ്റ്റേഷൻ വരെ ഒരു ചെറിയ റെയിൽവേ ഉണ്ടായിരുന്നു. കുണ്ടള വാലി റെയിൽവേ.",
+      "caption": "A railway in the hills",
+      "highlight": "railway",
+      "visual": "Train chugging past tea estates with parallax hills"
+    },
+    {
+      "voiceover": "ടോപ്പ് സ്റ്റേഷനിൽ നിന്ന് റോപ്പ്‌വേ വഴി തേയില മലയിറങ്ങി തമിഴ്നാട് ഭാഗത്തേക്ക് പോയി.",
+      "caption": "Tea rode a ropeway down",
+      "highlight": "ropeway",
+      "visual": "Tea crates sliding down a cable from the hilltop station"
+    },
+    {
+      "voiceover": "പിന്നെ വന്നു 1924 ജൂലൈ. കൊല്ലവർഷം 1099. ആഴ്ചകളോളം മഴ നിർത്താതെ പെയ്തു.",
+      "caption": "July 1924: the rain never stopped",
+      "highlight": "rain",
+      "visual": "Endless rain and lightning, the river rising"
+    },
+    {
+      "voiceover": "മലകൾ ഇടിഞ്ഞു, പുഴകൾ ഗതി മാറി. പാളങ്ങളും പാലങ്ങളും വെള്ളം കൊണ്ടുപോയി. മൂന്നാർ പട്ടണം തന്നെ തകർന്നു.",
+      "caption": "The tracks were washed away",
+      "highlight": "washed",
+      "visual": "A railway bridge breaking apart over the flood"
+    },
+    {
+      "voiceover": "ആ ട്രെയിൻ പിന്നീട് ഒരിക്കലും തിരിച്ചു വന്നില്ല. പഴമക്കാർ ഇന്നും അതിനെ വിളിക്കുന്നത് തൊണ്ണൂറ്റി ഒമ്പതിലെ വെള്ളപ്പൊക്കം എന്നാണ്.",
+      "caption": "The train never came back",
+      "highlight": "never",
+      "visual": "Empty rusted rails into the mist, a ghost train fading away"
+    }
+  ],
+  "instagram_caption": "Munnar once had its own train. 🚂\n\nIn the early 1900s, a little railway carried tea from Munnar up to Top Station. From there, the tea rode a ropeway down the mountains. Then came July 1924. Weeks of non-stop rain. Hills collapsed, rivers changed course, and the tracks were simply washed away. 🌧️\n\nOur grandparents called it the Flood of '99, after the Malayalam year 1099. So why was the railway never rebuilt? 👀\n\nWatch the story of the train Munnar lost.\n\nSend this to someone who loves Munnar. 🍃\n\n📚 Kerala Tourism · Kundala Valley Railway histories · Records of the 1924 flood\nEducational · Animated illustrations\n\n#Munnar #KeralaHistory #Malayalam #MalayalamReels #DidYouKnow UnexploredTruths Idukki Flood1099",
+  "fact_check": [
+    "Kundala Valley Railway, Munnar to Top Station, early 1900s -> Munnar history / Kerala Tourism",
+    "Ropeway from Top Station down to the Tamil Nadu side -> Munnar history",
+    "Great flood of July 1924 = 'Flood of 99' (ME 1099) -> flood histories",
+    "Railway destroyed and Munnar town badly damaged -> flood histories",
+    "Railway never rebuilt -> Munnar history",
+    "Written in chat without live web search: double-check names and dates before posting"
+  ]
+}
