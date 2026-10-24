@@ -1,0 +1,90 @@
+name: Make reel
+
+on:
+  schedule:
+    - cron: "30 3 * * *"   # every day at 03:30 UTC (09:00 IST). Change to suit you.
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Topic (leave empty for a trending one)"
+        required: false
+        default: ""
+      auto_post:
+        description: "Post straight to Instagram without review"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autoreel
+  cancel-in-progress: false
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5-5' }}
+  VISUAL_MODE: ${{ vars.VISUAL_MODE || 'code' }}
+  VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'elevenlabs' }}
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+  IMAGE_PROVIDER: ${{ vars.IMAGE_PROVIDER || 'openai' }}
+  IG_USER_ID: ${{ secrets.IG_USER_ID }}
+  IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+  IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+  RENDER_WORKERS: ${{ vars.RENDER_WORKERS || '3' }}
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install FFmpeg
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+
+      - name: Install Python packages and the rendering browser
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Make the reel
+        env:
+          TOPIC: ${{ github.event.inputs.topic }}
+        run: |
+          if [ -n "$TOPIC" ]; then
+            python main.py make --topic "$TOPIC"
+          else
+            python main.py make
+          fi
+          echo "REEL=$(python main.py latest)" >> "$GITHUB_ENV"
+
+      - name: Post to Instagram (auto mode only)
+        if: ${{ github.event.inputs.auto_post == 'true' || vars.AUTO_POST == 'true' }}
+        run: python main.py post "$REEL"
+
+      - name: Save the reel for review (Releases page)
+        if: ${{ env.REEL != '' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dir="output/$REEL"
+          gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" \
+            --title "$REEL" --notes-file "$dir/review.md"
+
+      - name: Save history
+        if: ${{ always() }}
+        run: |
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add history.json 2>/dev/null || true
+          git commit -m "reel: ${REEL:-update}" || exit 0
+          git pull --rebase && git push

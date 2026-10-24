@@ -1,0 +1,80 @@
+name: Post reel
+
+on:
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: "Reel to post (release name). Leave empty for the newest one waiting."
+        required: false
+        default: ""
+      action:
+        description: "Post it, or reject it so it's never posted"
+        type: choice
+        options: [post, reject]
+        default: post
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autoreel
+  cancel-in-progress: false
+
+env:
+  IG_USER_ID: ${{ secrets.IG_USER_ID }}
+  IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+  IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Pick the reel
+        env:
+          INPUT_REEL: ${{ github.event.inputs.reel }}
+        run: |
+          REEL="${INPUT_REEL:-$(python main.py latest)}"
+          if [ -z "$REEL" ]; then echo "Nothing waiting to be posted."; exit 1; fi
+          echo "REEL=$REEL" >> "$GITHUB_ENV"
+
+      - name: Reject the reel
+        if: ${{ github.event.inputs.action == 'reject' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python main.py skip "$REEL"
+          gh release edit "$REEL" --title "REJECTED · $REEL" || true
+
+      - name: Download the reel
+        if: ${{ github.event.inputs.action != 'reject' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p "output/$REEL"
+          gh release download "$REEL" --dir "output/$REEL" --pattern reel.mp4 --pattern caption.txt
+
+      - name: Post to Instagram
+        if: ${{ github.event.inputs.action != 'reject' }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python main.py post "$REEL"
+          gh release edit "$REEL" --title "POSTED · $REEL"
+
+      - name: Save history
+        run: |
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add history.json
+          git commit -m "review: $REEL" || exit 0
+          git pull --rebase && git push
