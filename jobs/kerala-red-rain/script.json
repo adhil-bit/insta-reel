@@ -1,0 +1,45 @@
+{
+  "topic": {
+    "title": "The day it rained red in Kerala",
+    "category": "MYSTERY",
+    "angle": "In 2001 red rain fell over parts of Kerala; theories ranged from a meteor to alien life, but the answer was algae growing on our own trees.",
+    "key_facts": [
+      "From late July 2001, red-coloured rain fell sporadically in parts of Kerala, especially Kottayam and Idukki, staining clothes pink",
+      "Early explanations included a meteor airburst and desert dust",
+      "A government-commissioned study (CESS and TBGRI) found the colour came from spores of an alga of the genus Trentepohlia",
+      "In 2006 researchers from Mahatma Gandhi University proposed the red cells could be extraterrestrial life, a claim most scientists rejected",
+      "Trentepohlia commonly grows on tree bark and rocks in the region"
+    ],
+    "sources": [
+      "CESS / TBGRI report on the coloured rain of Kerala (2001)",
+      "Louis & Kumar (2006), Astrophysics and Space Science",
+      "Later studies identifying Trentepohlia spores"
+    ]
+  },
+  "category": "MYSTERY",
+  "headline": ["THE DAY IT", "RAINED RED"],
+  "accent_words": ["RED"],
+  "hook_voiceover": "2001-ൽ കേരളത്തിൽ പെയ്തത് ചുവന്ന മഴയാണ്. ചോര പോലെ ചുവന്ന മഴ.",
+  "cover_visual": "Night village with palms, the rain turning blood red",
+  "scenes": [
+    {"voiceover": "ജൂലൈ 2001. കോട്ടയത്തും ഇടുക്കിയിലും പലയിടത്തും ചുവന്ന നിറത്തിൽ മഴ പെയ്തു. അയയിലിട്ട തുണികൾ പോലും പിങ്ക് നിറമായി.",
+     "caption": "July 2001: red rain falls", "highlight": "red", "visual": "Clothes on a line turning pink in red rain"},
+    {"voiceover": "ആദ്യം പറഞ്ഞത് ഒരു ഉൽക്ക ആകാശത്ത് പൊട്ടിത്തെറിച്ചതാകാമെന്ന്. പിന്നെ മരുഭൂമിയിൽ നിന്നുള്ള പൊടിയാകാമെന്നും.",
+     "caption": "A meteor? Desert dust?", "highlight": "meteor", "visual": "A meteor bursts, then a dust cloud rolls in"},
+    {"voiceover": "പരിശോധനയിൽ കണ്ടത്, മഴവെള്ളത്തിൽ നിറയെ ചെറിയ ചുവന്ന കോശങ്ങൾ.",
+     "caption": "Millions of tiny red cells", "highlight": "cells", "visual": "Microscope view of red cells"},
+    {"voiceover": "ചില ഗവേഷകർ അത് അന്യഗ്രഹ ജീവനാണെന്ന് വരെ വാദിച്ചു. ലോകമെമ്പാടും അത് വാർത്തയായി.",
+     "caption": "Alien life from space?", "highlight": "Alien", "visual": "Red cells drifting into space past a comet"},
+    {"voiceover": "പക്ഷേ ഉത്തരം നമ്മുടെ മരങ്ങളിൽ തന്നെയായിരുന്നു. ട്രെന്റെപോലിയ എന്ന ആൽഗയുടെ ബീജങ്ങൾ. ചിലപ്പോൾ വലിയ രഹസ്യങ്ങളുടെ ഉത്തരം തൊട്ടടുത്തായിരിക്കും.",
+     "caption": "The answer grew on our trees", "highlight": "trees", "visual": "Algae spreading on a tree trunk, releasing red spores"}
+  ],
+  "instagram_caption": "In 2001, it rained blood red in Kerala. 🩸🌧️\n\nIn July that year, red rain fell across parts of Kottayam and Idukki. Clothes on the line turned pink. A meteor? Desert dust? Some researchers even claimed the tiny red cells in the water were alien life, and the story went around the world. 👽\n\nSo what was really falling from the sky? 👀\n\nWatch to find out what solved Kerala's strangest rain.\n\nSend this to someone from Kottayam. ☔\n\n📚 CESS & TBGRI report (2001) · Louis & Kumar (2006) · Follow-up studies on Trentepohlia\nEducational · Animated illustrations\n\n#RedRain #Kerala #Malayalam #MalayalamReels #DidYouKnow UnexploredTruths Kottayam Mystery",
+  "fact_check": [
+    "Red rain in parts of Kerala from July 2001, mainly Kottayam & Idukki -> CESS/TBGRI report",
+    "Clothes stained pink -> contemporary reports",
+    "Meteor and dust theories proposed early -> CESS initial statements",
+    "Alien-cell claim by MG University researchers (2006) -> Louis & Kumar",
+    "Cause: Trentepohlia algae spores -> CESS/TBGRI and later studies",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
