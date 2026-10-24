@@ -36,8 +36,26 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Install FFmpeg
-        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-static-v1
+
+      - name: Get FFmpeg (static build, cached)
+        run: |
+          if [ ! -x ~/ffmpeg/ffmpeg ]; then
+            mkdir -p ~/ffmpeg
+            curl -sL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz \
+              | tar -xJ -C ~/ffmpeg --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
+          fi
+          echo "$HOME/ffmpeg" >> "$GITHUB_PATH"
+
+      - name: Cache the rendering browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('requirements.txt') }}
 
       - name: Install Python packages and the rendering browser
         run: |

@@ -95,7 +95,7 @@ BRAND = {
 }
 
 # ---------------- Video ----------------
-WIDTH, HEIGHT, FPS = 1080, 1920, 30
+WIDTH, HEIGHT, FPS = 1080, 1920, 24  # 24 fps: looks the same on Reels, ~20% less rendering
 COVER_MIN_SECONDS = 2.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.35     # small pause after each voice line
 END_CARD_SECONDS = 2.4  # 'follow us' card at the end of every reel

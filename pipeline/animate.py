@@ -110,8 +110,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
     errors: list[str] = []
 
     with sync_playwright() as p:
-        browser = p.chromium.launch(args=["--ignore-gpu-blocklist", "--enable-unsafe-swiftshader",
-                                          "--use-angle=swiftshader"])
+        browser = p.chromium.launch(args=["--enable-unsafe-swiftshader"])   # forcing ANGLE/SwiftShader made 2D canvas ~15x slower
         ffmpeg = None
         try:
             page = browser.new_page(viewport={"width": W, "height": H})
@@ -138,15 +137,34 @@ def render(js_code: str, accent: str, duration: float, seed: int,
             if max(ImageStat.Stat(Image.open(sample).convert("L")).stddev) < 4:
                 raise AnimationError("The frame is blank or almost one flat colour.")
 
+            # Fast path: read pixels straight from the canvas, several frames per browser call
+            # (about 2-3x faster than screenshots). Falls back to screenshots when a scene uses
+            # more than one canvas or the canvas can't be read.
+            fast = page.evaluate("document.querySelectorAll('canvas').length") == 1
+            if fast:
+                import base64, io
+                b64 = page.evaluate("t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.92).split(',')[1]; }", duration / 2)
+                img = Image.open(io.BytesIO(base64.b64decode(b64))).convert("L")
+                fast = max(ImageStat.Stat(img).stddev) >= 4 and img.size == (W, H)
             ffmpeg = subprocess.Popen(
                 ["ffmpeg", "-y", "-v", "error", "-f", "image2pipe", "-framerate", str(FPS),
-                 "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "medium",
-                 "-crf", "18", "-pix_fmt", "yuv420p", str(out)],
+                 "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
+                 "-crf", "16", "-pix_fmt", "yuv420p", str(out)],
                 stdin=subprocess.PIPE,
             )
-            for i in range(frames):
-                frame(i / FPS)
-                ffmpeg.stdin.write(page.screenshot(type="jpeg", quality=92))
+            BATCH = 8
+            for start in range(0, frames, BATCH):
+                ts = [i / FPS for i in range(start, min(frames, start + BATCH))]
+                if fast:
+                    batch = page.evaluate("ts => ts.map(t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.92).split(',')[1]; })", ts)
+                    if errors:
+                        raise AnimationError(f"At t={ts[0]:.2f}s: " + "; ".join(errors[:3]))
+                    for b in batch:
+                        ffmpeg.stdin.write(base64.b64decode(b))
+                else:
+                    for t in ts:
+                        frame(t)
+                        ffmpeg.stdin.write(page.screenshot(type="jpeg", quality=92))
         except PlaywrightError as err:
             raise AnimationError(str(err).split("\n")[0][:500]) from None
         finally:

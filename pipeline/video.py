@@ -36,7 +36,7 @@ def render_scene(visual: Path, overlay: Path, audio: Path, out: Path,
         "ffmpeg", "-y", *video_in, "-loop", "1", "-i", str(overlay), "-i", str(audio),
         "-filter_complex", vf, "-map", "[v]", "-map", "[a]",
         "-t", f"{duration:.3f}", "-r", str(FPS),
-        "-c:v", "libx264", "-preset", "medium", "-crf", "19",
+        "-c:v", "libx264", "-preset", "faster", "-crf", "19",
         "-c:a", "aac", "-b:a", "192k", "-ac", "2", str(out),
     ])
     return out
