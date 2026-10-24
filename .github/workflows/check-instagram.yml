@@ -1,6 +1,6 @@
 name: Check Instagram connection
 
-# Reads the connected account's ID and username. Posts nothing.
+# Read-only check: confirms the token works and can publish. Posts nothing.
 on:
   workflow_dispatch:
 
@@ -12,18 +12,31 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Ask Instagram who this token belongs to
+      - name: Query the Instagram API
         env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
-          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+          HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
         run: |
           mkdir -p logs
-          curl -s "https://$IG_GRAPH_HOST/v23.0/me?fields=user_id,username,account_type,media_count&access_token=$IG_ACCESS_TOKEN" > logs/instagram-check.json
-          cat logs/instagram-check.json
+          python3 - << 'PY'
+          import json, os, urllib.request, urllib.error
+          host, uid, tok = os.environ["HOST"], os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
+          def get(path):
+              url = f"https://{host}/v23.0/{path}&access_token={tok}"
+              try:
+                  with urllib.request.urlopen(url, timeout=30) as r: return json.load(r)
+              except urllib.error.HTTPError as e: return {"http_error": e.code, "body": json.loads(e.read() or b"{}")}
+          out = {
+              "me": get("me?fields=user_id,username,account_type,media_count"),
+              "publishing_limit": get(f"{uid}/content_publishing_limit?fields=quota_usage,config"),
+          }
+          json.dump(out, open("logs/ig-check.json", "w"), indent=2)
+          print(json.dumps(out, indent=2))
+          PY
       - name: Save result
         run: |
           git config user.name "autoreel-bot"
           git config user.email "autoreel-bot@users.noreply.github.com"
-          git add logs/instagram-check.json
-          git commit -m "Instagram connection check" || exit 0
+          git add logs/ig-check.json && git commit -m "instagram connection check" || exit 0
           git pull --rebase && git push
