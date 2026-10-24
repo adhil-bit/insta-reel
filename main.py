@@ -175,7 +175,16 @@ def render_job(job_dir: Path) -> Path:
 def render_pending() -> None:
     """Render every folder in jobs/ that hasn't been rendered yet. A failing job is logged
     and skipped so the others still get rendered and released."""
-    done = {h["folder"] for h in history()}
+    import os, subprocess
+
+    def released(name: str) -> bool:
+        """A reel only counts as done if its release exists (a cancelled run can leave
+        a history entry without a video)."""
+        if not os.getenv("GH_TOKEN"):
+            return True
+        return subprocess.run(["gh", "release", "view", name], capture_output=True).returncode == 0
+
+    done = {h["folder"] for h in history() if h["status"] in ("posted", "skipped") or released(h["folder"])}
     config.OUTPUT_DIR.mkdir(exist_ok=True)
     out = config.OUTPUT_DIR / "rendered.txt"
     out.write_text("", encoding="utf-8")

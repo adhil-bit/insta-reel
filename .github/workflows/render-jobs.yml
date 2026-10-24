@@ -63,6 +63,8 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Render new jobs
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git pull -q origin main || true
           mkdir -p output
