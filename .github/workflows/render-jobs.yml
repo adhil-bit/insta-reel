@@ -44,16 +44,19 @@ jobs:
           python -m playwright install --with-deps chromium
 
       - name: Render new jobs
-        run: python main.py render-pending
+        run: |
+          mkdir -p output
+          python main.py render-pending 2>&1 | tee output/render-log.txt
+          exit ${PIPESTATUS[0]}
 
       - name: Save each reel for review (Releases page)
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          while read -r REEL; do
+          while read -r REEL || [ -n "$REEL" ]; do
             [ -z "$REEL" ] && continue
             dir="output/$REEL"
-            gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" \
+            gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt \
               --title "$REEL" --notes-file "$dir/review.md"
           done < output/rendered.txt
 

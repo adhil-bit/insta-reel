@@ -147,7 +147,7 @@ def render_pending() -> None:
             continue
         rendered.append(render_job(job.parent).name)
     config.OUTPUT_DIR.mkdir(exist_ok=True)
-    (config.OUTPUT_DIR / "rendered.txt").write_text("\n".join(rendered), encoding="utf-8")
+    (config.OUTPUT_DIR / "rendered.txt").write_text("".join(r + "\n" for r in rendered), encoding="utf-8")
     print(f"Rendered {len(rendered)} job(s).")
 
 
