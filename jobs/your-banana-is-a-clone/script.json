@@ -1,0 +1,65 @@
+{
+  "topic": {
+    "title": "Your banana is a clone",
+    "category": "NATURE",
+    "angle": "Almost every exported banana is the same genetic individual, which is why one fungus could wipe them out, and it has happened before.",
+    "key_facts": [
+      "The Cavendish makes up the vast majority of bananas in international trade",
+      "Cavendish bananas are sterile and propagated vegetatively (suckers / tissue culture), so plants are genetically near-identical",
+      "Gros Michel was the dominant export banana until Panama disease (Fusarium wilt) devastated plantations through the 1950s",
+      "Fusarium wilt Tropical Race 4 (TR4) infects Cavendish and has spread from Asia to Australia, the Middle East, Africa and Latin America",
+      "There is no effective cure for Fusarium wilt once soil is infested; research focuses on resistant varieties"
+    ],
+    "sources": [
+      "FAO - Fusarium wilt of banana (TR4) information pages",
+      "Ploetz, R.C. - review articles on Fusarium wilt of banana",
+      "Reports of TR4 in Colombia (2019) and Peru (2021)"
+    ]
+  },
+  "category": "NATURE",
+  "headline": ["YOUR BANANA", "IS A CLONE"],
+  "accent_words": ["CLONE"],
+  "hook_voiceover": "The banana in your kitchen is a clone. And so is almost every banana sold on Earth.",
+  "cover_visual": "A hero banana with identical clones bursting out around it",
+  "scenes": [
+    {
+      "voiceover": "Nearly all the bananas traded around the world are one variety, the Cavendish. They have no real seeds, so every new plant is grown from a piece of an old one.",
+      "caption": "One variety rules the world",
+      "highlight": "One",
+      "visual": "A grid of identical bananas swaying in perfect sync"
+    },
+    {
+      "voiceover": "That makes them genetically identical. Billions of plants, all running the same genetic code.",
+      "caption": "Billions of plants. Same genes.",
+      "highlight": "Same",
+      "visual": "A DNA helix that copies itself into identical helices"
+    },
+    {
+      "voiceover": "We've seen this before. In the 1950s, the world's favourite banana was the Gros Michel, until a soil fungus called Panama disease wiped out plantation after plantation.",
+      "caption": "The banana we already lost",
+      "highlight": "lost",
+      "visual": "Fungus spreads underground and banana plants wilt"
+    },
+    {
+      "voiceover": "Now a new strain, Tropical Race 4, is attacking the Cavendish. It has spread from Asia to Australia, Africa and Latin America, and there is no cure.",
+      "caption": "A new strain is spreading",
+      "highlight": "spreading",
+      "visual": "A globe turning as outbreaks light up across continents"
+    },
+    {
+      "voiceover": "Scientists are racing to breed and engineer resistant bananas. Because when every plant is a copy, one disease can threaten them all.",
+      "caption": "One disease could take them all",
+      "highlight": "all",
+      "visual": "A shield of hexagons forms around a banana and spores bounce off"
+    }
+  ],
+  "instagram_caption": "Almost every banana you've ever bought is genetically the same plant. Great for supermarkets, risky when a disease shows up, and it has happened before. 🍌\n\n#bananas #science #nature #agriculture #didyouknow #explained",
+  "fact_check": [
+    "Cavendish dominates the international banana trade -> FAO",
+    "Cavendish is sterile and grown from suckers / tissue culture -> standard botany",
+    "Gros Michel was devastated by Panama disease, peaking in the 1950s -> Ploetz reviews",
+    "TR4 attacks Cavendish and has reached Asia, Australia, Africa and Latin America -> FAO, Colombia 2019 report",
+    "No cure once soil is infested -> FAO",
+    "Written in chat without live web search: double-check the spread list is current before posting"
+  ]
+}

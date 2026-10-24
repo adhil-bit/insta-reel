@@ -4,6 +4,8 @@ AutoReel: Claude-powered Instagram Reels pipeline.
   python main.py preview          test fonts, templates and FFmpeg (no API keys needed)
   python main.py make             create one reel and save it for review
   python main.py make --topic "Why Venice is sinking"
+  python main.py render jobs/<name>   render a pre-written job (no Anthropic API needed)
+  python main.py render-pending   render every new folder in jobs/
   python main.py skip [folder]    reject a reel so it is never posted
   python main.py list             show reels waiting for review
   python main.py post [folder]    publish a reviewed reel (default: newest pending)
@@ -35,6 +37,14 @@ def make(manual_topic: str | None = None) -> Path:
     script = claude.write_script(topic)
 
     folder = config.OUTPUT_DIR / f"{datetime.now():%Y%m%d-%H%M}-{slugify(topic['title'])}"
+    return build_reel(topic, script, folder)
+
+
+def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None = None) -> Path:
+    """Voice, visuals, assembly and export. `codes` = ready-made animation code per scene."""
+    from pipeline import media
+
+    hist = history()
     work = folder / "work"
     work.mkdir(parents=True, exist_ok=True)
     save_json(folder / "topic.json", topic)
@@ -59,8 +69,13 @@ def make(manual_topic: str | None = None) -> Path:
         print(f"4/6 Writing and rendering {len(scenes)} code animations "
               f"({config.RENDER_WORKERS} at a time)...")
         with ThreadPoolExecutor(max_workers=config.RENDER_WORKERS) as pool:
-            jobs = [pool.submit(animate.build, s, script["category"], durations[i], i, work)
-                    for i, s in enumerate(scenes)]
+            if codes:
+                jobs = [pool.submit(animate.render_or_fallback, codes[i] if i < len(codes) else None,
+                                    script["category"], durations[i], i, work)
+                        for i in range(len(scenes))]
+            else:
+                jobs = [pool.submit(animate.build, s, script["category"], durations[i], i, work)
+                        for i, s in enumerate(scenes)]
             visuals = [job.result() for job in jobs]
     else:
         print(f"4/6 Creating {len(scenes)} images...")
@@ -107,6 +122,33 @@ def make(manual_topic: str | None = None) -> Path:
     print(f"\nSources: {', '.join(topic.get('sources', []))}")
     print(f"\nWhen happy: python main.py post {folder.name}")
     return folder
+
+
+def render_job(job_dir: Path) -> Path:
+    """Render a reel whose script and animations were written in advance
+    (for example by Claude in a chat), with no Anthropic API calls."""
+    script = load_json(job_dir / "script.json", None)
+    topic = script.pop("topic")
+    topic["category"] = script["category"] = script["category"].upper()
+    script["headline"] = [l.upper() for l in script["headline"]]
+    script["accent_words"] = [w.upper() for w in script.get("accent_words", [])]
+    codes = [p.read_text(encoding="utf-8") if p.exists() else None
+             for p in (job_dir / f"anim_{i}.js" for i in range(len(script["scenes"]) + 1))]
+    print(f"Rendering job {job_dir.name}: {topic['title']}")
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+
+
+def render_pending() -> None:
+    """Render every folder in jobs/ that hasn't been rendered yet."""
+    done = {h["folder"] for h in history()}
+    rendered = []
+    for job in sorted((config.ROOT / "jobs").glob("*/script.json")):
+        if job.parent.name in done:
+            continue
+        rendered.append(render_job(job.parent).name)
+    config.OUTPUT_DIR.mkdir(exist_ok=True)
+    (config.OUTPUT_DIR / "rendered.txt").write_text("\n".join(rendered), encoding="utf-8")
+    print(f"Rendered {len(rendered)} job(s).")
 
 
 def _first_frame(visual: Path, work: Path) -> Path:
@@ -189,7 +231,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "post", "skip", "list", "latest", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "render", "render-pending", "post", "skip", "list", "latest", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     args = parser.parse_args()
@@ -200,6 +242,10 @@ if __name__ == "__main__":
         make(args.topic)
     elif args.command == "list":
         list_pending()
+    elif args.command == "render":
+        render_job(Path(args.folder))
+    elif args.command == "render-pending":
+        render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
     elif args.command in ("post", "skip"):

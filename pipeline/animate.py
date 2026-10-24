@@ -31,7 +31,9 @@ const ease={in:t=>t*t*t, out:t=>1-Math.pow(1-t,3),
 function rgba(hex,a){const h=hex.replace('#','');return `rgba(${parseInt(h.slice(0,2),16)},${parseInt(h.slice(2,4),16)},${parseInt(h.slice(4,6),16)},${a})`}
 function makeCanvas(){const c=document.createElement('canvas');c.width=W;c.height=H;document.body.appendChild(c);return c}
 </script><script>
+{ // block scope: lets animations use names like `top` or `name` safely
 /*CODE*/
+}
 </script></body></html>"""
 
 # Built-in animation: used by `preview`, as the style example for Claude,
@@ -179,3 +181,17 @@ def build(scene: dict, category: str, duration: float, idx: int, work: Path) -> 
     print(f"    animation {idx + 1}: using the built-in fallback")
     return render(FALLBACK_JS, accent, duration, seed=1000 + idx,
                   html_path=work / f"anim_{idx}.html", out=out)
+
+
+def render_or_fallback(code: str | None, category: str, duration: float, idx: int, work: Path) -> Path:
+    """Render ready-made animation code; use the built-in animation if it fails."""
+    accent = config.BRAND["categories"].get(category, "#FACC15")
+    out, html = work / f"anim_{idx}.mp4", work / f"anim_{idx}.html"
+    if code:
+        try:
+            render(code, accent, duration, seed=1000 + idx, html_path=html, out=out)
+            print(f"    animation {idx + 1} rendered")
+            return out
+        except AnimationError as err:
+            print(f"    animation {idx + 1} failed ({err}), using the built-in fallback")
+    return render(FALLBACK_JS, accent, duration, seed=1000 + idx, html_path=html, out=out)
