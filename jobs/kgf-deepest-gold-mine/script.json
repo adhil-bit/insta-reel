@@ -1,0 +1,43 @@
+{
+  "topic": {
+    "title": "The real KGF: one of the world's deepest gold mines",
+    "category": "MONEY",
+    "angle": "Long before the film, Kolar Gold Fields had mines about 3 km deep, electricity by 1902, and a hard history that ended in 2001.",
+    "key_facts": [
+      "Kolar Gold Fields (KGF) is in Karnataka",
+      "Modern mining began in the 1880s under the British firm John Taylor & Sons",
+      "Its mines became among the deepest in the world, roughly 3 km",
+      "In 1902 KGF received electricity from the Shivanasamudra hydroelectric station, one of the earliest in Asia",
+      "Miners faced extreme heat and danger; the mines (Bharat Gold Mines Ltd) closed in 2001 as costs rose"
+    ],
+    "sources": ["Bharat Gold Mines Ltd history", "Karnataka Power Corporation / Shivanasamudra history", "The Hindu features on KGF"]
+  },
+  "category": "MONEY",
+  "voice": "Adam",
+  "headline": ["3 KM DEEP", "FOR GOLD"],
+  "accent_words": ["GOLD"],
+  "thumbnail_ml": "3 കിലോമീറ്റർ ആഴത്തിൽ ഒരു സ്വർണ്ണഖനി!",
+  "thumbnail_accent": ["സ്വർണ്ണഖനി!"],
+  "hook_voiceover": "ഭൂമിക്കടിയിലേക്ക് മൂന്ന് കിലോമീറ്റർ. സ്വർണ്ണത്തിനായി മനുഷ്യൻ കുഴിച്ചിറങ്ങിയ ആഴം.",
+  "cover_visual": "Cross-section: a headframe on the surface, a shaft plunging past glowing gold veins",
+  "scenes": [
+    {"voiceover": "കർണാടകയിലെ കോലാർ ഗോൾഡ് ഫീൽഡ്സ്, കെജിഎഫ്. സിനിമയ്ക്ക് മുമ്പേ ഇതിന് ഒരു യഥാർത്ഥ കഥയുണ്ട്.",
+     "caption": "The real KGF", "highlight": "KGF", "visual": "Dry hills at dusk with mine headframes"},
+    {"voiceover": "1880-കളിൽ ബ്രിട്ടീഷ് കമ്പനി ഇവിടെ ആധുനിക ഖനനം തുടങ്ങി. ഖനികൾ ലോകത്തിലെ ഏറ്റവും ആഴമേറിയവയിൽ ചിലതായി, ഏകദേശം മൂന്ന് കിലോമീറ്റർ.",
+     "caption": "Among the world's deepest", "highlight": "deepest", "visual": "Dropping down the shaft past depth markers"},
+    {"voiceover": "1902-ൽ ശിവനസമുദ്രത്തിലെ ജലവൈദ്യുത നിലയത്തിൽ നിന്ന് കെജിഎഫിലേക്ക് വൈദ്യുതി എത്തി. ഏഷ്യയിൽ ആദ്യം വൈദ്യുതി കിട്ടിയ ഇടങ്ങളിൽ ഒന്ന്.",
+     "caption": "Electric power in 1902", "highlight": "1902", "visual": "Power flows from a waterfall plant to the mine town"},
+    {"voiceover": "ആഴങ്ങളിൽ കടുത്ത ചൂടും അപകടങ്ങളും. ആയിരക്കണക്കിന് തൊഴിലാളികൾ ജീവൻ പണയം വെച്ചാണ് ജോലി ചെയ്തത്.",
+     "caption": "Heat, danger, hard labour", "highlight": "danger", "visual": "Miners' lamps in a hot, dark tunnel"},
+    {"voiceover": "ചെലവ് കൂടിയതോടെ 2001-ൽ ഖനികൾ അടച്ചു. ഇന്ന് ബാക്കിയുള്ളത് ഒഴിഞ്ഞ ഖനികളും ഓർമ്മകളും.",
+     "caption": "Closed in 2001", "highlight": "2001", "visual": "An abandoned headframe at dusk"}
+  ],
+  "instagram_caption": "Long before the movie, KGF had a real story. ⛏️✨\n\nKolar Gold Fields in Karnataka had some of the deepest gold mines in the world, around 3 km down. It got electricity in 1902, one of the earliest places in Asia. Thousands of miners worked in brutal heat and danger, until the mines closed in 2001. 🏚️\n\nSo what happened to the real KGF? 👀\n\nWatch the story behind the name.\n\nSend this to a KGF fan. 🎬\n\n📚 Bharat Gold Mines history · Shivanasamudra power station history · The Hindu\nEducational · Animated illustrations\n\n#KGF #KolarGoldFields #Karnataka #Malayalam #MalayalamReels UnexploredTruths Gold IndianHistory",
+  "fact_check": [
+    "KGF in Karnataka; modern mining from 1880s (John Taylor & Sons) -> BGML history",
+    "Mines roughly 3 km deep, among the world's deepest -> BGML history",
+    "Electricity from Shivanasamudra in 1902, among Asia's earliest -> power station history",
+    "Mines closed in 2001 -> BGML history",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}

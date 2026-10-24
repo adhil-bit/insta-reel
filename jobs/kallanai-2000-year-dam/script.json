@@ -1,0 +1,44 @@
+{
+  "topic": {
+    "title": "Kallanai: a 2,000-year-old dam still in use",
+    "category": "TECH",
+    "angle": "A stone dam on the Kaveri, credited to the Chola king Karikalan around 2,000 years ago, still diverts water to farms today.",
+    "key_facts": [
+      "Kallanai (the Grand Anicut) is on the Kaveri river in Tamil Nadu",
+      "It is credited to the Chola king Karikalan, roughly 2,000 years ago (around the 2nd century CE)",
+      "It was built of unhewn stone without modern cement or machines",
+      "It diverts river water into canals that irrigate the Kaveri delta",
+      "It is regarded as one of the oldest water-regulating structures in the world still in use"
+    ],
+    "sources": ["Tamil Nadu Water Resources Department", "Histories of the Grand Anicut", "Encyclopaedic references on Kallanai"]
+  },
+  "category": "TECH",
+  "voice": "Charlotte",
+  "headline": ["2,000 YEARS", "STILL WORKING"],
+  "accent_words": ["WORKING"],
+  "thumbnail_ml": "2000 വർഷമായിട്ടും ഇന്നും പ്രവർത്തിക്കുന്ന അണക്കെട്ട്!",
+  "thumbnail_accent": ["2000"],
+  "hook_voiceover": "രണ്ടായിരം വർഷം പഴക്കമുള്ള ഒരു അണക്കെട്ട്. ഇന്നും അത് കൃഷിക്ക് വെള്ളം നൽകുന്നു.",
+  "cover_visual": "Dusk on the Kaveri, water pouring over an ancient stone dam",
+  "scenes": [
+    {"voiceover": "തമിഴ്നാട്ടിലെ കാവേരി നദിയിലുള്ള കല്ലണൈ. ചോള രാജാവായ കരികാലൻ നിർമ്മിച്ചതാണെന്ന് കരുതപ്പെടുന്നു.",
+     "caption": "Kallanai, on the Kaveri", "highlight": "Kallanai", "visual": "The river from above, the dam's spot pinned"},
+    {"voiceover": "ഏകദേശം രണ്ടായിരം വർഷം മുമ്പ്. സിമന്റോ യന്ത്രങ്ങളോ ഇല്ലാത്ത കാലം. വലിയ കല്ലുകൾ കൊണ്ട് മാത്രം.",
+     "caption": "No cement, no machines", "highlight": "No", "visual": "Huge stones drop and stack across the water"},
+    {"voiceover": "കല്ലുകൾ നദിയിലിട്ടപ്പോൾ, ഒഴുക്ക് തന്നെ അവയെ മണലിലേക്ക് ആഴ്ത്തി ഉറപ്പിച്ചു എന്നാണ് കരുതപ്പെടുന്നത്.",
+     "caption": "The river did the work", "highlight": "river", "visual": "Cross-section: current scours sand, stones settle in"},
+    {"voiceover": "നദിയിലെ വെള്ളം കനാലുകളിലേക്ക് തിരിച്ചുവിട്ട്, ഡെൽറ്റ മുഴുവൻ പച്ചപ്പുള്ള കൃഷിയിടമാക്കി.",
+     "caption": "Water for the delta", "highlight": "delta", "visual": "The river splits into canals, fields turn green"},
+    {"voiceover": "ലോകത്ത് ഇന്നും ഉപയോഗത്തിലുള്ള ഏറ്റവും പഴയ ജലനിയന്ത്രണ നിർമ്മിതികളിൽ ഒന്നാണ് കല്ലണൈ.",
+     "caption": "Still working today", "highlight": "working", "visual": "The dam at sunset, water flowing, birds"}
+  ],
+  "instagram_caption": "A dam built about 2,000 years ago, still working today. 💧🏞️\n\nKallanai, on the Kaveri river in Tamil Nadu, is credited to the Chola king Karikalan. No cement, no machines, just giant stones, and the river itself is thought to have helped lock them into place. Its water still feeds farms across the Kaveri delta. 🌾\n\nSo how did they build something that lasted 2,000 years? 👀\n\nWatch the story of the world's oldest working dam.\n\nSend this to a civil engineer. 🏗️\n\n📚 Tamil Nadu Water Resources Dept · Histories of the Grand Anicut\nEducational · Animated illustrations\n\n#Kallanai #Kaveri #TamilNadu #Malayalam #MalayalamReels UnexploredTruths IndianHistory Engineering",
+  "fact_check": [
+    "Kallanai / Grand Anicut on the Kaveri, Tamil Nadu -> TN WRD",
+    "Credited to Chola king Karikalan, ~2,000 years ago -> histories",
+    "Unhewn stone, no cement or machines -> histories",
+    "Stones settled by the current ('thought to') -> popular explanation",
+    "Among the oldest water-regulating structures still in use -> encyclopaedic references",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}

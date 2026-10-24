@@ -54,8 +54,9 @@ BRAND = {
     "name": "UNEXPLORED TRUTHS",
     "handle": "@unexplored.truths",
     "niche": (
-        "Short, surprising explainers about money, history, science, "
-        "climate, nature and world affairs for a general audience"
+        "A Malayalam Instagram page of short, surprising explainers: hidden history, "
+        "science, nature, space and real mysteries, ideally with a Kerala or India angle, "
+        "told as a story with a twist (audience: Malayalis aged 18-40)"
     ),
     # Category -> accent colour used for the tag and the highlighted words
     "categories": {

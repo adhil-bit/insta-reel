@@ -1,0 +1,90 @@
+name: Auto batch (Claude API)
+
+# Every night, tops the posting queue back up with new reels written by Claude.
+# Does nothing until an ANTHROPIC_API_KEY secret is added to the repo.
+on:
+  schedule:
+    - cron: "30 18 * * *"   # 00:00 IST
+  workflow_dispatch:
+    inputs:
+      target:
+        description: "Reels to keep waiting in the queue"
+        default: "7"
+      max:
+        description: "Most reels to make in this run"
+        default: "4"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autoreel
+  cancel-in-progress: false
+
+env:
+  ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+  CLAUDE_MODEL: ${{ vars.CLAUDE_MODEL || 'claude-sonnet-5-5' }}
+  VISUAL_MODE: code
+  VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'elevenlabs' }}
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL || 'eleven_v3' }}
+  RENDER_WORKERS: ${{ vars.RENDER_WORKERS || '3' }}
+
+jobs:
+  fill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - name: Skip if there is no Claude API key
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "No ANTHROPIC_API_KEY secret: skipping."; echo "SKIP=1" >> "$GITHUB_ENV"; fi
+
+      - uses: actions/checkout@v4
+        if: ${{ env.SKIP != '1' }}
+
+      - uses: actions/setup-python@v5
+        if: ${{ env.SKIP != '1' }}
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        if: ${{ env.SKIP != '1' }}
+        run: |
+          sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Make reels until the queue is full
+        if: ${{ env.SKIP != '1' }}
+        env:
+          TARGET: ${{ github.event.inputs.target || '7' }}
+          MAX: ${{ github.event.inputs.max || '4' }}
+        run: |
+          mkdir -p output
+          python main.py fill --target "$TARGET" --max "$MAX" 2>&1 | tee output/render-log.txt
+          exit ${PIPESTATUS[0]}
+
+      - name: Save each reel for review (Releases page)
+        if: ${{ env.SKIP != '1' && always() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f output/rendered.txt ] || exit 0
+          while read -r REEL || [ -n "$REEL" ]; do
+            [ -z "$REEL" ] && continue
+            dir="output/$REEL"
+            files=("$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt)
+            [ -f "$dir/thumbnail.jpg" ] && files+=("$dir/thumbnail.jpg")
+            gh release create "$REEL" "${files[@]}" --title "$REEL" --notes-file "$dir/review.md"
+          done < output/rendered.txt
+
+      - name: Save history
+        if: ${{ env.SKIP != '1' && always() }}
+        run: |
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add history.json 2>/dev/null || true
+          git commit -m "auto batch" || exit 0
+          git pull --rebase && git push

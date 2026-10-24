@@ -137,6 +137,20 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     return folder
 
 
+def fill(target: int, max_new: int) -> None:
+    """Auto top-up: create reels with Claude (API) until `target` reels are waiting to be posted."""
+    made = []
+    while len(made) < max_new:
+        pending = [h for h in history() if h["status"] == "pending"]
+        if len(pending) >= target:
+            break
+        print(f"Queue has {len(pending)} waiting, target {target}: making one more...")
+        made.append(make().name)
+    config.OUTPUT_DIR.mkdir(exist_ok=True)
+    (config.OUTPUT_DIR / "rendered.txt").write_text("".join(r + "\n" for r in made), encoding="utf-8")
+    print(f"Made {len(made)} reel(s).")
+
+
 def render_job(job_dir: Path) -> Path:
     """Render a reel whose script and animations were written in advance
     (for example by Claude in a chat), with no Anthropic API calls."""
@@ -296,9 +310,11 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "render", "render-pending", "post", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
+    parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
+    parser.add_argument("--max", type=int, default=4, help="fill: most reels to make in one run")
     args = parser.parse_args()
 
     if args.command == "preview":
@@ -307,6 +323,8 @@ if __name__ == "__main__":
         make(args.topic)
     elif args.command == "list":
         list_pending()
+    elif args.command == "fill":
+        fill(args.target, args.max)
     elif args.command == "render":
         render_job(Path(args.folder))
     elif args.command == "render-pending":
