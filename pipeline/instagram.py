@@ -20,28 +20,51 @@ def _check(resp: requests.Response) -> dict:
     return data
 
 
+UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
+
+
 def _temporary_url(video: Path) -> str:
-    """Upload to a temporary file host and return a direct link."""
+    """Upload to a short-lived anonymous file host and return a direct link.
+    Several hosts are tried in turn because any one of them can be down or blocked."""
     errors = []
-    try:   # Litterbox: files auto-delete after 1 hour
+
+    def attempt(name, fn):
+        try:
+            url = fn()
+            if url and url.startswith("https://"):
+                return url
+            errors.append(f"{name}: unexpected reply")
+        except Exception as e:
+            errors.append(f"{name}: {str(e)[:150]}")
+        return None
+
+    def tmpfiles():      # deleted after 60 minutes
+        with open(video, "rb") as f:
+            r = requests.post("https://tmpfiles.org/api/v1/upload", files={"file": (video.name, f, "video/mp4")},
+                              headers=UA, timeout=300)
+        r.raise_for_status()
+        page = r.json()["data"]["url"]                     # https://tmpfiles.org/123/reel.mp4
+        return page.replace("://tmpfiles.org/", "://tmpfiles.org/dl/").replace("http://", "https://")
+
+    def uguu():          # deleted after 3 hours
+        with open(video, "rb") as f:
+            r = requests.post("https://uguu.se/upload", files={"files[]": (video.name, f, "video/mp4")},
+                              headers=UA, timeout=300)
+        r.raise_for_status()
+        return r.json()["files"][0]["url"]
+
+    def litterbox():     # deleted after 1 hour
         with open(video, "rb") as f:
             r = requests.post("https://litterbox.catbox.moe/resources/internals/api.php",
                               data={"reqtype": "fileupload", "time": "1h"},
-                              files={"fileToUpload": (video.name, f, "video/mp4")}, timeout=300)
-        if r.ok and r.text.startswith("https://"):
-            return r.text.strip()
-        errors.append(f"litterbox: {r.status_code} {r.text[:200]}")
-    except Exception as e:
-        errors.append(f"litterbox: {e}")
-    try:   # 0x0.st fallback, expires after 1 hour
-        with open(video, "rb") as f:
-            r = requests.post("https://0x0.st", files={"file": (video.name, f, "video/mp4")},
-                              data={"expires": "1"}, headers={"User-Agent": "autoreel/1.0"}, timeout=300)
-        if r.ok and r.text.startswith("https://"):
-            return r.text.strip()
-        errors.append(f"0x0.st: {r.status_code} {r.text[:200]}")
-    except Exception as e:
-        errors.append(f"0x0.st: {e}")
+                              files={"fileToUpload": (video.name, f, "video/mp4")}, headers=UA, timeout=300)
+        r.raise_for_status()
+        return r.text.strip()
+
+    for name, fn in (("tmpfiles", tmpfiles), ("uguu", uguu), ("litterbox", litterbox)):
+        url = attempt(name, fn)
+        if url:
+            return url
     raise RuntimeError("Could not upload the video to a temporary host: " + " | ".join(errors))
 
 
