@@ -29,12 +29,20 @@ def _temporary_url(video: Path) -> str:
     Several hosts are tried in turn because any one of them can be down or blocked."""
     errors = []
 
+    size = video.stat().st_size
+
     def attempt(name, fn):
         try:
             url = fn()
-            if url and url.startswith("https://"):
+            if not (url and url.startswith("https://")):
+                errors.append(f"{name}: unexpected reply"); return None
+            # make sure the link serves the actual video, not a web page
+            r = requests.get(url, headers={**UA, "Range": "bytes=0-15"}, timeout=60)
+            ctype = r.headers.get("Content-Type", "")
+            if b"ftyp" in r.content[:16] or ctype.startswith("video/"):
+                print(f"  {name}: link serves video ({ctype or 'no content-type'})")
                 return url
-            errors.append(f"{name}: unexpected reply")
+            errors.append(f"{name}: link serves {ctype or 'unknown'}, not video")
         except Exception as e:
             errors.append(f"{name}: {str(e)[:150]}")
         return None
@@ -62,7 +70,7 @@ def _temporary_url(video: Path) -> str:
         r.raise_for_status()
         return r.text.strip()
 
-    for name, fn in (("tmpfiles", tmpfiles), ("uguu", uguu), ("litterbox", litterbox)):
+    for name, fn in (("uguu", uguu), ("litterbox", litterbox), ("tmpfiles", tmpfiles)):
         url = attempt(name, fn)
         if url:
             return url
