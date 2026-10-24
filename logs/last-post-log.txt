@@ -6,9 +6,16 @@ Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 171, in post
     media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"))
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 27, in publish_reel
-    container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data={
-                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 18, in _check
-    raise RuntimeError(f"Instagram API error: {data}")
-RuntimeError: Instagram API error: {'error': {'message': 'The parameter video_url is required', 'type': 'IGApiException', 'code': 100, 'fbtrace_id': 'AHclQAibaHI66sCxbfD5xSj'}}
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 52, in publish_reel
+    url = _temporary_url(video)
+          ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 45, in _temporary_url
+    raise RuntimeError("Could not upload the video to a temporary host: " + " | ".join(errors))
+RuntimeError: Could not upload the video to a temporary host: litterbox: 412 <html>
+<head><title>412 Precondition Failed</title></head>
+<body>
+<center><h1>412 Precondition Failed</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+ | 0x0.st: ('Connection aborted.', TimeoutError('The write operation timed out'))
