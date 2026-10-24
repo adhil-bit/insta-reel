@@ -1,0 +1,32 @@
+name: Voice test
+
+# Quick check that the Malayalam voices work from GitHub's servers.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q edge-tts
+      - run: |
+          mkdir -p logs
+          python - << 'PY'
+          import asyncio, edge_tts, json, os
+          out = {}
+          for v in ["ml-IN-MidhunNeural", "ml-IN-SobhanaNeural"]:
+              f = f"logs/voice-{v}.mp3"
+              try:
+                  asyncio.run(edge_tts.Communicate("കടലിനേക്കാൾ താഴ്ന്ന നിലത്ത് നെല്ല് വിളയുന്ന ഒരു നാട്. അത് നമ്മുടെ കേരളത്തിലാണ്.", v).save(f))
+                  out[v] = os.path.getsize(f)
+              except Exception as e:
+                  out[v] = f"error: {e}"
+          json.dump(out, open("logs/voice-test.json", "w"), indent=2); print(out)
+          PY
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -qm "voice test" && git pull -q --rebase && git push -q || true
