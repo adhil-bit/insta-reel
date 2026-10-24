@@ -77,7 +77,9 @@ BRAND = {
         "lower third of the image dark and empty, vertical 9:16, no text, "
         "no letters, no logos, no watermarks"
     ),
-    "music_volume": 0.12,  # 0.0-1.0, background music under the voice
+    "music_volume": 0.12,
+    # added to every caption when posting (on top of each reel's topic tags)
+    "broad_hashtags": ["#explorepage", "#reelstagram", "#viral", "#reelitfeelit"],  # 0.0-1.0, background music under the voice
 }
 
 # ---------------- Video ----------------

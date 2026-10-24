@@ -222,7 +222,11 @@ def post(folder_name: str) -> None:
         sys.exit(f"No reel found in {folder}")
     print(f"Publishing {folder_name}...")
     thumb = folder / "thumbnail.jpg"
-    media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"),
+    text = caption.read_text(encoding="utf-8").rstrip()
+    extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
+    if extra:
+        text += " " + " ".join(extra)
+    media_id = instagram.publish_reel(reel, text,
                                       cover=thumb if thumb.exists() else None)
     hist = history()
     for h in hist:
