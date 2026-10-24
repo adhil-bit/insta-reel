@@ -77,5 +77,69 @@
     "status": "pending",
     "voice": "Daniel",
     "created": "2026-10-25T00:10"
+  },
+  {
+    "title": "Jatinga: where birds fall at night",
+    "category": "NATURE",
+    "folder": "jatinga-birds",
+    "status": "pending",
+    "voice": "Sobhana (calm)",
+    "created": "2026-10-24T19:08"
+  },
+  {
+    "title": "Kallanai: a 2,000-year-old dam still in use",
+    "category": "TECH",
+    "folder": "kallanai-2000-year-dam",
+    "status": "pending",
+    "voice": "Midhun",
+    "created": "2026-10-24T19:16"
+  },
+  {
+    "title": "The real KGF: one of the world's deepest gold mines",
+    "category": "MONEY",
+    "folder": "kgf-deepest-gold-mine",
+    "status": "pending",
+    "voice": "Midhun (deep)",
+    "created": "2026-10-24T19:24"
+  },
+  {
+    "title": "Kodinhi: Kerala's village of twins",
+    "category": "SCIENCE",
+    "folder": "kodinhi-twin-village",
+    "status": "pending",
+    "voice": "Sobhana",
+    "created": "2026-10-24T19:25"
+  },
+  {
+    "title": "Lonar: the meteor lake that turned pink",
+    "category": "SPACE",
+    "folder": "lonar-pink-lake",
+    "status": "pending",
+    "voice": "Midhun (deep)",
+    "created": "2026-10-24T19:27"
+  },
+  {
+    "title": "Neelakurinji: the flower that blooms once in 12 years",
+    "category": "NATURE",
+    "folder": "neelakurinji-12-years",
+    "status": "pending",
+    "voice": "Sobhana",
+    "created": "2026-10-24T19:29"
+  },
+  {
+    "title": "Padmanabhaswamy Temple: the mystery of Vault B",
+    "category": "MYSTERY",
+    "folder": "padmanabhaswamy-vault-b",
+    "status": "pending",
+    "voice": "Midhun (deep)",
+    "created": "2026-10-24T19:31"
+  },
+  {
+    "title": "India's first Christmas cake was baked in Thalassery",
+    "category": "HISTORY",
+    "folder": "thalassery-first-cake",
+    "status": "pending",
+    "voice": "Sobhana",
+    "created": "2026-10-24T19:33"
   }
 ]
