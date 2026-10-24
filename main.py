@@ -264,6 +264,23 @@ def post(folder_name: str) -> None:
     print("Posted.")
 
 
+def youtube_post(folder_name: str) -> None:
+    """Upload a reel (already downloaded into output/<name>) to YouTube Shorts."""
+    from pipeline import youtube
+    if not youtube.configured():
+        print("YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.")
+        return
+    folder = config.OUTPUT_DIR / folder_name
+    script = load_json(folder / "script.json", None) or load_json(config.ROOT / "jobs" / folder_name / "script.json", {})
+    caption = (folder / "caption.txt").read_text(encoding="utf-8").strip()
+    vid = youtube.upload_short(folder / "reel.mp4", script, caption)
+    hist = history()
+    for h in hist:
+        if h["folder"] == folder_name:
+            h["youtube_id"] = vid
+    save_json(config.HISTORY_FILE, hist)
+
+
 def skip(folder_name: str) -> None:
     hist = history()
     for h in hist:
@@ -323,7 +340,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -336,6 +353,8 @@ if __name__ == "__main__":
         make(args.topic)
     elif args.command == "list":
         list_pending()
+    elif args.command == "youtube":
+        youtube_post(args.folder)
     elif args.command == "fill":
         fill(args.target, args.max)
     elif args.command == "render":

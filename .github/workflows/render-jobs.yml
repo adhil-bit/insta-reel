@@ -60,6 +60,7 @@ jobs:
             dir="output/$REEL"
             files=("$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt)
             [ -f "$dir/thumbnail.jpg" ] && files+=("$dir/thumbnail.jpg")
+            [ -f "$dir/script.json" ] && files+=("$dir/script.json")
             gh release delete "$REEL" --yes --cleanup-tag 2>/dev/null || true
             gh release create "$REEL" "${files[@]}" --title "$REEL" --notes-file "$dir/review.md"
           done < output/rendered.txt

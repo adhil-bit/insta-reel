@@ -47,6 +47,9 @@ env:
   IG_USER_ID: ${{ secrets.IG_USER_ID }}
   IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
   IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+  YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+  YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+  YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
 jobs:
   post:
@@ -92,6 +95,11 @@ jobs:
           python main.py post "$REEL" 2>&1 | tee logs/last-post-log.txt
           [ "${PIPESTATUS[0]}" = "0" ] || exit 1
           gh release edit "$REEL" --title "POSTED · $REEL"
+
+      - name: Also upload to YouTube Shorts
+        if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
+        continue-on-error: true
+        run: python main.py youtube "$REEL" 2>&1 | tee -a logs/last-post-log.txt
 
       - name: Save history and log
         if: ${{ always() && env.SKIP != '1' }}
