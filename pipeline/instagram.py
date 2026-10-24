@@ -3,6 +3,7 @@
 The Instagram-login API needs the video at a public URL, so the file is put on a
 short-lived anonymous host (deleted automatically after an hour) just long enough
 for Instagram to fetch it."""
+import subprocess
 import time
 from pathlib import Path
 
@@ -68,10 +69,20 @@ def _temporary_url(video: Path) -> str:
     raise RuntimeError("Could not upload the video to a temporary host: " + " | ".join(errors))
 
 
+def _instagram_safe(video: Path) -> Path:
+    """Re-encode only the audio to 48 kHz AAC (Instagram rejects higher rates)."""
+    out = video.with_name(video.stem + "_ig.mp4")
+    subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(video), "-c:v", "copy",
+                    "-c:a", "aac", "-b:a", "192k", "-ar", "48000", "-ac", "2",
+                    "-movflags", "+faststart", str(out)], check=True)
+    return out
+
+
 def publish_reel(video: Path, caption: str) -> str:
     if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
         raise RuntimeError("Set IG_USER_ID and IG_ACCESS_TOKEN in .env first.")
 
+    video = _instagram_safe(video)
     url = _temporary_url(video)
     print(f"  temporary video link ready ({url.split('/')[2]})")
 
@@ -90,7 +101,7 @@ def publish_reel(video: Path, caption: str) -> str:
     # 2) Wait until processing finishes
     for _ in range(60):
         status = _check(requests.get(f"{GRAPH}/{container_id}", params={
-            "fields": "status_code,status", "access_token": config.IG_ACCESS_TOKEN,
+            "fields": "status_code,status,error_message", "access_token": config.IG_ACCESS_TOKEN,
         }, timeout=60))
         code = status.get("status_code")
         if code == "FINISHED":

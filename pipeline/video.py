@@ -50,7 +50,7 @@ def concat(clips: list[Path], out: Path) -> Path:
     return out
 
 
-LOUDNORM = "loudnorm=I=-14:TP=-1.5:LRA=11"  # typical loudness for Reels
+LOUDNORM = "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000"  # Reels loudness, 48 kHz max for Instagram
 
 
 def add_music(video: Path, out: Path) -> Path:
