@@ -166,16 +166,29 @@ def render_job(job_dir: Path) -> Path:
 
 
 def render_pending() -> None:
-    """Render every folder in jobs/ that hasn't been rendered yet."""
+    """Render every folder in jobs/ that hasn't been rendered yet. A failing job is logged
+    and skipped so the others still get rendered and released."""
     done = {h["folder"] for h in history()}
-    rendered = []
+    config.OUTPUT_DIR.mkdir(exist_ok=True)
+    out = config.OUTPUT_DIR / "rendered.txt"
+    out.write_text("", encoding="utf-8")
+    ok, failed = 0, []
     for job in sorted((config.ROOT / "jobs").glob("*/script.json")):
         if job.parent.name in done:
             continue
-        rendered.append(render_job(job.parent).name)
-    config.OUTPUT_DIR.mkdir(exist_ok=True)
-    (config.OUTPUT_DIR / "rendered.txt").write_text("".join(r + "\n" for r in rendered), encoding="utf-8")
-    print(f"Rendered {len(rendered)} job(s).")
+        try:
+            name = render_job(job.parent).name
+            with open(out, "a", encoding="utf-8") as f:
+                f.write(name + "\n")
+            ok += 1
+        except Exception as e:
+            import traceback
+            traceback.print_exc()
+            failed.append(job.parent.name)
+            print(f"!! {job.parent.name} failed: {e}")
+    print(f"Rendered {ok} job(s). Failed: {failed or 'none'}")
+    if failed:
+        raise SystemExit(1)
 
 
 def pick_voice(script: dict, hist: list) -> dict:

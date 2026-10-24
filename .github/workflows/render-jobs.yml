@@ -27,7 +27,7 @@ env:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 340
     steps:
       - uses: actions/checkout@v4
 
@@ -51,6 +51,7 @@ jobs:
           exit ${PIPESTATUS[0]}
 
       - name: Save each reel for review (Releases page)
+        if: ${{ always() }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
