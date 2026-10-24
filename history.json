@@ -77,21 +77,5 @@
     "status": "pending",
     "voice": "Daniel",
     "created": "2026-10-25T00:10"
-  },
-  {
-    "title": "Jatinga: where birds fall at night",
-    "category": "NATURE",
-    "folder": "jatinga-birds",
-    "status": "pending",
-    "voice": "Sobhana (calm)",
-    "created": "2026-10-24T19:08"
-  },
-  {
-    "title": "Kallanai: a 2,000-year-old dam still in use",
-    "category": "TECH",
-    "folder": "kallanai-2000-year-dam",
-    "status": "pending",
-    "voice": "Midhun",
-    "created": "2026-10-24T19:16"
   }
 ]
