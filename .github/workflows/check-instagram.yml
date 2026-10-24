@@ -1,0 +1,29 @@
+name: Check Instagram connection
+
+# Reads the connected account's ID and username. Posts nothing.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Ask Instagram who this token belongs to
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+        run: |
+          mkdir -p logs
+          curl -s "https://$IG_GRAPH_HOST/v23.0/me?fields=user_id,username,account_type,media_count&access_token=$IG_ACCESS_TOKEN" > logs/instagram-check.json
+          cat logs/instagram-check.json
+      - name: Save result
+        run: |
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs/instagram-check.json
+          git commit -m "Instagram connection check" || exit 0
+          git pull --rebase && git push
