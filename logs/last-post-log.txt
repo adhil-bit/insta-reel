@@ -1,4 +1,6 @@
 Publishing munnar-lost-railway...
+  temporary video link ready (tmpfiles.org)
+  container: 18133958374694745, waiting for Instagram to process...
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 255, in <module>
     post(folder) if args.command == "post" else skip(folder)
@@ -6,16 +8,6 @@ Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 171, in post
     media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"))
                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 52, in publish_reel
-    url = _temporary_url(video)
-          ^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 45, in _temporary_url
-    raise RuntimeError("Could not upload the video to a temporary host: " + " | ".join(errors))
-RuntimeError: Could not upload the video to a temporary host: litterbox: 412 <html>
-<head><title>412 Precondition Failed</title></head>
-<body>
-<center><h1>412 Precondition Failed</h1></center>
-<hr><center>nginx</center>
-</body>
-</html>
- | 0x0.st: ('Connection aborted.', TimeoutError('The write operation timed out'))
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 99, in publish_reel
+    raise RuntimeError(f"Processing failed: {status}")
+RuntimeError: Processing failed: {'status_code': 'ERROR', 'status': 'ERROR', 'id': '18133958374694745'}
