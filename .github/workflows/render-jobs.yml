@@ -46,6 +46,7 @@ jobs:
 
       - name: Render new jobs
         run: |
+          git pull -q origin main || true
           mkdir -p output
           python main.py render-pending 2>&1 | tee output/render-log.txt
           exit ${PIPESTATUS[0]}
@@ -75,9 +76,4 @@ jobs:
 
       - name: Save history
         if: ${{ always() }}
-        run: |
-          git config user.name "autoreel-bot"
-          git config user.email "autoreel-bot@users.noreply.github.com"
-          git add history.json 2>/dev/null || true
-          git commit -m "rendered jobs" || exit 0
-          git pull --rebase && git push
+        run: bash scripts/save_history.sh "rendered jobs"

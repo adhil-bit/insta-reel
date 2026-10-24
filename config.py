@@ -32,9 +32,7 @@ ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_v3")  # v3 supports Mal
 # built-in voices; replace or add IDs from your Voice Library (e.g. native Malayalam voices).
 VOICE_POOL = [
     {"name": "Brian", "id": "nPczCjzI2devNBz1zQrb", "style": "deep male storyteller"},
-    {"name": "Sarah", "id": "EXAVITQu4vr4xnAQ5r1R", "style": "soft female"},
     {"name": "Adam", "id": "pNInz6obpgDQGcFmaJgB", "style": "deep male"},
-    {"name": "Charlotte", "id": "XB0fDUnXU5powFXDhCwa", "style": "warm female"},
     {"name": "Daniel", "id": "onwK4e9ZLuTAKqWW03F9", "style": "authoritative male"},
     {"name": "Lily", "id": "pFZP5JQG7iQjIQuC4Bku", "style": "gentle female"},
 ]
@@ -80,6 +78,11 @@ BRAND = {
     ),
     "music_volume": 0.12,
     # added to every caption when posting (on top of each reel's topic tags)
+    "end_card": {
+        "ask": "ഇഷ്ടപ്പെട്ടോ?",
+        "main_html": "കൂടുതൽ കഥകൾക്ക് <b>ഫോളോ</b> ചെയ്യൂ",
+        "share": "ഒരു സുഹൃത്തിന് അയച്ചുകൊടുക്കൂ 📩",
+    },
     "broad_hashtags": ["#explorepage", "#reelstagram", "#viral", "#reelitfeelit"],  # 0.0-1.0, background music under the voice
 }
 
@@ -87,4 +90,5 @@ BRAND = {
 WIDTH, HEIGHT, FPS = 1080, 1920, 30
 COVER_MIN_SECONDS = 2.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.35     # small pause after each voice line
+END_CARD_SECONDS = 2.4  # 'follow us' card at the end of every reel
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel

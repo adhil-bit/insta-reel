@@ -10,27 +10,58 @@
       "In 2016 a team of researchers from Indian and international institutions collected samples from twins in the village for study",
       "Other twin hotspots include Igbo-Ora in Nigeria and Candido Godoi in Brazil"
     ],
-    "sources": ["The Hindu / BBC reporting on Kodinhi", "Reports on the 2016 CCMB-led sampling study", "Reporting on Igbo-Ora and Candido Godoi"]
+    "sources": [
+      "The Hindu / BBC reporting on Kodinhi",
+      "Reports on the 2016 CCMB-led sampling study",
+      "Reporting on Igbo-Ora and Candido Godoi"
+    ]
   },
   "category": "SCIENCE",
-  "voice": "Sarah",
-  "headline": ["A VILLAGE", "OF TWINS"],
-  "accent_words": ["TWINS"],
+  "voice": "Lily",
+  "headline": [
+    "A VILLAGE",
+    "OF TWINS"
+  ],
+  "accent_words": [
+    "TWINS"
+  ],
   "thumbnail_ml": "ഈ ഗ്രാമത്തിൽ എവിടെ നോക്കിയാലും ഇരട്ടകൾ!",
-  "thumbnail_accent": ["ഇരട്ടകൾ"],
+  "thumbnail_accent": [
+    "ഇരട്ടകൾ"
+  ],
   "hook_voiceover": "ഒരു ഗ്രാമത്തിൽ എവിടെ നോക്കിയാലും ഇരട്ടകൾ. അതും നമ്മുടെ മലപ്പുറത്ത്.",
   "cover_visual": "A glowing pair of twins in a night village, more pairs appearing",
   "scenes": [
-    {"voiceover": "മലപ്പുറം ജില്ലയിലെ കൊടിഞ്ഞി എന്ന ചെറിയ ഗ്രാമം. ഇവിടെ നൂറുകണക്കിന് ഇരട്ടകളുണ്ട്.",
-     "caption": "Kodinhi, Malappuram", "highlight": "Kodinhi", "visual": "Village from above, houses lighting up in pairs"},
-    {"voiceover": "ലോകത്ത് സാധാരണ ഇരട്ടകൾ ജനിക്കുന്നത് കുറവാണ്. പക്ഷേ കൊടിഞ്ഞിയിൽ അത് പല മടങ്ങ് കൂടുതലാണെന്നാണ് കണക്കുകൾ.",
-     "caption": "Many times the usual rate", "highlight": "Many", "visual": "Two crowds: one pair of twins vs many"},
-    {"voiceover": "വെള്ളമാണോ കാരണം? ഭക്ഷണമാണോ? അതോ ജീനുകളോ? പല സിദ്ധാന്തങ്ങളും വന്നു.",
-     "caption": "Water? Food? Genes?", "highlight": "Genes", "visual": "Water drop, rice bowl, DNA in turn"},
-    {"voiceover": "2016-ൽ ഇന്ത്യയിലെയും വിദേശത്തെയും ഗവേഷകർ ഇവിടെ നിന്ന് സാമ്പിളുകൾ ശേഖരിച്ചു. പക്ഷേ വ്യക്തമായ ഉത്തരം ഇന്നും കിട്ടിയിട്ടില്ല.",
-     "caption": "Studied, still unsolved", "highlight": "unsolved", "visual": "Sample tubes fill, a lens scans, no answer"},
-    {"voiceover": "നൈജീരിയയിലും ബ്രസീലിലും ഇതുപോലുള്ള ഗ്രാമങ്ങളുണ്ട്. ലോകത്തിലെ ആ അപൂർവ ഇരട്ട ഗ്രാമങ്ങളിൽ ഒന്നാണ് നമ്മുടെ കൊടിഞ്ഞി.",
-     "caption": "One of the world's twin towns", "highlight": "twin", "visual": "Globe linking Kodinhi, Nigeria and Brazil"}
+    {
+      "voiceover": "മലപ്പുറം ജില്ലയിലെ കൊടിഞ്ഞി എന്ന ചെറിയ ഗ്രാമം. ഇവിടെ നൂറുകണക്കിന് ഇരട്ടകളുണ്ട്.",
+      "caption": "Kodinhi, Malappuram",
+      "highlight": "Kodinhi",
+      "visual": "Village from above, houses lighting up in pairs"
+    },
+    {
+      "voiceover": "ലോകത്ത് സാധാരണ ഇരട്ടകൾ ജനിക്കുന്നത് കുറവാണ്. പക്ഷേ കൊടിഞ്ഞിയിൽ അത് പല മടങ്ങ് കൂടുതലാണെന്നാണ് കണക്കുകൾ.",
+      "caption": "Many times the usual rate",
+      "highlight": "Many",
+      "visual": "Two crowds: one pair of twins vs many"
+    },
+    {
+      "voiceover": "വെള്ളമാണോ കാരണം? ഭക്ഷണമാണോ? അതോ ജീനുകളോ? പല സിദ്ധാന്തങ്ങളും വന്നു.",
+      "caption": "Water? Food? Genes?",
+      "highlight": "Genes",
+      "visual": "Water drop, rice bowl, DNA in turn"
+    },
+    {
+      "voiceover": "2016-ൽ ഇന്ത്യയിലെയും വിദേശത്തെയും ഗവേഷകർ ഇവിടെ നിന്ന് സാമ്പിളുകൾ ശേഖരിച്ചു. പക്ഷേ വ്യക്തമായ ഉത്തരം ഇന്നും കിട്ടിയിട്ടില്ല.",
+      "caption": "Studied, still unsolved",
+      "highlight": "unsolved",
+      "visual": "Sample tubes fill, a lens scans, no answer"
+    },
+    {
+      "voiceover": "നൈജീരിയയിലും ബ്രസീലിലും ഇതുപോലുള്ള ഗ്രാമങ്ങളുണ്ട്. ലോകത്തിലെ ആ അപൂർവ ഇരട്ട ഗ്രാമങ്ങളിൽ ഒന്നാണ് നമ്മുടെ കൊടിഞ്ഞി.",
+      "caption": "One of the world's twin towns",
+      "highlight": "twin",
+      "visual": "Globe linking Kodinhi, Nigeria and Brazil"
+    }
   ],
   "instagram_caption": "A village in Kerala where twins are everywhere. 👯\n\nKodinhi, a small village in Malappuram, has hundreds of pairs of twins, many times more than you'd expect. Is it the water? The food? Genes? In 2016, researchers from India and abroad collected samples here, and the answer still isn't clear. 🧬\n\nOnly a few places on Earth are like this, and one of them is right here. 👀\n\nWatch the mystery of Kerala's twin village.\n\nSend this to a twin you know. 👯‍♀️\n\n📚 The Hindu · BBC · Reports on the 2016 sampling study\nEducational · Animated illustrations\n\n#Kodinhi #Malappuram #Kerala #Malayalam #MalayalamReels UnexploredTruths Twins DidYouKnow",
   "fact_check": [

@@ -83,9 +83,4 @@ jobs:
 
       - name: Save history
         if: ${{ env.SKIP != '1' && always() }}
-        run: |
-          git config user.name "autoreel-bot"
-          git config user.email "autoreel-bot@users.noreply.github.com"
-          git add history.json 2>/dev/null || true
-          git commit -m "auto batch" || exit 0
-          git pull --rebase && git push
+        run: bash scripts/save_history.sh "auto batch"

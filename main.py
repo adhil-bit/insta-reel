@@ -102,6 +102,13 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
             min_seconds=config.COVER_MIN_SECONDS if s.get("cover") else 0,
             zoom_in=(i % 2 == 0),
         ))
+    try:
+        from pipeline import endcard
+        clips.append(endcard.make(script, _frame_at(visuals[-1], work, 0.95), work))
+        durations = durations + [config.END_CARD_SECONDS]
+        print("  follow end card added")
+    except Exception as e:
+        print(f"  end card skipped ({e})")
     joined = video.concat(clips, work / "joined.mp4")
 
     print("6/6 Sound design, thumbnail and export...")
@@ -281,6 +288,21 @@ def youtube_post(folder_name: str) -> None:
     save_json(config.HISTORY_FILE, hist)
 
 
+def merge_history(local_file: str) -> None:
+    """Merge a run's history into the latest committed history (runs can overlap)."""
+    rank = {"pending": 0, "skipped": 1, "posted": 2}
+    local = load_json(Path(local_file), [])
+    merged = history()
+    index = {e["folder"]: e for e in merged}
+    for e in local:
+        cur = index.get(e["folder"])
+        if cur is None:
+            merged.append(e); index[e["folder"]] = e
+        elif rank.get(e.get("status"), 0) >= rank.get(cur.get("status"), 0):
+            cur.update(e)
+    save_json(config.HISTORY_FILE, merged)
+
+
 def skip(folder_name: str) -> None:
     hist = history()
     for h in hist:
@@ -340,7 +362,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -353,6 +375,8 @@ if __name__ == "__main__":
         make(args.topic)
     elif args.command == "list":
         list_pending()
+    elif args.command == "merge-history":
+        merge_history(args.folder)
     elif args.command == "youtube":
         youtube_post(args.folder)
     elif args.command == "fill":

@@ -53,5 +53,29 @@
     "status": "pending",
     "voice": "Adam",
     "created": "2026-10-24T18:00"
+  },
+  {
+    "title": "Chandrayaan-3: first to the Moon's south pole",
+    "category": "SPACE",
+    "folder": "chandrayaan-3-south-pole",
+    "status": "pending",
+    "voice": "Brian",
+    "created": "2026-10-25T00:10"
+  },
+  {
+    "title": "Dhanushkodi: the town the sea took",
+    "category": "HISTORY",
+    "folder": "dhanushkodi-ghost-town",
+    "status": "pending",
+    "voice": "Daniel",
+    "created": "2026-10-25T00:10"
+  },
+  {
+    "title": "Delhi's Iron Pillar: 1,600 years without rust",
+    "category": "SCIENCE",
+    "folder": "iron-pillar-no-rust",
+    "status": "pending",
+    "voice": "Daniel",
+    "created": "2026-10-25T00:10"
   }
 ]
