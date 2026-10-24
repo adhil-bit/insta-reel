@@ -53,9 +53,16 @@ def concat(clips: list[Path], out: Path) -> Path:
 LOUDNORM = "loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000"  # Reels loudness, 48 kHz max for Instagram
 
 
-def add_music(video: Path, out: Path) -> Path:
-    """Mix a random track from /music under the voice. Skips if the folder is empty."""
+def add_music(video: Path, out: Path, bed: Path | None = None) -> Path:
+    """Mix a random track from /music under the voice; otherwise the generated sound bed."""
     tracks = [p for p in config.MUSIC_DIR.glob("*") if p.suffix.lower() in {".mp3", ".wav", ".m4a"}]
+    if not tracks and bed:
+        run(["ffmpeg", "-y", "-i", str(video), "-i", str(bed), "-filter_complex",
+             f"[0:a][1:a]amix=inputs=2:duration=first:dropout_transition=0:normalize=0,{LOUDNORM}[a]",
+             "-map", "0:v", "-map", "[a]", "-c:v", "copy", "-c:a", "aac", "-b:a", "192k",
+             "-movflags", "+faststart", str(out)])
+        print("  sound: generated pad + transitions")
+        return out
     if not tracks:
         print("  (no music in /music, exporting voice only)")
         run(["ffmpeg", "-y", "-i", str(video), "-af", LOUDNORM, "-c:v", "copy", "-c:a", "aac",

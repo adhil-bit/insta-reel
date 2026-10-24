@@ -86,6 +86,8 @@ Reply with ONLY a JSON object, no other text:
       "visual": "hero subject for this moment + the one thing that moves/changes",
       "search_query": "2-4 word stock photo search"}}
   ],
+  "thumbnail_ml": "a short, curiosity-driving question or claim in Malayalam for the cover (max 8 words)",
+  "thumbnail_accent": ["1-2 words from thumbnail_ml to colour"],
   "instagram_caption": "2-3 sentence caption + 4-6 relevant hashtags",
   "fact_check": ["each factual claim in the script -> which fact/source supports it"]
 }}

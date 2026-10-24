@@ -28,6 +28,16 @@ VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "elevenlabs").lower()
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
 ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_v3")  # v3 supports Malayalam
+# Different narrator for each reel, rotating through this list. These are ElevenLabs'
+# built-in voices; replace or add IDs from your Voice Library (e.g. native Malayalam voices).
+VOICE_POOL = [
+    {"name": "Brian", "id": "nPczCjzI2devNBz1zQrb", "style": "deep male storyteller"},
+    {"name": "Sarah", "id": "EXAVITQu4vr4xnAQ5r1R", "style": "soft female"},
+    {"name": "Adam", "id": "pNInz6obpgDQGcFmaJgB", "style": "deep male"},
+    {"name": "Charlotte", "id": "XB0fDUnXU5powFXDhCwa", "style": "warm female"},
+    {"name": "Daniel", "id": "onwK4e9ZLuTAKqWW03F9", "style": "authoritative male"},
+    {"name": "Lily", "id": "pFZP5JQG7iQjIQuC4Bku", "style": "gentle female"},
+]
 OPENAI_TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")
 

@@ -24,7 +24,7 @@ def _check(resp: requests.Response) -> dict:
 UA = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"}
 
 
-def _temporary_url(video: Path) -> str:
+def _temporary_url(video: Path, kind: str = "video/mp4") -> str:
     """Upload to a short-lived anonymous file host and return a direct link.
     Several hosts are tried in turn because any one of them can be down or blocked."""
     errors = []
@@ -39,8 +39,9 @@ def _temporary_url(video: Path) -> str:
             # make sure the link serves the actual video, not a web page
             r = requests.get(url, headers={**UA, "Range": "bytes=0-15"}, timeout=60)
             ctype = r.headers.get("Content-Type", "")
-            if b"ftyp" in r.content[:16] or ctype.startswith("video/"):
-                print(f"  {name}: link serves video ({ctype or 'no content-type'})")
+            head = r.content[:16]
+            if b"ftyp" in head or head[:3] == b"\xff\xd8\xff" or ctype.split("/")[0] in ("video", "image"):
+                print(f"  {name}: link serves {ctype or 'the file'}")
                 return url
             errors.append(f"{name}: link serves {ctype or 'unknown'}, not video")
         except Exception as e:
@@ -49,7 +50,7 @@ def _temporary_url(video: Path) -> str:
 
     def tmpfiles():      # deleted after 60 minutes
         with open(video, "rb") as f:
-            r = requests.post("https://tmpfiles.org/api/v1/upload", files={"file": (video.name, f, "video/mp4")},
+            r = requests.post("https://tmpfiles.org/api/v1/upload", files={"file": (video.name, f, kind)},
                               headers=UA, timeout=300)
         r.raise_for_status()
         page = r.json()["data"]["url"]                     # https://tmpfiles.org/123/reel.mp4
@@ -57,7 +58,7 @@ def _temporary_url(video: Path) -> str:
 
     def uguu():          # deleted after 3 hours
         with open(video, "rb") as f:
-            r = requests.post("https://uguu.se/upload", files={"files[]": (video.name, f, "video/mp4")},
+            r = requests.post("https://uguu.se/upload", files={"files[]": (video.name, f, kind)},
                               headers=UA, timeout=300)
         r.raise_for_status()
         return r.json()["files"][0]["url"]
@@ -66,7 +67,7 @@ def _temporary_url(video: Path) -> str:
         with open(video, "rb") as f:
             r = requests.post("https://litterbox.catbox.moe/resources/internals/api.php",
                               data={"reqtype": "fileupload", "time": "1h"},
-                              files={"fileToUpload": (video.name, f, "video/mp4")}, headers=UA, timeout=300)
+                              files={"fileToUpload": (video.name, f, kind)}, headers=UA, timeout=300)
         r.raise_for_status()
         return r.text.strip()
 
@@ -86,13 +87,20 @@ def _instagram_safe(video: Path) -> Path:
     return out
 
 
-def publish_reel(video: Path, caption: str) -> str:
+def publish_reel(video: Path, caption: str, cover: Path | None = None) -> str:
     if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
         raise RuntimeError("Set IG_USER_ID and IG_ACCESS_TOKEN in .env first.")
 
     video = _instagram_safe(video)
     url = _temporary_url(video)
     print(f"  temporary video link ready ({url.split('/')[2]})")
+    cover_url = None
+    if cover:
+        try:
+            cover_url = _temporary_url(cover, kind="image/jpeg")
+            print("  thumbnail link ready")
+        except Exception as e:
+            print(f"  thumbnail upload failed ({e}); using the first frame")
 
     # 1) Create the Reels container from the public link
     container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data={
@@ -100,7 +108,7 @@ def publish_reel(video: Path, caption: str) -> str:
         "video_url": url,
         "caption": caption,
         "share_to_feed": "true",
-        "thumb_offset": "0",  # first frame = your headline cover
+        **({"cover_url": cover_url} if cover_url else {"thumb_offset": "0"}),
         "access_token": config.IG_ACCESS_TOKEN,
     }, timeout=120))
     container_id = container["id"]

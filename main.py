@@ -55,10 +55,14 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
                "search_query": script["scenes"][0].get("search_query", topic["title"]),
                "cover": True}] + script["scenes"]
 
-    print("3/6 Recording the voiceover...")
+    voice = pick_voice(script, hist)
+    print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
     for i, s in enumerate(scenes):
-        media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3")
+        if i == 0 and config.VOICE_PROVIDER == "elevenlabs":
+            voice = _first_working_voice(media, s["voiceover"], work / "voice_0.mp3", voice)
+        else:
+            media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice.get("id"))
         durations.append(video.scene_duration(
             work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0))
 
@@ -100,18 +104,27 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         ))
     joined = video.concat(clips, work / "joined.mp4")
 
-    print("6/6 Adding music and exporting...")
-    final = video.add_music(joined, folder / "reel.mp4")
+    print("6/6 Sound design, thumbnail and export...")
+    from pipeline import sound
+    bed = sound.make_bed(durations, script["category"], work / "bed.wav")
+    final = video.add_music(joined, folder / "reel.mp4", bed=bed)
+    try:
+        from pipeline import thumbnail
+        bg = _frame_at(visuals[0], work, 0.8)
+        thumbnail.render(script, bg, folder / "thumbnail.jpg")
+        print("  thumbnail ready")
+    except Exception as e:
+        print(f"  thumbnail failed ({e}); the first frame will be used as cover")
     (folder / "caption.txt").write_text(script["instagram_caption"], encoding="utf-8")
     review = [f"## {topic['title']}  [{topic['category']}]", "",
               f"**Angle:** {topic.get('angle', '')}", "", "### Check these claims"]
     review += [f"- {c}" for c in script.get("fact_check", [])]
     review += ["", "### Sources"] + [f"- {u}" for u in topic.get("sources", [])]
-    review += ["", "### Caption", script["instagram_caption"]]
+    review += ["", "### Caption", script["instagram_caption"], "", f"_Narrator: {voice['name']}_"]
     (folder / "review.md").write_text("\n".join(review), encoding="utf-8")
 
     hist.append({"title": topic["title"], "category": topic["category"],
-                 "folder": folder.name, "status": "pending",
+                 "folder": folder.name, "status": "pending", "voice": voice["name"],
                  "created": datetime.now().isoformat(timespec="minutes")})
     save_json(config.HISTORY_FILE, hist)
 
@@ -151,6 +164,46 @@ def render_pending() -> None:
     print(f"Rendered {len(rendered)} job(s).")
 
 
+def pick_voice(script: dict, hist: list) -> dict:
+    """The script can name a voice; otherwise rotate through the pool reel by reel."""
+    pool = config.VOICE_POOL
+    want = script.get("voice")
+    if want:
+        for v in pool:
+            if want.lower() in (v["name"].lower(), v["id"].lower()):
+                return v
+        return {"name": want, "id": want}
+    used = sum(1 for h in hist if h.get("status") != "skipped")
+    return pool[used % len(pool)]
+
+
+def _first_working_voice(media, text: str, out: Path, voice: dict) -> dict:
+    """Try the chosen voice; if ElevenLabs rejects it, move on to the next one in the pool."""
+    pool = config.VOICE_POOL
+    order = [voice] + [v for v in pool if v["id"] != voice.get("id")]
+    for v in order:
+        try:
+            media.generate_voice(text, out, v.get("id"))
+            if v is not voice:
+                print(f"  voice {voice['name']} unavailable, using {v['name']}")
+            return v
+        except RuntimeError as e:
+            print(f"  voice {v['name']} failed: {str(e)[:120]}")
+    media.generate_voice(text, out)            # last resort: the voice in the repo secret
+    return {"name": "default", "id": ""}
+
+
+def _frame_at(visual: Path, work: Path, frac: float) -> Path:
+    """A still from a visual at a fraction of its length."""
+    if visual.suffix.lower() != ".mp4":
+        return visual
+    from pipeline.utils import media_duration
+    frame = work / f"{visual.stem}_thumb.jpg"
+    run(["ffmpeg", "-y", "-v", "error", "-ss", f"{media_duration(visual) * frac:.2f}", "-i", str(visual),
+         "-frames:v", "1", "-q:v", "2", str(frame)])
+    return frame
+
+
 def _first_frame(visual: Path, work: Path) -> Path:
     """Still image of a visual, for the cover preview."""
     if visual.suffix.lower() != ".mp4":
@@ -168,7 +221,9 @@ def post(folder_name: str) -> None:
     if not reel.exists():
         sys.exit(f"No reel found in {folder}")
     print(f"Publishing {folder_name}...")
-    media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"))
+    thumb = folder / "thumbnail.jpg"
+    media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"),
+                                      cover=thumb if thumb.exists() else None)
     hist = history()
     for h in hist:
         if h["folder"] == folder_name:
@@ -185,6 +240,12 @@ def skip(folder_name: str) -> None:
             h["status"] = "skipped"
     save_json(config.HISTORY_FILE, hist)
     print(f"Skipped {folder_name}")
+
+
+def next_pending() -> str | None:
+    """Oldest reel still waiting to be posted (the posting queue)."""
+    pending = [h for h in history() if h["status"] == "pending"]
+    return pending[0]["folder"] if pending else None
 
 
 def latest_pending() -> str | None:
@@ -231,7 +292,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "render", "render-pending", "post", "skip", "list", "latest", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "render", "render-pending", "post", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     args = parser.parse_args()
@@ -248,6 +309,8 @@ if __name__ == "__main__":
         render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
+    elif args.command == "next":
+        print(next_pending() or "")
     elif args.command in ("post", "skip"):
         folder = args.folder or latest_pending()
         if not folder:

@@ -52,7 +52,7 @@ def _pexels(query: str, out_path: Path) -> Path:
 
 
 # ---------------- Voice ----------------
-def generate_voice(text: str, out_path: Path) -> Path:
+def generate_voice(text: str, out_path: Path, voice_id: str | None = None) -> Path:
     if config.VOICE_PROVIDER == "openai":
         resp = requests.post(
             "https://api.openai.com/v1/audio/speech",
@@ -63,7 +63,7 @@ def generate_voice(text: str, out_path: Path) -> Path:
         )
     else:
         resp = requests.post(
-            f"https://api.elevenlabs.io/v1/text-to-speech/{config.ELEVENLABS_VOICE_ID}",
+            f"https://api.elevenlabs.io/v1/text-to-speech/{voice_id or config.ELEVENLABS_VOICE_ID}",
             headers={"xi-api-key": config.ELEVENLABS_API_KEY},
             params={"output_format": "mp3_44100_128"},
             json={"text": text, "model_id": config.ELEVENLABS_MODEL},

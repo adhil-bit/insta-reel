@@ -17,21 +17,46 @@
     ]
   },
   "category": "HISTORY",
-  "headline": ["STONE AGE ART", "IN WAYANAD"],
-  "accent_words": ["WAYANAD"],
+  "headline": [
+    "STONE AGE ART",
+    "IN WAYANAD"
+  ],
+  "accent_words": [
+    "WAYANAD"
+  ],
   "hook_voiceover": "ശിലായുഗ മനുഷ്യർ കല്ലിൽ കൊത്തിയ ചിത്രങ്ങൾ. അത് കാണാൻ ദൂരെയെങ്ങും പോകേണ്ട, നമ്മുടെ വയനാട്ടിലുണ്ട്.",
   "cover_visual": "Dark rock wall where ancient carvings light up one by one",
   "scenes": [
-    {"voiceover": "സുൽത്താൻ ബത്തേരിക്കടുത്ത്, അമ്പുകുത്തി മലയിൽ, ഏകദേശം ആയിരത്തി ഇരുന്നൂറ് മീറ്റർ ഉയരത്തിലാണ് എടക്കൽ ഗുഹ.",
-     "caption": "High on Ambukuthi Hill", "highlight": "Ambukuthi", "visual": "A path climbs the forested hills to the cave"},
-    {"voiceover": "പക്ഷേ ഇത് ശരിക്കും ഒരു ഗുഹയല്ല. ഒരു പാറപ്പിളർപ്പിന് മുകളിൽ കൂറ്റൻ കല്ല് കുടുങ്ങിക്കിടക്കുന്നു. ഇടയിലെ കല്ല്, അതാണ് എടക്കൽ.",
-     "caption": "A stone stuck in between", "highlight": "between", "visual": "A giant boulder drops and wedges across a rock cleft"},
-    {"voiceover": "1890-കളിൽ, മലബാറിലെ പോലീസ് സൂപ്രണ്ടായിരുന്ന ഫ്രെഡ് ഫോസെറ്റ് വേട്ടയ്ക്കിടെയാണ് ഈ ചിത്രങ്ങൾ ലോകത്തിന് മുന്നിലെത്തിച്ചത്.",
-     "caption": "Rediscovered in the 1890s", "highlight": "1890s", "visual": "A torch beam sweeps the dark wall and reveals carvings"},
-    {"voiceover": "ചുമരുകളിൽ നിറയെ കൊത്തുപണികൾ. മനുഷ്യർ, മൃഗങ്ങൾ, പിന്നെ ഇന്നും അർത്ഥം മനസ്സിലാകാത്ത ചിഹ്നങ്ങൾ.",
-     "caption": "Humans, animals, strange symbols", "highlight": "symbols", "visual": "Carvings engrave themselves across the wall"},
-    {"voiceover": "ചിലതിന് ആയിരക്കണക്കിന് വർഷം പഴക്കമുണ്ടെന്നാണ് കരുതുന്നത്. നമ്മുടെ നാട്ടിൽ ജീവിച്ചിരുന്നവർ ബാക്കിവെച്ച സന്ദേശം. അത് മുഴുവനായി വായിച്ചെടുക്കാൻ ഇന്നും കഴിഞ്ഞിട്ടില്ല.",
-     "caption": "A message we still can't read", "highlight": "read", "visual": "The whole carved wall glows in waves, then fades"}
+    {
+      "voiceover": "സുൽത്താൻ ബത്തേരിക്കടുത്ത്, അമ്പുകുത്തി മലയിൽ, ഏകദേശം ആയിരത്തി ഇരുന്നൂറ് മീറ്റർ ഉയരത്തിലാണ് എടക്കൽ ഗുഹ.",
+      "caption": "High on Ambukuthi Hill",
+      "highlight": "Ambukuthi",
+      "visual": "A path climbs the forested hills to the cave"
+    },
+    {
+      "voiceover": "പക്ഷേ ഇത് ശരിക്കും ഒരു ഗുഹയല്ല. ഒരു പാറപ്പിളർപ്പിന് മുകളിൽ കൂറ്റൻ കല്ല് കുടുങ്ങിക്കിടക്കുന്നു. ഇടയിലെ കല്ല്, അതാണ് എടക്കൽ.",
+      "caption": "A stone stuck in between",
+      "highlight": "between",
+      "visual": "A giant boulder drops and wedges across a rock cleft"
+    },
+    {
+      "voiceover": "1890-കളിൽ, മലബാറിലെ പോലീസ് സൂപ്രണ്ടായിരുന്ന ഫ്രെഡ് ഫോസെറ്റ് വേട്ടയ്ക്കിടെയാണ് ഈ ചിത്രങ്ങൾ ലോകത്തിന് മുന്നിലെത്തിച്ചത്.",
+      "caption": "Rediscovered in the 1890s",
+      "highlight": "1890s",
+      "visual": "A torch beam sweeps the dark wall and reveals carvings"
+    },
+    {
+      "voiceover": "ചുമരുകളിൽ നിറയെ കൊത്തുപണികൾ. മനുഷ്യർ, മൃഗങ്ങൾ, പിന്നെ ഇന്നും അർത്ഥം മനസ്സിലാകാത്ത ചിഹ്നങ്ങൾ.",
+      "caption": "Humans, animals, strange symbols",
+      "highlight": "symbols",
+      "visual": "Carvings engrave themselves across the wall"
+    },
+    {
+      "voiceover": "ചിലതിന് ആയിരക്കണക്കിന് വർഷം പഴക്കമുണ്ടെന്നാണ് കരുതുന്നത്. നമ്മുടെ നാട്ടിൽ ജീവിച്ചിരുന്നവർ ബാക്കിവെച്ച സന്ദേശം. അത് മുഴുവനായി വായിച്ചെടുക്കാൻ ഇന്നും കഴിഞ്ഞിട്ടില്ല.",
+      "caption": "A message we still can't read",
+      "highlight": "read",
+      "visual": "The whole carved wall glows in waves, then fades"
+    }
   ],
   "instagram_caption": "Stone Age art, right here in Kerala. 🪨✨\n\nHigh on Ambukuthi Hill in Wayanad, a giant boulder is wedged across a crack in the rock. Inside that shelter, the walls are covered in carvings: humans, animals, and symbols nobody can fully explain. Some are believed to be thousands of years old. A police officer from Malabar brought them to the world's attention while out hunting in the 1890s. 🔦\n\nSo what were the people who lived here trying to tell us? 👀\n\nWatch the story hidden inside Edakkal.\n\nSend this to someone from Wayanad. 🌿\n\n📚 Kerala Tourism · Kerala State Archaeology · Fawcett (1901)\nEducational · Animated illustrations\n\n#EdakkalCaves #Wayanad #KeralaHistory #Malayalam #MalayalamReels UnexploredTruths DidYouKnow Archaeology",
   "fact_check": [
@@ -40,5 +65,10 @@
     "Carvings of humans, animals, symbols, believed thousands of years old -> Kerala State Archaeology",
     "Fred Fawcett, Malabar police superintendent, 1890s, while hunting -> Fawcett (1901)",
     "Written in chat without live web search: double-check before posting"
-  ]
+  ],
+  "thumbnail_ml": "ശിലായുഗ ചിത്രങ്ങൾ നമ്മുടെ വയനാട്ടിൽ!",
+  "thumbnail_accent": [
+    "വയനാട്ടിൽ"
+  ],
+  "voice": "Charlotte"
 }

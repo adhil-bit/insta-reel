@@ -1,10 +1,16 @@
 name: Post reel
 
+# Posts the next reel in the queue (oldest first) three times a day,
+# or a specific reel when run by hand.
 on:
+  schedule:
+    - cron: "30 2 * * *"    # 08:00 IST
+    - cron: "30 7 * * *"    # 13:00 IST
+    - cron: "0 14 * * *"    # 19:30 IST
   workflow_dispatch:
     inputs:
       reel:
-        description: "Reel to post (release name). Leave empty for the newest one waiting."
+        description: "Reel to post (release name). Leave empty for the next one in the queue."
         required: false
         default: ""
       action:
@@ -17,7 +23,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: autoreel
+  group: autoreel-post
   cancel-in-progress: false
 
 env:
@@ -37,50 +43,44 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Install FFmpeg
-        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
-
-      - run: pip install -r requirements.txt
-
       - name: Pick the reel
         env:
           INPUT_REEL: ${{ github.event.inputs.reel }}
         run: |
-          REEL="${INPUT_REEL:-$(python main.py latest)}"
-          if [ -z "$REEL" ]; then echo "Nothing waiting to be posted."; exit 1; fi
+          pip install -q -r requirements.txt
+          REEL="${INPUT_REEL:-$(python main.py next)}"
+          if [ -z "$REEL" ]; then echo "Queue is empty, nothing to post."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
           echo "REEL=$REEL" >> "$GITHUB_ENV"
+          echo "Selected: $REEL"
 
       - name: Reject the reel
-        if: ${{ github.event.inputs.action == 'reject' }}
+        if: ${{ env.SKIP != '1' && github.event.inputs.action == 'reject' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           python main.py skip "$REEL"
           gh release edit "$REEL" --title "REJECTED · $REEL" || true
 
-      - name: Download the reel
-        if: ${{ github.event.inputs.action != 'reject' }}
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: |
-          mkdir -p "output/$REEL"
-          gh release download "$REEL" --dir "output/$REEL" --pattern reel.mp4 --pattern caption.txt
+      - name: Install FFmpeg
+        if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
+        run: sudo apt-get update -q && sudo apt-get install -y -q ffmpeg
 
-      - name: Post to Instagram
-        if: ${{ github.event.inputs.action != 'reject' }}
+      - name: Download and post
+        if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p logs
+          mkdir -p "output/$REEL" logs
+          gh release download "$REEL" --dir "output/$REEL" --clobber
           python main.py post "$REEL" 2>&1 | tee logs/last-post-log.txt
           [ "${PIPESTATUS[0]}" = "0" ] || exit 1
           gh release edit "$REEL" --title "POSTED · $REEL"
 
       - name: Save history and log
-        if: ${{ always() }}
+        if: ${{ always() && env.SKIP != '1' }}
         run: |
           git config user.name "autoreel-bot"
           git config user.email "autoreel-bot@users.noreply.github.com"
           git add history.json logs 2>/dev/null || true
-          git commit -m "review: $REEL" || exit 0
+          git commit -m "post: $REEL" || exit 0
           git pull --rebase && git push

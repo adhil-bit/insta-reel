@@ -57,8 +57,10 @@ jobs:
           while read -r REEL || [ -n "$REEL" ]; do
             [ -z "$REEL" ] && continue
             dir="output/$REEL"
-            gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt \
-              --title "$REEL" --notes-file "$dir/review.md"
+            files=("$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt)
+            [ -f "$dir/thumbnail.jpg" ] && files+=("$dir/thumbnail.jpg")
+            gh release delete "$REEL" --yes --cleanup-tag 2>/dev/null || true
+            gh release create "$REEL" "${files[@]}" --title "$REEL" --notes-file "$dir/review.md"
           done < output/rendered.txt
 
       - name: Save the log if rendering failed
