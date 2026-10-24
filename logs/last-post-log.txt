@@ -1,13 +1,6 @@
 Publishing munnar-lost-railway...
-  temporary video link ready (tmpfiles.org)
-  container: 18133958983694745, waiting for Instagram to process...
-Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 255, in <module>
-    post(folder) if args.command == "post" else skip(folder)
-    ^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 171, in post
-    media_id = instagram.publish_reel(reel, caption.read_text(encoding="utf-8"))
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/instagram.py", line 110, in publish_reel
-    raise RuntimeError(f"Processing failed: {status}")
-RuntimeError: Processing failed: {'status_code': 'ERROR', 'status': 'ERROR', 'error_message': 'Video Transcoding Error: Video transcode failed, video status: progressive_video_not_ready. Exception message: {\'exception_name\': \'um_request_failure\', \'exception_message\': "facebook::videoinfra::um::MediaInfoExtractionExcept', 'id': '18133958983694745'}
+  uguu: link serves video (video/mp4)
+  temporary video link ready (h.uguu.se)
+  container: 18133959619694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/De4nFwggFtD/
+Posted.
