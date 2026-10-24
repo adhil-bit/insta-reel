@@ -19,5 +19,26 @@
     "folder": "kuttanad-below-sea-level",
     "status": "pending",
     "created": "2026-10-24T09:54"
+  },
+  {
+    "title": "The day it rained red in Kerala",
+    "category": "MYSTERY",
+    "folder": "kerala-red-rain",
+    "status": "pending",
+    "created": "2026-10-24T10:57"
+  },
+  {
+    "title": "Munnar once had a train",
+    "category": "HISTORY",
+    "folder": "munnar-lost-railway",
+    "status": "pending",
+    "created": "2026-10-24T11:09"
+  },
+  {
+    "title": "Roopkund: the lake of skeletons",
+    "category": "HISTORY",
+    "folder": "roopkund-skeleton-lake",
+    "status": "pending",
+    "created": "2026-10-24T11:18"
   }
 ]
