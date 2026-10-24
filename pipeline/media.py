@@ -52,7 +52,23 @@ def _pexels(query: str, out_path: Path) -> Path:
 
 
 # ---------------- Voice ----------------
+def _edge_voice(text: str, out_path: Path, voice_id: str) -> Path:
+    import asyncio
+    import edge_tts
+    voice, rate, pitch = (voice_id.split("|") + ["+0%", "+0Hz"])[:3]
+    for attempt in range(3):
+        try:
+            asyncio.run(edge_tts.Communicate(text, voice, rate=rate, pitch=pitch).save(str(out_path)))
+            if out_path.exists() and out_path.stat().st_size > 1000:
+                return out_path
+        except Exception as e:
+            err = e
+    raise RuntimeError(f"Edge voice failed: {err if 'err' in dir() else 'empty audio'}")
+
+
 def generate_voice(text: str, out_path: Path, voice_id: str | None = None) -> Path:
+    if config.VOICE_PROVIDER == "edge":
+        return _edge_voice(text, out_path, voice_id or config.EDGE_VOICE_POOL[0]["id"])
     if config.VOICE_PROVIDER == "openai":
         resp = requests.post(
             "https://api.openai.com/v1/audio/speech",

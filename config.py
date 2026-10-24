@@ -24,7 +24,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1")
 PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
 
-VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "elevenlabs").lower()
+VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "edge").lower()  # edge | elevenlabs | openai
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
 ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_v3")  # v3 supports Malayalam
@@ -35,6 +35,14 @@ VOICE_POOL = [
     {"name": "Adam", "id": "pNInz6obpgDQGcFmaJgB", "style": "deep male"},
     {"name": "Daniel", "id": "onwK4e9ZLuTAKqWW03F9", "style": "authoritative male"},
     {"name": "Lily", "id": "pFZP5JQG7iQjIQuC4Bku", "style": "gentle female"},
+]
+# Free native Malayalam voices (Microsoft read-aloud). Variants by speed and pitch so
+# reels don't all sound the same. id format: "voice|rate|pitch"
+EDGE_VOICE_POOL = [
+    {"name": "Midhun", "id": "ml-IN-MidhunNeural|+4%|+0Hz", "style": "male, lively"},
+    {"name": "Sobhana", "id": "ml-IN-SobhanaNeural|+4%|+0Hz", "style": "female, clear"},
+    {"name": "Midhun (deep)", "id": "ml-IN-MidhunNeural|-4%|-8Hz", "style": "male, deep storyteller"},
+    {"name": "Sobhana (calm)", "id": "ml-IN-SobhanaNeural|-3%|-4Hz", "style": "female, calm"},
 ]
 OPENAI_TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")

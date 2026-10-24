@@ -200,6 +200,15 @@ def render_pending() -> None:
 
 def pick_voice(script: dict, hist: list) -> dict:
     """The script can name a voice; otherwise rotate through the pool reel by reel."""
+    used = sum(1 for h in hist if h.get("status") != "skipped")
+    if config.VOICE_PROVIDER == "edge":
+        pool = config.EDGE_VOICE_POOL
+        want = (script.get("voice") or "").lower()
+        if want in ("lily", "sarah", "charlotte", "sobhana"):      # female narrator requested
+            return pool[1] if used % 2 else pool[3]
+        if want:
+            return pool[0] if used % 2 else pool[2]
+        return pool[used % len(pool)]
     pool = config.VOICE_POOL
     want = script.get("voice")
     if want:
