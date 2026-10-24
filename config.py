@@ -67,6 +67,7 @@ BRAND = {
         "WORLD": "#FACC15",
         "TECH": "#38BDF8",
         "MYSTERY": "#FF4D5E",
+        "SPACE": "#A78BFA",
     },
     "text_color": "#FFFFFF",
     # Added to every image prompt so all reels share one look
