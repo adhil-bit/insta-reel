@@ -1,0 +1,65 @@
+{
+  "topic": {
+    "title": "Kerala grows rice below sea level",
+    "category": "SCIENCE",
+    "angle": "In Kuttanad, farmers grow rice on land that lies below sea level, much of it reclaimed from Vembanad Lake, and the world may need to learn from it as seas rise.",
+    "key_facts": [
+      "Large parts of Kuttanad's paddy land lie below mean sea level",
+      "Much of it was reclaimed from Vembanad Lake by building bunds (mud walls) and pumping out water",
+      "Murickan Joseph led some of the largest reclamation projects and became known as 'Kayal Raja' (King of the Backwaters)",
+      "The Thanneermukkom bund/barrier was built to stop saltwater intrusion into Kuttanad's fields",
+      "FAO recognised Kuttanad's below-sea-level farming system as a Globally Important Agricultural Heritage System (GIAHS) in 2013"
+    ],
+    "sources": [
+      "FAO GIAHS - Kuttanad Below Sea Level Farming System",
+      "Kerala government / M.S. Swaminathan Research Foundation reports on Kuttanad",
+      "Histories of Kayal land reclamation in Vembanad Lake"
+    ]
+  },
+  "category": "SCIENCE",
+  "headline": ["RICE GROWN", "BELOW THE SEA"],
+  "accent_words": ["SEA"],
+  "hook_voiceover": "കടലിനേക്കാൾ താഴ്ന്ന നിലത്ത് നെല്ല് വിളയുന്ന ഒരു നാട്. അത് നമ്മുടെ കേരളത്തിലാണ്.",
+  "cover_visual": "Cross-section: lake water held back by a mud wall, rice field lower than the water line",
+  "scenes": [
+    {
+      "voiceover": "കുട്ടനാട്ടിലെ പല പാടങ്ങളും സമുദ്രനിരപ്പിനേക്കാൾ താഴെയാണ്. ലോകത്ത് ഇങ്ങനെ കൃഷി ചെയ്യുന്ന അപൂർവം സ്ഥലങ്ങളിൽ ഒന്ന്.",
+      "caption": "Rice fields below sea level",
+      "highlight": "below",
+      "visual": "Landscape profile dipping below a dashed sea-level line"
+    },
+    {
+      "voiceover": "ഇതിൽ പലതും ഒരുകാലത്ത് വേമ്പനാട്ട് കായൽ തന്നെയായിരുന്നു. കായലിൽ ബണ്ടുകൾ കെട്ടി, വെള്ളം പമ്പ് ചെയ്ത് കളഞ്ഞാണ് ഈ നിലം ഉണ്ടാക്കിയത്.",
+      "caption": "Fields built inside a lake",
+      "highlight": "lake",
+      "visual": "Top-down lake: walls built, water pumped out, fields turn green"
+    },
+    {
+      "voiceover": "ഏറ്റവും വലിയ പദ്ധതികൾക്ക് പിന്നിലുണ്ടായിരുന്ന മുരിക്കൻ ജോസഫിനെ ആളുകൾ വിളിച്ചത് കായൽ രാജാവ് എന്നാണ്.",
+      "caption": "The King of the Backwaters",
+      "highlight": "King",
+      "visual": "A golden crown settling over reclaimed fields"
+    },
+    {
+      "voiceover": "പക്ഷേ കടൽ വെറുതെ വിടില്ല. വേനലിൽ ഉപ്പുവെള്ളം കയറി വരും. അത് തടയാനാണ് തണ്ണീർമുക്കം ബണ്ട് നിർമ്മിച്ചത്.",
+      "caption": "Holding back the salt",
+      "highlight": "salt",
+      "visual": "Salty water pushes in, barrier gates drop and stop it"
+    },
+    {
+      "voiceover": "ഇന്ന് ഐക്യരാഷ്ട്രസഭയുടെ എഫ്.എ.ഒ കുട്ടനാടിനെ ആഗോള കാർഷിക പൈതൃകമായി അംഗീകരിച്ചിട്ടുണ്ട്. കടൽ ഉയരുന്ന കാലത്ത്, ലോകം പഠിക്കേണ്ടത് ഒരുപക്ഷേ കുട്ടനാട്ടിൽ നിന്നാകും.",
+      "caption": "The world may learn from it",
+      "highlight": "learn",
+      "visual": "Sunrise over paddy fields and backwaters"
+    }
+  ],
+  "instagram_caption": "കടലിനേക്കാൾ താഴെ നെല്ല് വിളയുന്ന നാട് നമ്മുടെ കുട്ടനാടാണ് 🌾\n\nIn Kuttanad, Kerala, rice grows on land below sea level, much of it reclaimed from Vembanad Lake. The UN's FAO lists it as a globally important farming heritage.\n\n#kuttanad #kerala #malayalam #alappuzha #science #didyouknow #unexploredtruths",
+  "fact_check": [
+    "Many Kuttanad paddy fields lie below sea level -> FAO GIAHS page",
+    "Much of it reclaimed from Vembanad Lake with bunds and pumping -> FAO GIAHS, reclamation histories",
+    "Murickan Joseph was called 'Kayal Raja' -> reclamation histories",
+    "Thanneermukkom bund built to block saltwater intrusion -> Kerala irrigation records",
+    "FAO recognised Kuttanad as a GIAHS (2013) -> FAO GIAHS page",
+    "Written in chat without live web search: double-check names and dates before posting"
+  ]
+}
