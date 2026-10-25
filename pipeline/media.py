@@ -73,7 +73,7 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
     for attempt in range(4):
-        r = requests.post(url, params={"key": config.GEMINI_API_KEY}, json=body, timeout=180)
+        r = requests.post(url, headers={"x-goog-api-key": config.GEMINI_API_KEY}, json=body, timeout=180)
         if r.status_code == 429 or r.status_code >= 500:          # rate limit / busy: wait and retry
             time.sleep(15 * (attempt + 1)); continue
         if r.status_code >= 400:
