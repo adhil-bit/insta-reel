@@ -76,6 +76,17 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
                 media.generate_voice(scenes[j]["voiceover"], work / f"voice_{j}.mp3", voice["id"], provider="edge")
     durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
                  for i, s in enumerate(scenes)]
+    # Keep reels short: if the narration runs long, speed it up a little (pitch stays natural)
+    total = sum(durations) + config.END_CARD_SECONDS
+    factor = min(config.MAX_SPEEDUP, total / config.TARGET_SECONDS)
+    if factor > 1.02:
+        for i in range(len(scenes)):
+            f = work / f"voice_{i}.mp3"; tmp = work / f"voice_{i}_fast.mp3"
+            run(["ffmpeg", "-y", "-v", "error", "-i", str(f), "-filter:a", f"atempo={factor:.3f}", "-c:a", "libmp3lame", "-b:a", "160k", str(tmp)])
+            tmp.replace(f)
+        durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
+                     for i, s in enumerate(scenes)]
+        print(f"  narration sped up {factor:.2f}x to keep the reel short ({total:.0f}s -> {sum(durations) + config.END_CARD_SECONDS:.0f}s)")
 
     visuals = []
     archive_mode = config.BRAND.get("template") == "archive" and config.VISUAL_MODE == "code"

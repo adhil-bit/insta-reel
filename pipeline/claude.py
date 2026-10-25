@@ -57,7 +57,7 @@ Reply with ONLY a JSON object, no other text:
 
 
 def write_script(topic: dict) -> dict:
-    prompt = f"""Write a 35-45 second Instagram Reel script for this topic.
+    prompt = f"""Write a 30-40 second Instagram Reel script for this topic (each voiceover line max ~14 words).
 
 Topic: {topic['title']}
 Category: {topic['category']}
