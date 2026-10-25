@@ -7,7 +7,7 @@ import config
 
 F = config.FONTS_DIR.resolve()
 CAT_ML = {"HISTORY": "ചരിത്രം", "SCIENCE": "ശാസ്ത്രം", "NATURE": "പ്രകൃതി", "MYSTERY": "രഹസ്യം", "SPACE": "ബഹിരാകാശം",
-          "MONEY": "പണം", "TECH": "സാങ്കേതികം", "CLIMATE": "കാലാവസ്ഥ", "WORLD": "ലോകം"}
+          "MONEY": "പണം", "TECH": "സാങ്കേതികം", "CLIMATE": "കാലാവസ്ഥ", "WORLD": "ലോകം", "CULTURE": "സംസ്കാരം"}
 
 CSS = f"""
 @font-face {{ font-family: Baloo; src: url('{(F / "BalooChettan2.ttf").as_uri()}'); font-weight: 400 800; }}

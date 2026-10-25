@@ -1,0 +1,45 @@
+{
+  "topic": {
+    "title": "Malayalam: a language whose name is a palindrome",
+    "category": "CULTURE",
+    "angle": "MALAYALAM reads the same backwards; the language also has a rich 50+ letter script, Ezhuthachan's 'parrot songs' and classical status since 2013.",
+    "key_facts": [
+      "'Malayalam' written in English letters is a palindrome",
+      "Very few major language names are palindromes",
+      "The Malayalam script has more than fifty letters",
+      "Thunchath Ezhuthachan is regarded as the father of modern Malayalam; his works use the 'kilippattu' form, narrated by a parrot",
+      "Malayalam was granted classical language status in 2013"
+    ],
+    "sources": ["Government of India, Ministry of Culture (classical languages)", "Kerala Sahitya Akademi", "Encyclopaedic references on the Malayalam script"]
+  },
+  "category": "CULTURE",
+  "voice": "Midhun",
+  "post_on": "2026-11-01",
+  "headline": ["MALAYALAM", "BACKWARDS?"],
+  "accent_words": ["BACKWARDS?"],
+  "thumbnail_ml": "MALAYALAM തിരിച്ചു വായിച്ചാലും MALAYALAM!",
+  "thumbnail_accent": ["MALAYALAM!"],
+  "hook_voiceover": "നമ്മുടെ ഭാഷയുടെ പേര് തിരിച്ചു വായിച്ചാലും ഒന്നുതന്നെയാണ്. മലയാളം. എപ്പോഴെങ്കിലും ശ്രദ്ധിച്ചിട്ടുണ്ടോ?",
+  "cover_visual": "MALAYALAM in big letters with a shimmering mirror image",
+  "scenes": [
+    {"voiceover": "ഇംഗ്ലീഷിൽ എഴുതി നോക്കൂ. M A L A Y A L A M. ഇടത്തുനിന്ന് വായിച്ചാലും വലത്തുനിന്ന് വായിച്ചാലും ഒരേ വാക്ക്. ഇതിനെയാണ് പാലിൻഡ്രോം എന്ന് പറയുന്നത്.",
+     "caption": "Reads the same both ways", "caption_ml": "തിരിച്ചു വായിച്ചാലും ഒന്നുതന്നെ", "highlight": "same", "visual": "Letters pair up from both ends"},
+    {"voiceover": "ലോകത്തിലെ വലിയ ഭാഷകളിൽ, സ്വന്തം പേര് ഇങ്ങനെ പാലിൻഡ്രോം ആയവ വളരെ കുറവാണ്. അതിലൊന്നാണ് നമ്മുടെ മലയാളം.",
+     "caption": "A rare kind of name", "caption_ml": "അപൂർവമായ ഒരു പേര്", "highlight": "rare", "visual": "One glowing മലയാളം bubble among many"},
+    {"voiceover": "അക്ഷരങ്ങളുടെ കാര്യത്തിലും നമ്മൾ സമ്പന്നരാണ് കേട്ടോ. അമ്പതിലധികം അക്ഷരങ്ങളുള്ള ലിപിയാണ് മലയാളത്തിന്റേത്.",
+     "caption": "More than fifty letters", "caption_ml": "അമ്പതിലധികം അക്ഷരങ്ങൾ", "highlight": "fifty", "visual": "The alphabet fills in letter by letter"},
+    {"voiceover": "ആധുനിക മലയാളത്തിന്റെ പിതാവായി കണക്കാക്കുന്നത് തുഞ്ചത്ത് എഴുത്തച്ഛനെയാണ്. അദ്ദേഹം കഥ പറയിച്ചത് ഒരു കിളിയെക്കൊണ്ടാണ്, ഓർമ്മയുണ്ടോ?",
+     "caption": "Ezhuthachan's parrot songs", "caption_ml": "എഴുത്തച്ഛനും കിളിപ്പാട്ടും", "highlight": "parrot", "visual": "A parrot on a palm-leaf manuscript"},
+    {"voiceover": "2013-ൽ മലയാളത്തിന് ശ്രേഷ്ഠഭാഷാ പദവിയും കിട്ടി. ഇത്രയും ഭംഗിയുള്ള ഒരു ഭാഷ നമ്മുടേതാണ്. അഭിമാനം അല്ലേ?",
+     "caption": "Classical language since 2013", "caption_ml": "2013: ശ്രേഷ്ഠഭാഷ", "highlight": "2013", "visual": "A golden crown settles above മലയാളം"}
+  ],
+  "instagram_caption": "MALAYALAM reads the same backwards. Did you ever notice? 🔁\n\nOur language's name is a palindrome, something very few major languages can say. It has a script with more than fifty letters, a father of modern Malayalam who told his stories through a parrot, and classical language status since 2013. 📜\n\nWhat's your favourite Malayalam word? Tell us below 👇\n\nകേരളപ്പിറവി ആശംസകൾ! Send this to someone who loves Malayalam. 💛\n\n📚 Ministry of Culture · Kerala Sahitya Akademi\nEducational · Animated illustrations\n\n#Malayalam #KeralaPiravi #Kerala #MalayalamReels #Language UnexploredTruths DidYouKnow",
+  "fact_check": [
+    "'Malayalam' is a palindrome in English letters -> self-evident",
+    "Very few major language names are palindromes -> general knowledge (stated as 'very few')",
+    "Script has 50+ letters -> encyclopaedic references",
+    "Ezhuthachan, father of modern Malayalam; kilippattu narrated by a parrot -> Kerala Sahitya Akademi",
+    "Classical language status in 2013 -> Ministry of Culture",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
