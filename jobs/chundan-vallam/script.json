@@ -1,0 +1,43 @@
+{
+  "topic": {
+    "title": "Chundan Vallam: 100 rowers, one boat",
+    "category": "CULTURE",
+    "angle": "Kerala's snake boats are over 100 feet long with around a hundred rowers in perfect rhythm, and a 1952 visit by Nehru started the Nehru Trophy race.",
+    "key_facts": [
+      "Chundan vallam (snake boats) are over 100 feet long, with a tall raised stern",
+      "A single boat carries around a hundred rowers, rowing in rhythm to vanchipattu (boat songs)",
+      "In 1952 Prime Minister Jawaharlal Nehru was welcomed in Alappuzha by snake boats and presented a trophy",
+      "This began the Nehru Trophy Boat Race on Punnamada Lake, Alappuzha",
+      "It is now one of Kerala's biggest annual festivals, watched by huge crowds"
+    ],
+    "sources": ["Nehru Trophy Boat Race Society", "Kerala Tourism", "Alappuzha district administration"]
+  },
+  "category": "CULTURE",
+  "voice": "Midhun",
+  "headline": ["100 ROWERS,", "ONE BOAT"],
+  "accent_words": ["ONE"],
+  "thumbnail_ml": "നൂറ് പേർ, ഒരൊറ്റ വള്ളം!",
+  "thumbnail_accent": ["നൂറ്"],
+  "hook_voiceover": "നൂറോളം പേർ ഒരേ താളത്തിൽ തുഴയുന്ന ഒരൊറ്റ വള്ളം. ഇങ്ങനെയൊരു കാഴ്ച ലോകത്ത് വേറെ എവിടെ കാണും?",
+  "cover_visual": "Two snake boats racing across the backwaters at dawn",
+  "scenes": [
+    {"voiceover": "ഇതാണ് ചുണ്ടൻ വള്ളം. നൂറ് അടിയിലധികം നീളം! പാമ്പിന്റെ പത്തി പോലെ ഉയർന്നു നിൽക്കുന്ന അമരവും.",
+     "caption": "Over 100 feet long", "caption_ml": "100 അടിയിലധികം നീളം", "highlight": "100", "visual": "A snake boat in profile with a length marker"},
+    {"voiceover": "ഒറ്റ വള്ളത്തിൽ നൂറോളം തുഴക്കാർ. എല്ലാവരും ഒരേ താളത്തിൽ, വഞ്ചിപ്പാട്ടിന്റെ ഈണത്തിനൊപ്പം.",
+     "caption": "A hundred rowers, one rhythm", "caption_ml": "നൂറോളം തുഴക്കാർ, ഒരേ താളം", "highlight": "rhythm", "visual": "Rowers dipping their oars in perfect sync"},
+    {"voiceover": "1952-ൽ പ്രധാനമന്ത്രി നെഹ്റു ആലപ്പുഴയിൽ എത്തിയപ്പോൾ ചുണ്ടൻ വള്ളങ്ങളാണ് അദ്ദേഹത്തെ വരവേറ്റത്. ആ കാഴ്ച കണ്ട് ആവേശം കയറി അദ്ദേഹം ഒരു ട്രോഫി സമ്മാനിച്ചു.",
+     "caption": "1952: Nehru's visit", "caption_ml": "1952: നെഹ്റുവിന്റെ സന്ദർശനം", "highlight": "1952", "visual": "Boats escort a ferry; a silver trophy appears"},
+    {"voiceover": "അങ്ങനെയാണ് പുന്നമടക്കായലിലെ നെഹ്റു ട്രോഫി വള്ളംകളി തുടങ്ങിയത്.",
+     "caption": "The Nehru Trophy race", "caption_ml": "നെഹ്റു ട്രോഫി വള്ളംകളി", "highlight": "Nehru", "visual": "Boats race in lanes towards the finish"},
+    {"voiceover": "ഇന്ന് ആയിരക്കണക്കിന് ആളുകൾ കരയിൽ നിന്ന് ആർത്തുവിളിക്കുന്ന വലിയൊരു ഉത്സവമാണ് അത്. ഇതാണ് കേരളത്തിന്റെ സ്വന്തം ടീം സ്പിരിറ്റ്!",
+     "caption": "Kerala's team spirit", "caption_ml": "കേരളത്തിന്റെ ടീം സ്പിരിറ്റ്", "highlight": "team", "visual": "A cheering crowd on the bank as a boat passes"}
+  ],
+  "instagram_caption": "100 rowers. One boat. One rhythm. 🚣‍♂️🌊\n\nKerala's chundan vallam is over 100 feet long and carries around a hundred rowers, all moving to the beat of vanchipattu. When Nehru visited Alappuzha in 1952, the snake boats welcomed him, and he was so thrilled he gave a trophy. That's how the Nehru Trophy Boat Race began. 🏆\n\nHave you watched it live at Punnamada? 👀\n\nSend this to someone from Alappuzha. 💛\n\n📚 Nehru Trophy Boat Race Society · Kerala Tourism\nEducational · Animated illustrations\n\n#ChundanVallam #NehruTrophy #Alappuzha #Malayalam #MalayalamReels UnexploredTruths Kerala BoatRace",
+  "fact_check": [
+    "Snake boats over 100 feet long -> Kerala Tourism",
+    "Around a hundred rowers, vanchipattu rhythm -> NTBR Society",
+    "1952 Nehru visit, trophy -> NTBR Society",
+    "Nehru Trophy race on Punnamada Lake -> NTBR Society",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
