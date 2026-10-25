@@ -3,27 +3,8 @@ name: Post reel
 # Posts the next reel in the queue (oldest first) at the day-wise times below,
 # or a specific reel when run by hand.
 on:
-  schedule:   # table times shifted a few minutes off the hour (IST), written in UTC
-    - cron: "24 23 * * 0"   # Mon 04:54 IST
-    - cron: "36 3 * * 1"    # Mon 09:06 IST
-    - cron: "23 15 * * 1"   # Mon 20:53 IST
-    - cron: "35 19 * * 1"   # Tue 01:05 IST
-    - cron: "26 21 * * 1"   # Tue 02:56 IST
-    - cron: "37 2 * * 2"    # Tue 08:07 IST
-    - cron: "25 0 * * 3"    # Wed 05:55 IST
-    - cron: "34 1 * * 3"    # Wed 07:04 IST
-    - cron: "36 16 * * 3"   # Wed 22:06 IST
-    - cron: "23 2 * * 4"    # Thu 07:53 IST
-    - cron: "35 5 * * 4"    # Thu 11:05 IST
-    - cron: "36 22 * * 4"   # Fri 04:06 IST
-    - cron: "24 6 * * 5"    # Fri 11:54 IST
-    - cron: "37 8 * * 5"    # Fri 14:07 IST
-    - cron: "34 4 * * 6"    # Sat 10:04 IST
-    - cron: "25 12 * * 6"   # Sat 17:55 IST
-    - cron: "36 13 * * 6"   # Sat 19:06 IST
-    - cron: "35 0 * * 0"    # Sun 06:05 IST
-    - cron: "23 1 * * 0"    # Sun 06:53 IST
-    - cron: "34 9 * * 0"    # Sun 15:04 IST
+  schedule:   # checks every hour; posts only when a slot from config.POST_SLOTS is due
+    - cron: "17 * * * *"
   workflow_dispatch:
     inputs:
       reel:
@@ -63,15 +44,16 @@ jobs:
           python-version: "3.12"
           cache: pip
 
-      - name: Random extra delay (0-4 min) so posts never land at a fixed minute
-        if: ${{ github.event_name == 'schedule' }}
-        run: sleep $(( RANDOM % 240 ))
 
       - name: Pick the reel
         env:
           INPUT_REEL: ${{ github.event.inputs.reel }}
         run: |
           pip install -q -r requirements.txt
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(python main.py due)" != "yes" ]; then
+            echo "No posting slot due right now."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0
+          fi
+          [ "${{ github.event_name }}" = "schedule" ] && sleep $(( RANDOM % 300 ))
           REEL="${INPUT_REEL:-$(python main.py next)}"
           if [ -z "$REEL" ]; then echo "Queue is empty, nothing to post."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
           echo "REEL=$REEL" >> "$GITHUB_ENV"

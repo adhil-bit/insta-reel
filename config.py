@@ -123,3 +123,14 @@ COVER_MIN_SECONDS = 2.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.35     # small pause after each voice line
 END_CARD_SECONDS = 2.4  # 'follow us' card at the end of every reel
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel
+
+
+# Posting table (IST). The post workflow checks every hour and posts whenever a slot
+# has passed that hasn't been used yet, so a late or skipped GitHub run is caught up.
+POST_SLOTS = {
+    "Mon": ["04:54", "09:06", "20:53"], "Tue": ["01:05", "02:56", "08:07"],
+    "Wed": ["05:55", "07:04", "22:06"], "Thu": ["07:53", "11:05"],
+    "Fri": ["04:06", "11:54", "14:07"], "Sat": ["10:04", "17:55", "19:06"],
+    "Sun": ["06:05", "06:53", "15:04"],
+}
+MIN_GAP_MINUTES = 40   # never post two reels closer together than this

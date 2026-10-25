@@ -376,6 +376,27 @@ def skip(folder_name: str) -> None:
     print(f"Skipped {folder_name}")
 
 
+def is_due() -> bool:
+    """True if a posting slot has passed today (IST) that no post has used yet."""
+    from datetime import timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30))
+    now = datetime.now(ist)
+    slots = config.POST_SLOTS.get(now.strftime("%a"), [])
+    passed = sum(1 for s in slots if now.strftime("%H:%M") >= s)
+    posts_today, last = 0, None
+    for h in history():
+        p = h.get("posted", "")
+        if h.get("status") != "posted" or not p or p == "manual":
+            continue
+        t = datetime.fromisoformat(p).replace(tzinfo=timezone.utc).astimezone(ist)   # stored in UTC
+        last = max(last, t) if last else t
+        if t.date() == now.date():
+            posts_today += 1
+    if last and (now - last).total_seconds() < config.MIN_GAP_MINUTES * 60:
+        return False
+    return passed > posts_today
+
+
 def next_pending() -> str | None:
     """Next reel to post: a reel dated for today first (e.g. a festival), otherwise the
     oldest waiting reel. Reels dated for a future day are held back until then."""
@@ -431,7 +452,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -456,6 +477,8 @@ if __name__ == "__main__":
         render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
+    elif args.command == "due":
+        print("yes" if is_due() else "no")
     elif args.command == "next":
         print(next_pending() or "")
     elif args.command in ("post", "skip"):
