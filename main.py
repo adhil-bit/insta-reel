@@ -161,6 +161,7 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
 
     hist.append({"title": topic["title"], "category": topic["category"],
                  "folder": folder.name, "status": "pending", "voice": voice["name"],
+                 **({"post_on": script["post_on"]} if script.get("post_on") else {}),
                  "created": datetime.now().isoformat(timespec="minutes")})
     save_json(config.HISTORY_FILE, hist)
 
@@ -376,9 +377,14 @@ def skip(folder_name: str) -> None:
 
 
 def next_pending() -> str | None:
-    """Oldest reel still waiting to be posted (the posting queue)."""
-    pending = [h for h in history() if h["status"] == "pending"]
-    return pending[0]["folder"] if pending else None
+    """Next reel to post: a reel dated for today first (e.g. a festival), otherwise the
+    oldest waiting reel. Reels dated for a future day are held back until then."""
+    from datetime import timedelta, timezone
+    today = datetime.now(timezone(timedelta(hours=5, minutes=30))).date().isoformat()   # IST
+    pending = [h for h in history() if h["status"] == "pending" and h.get("post_on", today) <= today]
+    dated = [h for h in pending if h.get("post_on") == today]
+    pick = (dated or pending)
+    return pick[0]["folder"] if pick else None
 
 
 def latest_pending() -> str | None:

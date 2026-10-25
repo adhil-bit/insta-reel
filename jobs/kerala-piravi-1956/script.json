@@ -1,0 +1,44 @@
+{
+  "topic": {
+    "title": "Before 1956 there was no Kerala state",
+    "category": "HISTORY",
+    "angle": "Malayalis lived in three separate regions until language-based reorganisation created Kerala on 1 November 1956.",
+    "key_facts": [
+      "At independence, Malayalam-speaking areas were split between Travancore, Cochin and Malabar (part of Madras)",
+      "Travancore and Cochin merged in 1949 to form Travancore-Cochin",
+      "Under the States Reorganisation Act, Kerala was formed on 1 November 1956, adding Malabar (and Kasaragod)",
+      "Kerala's first election in 1957 drew world attention; E.M.S. Namboodiripad became Chief Minister",
+      "1 November is celebrated as Kerala Piravi"
+    ],
+    "sources": ["Government of Kerala", "States Reorganisation Act, 1956", "Kerala Legislative Assembly history"]
+  },
+  "category": "HISTORY",
+  "voice": "Sobhana",
+  "post_on": "2026-11-01",
+  "headline": ["BEFORE 1956,", "NO KERALA"],
+  "accent_words": ["KERALA"],
+  "thumbnail_ml": "1956-ന് മുമ്പ് കേരളം എന്ന സംസ്ഥാനമേ ഇല്ലായിരുന്നു!",
+  "thumbnail_accent": ["കേരളം"],
+  "hook_voiceover": "നവംബർ 1 നമ്മുടെ കേരളത്തിന്റെ പിറന്നാൾ ആണ്. പക്ഷേ അതിന് മുമ്പ് കേരളം എന്ന ഒരു സംസ്ഥാനമേ ഉണ്ടായിരുന്നില്ല, അറിയാമോ?",
+  "cover_visual": "Kerala's outline fills with green while fireworks burst",
+  "scenes": [
+    {"voiceover": "സ്വാതന്ത്ര്യം കിട്ടുമ്പോൾ മലയാളികൾ മൂന്ന് നാടുകളിലായിരുന്നു. തിരുവിതാംകൂർ, കൊച്ചി, പിന്നെ മദ്രാസിന്റെ ഭാഗമായ മലബാർ.",
+     "caption": "Three lands, one language", "caption_ml": "മൂന്ന് നാടുകൾ, ഒരു ഭാഷ", "highlight": "one", "visual": "Malabar, Kochi and Travancore drift apart"},
+    {"voiceover": "1949-ൽ തിരുവിതാംകൂറും കൊച്ചിയും ഒന്നായി. പിന്നെ ഭാഷയുടെ അടിസ്ഥാനത്തിൽ സംസ്ഥാനങ്ങൾ വരച്ചപ്പോൾ മലബാറും കൂടെ ചേർന്നു.",
+     "caption": "Joined by language", "caption_ml": "ഭാഷ ഒന്നിപ്പിച്ചു", "highlight": "language", "visual": "The three parts slide together and turn one colour"},
+    {"voiceover": "അങ്ങനെ 1956 നവംബർ 1-ന് കേരളം പിറന്നു. ഐക്യകേരളം എന്ന സ്വപ്നം സത്യമായ ദിവസം.",
+     "caption": "1 November 1956", "caption_ml": "1956 നവംബർ 1", "highlight": "1956", "visual": "Calendar pages flip to the date"},
+    {"voiceover": "തൊട്ടടുത്ത വർഷത്തെ ആദ്യ തിരഞ്ഞെടുപ്പ് തന്നെ ലോകം മുഴുവൻ ശ്രദ്ധിച്ചു. ഇ.എം.എസ് ആദ്യ മുഖ്യമന്ത്രിയായി.",
+     "caption": "1957: the first election", "caption_ml": "1957: ആദ്യ തിരഞ്ഞെടുപ്പ്", "highlight": "1957", "visual": "Votes drop into a ballot box"},
+    {"voiceover": "ഇന്ന് ലോകം മുഴുവൻ മലയാളികളുണ്ട്. പക്ഷേ എവിടെ ആയാലും നവംബർ 1 നമുക്ക് സ്പെഷ്യൽ ആണ്, അല്ലേ? എല്ലാവർക്കും കേരളപ്പിറവി ആശംസകൾ!",
+     "caption": "Happy Kerala Piravi!", "caption_ml": "കേരളപ്പിറവി ആശംസകൾ!", "highlight": "Kerala", "visual": "The map lights up city by city"}
+  ],
+  "instagram_caption": "Before 1956, there was no Kerala state. 🌴\n\nAt independence, Malayalis lived in three separate regions: Travancore, Cochin and Malabar. Travancore and Cochin joined in 1949, and when India redrew its states by language, Malabar came in too. On 1 November 1956, Kerala was born. 🎉\n\nWhere are you celebrating Kerala Piravi from? 👀\n\nകേരളപ്പിറവി ആശംസകൾ! Send this to a Malayali far from home. ✈️\n\n📚 Government of Kerala · States Reorganisation Act, 1956\nEducational · Animated illustrations\n\n#KeralaPiravi #Kerala #Malayalam #MalayalamReels #November1 UnexploredTruths KeralaHistory",
+  "fact_check": [
+    "Three regions at independence: Travancore, Cochin, Malabar (Madras) -> Govt of Kerala",
+    "Travancore-Cochin formed 1949 -> Govt of Kerala",
+    "Kerala formed 1 Nov 1956 under States Reorganisation Act -> SR Act 1956",
+    "1957 election; E.M.S. Namboodiripad first CM -> Kerala Assembly history",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
