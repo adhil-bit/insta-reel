@@ -1,0 +1,44 @@
+{
+  "topic": {
+    "title": "Aranmula Kannadi: the mirror without glass",
+    "category": "CULTURE",
+    "angle": "Aranmula's famous mirror is made of polished metal, not glass, from an alloy whose exact recipe stays a family secret.",
+    "key_facts": [
+      "Aranmula Kannadi is a handmade metal mirror from Aranmula in Pathanamthitta, Kerala",
+      "It is made from a copper-tin alloy instead of glass; the exact proportions are a closely guarded secret of artisan families",
+      "The metal is polished for days to create the reflective surface",
+      "It reflects from the front surface, avoiding the faint double image of ordinary glass mirrors",
+      "It is one of the ashtamangalyam items and has a Geographical Indication (GI) tag"
+    ],
+    "sources": ["Geographical Indications Registry (India)", "Kerala Tourism", "Features on Aranmula artisans"]
+  },
+  "category": "CULTURE",
+  "voice": "Sobhana (calm)",
+  "headline": ["A MIRROR", "WITHOUT GLASS"],
+  "accent_words": ["GLASS"],
+  "thumbnail_ml": "ഗ്ലാസില്ലാത്ത ഒരു കണ്ണാടി!",
+  "thumbnail_accent": ["ഗ്ലാസില്ലാത്ത"],
+  "hook_voiceover": "ഗ്ലാസ് ഇല്ലാത്ത ഒരു കണ്ണാടി! അതും നമ്മുടെ പത്തനംതിട്ടയിലെ ആറന്മുളയിൽ. കേട്ടിട്ടുണ്ടോ?",
+  "cover_visual": "An ornate oval metal mirror with a moving shine",
+  "scenes": [
+    {"voiceover": "ആറന്മുള കണ്ണാടി ഉണ്ടാക്കുന്നത് ഗ്ലാസ് കൊണ്ടല്ല, ലോഹം കൊണ്ടാണ്. ചെമ്പും വെളുത്തീയവും ചേർന്ന ഒരു പ്രത്യേക കൂട്ട്.",
+     "caption": "Not glass, but metal", "caption_ml": "ഗ്ലാസല്ല, ലോഹം", "highlight": "metal", "visual": "Copper and tin melt together in a crucible"},
+    {"voiceover": "പക്ഷേ ആ കൂട്ടിന്റെ കൃത്യമായ അളവ്? അത് ഇന്നും ചില കുടുംബങ്ങൾക്ക് മാത്രം അറിയാവുന്ന രഹസ്യമാണ്.",
+     "caption": "A family secret", "caption_ml": "തലമുറകളുടെ രഹസ്യം", "highlight": "secret", "visual": "A locked wooden box glowing at the seams"},
+    {"voiceover": "ദിവസങ്ങളോളം ഉരച്ചു മിനുക്കിയാണ് ഈ ലോഹത്തെ ഒരു കണ്ണാടിയാക്കി മാറ്റുന്നത്.",
+     "caption": "Days of polishing", "caption_ml": "ദിവസങ്ങൾ നീളുന്ന മിനുക്കൽ", "highlight": "polishing", "visual": "A dull metal disc polished to a shine"},
+    {"voiceover": "സാധാരണ കണ്ണാടിയിൽ ഗ്ലാസിന്റെ പിന്നിൽ നിന്നാണ് പ്രതിബിംബം വരുന്നത്. ഇവിടെ നേരെ മുൻപ്രതലത്തിൽ നിന്ന്. അതുകൊണ്ട് ചിത്രം കൂടുതൽ തെളിഞ്ഞു കാണാം.",
+     "caption": "Reflects from the front", "caption_ml": "മുന്നിൽ നിന്നുള്ള പ്രതിബിംബം", "highlight": "front", "visual": "Light rays: glass mirror vs metal mirror"},
+    {"voiceover": "അഷ്ടമംഗല്യത്തിലെ ഒരു ഭാഗം കൂടിയാണ് ഈ കണ്ണാടി. ഭൗമസൂചികാ പദവിയും ഇതിനുണ്ട്. ആറന്മുളയുടെ സ്വന്തം അഭിമാനം!",
+     "caption": "Aranmula's pride", "caption_ml": "ആറന്മുളയുടെ അഭിമാനം", "highlight": "pride", "visual": "The mirror between brass lamps"}
+  ],
+  "instagram_caption": "A mirror with no glass, made in Kerala. 🪞✨\n\nAranmula Kannadi is made from polished metal, a copper-tin alloy whose exact recipe is still a family secret. Artisans polish it for days until it shines, and because it reflects straight from the front surface, the image looks clearer than an ordinary mirror. 🌟\n\nHave you seen one in real life? 👀\n\nSend this to someone from Pathanamthitta. 💛\n\n📚 GI Registry · Kerala Tourism\nEducational · Animated illustrations\n\n#AranmulaKannadi #Aranmula #Kerala #Malayalam #MalayalamReels UnexploredTruths KeralaCulture Handmade",
+  "fact_check": [
+    "Handmade metal mirror from Aranmula, Pathanamthitta -> Kerala Tourism",
+    "Copper-tin alloy; exact recipe a family secret -> features / GI registry",
+    "Polished for days -> features",
+    "Front-surface reflection -> GI registry description",
+    "Part of ashtamangalyam; GI tag -> GI registry / Kerala Tourism",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
