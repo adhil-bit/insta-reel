@@ -1,0 +1,47 @@
+name: Image test
+
+# Checks whether the Gemini key can generate images (for photo-real reel backgrounds).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          mkdir -p logs/images
+          python3 - << 'PY'
+          import base64, json, os, urllib.request
+          key = os.environ["GEMINI_API_KEY"]; out = {}
+          prompt = ("Photorealistic cinematic vertical 9:16 image: an ornate antique oval metal mirror (Aranmula Kannadi from Kerala) "
+                    "in a bronze frame on a carved stand, on dark red velvet, warm temple lamp light, shallow depth of field, no text, no people")
+          for model in ["gemini-2.5-flash-image", "gemini-2.5-flash-image-preview", "gemini-2.0-flash-preview-image-generation"]:
+              body = {"contents": [{"parts": [{"text": prompt}]}],
+                      "generationConfig": {"responseModalities": ["TEXT", "IMAGE"]}}
+              req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
+                                           data=json.dumps(body).encode(), headers={"Content-Type": "application/json", "x-goog-api-key": key})
+              try:
+                  with urllib.request.urlopen(req, timeout=120) as r:
+                      d = json.loads(r.read())
+                  parts = d["candidates"][0]["content"]["parts"]
+                  imgs = [p for p in parts if "inlineData" in p]
+                  if imgs:
+                      open(f"logs/images/{model}.png", "wb").write(base64.b64decode(imgs[0]["inlineData"]["data"]))
+                      out[model] = "ok"
+                  else:
+                      out[model] = "no image: " + str(parts)[:200]
+              except urllib.error.HTTPError as e:
+                  out[model] = f"HTTP {e.code}: {e.read().decode()[:300]}"
+              except Exception as e:
+                  out[model] = f"error: {e}"
+          json.dump(out, open("logs/images/result.json", "w"), indent=2); print(out)
+          PY
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -qm "image test" && git pull -q --rebase && git push -q || true
