@@ -15,7 +15,7 @@ const c = makeCanvas(), g = c.getContext('2d'); const bg = bgL();
 function ray(x0, y0, x1, y1, a, col) { g.strokeStyle = col; g.globalAlpha = a; g.lineWidth = 6; g.beginPath(); g.moveTo(x0, y0); g.lineTo(x1, y1); g.stroke(); g.globalAlpha = 1; }
 window.renderFrame = function (t) { const k = clamp(t / (DURATION * 0.88)), p = ease.inOut(clamp(k * 1.3));
   g.globalAlpha = 1; g.drawImage(bg, 0, 0);
-  const top = H * 0.16, mid = H * 0.43;
+  const top = H * 0.27, mid = H * 0.5;
   // ordinary mirror: glass front, silver at the back, a faint second image
   g.fillStyle = 'rgba(160,200,230,0.35)'; g.fillRect(W * 0.62, top, 60, 260); g.fillStyle = '#9aa0aa'; g.fillRect(W * 0.62 + 60, top, 16, 260);
   ray(W * 0.12, top + 30, W * 0.62 + 60, top + 130, p, '#ffd27a'); ray(W * 0.62 + 60, top + 130, W * 0.12, top + 230, p, '#ffd27a'); ray(W * 0.62, top + 128, W * 0.12, top + 250, p * 0.35, '#ffd27a');

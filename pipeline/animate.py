@@ -9,6 +9,9 @@ from PIL import Image, ImageStat
 import config
 
 W, H, FPS = config.WIDTH, config.HEIGHT, config.FPS
+import base64 as _b64
+# inlined as a data URI: WebGL refuses textures loaded from file:// pages
+EARTH_TEX = "data:image/jpeg;base64," + _b64.b64encode((Path(__file__).resolve().parent.parent / "vendor" / "earth_2048.jpg").read_bytes()).decode()
 THREE_JS = (config.ROOT / "vendor" / "three.min.js").resolve().as_uri()
 
 
@@ -20,7 +23,7 @@ class AnimationError(Exception):
 TEMPLATE = """<!doctype html><html><head><meta charset="utf-8">
 <style>html,body{margin:0;padding:0;background:#04060b;overflow:hidden;width:%(W)dpx;height:%(H)dpx}
 canvas{display:block;position:absolute;left:0;top:0}</style>
-<script src="%(THREE)s"></script></head><body><script>
+<script src="%(THREE)s"></script></head><body><img id="earthTex" src="%(EARTH)s" style="display:none"><script>
 const W=%(W)d, H=%(H)d, ACCENT="%(ACCENT)s", DURATION=%(DURATION).3f;
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
   t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -103,7 +106,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
     """Render the animation to an MP4 of exactly `duration` seconds."""
     from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
-    html = TEMPLATE % {"W": W, "H": H, "THREE": THREE_JS, "ACCENT": accent,
+    html = TEMPLATE % {"W": W, "H": H, "THREE": THREE_JS, "EARTH": EARTH_TEX, "ACCENT": accent,
                        "DURATION": duration, "SEED": seed}
     html = html.replace("document.body.appendChild(c)", "(document.getElementById('stage')||document.body).appendChild(c)")
     if wrap:                     # a reel template wraps the animation (it draws into #stage)
@@ -124,7 +127,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
             page.wait_for_load_state("load")
 
             def frame(t: float) -> None:
-                page.evaluate("t => window.renderFrame(t)", t)
+                page.evaluate("t => { window.renderFrame(t); if (window.overlayFrame) window.overlayFrame(t); }", t)
                 if errors:
                     raise AnimationError(f"At t={t:.2f}s: " + "; ".join(errors[:3]))
 

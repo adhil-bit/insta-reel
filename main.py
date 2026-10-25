@@ -94,9 +94,15 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         print(f"  narration sped up {factor:.2f}x to keep the reel short ({total:.0f}s -> {sum(durations) + config.END_CARD_SECONDS:.0f}s)")
 
     visuals = []
-    archive_mode = config.BRAND.get("template") == "archive" and config.VISUAL_MODE == "code"
+    template = script.get("template") or config.BRAND.get("template")
+    archive_mode = template in ("archive", "explainer") and config.VISUAL_MODE == "code"   # template drawn into frames
     wraps = [None] * len(scenes)
-    if archive_mode:
+    if template == "explainer" and config.VISUAL_MODE == "code":
+        from pipeline import explainer
+        script.setdefault("sources", (topic or {}).get("sources", []))
+        wraps = [explainer.page("cover" if s.get("cover") else "scene", script, s, durations[i], durations[i] - config.SCENE_PADDING)
+                 for i, s in enumerate(scenes)]
+    elif archive_mode:
         from pipeline import archive
         file_no = sum(1 for h in hist if h.get("status") != "skipped") + 1
         n_scenes = len(scenes) - 1
@@ -145,7 +151,7 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     try:
         from pipeline import endcard
         clips.append(endcard.make(script, _frame_at(visuals[-1], work, 0.95), work,
-                                  html=archive.endcard_page(script, file_no) if archive_mode else None))
+                                  html=archive.endcard_page(script, file_no) if template == "archive" and archive_mode else None))
         durations = durations + [config.END_CARD_SECONDS]
         print("  follow end card added")
     except Exception as e:
@@ -155,6 +161,8 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     print("6/6 Sound design, thumbnail and export...")
     from pipeline import sound
     bed = sound.make_bed(durations, script["category"], work / "bed.wav")
+    if template == "explainer":                      # livelier score: plucked arpeggio, soft pulse, hats
+        bed = sound.add_pulse(bed, sum(durations), work / "bed_pulse.wav")
     final = video.add_music(joined, folder / "reel.mp4", bed=bed)
     try:
         from pipeline import thumbnail

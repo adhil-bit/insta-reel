@@ -42,3 +42,27 @@ def make_bed(durations: list[float], category: str, out: Path) -> Path:
     run(["ffmpeg", "-y", "-v", "error", *inputs, "-filter_complex", ";".join(parts),
          "-map", "[out]", "-ar", str(SR), str(out)])
     return out
+
+
+def add_pulse(bed: Path, total: float, out: Path) -> Path:
+    """Layer an original, livelier score over the ambient bed: a soft plucked arpeggio
+    (Am-F-C-G, 2 s per chord), a gentle sub pulse on the beat and quiet off-beat hats."""
+    chords = [[220.0, 261.63, 329.63, 440.0], [174.61, 220.0, 261.63, 349.23],
+              [196.0, 261.63, 329.63, 392.0], [196.0, 246.94, 293.66, 392.0]]
+    def note_expr():
+        e = "0"
+        for ci in range(3, -1, -1):
+            inner = "0"
+            for ni in range(3, -1, -1):
+                inner = f"if(eq(mod(floor(t*4),4),{ni}),{chords[ci][ni]},{inner})"
+            e = f"if(eq(mod(floor(t/2),4),{ci}),{inner},{e})"
+        return e
+    f = note_expr()
+    pluck = f"0.07*(sin(2*PI*({f})*t)+0.3*sin(4*PI*({f})*t))*exp(-7*mod(t,0.25))"
+    sub = "0.10*sin(2*PI*55*t)*exp(-9*mod(t,0.5))"
+    hat = "0.012*(random(0)*2-1)*exp(-45*mod(t+0.125,0.25))"
+    fade = f"min(1,t/1.5)*min(1,({total:.3f}-t)/1.5)"
+    run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"aevalsrc=exprs='({pluck}+{sub}+{hat})*{fade}':s={SR}:d={total:.3f}",
+         "-i", str(bed), "-filter_complex", "[0:a]lowpass=f=5200,aecho=0.8:0.5:250:0.25[p];[1:a][p]amix=inputs=2:weights='1 0.9':normalize=0[a]",
+         "-map", "[a]", "-ar", str(SR), str(out)])
+    return out
