@@ -235,6 +235,9 @@ def pick_voice(script: dict, hist: list) -> dict:
     if config.VOICE_PROVIDER in ("edge", "gemini"):
         pool = config.EDGE_VOICE_POOL
         want = (script.get("voice") or "").lower()
+        for v in pool:
+            if want == v["name"].lower():
+                return v
         if want in ("kore", "aoede", "leda", "zephyr", "sulafat"):
             want = "sobhana"
         if want in ("lily", "sarah", "charlotte", "sobhana"):      # female narrator requested

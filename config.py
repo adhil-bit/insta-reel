@@ -40,9 +40,10 @@ VOICE_POOL = [
 # below is applied to every line. Falls back to the Edge voices if Gemini fails.
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
-GEMINI_STYLE = os.getenv("GEMINI_STYLE", "Read this Malayalam narration like a gripping Malayalam storyteller on a popular "
-                         "explainer channel: natural Kerala Malayalam pronunciation, expressive, curious, clear, "
-                         "medium-fast pace, with a small dramatic pause before the twist")
+GEMINI_STYLE = os.getenv("GEMINI_STYLE", "You are a native Malayali from Kerala narrating a popular Malayalam Instagram explainer. "
+                         "Speak in natural, conversational Kerala Malayalam with an authentic Kerala accent, like talking "
+                         "to a friend: warm, curious, expressive, medium-fast, a little dramatic pause before the twist. "
+                         "Say English words (KGF, 1902) the way Malayalis naturally say them. Read this")
 GEMINI_VOICE_POOL = [
     {"name": "Charon", "id": "Charon", "gender": "m", "style": "male, informative"},
     {"name": "Kore", "id": "Kore", "gender": "f", "style": "female, firm"},
