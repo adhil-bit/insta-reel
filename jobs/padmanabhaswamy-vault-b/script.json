@@ -10,27 +10,63 @@
       "Vault B has not been fully opened and inventoried; opening it is opposed by many on religious and traditional grounds",
       "In July 2020 the Supreme Court upheld the Travancore royal family's rights in the temple's administration"
     ],
-    "sources": ["Supreme Court of India judgment (July 2020)", "The Hindu / Indian Express reporting (2011-2020)", "Reports of the court-appointed committee"]
+    "sources": [
+      "Supreme Court of India judgment (July 2020)",
+      "The Hindu / Indian Express reporting (2011-2020)",
+      "Reports of the court-appointed committee"
+    ]
   },
   "category": "MYSTERY",
   "voice": "Brian",
-  "headline": ["THE VAULT", "NO ONE COUNTED"],
-  "accent_words": ["COUNTED"],
+  "headline": [
+    "THE VAULT",
+    "NO ONE COUNTED"
+  ],
+  "accent_words": [
+    "COUNTED"
+  ],
   "thumbnail_ml": "നിലവറ ബി-യിൽ എന്താണ്?",
-  "thumbnail_accent": ["ബി-യിൽ"],
+  "thumbnail_accent": [
+    "ബി-യിൽ"
+  ],
   "hook_voiceover": "ലോകത്തെ ഞെട്ടിച്ച ഒരു നിധിശേഖരം. പക്ഷേ അതിലെ ഒരു നിലവറ ഇന്നും ഒരു രഹസ്യമാണ്.",
   "cover_visual": "Temple tower at night, a sealed vault below leaking golden light",
   "scenes": [
-    {"voiceover": "തിരുവനന്തപുരത്തെ ശ്രീ പത്മനാഭസ്വാമി ക്ഷേത്രം. ഇതിനടിയിൽ ഒന്നിലധികം നിലവറകളുണ്ട്.",
-     "caption": "Beneath a famous temple", "highlight": "Beneath", "visual": "Cross-section: vault rooms under the temple, one marked"},
-    {"voiceover": "2011-ൽ സുപ്രീം കോടതി നിയോഗിച്ച സംഘം നിലവറകളിലെ സമ്പത്തിന്റെ കണക്കെടുപ്പ് നടത്തി.",
-     "caption": "2011: a court-ordered count", "highlight": "2011", "visual": "Torch beams sweep a vault, chests ticked off"},
-    {"voiceover": "സ്വർണ്ണം, രത്നങ്ങൾ, പുരാതന ആഭരണങ്ങൾ. ഒരു ലക്ഷം കോടി രൂപയ്ക്ക് മുകളിൽ മൂല്യമെന്നാണ് റിപ്പോർട്ടുകൾ.",
-     "caption": "Gold, gems, ancient jewels", "highlight": "Gold", "visual": "A glittering pile of treasure"},
-    {"voiceover": "പക്ഷേ നിലവറ ബി ഇന്നും പൂർണ്ണമായി തുറന്ന് കണക്കെടുത്തിട്ടില്ല. വിശ്വാസങ്ങളും ആചാരങ്ങളും കാരണം പലരും അതിനെ എതിർക്കുന്നു.",
-     "caption": "Vault B: still uncounted", "highlight": "uncounted", "visual": "A massive locked iron door with chains"},
-    {"voiceover": "2020-ൽ സുപ്രീം കോടതി ക്ഷേത്ര ഭരണത്തിൽ തിരുവിതാംകൂർ രാജകുടുംബത്തിന്റെ അവകാശം ശരിവെച്ചു. നിലവറ ബിയുടെ രഹസ്യം ഇന്നും തുടരുന്നു.",
-     "caption": "The mystery continues", "highlight": "mystery", "visual": "The temple at night with rows of oil lamps"}
+    {
+      "voiceover": "തിരുവനന്തപുരത്തെ ശ്രീ പത്മനാഭസ്വാമി ക്ഷേത്രം. ഇതിനടിയിൽ ഒന്നിലധികം നിലവറകളുണ്ട്.",
+      "caption": "Beneath a famous temple",
+      "highlight": "Beneath",
+      "visual": "Cross-section: vault rooms under the temple, one marked",
+      "caption_ml": "പ്രശസ്ത ക്ഷേത്രത്തിനടിയിൽ"
+    },
+    {
+      "voiceover": "2011-ൽ സുപ്രീം കോടതി നിയോഗിച്ച സംഘം നിലവറകളിലെ സമ്പത്തിന്റെ കണക്കെടുപ്പ് നടത്തി.",
+      "caption": "2011: a court-ordered count",
+      "highlight": "2011",
+      "visual": "Torch beams sweep a vault, chests ticked off",
+      "caption_ml": "2011: കോടതി ഉത്തരവിട്ട കണക്കെടുപ്പ്"
+    },
+    {
+      "voiceover": "സ്വർണ്ണം, രത്നങ്ങൾ, പുരാതന ആഭരണങ്ങൾ. ഒരു ലക്ഷം കോടി രൂപയ്ക്ക് മുകളിൽ മൂല്യമെന്നാണ് റിപ്പോർട്ടുകൾ.",
+      "caption": "Gold, gems, ancient jewels",
+      "highlight": "Gold",
+      "visual": "A glittering pile of treasure",
+      "caption_ml": "സ്വർണ്ണം, രത്നങ്ങൾ, ആഭരണങ്ങൾ"
+    },
+    {
+      "voiceover": "പക്ഷേ നിലവറ ബി ഇന്നും പൂർണ്ണമായി തുറന്ന് കണക്കെടുത്തിട്ടില്ല. വിശ്വാസങ്ങളും ആചാരങ്ങളും കാരണം പലരും അതിനെ എതിർക്കുന്നു.",
+      "caption": "Vault B: still uncounted",
+      "highlight": "uncounted",
+      "visual": "A massive locked iron door with chains",
+      "caption_ml": "നിലവറ ബി: കണക്കെടുക്കാത്തത്"
+    },
+    {
+      "voiceover": "2020-ൽ സുപ്രീം കോടതി ക്ഷേത്ര ഭരണത്തിൽ തിരുവിതാംകൂർ രാജകുടുംബത്തിന്റെ അവകാശം ശരിവെച്ചു. നിലവറ ബിയുടെ രഹസ്യം ഇന്നും തുടരുന്നു.",
+      "caption": "The mystery continues",
+      "highlight": "mystery",
+      "visual": "The temple at night with rows of oil lamps",
+      "caption_ml": "രഹസ്യം തുടരുന്നു"
+    }
   ],
   "instagram_caption": "The treasure that shocked the world, and the one vault still unopened. 🔐✨\n\nBeneath Sri Padmanabhaswamy Temple in Thiruvananthapuram lie several vaults. In 2011, a team appointed by the Supreme Court counted what was inside: gold, gems and ancient jewellery, valued in reports at over ₹1 lakh crore. But one vault, Vault B, has never been fully opened and counted. 🏛️\n\nSo what is inside Vault B? 👀\n\nWatch the story of Kerala's most talked-about vault.\n\nSend this to someone from Thiruvananthapuram. 🪔\n\n📚 Supreme Court judgment (2020) · The Hindu · Indian Express\nEducational · Animated illustrations\n\n#Padmanabhaswamy #Thiruvananthapuram #KeralaHistory #Malayalam #MalayalamReels UnexploredTruths VaultB DidYouKnow",
   "fact_check": [

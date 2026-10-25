@@ -10,7 +10,7 @@ W, H, FPS = config.WIDTH, config.HEIGHT, config.FPS
 FONTS = config.FONTS_DIR.resolve()
 
 
-def _card_png(script: dict, background: Path, out: Path) -> Path:
+def _card_png(script: dict, background: Path, out: Path, html_override: str | None = None) -> Path:
     from playwright.sync_api import sync_playwright
     accent = config.BRAND["categories"].get(script["category"], "#FACC15")
     ec = config.BRAND.get("end_card", {})
@@ -34,6 +34,8 @@ html,body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#0
 <div class="handle">{html.escape(config.BRAND["handle"])}</div>
 <div class="share">{html.escape(ec.get("share", "ഒരു സുഹൃത്തിന് അയച്ചുകൊടുക്കൂ 📩"))}</div>
 </div></body></html>"""
+    if html_override:
+        page = "<!doctype html><meta charset=utf-8>" + html_override
     hp = out.with_suffix(".html"); hp.write_text(page, encoding="utf-8")
     with sync_playwright() as p:
         b = p.chromium.launch(); pg = b.new_page(viewport={"width": W, "height": H})
@@ -41,10 +43,10 @@ html,body {{ margin:0; width:{W}px; height:{H}px; overflow:hidden; background:#0
     return out
 
 
-def make(script: dict, background: Path, work: Path) -> Path:
+def make(script: dict, background: Path, work: Path, html: str | None = None) -> Path:
     """Render the end card as a clip with the same format as the scene clips."""
     secs = config.END_CARD_SECONDS
-    png = _card_png(script, background, work / "endcard.png")
+    png = _card_png(script, background, work / "endcard.png", html)
     out = work / "clip_end.mp4"
     frames = int(secs * FPS)
     run(["ffmpeg", "-y", "-v", "error", "-loop", "1", "-i", str(png),

@@ -10,27 +10,63 @@
       "Researchers explain it as disorientation from strong winds and fog, with birds attracted to light",
       "Awareness efforts have greatly reduced the killing of the birds"
     ],
-    "sources": ["Assam Tourism", "Ornithological studies on the Jatinga phenomenon", "News reporting on conservation efforts"]
+    "sources": [
+      "Assam Tourism",
+      "Ornithological studies on the Jatinga phenomenon",
+      "News reporting on conservation efforts"
+    ]
   },
   "category": "NATURE",
   "voice": "Lily",
-  "headline": ["WHERE BIRDS", "FALL AT NIGHT"],
-  "accent_words": ["BIRDS"],
+  "headline": [
+    "WHERE BIRDS",
+    "FALL AT NIGHT"
+  ],
+  "accent_words": [
+    "BIRDS"
+  ],
   "thumbnail_ml": "രാത്രിയിൽ പക്ഷികൾ താഴേക്ക് വീഴുന്ന ഗ്രാമം!",
-  "thumbnail_accent": ["പക്ഷികൾ"],
+  "thumbnail_accent": [
+    "പക്ഷികൾ"
+  ],
   "hook_voiceover": "ചില രാത്രികളിൽ ആകാശത്ത് നിന്ന് പക്ഷികൾ താഴേക്ക് വീഴുന്ന ഒരു ഗ്രാമം.",
   "cover_visual": "Foggy night, birds spiralling into a glowing lamp",
   "scenes": [
-    {"voiceover": "അസമിലെ മലനിരകൾക്കിടയിലുള്ള ജതിംഗ എന്ന ചെറിയ ഗ്രാമം.",
-     "caption": "Jatinga, Assam", "highlight": "Jatinga", "visual": "Night hills, village lights, a location pin"},
-    {"voiceover": "മൺസൂൺ കഴിഞ്ഞുള്ള മാസങ്ങളിൽ, മൂടൽമഞ്ഞുള്ള ഇരുണ്ട രാത്രികളിൽ, പക്ഷികൾ ഗ്രാമത്തിലെ വിളക്കുകൾക്ക് നേരെ പറന്നു വരും.",
-     "caption": "Foggy nights, glowing lights", "highlight": "lights", "visual": "Fog rolls in, birds head for the lamps"},
-    {"voiceover": "പക്ഷികൾ ആത്മഹത്യ ചെയ്യുകയാണെന്നാണ് പലരും വിശ്വസിച്ചത്. ദുഷ്ടശക്തികളാണെന്ന് വരെ കഥകൾ പരന്നു.",
-     "caption": "A curse? Bird suicide?", "highlight": "curse", "visual": "Birds tumble past an eerie moon"},
-    {"voiceover": "പക്ഷേ ശാസ്ത്രജ്ഞർ കണ്ടെത്തിയത് മറ്റൊന്നാണ്. ശക്തമായ കാറ്റും മൂടൽമഞ്ഞും കാരണം വഴിതെറ്റുന്ന പക്ഷികളെ വെളിച്ചം ആകർഷിക്കുന്നു.",
-     "caption": "Lost in fog, pulled by light", "highlight": "light", "visual": "Wind lines, a bird's path curls into the lamp"},
-    {"voiceover": "ആത്മഹത്യയല്ല, വഴിതെറ്റലാണ്. ഇന്ന് ബോധവൽക്കരണം കാരണം പക്ഷികളെ ഉപദ്രവിക്കുന്നത് ഒരുപാട് കുറഞ്ഞു.",
-     "caption": "Not suicide. Confusion.", "highlight": "Confusion", "visual": "Dawn, birds fly away free in a V"}
+    {
+      "voiceover": "അസമിലെ മലനിരകൾക്കിടയിലുള്ള ജതിംഗ എന്ന ചെറിയ ഗ്രാമം.",
+      "caption": "Jatinga, Assam",
+      "highlight": "Jatinga",
+      "visual": "Night hills, village lights, a location pin",
+      "caption_ml": "ജതിംഗ, അസം"
+    },
+    {
+      "voiceover": "മൺസൂൺ കഴിഞ്ഞുള്ള മാസങ്ങളിൽ, മൂടൽമഞ്ഞുള്ള ഇരുണ്ട രാത്രികളിൽ, പക്ഷികൾ ഗ്രാമത്തിലെ വിളക്കുകൾക്ക് നേരെ പറന്നു വരും.",
+      "caption": "Foggy nights, glowing lights",
+      "highlight": "lights",
+      "visual": "Fog rolls in, birds head for the lamps",
+      "caption_ml": "മൂടൽമഞ്ഞും വിളക്കുകളും"
+    },
+    {
+      "voiceover": "പക്ഷികൾ ആത്മഹത്യ ചെയ്യുകയാണെന്നാണ് പലരും വിശ്വസിച്ചത്. ദുഷ്ടശക്തികളാണെന്ന് വരെ കഥകൾ പരന്നു.",
+      "caption": "A curse? Bird suicide?",
+      "highlight": "curse",
+      "visual": "Birds tumble past an eerie moon",
+      "caption_ml": "ശാപമോ? ആത്മഹത്യയോ?"
+    },
+    {
+      "voiceover": "പക്ഷേ ശാസ്ത്രജ്ഞർ കണ്ടെത്തിയത് മറ്റൊന്നാണ്. ശക്തമായ കാറ്റും മൂടൽമഞ്ഞും കാരണം വഴിതെറ്റുന്ന പക്ഷികളെ വെളിച്ചം ആകർഷിക്കുന്നു.",
+      "caption": "Lost in fog, pulled by light",
+      "highlight": "light",
+      "visual": "Wind lines, a bird's path curls into the lamp",
+      "caption_ml": "വഴിതെറ്റി വെളിച്ചത്തിലേക്ക്"
+    },
+    {
+      "voiceover": "ആത്മഹത്യയല്ല, വഴിതെറ്റലാണ്. ഇന്ന് ബോധവൽക്കരണം കാരണം പക്ഷികളെ ഉപദ്രവിക്കുന്നത് ഒരുപാട് കുറഞ്ഞു.",
+      "caption": "Not suicide. Confusion.",
+      "highlight": "Confusion",
+      "visual": "Dawn, birds fly away free in a V",
+      "caption_ml": "ആത്മഹത്യയല്ല, വഴിതെറ്റൽ"
+    }
   ],
   "instagram_caption": "A village where birds fall from the night sky. 🐦🌫️\n\nIn Jatinga, a small village in the hills of Assam, birds come flying towards the lights on dark, foggy nights after the monsoon. For years people called it 'bird suicide', and some blamed evil spirits. Scientists found a simpler answer. 🔦\n\nSo why do the birds really come down? 👀\n\nWatch the truth behind India's strangest bird mystery.\n\nSend this to a nature lover. 🌿\n\n📚 Assam Tourism · Ornithological studies on Jatinga\nEducational · Animated illustrations\n\n#Jatinga #Assam #Birds #Malayalam #MalayalamReels UnexploredTruths Nature DidYouKnow",
   "fact_check": [

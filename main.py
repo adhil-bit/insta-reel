@@ -78,6 +78,14 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
                  for i, s in enumerate(scenes)]
 
     visuals = []
+    archive_mode = config.BRAND.get("template") == "archive" and config.VISUAL_MODE == "code"
+    wraps = [None] * len(scenes)
+    if archive_mode:
+        from pipeline import archive
+        file_no = sum(1 for h in hist if h.get("status") != "skipped") + 1
+        n_scenes = len(scenes) - 1
+        wraps = [archive.page("cover" if s.get("cover") else "scene", script, s, i, n_scenes, file_no)
+                 for i, s in enumerate(scenes)]
     if config.VISUAL_MODE == "code":
         from pipeline import animate
         from concurrent.futures import ThreadPoolExecutor
@@ -86,10 +94,10 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         with ThreadPoolExecutor(max_workers=config.RENDER_WORKERS) as pool:
             if codes:
                 jobs = [pool.submit(animate.render_or_fallback, codes[i] if i < len(codes) else None,
-                                    script["category"], durations[i], i, work)
+                                    script["category"], durations[i], i, work, wraps[i])
                         for i in range(len(scenes))]
             else:
-                jobs = [pool.submit(animate.build, s, script["category"], durations[i], i, work)
+                jobs = [pool.submit(animate.build, s, script["category"], durations[i], i, work, wraps[i])
                         for i, s in enumerate(scenes)]
             visuals = [job.result() for job in jobs]
     else:
@@ -103,7 +111,12 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     clips = []
     for i, s in enumerate(scenes):
         overlay = work / f"overlay_{i}.png"
-        if s.get("cover"):
+        if archive_mode:                       # the template is already part of the frames
+            overlay = None
+            if s.get("cover"):
+                import shutil
+                shutil.copy(_frame_at(visuals[i], work, 0.8), folder / "cover.jpg")
+        elif s.get("cover"):
             design.make_cover_overlay(script, overlay)
             design.compose_preview(_first_frame(visuals[i], work), overlay, folder / "cover.jpg")
         else:
@@ -115,7 +128,8 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         ))
     try:
         from pipeline import endcard
-        clips.append(endcard.make(script, _frame_at(visuals[-1], work, 0.95), work))
+        clips.append(endcard.make(script, _frame_at(visuals[-1], work, 0.95), work,
+                                  html=archive.endcard_page(script, file_no) if archive_mode else None))
         durations = durations + [config.END_CARD_SECONDS]
         print("  follow end card added")
     except Exception as e:
@@ -129,7 +143,11 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     try:
         from pipeline import thumbnail
         bg = _frame_at(visuals[0], work, 0.8)
-        thumbnail.render(script, bg, folder / "thumbnail.jpg")
+        if archive_mode:                       # the cover frame already is the thumbnail
+            import shutil
+            shutil.copy(bg, folder / "thumbnail.jpg")
+        else:
+            thumbnail.render(script, bg, folder / "thumbnail.jpg")
         print("  thumbnail ready")
     except Exception as e:
         print(f"  thumbnail failed ({e}); the first frame will be used as cover")

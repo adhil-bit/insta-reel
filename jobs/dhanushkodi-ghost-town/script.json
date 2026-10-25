@@ -10,27 +10,63 @@
       "A passenger train on the Pamban-Dhanushkodi line was washed away with more than a hundred people aboard",
       "The town was destroyed and later declared unfit for habitation; ruins of a church and the railway station remain"
     ],
-    "sources": ["Indian Railways / Southern Railway history", "IMD records of the 1964 Rameswaram cyclone", "Tamil Nadu tourism"]
+    "sources": [
+      "Indian Railways / Southern Railway history",
+      "IMD records of the 1964 Rameswaram cyclone",
+      "Tamil Nadu tourism"
+    ]
   },
   "category": "HISTORY",
   "voice": "Daniel",
-  "headline": ["THE TOWN", "THE SEA TOOK"],
-  "accent_words": ["SEA"],
+  "headline": [
+    "THE TOWN",
+    "THE SEA TOOK"
+  ],
+  "accent_words": [
+    "SEA"
+  ],
   "thumbnail_ml": "ഒറ്റ രാത്രി കൊണ്ട് കടൽ വിഴുങ്ങിയ പട്ടണം",
-  "thumbnail_accent": ["കടൽ"],
+  "thumbnail_accent": [
+    "കടൽ"
+  ],
   "hook_voiceover": "ഒറ്റ രാത്രി കൊണ്ട് കടൽ വിഴുങ്ങിയ ഒരു പട്ടണം. ഇന്ത്യയുടെ അറ്റത്ത്.",
   "cover_visual": "Church ruins on a stormy shore at night",
   "scenes": [
-    {"voiceover": "തമിഴ്നാട്ടിലെ രാമേശ്വരം ദ്വീപിന്റെ തെക്കേ അറ്റത്താണ് ധനുഷ്കോടി. ഒരുകാലത്ത് ശ്രീലങ്കയിലേക്കുള്ള ബോട്ടുകൾ പുറപ്പെട്ടിരുന്ന തിരക്കുള്ള പട്ടണം.",
-     "caption": "A busy town at India's tip", "highlight": "tip", "visual": "Map: land narrows into the sea, ferry route to Sri Lanka"},
-    {"voiceover": "1964 ഡിസംബർ 22-ന് രാത്രി, ശക്തമായ ഒരു ചുഴലിക്കാറ്റ് വീശിയടിച്ചു. കൂറ്റൻ തിരമാലകൾ പട്ടണത്തിലേക്ക് ഇരച്ചുകയറി.",
-     "caption": "December 1964: the cyclone", "highlight": "cyclone", "visual": "A cyclone spirals in from the sea"},
-    {"voiceover": "യാത്രക്കാരുമായി വന്ന ഒരു തീവണ്ടി മുഴുവനായി കടലെടുത്തു. നൂറിലധികം പേർ അതിലുണ്ടായിരുന്നു.",
-     "caption": "A train swept into the sea", "highlight": "train", "visual": "A huge wave covers a coastal train"},
-    {"voiceover": "പട്ടണം മുഴുവൻ തകർന്നു. പിന്നീട് സർക്കാർ ഇവിടം താമസയോഗ്യമല്ലെന്ന് പ്രഖ്യാപിച്ചു.",
-     "caption": "Declared unfit to live", "highlight": "unfit", "visual": "Ruins crossed out, sand drifting"},
-    {"voiceover": "ഇന്നും ആ പള്ളിയുടെയും റെയിൽവേ സ്റ്റേഷന്റെയും അവശിഷ്ടങ്ങൾ അവിടെയുണ്ട്. കടലിന്റെ ശക്തി ഓർമ്മിപ്പിച്ചുകൊണ്ട്.",
-     "caption": "The ruins still stand", "highlight": "ruins", "visual": "Sunset over the ruins and the empty shore"}
+    {
+      "voiceover": "തമിഴ്നാട്ടിലെ രാമേശ്വരം ദ്വീപിന്റെ തെക്കേ അറ്റത്താണ് ധനുഷ്കോടി. ഒരുകാലത്ത് ശ്രീലങ്കയിലേക്കുള്ള ബോട്ടുകൾ പുറപ്പെട്ടിരുന്ന തിരക്കുള്ള പട്ടണം.",
+      "caption": "A busy town at India's tip",
+      "highlight": "tip",
+      "visual": "Map: land narrows into the sea, ferry route to Sri Lanka",
+      "caption_ml": "ഇന്ത്യയുടെ അറ്റത്തെ പട്ടണം"
+    },
+    {
+      "voiceover": "1964 ഡിസംബർ 22-ന് രാത്രി, ശക്തമായ ഒരു ചുഴലിക്കാറ്റ് വീശിയടിച്ചു. കൂറ്റൻ തിരമാലകൾ പട്ടണത്തിലേക്ക് ഇരച്ചുകയറി.",
+      "caption": "December 1964: the cyclone",
+      "highlight": "cyclone",
+      "visual": "A cyclone spirals in from the sea",
+      "caption_ml": "1964 ഡിസംബർ: ചുഴലിക്കാറ്റ്"
+    },
+    {
+      "voiceover": "യാത്രക്കാരുമായി വന്ന ഒരു തീവണ്ടി മുഴുവനായി കടലെടുത്തു. നൂറിലധികം പേർ അതിലുണ്ടായിരുന്നു.",
+      "caption": "A train swept into the sea",
+      "highlight": "train",
+      "visual": "A huge wave covers a coastal train",
+      "caption_ml": "കടലെടുത്ത തീവണ്ടി"
+    },
+    {
+      "voiceover": "പട്ടണം മുഴുവൻ തകർന്നു. പിന്നീട് സർക്കാർ ഇവിടം താമസയോഗ്യമല്ലെന്ന് പ്രഖ്യാപിച്ചു.",
+      "caption": "Declared unfit to live",
+      "highlight": "unfit",
+      "visual": "Ruins crossed out, sand drifting",
+      "caption_ml": "താമസയോഗ്യമല്ലെന്ന് പ്രഖ്യാപിച്ചു"
+    },
+    {
+      "voiceover": "ഇന്നും ആ പള്ളിയുടെയും റെയിൽവേ സ്റ്റേഷന്റെയും അവശിഷ്ടങ്ങൾ അവിടെയുണ്ട്. കടലിന്റെ ശക്തി ഓർമ്മിപ്പിച്ചുകൊണ്ട്.",
+      "caption": "The ruins still stand",
+      "highlight": "ruins",
+      "visual": "Sunset over the ruins and the empty shore",
+      "caption_ml": "അവശിഷ്ടങ്ങൾ ഇന്നും ബാക്കി"
+    }
   ],
   "instagram_caption": "A town at India's tip, swallowed by the sea in one night. 🌊\n\nDhanushkodi was once a busy town, with boats leaving for Sri Lanka. Then, on the night of 22 December 1964, a powerful cyclone hit. Giant waves swept through the town, and a passenger train with more than a hundred people aboard was washed into the sea. 🚂\n\nThe town was later declared unfit to live in. So what's left there today? 👀\n\nWatch the story of India's ghost town.\n\nSend this to someone who's been to Rameswaram. 🏝️\n\n📚 Southern Railway history · IMD cyclone records · Tamil Nadu Tourism\nEducational · Animated illustrations\n\n#Dhanushkodi #Rameswaram #IndianHistory #Malayalam #MalayalamReels UnexploredTruths GhostTown DidYouKnow",
   "fact_check": [

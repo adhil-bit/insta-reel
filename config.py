@@ -106,6 +106,7 @@ BRAND = {
         "no letters, no logos, no watermarks"
     ),
     "music_volume": 0.12,
+    "template": "archive",      # reel look: "archive" (photo print on a desk) or "classic"
     # added to every caption when posting (on top of each reel's topic tags)
     "end_card": {
         "ask": "ഇഷ്ടപ്പെട്ടോ?",

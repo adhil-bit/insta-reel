@@ -10,27 +10,63 @@
       "Some tribal communities, such as the Paliyan, are reported to have counted age by kurinji blooms",
       "The last mass bloom around Munnar was in 2018; the next is expected around 2030"
     ],
-    "sources": ["Kerala Forest Department / Eravikulam National Park", "Kerala Tourism (2018 bloom)", "Botanical references on Strobilanthes kunthiana"]
+    "sources": [
+      "Kerala Forest Department / Eravikulam National Park",
+      "Kerala Tourism (2018 bloom)",
+      "Botanical references on Strobilanthes kunthiana"
+    ]
   },
   "category": "NATURE",
   "voice": "Lily",
-  "headline": ["ONCE IN", "12 YEARS"],
-  "accent_words": ["12"],
+  "headline": [
+    "ONCE IN",
+    "12 YEARS"
+  ],
+  "accent_words": [
+    "12"
+  ],
   "thumbnail_ml": "12 വർഷത്തിൽ ഒരിക്കൽ മാത്രം പൂക്കുന്ന പൂവ്",
-  "thumbnail_accent": ["12"],
+  "thumbnail_accent": [
+    "12"
+  ],
   "hook_voiceover": "പന്ത്രണ്ട് വർഷത്തിൽ ഒരിക്കൽ മാത്രം. അന്ന് മൂന്നാറിലെ മലകൾ മുഴുവൻ നീല നിറമാകും.",
   "cover_visual": "Misty hills; a wave of blue bloom spreads across them",
   "scenes": [
-    {"voiceover": "നീലക്കുറിഞ്ഞി. പശ്ചിമഘട്ടത്തിലെ പുൽമേടുകളിൽ വളരുന്ന ഒരു കുറ്റിച്ചെടി.",
-     "caption": "Meet Neelakurinji", "highlight": "Neelakurinji", "visual": "Close-up of a flowering stem opening"},
-    {"voiceover": "വർഷങ്ങളോളം ഇത് വെറും പച്ചച്ചെടിയായി നിൽക്കും. പിന്നെ പന്ത്രണ്ടാം വർഷം, എല്ലാം ഒരുമിച്ച് പൂക്കും.",
-     "caption": "Green for years, then bloom", "highlight": "bloom", "visual": "A 12-segment year ring fills, then bursts into flowers"},
-    {"voiceover": "മലനിരകൾ മുഴുവൻ നീലയും വയലറ്റും നിറത്തിൽ മൂടും. നീലഗിരി എന്ന പേര് പോലും ഈ പൂവിൽ നിന്നാണെന്ന് പറയപ്പെടുന്നു.",
-     "caption": "Whole hills turn blue", "highlight": "blue", "visual": "Ridges recolour from green to blue-violet"},
-    {"voiceover": "പാലിയൻ പോലുള്ള ചില ആദിവാസി സമൂഹങ്ങൾ കുറിഞ്ഞി പൂക്കുന്നത് എണ്ണി പ്രായം കണക്കാക്കിയിരുന്നു എന്ന് പറയപ്പെടുന്നു.",
-     "caption": "Age counted in blooms", "highlight": "blooms", "visual": "A figure grows taller as bloom marks appear"},
-    {"voiceover": "അവസാനമായി വലിയ തോതിൽ പൂത്തത് 2018-ൽ. അടുത്ത നീലവസന്തം 2030-ൽ പ്രതീക്ഷിക്കാം.",
-     "caption": "Next bloom: 2030", "highlight": "2030", "visual": "Timeline of blooms; the next one pulses ahead"}
+    {
+      "voiceover": "നീലക്കുറിഞ്ഞി. പശ്ചിമഘട്ടത്തിലെ പുൽമേടുകളിൽ വളരുന്ന ഒരു കുറ്റിച്ചെടി.",
+      "caption": "Meet Neelakurinji",
+      "highlight": "Neelakurinji",
+      "visual": "Close-up of a flowering stem opening",
+      "caption_ml": "ഇതാണ് നീലക്കുറിഞ്ഞി"
+    },
+    {
+      "voiceover": "വർഷങ്ങളോളം ഇത് വെറും പച്ചച്ചെടിയായി നിൽക്കും. പിന്നെ പന്ത്രണ്ടാം വർഷം, എല്ലാം ഒരുമിച്ച് പൂക്കും.",
+      "caption": "Green for years, then bloom",
+      "highlight": "bloom",
+      "visual": "A 12-segment year ring fills, then bursts into flowers",
+      "caption_ml": "വർഷങ്ങൾ പച്ച, പിന്നെ പൂവ്"
+    },
+    {
+      "voiceover": "മലനിരകൾ മുഴുവൻ നീലയും വയലറ്റും നിറത്തിൽ മൂടും. നീലഗിരി എന്ന പേര് പോലും ഈ പൂവിൽ നിന്നാണെന്ന് പറയപ്പെടുന്നു.",
+      "caption": "Whole hills turn blue",
+      "highlight": "blue",
+      "visual": "Ridges recolour from green to blue-violet",
+      "caption_ml": "മലകൾ നീലയാകുന്നു"
+    },
+    {
+      "voiceover": "പാലിയൻ പോലുള്ള ചില ആദിവാസി സമൂഹങ്ങൾ കുറിഞ്ഞി പൂക്കുന്നത് എണ്ണി പ്രായം കണക്കാക്കിയിരുന്നു എന്ന് പറയപ്പെടുന്നു.",
+      "caption": "Age counted in blooms",
+      "highlight": "blooms",
+      "visual": "A figure grows taller as bloom marks appear",
+      "caption_ml": "പൂക്കൾ എണ്ണി പ്രായം"
+    },
+    {
+      "voiceover": "അവസാനമായി വലിയ തോതിൽ പൂത്തത് 2018-ൽ. അടുത്ത നീലവസന്തം 2030-ൽ പ്രതീക്ഷിക്കാം.",
+      "caption": "Next bloom: 2030",
+      "highlight": "2030",
+      "visual": "Timeline of blooms; the next one pulses ahead",
+      "caption_ml": "അടുത്ത പൂക്കാലം: 2030"
+    }
   ],
   "instagram_caption": "Once every 12 years, Munnar's hills turn blue. 💜🌿\n\nNeelakurinji stays an ordinary green shrub for years. Then, roughly every twelfth year, it blooms all at once and the hills of the Western Ghats turn blue and violet. Some communities even counted their age in kurinji blooms. The last big bloom was in 2018. 🌸\n\nSo when can you see it next? 👀\n\nWatch the story of Kerala's rarest bloom.\n\nSend this to the friend you'll go with in 2030. 🏔️\n\n📚 Kerala Forest Department · Kerala Tourism · Botanical references\nEducational · Animated illustrations\n\n#Neelakurinji #Munnar #Kerala #Malayalam #MalayalamReels UnexploredTruths Nature Idukki",
   "fact_check": [

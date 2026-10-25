@@ -10,27 +10,62 @@
       "IIT Kanpur researchers (R. Balasubramaniam) found a thin protective film, linked to the iron's high phosphorus content",
       "It is cited as evidence of advanced ancient Indian metallurgy"
     ],
-    "sources": ["Balasubramaniam, R. (IIT Kanpur), Current Science (2002) and related papers", "Archaeological Survey of India"]
+    "sources": [
+      "Balasubramaniam, R. (IIT Kanpur), Current Science (2002) and related papers",
+      "Archaeological Survey of India"
+    ]
   },
   "category": "SCIENCE",
   "voice": "Daniel",
-  "headline": ["1,600 YEARS", "NO RUST"],
-  "accent_words": ["RUST"],
+  "headline": [
+    "1,600 YEARS",
+    "NO RUST"
+  ],
+  "accent_words": [
+    "RUST"
+  ],
   "thumbnail_ml": "1600 വർഷമായിട്ടും തുരുമ്പെടുക്കാത്ത ഇരുമ്പ്!",
-  "thumbnail_accent": ["തുരുമ്പെടുക്കാത്ത"],
+  "thumbnail_accent": [
+    "തുരുമ്പെടുക്കാത്ത"
+  ],
   "hook_voiceover": "1600 വർഷമായി മഴയും വെയിലും കൊണ്ടിട്ടും തുരുമ്പെടുക്കാത്ത ഒരു ഇരുമ്പ് തൂൺ.",
   "cover_visual": "The pillar at night in the rain, drops sliding off",
   "scenes": [
-    {"voiceover": "ഡൽഹിയിലെ കുത്തബ് മിനാറിന് സമീപമാണ് ഈ ഇരുമ്പ് തൂൺ. ഏകദേശം ഏഴ് മീറ്റർ ഉയരം.",
-     "caption": "Delhi's Iron Pillar", "highlight": "Iron", "visual": "The pillar rises beside a height ruler"},
-    {"voiceover": "ഗുപ്ത കാലഘട്ടത്തിൽ, ഏകദേശം 1600 വർഷം മുമ്പ് നിർമ്മിച്ചതാണിത്.",
-     "caption": "Made 1,600 years ago", "highlight": "1,600", "visual": "Days and seasons race past, the pillar stays"},
-    {"voiceover": "സാധാരണ ഇരുമ്പ് കുറച്ച് വർഷങ്ങൾക്കുള്ളിൽ തുരുമ്പെടുത്ത് നശിക്കും. പക്ഷേ ഈ തൂണിന് കാര്യമായ തുരുമ്പില്ല.",
-     "caption": "Ordinary iron rusts away", "highlight": "rusts", "visual": "A normal iron bar rusts and crumbles beside the clean pillar"},
-    {"voiceover": "IIT കാൺപൂരിലെ ഗവേഷകർ കണ്ടെത്തിയത്: ഇരുമ്പിലെ ഉയർന്ന ഫോസ്ഫറസിന്റെ സഹായത്തോടെ ഒരു നേർത്ത സംരക്ഷണ പാളി രൂപപ്പെടുന്നു.",
-     "caption": "A thin protective shield", "highlight": "shield", "visual": "Zoom into the iron: a glowing layer forms, water bounces off"},
-    {"voiceover": "ആധുനിക ശാസ്ത്രം വിശദീകരിക്കുന്നതിന് എത്രയോ മുമ്പേ, നമ്മുടെ പൂർവികർ ആ വിദ്യ കൈവശമാക്കിയിരുന്നു.",
-     "caption": "Ancient Indian metallurgy", "highlight": "Ancient", "visual": "The pillar glowing under the stars"}
+    {
+      "voiceover": "ഡൽഹിയിലെ കുത്തബ് മിനാറിന് സമീപമാണ് ഈ ഇരുമ്പ് തൂൺ. ഏകദേശം ഏഴ് മീറ്റർ ഉയരം.",
+      "caption": "Delhi's Iron Pillar",
+      "highlight": "Iron",
+      "visual": "The pillar rises beside a height ruler",
+      "caption_ml": "ഡൽഹിയിലെ ഇരുമ്പ് തൂൺ"
+    },
+    {
+      "voiceover": "ഗുപ്ത കാലഘട്ടത്തിൽ, ഏകദേശം 1600 വർഷം മുമ്പ് നിർമ്മിച്ചതാണിത്.",
+      "caption": "Made 1,600 years ago",
+      "highlight": "1,600",
+      "visual": "Days and seasons race past, the pillar stays",
+      "caption_ml": "1600 വർഷം മുമ്പ് നിർമ്മിച്ചത്"
+    },
+    {
+      "voiceover": "സാധാരണ ഇരുമ്പ് കുറച്ച് വർഷങ്ങൾക്കുള്ളിൽ തുരുമ്പെടുത്ത് നശിക്കും. പക്ഷേ ഈ തൂണിന് കാര്യമായ തുരുമ്പില്ല.",
+      "caption": "Ordinary iron rusts away",
+      "highlight": "rusts",
+      "visual": "A normal iron bar rusts and crumbles beside the clean pillar",
+      "caption_ml": "സാധാരണ ഇരുമ്പ് തുരുമ്പെടുക്കും"
+    },
+    {
+      "voiceover": "IIT കാൺപൂരിലെ ഗവേഷകർ കണ്ടെത്തിയത്: ഇരുമ്പിലെ ഉയർന്ന ഫോസ്ഫറസിന്റെ സഹായത്തോടെ ഒരു നേർത്ത സംരക്ഷണ പാളി രൂപപ്പെടുന്നു.",
+      "caption": "A thin protective shield",
+      "highlight": "shield",
+      "visual": "Zoom into the iron: a glowing layer forms, water bounces off",
+      "caption_ml": "ഒരു നേർത്ത സംരക്ഷണ പാളി"
+    },
+    {
+      "voiceover": "ആധുനിക ശാസ്ത്രം വിശദീകരിക്കുന്നതിന് എത്രയോ മുമ്പേ, നമ്മുടെ പൂർവികർ ആ വിദ്യ കൈവശമാക്കിയിരുന്നു.",
+      "caption": "Ancient Indian metallurgy",
+      "highlight": "Ancient",
+      "visual": "The pillar glowing under the stars",
+      "caption_ml": "പ്രാചീന ഇന്ത്യയുടെ ലോഹവിദ്യ"
+    }
   ],
   "instagram_caption": "1,600 years of rain and sun, and still almost no rust. 🏛️\n\nDelhi's Iron Pillar stands about 7 metres tall in the Qutb complex. It was made in the Gupta period, roughly 1,600 years ago. Ordinary iron would have rusted away long ago, but this pillar hasn't. Researchers at IIT Kanpur finally worked out why. 🔬\n\nSo what protects it? 👀\n\nWatch the science behind India's rust-proof pillar.\n\nSend this to an engineer friend. ⚙️\n\n📚 Balasubramaniam, IIT Kanpur (Current Science) · Archaeological Survey of India\nEducational · Animated illustrations\n\n#IronPillar #Delhi #IndianHistory #Malayalam #MalayalamReels UnexploredTruths Science Metallurgy",
   "fact_check": [

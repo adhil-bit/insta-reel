@@ -31,9 +31,14 @@ def render_scene(visual: Path, overlay: Path, audio: Path, out: Path,
         vf = (f"[0:v]scale={W * 2}:{H * 2},"
               f"zoompan=z='{z}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)'"
               f":d={frames}:s={W}x{H}:fps={FPS}[bg];")
-    vf += "[bg][1:v]overlay=0:0:shortest=1,format=yuv420p[v];[2:a]aresample=44100,apad[a]"
+    if overlay is None:
+        vf += "[bg]format=yuv420p[v];[1:a]aresample=44100,apad[a]"
+        over_in = []
+    else:
+        vf += "[bg][1:v]overlay=0:0:shortest=1,format=yuv420p[v];[2:a]aresample=44100,apad[a]"
+        over_in = ["-loop", "1", "-i", str(overlay)]
     run([
-        "ffmpeg", "-y", *video_in, "-loop", "1", "-i", str(overlay), "-i", str(audio),
+        "ffmpeg", "-y", *video_in, *over_in, "-i", str(audio),
         "-filter_complex", vf, "-map", "[v]", "-map", "[a]",
         "-t", f"{duration:.3f}", "-r", str(FPS),
         "-c:v", "libx264", "-preset", "faster", "-crf", "19",

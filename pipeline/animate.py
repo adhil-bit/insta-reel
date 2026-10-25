@@ -99,12 +99,15 @@ def extract_code(text: str) -> str:
 
 
 def render(js_code: str, accent: str, duration: float, seed: int,
-           html_path: Path, out: Path) -> Path:
+           html_path: Path, out: Path, wrap: str | None = None) -> Path:
     """Render the animation to an MP4 of exactly `duration` seconds."""
     from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
     html = TEMPLATE % {"W": W, "H": H, "THREE": THREE_JS, "ACCENT": accent,
                        "DURATION": duration, "SEED": seed}
+    html = html.replace("document.body.appendChild(c)", "(document.getElementById('stage')||document.body).appendChild(c)")
+    if wrap:                     # a reel template wraps the animation (it draws into #stage)
+        html = html.replace("<body>", "<body>" + wrap, 1)
     html_path.write_text(html.replace("/*CODE*/", js_code), encoding="utf-8")
     frames = int(round(duration * FPS))
     errors: list[str] = []
@@ -140,7 +143,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
             # Fast path: read pixels straight from the canvas, several frames per browser call
             # (about 2-3x faster than screenshots). Falls back to screenshots when a scene uses
             # more than one canvas or the canvas can't be read.
-            fast = page.evaluate("document.querySelectorAll('canvas').length") == 1
+            fast = not wrap and page.evaluate("document.querySelectorAll('canvas').length") == 1
             if fast:
                 import base64, io
                 b64 = page.evaluate("t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.92).split(',')[1]; }", duration / 2)
@@ -178,7 +181,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
     return out
 
 
-def build(scene: dict, category: str, duration: float, idx: int, work: Path) -> Path:
+def build(scene: dict, category: str, duration: float, idx: int, work: Path, wrap: str | None = None) -> Path:
     """Ask Claude for an animation, render it, retry with the error, then fall back."""
     from . import claude
 
@@ -189,7 +192,7 @@ def build(scene: dict, category: str, duration: float, idx: int, work: Path) -> 
         try:
             (work / f"anim_{idx}.js").write_text(code, encoding="utf-8")
             render(code, accent, duration, seed=1000 + idx,
-                   html_path=work / f"anim_{idx}.html", out=out)
+                   html_path=work / f"anim_{idx}.html", out=out, wrap=wrap)
             print(f"    animation {idx + 1} rendered")
             return out
         except AnimationError as err:
@@ -198,18 +201,19 @@ def build(scene: dict, category: str, duration: float, idx: int, work: Path) -> 
                 code = claude.fix_animation(code, str(err))
     print(f"    animation {idx + 1}: using the built-in fallback")
     return render(FALLBACK_JS, accent, duration, seed=1000 + idx,
-                  html_path=work / f"anim_{idx}.html", out=out)
+                  html_path=work / f"anim_{idx}.html", out=out, wrap=wrap)
 
 
-def render_or_fallback(code: str | None, category: str, duration: float, idx: int, work: Path) -> Path:
+def render_or_fallback(code: str | None, category: str, duration: float, idx: int, work: Path,
+                       wrap: str | None = None) -> Path:
     """Render ready-made animation code; use the built-in animation if it fails."""
     accent = config.BRAND["categories"].get(category, "#FACC15")
     out, html = work / f"anim_{idx}.mp4", work / f"anim_{idx}.html"
     if code:
         try:
-            render(code, accent, duration, seed=1000 + idx, html_path=html, out=out)
+            render(code, accent, duration, seed=1000 + idx, html_path=html, out=out, wrap=wrap)
             print(f"    animation {idx + 1} rendered")
             return out
         except AnimationError as err:
             print(f"    animation {idx + 1} failed ({err}), using the built-in fallback")
-    return render(FALLBACK_JS, accent, duration, seed=1000 + idx, html_path=html, out=out)
+    return render(FALLBACK_JS, accent, duration, seed=1000 + idx, html_path=html, out=out, wrap=wrap)

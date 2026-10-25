@@ -10,27 +10,63 @@
       "Vikram landed on 23 August 2023, making India the first country to land near the lunar south pole",
       "23 August is now observed as National Space Day in India"
     ],
-    "sources": ["ISRO mission pages", "Roscosmos statement on Luna-25 (Aug 2023)", "Government of India: National Space Day notification"]
+    "sources": [
+      "ISRO mission pages",
+      "Roscosmos statement on Luna-25 (Aug 2023)",
+      "Government of India: National Space Day notification"
+    ]
   },
   "category": "SPACE",
   "voice": "Brian",
-  "headline": ["FIRST TO", "THE SOUTH POLE"],
-  "accent_words": ["FIRST"],
+  "headline": [
+    "FIRST TO",
+    "THE SOUTH POLE"
+  ],
+  "accent_words": [
+    "FIRST"
+  ],
   "thumbnail_ml": "ചന്ദ്രന്റെ ദക്ഷിണധ്രുവത്തിനരികെ ആദ്യം ഇന്ത്യ!",
-  "thumbnail_accent": ["ഇന്ത്യ"],
+  "thumbnail_accent": [
+    "ഇന്ത്യ"
+  ],
   "hook_voiceover": "ലോകത്ത് ഒരു രാജ്യവും ഇറങ്ങാത്ത ചന്ദ്രന്റെ ദക്ഷിണധ്രുവത്തിനരികെ ആദ്യം ഇറങ്ങിയത് ഇന്ത്യ.",
   "cover_visual": "Vikram lander descending over the lunar surface, Earth in the sky",
   "scenes": [
-    {"voiceover": "2023 ജൂലൈ 14. ശ്രീഹരിക്കോട്ടയിൽ നിന്ന് ചന്ദ്രയാൻ-3 കുതിച്ചുയർന്നു.",
-     "caption": "July 2023: liftoff", "highlight": "liftoff", "visual": "Rocket lifts off the pad"},
-    {"voiceover": "ഭൂമിയെ ചുറ്റി ചുറ്റി, പതുക്കെ ചന്ദ്രനിലേക്ക്. ഏകദേശം ഒരു മാസം നീണ്ട യാത്ര.",
-     "caption": "A month-long journey", "highlight": "journey", "visual": "Widening loops around Earth, then across to the Moon"},
-    {"voiceover": "ദിവസങ്ങൾക്ക് മുമ്പ്, ഇതേ ഭാഗത്ത് ഇറങ്ങാൻ ഒരുങ്ങിയ റഷ്യയുടെ ലൂണ-25 ചന്ദ്രനിൽ തകർന്നു വീണു.",
-     "caption": "Russia's Luna-25 crashed", "highlight": "crashed", "visual": "A craft spirals into the Moon and flashes on impact"},
-    {"voiceover": "ഓഗസ്റ്റ് 23-ന് വൈകുന്നേരം, വിക്രം ലാൻഡർ സുരക്ഷിതമായി ചന്ദ്രനിൽ ഇറങ്ങി. ദക്ഷിണധ്രുവത്തിനരികെ ഇറങ്ങുന്ന ആദ്യ രാജ്യമായി ഇന്ത്യ.",
-     "caption": "23 August: touchdown", "highlight": "touchdown", "visual": "Vikram lowers on its thrusters and settles"},
-    {"voiceover": "ആ ദിവസം ഇന്ന് ഇന്ത്യയുടെ ദേശീയ ബഹിരാകാശ ദിനമാണ്.",
-     "caption": "Now National Space Day", "highlight": "Space", "visual": "The rover rolls out leaving tracks"}
+    {
+      "voiceover": "2023 ജൂലൈ 14. ശ്രീഹരിക്കോട്ടയിൽ നിന്ന് ചന്ദ്രയാൻ-3 കുതിച്ചുയർന്നു.",
+      "caption": "July 2023: liftoff",
+      "highlight": "liftoff",
+      "visual": "Rocket lifts off the pad",
+      "caption_ml": "ജൂലൈ 2023: കുതിപ്പ്"
+    },
+    {
+      "voiceover": "ഭൂമിയെ ചുറ്റി ചുറ്റി, പതുക്കെ ചന്ദ്രനിലേക്ക്. ഏകദേശം ഒരു മാസം നീണ്ട യാത്ര.",
+      "caption": "A month-long journey",
+      "highlight": "journey",
+      "visual": "Widening loops around Earth, then across to the Moon",
+      "caption_ml": "ഒരു മാസം നീണ്ട യാത്ര"
+    },
+    {
+      "voiceover": "ദിവസങ്ങൾക്ക് മുമ്പ്, ഇതേ ഭാഗത്ത് ഇറങ്ങാൻ ഒരുങ്ങിയ റഷ്യയുടെ ലൂണ-25 ചന്ദ്രനിൽ തകർന്നു വീണു.",
+      "caption": "Russia's Luna-25 crashed",
+      "highlight": "crashed",
+      "visual": "A craft spirals into the Moon and flashes on impact",
+      "caption_ml": "റഷ്യയുടെ ലൂണ-25 തകർന്നു"
+    },
+    {
+      "voiceover": "ഓഗസ്റ്റ് 23-ന് വൈകുന്നേരം, വിക്രം ലാൻഡർ സുരക്ഷിതമായി ചന്ദ്രനിൽ ഇറങ്ങി. ദക്ഷിണധ്രുവത്തിനരികെ ഇറങ്ങുന്ന ആദ്യ രാജ്യമായി ഇന്ത്യ.",
+      "caption": "23 August: touchdown",
+      "highlight": "touchdown",
+      "visual": "Vikram lowers on its thrusters and settles",
+      "caption_ml": "ഓഗസ്റ്റ് 23: ലാൻഡിംഗ്!"
+    },
+    {
+      "voiceover": "ആ ദിവസം ഇന്ന് ഇന്ത്യയുടെ ദേശീയ ബഹിരാകാശ ദിനമാണ്.",
+      "caption": "Now National Space Day",
+      "highlight": "Space",
+      "visual": "The rover rolls out leaving tracks",
+      "caption_ml": "ഇന്ന് ദേശീയ ബഹിരാകാശ ദിനം"
+    }
   ],
   "instagram_caption": "No country had landed near the Moon's south pole. Then India did. 🇮🇳🌕\n\nChandrayaan-3 lifted off from Sriharikota on 14 July 2023. Just days before its landing, Russia's Luna-25 crashed while trying to reach the same region. On 23 August, the Vikram lander touched down safely, and India became the first country to land near the lunar south pole. 🚀\n\nSo why is the south pole such a big deal? 👀\n\nWatch the landing that made history.\n\nSend this to someone who stayed up to watch it. 🔭\n\n📚 ISRO · Roscosmos · Govt of India\nEducational · Animated illustrations\n\n#Chandrayaan3 #ISRO #Space #Malayalam #MalayalamReels UnexploredTruths India Moon",
   "fact_check": [
