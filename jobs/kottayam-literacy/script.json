@@ -1,0 +1,43 @@
+{
+  "topic": {
+    "title": "Kottayam: India's first fully literate town",
+    "category": "HISTORY",
+    "angle": "Kottayam, a town with a printing tradition going back to 1821, became India's first fully literate town in 1989, and all of Kerala followed in 1991.",
+    "key_facts": [
+      "The CMS Press in Kottayam began printing in the early 1820s; missionary Benjamin Bailey made Malayalam type",
+      "Kottayam is known as 'Aksharanagari', the city of letters",
+      "In June 1989 Kottayam was declared India's first town to achieve total literacy",
+      "Ernakulam district followed, and in 1991 Kerala was declared a fully literate state after a mass campaign",
+      "Volunteers taught learners of all ages, including elderly people"
+    ],
+    "sources": ["Kerala State Literacy Mission", "Government of Kerala", "CMS College / CMS Press history"]
+  },
+  "category": "HISTORY",
+  "voice": "Sobhana",
+  "headline": ["INDIA'S FIRST", "LITERATE TOWN"],
+  "accent_words": ["LITERATE"],
+  "thumbnail_ml": "ഇന്ത്യയിലെ ആദ്യ സമ്പൂർണ്ണ സാക്ഷരതാ പട്ടണം!",
+  "thumbnail_accent": ["സാക്ഷരതാ"],
+  "hook_voiceover": "ഇന്ത്യയിൽ ആദ്യമായി എല്ലാവരും എഴുതാനും വായിക്കാനും പഠിച്ച ഒരു പട്ടണം. അത് നമ്മുടെ കോട്ടയമാണ്!",
+  "cover_visual": "A town skyline at night with Malayalam letters floating up like lanterns",
+  "scenes": [
+    {"voiceover": "1820-കളിൽ തന്നെ കോട്ടയത്ത് ഒരു പ്രിന്റിംഗ് പ്രസ് ഉണ്ടായിരുന്നു. ബെഞ്ചമിൻ ബെയ്ലി എന്ന മിഷനറിയാണ് മലയാളം അച്ചുകൾ ഉണ്ടാക്കിയത്.",
+     "caption": "Printing since the 1820s", "caption_ml": "1820-കൾ: അച്ചടിയുടെ തുടക്കം", "highlight": "1820s", "visual": "An old printing press stamping pages"},
+    {"voiceover": "പിന്നെ പത്രങ്ങളും പുസ്തകങ്ങളും വന്നു. വായന കോട്ടയത്തിന്റെ ശീലമായി. അങ്ങനെ അക്ഷരനഗരി എന്ന പേരും കിട്ടി.",
+     "caption": "The city of letters", "caption_ml": "അക്ഷരനഗരി", "highlight": "letters", "visual": "Newspapers flying and stacking up"},
+    {"voiceover": "1989 ജൂണിൽ, ഇന്ത്യയിലെ ആദ്യത്തെ സമ്പൂർണ്ണ സാക്ഷരതാ പട്ടണമായി കോട്ടയത്തെ പ്രഖ്യാപിച്ചു.",
+     "caption": "1989: fully literate", "caption_ml": "1989: സമ്പൂർണ്ണ സാക്ഷരത", "highlight": "1989", "visual": "Houses light up until the ring is full"},
+    {"voiceover": "തൊട്ടുപിന്നാലെ എറണാകുളം ജില്ല, പിന്നെ 1991-ൽ കേരളം മുഴുവൻ. വളണ്ടിയർമാർ വീടുവീടാന്തരം കയറിയിറങ്ങി അക്ഷരം പഠിപ്പിച്ചു.",
+     "caption": "1991: all of Kerala", "caption_ml": "1991: കേരളം മുഴുവൻ", "highlight": "1991", "visual": "A volunteer walks house to house, homes light up with letters"},
+    {"voiceover": "പ്രായം ഒന്നും നോക്കിയില്ല. അമ്മൂമ്മമാർ വരെ സ്ലേറ്റും പെൻസിലുമായി ഇരുന്നു. അതാണ് നമ്മുടെ സാക്ഷരതയുടെ കഥ.",
+     "caption": "Age was no barrier", "caption_ml": "പ്രായം ഒരു തടസ്സമല്ല", "highlight": "Age", "visual": "An elderly woman writing letters on a slate"}
+  ],
+  "instagram_caption": "The first town in India where everyone learned to read and write. 📚✨\n\nKottayam had a printing press back in the 1820s, and reading became part of its life, earning it the name 'Aksharanagari', the city of letters. In 1989 it became India's first fully literate town, and by 1991 all of Kerala followed. Volunteers went house to house, and even grandmothers picked up a slate. ✍️\n\nWho taught you your first letters? 👀\n\nSend this to someone from Kottayam. 💛\n\n📚 Kerala State Literacy Mission · Govt of Kerala\nEducational · Animated illustrations\n\n#Kottayam #Literacy #Kerala #Malayalam #MalayalamReels UnexploredTruths KeralaHistory Aksharanagari",
+  "fact_check": [
+    "CMS Press in Kottayam from the 1820s; Benjamin Bailey made Malayalam type -> CMS history",
+    "Kottayam known as Aksharanagari -> common usage",
+    "June 1989: India's first fully literate town -> Kerala State Literacy Mission",
+    "Ernakulam district next; Kerala fully literate state 1991 -> Kerala State Literacy Mission",
+    "Written in chat without live web search: double-check before posting"
+  ]
+}
