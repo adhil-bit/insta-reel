@@ -44,11 +44,11 @@ GEMINI_STYLE = os.getenv("GEMINI_STYLE", "You are a native Malayali from Kerala 
                          "Speak in natural, conversational Kerala Malayalam with an authentic Kerala accent, like talking "
                          "to a friend: warm, curious, expressive, medium-fast, a little dramatic pause before the twist. "
                          "Say English words (KGF, 1902) the way Malayalis naturally say them. Read this")
-GEMINI_VOICE_POOL = [   # female: your picks (Zephyr, Kore); male: interim until matched to the reference page
+GEMINI_VOICE_POOL = [   # your picks: Zephyr + Kore (female), Charon + Puck (male), alternating
     {"name": "Zephyr", "id": "Zephyr", "gender": "f", "style": "female, bright"},
     {"name": "Charon", "id": "Charon", "gender": "m", "style": "male, informative"},
     {"name": "Kore", "id": "Kore", "gender": "f", "style": "female, firm"},
-    {"name": "Orus", "id": "Orus", "gender": "m", "style": "male, firm"},
+    {"name": "Puck", "id": "Puck", "gender": "m", "style": "male, upbeat"},
 ]
 
 # Free native Malayalam voices (Microsoft read-aloud). Variants by speed and pitch so
