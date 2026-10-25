@@ -81,9 +81,14 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     factor = min(config.MAX_SPEEDUP, total / config.TARGET_SECONDS)
     if factor > 1.02:
         for i in range(len(scenes)):
-            f = work / f"voice_{i}.mp3"; tmp = work / f"voice_{i}_fast.mp3"
-            run(["ffmpeg", "-y", "-v", "error", "-i", str(f), "-filter:a", f"atempo={factor:.3f}", "-c:a", "libmp3lame", "-b:a", "160k", str(tmp)])
-            tmp.replace(f)
+            f = work / f"voice_{i}.mp3"
+            if provider == "edge":           # re-record at a faster speaking rate: sounds natural
+                vname = voice["id"].split("|")[0]
+                media.generate_voice(scenes[i]["voiceover"], f, f"{vname}|+{round((factor - 1) * 100)}%|+0Hz", provider="edge")
+            else:
+                tmp = work / f"voice_{i}_fast.mp3"
+                run(["ffmpeg", "-y", "-v", "error", "-i", str(f), "-filter:a", f"atempo={factor:.3f}", "-c:a", "libmp3lame", "-b:a", "160k", str(tmp)])
+                tmp.replace(f)
         durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
                      for i, s in enumerate(scenes)]
         print(f"  narration sped up {factor:.2f}x to keep the reel short ({total:.0f}s -> {sum(durations) + config.END_CARD_SECONDS:.0f}s)")
@@ -265,15 +270,10 @@ def pick_voice(script: dict, hist: list) -> dict:
     if config.VOICE_PROVIDER in ("edge", "gemini"):
         pool = config.EDGE_VOICE_POOL
         want = (script.get("voice") or "").lower()
-        for v in pool:
-            if want == v["name"].lower():
-                return v
-        if want in ("kore", "aoede", "leda", "zephyr", "sulafat"):
-            want = "sobhana"
-        if want in ("lily", "sarah", "charlotte", "sobhana"):      # female narrator requested
-            return pool[1] if used % 2 else pool[3]
+        if any(w in want for w in ("sobhana", "lily", "sarah", "charlotte", "kore", "aoede", "leda", "zephyr", "sulafat")):
+            return pool[1]
         if want:
-            return pool[0] if used % 2 else pool[2]
+            return pool[0]
         return pool[used % len(pool)]
     pool = config.VOICE_POOL
     want = script.get("voice")

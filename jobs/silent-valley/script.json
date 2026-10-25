@@ -10,27 +10,63 @@
       "Scientists, writers such as poet Sugathakumari, and groups like KSSP led the 'Save Silent Valley' movement",
       "The project was dropped and Silent Valley was declared a national park in 1984; it is home to the endangered lion-tailed macaque"
     ],
-    "sources": ["Kerala Forest Department (Silent Valley National Park)", "Ministry of Environment, Forest and Climate Change", "Histories of the Save Silent Valley movement"]
+    "sources": [
+      "Kerala Forest Department (Silent Valley National Park)",
+      "Ministry of Environment, Forest and Climate Change",
+      "Histories of the Save Silent Valley movement"
+    ]
   },
   "category": "NATURE",
-  "voice": "Midhun (deep)",
-  "headline": ["THE FOREST", "WE SAVED"],
-  "accent_words": ["SAVED"],
+  "voice": "Midhun",
+  "headline": [
+    "THE FOREST",
+    "WE SAVED"
+  ],
+  "accent_words": [
+    "SAVED"
+  ],
   "thumbnail_ml": "ഒരു നാട് ഒന്നിച്ചു നിന്ന് രക്ഷിച്ച കാട്!",
-  "thumbnail_accent": ["രക്ഷിച്ച"],
+  "thumbnail_accent": [
+    "രക്ഷിച്ച"
+  ],
   "hook_voiceover": "ഒരു അണക്കെട്ട് വന്നിരുന്നെങ്കിൽ ഈ കാടിന്റെ വലിയൊരു ഭാഗം വെള്ളത്തിനടിയിൽ ആകുമായിരുന്നു. പക്ഷേ നമ്മൾ അത് സമ്മതിച്ചില്ല.",
   "cover_visual": "A misty rainforest at night with fireflies",
   "scenes": [
-    {"voiceover": "പാലക്കാട്ടെ സൈലന്റ് വാലി. ഇവിടെ ചീവീടുകളുടെ ശബ്ദം കുറവായതുകൊണ്ടാണ് ഈ പേര് വന്നതെന്നാണ് പറയപ്പെടുന്നത്.",
-     "caption": "The silent valley", "caption_ml": "നിശ്ശബ്ദ താഴ്വര", "highlight": "silent", "visual": "A quiet forest, faint sound rings fading"},
-    {"voiceover": "1970-കളിൽ കുന്തിപ്പുഴയിൽ ഒരു ജലവൈദ്യുത പദ്ധതി വരാൻ പോകുകയായിരുന്നു. അതോടെ കാടിന്റെ ഒരു ഭാഗം മുങ്ങിപ്പോകുമായിരുന്നു.",
-     "caption": "A dam threatened it", "caption_ml": "ഒരു അണക്കെട്ടിന്റെ ഭീഷണി", "highlight": "dam", "visual": "A dam rises and water floods the valley"},
-    {"voiceover": "അപ്പോൾ ശാസ്ത്രജ്ഞരും കവികളും സാധാരണക്കാരും ഒന്നിച്ചു. സുഗതകുമാരിയുടെ കവിതകൾ ആ സമരത്തിന്റെ ശബ്ദമായി.",
-     "caption": "Save Silent Valley", "caption_ml": "സേവ് സൈലന്റ് വാലി", "highlight": "Save", "visual": "People gather with leaf placards; a poem page"},
-    {"voiceover": "ഒടുവിൽ പദ്ധതി ഉപേക്ഷിച്ചു. 1984-ൽ സൈലന്റ് വാലി ദേശീയോദ്യാനമായി പ്രഖ്യാപിച്ചു.",
-     "caption": "1984: a national park", "caption_ml": "1984: ദേശീയോദ്യാനം", "highlight": "1984", "visual": "The dam fades away and the forest grows back"},
-    {"voiceover": "ഇന്നും സിംഹവാലൻ കുരങ്ങുകൾ ഉൾപ്പെടെ ഒരുപാട് അപൂർവ ജീവികളുടെ വീടാണിവിടം. ഒരു നാട് ഒന്നിച്ചു നിന്നാൽ ഒരു കാട് രക്ഷിക്കാം, അല്ലേ?",
-     "caption": "A forest saved", "caption_ml": "ഒരു കാട് രക്ഷിച്ച നാട്", "highlight": "saved", "visual": "A lion-tailed macaque on a branch"}
+    {
+      "voiceover": "പാലക്കാട്ടെ സൈലന്റ് വാലി. ഇവിടെ ചീവീടുകളുടെ ശബ്ദം കുറവായതുകൊണ്ടാണ് ഈ പേര് വന്നതെന്നാണ് പറയപ്പെടുന്നത്.",
+      "caption": "The silent valley",
+      "caption_ml": "നിശ്ശബ്ദ താഴ്വര",
+      "highlight": "silent",
+      "visual": "A quiet forest, faint sound rings fading"
+    },
+    {
+      "voiceover": "1970-കളിൽ കുന്തിപ്പുഴയിൽ ഒരു ജലവൈദ്യുത പദ്ധതി വരാൻ പോകുകയായിരുന്നു. അതോടെ കാടിന്റെ ഒരു ഭാഗം മുങ്ങിപ്പോകുമായിരുന്നു.",
+      "caption": "A dam threatened it",
+      "caption_ml": "ഒരു അണക്കെട്ടിന്റെ ഭീഷണി",
+      "highlight": "dam",
+      "visual": "A dam rises and water floods the valley"
+    },
+    {
+      "voiceover": "അപ്പോൾ ശാസ്ത്രജ്ഞരും കവികളും സാധാരണക്കാരും ഒന്നിച്ചു. സുഗതകുമാരിയുടെ കവിതകൾ ആ സമരത്തിന്റെ ശബ്ദമായി.",
+      "caption": "Save Silent Valley",
+      "caption_ml": "സേവ് സൈലന്റ് വാലി",
+      "highlight": "Save",
+      "visual": "People gather with leaf placards; a poem page"
+    },
+    {
+      "voiceover": "ഒടുവിൽ പദ്ധതി ഉപേക്ഷിച്ചു. 1984-ൽ സൈലന്റ് വാലി ദേശീയോദ്യാനമായി പ്രഖ്യാപിച്ചു.",
+      "caption": "1984: a national park",
+      "caption_ml": "1984: ദേശീയോദ്യാനം",
+      "highlight": "1984",
+      "visual": "The dam fades away and the forest grows back"
+    },
+    {
+      "voiceover": "ഇന്നും സിംഹവാലൻ കുരങ്ങുകൾ ഉൾപ്പെടെ ഒരുപാട് അപൂർവ ജീവികളുടെ വീടാണിവിടം. ഒരു നാട് ഒന്നിച്ചു നിന്നാൽ ഒരു കാട് രക്ഷിക്കാം, അല്ലേ?",
+      "caption": "A forest saved",
+      "caption_ml": "ഒരു കാട് രക്ഷിച്ച നാട്",
+      "highlight": "saved",
+      "visual": "A lion-tailed macaque on a branch"
+    }
   ],
   "instagram_caption": "Kerala once stood together to save a forest. 🌳💚\n\nIn the 1970s, a dam on the Kunthipuzha river threatened to flood part of Silent Valley's rainforest in Palakkad. Scientists, poets like Sugathakumari and ordinary people joined the 'Save Silent Valley' movement, the project was dropped, and in 1984 the valley became a national park. 🐒\n\nHave you visited Silent Valley? 👀\n\nSend this to a nature lover. 🌿\n\n📚 Kerala Forest Department · MoEFCC\nEducational · Animated illustrations\n\n#SilentValley #Palakkad #Kerala #Malayalam #MalayalamReels UnexploredTruths Nature SaveForests",
   "fact_check": [

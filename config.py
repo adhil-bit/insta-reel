@@ -59,11 +59,9 @@ GEMINI_VOICE_POOL = [
 
 # Free native Malayalam voices (Microsoft read-aloud). Variants by speed and pitch so
 # reels don't all sound the same. id format: "voice|rate|pitch"
-EDGE_VOICE_POOL = [
-    {"name": "Midhun", "id": "ml-IN-MidhunNeural|+4%|+0Hz", "style": "male, lively"},
-    {"name": "Sobhana", "id": "ml-IN-SobhanaNeural|+4%|+0Hz", "style": "female, clear"},
-    {"name": "Midhun (deep)", "id": "ml-IN-MidhunNeural|-4%|-8Hz", "style": "male, deep storyteller"},
-    {"name": "Sobhana (calm)", "id": "ml-IN-SobhanaNeural|-3%|-4Hz", "style": "female, calm"},
+EDGE_VOICE_POOL = [   # natural settings only: changing pitch made the voice sound robotic
+    {"name": "Midhun", "id": "ml-IN-MidhunNeural|+0%|+0Hz", "style": "male"},
+    {"name": "Sobhana", "id": "ml-IN-SobhanaNeural|+0%|+0Hz", "style": "female"},
 ]
 OPENAI_TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")
@@ -123,7 +121,7 @@ COVER_MIN_SECONDS = 1.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.18     # small pause after each voice line
 END_CARD_SECONDS = 2.0  # 'follow us' card at the end of every reel
 TARGET_SECONDS = 44     # aim for reels about this long; longer narration is gently sped up
-MAX_SPEEDUP = 1.18      # never speed the voice up more than this
+MAX_SPEEDUP = 1.12      # never speed the voice up more than this (done by the voice engine itself)
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel
 
 
