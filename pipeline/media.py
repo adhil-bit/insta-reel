@@ -74,7 +74,9 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
     for attempt in range(4):
         r = requests.post(url, headers={"x-goog-api-key": config.GEMINI_API_KEY}, json=body, timeout=180)
-        if r.status_code == 429 or r.status_code >= 500:          # rate limit / busy: wait and retry
+        if r.status_code == 429 and "quota" in r.text.lower() and "per day" in r.text.lower():
+            raise RuntimeError("Gemini daily voice quota used up")
+        if r.status_code == 429 or r.status_code >= 500:          # short rate limit / busy: wait and retry
             time.sleep(15 * (attempt + 1)); continue
         if r.status_code >= 400:
             raise RuntimeError(f"Gemini TTS error {r.status_code}: {r.text[:300]}")
@@ -117,3 +119,27 @@ def generate_voice(text: str, out_path: Path, voice_id: str | None = None, provi
         raise RuntimeError(f"Voice API error {resp.status_code}: {resp.text[:500]}")
     out_path.write_bytes(resp.content)
     return out_path
+
+
+def gemini_narration(lines: list[str], outs: list[Path], voice_name: str) -> list[Path]:
+    """Record every line of a reel in ONE Gemini request (saves free quota), then cut the
+    recording at the pauses between lines."""
+    import re, subprocess
+    joined = "\n\n".join(f"{l.strip()} ..." for l in lines)
+    full = outs[0].parent / "narration_full.mp3"
+    _gemini_voice(joined, full, voice_name)
+    probe = subprocess.run(["ffmpeg", "-i", str(full), "-af", "silencedetect=noise=-38dB:d=0.45", "-f", "null", "-"],
+                           capture_output=True, text=True).stderr
+    starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", probe)]
+    ends = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", probe)]
+    gaps = sorted(zip(starts, ends), key=lambda g: g[1] - g[0], reverse=True)[:len(lines) - 1]
+    if len(gaps) < len(lines) - 1:
+        raise RuntimeError(f"could not find the pauses between lines ({len(gaps)} of {len(lines) - 1})")
+    gaps.sort()
+    total = float(re.search(r"Duration: (\d+):(\d+):([\d.]+)", probe).group(3)) + 60 * float(re.search(r"Duration: (\d+):(\d+):", probe).group(2))
+    cuts = [0.0] + [(a + b) / 2 for a, b in gaps] + [total]
+    for i, out in enumerate(outs):
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(full), "-ss", f"{cuts[i]:.3f}", "-to", f"{cuts[i + 1]:.3f}",
+                        "-af", "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        "-c:a", "libmp3lame", "-b:a", "160k", str(out)], check=True)
+    return outs

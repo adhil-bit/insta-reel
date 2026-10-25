@@ -46,7 +46,8 @@ GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
 GEMINI_STYLE = os.getenv("GEMINI_STYLE", "You are a native Malayali from Kerala narrating a popular Malayalam Instagram explainer. "
                          "Speak in natural, conversational Kerala Malayalam with an authentic Kerala accent, like talking "
                          "to a friend: warm, curious, expressive, medium-fast, a little dramatic pause before the twist. "
-                         "Say English words (KGF, 1902) the way Malayalis naturally say them. Read this")
+                         "Say English words (KGF, 1902) the way Malayalis naturally say them. Leave a clear one-second pause "
+                         "between paragraphs. Read this")
 GEMINI_VOICE_POOL = [   # your picks: Zephyr + Kore (female), Charon + Puck (male), alternating
     {"name": "Zephyr", "id": "Zephyr", "gender": "f", "style": "female, bright"},
     {"name": "Charon", "id": "Charon", "gender": "m", "style": "male, informative"},
@@ -102,7 +103,7 @@ BRAND = {
         "no letters, no logos, no watermarks"
     ),
     "music_volume": 0.12,
-    "template": "archive",      # reel look: "archive" (photo print on a desk) or "classic"
+    "template": "explainer",    # reel look: "explainer" (full-screen, pop-in headlines, subtitles), "archive" or "classic"
     # added to every caption when posting (on top of each reel's topic tags)
     "end_card": {
         "ask": "ഇഷ്ടപ്പെട്ടോ?",

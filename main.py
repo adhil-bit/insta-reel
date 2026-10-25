@@ -59,7 +59,19 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
     provider = voice.get("provider", config.VOICE_PROVIDER if config.VOICE_PROVIDER != "gemini" else "edge")
+    one_take = False
+    if provider == "gemini":
+        try:
+            media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+            one_take = True
+            print("  whole narration recorded in one Gemini take")
+        except Exception as e:
+            print(f"  Gemini voice unavailable ({str(e)[:120]}); using the {'Sobhana' if voice.get('gender') == 'f' else 'Midhun'} voice")
+            provider = "edge"
+            voice = {**config.EDGE_VOICE_POOL[1 if voice.get("gender") == "f" else 0], "provider": "edge"}
     for i, s in enumerate(scenes):
+        if one_take:
+            break
         if i == 0 and provider == "elevenlabs":
             voice = _first_working_voice(media, s["voiceover"], work / "voice_0.mp3", voice)
             continue
@@ -265,24 +277,13 @@ def pick_voice(script: dict, hist: list) -> dict:
     """The script can name a voice; otherwise rotate through the pool reel by reel."""
     used = sum(1 for h in hist if h.get("status") != "skipped")
     if config.VOICE_PROVIDER == "gemini" and config.GEMINI_API_KEY:
-        pool = config.GEMINI_VOICE_POOL
-        want = (script.get("voice") or "").lower()
-        for v in pool:
-            if want == v["name"].lower():
-                return {**v, "provider": "gemini"}
-        if want in ("lily", "sarah", "charlotte", "sobhana"):
-            pool = [v for v in pool if v["gender"] == "f"]
-        elif want:
-            pool = [v for v in pool if v["gender"] == "m"]
-        return {**pool[used % len(pool)], "provider": "gemini"}
+        # alternate male / female from reel to reel: Charon, Zephyr, Puck, Kore, ...
+        males = [v for v in config.GEMINI_VOICE_POOL if v["gender"] == "m"]
+        females = [v for v in config.GEMINI_VOICE_POOL if v["gender"] == "f"]
+        pick = (males if used % 2 == 0 else females)[(used // 2) % 2]
+        return {**pick, "provider": "gemini"}
     if config.VOICE_PROVIDER in ("edge", "gemini"):
-        pool = config.EDGE_VOICE_POOL
-        want = (script.get("voice") or "").lower()
-        if any(w in want for w in ("sobhana", "lily", "sarah", "charlotte", "kore", "aoede", "leda", "zephyr", "sulafat")):
-            return pool[1]
-        if want:
-            return pool[0]
-        return pool[used % len(pool)]
+        return config.EDGE_VOICE_POOL[used % 2]                    # Midhun, Sobhana, Midhun, ...
     pool = config.VOICE_POOL
     want = script.get("voice")
     if want:
