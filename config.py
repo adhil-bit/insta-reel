@@ -15,6 +15,9 @@ HISTORY_FILE = ROOT / "history.json"
 # ---------------- API settings ----------------
 ANTHROPIC_API_KEY = os.getenv("ANTHROPIC_API_KEY")
 CLAUDE_MODEL = os.getenv("CLAUDE_MODEL", "claude-sonnet-5-5")
+# Video design planning (research, script, scene-by-scene visual plan and animation code)
+# is done by Claude Fable 5.1. Override with the PLANNER_MODEL variable if needed.
+PLANNER_MODEL = os.getenv("PLANNER_MODEL", "claude-fable-5-1")
 
 # "code": Claude writes a fresh code animation per scene (no image API needed)
 # "image": AI images / stock photos with a slow zoom

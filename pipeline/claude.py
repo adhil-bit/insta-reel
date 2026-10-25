@@ -17,7 +17,7 @@ def _ask(prompt: str, use_search: bool = False, max_tokens: int = 4000) -> str:
 
     for _ in range(5):
         resp = client.messages.create(
-            model=config.CLAUDE_MODEL, max_tokens=max_tokens, messages=messages, **kwargs
+            model=config.PLANNER_MODEL, max_tokens=max_tokens, messages=messages, **kwargs
         )
         if resp.stop_reason != "pause_turn":
             break
