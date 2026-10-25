@@ -1,6 +1,6 @@
 name: Voice test
 
-# Quick check that the Malayalam voices work from GitHub's servers.
+# Makes a short sample of every voice so you can pick favourites. Posts nothing.
 on:
   workflow_dispatch:
 
@@ -10,23 +10,44 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
     steps:
       - uses: actions/checkout@v4
-      - run: pip install -q edge-tts
-      - run: |
-          mkdir -p logs
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Get FFmpeg
+        run: |
+          mkdir -p ~/ffmpeg
+          curl -sL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz \
+            | tar -xJ -C ~/ffmpeg --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
+          echo "$HOME/ffmpeg" >> "$GITHUB_PATH"
+      - run: pip install -q -r requirements.txt
+      - name: Make samples
+        run: |
+          mkdir -p logs/voices
           python - << 'PY'
-          import asyncio, edge_tts, json, os
+          import json, sys
+          from pathlib import Path
+          sys.path.insert(0, ".")
+          import config
+          from pipeline import media
+          line = "1883-ൽ തലശ്ശേരിയിലെ ഒരു ബേക്കറിയിൽ ഇന്ത്യയിലെ ആദ്യത്തെ ക്രിസ്മസ് കേക്ക് പിറന്നു. അതിന് പിന്നിൽ ഒരു രസകരമായ കഥയുണ്ട്."
           out = {}
-          for v in ["ml-IN-MidhunNeural", "ml-IN-SobhanaNeural"]:
-              f = f"logs/voice-{v}.mp3"
-              try:
-                  asyncio.run(edge_tts.Communicate("കടലിനേക്കാൾ താഴ്ന്ന നിലത്ത് നെല്ല് വിളയുന്ന ഒരു നാട്. അത് നമ്മുടെ കേരളത്തിലാണ്.", v).save(f))
-                  out[v] = os.path.getsize(f)
-              except Exception as e:
-                  out[v] = f"error: {e}"
-          json.dump(out, open("logs/voice-test.json", "w"), indent=2); print(out)
+          pools = [("edge", config.EDGE_VOICE_POOL[:2])]
+          if config.GEMINI_API_KEY:
+              pools.append(("gemini", config.GEMINI_VOICE_POOL))
+          for provider, pool in pools:
+              for v in pool:
+                  f = Path(f"logs/voices/{provider}-{v['name'].split(' ')[0].lower()}.mp3")
+                  try:
+                      media.generate_voice(line, f, v["id"], provider=provider)
+                      out[f.name] = f.stat().st_size
+                  except Exception as e:
+                      out[f.name] = f"error: {str(e)[:200]}"
+          json.dump(out, open("logs/voices/result.json", "w"), indent=2, ensure_ascii=False); print(out)
           PY
       - run: |
           git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
-          git add logs && git commit -qm "voice test" && git pull -q --rebase && git push -q || true
+          git add logs && git commit -qm "voice samples" && git pull -q --rebase && git push -q || true

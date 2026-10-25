@@ -58,13 +58,24 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     voice = pick_voice(script, hist)
     print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
+    provider = voice.get("provider", config.VOICE_PROVIDER if config.VOICE_PROVIDER != "gemini" else "edge")
     for i, s in enumerate(scenes):
-        if i == 0 and config.VOICE_PROVIDER == "elevenlabs":
+        if i == 0 and provider == "elevenlabs":
             voice = _first_working_voice(media, s["voiceover"], work / "voice_0.mp3", voice)
-        else:
-            media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice.get("id"))
-        durations.append(video.scene_duration(
-            work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0))
+            continue
+        try:
+            media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice.get("id"), provider=provider)
+        except Exception as e:
+            if provider != "gemini":
+                raise
+            print(f"  Gemini voice failed ({str(e)[:120]}); switching this reel to the Edge voices")
+            provider = "edge"
+            edge_pool = config.EDGE_VOICE_POOL
+            voice = {**edge_pool[1 if voice.get("gender") == "f" else 0], "provider": "edge"}
+            for j in range(i + 1):                                  # redo earlier lines so the voice stays consistent
+                media.generate_voice(scenes[j]["voiceover"], work / f"voice_{j}.mp3", voice["id"], provider="edge")
+    durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
+                 for i, s in enumerate(scenes)]
 
     visuals = []
     if config.VISUAL_MODE == "code":
@@ -210,9 +221,22 @@ def render_pending() -> None:
 def pick_voice(script: dict, hist: list) -> dict:
     """The script can name a voice; otherwise rotate through the pool reel by reel."""
     used = sum(1 for h in hist if h.get("status") != "skipped")
-    if config.VOICE_PROVIDER == "edge":
+    if config.VOICE_PROVIDER == "gemini" and config.GEMINI_API_KEY:
+        pool = config.GEMINI_VOICE_POOL
+        want = (script.get("voice") or "").lower()
+        for v in pool:
+            if want == v["name"].lower():
+                return {**v, "provider": "gemini"}
+        if want in ("lily", "sarah", "charlotte", "sobhana"):
+            pool = [v for v in pool if v["gender"] == "f"]
+        elif want:
+            pool = [v for v in pool if v["gender"] == "m"]
+        return {**pool[used % len(pool)], "provider": "gemini"}
+    if config.VOICE_PROVIDER in ("edge", "gemini"):
         pool = config.EDGE_VOICE_POOL
         want = (script.get("voice") or "").lower()
+        if want in ("kore", "aoede", "leda", "zephyr", "sulafat"):
+            want = "sobhana"
         if want in ("lily", "sarah", "charlotte", "sobhana"):      # female narrator requested
             return pool[1] if used % 2 else pool[3]
         if want:

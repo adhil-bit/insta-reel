@@ -24,7 +24,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 OPENAI_IMAGE_MODEL = os.getenv("OPENAI_IMAGE_MODEL", "gpt-image-1")
 PEXELS_API_KEY = os.getenv("PEXELS_API_KEY")
 
-VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "edge").lower()  # edge | elevenlabs | openai
+VOICE_PROVIDER = os.getenv("VOICE_PROVIDER", "gemini").lower()  # gemini (falls back to edge) | edge | elevenlabs | openai
 ELEVENLABS_API_KEY = os.getenv("ELEVENLABS_API_KEY")
 ELEVENLABS_VOICE_ID = os.getenv("ELEVENLABS_VOICE_ID")
 ELEVENLABS_MODEL = os.getenv("ELEVENLABS_MODEL", "eleven_v3")  # v3 supports Malayalam
@@ -36,6 +36,26 @@ VOICE_POOL = [
     {"name": "Daniel", "id": "onwK4e9ZLuTAKqWW03F9", "style": "authoritative male"},
     {"name": "Lily", "id": "pFZP5JQG7iQjIQuC4Bku", "style": "gentle female"},
 ]
+# Gemini text-to-speech (Google AI Studio key). Expressive voices; the style prompt
+# below is applied to every line. Falls back to the Edge voices if Gemini fails.
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
+GEMINI_STYLE = os.getenv("GEMINI_STYLE", "Read this Malayalam narration like a gripping Malayalam storyteller on a popular "
+                         "explainer channel: natural Kerala Malayalam pronunciation, expressive, curious, clear, "
+                         "medium-fast pace, with a small dramatic pause before the twist")
+GEMINI_VOICE_POOL = [
+    {"name": "Charon", "id": "Charon", "gender": "m", "style": "male, informative"},
+    {"name": "Kore", "id": "Kore", "gender": "f", "style": "female, firm"},
+    {"name": "Fenrir", "id": "Fenrir", "gender": "m", "style": "male, excitable"},
+    {"name": "Aoede", "id": "Aoede", "gender": "f", "style": "female, breezy"},
+    {"name": "Orus", "id": "Orus", "gender": "m", "style": "male, firm"},
+    {"name": "Leda", "id": "Leda", "gender": "f", "style": "female, youthful"},
+    {"name": "Puck", "id": "Puck", "gender": "m", "style": "male, upbeat"},
+    {"name": "Zephyr", "id": "Zephyr", "gender": "f", "style": "female, bright"},
+    {"name": "Algenib", "id": "Algenib", "gender": "m", "style": "male, gravelly"},
+    {"name": "Sulafat", "id": "Sulafat", "gender": "f", "style": "female, warm"},
+]
+
 # Free native Malayalam voices (Microsoft read-aloud). Variants by speed and pitch so
 # reels don't all sound the same. id format: "voice|rate|pitch"
 EDGE_VOICE_POOL = [

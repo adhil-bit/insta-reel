@@ -66,10 +66,38 @@ def _edge_voice(text: str, out_path: Path, voice_id: str) -> Path:
     raise RuntimeError(f"Edge voice failed: {err if 'err' in dir() else 'empty audio'}")
 
 
-def generate_voice(text: str, out_path: Path, voice_id: str | None = None) -> Path:
-    if config.VOICE_PROVIDER == "edge":
+def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
+    import base64, subprocess, time
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{config.GEMINI_TTS_MODEL}:generateContent"
+    body = {"contents": [{"parts": [{"text": f"{config.GEMINI_STYLE}:\n{text}"}]}],
+            "generationConfig": {"responseModalities": ["AUDIO"],
+                                 "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
+    for attempt in range(4):
+        r = requests.post(url, params={"key": config.GEMINI_API_KEY}, json=body, timeout=180)
+        if r.status_code == 429 or r.status_code >= 500:          # rate limit / busy: wait and retry
+            time.sleep(15 * (attempt + 1)); continue
+        if r.status_code >= 400:
+            raise RuntimeError(f"Gemini TTS error {r.status_code}: {r.text[:300]}")
+        part = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]
+        pcm = out_path.with_suffix(".pcm"); pcm.write_bytes(base64.b64decode(part["data"]))
+        rate = "24000"
+        if "rate=" in part.get("mimeType", ""):
+            rate = part["mimeType"].split("rate=")[1].split(";")[0]
+        subprocess.run(["ffmpeg", "-y", "-v", "error", "-f", "s16le", "-ar", rate, "-ac", "1", "-i", str(pcm),
+                        "-af", "silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse",
+                        "-c:a", "libmp3lame", "-b:a", "128k", str(out_path)], check=True)
+        time.sleep(2)                                              # gentle on the free-tier rate limit
+        return out_path
+    raise RuntimeError("Gemini TTS kept hitting its rate limit")
+
+
+def generate_voice(text: str, out_path: Path, voice_id: str | None = None, provider: str | None = None) -> Path:
+    provider = provider or config.VOICE_PROVIDER
+    if provider == "gemini":
+        return _gemini_voice(text, out_path, voice_id or config.GEMINI_VOICE_POOL[0]["id"])
+    if provider == "edge":
         return _edge_voice(text, out_path, voice_id or config.EDGE_VOICE_POOL[0]["id"])
-    if config.VOICE_PROVIDER == "openai":
+    if provider == "openai":
         resp = requests.post(
             "https://api.openai.com/v1/audio/speech",
             headers={"Authorization": f"Bearer {config.OPENAI_API_KEY}"},
