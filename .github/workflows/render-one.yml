@@ -1,0 +1,104 @@
+name: Render one reel (urgent, runs in parallel)
+
+# Renders reels whose script + animations were written ahead of time (e.g. by Claude
+# in a chat) and committed to jobs/<name>/. No Anthropic API key needed.
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Folder name under jobs/ to render right now"
+        required: true
+
+permissions:
+  contents: write
+
+
+env:
+  VISUAL_MODE: code
+  VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'gemini' }}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL || 'eleven_v3' }}
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  RENDER_WORKERS: ${{ vars.RENDER_WORKERS || '3' }}
+
+jobs:
+  render:
+    runs-on: ubuntu-latest
+    timeout-minutes: 340
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-static-v1
+
+      - name: Get FFmpeg (static build, cached)
+        run: |
+          if [ ! -x ~/ffmpeg/ffmpeg ]; then
+            mkdir -p ~/ffmpeg
+            curl -sL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz \
+              | tar -xJ -C ~/ffmpeg --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
+          fi
+          echo "$HOME/ffmpeg" >> "$GITHUB_PATH"
+
+      - name: Cache the rendering browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('requirements.txt') }}
+
+      - name: Install Python packages and the rendering browser
+        run: |
+          pip install -r requirements.txt
+          python -m playwright install --with-deps chromium
+
+      - name: Render new jobs
+        env:
+          GH_TOKEN: ${{ github.token }}
+          WAIT_UNTIL: ${{ github.event.inputs.wait_until_utc }}
+        run: |
+          if [ -n "$WAIT_UNTIL" ]; then
+            secs=$(( $(date -u -d "$WAIT_UNTIL" +%s) - $(date -u +%s) )); [ $secs -gt 0 ] && [ $secs -lt 20000 ] && { echo "Waiting $secs s until $WAIT_UNTIL UTC"; sleep $secs; }
+          fi
+          git pull -q origin main || true
+          mkdir -p output
+          set -o pipefail
+          python main.py render "jobs/${{ github.event.inputs.job }}" 2>&1 | tee output/render-log.txt
+          echo "${{ github.event.inputs.job }}" >> output/rendered.txt
+          exit ${PIPESTATUS[0]}
+
+      - name: Save each reel for review (Releases page)
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          while read -r REEL || [ -n "$REEL" ]; do
+            [ -z "$REEL" ] && continue
+            dir="output/$REEL"
+            files=("$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" output/render-log.txt)
+            [ -f "$dir/thumbnail.jpg" ] && files+=("$dir/thumbnail.jpg")
+            [ -f "$dir/script.json" ] && files+=("$dir/script.json")
+            gh release delete "$REEL" --yes --cleanup-tag 2>/dev/null || true
+            gh release create "$REEL" "${files[@]}" --title "$REEL" --notes-file "$dir/review.md"
+          done < output/rendered.txt
+
+      - name: Save the log if rendering failed
+        if: ${{ failure() }}
+        run: |
+          mkdir -p logs && cp output/render-log.txt logs/last-failed-render.txt || true
+          git config user.name "autoreel-bot"
+          git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -m "render failed: log" && git pull --rebase && git push || true
+
+      - name: Save history
+        if: ${{ always() }}
+        run: bash scripts/save_history.sh "rendered jobs"
