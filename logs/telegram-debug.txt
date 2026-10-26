@@ -18,4 +18,4 @@ Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Keral
 Posted so far: 8
 Waiting in queue: 6
 Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Kerala'\''s village of twins, Jatinga: where birds fall at night'
-bash: scripts/notify.sh: No such file or directory
+telegram: 200
