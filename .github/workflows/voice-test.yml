@@ -3,6 +3,11 @@ name: Voice test
 # Makes a short sample of every voice so you can pick favourites. Posts nothing.
 on:
   workflow_dispatch:
+    inputs:
+      voices:
+        description: "Comma-separated Gemini voice names to sample (empty = the current pool)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -12,6 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      VOICES: ${{ github.event.inputs.voices }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,9 +41,11 @@ jobs:
           from pipeline import media
           line = "1883-ൽ തലശ്ശേരിയിലെ ഒരു ബേക്കറിയിൽ ഇന്ത്യയിലെ ആദ്യത്തെ ക്രിസ്മസ് കേക്ക് പിറന്നു. അതിന് പിന്നിൽ ഒരു രസകരമായ കഥയുണ്ട്."
           out = {}
-          pools = [("edge", config.EDGE_VOICE_POOL[:2])]
+          import os
+          want = [v.strip() for v in os.getenv("VOICES", "").split(",") if v.strip()]
+          pools = [] if want else [("edge", config.EDGE_VOICE_POOL[:2])]
           if config.GEMINI_API_KEY:
-              pools.append(("gemini", config.GEMINI_VOICE_POOL))
+              pools.append(("gemini", [{"name": v, "id": v} for v in want] if want else config.GEMINI_VOICE_POOL))
           for provider, pool in pools:
               for v in pool:
                   f = Path(f"logs/voices/{provider}-{v['name'].split(' ')[0].lower()}.mp3")
