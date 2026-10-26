@@ -12,6 +12,7 @@ AutoReel: Claude-powered Instagram Reels pipeline.
   python main.py auto             make + post with no review (not recommended)
 """
 import argparse
+import re
 import sys
 from datetime import datetime
 from pathlib import Path
@@ -340,7 +341,7 @@ def post(folder_name: str) -> None:
     thumb = folder / "thumbnail.jpg"
     text = caption.read_text(encoding="utf-8").rstrip()
     # ig-caption: exactly one clear ask ("share this") so the post has a single job
-    text = text.replace("Send this to someone", "Share this with someone").replace("Send this to a", "Share this with a")
+    text = re.sub(r"\bSend this to\b", "Share this with", text)
     extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
     if extra:
         text += " " + " ".join(extra)
