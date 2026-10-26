@@ -3,6 +3,138 @@
   "title": "Göbekli Tepe: the temple older than farming",
   "category": "HISTORY",
   "priority": 10,
-  "locked": false,
-  "status": "waiting for the planner (Fable)"
+  "locked": true,
+  "facts": [
+    {
+      "claim": "Göbekli Tepe in south-eastern Turkey dates to around 9500 BCE, about 11,500 years ago",
+      "source": "UNESCO World Heritage listing (2018)"
+    },
+    {
+      "claim": "It has large T-shaped limestone pillars, some over 5 m tall, arranged in circles and carved with animals",
+      "source": "UNESCO; Smithsonian Magazine"
+    },
+    {
+      "claim": "It was built by hunter-gatherers before farming and before pottery",
+      "source": "UNESCO; Smithsonian"
+    },
+    {
+      "claim": "That makes it thousands of years older than Stonehenge and the Egyptian pyramids",
+      "source": "Smithsonian Magazine"
+    },
+    {
+      "claim": "Major excavations began in 1995 under archaeologist Klaus Schmidt",
+      "source": "Smithsonian Magazine"
+    }
+  ],
+  "opening": {
+    "type": "globe",
+    "lat": 37.22,
+    "lon": 38.92,
+    "label": "GÖBEKLI TEPE · TURKEY",
+    "why": "A little-known hilltop; placing it near the edge of the Fertile Crescent sets up the age shock."
+  },
+  "accent": "#F59E3B",
+  "voice": "auto",
+  "music_mood": "ancient awe: deep drone, slow heartbeat pulse",
+  "cover": {
+    "headline": [
+      "OLDER THAN",
+      "THE PYRAMIDS"
+    ],
+    "accent_words": [
+      "OLDER"
+    ],
+    "thumbnail_ml": "പിരമിഡുകൾക്കും ആയിരക്കണക്കിന് വർഷം മുമ്പത്തെ ക്ഷേത്രം!",
+    "thumbnail_accent": [
+      "മുമ്പത്തെ"
+    ],
+    "hook_voiceover_ml": "പിരമിഡുകൾക്കും ആയിരക്കണക്കിന് വർഷം മുമ്പ് ഒരു ക്ഷേത്രം. ഉണ്ടാക്കിയത് കൃഷി പോലും അറിയാത്ത മനുഷ്യർ!",
+    "visual": "Dawn light on a hilltop: a ring of tall T-shaped stone pillars casting long shadows, dust in the air.",
+    "build_cmd": "Sky gradient #2a1a3a (top) to #f2a65a (horizon y0.5). Ground: a low hill curve (#4a3a2a) across the frame. A circle of 10 T-shaped pillars (vertical slab 60x300 with a 140x60 top bar, sand colour #c8a878 with darker side face) arranged in an ellipse around x0.5 y0.5 (ellipse 700x220), with two taller centre pillars (1.3x). Long shadows stretch left. Pillars rise from the ground one by one over the first 45% (ease-out). 40 dust motes drift slowly. Slow camera push-in (scale 1.0 to 1.06)."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ക്ലൗസ് ഷ്മിറ്റ് എന്ന പുരാവസ്തു ഗവേഷകൻ ഇവിടെ കുഴിച്ചു തുടങ്ങി. മണ്ണിനടിയിൽ നിന്ന് വന്നത് ലോകത്തെ ഞെട്ടിച്ചു.",
+      "headline": "DUG UP IN 1995",
+      "highlight": "1995",
+      "labels": [
+        {
+          "text": "SOUTH-EAST TURKEY",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "A hill of earth; brushes and trowels sweep soil away to reveal the top of a T-shaped pillar.",
+      "build_cmd": "A mound of soil (big rounded shape #5a4632) filling the middle band. A T-pillar top (sand colour) is hidden inside; a 'dig' mask grows from a small circle at x0.5 y0.42 to a wide ellipse over 10-80%, revealing the pillar top and a carved fox outline on it. Two trowel shapes move in small arcs at the mask edge. Loose soil particles (30) tumble down the mound sides as the mask grows."
+    },
+    {
+      "voiceover_ml": "കൂറ്റൻ T ആകൃതിയിലുള്ള കൽത്തൂണുകൾ. ചിലത് അഞ്ച് മീറ്ററിലധികം ഉയരം. വൃത്താകൃതിയിൽ നിരത്തി വെച്ചിരിക്കുന്നു. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും കൊത്തിയിട്ടുണ്ട്.",
+      "headline": "GIANT T-PILLARS",
+      "highlight": "T-PILLARS",
+      "labels": [
+        {
+          "text": "OVER 5 M TALL",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "A single pillar fills the frame; carved animals (fox, snake, crane) light up one by one along its face.",
+      "build_cmd": "One large T-pillar centred (slab 220x900 at x0.5 y0.47, top bar 480x120), sand colour with a subtle grain. Three carvings as thin dark outlines: a fox (y0.32), a snake zigzag (y0.46), a long-legged bird (y0.6). Each carving 'lights up' with an accent glow sweep at 25%, 50%, 75%. A small human-height marker (thin figure outline 1/3 of the pillar height) stands at the base for scale, appearing at 10%. Gentle parallax: pillar drifts 10px against a darker background."
+    },
+    {
+      "voiceover_ml": "ഏറ്റവും അത്ഭുതം ഇതിന്റെ പ്രായമാണ്. ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്. സ്റ്റോൺഹെഞ്ചിനേക്കാൾ 6,000 വർഷം.",
+      "headline": "11,500 YEARS OLD",
+      "highlight": "11,500",
+      "labels": [
+        {
+          "text": "PYRAMIDS: ~4,500 YRS",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.45
+        }
+      ],
+      "visual": "A timeline runs across the screen: Göbekli Tepe at the far left, then a long empty gap, then Stonehenge, then the pyramids, then today.",
+      "build_cmd": "A horizontal timeline at y0.46 from x0.08 to x0.92, drawn left to right over 10-80%. Markers: at x0.1 a mini T-pillar icon (accent), at x0.62 a mini trilithon (two posts + lintel), at x0.72 a mini pyramid triangle, at x0.92 a small dot for today. Each marker pops in as the line reaches it. Short vertical ticks every 1,000 years (84 ticks, thin). The gap between the first marker and the second gets a pulsing accent bracket at 85% to emphasise the emptiness."
+    },
+    {
+      "voiceover_ml": "ഇത് പണിതവർ കർഷകരല്ല. വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യരാണ്. അപ്പോൾ ചരിത്ര പുസ്തകങ്ങൾ പറഞ്ഞത് തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി.",
+      "headline": "TEMPLE BEFORE FARMING",
+      "highlight": "BEFORE",
+      "labels": [
+        {
+          "text": "HUNTER-GATHERERS",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "Two panels: a hunting scene with figures and a deer silhouette; then wheat sprouts rising, with an arrow showing temple first, farming after.",
+      "build_cmd": "Left panel (x0.3): dusk savanna with 3 hunter silhouettes (stick figures with spears) and a deer silhouette, drawn in over 0-40%. Right panel (x0.7): bare soil at y0.55 from which 9 wheat stalks grow upward (lines with small ellipse heads) over 45-85%. Between the panels a big accent arrow draws from left to right at 85-100%. Background split by a soft vertical gradient line at x0.5."
+    },
+    {
+      "voiceover_ml": "ഇന്നും അവിടെ മിക്കവാറും ഭാഗങ്ങൾ മണ്ണിനടിയിൽ തന്നെയാണ്. ആരാണ് ഇത് പണിതത്, എന്തിനാണ് ഇത് മൂടിയത്, ആർക്കും അറിയില്ല.",
+      "headline": "STILL BURIED",
+      "highlight": "BURIED",
+      "labels": [
+        {
+          "text": "MOST STILL UNDERGROUND",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.2
+        }
+      ],
+      "visual": "A cutaway hillside: the excavated circle at the top, and beneath it faint ghost outlines of many more buried circles fading into the earth.",
+      "build_cmd": "Cross-section of the hill: a brown mound filling the lower 60% of the frame. Near the top (y0.3) a small excavated ring of 8 pillars in full colour. Below it, 5 more rings (ellipses of pillar outlines, 0.3 opacity, white) at y0.42, 0.5, 0.58, 0.66, 0.74, fading in one by one over 20-80%. A slow scanning line (accent, horizontal) moves down the mound like radar from 10% to 90%. End on a still frame with a faint pulse on the deepest ring."
+    }
+  ],
+  "instagram_caption": "A temple built 7,000 years before the pyramids, by people who hadn't invented farming. 🏛️\n\nGöbekli Tepe in Turkey is about 11,500 years old: rings of giant T-shaped pillars carved with foxes, snakes and birds, raised by hunter-gatherers. It rewrote the order of history: first the temple, then farming. Most of it is still underground. 🔍\n\nWho built it, and why was it buried? 👀\n\nSend this to a history lover. 💛\n\n📚 UNESCO · Smithsonian Magazine\nEducational · Animated illustrations\n\n#GobekliTepe #Archaeology #History #Malayalam #MalayalamReels UnexploredTruths Ancient",
+  "fact_check": [
+    "~9500 BCE / 11,500 years -> UNESCO",
+    "T-pillars over 5 m, carved animals -> UNESCO/Smithsonian",
+    "Built by hunter-gatherers pre-farming -> UNESCO/Smithsonian",
+    "Older than Stonehenge and pyramids -> Smithsonian",
+    "Excavations from 1995, Klaus Schmidt -> Smithsonian"
+  ]
 }

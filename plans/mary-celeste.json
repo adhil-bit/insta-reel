@@ -3,6 +3,153 @@
   "title": "Mary Celeste: the ship with no one on board",
   "category": "MYSTERY",
   "priority": 8,
-  "locked": false,
-  "status": "waiting for the planner (Fable)"
+  "locked": true,
+  "facts": [
+    {
+      "claim": "On 4 December 1872 the brigantine Mary Celeste was found adrift in the Atlantic by the ship Dei Gratia",
+      "source": "Smithsonian Magazine; Britannica: 'Mary Celeste'"
+    },
+    {
+      "claim": "All ten people aboard (Captain Briggs, his wife and daughter, and seven crew) were missing",
+      "source": "Britannica"
+    },
+    {
+      "claim": "The cargo of about 1,700 barrels of industrial alcohol was largely intact and there were months of food and water",
+      "source": "Smithsonian Magazine"
+    },
+    {
+      "claim": "The single lifeboat was gone and the last log entry was from ten days earlier",
+      "source": "Britannica; Smithsonian Magazine"
+    },
+    {
+      "claim": "Leading theories include alcohol fumes or a feared explosion, a waterspout, or a mistaken fear of sinking; nothing was ever proven",
+      "source": "Smithsonian Magazine"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "The ship itself, sailing empty, is the hook; the open ocean has no 'where' to show."
+  },
+  "accent": "#38BDF8",
+  "voice": "auto",
+  "music_mood": "uneasy sea: slow swell, creaking-wood feel, no drums",
+  "cover": {
+    "headline": [
+      "A SHIP WITH",
+      "NO ONE ON IT"
+    ],
+    "accent_words": [
+      "NO ONE"
+    ],
+    "thumbnail_ml": "ആരുമില്ലാതെ കടലിൽ ഒഴുകിയ കപ്പൽ!",
+    "thumbnail_accent": [
+      "ആരുമില്ലാതെ"
+    ],
+    "hook_voiceover_ml": "1872-ൽ അറ്റ്ലാന്റിക് കടലിൽ ഒരു കപ്പൽ കണ്ടെത്തി. പായ്ക്കപ്പൽ ഭദ്രം. പക്ഷേ അതിൽ ഒരു മനുഷ്യനുമില്ല!",
+    "visual": "A two-masted sailing ship drifting on a grey, rolling sea under a heavy sky, sails half set, no one on deck.",
+    "build_cmd": "Sky gradient #3a4a5a to #8a98a6 down to a horizon at y0.5; sea below in 6 rolling wave bands (sine, amplitude 8-14px, phase drifting) in #2a3f55 to #0f1c2a. Ship centred at x0.5 y0.5, hull 520px wide (dark brown), two masts with square-ish sails (off-white, slightly torn edge on one) that sway ±2°. The ship bobs (y ±8px) with the waves. Thin rain streaks (30 lines) fall across the frame. Drift the whole ship slowly rightwards by 40px across the scene."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "ഡേയ് ഗ്രേഷ്യ എന്ന കപ്പലിലെ നാവികർ ദൂരെ ഒരു കപ്പൽ കണ്ടു. അടുത്ത് ചെന്നപ്പോൾ ഡെക്കിൽ ആരുമില്ല. മേരി സെലസ്റ്റ് എന്നായിരുന്നു അതിന്റെ പേര്.",
+      "headline": "FOUND DRIFTING",
+      "highlight": "DRIFTING",
+      "labels": [
+        {
+          "text": "4 DEC 1872",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.1
+        },
+        {
+          "text": "MARY CELESTE",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.6
+        }
+      ],
+      "visual": "From a second ship's rail, a telescope view circles the empty deck of the Mary Celeste.",
+      "build_cmd": "Same sea/sky as the cover. The ship sits at x0.6 y0.48 at 0.8 scale. A circular telescope mask (two overlapping circles, black outside) sweeps from the left edge to centre over 0-40%, revealing the ship; inside the mask the deck is clearly empty (draw deck planks and a wheel, no figures). At 60% the mask snaps fully open with a quick scale-up and a subtle camera push-in (scale 1.0 to 1.08 by 100%)."
+    },
+    {
+      "voiceover_ml": "കപ്പലിൽ ഭക്ഷണവും വെള്ളവും മാസങ്ങളോളം ബാക്കി. ചരക്കായ 1,700 ബാരൽ ആൽക്കഹോൾ അതേപടി. ക്യാപ്റ്റന്റെയും കുടുംബത്തിന്റെയും സാധനങ്ങൾ എല്ലാം സ്ഥലത്ത് തന്നെ.",
+      "headline": "EVERYTHING INTACT",
+      "highlight": "INTACT",
+      "labels": [
+        {
+          "text": "1,700 BARRELS",
+          "x": 0.3,
+          "y": 0.6,
+          "at": 0.3
+        },
+        {
+          "text": "FOOD · 6 MONTHS",
+          "x": 0.7,
+          "y": 0.6,
+          "at": 0.55
+        }
+      ],
+      "visual": "Inside the ship: stacked barrels, a laid table with a cup, a child's small items, a lantern swinging.",
+      "build_cmd": "Cabin interior: wooden planks (horizontal brown bands) for walls and floor, warm lantern light (radial gradient from a lantern at x0.72 y0.3 that swings ±6° with the ship). Left: a stack of 12 barrels (rounded rects with two hoops) revealed one row at a time over 10-40%. Right: a small table with a cup and a plate (simple shapes) and, on a shelf, a tiny toy (cube + ball). Nothing moves except the lantern swing and its shadow; a slow camera drift left to right (20px)."
+    },
+    {
+      "voiceover_ml": "ഒരു ലൈഫ്ബോട്ട് മാത്രം കാണാനില്ല. ലോഗ് ബുക്കിലെ അവസാന കുറിപ്പ് പത്ത് ദിവസം മുമ്പത്തേത്. അതിനു ശേഷം എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല.",
+      "headline": "ONE LIFEBOAT GONE",
+      "highlight": "GONE",
+      "labels": [
+        {
+          "text": "LAST LOG: 25 NOV",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.5
+        }
+      ],
+      "visual": "The ship's side with empty lifeboat davits; cut to an open logbook whose last entry trails off into blank pages.",
+      "build_cmd": "0-50%: ship's side rail with two curved davits (hooks) and dangling rope ends, swinging gently; a dashed outline shows where the lifeboat should hang, pulsing in the accent colour. 50-100%: crossfade (0.4 s) to a logbook: open double page (#e8dcc0) at x0.5 y0.45, 8 handwritten lines (dark squiggly strokes) on the left page, the last line ending mid-way; the right page blank. A faint ink blot appears at 85%. Slow push-in on the blank page."
+    },
+    {
+      "voiceover_ml": "പല സിദ്ധാന്തങ്ങളും വന്നു. ആൽക്കഹോളിന്റെ പുക പൊട്ടിത്തെറിക്കുമെന്ന് പേടിച്ചോ? കൊടുങ്കാറ്റോ? കപ്പൽ മുങ്ങുമെന്ന് തെറ്റിദ്ധരിച്ച് ലൈഫ്ബോട്ടിൽ രക്ഷപ്പെട്ടോ?",
+      "headline": "THE THEORIES",
+      "highlight": "THEORIES",
+      "labels": [
+        {
+          "text": "FUMES?",
+          "x": 0.25,
+          "y": 0.6,
+          "at": 0.2
+        },
+        {
+          "text": "WATERSPOUT?",
+          "x": 0.75,
+          "y": 0.6,
+          "at": 0.5
+        }
+      ],
+      "visual": "Three small vignettes appear one by one: a barrel leaking vapour, a waterspout at sea, a lifeboat rowing away from the ship.",
+      "build_cmd": "Three rounded panels (each 300x380) arranged across the middle band at y0.46: left at x0.2, centre x0.5, right x0.8. Each pops in (scale 0.8 to 1, ease-out) at 10%, 40%, 70%. Panel 1: a barrel with 6 rising vapour curls. Panel 2: a grey waterspout (tall tapered spiral) over waves. Panel 3: the ship small in the back and a lifeboat with a tilted oar moving away toward the panel edge. Panels sit on a dark blue background; a thin accent border on whichever panel is newest."
+    },
+    {
+      "voiceover_ml": "150 വർഷം കഴിഞ്ഞിട്ടും ആ പത്ത് പേർക്ക് എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല. കടൽ അതിന്റെ രഹസ്യം ഇന്നും പറഞ്ഞിട്ടില്ല.",
+      "headline": "STILL UNSOLVED",
+      "highlight": "UNSOLVED",
+      "labels": [
+        {
+          "text": "10 PEOPLE · NEVER FOUND",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.4
+        }
+      ],
+      "visual": "The empty ship sails on into fog until only its outline remains, then nothing but sea.",
+      "build_cmd": "Cover scene composition at dusk (#1a2030 sky). The ship drifts slowly right and shrinks (scale 1.0 to 0.7) while a fog layer (soft white ellipses, opacity rising from 0 to 0.8) rolls in from the right over 20-90%. By 90% only a faint silhouette remains; by 100% just sea and fog with a lone light flicker at the horizon. Slow and smooth; no text in the canvas."
+    }
+  ],
+  "instagram_caption": "A ship found sailing alone, with every single person gone. 🚢\n\nIn December 1872 the Mary Celeste was found drifting in the Atlantic. Food, water and cargo were intact, the last log entry was ten days old, and only the lifeboat was missing. All ten people aboard were never seen again. Theories range from alcohol fumes to a waterspout, but nothing was ever proven. 🌊\n\nWhat do you think happened? 👇\n\nSend this to a mystery lover. 💛\n\n📚 Smithsonian Magazine · Britannica\nEducational · Animated illustrations\n\n#MaryCeleste #Mystery #History #Malayalam #MalayalamReels UnexploredTruths Unsolved",
+  "fact_check": [
+    "Found 4 Dec 1872 by Dei Gratia -> Smithsonian/Britannica",
+    "10 aboard missing -> Britannica",
+    "~1,700 barrels alcohol intact; months of food -> Smithsonian",
+    "Lifeboat missing; last log ~10 days earlier -> Britannica/Smithsonian",
+    "Theories unproven -> Smithsonian"
+  ]
 }

@@ -3,6 +3,133 @@
   "title": "Lake Nyos: the lake that breathed out death",
   "category": "NATURE",
   "priority": 7,
-  "locked": false,
-  "status": "waiting for the planner (Fable)"
+  "locked": true,
+  "facts": [
+    {
+      "claim": "On 21 August 1986 Lake Nyos in Cameroon suddenly released a huge cloud of carbon dioxide",
+      "source": "USGS; Britannica: 'Lake Nyos'"
+    },
+    {
+      "claim": "About 1,700 people and some 3,500 livestock in nearby villages died, many in their sleep",
+      "source": "Britannica; BBC"
+    },
+    {
+      "claim": "The lake sits in a volcanic crater; CO2 from below had built up dissolved in its deep water",
+      "source": "USGS"
+    },
+    {
+      "claim": "Since 2001 degassing pipes have been installed to release the gas safely",
+      "source": "Science/USGS reports on Nyos degassing"
+    }
+  ],
+  "opening": {
+    "type": "globe",
+    "lat": 6.44,
+    "lon": 10.3,
+    "label": "LAKE NYOS · CAMEROON",
+    "why": "A remote crater lake almost nobody could place; seeing where it is sets up the surprise."
+  },
+  "accent": "#FF4D5E",
+  "voice": "auto",
+  "music_mood": "quiet dread: low drone, sparse pulse, one deep hit at the eruption",
+  "cover": {
+    "headline": [
+      "THE LAKE THAT",
+      "KILLED 1,700"
+    ],
+    "accent_words": [
+      "1,700"
+    ],
+    "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ ഒരു തടാകം 1,700 പേരെ കൊന്നു",
+    "thumbnail_accent": [
+      "1,700"
+    ],
+    "hook_voiceover_ml": "ഒറ്റ രാത്രി. ഒരു ശബ്ദവുമില്ല. ഒരു തടാകം 1,700 പേരുടെ ജീവനെടുത്തു. എങ്ങനെയെന്ന് അറിയാമോ?",
+    "visual": "A still crater lake at dusk between green hills, perfectly calm, with a faint mist starting to rise from its surface.",
+    "build_cmd": "Sky gradient from #1a2a4a (top) to #c86a4a (horizon at y0.42). Two layers of rounded green hills (#1e3a2a front, #2e5a3a back) framing a lake: an ellipse x0.5 y0.52, 820x260, fill gradient #1f3a4a to #0b1a26 with 8 slow horizontal ripple lines. From 40% a thin white mist layer (semi-transparent ellipses, opacity rising to 0.35) drifts over the lake surface. A few tiny village house silhouettes on the left hill. Everything calm and slow; reserve the bottom 25% for the cover text."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "കാമറൂണിലെ ന്യോസ് തടാകം. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലാണ് അത്. ചുറ്റും ശാന്തമായ ഗ്രാമങ്ങൾ.",
+      "headline": "A CRATER LAKE",
+      "highlight": "CRATER",
+      "labels": [
+        {
+          "text": "VOLCANIC CRATER",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "Cross-section of the crater: a bowl of rock holding the lake, with a village on the rim.",
+      "build_cmd": "Side-view cross-section: rock mass (#3a2e26) filling the lower half with a bowl-shaped cut; the bowl holds water (gradient #2a5a6a top to #0c1c26 bottom) from y0.36 to y0.62 between x0.2 and x0.8. On the right rim, 4 small houses; on the left rim, 3 trees. Draw it in with a left-to-right reveal wipe over the first 30%. Then a faint dotted line labels the water depth (vertical dashed line at x0.5 from surface to bottom, appears at 50%)."
+    },
+    {
+      "voiceover_ml": "പക്ഷേ തടാകത്തിന്റെ അടിയിൽ ഒരു രഹസ്യം ഉണ്ടായിരുന്നു. ഭൂമിക്കടിയിൽ നിന്ന് വന്ന കാർബൺ ഡൈ ഓക്സൈഡ് വർഷങ്ങളായി ആഴത്തിലെ വെള്ളത്തിൽ അലിഞ്ഞു കൂടിക്കൊണ്ടിരുന്നു.",
+      "headline": "GAS BUILDING BELOW",
+      "highlight": "GAS",
+      "labels": [
+        {
+          "text": "CO₂",
+          "x": 0.5,
+          "y": 0.62,
+          "at": 0.25
+        }
+      ],
+      "visual": "Same cross-section; from cracks in the crater floor, bubbles of gas seep up and dissolve into the deep water, which slowly tints darker.",
+      "build_cmd": "Reuse the cross-section layout. Three cracks in the crater floor (thin dark zigzags). From them, 40 small bubbles rise slowly (deterministic paths, speed 60px/s) and fade out before reaching mid-depth. The deep half of the water gradually tints from #0c1c26 to #2a1420 over the scene (gas saturation), and a thin red 'pressure' bar on the right (x0.86, from y0.62 up to y0.36) fills from 0 to 90% with the accent colour."
+    },
+    {
+      "voiceover_ml": "1986 ഓഗസ്റ്റ് 21-ന് രാത്രി. ഒരു വലിയ കുമിള പോലെ ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പുറത്തേക്ക് പൊട്ടി. ഒരു വെളുത്ത മേഘം താഴ്വരയിലേക്ക് ഒഴുകി.",
+      "headline": "21 AUGUST 1986",
+      "highlight": "1986",
+      "labels": [
+        {
+          "text": "NIGHT",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.1
+        }
+      ],
+      "visual": "The lake surface erupts in a fountain of gas; a heavy white cloud spills over the rim and flows downhill into the valley like liquid.",
+      "build_cmd": "Night version of the cross-section (sky #060a14). At 20% the water surface bulges upward (ellipse scaling) and at 28% bursts: 60 spray particles shoot up and fall. From 30% a thick white-grey cloud (stack of soft ellipses, opacity 0.85) rises from the lake, spills over the LEFT rim and flows down the slope to the bottom-left corner over 50-95% of the scene, hugging the ground. House windows on the rim go from warm yellow to dark as the cloud passes. One deep screen flash (white, 0.15 opacity, 0.2 s) at the burst."
+    },
+    {
+      "voiceover_ml": "കാർബൺ ഡൈ ഓക്സൈഡ് വായുവിനേക്കാൾ ഭാരമുള്ളതാണ്. അത് താഴ്ന്ന സ്ഥലങ്ങളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്ന ആളുകൾക്ക് ശ്വാസം കിട്ടിയില്ല. ഏകദേശം 1,700 പേർ, 3,500-ലധികം കന്നുകാലികൾ.",
+      "headline": "HEAVIER THAN AIR",
+      "highlight": "HEAVIER",
+      "labels": [
+        {
+          "text": "1,700 PEOPLE",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.55
+        }
+      ],
+      "visual": "A simple diagram: the invisible gas pools in the low valley like water filling a bowl; sleeping village outlines sit inside the pool.",
+      "build_cmd": "Valley diagram: a wide U-shaped ground line (dark) from x0.05 to x0.95 dipping to y0.6 in the middle. A translucent grey 'pool' fills the valley from the bottom up (level rises from y0.62 to y0.44 over 10-60%, wavy top edge). Inside the valley, 6 tiny house outlines. No people drawn. At 60% a thin horizontal rule and the label appear; the pool keeps gently sloshing. Keep it quiet and restrained; no flashing."
+    },
+    {
+      "voiceover_ml": "ഇന്ന് ആ തടാകത്തിൽ വലിയ പൈപ്പുകൾ ഉണ്ട്. അടിയിലെ വാതകം പതുക്കെ പുറത്തേക്ക് വിടാൻ. ഒരു തടാകത്തിന് ഇത്രയും ശക്തിയുണ്ടെന്ന് ആരെങ്കിലും കരുതിയോ?",
+      "headline": "DEGASSING THE LAKE",
+      "highlight": "DEGASSING",
+      "labels": [
+        {
+          "text": "SINCE 2001",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.2
+        }
+      ],
+      "visual": "Daytime lake with a vertical pipe from the surface to the bottom; a tall fountain of water and gas shoots up safely from its top.",
+      "build_cmd": "Daylight cross-section (sky #6aa7d8). A vertical pipe (14px wide, grey) from a float at the surface (x0.5 y0.44) down to y0.7. From 25% a fountain erupts from the pipe top: a white column rising to y0.2 with 40 droplet particles arcing outward; the deep water tint lightens from #2a1420 back to #0c1c26 over the scene; the red pressure bar on the right empties from 90% to 10%. End on a calm, bright frame."
+    }
+  ],
+  "instagram_caption": "One night in 1986, a lake killed about 1,700 people, silently. 🌊\n\nLake Nyos in Cameroon sits in a volcanic crater. Carbon dioxide from below had been building up in its deep water for years, until it burst out as a huge invisible cloud. Heavier than air, it flowed into the valleys where people slept. Today pipes release the gas safely. 🧪\n\nHad you heard of this? 👀\n\nSend this to someone who loves mysteries. 💛\n\n📚 USGS · Britannica\nEducational · Animated illustrations\n\n#LakeNyos #Cameroon #Science #Malayalam #MalayalamReels UnexploredTruths Mystery",
+  "fact_check": [
+    "21 Aug 1986 CO2 release -> USGS/Britannica",
+    "~1,700 people, ~3,500 livestock -> Britannica/BBC",
+    "CO2 from magma dissolved in deep water -> USGS",
+    "Degassing pipes since 2001 -> USGS reports"
+  ]
 }
