@@ -1,11 +1,11 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 12:47 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 01:36 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Mon 26 Oct · 08:53 PM | The real KGF: one of the world's deepest gold mines | Midhun |
-| 2 | Tue 27 Oct · 01:05 AM | India's first Christmas cake was baked in Thalassery | Midhun |
+| 1 | Mon 26 Oct · 08:53 PM | India's first Christmas cake was baked in Thalassery | Midhun |
+| 2 | Tue 27 Oct · 01:05 AM | The real KGF: one of the world's deepest gold mines | Midhun |
 | 3 | Tue 27 Oct · 02:56 AM | Kodinhi: Kerala's village of twins | Zephyr |
 | 4 | Tue 27 Oct · 08:07 AM | Padmanabhaswamy Temple: the mystery of Vault B | Midhun |
 | 5 | Wed 28 Oct · 05:55 AM | Jatinga: where birds fall at night | Zephyr |
