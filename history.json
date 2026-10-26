@@ -171,5 +171,39 @@
     "folder": "neelakurinji-12-years",
     "status": "skipped",
     "note": "removed by owner, 26 Oct"
+  },
+  {
+    "title": "Before 1956 there was no Kerala state",
+    "category": "HISTORY",
+    "folder": "kerala-piravi-1956",
+    "status": "pending",
+    "voice": "Zephyr",
+    "post_on": "2026-11-01",
+    "created": "2026-10-26T07:11"
+  },
+  {
+    "title": "Lonar: the meteor lake that turned pink",
+    "category": "SPACE",
+    "folder": "lonar-pink-lake",
+    "status": "pending",
+    "voice": "Puck",
+    "created": "2026-10-26T07:13"
+  },
+  {
+    "title": "Roopkund: the lake of skeletons",
+    "category": "HISTORY",
+    "folder": "roopkund-skeleton-lake",
+    "status": "pending",
+    "voice": "Kore",
+    "created": "2026-10-26T07:15"
+  },
+  {
+    "title": "India's first Christmas cake was baked in Thalassery",
+    "category": "HISTORY",
+    "folder": "thalassery-first-cake",
+    "status": "pending",
+    "voice": "Midhun",
+    "priority": 2,
+    "created": "2026-10-26T07:17"
   }
 ]

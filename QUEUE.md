@@ -1,25 +1,22 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 12:22 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 12:47 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 | 1 | Mon 26 Oct · 08:53 PM | The real KGF: one of the world's deepest gold mines | Midhun |
-| 2 | Tue 27 Oct · 01:05 AM | Kodinhi: Kerala's village of twins | Zephyr |
-| 3 | Tue 27 Oct · 02:56 AM | Padmanabhaswamy Temple: the mystery of Vault B | Midhun |
-| 4 | Tue 27 Oct · 08:07 AM | Jatinga: where birds fall at night | Zephyr |
-| 5 | Wed 28 Oct · 05:55 AM | Delhi's Iron Pillar: 1,600 years without rust | Midhun |
-| 6 | Wed 28 Oct · 07:04 AM | Kallanai: a 2,000-year-old dam still in use | Midhun |
-| 7 | Wed 28 Oct · 10:06 PM | Kottayam: India's first fully literate town | Midhun |
-| 8 | Thu 29 Oct · 07:53 AM | Silent Valley: the forest Kerala saved | Midhun |
-| 9 | Sun 01 Nov · 06:05 AM | Malayalam: a language whose name is a palindrome | Midhun |
-
-## Being rendered (joins the queue when done)
-
-- kerala-piravi-1956
-- lonar-pink-lake
-- roopkund-skeleton-lake
-- thalassery-first-cake
+| 2 | Tue 27 Oct · 01:05 AM | India's first Christmas cake was baked in Thalassery | Midhun |
+| 3 | Tue 27 Oct · 02:56 AM | Kodinhi: Kerala's village of twins | Zephyr |
+| 4 | Tue 27 Oct · 08:07 AM | Padmanabhaswamy Temple: the mystery of Vault B | Midhun |
+| 5 | Wed 28 Oct · 05:55 AM | Jatinga: where birds fall at night | Zephyr |
+| 6 | Wed 28 Oct · 07:04 AM | Delhi's Iron Pillar: 1,600 years without rust | Midhun |
+| 7 | Wed 28 Oct · 10:06 PM | Kallanai: a 2,000-year-old dam still in use | Midhun |
+| 8 | Thu 29 Oct · 07:53 AM | Kottayam: India's first fully literate town | Midhun |
+| 9 | Thu 29 Oct · 11:05 AM | Silent Valley: the forest Kerala saved | Midhun |
+| 10 | Fri 30 Oct · 04:06 AM | Lonar: the meteor lake that turned pink | Puck |
+| 11 | Fri 30 Oct · 11:54 AM | Roopkund: the lake of skeletons | Kore |
+| 12 | Sun 01 Nov · 06:05 AM | Malayalam: a language whose name is a palindrome | Midhun |
+| 13 | Sun 01 Nov · 06:53 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Recently posted
 
