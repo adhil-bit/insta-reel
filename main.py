@@ -247,7 +247,9 @@ def render_pending() -> None:
     out = config.OUTPUT_DIR / "rendered.txt"
     out.write_text("", encoding="utf-8")
     ok, failed = 0, []
-    for job in sorted((config.ROOT / "jobs").glob("*/script.json")):
+    job_files = sorted((config.ROOT / "jobs").glob("*/script.json"))
+    job_files.sort(key=lambda p: load_json(p, {}).get("priority", 999))          # most urgent first
+    for job in job_files:
         if job.parent.name in done:
             continue
         try:

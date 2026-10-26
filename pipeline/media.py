@@ -66,9 +66,10 @@ def _edge_voice(text: str, out_path: Path, voice_id: str) -> Path:
     raise RuntimeError(f"Edge voice failed: {err if 'err' in dir() else 'empty audio'}")
 
 
-def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
+def _gemini_voice(text: str, out_path: Path, voice_name: str, model: str | None = None) -> Path:
     import base64, subprocess, time
-    url = f"https://generativelanguage.googleapis.com/v1beta/models/{config.GEMINI_TTS_MODEL}:generateContent"
+    model = model or config.GEMINI_TTS_MODEL
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {"contents": [{"parts": [{"text": f"{config.GEMINI_STYLE}:\n{text}"}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
@@ -83,6 +84,10 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
             quota_ids = [v.get("quotaId", "") for d in details for v in d.get("violations", [])]
             delay = next((d.get("retryDelay") for d in details if d.get("retryDelay")), "20s")
             if quota_ids and all("PerDay" in q for q in quota_ids):
+                alt = [mm for mm in config.GEMINI_TTS_MODELS if mm != model]
+                if alt and model == config.GEMINI_TTS_MODEL:
+                    print(f"  daily limit reached on {model}; trying {alt[0]}")
+                    return _gemini_voice(text, out_path, voice_name, model=alt[0])
                 raise RuntimeError("Gemini daily voice quota used up")
             time.sleep(min(70, float(str(delay).rstrip("s") or 20) + 2)); continue
         if r.status_code >= 500:
