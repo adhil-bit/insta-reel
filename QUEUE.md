@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 06:39 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 11:05 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -12,10 +12,16 @@ _Updated Mon 26 Oct, 06:39 PM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
+- damascus-steel
+- gobekli-tepe
+- indus-script
 - kallanai-2000-year-dam
 - kgf-deepest-gold-mine
+- kola-borehole
 - kottayam-literacy
+- lake-nyos
 - malayalam-palindrome
+- mary-celeste
 - padmanabhaswamy-vault-b
 - roopkund-skeleton-lake
 - silent-valley
