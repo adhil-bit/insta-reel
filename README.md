@@ -1,5 +1,8 @@
 # AutoReel
 
+> 📘 **Start here:** [RUNBOOK.md](RUNBOOK.md) explains the whole system, setup, daily flow, tasks and fixes.
+
+
 > 📋 **Posting order:** see [QUEUE.md](QUEUE.md) (updated automatically after every render and post).
 > ⚙️ **Before changing posting times:** read [OPERATIONS.md](OPERATIONS.md). Times must match cron-job.org.
 
