@@ -127,7 +127,7 @@ RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in
 
 # Posting table (IST). The post workflow checks every hour and posts whenever a slot
 # has passed that hasn't been used yet, so a late or skipped GitHub run is caught up.
-POST_SLOTS = {   # 3 posts a day (IST). Set at :06 so the hourly :07 check posts them at about :07-:10
+POST_SLOTS = {   # 3 posts a day (IST). KEEP IN SYNC WITH cron-job.org: see OPERATIONS.md, run `python main.py cron-plan`
     "Mon": ["06:06", "12:06", "16:06"], "Tue": ["07:06", "13:06", "17:06"],
     "Wed": ["08:06", "14:06", "19:06"], "Thu": ["07:06", "13:06", "17:06"],
     "Fri": ["06:06", "12:06", "16:06"], "Sat": ["10:06", "14:06", "20:06"],

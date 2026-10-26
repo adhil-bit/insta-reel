@@ -451,6 +451,24 @@ def skip(folder_name: str) -> None:
     print(f"Skipped {folder_name}")
 
 
+def cron_plan() -> str:
+    """cron-job.org jobs (UTC) that match config.POST_SLOTS (IST). Days with the same times share a job."""
+    groups = {}
+    for day, slots in config.POST_SLOTS.items():
+        utc = []
+        for sl in slots:
+            h, mnt = map(int, sl.split(":"))
+            total = (h * 60 + mnt + 1 - 330) % (24 * 60)          # fire 1 minute after the slot, in UTC
+            utc.append((total // 60, total % 60))
+        groups.setdefault(tuple(utc), []).append(day)
+    out = []
+    for utc, days in groups.items():
+        mins = sorted({m for _, m in utc})
+        ist = [f"{(h * 60 + m + 330) // 60 % 24:02d}:{(m + 30) % 60:02d}" for h, m in utc]
+        out.append(f"- {'+'.join(days)}: hours {', '.join(str(h) for h, _ in utc)} · minute {', '.join(map(str, mins))} (UTC)  =  {', '.join(ist)} IST")
+    return "\n".join(out)
+
+
 def slots_for(d) -> list[str]:
     """Posting slots (IST, HH:MM) for a date, honouring one-off overrides."""
     return getattr(config, "SLOT_OVERRIDES", {}).get(d.date().isoformat(), config.POST_SLOTS.get(d.strftime("%a"), []))
@@ -546,7 +564,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "status", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "status", "cron-plan", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -573,6 +591,8 @@ if __name__ == "__main__":
         print(latest_pending() or "")
     elif args.command == "status":
         print(status_text())
+    elif args.command == "cron-plan":
+        print(cron_plan())
     elif args.command == "slot-wait":
         print(slot_wait())
     elif args.command == "queue-md":

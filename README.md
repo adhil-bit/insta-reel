@@ -1,6 +1,8 @@
 # AutoReel
 
 > 📋 **Posting order:** see [QUEUE.md](QUEUE.md) (updated automatically after every render and post).
+> ⚙️ **Before changing posting times:** read [OPERATIONS.md](OPERATIONS.md). Times must match cron-job.org.
+
 
 
 Claude finds a trending topic, writes the script, writes a fresh code animation for
