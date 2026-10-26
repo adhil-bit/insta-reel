@@ -54,7 +54,7 @@
   },
   "scenes": [
     {
-      "voiceover_ml": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ക്ലൗസ് ഷ്മിറ്റ് എന്ന പുരാവസ്തു ഗവേഷകൻ ഇവിടെ കുഴിച്ചു തുടങ്ങി. മണ്ണിനടിയിൽ നിന്ന് വന്നത് ലോകത്തെ ഞെട്ടിച്ചു.",
+      "voiceover_ml": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ഇവിടെ കുഴിച്ചപ്പോൾ ലോകം ഞെട്ടി.",
       "headline": "DUG UP IN 1995",
       "highlight": "1995",
       "labels": [
@@ -69,7 +69,7 @@
       "build_cmd": "A mound of soil (big rounded shape #5a4632) filling the middle band. A T-pillar top (sand colour) is hidden inside; a 'dig' mask grows from a small circle at x0.5 y0.42 to a wide ellipse over 10-80%, revealing the pillar top and a carved fox outline on it. Two trowel shapes move in small arcs at the mask edge. Loose soil particles (30) tumble down the mound sides as the mask grows."
     },
     {
-      "voiceover_ml": "കൂറ്റൻ T ആകൃതിയിലുള്ള കൽത്തൂണുകൾ. ചിലത് അഞ്ച് മീറ്ററിലധികം ഉയരം. വൃത്താകൃതിയിൽ നിരത്തി വെച്ചിരിക്കുന്നു. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും കൊത്തിയിട്ടുണ്ട്.",
+      "voiceover_ml": "അഞ്ച് മീറ്ററിലധികം ഉയരമുള്ള T ആകൃതിയിലെ കൽത്തൂണുകൾ. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും.",
       "headline": "GIANT T-PILLARS",
       "highlight": "T-PILLARS",
       "labels": [
@@ -84,7 +84,7 @@
       "build_cmd": "One large T-pillar centred (slab 220x900 at x0.5 y0.47, top bar 480x120), sand colour with a subtle grain. Three carvings as thin dark outlines: a fox (y0.32), a snake zigzag (y0.46), a long-legged bird (y0.6). Each carving 'lights up' with an accent glow sweep at 25%, 50%, 75%. A small human-height marker (thin figure outline 1/3 of the pillar height) stands at the base for scale, appearing at 10%. Gentle parallax: pillar drifts 10px against a darker background."
     },
     {
-      "voiceover_ml": "ഏറ്റവും അത്ഭുതം ഇതിന്റെ പ്രായമാണ്. ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്. സ്റ്റോൺഹെഞ്ചിനേക്കാൾ 6,000 വർഷം.",
+      "voiceover_ml": "പ്രായം ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്.",
       "headline": "11,500 YEARS OLD",
       "highlight": "11,500",
       "labels": [
@@ -99,7 +99,7 @@
       "build_cmd": "A horizontal timeline at y0.46 from x0.08 to x0.92, drawn left to right over 10-80%. Markers: at x0.1 a mini T-pillar icon (accent), at x0.62 a mini trilithon (two posts + lintel), at x0.72 a mini pyramid triangle, at x0.92 a small dot for today. Each marker pops in as the line reaches it. Short vertical ticks every 1,000 years (84 ticks, thin). The gap between the first marker and the second gets a pulsing accent bracket at 85% to emphasise the emptiness."
     },
     {
-      "voiceover_ml": "ഇത് പണിതവർ കർഷകരല്ല. വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യരാണ്. അപ്പോൾ ചരിത്ര പുസ്തകങ്ങൾ പറഞ്ഞത് തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി.",
+      "voiceover_ml": "ഇത് പണിതത് കർഷകരല്ല, വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യർ.",
       "headline": "TEMPLE BEFORE FARMING",
       "highlight": "BEFORE",
       "labels": [
@@ -114,7 +114,7 @@
       "build_cmd": "Left panel (x0.3): dusk savanna with 3 hunter silhouettes (stick figures with spears) and a deer silhouette, drawn in over 0-40%. Right panel (x0.7): bare soil at y0.55 from which 9 wheat stalks grow upward (lines with small ellipse heads) over 45-85%. Between the panels a big accent arrow draws from left to right at 85-100%. Background split by a soft vertical gradient line at x0.5."
     },
     {
-      "voiceover_ml": "ഇന്നും അവിടെ മിക്കവാറും ഭാഗങ്ങൾ മണ്ണിനടിയിൽ തന്നെയാണ്. ആരാണ് ഇത് പണിതത്, എന്തിനാണ് ഇത് മൂടിയത്, ആർക്കും അറിയില്ല.",
+      "voiceover_ml": "അപ്പോൾ ചരിത്രം തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി. ആരാണ് ഇത് പണിതത്? ഇന്നും ആർക്കും അറിയില്ല.",
       "headline": "STILL BURIED",
       "highlight": "BURIED",
       "labels": [
@@ -137,5 +137,6 @@
     "Older than Stonehenge and pyramids -> Smithsonian",
     "Excavations from 1995, Klaus Schmidt -> Smithsonian"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

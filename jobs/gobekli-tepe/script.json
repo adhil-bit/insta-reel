@@ -42,7 +42,7 @@
   "cover_visual": "Dawn light on a hilltop: a ring of tall T-shaped stone pillars casting long shadows, dust in the air.",
   "scenes": [
     {
-      "voiceover": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ക്ലൗസ് ഷ്മിറ്റ് എന്ന പുരാവസ്തു ഗവേഷകൻ ഇവിടെ കുഴിച്ചു തുടങ്ങി. മണ്ണിനടിയിൽ നിന്ന് വന്നത് ലോകത്തെ ഞെട്ടിച്ചു.",
+      "voiceover": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ഇവിടെ കുഴിച്ചപ്പോൾ ലോകം ഞെട്ടി.",
       "caption": "DUG UP IN 1995",
       "highlight": "1995",
       "labels": [
@@ -56,7 +56,7 @@
       "visual": "A hill of earth; brushes and trowels sweep soil away to reveal the top of a T-shaped pillar."
     },
     {
-      "voiceover": "കൂറ്റൻ T ആകൃതിയിലുള്ള കൽത്തൂണുകൾ. ചിലത് അഞ്ച് മീറ്ററിലധികം ഉയരം. വൃത്താകൃതിയിൽ നിരത്തി വെച്ചിരിക്കുന്നു. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും കൊത്തിയിട്ടുണ്ട്.",
+      "voiceover": "അഞ്ച് മീറ്ററിലധികം ഉയരമുള്ള T ആകൃതിയിലെ കൽത്തൂണുകൾ. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും.",
       "caption": "GIANT T-PILLARS",
       "highlight": "T-PILLARS",
       "labels": [
@@ -70,7 +70,7 @@
       "visual": "A single pillar fills the frame; carved animals (fox, snake, crane) light up one by one along its face."
     },
     {
-      "voiceover": "ഏറ്റവും അത്ഭുതം ഇതിന്റെ പ്രായമാണ്. ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്. സ്റ്റോൺഹെഞ്ചിനേക്കാൾ 6,000 വർഷം.",
+      "voiceover": "പ്രായം ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്.",
       "caption": "11,500 YEARS OLD",
       "highlight": "11,500",
       "labels": [
@@ -84,7 +84,7 @@
       "visual": "A timeline runs across the screen: Göbekli Tepe at the far left, then a long empty gap, then Stonehenge, then the pyramids, then today."
     },
     {
-      "voiceover": "ഇത് പണിതവർ കർഷകരല്ല. വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യരാണ്. അപ്പോൾ ചരിത്ര പുസ്തകങ്ങൾ പറഞ്ഞത് തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി.",
+      "voiceover": "ഇത് പണിതത് കർഷകരല്ല, വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യർ.",
       "caption": "TEMPLE BEFORE FARMING",
       "highlight": "BEFORE",
       "labels": [
@@ -98,7 +98,7 @@
       "visual": "Two panels: a hunting scene with figures and a deer silhouette; then wheat sprouts rising, with an arrow showing temple first, farming after."
     },
     {
-      "voiceover": "ഇന്നും അവിടെ മിക്കവാറും ഭാഗങ്ങൾ മണ്ണിനടിയിൽ തന്നെയാണ്. ആരാണ് ഇത് പണിതത്, എന്തിനാണ് ഇത് മൂടിയത്, ആർക്കും അറിയില്ല.",
+      "voiceover": "അപ്പോൾ ചരിത്രം തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി. ആരാണ് ഇത് പണിതത്? ഇന്നും ആർക്കും അറിയില്ല.",
       "caption": "STILL BURIED",
       "highlight": "BURIED",
       "labels": [

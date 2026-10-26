@@ -6,9 +6,12 @@ function ship(g, x, y, s, t, torn = true) { g.save(); g.translate(x, y + Math.si
   for (const mx of [-110, 90]) { g.fillStyle = '#2a1a10'; g.fillRect(mx - 6, -330, 12, 320); for (let i = 0; i < 2; i++) { const sy = -300 + i * 130, sw = i ? 150 : 180; g.fillStyle = '#e8e2d2'; g.beginPath(); g.moveTo(mx - sw / 2, sy); g.lineTo(mx + sw / 2, sy); g.lineTo(mx + sw / 2 - 10 + Math.sin(t * 2) * 6, sy + 100); g.lineTo(mx - sw / 2 + (torn && i && mx > 0 ? 30 : 0), sy + 100); g.fill(); } }
   g.restore(); }
 function rain(g, t) { g.strokeStyle = 'rgba(220,230,240,0.25)'; g.lineWidth = 2; for (let i = 0; i < 30; i++) { const x = (i * 97 + t * 200) % (W + 100) - 50, y = (i * 163 + t * 900) % H; g.beginPath(); g.moveTo(x, y); g.lineTo(x - 6, y + 40); g.stroke(); } }
-const c = makeCanvas(), g = c.getContext('2d');
+const c = makeCanvas(), g = c.getContext('2d'); const mask = document.createElement('canvas'); mask.width = W; mask.height = H;
 window.renderFrame = function (t) { const k = clamp(t / DURATION), push = 1 + 0.08 * ease.inOut(clamp((k - 0.6) / 0.4));
   g.globalAlpha = 1; g.save(); g.translate(W / 2, H / 2); g.scale(push, push); g.translate(-W / 2, -H / 2); seaSky(g, t); ship(g, W * 0.6, H * 0.48, 0.8, t);
   g.strokeStyle = '#6a4a2a'; g.lineWidth = 3; for (let i = 0; i < 6; i++) { g.beginPath(); g.moveTo(W * 0.6 - 200, H * 0.48 - 8 + i * 1.2); g.lineTo(W * 0.6 + 200, H * 0.48 - 8 + i * 1.2); g.stroke(); }
   g.strokeStyle = '#2a1a10'; g.lineWidth = 4; g.beginPath(); g.arc(W * 0.6 + 150, H * 0.48 - 30, 18, 0, 6.283); g.stroke(); g.restore();
-  const open = clamp((k - 0.6) / 0.1); if (open < 1) { const cx = lerp(-200, W / 2, ease.inOut(clamp(k / 0.4))), r = lerp(260, 1400, open); g.save(); g.beginPath(); g.rect(0, 0, W, H); g.moveTo(cx - 60 + r, H * 0.46); g.arc(cx - 60, H * 0.46, r, 0, 6.283); g.moveTo(cx + 60 + r, H * 0.46); g.arc(cx + 60, H * 0.46, r, 0, 6.283); g.fillStyle = '#000'; g.fill('evenodd'); g.restore(); } };
+  const open = clamp((k - 0.6) / 0.1); if (open < 1) { const cx = lerp(-200, W / 2, ease.inOut(clamp(k / 0.4))), r = lerp(260, 1400, open);
+    const m = mask.getContext('2d'); m.globalCompositeOperation = 'source-over'; m.fillStyle = '#000'; m.fillRect(0, 0, W, H);
+    m.globalCompositeOperation = 'destination-out'; for (const dx of [-60, 60]) { m.beginPath(); m.arc(cx + dx, H * 0.46, r, 0, 6.283); m.fill(); }
+    g.drawImage(mask, 0, 0); } };

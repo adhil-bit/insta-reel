@@ -42,6 +42,8 @@ each `build_cmd` into animation code. Changes go back to the planner.
 ```
 
 ## Rules the plan must follow
+- Length: about 35 s (≈60 Malayalam words incl. the hook). No shot holds longer than ~4 s: give every scene a mid-scene change.
+- Loop line: the last spoken line echoes a word or phrase from the hook.
 - Hero subject first: every scene has one clear subject; motion explains the point.
 - Globe opening is rare: only remote/unknown places where location is part of the surprise.
 - Malayalam narration is conversational (like talking to a friend), English headlines are punchy.

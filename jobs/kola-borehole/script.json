@@ -43,7 +43,7 @@
   "cover_visual": "A snowy Arctic plain at night with a drilling tower; beneath it a thin, impossibly deep shaft drops into glowing dark rock.",
   "scenes": [
     {
-      "voiceover": "1970-ൽ സോവിയറ്റ് യൂണിയൻ ഒരു വലിയ പരീക്ഷണം തുടങ്ങി. ഭൂമിയുടെ പുറംതോട് തുളച്ച് എത്രത്തോളം താഴേക്ക് പോകാമെന്ന് നോക്കുക.",
+      "voiceover": "1970-ൽ സോവിയറ്റ് യൂണിയൻ ഭൂമിയുടെ പുറംതോട് തുളയ്ക്കാൻ തുടങ്ങി.",
       "caption": "THE SOVIET EXPERIMENT",
       "highlight": "SOVIET",
       "labels": [
@@ -57,7 +57,7 @@
       "visual": "The drill rig at work: a rotating drill head grinds down through rock layers, chips flying."
     },
     {
-      "voiceover": "മൂന്ന് കിലോമീറ്റർ, അഞ്ച്, എട്ട്... വർഷങ്ങൾ കടന്നുപോയി. 1989 ആയപ്പോൾ അവർ 12,262 മീറ്ററിൽ എത്തി. കുഴിയുടെ വീതി? വെറും 23 സെന്റീമീറ്റർ!",
+      "voiceover": "1989-ൽ അവർ 12,262 മീറ്ററിൽ എത്തി. കുഴിയുടെ വീതി? വെറും 23 സെന്റീമീറ്റർ!",
       "caption": "12,262 METRES DOWN",
       "highlight": "12,262",
       "labels": [
@@ -71,7 +71,7 @@
       "visual": "A tall vertical depth scale; the shaft races down past milestone ticks while the depth counter climbs; a side inset shows the tiny width compared to a dinner plate."
     },
     {
-      "voiceover": "പക്ഷേ അടിയിൽ ഒരു പ്രശ്നം. അവിടുത്തെ ചൂട് 180 ഡിഗ്രി! പ്രതീക്ഷിച്ചതിനേക്കാൾ എത്രയോ കൂടുതൽ. പാറ പോലും മൃദുവായി. 1992-ൽ ഡ്രില്ലിംഗ് നിർത്തി.",
+      "voiceover": "പക്ഷേ അടിയിൽ ചൂട് 180 ഡിഗ്രി! 1992-ൽ ഡ്രില്ലിംഗ് നിർത്തി.",
       "caption": "180°C AT THE BOTTOM",
       "highlight": "180°C",
       "labels": [
@@ -85,7 +85,7 @@
       "visual": "The shaft tip glows red; a thermometer bar on the side shoots past its expected mark; the drill bit sags and stops."
     },
     {
-      "voiceover": "ഏറ്റവും അത്ഭുതം അടിയിൽ കണ്ടതാണ്. ആറ് കിലോമീറ്റർ താഴെ പാറയ്ക്കുള്ളിൽ വെള്ളം! പിന്നെ 200 കോടി വർഷം പഴക്കമുള്ള സൂക്ഷ്മജീവികളുടെ ഫോസിലുകൾ!",
+      "voiceover": "ആറ് കിലോമീറ്റർ താഴെ പാറയ്ക്കുള്ളിൽ വെള്ളം! പിന്നെ പുരാതന സൂക്ഷ്മജീവികളുടെ ഫോസിലുകൾ!",
       "caption": "LIFE 6 KM DOWN",
       "highlight": "LIFE",
       "labels": [
@@ -105,7 +105,7 @@
       "visual": "A microscope circle over a rock core sample reveals tiny droplets in the pores and delicate round fossil shapes."
     },
     {
-      "voiceover": "ഇന്ന് ആ കുഴിയുടെ മുകളിൽ ഒരു ഇരുമ്പ് മൂടി വെൽഡ് ചെയ്ത് അടച്ചിരിക്കുകയാണ്. 12 കിലോമീറ്റർ എന്ന് പറഞ്ഞാൽ ഭൂമിയുടെ പുറംതോടിന്റെ മൂന്നിലൊന്ന് പോലുമല്ല. നമ്മൾ ഇപ്പോഴും ഉപരിതലത്തിൽ തന്നെയാണ്.",
+      "voiceover": "ഇന്ന് ആ കുഴി ഇരുമ്പ് മൂടിയിട്ട് അടച്ചു. 12 കിലോമീറ്റർ കുഴിച്ചിട്ടും, നമ്മൾ ഭൂമിയുടെ തൊലി പോലും കടന്നിട്ടില്ല.",
       "caption": "WE BARELY SCRATCHED IT",
       "highlight": "BARELY",
       "labels": [

@@ -50,7 +50,7 @@
   },
   "scenes": [
     {
-      "voiceover_ml": "കാമറൂണിലെ ന്യോസ് തടാകം. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലാണ് അത്. ചുറ്റും ശാന്തമായ ഗ്രാമങ്ങൾ.",
+      "voiceover_ml": "കാമറൂണിലെ ന്യോസ്. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലെ ശാന്തമായ തടാകം.",
       "headline": "A CRATER LAKE",
       "highlight": "CRATER",
       "labels": [
@@ -65,7 +65,7 @@
       "build_cmd": "Side-view cross-section: rock mass (#3a2e26) filling the lower half with a bowl-shaped cut; the bowl holds water (gradient #2a5a6a top to #0c1c26 bottom) from y0.36 to y0.62 between x0.2 and x0.8. On the right rim, 4 small houses; on the left rim, 3 trees. Draw it in with a left-to-right reveal wipe over the first 30%. Then a faint dotted line labels the water depth (vertical dashed line at x0.5 from surface to bottom, appears at 50%)."
     },
     {
-      "voiceover_ml": "പക്ഷേ തടാകത്തിന്റെ അടിയിൽ ഒരു രഹസ്യം ഉണ്ടായിരുന്നു. ഭൂമിക്കടിയിൽ നിന്ന് വന്ന കാർബൺ ഡൈ ഓക്സൈഡ് വർഷങ്ങളായി ആഴത്തിലെ വെള്ളത്തിൽ അലിഞ്ഞു കൂടിക്കൊണ്ടിരുന്നു.",
+      "voiceover_ml": "പക്ഷേ അതിന്റെ അടിയിൽ, വർഷങ്ങളായി കാർബൺ ഡൈ ഓക്സൈഡ് അലിഞ്ഞു കൂടുകയായിരുന്നു.",
       "headline": "GAS BUILDING BELOW",
       "highlight": "GAS",
       "labels": [
@@ -80,7 +80,7 @@
       "build_cmd": "Reuse the cross-section layout. Three cracks in the crater floor (thin dark zigzags). From them, 40 small bubbles rise slowly (deterministic paths, speed 60px/s) and fade out before reaching mid-depth. The deep half of the water gradually tints from #0c1c26 to #2a1420 over the scene (gas saturation), and a thin red 'pressure' bar on the right (x0.86, from y0.62 up to y0.36) fills from 0 to 90% with the accent colour."
     },
     {
-      "voiceover_ml": "1986 ഓഗസ്റ്റ് 21-ന് രാത്രി. ഒരു വലിയ കുമിള പോലെ ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പുറത്തേക്ക് പൊട്ടി. ഒരു വെളുത്ത മേഘം താഴ്വരയിലേക്ക് ഒഴുകി.",
+      "voiceover_ml": "1986 ഓഗസ്റ്റ് 21, രാത്രി. ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പൊട്ടി പുറത്തേക്ക്.",
       "headline": "21 AUGUST 1986",
       "highlight": "1986",
       "labels": [
@@ -95,7 +95,7 @@
       "build_cmd": "Night version of the cross-section (sky #060a14). At 20% the water surface bulges upward (ellipse scaling) and at 28% bursts: 60 spray particles shoot up and fall. From 30% a thick white-grey cloud (stack of soft ellipses, opacity 0.85) rises from the lake, spills over the LEFT rim and flows down the slope to the bottom-left corner over 50-95% of the scene, hugging the ground. House windows on the rim go from warm yellow to dark as the cloud passes. One deep screen flash (white, 0.15 opacity, 0.2 s) at the burst."
     },
     {
-      "voiceover_ml": "കാർബൺ ഡൈ ഓക്സൈഡ് വായുവിനേക്കാൾ ഭാരമുള്ളതാണ്. അത് താഴ്ന്ന സ്ഥലങ്ങളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്ന ആളുകൾക്ക് ശ്വാസം കിട്ടിയില്ല. ഏകദേശം 1,700 പേർ, 3,500-ലധികം കന്നുകാലികൾ.",
+      "voiceover_ml": "വായുവിനേക്കാൾ ഭാരമുള്ള വാതകം താഴ്വരകളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്നവർക്ക് ശ്വാസം കിട്ടിയില്ല.",
       "headline": "HEAVIER THAN AIR",
       "highlight": "HEAVIER",
       "labels": [
@@ -110,7 +110,7 @@
       "build_cmd": "Valley diagram: a wide U-shaped ground line (dark) from x0.05 to x0.95 dipping to y0.6 in the middle. A translucent grey 'pool' fills the valley from the bottom up (level rises from y0.62 to y0.44 over 10-60%, wavy top edge). Inside the valley, 6 tiny house outlines. No people drawn. At 60% a thin horizontal rule and the label appear; the pool keeps gently sloshing. Keep it quiet and restrained; no flashing."
     },
     {
-      "voiceover_ml": "ഇന്ന് ആ തടാകത്തിൽ വലിയ പൈപ്പുകൾ ഉണ്ട്. അടിയിലെ വാതകം പതുക്കെ പുറത്തേക്ക് വിടാൻ. ഒരു തടാകത്തിന് ഇത്രയും ശക്തിയുണ്ടെന്ന് ആരെങ്കിലും കരുതിയോ?",
+      "voiceover_ml": "ഇന്ന് പൈപ്പുകൾ വഴി ആ വാതകം പതുക്കെ പുറത്തുവിടുന്നു. കാരണം ആ തടാകം കൊല്ലുന്നത്, ഒരു ശബ്ദവുമില്ലാതെയാണ്.",
       "headline": "DEGASSING THE LAKE",
       "highlight": "DEGASSING",
       "labels": [
@@ -132,5 +132,6 @@
     "CO2 from magma dissolved in deep water -> USGS",
     "Degassing pipes since 2001 -> USGS reports"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

@@ -51,7 +51,7 @@
   },
   "scenes": [
     {
-      "voiceover_ml": "ഡേയ് ഗ്രേഷ്യ എന്ന കപ്പലിലെ നാവികർ ദൂരെ ഒരു കപ്പൽ കണ്ടു. അടുത്ത് ചെന്നപ്പോൾ ഡെക്കിൽ ആരുമില്ല. മേരി സെലസ്റ്റ് എന്നായിരുന്നു അതിന്റെ പേര്.",
+      "voiceover_ml": "1872-ൽ അറ്റ്ലാന്റിക്കിൽ ഒരു കപ്പൽ കണ്ടെത്തി. മേരി സെലസ്റ്റ്. ഡെക്കിൽ ആരുമില്ല.",
       "headline": "FOUND DRIFTING",
       "highlight": "DRIFTING",
       "labels": [
@@ -72,7 +72,7 @@
       "build_cmd": "Same sea/sky as the cover. The ship sits at x0.6 y0.48 at 0.8 scale. A circular telescope mask (two overlapping circles, black outside) sweeps from the left edge to centre over 0-40%, revealing the ship; inside the mask the deck is clearly empty (draw deck planks and a wheel, no figures). At 60% the mask snaps fully open with a quick scale-up and a subtle camera push-in (scale 1.0 to 1.08 by 100%)."
     },
     {
-      "voiceover_ml": "കപ്പലിൽ ഭക്ഷണവും വെള്ളവും മാസങ്ങളോളം ബാക്കി. ചരക്കായ 1,700 ബാരൽ ആൽക്കഹോൾ അതേപടി. ക്യാപ്റ്റന്റെയും കുടുംബത്തിന്റെയും സാധനങ്ങൾ എല്ലാം സ്ഥലത്ത് തന്നെ.",
+      "voiceover_ml": "ഭക്ഷണവും വെള്ളവും ബാക്കി. ചരക്ക് അതേപടി. സാധനങ്ങൾ എല്ലാം സ്ഥലത്ത് തന്നെ.",
       "headline": "EVERYTHING INTACT",
       "highlight": "INTACT",
       "labels": [
@@ -93,7 +93,7 @@
       "build_cmd": "Cabin interior: wooden planks (horizontal brown bands) for walls and floor, warm lantern light (radial gradient from a lantern at x0.72 y0.3 that swings ±6° with the ship). Left: a stack of 12 barrels (rounded rects with two hoops) revealed one row at a time over 10-40%. Right: a small table with a cup and a plate (simple shapes) and, on a shelf, a tiny toy (cube + ball). Nothing moves except the lantern swing and its shadow; a slow camera drift left to right (20px)."
     },
     {
-      "voiceover_ml": "ഒരു ലൈഫ്ബോട്ട് മാത്രം കാണാനില്ല. ലോഗ് ബുക്കിലെ അവസാന കുറിപ്പ് പത്ത് ദിവസം മുമ്പത്തേത്. അതിനു ശേഷം എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല.",
+      "voiceover_ml": "ഒരു ലൈഫ്ബോട്ട് മാത്രം കാണാനില്ല. ലോഗ് ബുക്കിലെ അവസാന കുറിപ്പ് പത്ത് ദിവസം മുമ്പത്തേത്.",
       "headline": "ONE LIFEBOAT GONE",
       "highlight": "GONE",
       "labels": [
@@ -108,7 +108,7 @@
       "build_cmd": "0-50%: ship's side rail with two curved davits (hooks) and dangling rope ends, swinging gently; a dashed outline shows where the lifeboat should hang, pulsing in the accent colour. 50-100%: crossfade (0.4 s) to a logbook: open double page (#e8dcc0) at x0.5 y0.45, 8 handwritten lines (dark squiggly strokes) on the left page, the last line ending mid-way; the right page blank. A faint ink blot appears at 85%. Slow push-in on the blank page."
     },
     {
-      "voiceover_ml": "പല സിദ്ധാന്തങ്ങളും വന്നു. ആൽക്കഹോളിന്റെ പുക പൊട്ടിത്തെറിക്കുമെന്ന് പേടിച്ചോ? കൊടുങ്കാറ്റോ? കപ്പൽ മുങ്ങുമെന്ന് തെറ്റിദ്ധരിച്ച് ലൈഫ്ബോട്ടിൽ രക്ഷപ്പെട്ടോ?",
+      "voiceover_ml": "പുക പൊട്ടിത്തെറിക്കുമെന്ന് പേടിച്ചോ? കൊടുങ്കാറ്റോ? ആർക്കും ഉറപ്പില്ല.",
       "headline": "THE THEORIES",
       "highlight": "THEORIES",
       "labels": [
@@ -129,7 +129,7 @@
       "build_cmd": "Three rounded panels (each 300x380) arranged across the middle band at y0.46: left at x0.2, centre x0.5, right x0.8. Each pops in (scale 0.8 to 1, ease-out) at 10%, 40%, 70%. Panel 1: a barrel with 6 rising vapour curls. Panel 2: a grey waterspout (tall tapered spiral) over waves. Panel 3: the ship small in the back and a lifeboat with a tilted oar moving away toward the panel edge. Panels sit on a dark blue background; a thin accent border on whichever panel is newest."
     },
     {
-      "voiceover_ml": "150 വർഷം കഴിഞ്ഞിട്ടും ആ പത്ത് പേർക്ക് എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല. കടൽ അതിന്റെ രഹസ്യം ഇന്നും പറഞ്ഞിട്ടില്ല.",
+      "voiceover_ml": "150 വർഷമായി. ആ പത്ത് പേർക്ക് എന്ത് സംഭവിച്ചു? കടൽ ഇന്നും ആരോടും പറഞ്ഞിട്ടില്ല.",
       "headline": "STILL UNSOLVED",
       "highlight": "UNSOLVED",
       "labels": [
@@ -152,5 +152,6 @@
     "Lifeboat missing; last log ~10 days earlier -> Britannica/Smithsonian",
     "Theories unproven -> Smithsonian"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

@@ -134,6 +134,11 @@ JS = """
         const k = ease((t - c.a) / 0.18); sub.style.opacity = k; sub.style.transform = `translateY(${(1 - k) * 16}px)`;
       }
     }
+    if (S.beat) {            // punch-in at the midpoint: a new frame without a cut
+      const D = S.beat, h = t - D * 0.5, k = h > 0 ? ease(h / 0.35) : 0;
+      const sc = 1 + 0.025 * (t / D) + 0.09 * k, dy = -24 * k;
+      document.querySelectorAll('body > canvas').forEach(cv => { cv.style.transformOrigin = '50% 42%'; cv.style.transform = `translateY(${dy}px) scale(${sc})`; });
+    }
     S.pills.forEach((p, i) => { const el = document.getElementById('pill' + i); if (!el) return;
       const k = back((t - p.at) / 0.35); el.style.transform = `translate(-50%,-50%) scale(${t < p.at || t > p.until ? 0 : k})`; });
   };
@@ -168,7 +173,8 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     src = " · ".join((script.get("topic", {}).get("sources") or script.get("sources") or [])[:2])
     body += "".join(f'<div class="pill" id="pill{i}" style="left:{p["x"] * 100}%;top:{p["y"] * 100}%"><i></i>{html.escape(p["text"])}</div>'
                     for i, p in enumerate(pills))
-    state = json.dumps({"chunks": chunks, "pills": pills}, ensure_ascii=False)
+    state = json.dumps({"chunks": chunks, "pills": pills, "beat": round(duration, 3) if kind != "cover" and duration > 4.5 else 0},
+                       ensure_ascii=False)
     globe_html = (GLOBE.replace("%(LAT)s", str(opening["lat"])).replace("%(LON)s", str(opening["lon"]))
                   .replace("%(D)s", f"{duration:.3f}").replace("ACC", accent)) if globe_on else ""
     globe_mark, globe_js = (globe_html.split("<script>", 1)[0], "<script>" + globe_html.split("<script>", 1)[1]) if globe_on else ("", "")

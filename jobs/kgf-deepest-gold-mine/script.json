@@ -29,39 +29,39 @@
   "thumbnail_accent": [
     "സ്വർണ്ണഖനി!"
   ],
-  "hook_voiceover": "ഭൂമിക്കടിയിലേക്ക് മൂന്ന് കിലോമീറ്റർ! വെറും സ്വർണ്ണത്തിന് വേണ്ടി മനുഷ്യൻ കുഴിച്ചിറങ്ങിയ ആഴമാണിത്. കേട്ടിട്ടുണ്ടോ?",
+  "hook_voiceover": "ഭൂമിക്കടിയിലേക്ക് മൂന്ന് കിലോമീറ്റർ! സ്വർണ്ണത്തിന് വേണ്ടി മനുഷ്യൻ കുഴിച്ച ആഴം.",
   "cover_visual": "Cross-section: a headframe on the surface, a shaft plunging past glowing gold veins",
   "scenes": [
     {
-      "voiceover": "KGF എന്ന് കേൾക്കുമ്പോ നമ്മുടെ മനസ്സിൽ റോക്കി ഭായ് ആയിരിക്കും, അല്ലേ? പക്ഷേ സിനിമയ്ക്കും എത്രയോ മുമ്പേ ഒരു റിയൽ KGF ഉണ്ടായിരുന്നു. കർണാടകയിലെ കോലാർ ഗോൾഡ് ഫീൽഡ്സ്.",
+      "voiceover": "KGF എന്ന് കേൾക്കുമ്പോ റോക്കി ഭായ് ഓർമ്മ വരും, അല്ലേ? പക്ഷേ ഇതാണ് റിയൽ KGF. കോലാർ ഗോൾഡ് ഫീൽഡ്സ്.",
       "caption": "The real KGF",
       "highlight": "KGF",
       "visual": "Dry hills at dusk with mine headframes",
       "caption_ml": "ഇതാണ് റിയൽ KGF"
     },
     {
-      "voiceover": "1880-കളിൽ ബ്രിട്ടീഷുകാർ ഇവിടെ ഖനനം തുടങ്ങി. പിന്നെ കുഴിച്ചു കുഴിച്ചു പോയത് ഏകദേശം മൂന്ന് കിലോമീറ്റർ താഴേക്ക്! ലോകത്തിലെ ഏറ്റവും ആഴമുള്ള ഖനികളിൽ ഒന്ന്.",
+      "voiceover": "1880-കളിൽ ബ്രിട്ടീഷുകാർ ഖനനം തുടങ്ങി. ലോകത്തിലെ ഏറ്റവും ആഴമുള്ള ഖനികളിൽ ഒന്നായി.",
       "caption": "Among the world's deepest",
       "highlight": "deepest",
       "visual": "Dropping down the shaft past depth markers",
       "caption_ml": "ലോകത്തിലെ ഏറ്റവും ആഴമുള്ളവയിൽ ഒന്ന്"
     },
     {
-      "voiceover": "ഒരു രസമുള്ള കാര്യം പറയട്ടെ? 1902-ൽ തന്നെ KGF-ൽ കറന്റ് എത്തിയിരുന്നു! ഏഷ്യയിൽ ആദ്യം വൈദ്യുതി കിട്ടിയ സ്ഥലങ്ങളിൽ ഒന്ന്.",
+      "voiceover": "1902-ൽ തന്നെ ഇവിടെ കറന്റ് എത്തി! ഏഷ്യയിൽ ആദ്യം വൈദ്യുതി കിട്ടിയ ഇടങ്ങളിൽ ഒന്ന്.",
       "caption": "Electric power in 1902",
       "highlight": "1902",
       "visual": "Power flows from a waterfall plant to the mine town",
       "caption_ml": "1902-ൽ തന്നെ കറന്റ്"
     },
     {
-      "voiceover": "പക്ഷേ അടിയിലെ അവസ്ഥയോ? കടുത്ത ചൂട്, എപ്പോ വേണേലും അപകടം. ആയിരക്കണക്കിന് തൊഴിലാളികൾ ജീവൻ കയ്യിൽ പിടിച്ചാണ് അവിടെ പണിയെടുത്തത്.",
+      "voiceover": "അടിയിൽ കടുത്ത ചൂടും അപകടവും. തൊഴിലാളികൾ ജീവൻ പണയം വെച്ചാണ് പണിയെടുത്തത്.",
       "caption": "Heat, danger, hard labour",
       "highlight": "danger",
       "visual": "Miners' lamps in a hot, dark tunnel",
       "caption_ml": "ചൂട്, അപകടം, കഠിനാധ്വാനം"
     },
     {
-      "voiceover": "ഒടുവിൽ ചെലവ് താങ്ങാൻ പറ്റാതായപ്പോൾ 2001-ൽ ഖനികൾ പൂട്ടി. ഇന്ന് അവിടെ ബാക്കിയുള്ളത് ഒഴിഞ്ഞ ഖനികളും കുറേ ഓർമ്മകളും മാത്രം.",
+      "voiceover": "2001-ൽ ഖനികൾ പൂട്ടി. ഇന്ന് ആ മൂന്ന് കിലോമീറ്റർ ആഴത്തിൽ ബാക്കി, ഇരുട്ട് മാത്രം.",
       "caption": "Closed in 2001",
       "highlight": "2001",
       "visual": "An abandoned headframe at dusk",

@@ -41,7 +41,7 @@
   "cover_visual": "A still crater lake at dusk between green hills, perfectly calm, with a faint mist starting to rise from its surface.",
   "scenes": [
     {
-      "voiceover": "കാമറൂണിലെ ന്യോസ് തടാകം. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലാണ് അത്. ചുറ്റും ശാന്തമായ ഗ്രാമങ്ങൾ.",
+      "voiceover": "കാമറൂണിലെ ന്യോസ്. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലെ ശാന്തമായ തടാകം.",
       "caption": "A CRATER LAKE",
       "highlight": "CRATER",
       "labels": [
@@ -55,7 +55,7 @@
       "visual": "Cross-section of the crater: a bowl of rock holding the lake, with a village on the rim."
     },
     {
-      "voiceover": "പക്ഷേ തടാകത്തിന്റെ അടിയിൽ ഒരു രഹസ്യം ഉണ്ടായിരുന്നു. ഭൂമിക്കടിയിൽ നിന്ന് വന്ന കാർബൺ ഡൈ ഓക്സൈഡ് വർഷങ്ങളായി ആഴത്തിലെ വെള്ളത്തിൽ അലിഞ്ഞു കൂടിക്കൊണ്ടിരുന്നു.",
+      "voiceover": "പക്ഷേ അതിന്റെ അടിയിൽ, വർഷങ്ങളായി കാർബൺ ഡൈ ഓക്സൈഡ് അലിഞ്ഞു കൂടുകയായിരുന്നു.",
       "caption": "GAS BUILDING BELOW",
       "highlight": "GAS",
       "labels": [
@@ -69,7 +69,7 @@
       "visual": "Same cross-section; from cracks in the crater floor, bubbles of gas seep up and dissolve into the deep water, which slowly tints darker."
     },
     {
-      "voiceover": "1986 ഓഗസ്റ്റ് 21-ന് രാത്രി. ഒരു വലിയ കുമിള പോലെ ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പുറത്തേക്ക് പൊട്ടി. ഒരു വെളുത്ത മേഘം താഴ്വരയിലേക്ക് ഒഴുകി.",
+      "voiceover": "1986 ഓഗസ്റ്റ് 21, രാത്രി. ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പൊട്ടി പുറത്തേക്ക്.",
       "caption": "21 AUGUST 1986",
       "highlight": "1986",
       "labels": [
@@ -83,7 +83,7 @@
       "visual": "The lake surface erupts in a fountain of gas; a heavy white cloud spills over the rim and flows downhill into the valley like liquid."
     },
     {
-      "voiceover": "കാർബൺ ഡൈ ഓക്സൈഡ് വായുവിനേക്കാൾ ഭാരമുള്ളതാണ്. അത് താഴ്ന്ന സ്ഥലങ്ങളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്ന ആളുകൾക്ക് ശ്വാസം കിട്ടിയില്ല. ഏകദേശം 1,700 പേർ, 3,500-ലധികം കന്നുകാലികൾ.",
+      "voiceover": "വായുവിനേക്കാൾ ഭാരമുള്ള വാതകം താഴ്വരകളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്നവർക്ക് ശ്വാസം കിട്ടിയില്ല.",
       "caption": "HEAVIER THAN AIR",
       "highlight": "HEAVIER",
       "labels": [
@@ -97,7 +97,7 @@
       "visual": "A simple diagram: the invisible gas pools in the low valley like water filling a bowl; sleeping village outlines sit inside the pool."
     },
     {
-      "voiceover": "ഇന്ന് ആ തടാകത്തിൽ വലിയ പൈപ്പുകൾ ഉണ്ട്. അടിയിലെ വാതകം പതുക്കെ പുറത്തേക്ക് വിടാൻ. ഒരു തടാകത്തിന് ഇത്രയും ശക്തിയുണ്ടെന്ന് ആരെങ്കിലും കരുതിയോ?",
+      "voiceover": "ഇന്ന് പൈപ്പുകൾ വഴി ആ വാതകം പതുക്കെ പുറത്തുവിടുന്നു. കാരണം ആ തടാകം കൊല്ലുന്നത്, ഒരു ശബ്ദവുമില്ലാതെയാണ്.",
       "caption": "DEGASSING THE LAKE",
       "highlight": "DEGASSING",
       "labels": [

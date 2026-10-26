@@ -51,7 +51,7 @@
   },
   "scenes": [
     {
-      "voiceover_ml": "നൂറ്റാണ്ടുകൾക്ക് മുമ്പ് ദക്ഷിണേന്ത്യയിൽ ഉണ്ടാക്കിയിരുന്ന ഒരു പ്രത്യേക ഉരുക്ക്. അതിന്റെ പേര് വൂട്സ്. കന്നഡയിലെ 'ഉക്കു' എന്ന വാക്കിൽ നിന്നാണ് ആ പേര്.",
+      "voiceover_ml": "ദക്ഷിണേന്ത്യയിൽ ഉണ്ടാക്കിയിരുന്ന ഒരു പ്രത്യേക ഉരുക്ക്. പേര് വൂട്സ്.",
       "headline": "WOOTZ: INDIA'S STEEL",
       "highlight": "WOOTZ",
       "labels": [
@@ -66,7 +66,7 @@
       "build_cmd": "Background: deep brown-black. Centre: a clay crucible (rounded pot, x0.5 y0.48, 260px wide) sitting in orange flames (10 flame tongues, flicker with rand per frame but deterministic by t). Inside the crucible a molten disc glows from orange to white over the first 50%. From 55% a dark grey ingot (rounded rect 200x90) slides out to the right and cools: colour from #f2a53a to #8a8f98 by 90%. Behind everything, a faint outline of peninsular India (simple polygon, 0.35 opacity) at x0.5 y0.45, pulsing glow."
     },
     {
-      "voiceover_ml": "കപ്പലുകളിലും ഒട്ടകപ്പുറത്തും ഈ ഉരുക്ക് മിഡിൽ ഈസ്റ്റിലേക്ക് പോയി. അവിടെ ഡമാസ്കസിലെ കൊല്ലന്മാർ അതിൽ നിന്ന് വാളുകൾ തീർത്തു.",
+      "voiceover_ml": "കപ്പലിലും ഒട്ടകപ്പുറത്തും അത് ഡമാസ്കസിലെത്തി. അവിടെ അതിൽ നിന്ന് വാളുകൾ പിറന്നു.",
       "headline": "SHIPPED TO DAMASCUS",
       "highlight": "DAMASCUS",
       "labels": [
@@ -87,7 +87,7 @@
       "build_cmd": "Background: parchment-dark navy map feel (#0f1a2b) with faint grid. Draw two simple landmasses as soft polygons: India (right, x0.6-0.9, y0.35-0.65) and Arabia/Levant (left, x0.15-0.5, y0.3-0.55), fill #243649. A dashed route (accent colour, 5px, dash 18/12) draws progressively from (0.72,0.55) curving across the sea to (0.32,0.38) between 10% and 70% of the scene. A small ship (triangle sail + hull) rides the route from 10% to 45%; a small camel silhouette (simple rectangles) continues over land from 45% to 70%. At 70% a sword glyph (short line + crossguard) pops at the end point with a ring pulse."
     },
     {
-      "voiceover_ml": "ആ വാളുകൾക്ക് ഒരു പ്രത്യേകതയുണ്ടായിരുന്നു. വെള്ളം ഒഴുകുന്നത് പോലെ ഒരു അലയടയാളം. മൂർച്ചയും കരുത്തും കൊണ്ട് ലോകം മുഴുവൻ അതിനെ ഭയപ്പെട്ടു.",
+      "voiceover_ml": "വെള്ളം ഒഴുകുന്നത് പോലെ ഒരു അലയടയാളം. ലോകം മുഴുവൻ ആ വാളിനെ ഭയപ്പെട്ടു.",
       "headline": "THE WAVY PATTERN",
       "highlight": "WAVY",
       "labels": [
@@ -102,7 +102,7 @@
       "build_cmd": "Fill the middle band (y0.25-0.7) with the blade close-up: 40 flowing bands made of sine waves whose phase drifts with t (speed 0.4), alternating #e6e9ef and #5c6472, with a subtle metallic gradient overlay. At 40% a water-drop ellipse falls from y0.2 to y0.47 (ease-in) and on landing three expanding ripple ellipses spread (stroke white, fading). Edge-light the top and bottom of the band with thin accent lines. Keep the band centred; blur-free, crisp shapes."
     },
     {
-      "voiceover_ml": "പിന്നെ സംഭവിച്ചത് വിചിത്രമാണ്. ഏകദേശം 1800-ഓടെ ആ ഉരുക്ക് ഉണ്ടാക്കുന്ന വിദ്യ തന്നെ നഷ്ടപ്പെട്ടു. ആർക്കും അതേ വാൾ പിന്നെ ഉണ്ടാക്കാനായില്ല.",
+      "voiceover_ml": "പക്ഷേ 1800-ഓടെ ആ വിദ്യ തന്നെ നഷ്ടപ്പെട്ടു. ആർക്കും അത് പകർത്താനായില്ല.",
       "headline": "THE RECIPE WAS LOST",
       "highlight": "LOST",
       "labels": [
@@ -117,7 +117,7 @@
       "build_cmd": "Background dark. Centre: a parchment page (rect 560x420 at x0.5 y0.42, #e8dcc0) with 7 faint text lines (grey rects). From 15% to 75% the page burns from the bottom-right corner: an irregular dark edge advances diagonally with a glowing orange rim (3px) and 20 ember particles drifting up (deterministic). Below the page, a small anvil silhouette (y0.68) with a blade on it; its glow fades from orange to cold grey over the scene. At 80% the whole page is gone; only ash flecks remain."
     },
     {
-      "voiceover_ml": "2006-ൽ ജർമ്മനിയിലെ ഗവേഷകർ ഒരു പഴയ ഡമാസ്കസ് വാൾ മൈക്രോസ്കോപ്പിൽ നോക്കി. അതിനുള്ളിൽ കണ്ടത് കാർബൺ നാനോട്യൂബുകൾ! നമ്മുടെ പൂർവികർ അറിയാതെ ചെയ്ത നാനോ ടെക്നോളജി.",
+      "voiceover_ml": "2006-ൽ ഗവേഷകർ ആ വാളിനുള്ളിൽ കണ്ടത് കാർബൺ നാനോട്യൂബുകൾ! അതാണ് ഈ വാളിന്റെ രഹസ്യം.",
       "headline": "NANOTUBES INSIDE",
       "highlight": "NANOTUBES",
       "labels": [
@@ -140,5 +140,6 @@
     "Nanotubes found 2006 (TU Dresden) -> Nature 2006",
     "'wootz' linked to 'ukku' -> Britannica"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

@@ -39,7 +39,7 @@
   "cover_visual": "A two-masted sailing ship drifting on a grey, rolling sea under a heavy sky, sails half set, no one on deck.",
   "scenes": [
     {
-      "voiceover": "ഡേയ് ഗ്രേഷ്യ എന്ന കപ്പലിലെ നാവികർ ദൂരെ ഒരു കപ്പൽ കണ്ടു. അടുത്ത് ചെന്നപ്പോൾ ഡെക്കിൽ ആരുമില്ല. മേരി സെലസ്റ്റ് എന്നായിരുന്നു അതിന്റെ പേര്.",
+      "voiceover": "1872-ൽ അറ്റ്ലാന്റിക്കിൽ ഒരു കപ്പൽ കണ്ടെത്തി. മേരി സെലസ്റ്റ്. ഡെക്കിൽ ആരുമില്ല.",
       "caption": "FOUND DRIFTING",
       "highlight": "DRIFTING",
       "labels": [
@@ -59,7 +59,7 @@
       "visual": "From a second ship's rail, a telescope view circles the empty deck of the Mary Celeste."
     },
     {
-      "voiceover": "കപ്പലിൽ ഭക്ഷണവും വെള്ളവും മാസങ്ങളോളം ബാക്കി. ചരക്കായ 1,700 ബാരൽ ആൽക്കഹോൾ അതേപടി. ക്യാപ്റ്റന്റെയും കുടുംബത്തിന്റെയും സാധനങ്ങൾ എല്ലാം സ്ഥലത്ത് തന്നെ.",
+      "voiceover": "ഭക്ഷണവും വെള്ളവും ബാക്കി. ചരക്ക് അതേപടി. സാധനങ്ങൾ എല്ലാം സ്ഥലത്ത് തന്നെ.",
       "caption": "EVERYTHING INTACT",
       "highlight": "INTACT",
       "labels": [
@@ -79,7 +79,7 @@
       "visual": "Inside the ship: stacked barrels, a laid table with a cup, a child's small items, a lantern swinging."
     },
     {
-      "voiceover": "ഒരു ലൈഫ്ബോട്ട് മാത്രം കാണാനില്ല. ലോഗ് ബുക്കിലെ അവസാന കുറിപ്പ് പത്ത് ദിവസം മുമ്പത്തേത്. അതിനു ശേഷം എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല.",
+      "voiceover": "ഒരു ലൈഫ്ബോട്ട് മാത്രം കാണാനില്ല. ലോഗ് ബുക്കിലെ അവസാന കുറിപ്പ് പത്ത് ദിവസം മുമ്പത്തേത്.",
       "caption": "ONE LIFEBOAT GONE",
       "highlight": "GONE",
       "labels": [
@@ -93,7 +93,7 @@
       "visual": "The ship's side with empty lifeboat davits; cut to an open logbook whose last entry trails off into blank pages."
     },
     {
-      "voiceover": "പല സിദ്ധാന്തങ്ങളും വന്നു. ആൽക്കഹോളിന്റെ പുക പൊട്ടിത്തെറിക്കുമെന്ന് പേടിച്ചോ? കൊടുങ്കാറ്റോ? കപ്പൽ മുങ്ങുമെന്ന് തെറ്റിദ്ധരിച്ച് ലൈഫ്ബോട്ടിൽ രക്ഷപ്പെട്ടോ?",
+      "voiceover": "പുക പൊട്ടിത്തെറിക്കുമെന്ന് പേടിച്ചോ? കൊടുങ്കാറ്റോ? ആർക്കും ഉറപ്പില്ല.",
       "caption": "THE THEORIES",
       "highlight": "THEORIES",
       "labels": [
@@ -113,7 +113,7 @@
       "visual": "Three small vignettes appear one by one: a barrel leaking vapour, a waterspout at sea, a lifeboat rowing away from the ship."
     },
     {
-      "voiceover": "150 വർഷം കഴിഞ്ഞിട്ടും ആ പത്ത് പേർക്ക് എന്ത് സംഭവിച്ചു എന്ന് ആർക്കും അറിയില്ല. കടൽ അതിന്റെ രഹസ്യം ഇന്നും പറഞ്ഞിട്ടില്ല.",
+      "voiceover": "150 വർഷമായി. ആ പത്ത് പേർക്ക് എന്ത് സംഭവിച്ചു? കടൽ ഇന്നും ആരോടും പറഞ്ഞിട്ടില്ല.",
       "caption": "STILL UNSOLVED",
       "highlight": "UNSOLVED",
       "labels": [

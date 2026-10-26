@@ -51,7 +51,7 @@
   },
   "scenes": [
     {
-      "voiceover_ml": "മോഹൻജൊദാരോ, ഹാരപ്പ. 4,000 വർഷം മുമ്പ് ഇന്ത്യൻ ഉപഭൂഖണ്ഡത്തിലെ ഏറ്റവും വലിയ നഗരങ്ങൾ. വലിയ കുളങ്ങൾ, നേരായ തെരുവുകൾ, അഴുക്കുചാലുകൾ.",
+      "voiceover_ml": "മോഹൻജൊദാരോയും ഹാരപ്പയും. 4,000 വർഷം മുമ്പത്തെ വമ്പൻ നഗരങ്ങൾ.",
       "headline": "CITIES 4,000 YEARS AGO",
       "highlight": "4,000",
       "labels": [
@@ -66,7 +66,7 @@
       "build_cmd": "Sand background (#d8c49a). A city grid draws itself: 6 vertical and 8 horizontal street lines (dark brick colour #7a4a32, 10px) over 0-40%; between them 30 blocks (rects #a86a48) fill in over 20-60%; a large rectangle 'Great Bath' with an inner pool (blue) at x0.42 y0.4 pops at 60%. 40 small dots (people) move along the streets in straight segments. Subtle paper grain overlay."
     },
     {
-      "voiceover_ml": "ആ നഗരങ്ങളിൽ നിന്ന് ആയിരക്കണക്കിന് മുദ്രകൾ കിട്ടി. ഓരോന്നിലും കുറച്ച് അടയാളങ്ങൾ. ഒരു ഭാഷയാണെന്ന് ഉറപ്പ്. പക്ഷേ എന്ത് ഭാഷ?",
+      "voiceover_ml": "അവിടെ നിന്ന് ആയിരക്കണക്കിന് മുദ്രകൾ കിട്ടി. എല്ലാത്തിലും ഒരേ തരം അടയാളങ്ങൾ.",
       "headline": "THOUSANDS OF SEALS",
       "highlight": "SEALS",
       "labels": [
@@ -81,7 +81,7 @@
       "build_cmd": "Dark background. A 4x5 grid of seals (each 200x200, sand colour, 2° random tilt) fills the middle band; each seal shows a small animal silhouette (alternate bull, elephant, rhino, tiger as simple shapes) and 3-5 invented signs on top. Seals pop in one by one (scale 0.6 to 1) every 0.12 s from 5%; the whole grid drifts slowly upward (40px) and a soft spotlight (radial light) moves across it."
     },
     {
-      "voiceover_ml": "പ്രശ്നം ഇതാണ്: ഓരോ എഴുത്തും വളരെ ചെറുതാണ്. ശരാശരി അഞ്ച് അടയാളം മാത്രം. പിന്നെ റൊസെറ്റ സ്റ്റോൺ പോലെ, അറിയാവുന്ന ഒരു ഭാഷയിലേക്ക് പരിഭാഷപ്പെടുത്തിയ ഒരു എഴുത്തും കിട്ടിയിട്ടില്ല.",
+      "voiceover_ml": "പക്ഷേ ഓരോ എഴുത്തിലും ശരാശരി അഞ്ച് അടയാളം മാത്രം. പരിഭാഷയുള്ള ഒരു കല്ലും കിട്ടിയിട്ടില്ല.",
       "headline": "NO ROSETTA STONE",
       "highlight": "ROSETTA",
       "labels": [
@@ -102,7 +102,7 @@
       "build_cmd": "Left half: a single seal strip with exactly 5 invented signs; a measuring bracket underneath it draws at 15%. Right half: a dark stone slab (rounded rect 380x520) with three horizontal text bands (rows of small marks): the top band in Indus-style signs, the middle band in a different invented script, and the bottom band EMPTY with a dashed outline that pulses in the accent colour from 60%. Gentle alternating light on each half."
     },
     {
-      "voiceover_ml": "ദ്രാവിഡ ഭാഷയാണോ? സംസ്കൃതത്തിന്റെ പൂർവികനോ? ഭാഷയേ അല്ലെന്ന് പോലും ചിലർ വാദിക്കുന്നു. കമ്പ്യൂട്ടറുകളും AI-യും ശ്രമിച്ചു. ഇതുവരെ ഉത്തരമില്ല.",
+      "voiceover_ml": "ദ്രാവിഡമോ? സംസ്കൃതത്തിന്റെ പൂർവികനോ? AI പോലും തോറ്റു.",
       "headline": "EVERY THEORY FAILED",
       "highlight": "FAILED",
       "labels": [
@@ -123,7 +123,7 @@
       "build_cmd": "Background: a faint grid of scrolling invented signs (0.25 opacity, drifting upward). Centre: a padlock shape (body 260x200 + shackle) at x0.5 y0.46 in dark grey with an accent keyhole. Three keys (simple key shapes, different colours) approach from the left at 15%, 40%, 65%; each slides into the keyhole, shakes twice, and bounces back out (ease), leaving a small 'x' spark. At 85% the keyhole glows with a question-mark-shaped flicker (draw a '?' from strokes). Keep it playful but clean."
     },
     {
-      "voiceover_ml": "2025-ൽ തമിഴ്നാട് സർക്കാർ ഒരു വെല്ലുവിളി വെച്ചു: ഈ ലിപി വായിക്കുന്നവർക്ക് ഒരു മില്യൺ ഡോളർ! അപ്പോൾ, ആരാകും ആ നാലായിരം വർഷത്തെ നിശ്ശബ്ദത പൊളിക്കുന്നത്?",
+      "voiceover_ml": "2025-ൽ തമിഴ്നാട് ഒരു മില്യൺ ഡോളർ സമ്മാനം പ്രഖ്യാപിച്ചു. 4,000 വർഷത്തെ ഈ നിശ്ശബ്ദത ആര് പൊളിക്കും?",
       "headline": "$1 MILLION PRIZE",
       "highlight": "$1 MILLION",
       "labels": [
@@ -146,5 +146,6 @@
     "No bilingual text -> Britannica",
     "$1 million prize, Tamil Nadu, Jan 2025 -> BBC/The Hindu"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }
