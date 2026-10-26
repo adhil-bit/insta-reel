@@ -3,9 +3,6 @@ name: Post reel
 # Posts the next reel in the queue (oldest first) at the day-wise times below,
 # or a specific reel when run by hand.
 on:
-  schedule:   # checks every hour; posts only when a slot from config.POST_SLOTS is due
-    - cron: "17 */2 * * *"   # backup; the main hourly trigger comes from cron-job.org (action: auto)
-    - cron: "45 12 26 10 *"  # one-off: Mon 26 Oct, waits for the 6:33 PM IST slot
   workflow_dispatch:
     inputs:
       reel:
