@@ -2,6 +2,11 @@ name: Telegram setup
 
 on:
   workflow_dispatch:
+    inputs:
+      send_status:
+        description: "Send the pipeline status to Telegram"
+        required: false
+        default: "no"
 
 permissions:
   contents: write
@@ -21,11 +26,19 @@ jobs:
           python3 - << 'PY'
           import json
           d = json.load(open("logs/telegram-updates.json"))
-          ids = {str(u["message"]["chat"]["id"]): u["message"]["chat"].get("first_name", "") for u in d.get("result", []) if "message" in u}
+          ids = {}
+          for u in d.get("result", []):
+              c = (u.get("message") or u.get("my_chat_member") or u.get("channel_post") or {}).get("chat")
+              if c: ids[str(c["id"])] = c.get("title") or c.get("first_name", "")
           json.dump({"chat_ids": ids}, open("logs/telegram.json", "w"), indent=2); print(ids or "no messages yet: send /start to the bot first")
           PY
           rm -f logs/telegram-updates.json
-          [ -n "$TELEGRAM_CHAT_ID" ] && bash scripts/notify.sh "🔔 Telegram alerts are connected for @unexplored.truths. You'll get a message for every post and render." || true
+          if [ "${{ github.event.inputs.send_status }}" = "yes" ]; then
+            pip install -q -r requirements.txt >/dev/null 2>&1 || true
+            bash scripts/notify.sh "$(python main.py status)"
+          else
+            [ -n "$TELEGRAM_CHAT_ID" ] && bash scripts/notify.sh "🔔 Telegram alerts are connected for @unexplored.truths. You'll get a message for every post and render." || true
+          fi
       - run: |
           git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
           git add logs && git commit -qm "telegram setup" && git pull -q --rebase && git push -q || true

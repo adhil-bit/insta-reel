@@ -370,6 +370,28 @@ def youtube_post(folder_name: str) -> None:
     save_json(config.HISTORY_FILE, hist)
 
 
+def status_text() -> str:
+    """Short pipeline summary for Telegram."""
+    from datetime import timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30)); now = datetime.now(ist)
+    hist = history()
+    posted = [h for h in hist if h["status"] == "posted"]
+    pending = sorted([h for h in hist if h["status"] == "pending"], key=lambda h: h.get("priority", 999))
+    today = [h for h in posted if h.get("posted", "").startswith(now.strftime("%Y-%m-%d"))]
+    known = {h["folder"] for h in hist}
+    waiting = sorted(p.parent.name for p in (config.ROOT / "jobs").glob("*/script.json") if p.parent.name not in known)
+    lines = [f"📊 Pipeline status · {now.strftime('%a %d %b, %I:%M %p')} IST",
+             f"✅ Posted: {len(posted)} total ({len(today)} today)",
+             f"⏳ Ready to post: {len(pending)}"]
+    lines += [f"  {i}. {h.get('title', h['folder'])[:48]}" for i, h in enumerate(pending[:6], 1)]
+    if len(pending) > 6:
+        lines.append(f"  … and {len(pending) - 6} more")
+    if waiting:
+        lines.append(f"🎬 Waiting to be voiced/rendered: {len(waiting)} ({', '.join(waiting[:5])}{'…' if len(waiting) > 5 else ''})")
+    lines.append("📋 Full order: https://github.com/adhil-bit/insta-reel/blob/main/QUEUE.md")
+    return "\n".join(lines)
+
+
 def queue_md() -> None:
     """Write QUEUE.md: the posting order with expected slot times (shown on GitHub)."""
     from datetime import timedelta, timezone
@@ -524,7 +546,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "status", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -549,6 +571,8 @@ if __name__ == "__main__":
         render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
+    elif args.command == "status":
+        print(status_text())
     elif args.command == "slot-wait":
         print(slot_wait())
     elif args.command == "queue-md":
