@@ -102,23 +102,11 @@ jobs:
 
       - name: Telegram alert (posted)
         if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
-        run: |
-          LINK=$(grep -o 'https://www.instagram.com/[^ ]*' logs/last-post-log.txt | tail -1)
-          TITLE=$(python -c "import json;h=json.load(open('history.json'));print(next((e.get('title','') for e in h if e['folder']=='$REEL'),'$REEL'))")
-          bash scripts/notify.sh "✅ Posted to Instagram
-$TITLE
-$LINK
-$(TZ=Asia/Kolkata date '+%a %d %b, %I:%M %p IST')"
+        run: python scripts/notify.py posted "$REEL"
 
       - name: Telegram alert (post failed)
         if: ${{ failure() }}
-        run: |
-          ERR=$(tail -c 600 logs/last-post-log.txt 2>/dev/null || echo "see GitHub Actions log")
-          bash scripts/notify.sh "❌ Post FAILED: ${REEL:-unknown reel}
-$(TZ=Asia/Kolkata date '+%a %d %b, %I:%M %p IST')
-Error:
-$ERR
-https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+        run: python scripts/notify.py post_failed "$REEL"
 
       - name: Also upload to YouTube Shorts
         if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
