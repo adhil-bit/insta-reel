@@ -1,5 +1,8 @@
 # AutoReel
 
+> 📋 **Posting order:** see [QUEUE.md](QUEUE.md) (updated automatically after every render and post).
+
+
 Claude finds a trending topic, writes the script, writes a fresh code animation for
 every scene, and the pipeline renders it, adds voiceover, brand captions and music,
 and posts it to Instagram as a Reel.

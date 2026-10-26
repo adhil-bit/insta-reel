@@ -372,6 +372,41 @@ def youtube_post(folder_name: str) -> None:
     save_json(config.HISTORY_FILE, hist)
 
 
+def queue_md() -> None:
+    """Write QUEUE.md: the posting order with expected slot times (shown on GitHub)."""
+    from datetime import timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30))
+    now = datetime.now(ist)
+    hist = history()
+    pending = sorted([h for h in hist if h["status"] == "pending"], key=lambda h: h.get("priority", 999))
+    known = {h["folder"] for h in hist}
+    rendering = sorted(p.parent.name for p in (config.ROOT / "jobs").glob("*/script.json") if p.parent.name not in known)
+    plan, left = [], list(pending)
+    for day in range(21):
+        d = now + timedelta(days=day)
+        for slot in config.POST_SLOTS.get(d.strftime("%a"), []):
+            when = datetime.strptime(f"{d.date()} {slot}", "%Y-%m-%d %H:%M").replace(tzinfo=ist)
+            if when <= now or not left:
+                continue
+            ok = [h for h in left if h.get("post_on", d.date().isoformat()) <= d.date().isoformat()]
+            dated = [h for h in ok if h.get("post_on") == d.date().isoformat()]
+            if not (dated or ok):
+                continue
+            pick = (dated or ok)[0]; left.remove(pick)
+            plan.append((when, pick))
+    lines = ["# Posting queue", "", f"_Updated {now.strftime('%a %d %b, %I:%M %p')} IST. Times are approximate: each reel posts within about an hour of its slot._", "",
+             "| # | Expected slot (IST) | Reel | Voice |", "|---|---|---|---|"]
+    for i, (when, h) in enumerate(plan, 1):
+        lines.append(f"| {i} | {when.strftime('%a %d %b · %I:%M %p')} | {h.get('title', h['folder'])} | {h.get('voice', '')} |")
+    if rendering:
+        lines += ["", "## Being rendered (joins the queue when done)", ""] + [f"- {f}" for f in rendering]
+    posted = [h for h in hist if h["status"] == "posted"][-10:][::-1]
+    lines += ["", "## Recently posted", "", "| Reel | Posted (UTC) |", "|---|---|"]
+    lines += [f"| {h.get('title', h['folder'])} | {h.get('posted', '')} |" for h in posted]
+    (config.ROOT / "QUEUE.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print("\n".join(lines[:12 + len(plan)]))
+
+
 def merge_history(local_file: str) -> None:
     """Merge a run's history into the latest committed history (runs can overlap)."""
     rank = {"pending": 0, "skipped": 1, "posted": 2}
@@ -473,7 +508,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -498,6 +533,8 @@ if __name__ == "__main__":
         render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
+    elif args.command == "queue-md":
+        queue_md()
     elif args.command == "due":
         print("yes" if is_due() else "no")
     elif args.command == "next":
