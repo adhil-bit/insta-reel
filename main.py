@@ -58,33 +58,25 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     voice = pick_voice(script, hist)
     print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
-    provider = voice.get("provider", config.VOICE_PROVIDER if config.VOICE_PROVIDER != "gemini" else "edge")
-    one_take = False
+    provider = voice.get("provider", config.VOICE_PROVIDER)
     if provider == "gemini":
+        if not config.GEMINI_API_KEY:
+            raise RuntimeError("No Gemini key: can't voice this reel")
         try:
             media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
-            one_take = True
             print("  whole narration recorded in one Gemini take")
         except Exception as e:
-            print(f"  Gemini voice unavailable ({str(e)[:120]}); using the Midhun voice")
-            provider = "edge"
-            voice = {**config.EDGE_VOICE_POOL[0], "provider": "edge"}
-    for i, s in enumerate(scenes):
-        if one_take:
-            break
-        if i == 0 and provider == "elevenlabs":
-            voice = _first_working_voice(media, s["voiceover"], work / "voice_0.mp3", voice)
-            continue
-        try:
+            if "daily" in str(e).lower():
+                raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+            print(f"  one-take recording couldn't be split ({str(e)[:100]}); recording line by line with {voice['name']}")
+            for i, s in enumerate(scenes):
+                media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice["id"], provider="gemini")
+    else:
+        for i, s in enumerate(scenes):
+            if i == 0 and provider == "elevenlabs":
+                voice = _first_working_voice(media, s["voiceover"], work / "voice_0.mp3", voice)
+                continue
             media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice.get("id"), provider=provider)
-        except Exception as e:
-            if provider != "gemini":
-                raise
-            print(f"  Gemini voice failed ({str(e)[:120]}); switching this reel to the Edge voices")
-            provider = "edge"
-            voice = {**config.EDGE_VOICE_POOL[0], "provider": "edge"}
-            for j in range(i + 1):                                  # redo earlier lines so the voice stays consistent
-                media.generate_voice(scenes[j]["voiceover"], work / f"voice_{j}.mp3", voice["id"], provider="edge")
     durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
                  for i, s in enumerate(scenes)]
     # Keep reels short: if the narration runs long, speed it up a little (pitch stays natural)
@@ -278,10 +270,14 @@ def pick_voice(script: dict, hist: list) -> dict:
     used = sum(1 for h in hist if h.get("status") != "skipped")
     if config.VOICE_PROVIDER == "gemini" and config.GEMINI_API_KEY:
         # alternate male / female from reel to reel: Charon, Zephyr, Puck, Kore, ...
+        lock = (script.get("voice_lock") or "").lower()
+        for v in config.GEMINI_VOICE_POOL:
+            if v["name"].lower() == lock:
+                return {**v, "provider": "gemini"}
         males = [v for v in config.GEMINI_VOICE_POOL if v["gender"] == "m"]
         females = [v for v in config.GEMINI_VOICE_POOL if v["gender"] == "f"]
-        pick = (males if used % 2 == 0 else females)[(used // 2) % 2]
-        return {**pick, "provider": "gemini"}
+        group = males if used % 2 == 0 else females
+        return {**group[(used // 2) % len(group)], "provider": "gemini"}
     if config.VOICE_PROVIDER in ("edge", "gemini"):
         return config.EDGE_VOICE_POOL[0]                           # Midhun (no robotic female fallback)
     pool = config.VOICE_POOL
