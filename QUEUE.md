@@ -1,15 +1,14 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 06:07 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 06:39 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Tue 27 Oct · 07:06 AM | India's first Christmas cake was baked in Thalassery | Enceladus |
-| 2 | Tue 27 Oct · 01:06 PM | Kodinhi: Kerala's village of twins | Zephyr |
-| 3 | Tue 27 Oct · 05:06 PM | Jatinga: where birds fall at night | Zephyr |
-| 4 | Wed 28 Oct · 08:06 AM | Lonar: the meteor lake that turned pink | Puck |
-| 5 | Wed 28 Oct · 02:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
-| 6 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
+| 1 | Tue 27 Oct · 07:06 AM | Kodinhi: Kerala's village of twins | Zephyr |
+| 2 | Tue 27 Oct · 01:06 PM | Jatinga: where birds fall at night | Zephyr |
+| 3 | Tue 27 Oct · 05:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 4 | Wed 28 Oct · 08:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 5 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
 
@@ -25,6 +24,7 @@ _Updated Mon 26 Oct, 06:07 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| India's first Christmas cake was baked in Thalassery | 2026-10-26T13:09 |
 | Chundan Vallam: 100 rowers, one boat | 2026-10-26T04:23 |
 | Aranmula Kannadi: the mirror without glass | 2026-10-26T01:11 |
 | Dhanushkodi: the town the sea took | 2026-10-25T13:08 |
