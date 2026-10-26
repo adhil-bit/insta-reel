@@ -23,6 +23,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
   VISUAL_MODE: code
   VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'gemini' }}
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -97,6 +99,18 @@ jobs:
             gh release delete "$REEL" --yes --cleanup-tag 2>/dev/null || true
             gh release create "$REEL" "${files[@]}" --title "$REEL" --notes-file "$dir/review.md"
           done < output/rendered.txt
+
+      - name: Telegram alert (render)
+        if: ${{ always() }}
+        run: |
+          DONE=$(cat output/rendered.txt 2>/dev/null | tr '\n' ' ')
+          if [ "${{ job.status }}" = "success" ]; then
+            [ -n "$DONE" ] && bash scripts/notify.sh "$(printf '🎬 Rendered and ready: %s\nhttps://github.com/%s/releases' "$DONE" "${{ github.repository }}")"
+          else
+            ERR=$(grep -iE "Error|quota|limit|failed" output/render-log.txt 2>/dev/null | tail -3 | tr '\n' ' ')
+            bash scripts/notify.sh "$(printf '⚠️ Render %s. Done: [%s]\n%s\nhttps://github.com/%s/actions/runs/%s' "${{ job.status }}" "$DONE" "$ERR" "${{ github.repository }}" "${{ github.run_id }}")"
+          fi
+          true
 
       - name: Save the log if rendering failed
         if: ${{ failure() }}

@@ -1,0 +1,31 @@
+name: Telegram setup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Find the chat id and send a test message
+        run: |
+          mkdir -p logs
+          curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates" > logs/telegram-updates.json
+          python3 - << 'PY'
+          import json
+          d = json.load(open("logs/telegram-updates.json"))
+          ids = {str(u["message"]["chat"]["id"]): u["message"]["chat"].get("first_name", "") for u in d.get("result", []) if "message" in u}
+          json.dump({"chat_ids": ids}, open("logs/telegram.json", "w"), indent=2); print(ids or "no messages yet: send /start to the bot first")
+          PY
+          rm -f logs/telegram-updates.json
+          [ -n "$TELEGRAM_CHAT_ID" ] && bash scripts/notify.sh "🔔 Telegram alerts are connected for @unexplored.truths. You'll get a message for every post and render." || true
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -qm "telegram setup" && git pull -q --rebase && git push -q || true
