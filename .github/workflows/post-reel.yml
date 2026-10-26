@@ -100,7 +100,7 @@ jobs:
           [ "${PIPESTATUS[0]}" = "0" ] || exit 1
           gh release edit "$REEL" --title "POSTED · $REEL"
 
-      - name: Telegram: posted
+      - name: Telegram alert (posted)
         if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
         run: |
           LINK=$(grep -o 'https://www.instagram.com/[^ ]*' logs/last-post-log.txt | tail -1)
@@ -110,7 +110,7 @@ $TITLE
 $LINK
 $(TZ=Asia/Kolkata date '+%a %d %b, %I:%M %p IST')"
 
-      - name: Telegram: post failed
+      - name: Telegram alert (post failed)
         if: ${{ failure() }}
         run: |
           ERR=$(tail -c 600 logs/last-post-log.txt 2>/dev/null || echo "see GitHub Actions log")
