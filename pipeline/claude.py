@@ -102,7 +102,7 @@ Reply with ONLY a JSON object, no other text:
   ],
   "thumbnail_ml": "a short, curiosity-driving question or claim in Malayalam for the cover (max 8 words)",
   "thumbnail_accent": ["1-2 words from thumbnail_ml to colour"],
-  "instagram_caption": "2-3 sentence caption + 4-6 relevant hashtags",
+  "instagram_caption": "first line under 60 chars with a name or number; 2-3 sentences; ONE ask only, phrased 'Share this with someone from <place>'; 4-6 hashtags at the end",
   "fact_check": ["each factual claim in the script -> which fact/source supports it"]
 }}
 Use 5-7 scenes."""

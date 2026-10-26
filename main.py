@@ -339,6 +339,8 @@ def post(folder_name: str) -> None:
     print(f"Publishing {folder_name}...")
     thumb = folder / "thumbnail.jpg"
     text = caption.read_text(encoding="utf-8").rstrip()
+    # ig-caption: exactly one clear ask ("share this") so the post has a single job
+    text = text.replace("Send this to someone", "Share this with someone").replace("Send this to a", "Share this with a")
     extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
     if extra:
         text += " " + " ".join(extra)
