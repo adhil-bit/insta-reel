@@ -1,0 +1,21 @@
++ mkdir -p logs
++ curl -s https://api.telegram.org/bot***/getUpdates
++ python3 -
+chats: {'-5581267888': 'Adl and insta-reel', '646982197': 'Adl'}
++ '[' -n -5581267888 ']'
+++ python3 scripts/status.py
++ STATUS='Posted so far: 8
+Waiting in queue: 6
+Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Kerala'\''s village of twins, Jatinga: where birds fall at night'
+++ printf '🔔 Test from the reel pipeline (@unexplored.truths)\n%s' 'Posted so far: 8
+Waiting in queue: 6
+Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Kerala'\''s village of twins, Jatinga: where birds fall at night'
++ MSG='🔔 Test from the reel pipeline (@unexplored.truths)
+Posted so far: 8
+Waiting in queue: 6
+Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Kerala'\''s village of twins, Jatinga: where birds fall at night'
++ bash scripts/notify.sh '🔔 Test from the reel pipeline (@unexplored.truths)
+Posted so far: 8
+Waiting in queue: 6
+Next up: India'\''s first Christmas cake was baked in Thalassery, Kodinhi: Kerala'\''s village of twins, Jatinga: where birds fall at night'
+bash: scripts/notify.sh: No such file or directory
