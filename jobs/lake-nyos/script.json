@@ -1,0 +1,122 @@
+{
+  "topic": {
+    "title": "Lake Nyos: the lake that breathed out death",
+    "category": "NATURE",
+    "angle": "On 21 August 1986 Lake Nyos in Cameroon suddenly released a huge cloud of carbon dioxide",
+    "key_facts": [
+      "On 21 August 1986 Lake Nyos in Cameroon suddenly released a huge cloud of carbon dioxide",
+      "About 1,700 people and some 3,500 livestock in nearby villages died, many in their sleep",
+      "The lake sits in a volcanic crater; CO2 from below had built up dissolved in its deep water",
+      "Since 2001 degassing pipes have been installed to release the gas safely"
+    ],
+    "sources": [
+      "Britannica; BBC",
+      "Science/USGS reports on Nyos degassing",
+      "USGS",
+      "USGS; Britannica: 'Lake Nyos'"
+    ]
+  },
+  "category": "NATURE",
+  "priority": 7,
+  "template": "explainer",
+  "opening": {
+    "type": "globe",
+    "lat": 6.44,
+    "lon": 10.3,
+    "label": "LAKE NYOS · CAMEROON",
+    "why": "A remote crater lake almost nobody could place; seeing where it is sets up the surprise."
+  },
+  "headline": [
+    "THE LAKE THAT",
+    "KILLED 1,700"
+  ],
+  "accent_words": [
+    "1,700"
+  ],
+  "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ 1,700 പേരെ കൊന്ന തടാകം",
+  "thumbnail_accent": [
+    "1,700"
+  ],
+  "hook_voiceover": "1986-ൽ ഒരു തടാകം ഒറ്റ രാത്രിയിൽ 1,700 പേരെ കൊന്നു. ഒരു ശബ്ദവുമില്ലാതെ.",
+  "cover_visual": "A still crater lake at dusk between green hills, perfectly calm, with a faint mist starting to rise from its surface.",
+  "scenes": [
+    {
+      "voiceover": "കാമറൂണിലെ ന്യോസ് തടാകം. ഒരു അഗ്നിപർവ്വത ഗർത്തത്തിലാണ് അത്. ചുറ്റും ശാന്തമായ ഗ്രാമങ്ങൾ.",
+      "caption": "A CRATER LAKE",
+      "highlight": "CRATER",
+      "labels": [
+        {
+          "text": "VOLCANIC CRATER",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "Cross-section of the crater: a bowl of rock holding the lake, with a village on the rim."
+    },
+    {
+      "voiceover": "പക്ഷേ തടാകത്തിന്റെ അടിയിൽ ഒരു രഹസ്യം ഉണ്ടായിരുന്നു. ഭൂമിക്കടിയിൽ നിന്ന് വന്ന കാർബൺ ഡൈ ഓക്സൈഡ് വർഷങ്ങളായി ആഴത്തിലെ വെള്ളത്തിൽ അലിഞ്ഞു കൂടിക്കൊണ്ടിരുന്നു.",
+      "caption": "GAS BUILDING BELOW",
+      "highlight": "GAS",
+      "labels": [
+        {
+          "text": "CO₂",
+          "x": 0.5,
+          "y": 0.62,
+          "at": 0.25
+        }
+      ],
+      "visual": "Same cross-section; from cracks in the crater floor, bubbles of gas seep up and dissolve into the deep water, which slowly tints darker."
+    },
+    {
+      "voiceover": "1986 ഓഗസ്റ്റ് 21-ന് രാത്രി. ഒരു വലിയ കുമിള പോലെ ആ വാതകം മുഴുവൻ ഒറ്റയടിക്ക് പുറത്തേക്ക് പൊട്ടി. ഒരു വെളുത്ത മേഘം താഴ്വരയിലേക്ക് ഒഴുകി.",
+      "caption": "21 AUGUST 1986",
+      "highlight": "1986",
+      "labels": [
+        {
+          "text": "NIGHT",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.1
+        }
+      ],
+      "visual": "The lake surface erupts in a fountain of gas; a heavy white cloud spills over the rim and flows downhill into the valley like liquid."
+    },
+    {
+      "voiceover": "കാർബൺ ഡൈ ഓക്സൈഡ് വായുവിനേക്കാൾ ഭാരമുള്ളതാണ്. അത് താഴ്ന്ന സ്ഥലങ്ങളിൽ നിറഞ്ഞു. ഉറങ്ങിക്കിടന്ന ആളുകൾക്ക് ശ്വാസം കിട്ടിയില്ല. ഏകദേശം 1,700 പേർ, 3,500-ലധികം കന്നുകാലികൾ.",
+      "caption": "HEAVIER THAN AIR",
+      "highlight": "HEAVIER",
+      "labels": [
+        {
+          "text": "1,700 PEOPLE",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.55
+        }
+      ],
+      "visual": "A simple diagram: the invisible gas pools in the low valley like water filling a bowl; sleeping village outlines sit inside the pool."
+    },
+    {
+      "voiceover": "ഇന്ന് ആ തടാകത്തിൽ വലിയ പൈപ്പുകൾ ഉണ്ട്. അടിയിലെ വാതകം പതുക്കെ പുറത്തേക്ക് വിടാൻ. ഒരു തടാകത്തിന് ഇത്രയും ശക്തിയുണ്ടെന്ന് ആരെങ്കിലും കരുതിയോ?",
+      "caption": "DEGASSING THE LAKE",
+      "highlight": "DEGASSING",
+      "labels": [
+        {
+          "text": "SINCE 2001",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.2
+        }
+      ],
+      "visual": "Daytime lake with a vertical pipe from the surface to the bottom; a tall fountain of water and gas shoots up safely from its top."
+    }
+  ],
+  "instagram_caption": "One night in 1986, a lake killed about 1,700 people, silently. 🌊\n\nLake Nyos in Cameroon sits in a volcanic crater. Carbon dioxide from below had been building up in its deep water for years, until it burst out as a huge invisible cloud. Heavier than air, it flowed into the valleys where people slept. Today pipes release the gas safely. 🧪\n\nHad you heard of this? 👀\n\nSend this to someone who loves mysteries. 💛\n\n📚 USGS · Britannica\nEducational · Animated illustrations\n\n#LakeNyos #Cameroon #Science #Malayalam #MalayalamReels UnexploredTruths Mystery",
+  "fact_check": [
+    "21 Aug 1986 CO2 release -> USGS/Britannica",
+    "~1,700 people, ~3,500 livestock -> Britannica/BBC",
+    "CO2 from magma dissolved in deep water -> USGS",
+    "Degassing pipes since 2001 -> USGS reports"
+  ],
+  "plan_locked": true
+}
