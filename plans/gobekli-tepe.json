@@ -39,16 +39,16 @@
   "cover": {
     "headline": [
       "OLDER THAN",
-      "THE PYRAMIDS"
+      "FARMING ITSELF"
     ],
     "accent_words": [
       "OLDER"
     ],
-    "thumbnail_ml": "പിരമിഡുകൾക്കും ആയിരക്കണക്കിന് വർഷം മുമ്പത്തെ ക്ഷേത്രം!",
+    "thumbnail_ml": "കൃഷിക്കും മുമ്പ് പണിത ക്ഷേത്രം!",
     "thumbnail_accent": [
       "മുമ്പത്തെ"
     ],
-    "hook_voiceover_ml": "പിരമിഡുകൾക്കും ആയിരക്കണക്കിന് വർഷം മുമ്പ് ഒരു ക്ഷേത്രം. ഉണ്ടാക്കിയത് കൃഷി പോലും അറിയാത്ത മനുഷ്യർ!",
+    "hook_voiceover_ml": "ആദ്യം കൃഷി, പിന്നെ ക്ഷേത്രം. അങ്ങനെയാണ് നമ്മൾ പഠിച്ചത്. 11,500 വർഷം പഴയ ഈ ക്ഷേത്രം പറയുന്നു: അല്ല!",
     "visual": "Dawn light on a hilltop: a ring of tall T-shaped stone pillars casting long shadows, dust in the air.",
     "build_cmd": "Sky gradient #2a1a3a (top) to #f2a65a (horizon y0.5). Ground: a low hill curve (#4a3a2a) across the frame. A circle of 10 T-shaped pillars (vertical slab 60x300 with a 140x60 top bar, sand colour #c8a878 with darker side face) arranged in an ellipse around x0.5 y0.5 (ellipse 700x220), with two taller centre pillars (1.3x). Long shadows stretch left. Pillars rise from the ground one by one over the first 45% (ease-out). 40 dust motes drift slowly. Slow camera push-in (scale 1.0 to 1.06)."
   },
@@ -136,5 +136,6 @@
     "Built by hunter-gatherers pre-farming -> UNESCO/Smithsonian",
     "Older than Stonehenge and pyramids -> Smithsonian",
     "Excavations from 1995, Klaus Schmidt -> Smithsonian"
-  ]
+  ],
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
 }

@@ -35,17 +35,17 @@
   "music_mood": "uneasy sea: slow swell, creaking-wood feel, no drums",
   "cover": {
     "headline": [
-      "A SHIP WITH",
-      "NO ONE ON IT"
+      "10 PEOPLE",
+      "VANISHED AT SEA"
     ],
     "accent_words": [
-      "NO ONE"
+      "VANISHED"
     ],
-    "thumbnail_ml": "ആരുമില്ലാതെ കടലിൽ ഒഴുകിയ കപ്പൽ!",
+    "thumbnail_ml": "10 പേർ കടലിൽ അപ്രത്യക്ഷരായി. കപ്പൽ ഭദ്രം!",
     "thumbnail_accent": [
       "ആരുമില്ലാതെ"
     ],
-    "hook_voiceover_ml": "1872-ൽ അറ്റ്ലാന്റിക് കടലിൽ ഒരു കപ്പൽ കണ്ടെത്തി. പായ്ക്കപ്പൽ ഭദ്രം. പക്ഷേ അതിൽ ഒരു മനുഷ്യനുമില്ല!",
+    "hook_voiceover_ml": "ഒരു കപ്പലിൽ നിന്ന് 10 പേർ അപ്രത്യക്ഷരായാൽ നമ്മൾ അറിയില്ലേ? പക്ഷേ കടൽ ആരോടും പറഞ്ഞില്ല.",
     "visual": "A two-masted sailing ship drifting on a grey, rolling sea under a heavy sky, sails half set, no one on deck.",
     "build_cmd": "Sky gradient #3a4a5a to #8a98a6 down to a horizon at y0.5; sea below in 6 rolling wave bands (sine, amplitude 8-14px, phase drifting) in #2a3f55 to #0f1c2a. Ship centred at x0.5 y0.5, hull 520px wide (dark brown), two masts with square-ish sails (off-white, slightly torn edge on one) that sway ±2°. The ship bobs (y ±8px) with the waves. Thin rain streaks (30 lines) fall across the frame. Drift the whole ship slowly rightwards by 40px across the scene."
   },
@@ -151,5 +151,6 @@
     "~1,700 barrels alcohol intact; months of food -> Smithsonian",
     "Lifeboat missing; last log ~10 days earlier -> Britannica/Smithsonian",
     "Theories unproven -> Smithsonian"
-  ]
+  ],
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
 }

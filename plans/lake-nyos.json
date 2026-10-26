@@ -40,11 +40,11 @@
     "accent_words": [
       "1,700"
     ],
-    "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ ഒരു തടാകം 1,700 പേരെ കൊന്നു",
+    "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ 1,700 പേരെ കൊന്ന തടാകം",
     "thumbnail_accent": [
       "1,700"
     ],
-    "hook_voiceover_ml": "ഒറ്റ രാത്രി. ഒരു ശബ്ദവുമില്ല. ഒരു തടാകം 1,700 പേരുടെ ജീവനെടുത്തു. എങ്ങനെയെന്ന് അറിയാമോ?",
+    "hook_voiceover_ml": "1986-ൽ ഒരു തടാകം ഒറ്റ രാത്രിയിൽ 1,700 പേരെ കൊന്നു. ഒരു ശബ്ദവുമില്ലാതെ.",
     "visual": "A still crater lake at dusk between green hills, perfectly calm, with a faint mist starting to rise from its surface.",
     "build_cmd": "Sky gradient from #1a2a4a (top) to #c86a4a (horizon at y0.42). Two layers of rounded green hills (#1e3a2a front, #2e5a3a back) framing a lake: an ellipse x0.5 y0.52, 820x260, fill gradient #1f3a4a to #0b1a26 with 8 slow horizontal ripple lines. From 40% a thin white mist layer (semi-transparent ellipses, opacity rising to 0.35) drifts over the lake surface. A few tiny village house silhouettes on the left hill. Everything calm and slow; reserve the bottom 25% for the cover text."
   },
@@ -131,5 +131,6 @@
     "~1,700 people, ~3,500 livestock -> Britannica/BBC",
     "CO2 from magma dissolved in deep water -> USGS",
     "Degassing pipes since 2001 -> USGS reports"
-  ]
+  ],
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
 }

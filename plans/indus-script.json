@@ -41,11 +41,11 @@
     "accent_words": [
       "NO ONE"
     ],
-    "thumbnail_ml": "ഇന്നും ആർക്കും വായിക്കാനാവാത്ത ഇന്ത്യൻ ലിപി",
+    "thumbnail_ml": "ആർക്കും വായിക്കാനാവാത്ത 4,000 വർഷം പഴയ ലിപി",
     "thumbnail_accent": [
       "ആർക്കും"
     ],
-    "hook_voiceover_ml": "നാലായിരം വർഷം പഴക്കമുള്ള ഒരു ഇന്ത്യൻ ലിപി. ഇന്നുവരെ ഒരാൾക്കും അത് വായിക്കാനായിട്ടില്ല!",
+    "hook_voiceover_ml": "4,000 വർഷം പഴയ ഒരു ഇന്ത്യൻ ലിപി. ജീവിച്ചിരിക്കുന്ന ഒരാൾക്കും അത് വായിക്കാനാവില്ല!",
     "visual": "A small square clay seal fills the frame: a carved unicorn-like bull and a row of strange signs above it, lit from the side.",
     "build_cmd": "Dark background with a warm side light. Centre: a square seal (720x720, rounded corners, fill #c9a678 with a darker bevel edge, slight 3° rotation) at x0.5 y0.45. On it: a bull-like animal silhouette (simple body, one long horn, a 'standard' object in front) in dark brown occupying the lower 60%, and above it a row of 6 invented abstract signs (strokes, forks, circles, fish-like shapes: NOT real letters) in dark brown. The signs glow one by one in the accent colour from 20% to 70%, then all pulse together. Slow push-in."
   },
@@ -145,5 +145,6 @@
     "~5 signs average, ~400 signs -> Britannica/Parpola",
     "No bilingual text -> Britannica",
     "$1 million prize, Tamil Nadu, Jan 2025 -> BBC/The Hindu"
-  ]
+  ],
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
 }

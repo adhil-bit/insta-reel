@@ -35,17 +35,17 @@
   "music_mood": "forge-and-mystery: slow pulse, metallic hits on reveals",
   "cover": {
     "headline": [
-      "THE SWORD",
-      "MADE IN INDIA"
+      "NOBODY COULD",
+      "COPY THIS SWORD"
     ],
     "accent_words": [
-      "INDIA"
+      "COPY"
     ],
-    "thumbnail_ml": "ലോകം കൊതിച്ച വാളിന്റെ രഹസ്യം: ഇന്ത്യൻ ഉരുക്ക്!",
+    "thumbnail_ml": "200 വർഷം ആർക്കും പകർത്താനാവാത്ത വാൾ!",
     "thumbnail_accent": [
       "ഇന്ത്യൻ"
     ],
-    "hook_voiceover_ml": "ലോകം മുഴുവൻ കൊതിച്ച ഒരു വാൾ. അതിന്റെ ഉരുക്ക് വന്നത് നമ്മുടെ ദക്ഷിണേന്ത്യയിൽ നിന്നാണ്!",
+    "hook_voiceover_ml": "ഈ വാൾ 200 വർഷം ലോകത്ത് ആർക്കും പകർത്താനായില്ല. എന്തുകൊണ്ടെന്നോ?",
     "visual": "A curved sabre blade fills the frame diagonally; its surface shows a flowing, wavy watered-steel pattern that shimmers.",
     "build_cmd": "Dark charcoal background with a faint warm glow top-right. Draw one curved sabre (blade from x0.15,y0.62 to x0.85,y0.30, a slight curve, 60px wide, golden crossguard near the lower end). Fill the blade with a wavy 'watered steel' pattern: 25 horizontal sine-wave bands (amplitude 6px, wavelength 90px) in alternating light grey #d8dce4 and dark grey #6a7080, clipped to the blade shape. Over the whole reel a soft highlight band sweeps along the blade every 2.0s. From t=0 to 25% the blade slides in from the left with ease-out; keep top 20% and bottom 25% of the frame uncluttered."
   },
@@ -139,5 +139,6 @@
     "Technique lost ~18th-19th c. -> Britannica",
     "Nanotubes found 2006 (TU Dresden) -> Nature 2006",
     "'wootz' linked to 'ukku' -> Britannica"
-  ]
+  ],
+  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed"
 }
