@@ -76,5 +76,11 @@
     "Mines closed in 2001 -> BGML history",
     "Written in chat without live web search: double-check before posting"
   ],
-  "priority": 2.5
+  "priority": 2.5,
+  "opening": {
+    "type": "globe",
+    "lat": 12.95,
+    "lon": 78.27,
+    "label": "KOLAR · KARNATAKA"
+  }
 }

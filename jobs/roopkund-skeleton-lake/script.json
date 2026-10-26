@@ -77,5 +77,11 @@
     "അസ്ഥികൂടങ്ങൾ",
     "ആരുടേത്"
   ],
-  "voice": "Adam"
+  "voice": "Adam",
+  "opening": {
+    "type": "globe",
+    "lat": 30.26,
+    "lon": 79.73,
+    "label": "ROOPKUND · HIMALAYA"
+  }
 }

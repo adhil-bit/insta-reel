@@ -79,6 +79,39 @@ def _css(accent: str) -> str:
 """
 
 
+GLOBE = r'''
+<canvas id="globe" width="1080" height="1920" style="position:absolute;inset:0;width:100%;height:100%"></canvas>
+<div id="gring" style="position:absolute;left:50%;top:50%;width:24px;height:24px;margin:-12px 0 0 -12px;border-radius:50%;background:ACC;opacity:0"></div>
+<script>
+(function(){
+  const LAT = %(LAT)s, LON = %(LON)s, D = %(D)s;
+  let R = null, cam, scene, globe;
+  function init() {
+    const c = document.getElementById('globe');
+    R = new THREE.WebGLRenderer({canvas: c, antialias: true, preserveDrawingBuffer: true}); R.setSize(1080, 1920, false);
+    scene = new THREE.Scene(); cam = new THREE.PerspectiveCamera(32, 1080 / 1920, 0.1, 100);
+    const tex = new THREE.Texture(document.getElementById('earthTex')); tex.needsUpdate = true;
+    globe = new THREE.Mesh(new THREE.SphereGeometry(1, 96, 64), new THREE.MeshPhongMaterial({map: tex, shininess: 12}));
+    scene.add(globe); scene.add(new THREE.Mesh(new THREE.SphereGeometry(1.06, 64, 48), new THREE.MeshBasicMaterial({color: 0x5aa8ff, transparent: true, opacity: 0.12, side: THREE.BackSide})));
+    scene.add(new THREE.AmbientLight(0x8090a0, 0.9)); const sun = new THREE.DirectionalLight(0xffffff, 1.0); sun.position.set(-3, 2, 5); scene.add(sun);
+  }
+  const io = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2, cl = x => Math.min(1, Math.max(0, x));
+  const prev = window.overlayFrame;
+  window.overlayFrame = function (t) {
+    if (!R) init();
+    const k = io(cl(t / (D * 0.42))), fade = 1 - cl((t / D - 0.48) / 0.14);
+    globe.rotation.set(LAT * Math.PI / 180 * k, -(LON + 90) * Math.PI / 180 + (1 - k) * 1.6, 0);
+    cam.position.set(0, 0, 6.2 - 4.05 * k); cam.lookAt(0, 0, 0);
+    R.setClearColor(0x03060c, 1); R.render(scene, cam);
+    document.getElementById('globe').style.opacity = fade;
+    const ring = document.getElementById('gring'), p = (t * 1.2) % 1;
+    ring.style.opacity = k > 0.75 ? fade : 0; ring.style.boxShadow = `0 0 0 ${8 + p * 50}px rgba(255,255,255,${0.35 * (1 - p)})`;
+    if (prev) prev(t);
+  };
+})();
+</script>'''
+
+
 JS = """
 <script>
 (function(){
@@ -111,6 +144,10 @@ JS = """
 def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -> str:
     accent = config.BRAND["categories"].get(script.get("category", ""), "#FACC15")
     pills = []
+    opening = script.get("opening") or {}
+    globe_on = kind == "cover" and opening.get("type") == "globe" and "lat" in opening and "lon" in opening
+    if globe_on and opening.get("label"):
+        pills.append({"text": opening["label"], "x": 0.5, "y": 0.455, "at": 0.36 * duration, "until": 0.5 * duration})
     for p in (script.get("cover_labels", []) if kind == "cover" else scene.get("labels", [])):
         at = p.get("at", 0.6)
         until = p.get("until", 99)
@@ -132,5 +169,8 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     body += "".join(f'<div class="pill" id="pill{i}" style="left:{p["x"] * 100}%;top:{p["y"] * 100}%"><i></i>{html.escape(p["text"])}</div>'
                     for i, p in enumerate(pills))
     state = json.dumps({"chunks": chunks, "pills": pills}, ensure_ascii=False)
-    return (f'<style>{_css(accent)}</style><div class="ov"><div class="vig"></div>{body}'
-            f'<div class="src">Sources: {html.escape(src)} · Animated illustration</div></div>' + JS.replace("%(STATE)s", state))
+    globe_html = (GLOBE.replace("%(LAT)s", str(opening["lat"])).replace("%(LON)s", str(opening["lon"]))
+                  .replace("%(D)s", f"{duration:.3f}").replace("ACC", accent)) if globe_on else ""
+    globe_mark, globe_js = (globe_html.split("<script>", 1)[0], "<script>" + globe_html.split("<script>", 1)[1]) if globe_on else ("", "")
+    return (f'<style>{_css(accent)}</style><div class="ov">{globe_mark}<div class="vig"></div>{body}'
+            f'<div class="src">Sources: {html.escape(src)} · Animated illustration</div></div>' + JS.replace("%(STATE)s", state) + globe_js)

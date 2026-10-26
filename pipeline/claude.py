@@ -71,6 +71,18 @@ Write every voiceover line (hook_voiceover and scenes[].voiceover) in natural, s
 and technical terms that people say in English as they are. Captions, headline and
 image/visual fields stay in English.
 Scene 0 is the cover: the hook that makes people stop scrolling.
+
+DESIGN PLAN (you are the video designer as well as the writer)
+- opening: decide how the reel opens.
+  * "globe" = a 3D globe spins and zooms to the location with a pin, then the cover visual appears.
+    Use it ONLY when the story is about one specific place most viewers couldn't point to on a map
+    (a remote village, lake, crater, island, ruin) and seeing WHERE it is adds to the surprise.
+  * "hero" = open straight on the most striking visual of the subject. Use this for objects,
+    inventions, people, science ideas, events not tied to one obscure place, and well-known places.
+  When unsure, choose "hero". Most reels should be "hero"; never use the globe out of habit.
+- Every scene gets a punchy English headline (the caption, max 5 words, ALL CAPS feel) and up to two
+  small map-style labels (ALL CAPS, max 3 words) for the key names, numbers or parts on screen.
+- Visuals: full-screen, one clear hero subject per scene, motion that explains the point.
 End with a twist or a thought-provoking last line, not "follow for more".
 
 Reply with ONLY a JSON object, no other text:
@@ -79,11 +91,13 @@ Reply with ONLY a JSON object, no other text:
   "accent_words": ["1-2 words from the headline to colour"],
   "hook_voiceover": "first spoken line, under 12 words",
   "cover_visual": "one striking hero visual that sums up the topic, and how it moves",
+  "opening": {{"type": "hero or globe", "lat": 0.0, "lon": 0.0, "label": "PLACE · REGION (globe only)", "why": "one line"}},
   "scenes": [
     {{"voiceover": "1-2 spoken sentences",
       "caption": "on-screen text, max 7 words",
       "highlight": "one word from the caption to colour",
       "visual": "hero subject for this moment + the one thing that moves/changes",
+      "labels": [{{"text": "SHORT LABEL", "x": 0.5, "y": 0.45}}],
       "search_query": "2-4 word stock photo search"}}
   ],
   "thumbnail_ml": "a short, curiosity-driving question or claim in Malayalam for the cover (max 8 words)",

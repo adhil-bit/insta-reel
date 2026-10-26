@@ -76,5 +76,11 @@
     "Sugathakumari, KSSP and scientists led the movement -> movement histories",
     "Declared national park in 1984; lion-tailed macaque habitat -> Kerala Forest Dept",
     "Written in chat without live web search: double-check before posting"
-  ]
+  ],
+  "opening": {
+    "type": "globe",
+    "lat": 11.08,
+    "lon": 76.44,
+    "label": "SILENT VALLEY · PALAKKAD"
+  }
 }
