@@ -4,7 +4,7 @@ name: Post reel
 # or a specific reel when run by hand.
 on:
   schedule:   # checks every hour; posts only when a slot from config.POST_SLOTS is due
-    - cron: "17 * * * *"
+    - cron: "17 */2 * * *"   # backup; the main hourly trigger comes from cron-job.org (action: auto)
   workflow_dispatch:
     inputs:
       reel:
@@ -14,7 +14,7 @@ on:
       action:
         description: "Post it, or reject it so it's never posted"
         type: choice
-        options: [post, reject]
+        options: [post, reject, auto]
         default: post
 
 permissions:
@@ -50,10 +50,11 @@ jobs:
           INPUT_REEL: ${{ github.event.inputs.reel }}
         run: |
           pip install -q -r requirements.txt
-          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(python main.py due)" != "yes" ]; then
+          AUTO=0; { [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.action }}" = "auto" ]; } && AUTO=1
+          if [ "$AUTO" = "1" ] && [ "$(python main.py due)" != "yes" ]; then
             echo "No posting slot due right now."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0
           fi
-          [ "${{ github.event_name }}" = "schedule" ] && sleep $(( RANDOM % 300 ))
+          [ "$AUTO" = "1" ] && sleep $(( RANDOM % 240 ))
           REEL="${INPUT_REEL:-$(python main.py next)}"
           if [ -z "$REEL" ]; then echo "Queue is empty, nothing to post."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
           echo "REEL=$REEL" >> "$GITHUB_ENV"
