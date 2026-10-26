@@ -76,5 +76,6 @@
     "Written in chat without live web search: double-check before posting"
   ],
   "priority": 1,
-  "voice_lock": "Enceladus"
+  "voice_lock": "Enceladus",
+  "post_on": "2099-01-01"
 }
