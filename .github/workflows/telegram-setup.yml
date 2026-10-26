@@ -38,13 +38,7 @@ jobs:
             bash scripts/notify.sh "$(python main.py status)"
           else
             if [ -n "$TELEGRAM_CHAT_ID" ]; then
-            STATUS=$(python3 - << 'PY'
-          import json
-          h = json.load(open("history.json"))
-          posted = [e for e in h if e["status"] == "posted"]; pending = [e for e in h if e["status"] == "pending"]
-          print(f"Posted so far: {len(posted)}\nWaiting in queue: {len(pending)}\nNext up: " + ", ".join(e.get("title", e["folder"]) for e in sorted(pending, key=lambda e: e.get("priority", 999))[:3]))
-          PY
-          )
+            STATUS=$(python3 scripts/status.py)
             bash scripts/notify.sh "$(printf '🔔 Test from the reel pipeline (@unexplored.truths)\n%s' "$STATUS")"
           fi
           fi
