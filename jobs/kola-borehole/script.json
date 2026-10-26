@@ -1,0 +1,132 @@
+{
+  "topic": {
+    "title": "Kola Superdeep Borehole: the deepest hole ever dug",
+    "category": "SCIENCE",
+    "angle": "Soviet scientists began drilling the Kola Superdeep Borehole in 1970 on the Kola Peninsula in the Arctic north-west of Russia",
+    "key_facts": [
+      "Soviet scientists began drilling the Kola Superdeep Borehole in 1970 on the Kola Peninsula in the Arctic north-west of Russia",
+      "By 1989 it reached 12,262 m, the deepest artificial hole ever drilled",
+      "The hole is only about 23 cm wide",
+      "Temperatures at the bottom reached about 180°C, far hotter than expected, and drilling stopped in 1992",
+      "Scientists found water deep in the rock and microscopic fossils of ancient plankton about 6 km down",
+      "The borehole is sealed with a welded metal cap"
+    ],
+    "sources": [
+      "BBC Future",
+      "Britannica",
+      "Britannica: 'Kola Superdeep Borehole'; BBC Future",
+      "Britannica; BBC Future"
+    ]
+  },
+  "category": "SCIENCE",
+  "priority": 9,
+  "template": "explainer",
+  "opening": {
+    "type": "globe",
+    "lat": 69.4,
+    "lon": 30.61,
+    "label": "KOLA PENINSULA · ARCTIC RUSSIA",
+    "why": "A remote Arctic spot almost nobody could place; 'where' adds to the wonder."
+  },
+  "headline": [
+    "12 KM DOWN,",
+    "THEN THEY STOPPED"
+  ],
+  "accent_words": [
+    "STOPPED"
+  ],
+  "thumbnail_ml": "12 കിലോമീറ്റർ കുഴിച്ചു. പിന്നെ നിർത്തേണ്ടി വന്നു!",
+  "thumbnail_accent": [
+    "ആഴമുള്ള"
+  ],
+  "hook_voiceover": "സോവിയറ്റുകാർ ഭൂമിയിലേക്ക് 12 കിലോമീറ്റർ കുഴിച്ചു. പിന്നെ എന്തോ ഒന്ന് അവരെ നിർത്തിച്ചു.",
+  "cover_visual": "A snowy Arctic plain at night with a drilling tower; beneath it a thin, impossibly deep shaft drops into glowing dark rock.",
+  "scenes": [
+    {
+      "voiceover": "1970-ൽ സോവിയറ്റ് യൂണിയൻ ഒരു വലിയ പരീക്ഷണം തുടങ്ങി. ഭൂമിയുടെ പുറംതോട് തുളച്ച് എത്രത്തോളം താഴേക്ക് പോകാമെന്ന് നോക്കുക.",
+      "caption": "THE SOVIET EXPERIMENT",
+      "highlight": "SOVIET",
+      "labels": [
+        {
+          "text": "1970",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.1
+        }
+      ],
+      "visual": "The drill rig at work: a rotating drill head grinds down through rock layers, chips flying."
+    },
+    {
+      "voiceover": "മൂന്ന് കിലോമീറ്റർ, അഞ്ച്, എട്ട്... വർഷങ്ങൾ കടന്നുപോയി. 1989 ആയപ്പോൾ അവർ 12,262 മീറ്ററിൽ എത്തി. കുഴിയുടെ വീതി? വെറും 23 സെന്റീമീറ്റർ!",
+      "caption": "12,262 METRES DOWN",
+      "highlight": "12,262",
+      "labels": [
+        {
+          "text": "ONLY 23 CM WIDE",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.55
+        }
+      ],
+      "visual": "A tall vertical depth scale; the shaft races down past milestone ticks while the depth counter climbs; a side inset shows the tiny width compared to a dinner plate."
+    },
+    {
+      "voiceover": "പക്ഷേ അടിയിൽ ഒരു പ്രശ്നം. അവിടുത്തെ ചൂട് 180 ഡിഗ്രി! പ്രതീക്ഷിച്ചതിനേക്കാൾ എത്രയോ കൂടുതൽ. പാറ പോലും മൃദുവായി. 1992-ൽ ഡ്രില്ലിംഗ് നിർത്തി.",
+      "caption": "180°C AT THE BOTTOM",
+      "highlight": "180°C",
+      "labels": [
+        {
+          "text": "DRILLING STOPPED · 1992",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.6
+        }
+      ],
+      "visual": "The shaft tip glows red; a thermometer bar on the side shoots past its expected mark; the drill bit sags and stops."
+    },
+    {
+      "voiceover": "ഏറ്റവും അത്ഭുതം അടിയിൽ കണ്ടതാണ്. ആറ് കിലോമീറ്റർ താഴെ പാറയ്ക്കുള്ളിൽ വെള്ളം! പിന്നെ 200 കോടി വർഷം പഴക്കമുള്ള സൂക്ഷ്മജീവികളുടെ ഫോസിലുകൾ!",
+      "caption": "LIFE 6 KM DOWN",
+      "highlight": "LIFE",
+      "labels": [
+        {
+          "text": "WATER IN ROCK",
+          "x": 0.3,
+          "y": 0.6,
+          "at": 0.25
+        },
+        {
+          "text": "MICROFOSSILS",
+          "x": 0.7,
+          "y": 0.6,
+          "at": 0.6
+        }
+      ],
+      "visual": "A microscope circle over a rock core sample reveals tiny droplets in the pores and delicate round fossil shapes."
+    },
+    {
+      "voiceover": "ഇന്ന് ആ കുഴിയുടെ മുകളിൽ ഒരു ഇരുമ്പ് മൂടി വെൽഡ് ചെയ്ത് അടച്ചിരിക്കുകയാണ്. 12 കിലോമീറ്റർ എന്ന് പറഞ്ഞാൽ ഭൂമിയുടെ പുറംതോടിന്റെ മൂന്നിലൊന്ന് പോലുമല്ല. നമ്മൾ ഇപ്പോഴും ഉപരിതലത്തിൽ തന്നെയാണ്.",
+      "caption": "WE BARELY SCRATCHED IT",
+      "highlight": "BARELY",
+      "labels": [
+        {
+          "text": "SEALED SHUT",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.15
+        }
+      ],
+      "visual": "A rusty metal cap on a concrete slab in the snow; then the camera pulls far back to show the whole Earth's crust with the 12 km hole as a barely visible scratch."
+    }
+  ],
+  "instagram_caption": "The deepest hole humans ever dug is 12 km down, and only 23 cm wide. 🕳️\n\nSoviet scientists drilled the Kola Superdeep Borehole from 1970, reaching 12,262 m by 1989. At the bottom it was about 180°C, far hotter than expected, so drilling stopped in 1992. On the way they found water inside rock and microscopic fossils 6 km down. The hole is now welded shut. 🔩\n\nAnd 12 km isn't even a third of the way through Earth's crust. 🌍\n\nSend this to someone who loves science. 💜\n\n📚 Britannica · BBC Future\nEducational · Animated illustrations\n\n#KolaSuperdeep #Science #Earth #Malayalam #MalayalamReels UnexploredTruths DidYouKnow",
+  "fact_check": [
+    "Drilling began 1970, Kola Peninsula -> Britannica/BBC",
+    "12,262 m by 1989, deepest -> Britannica",
+    "~23 cm wide -> BBC Future",
+    "~180°C; stopped 1992 -> Britannica/BBC",
+    "Water and microfossils ~6 km -> BBC Future",
+    "Welded shut -> BBC Future"
+  ],
+  "plan_locked": true
+}

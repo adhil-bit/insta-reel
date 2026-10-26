@@ -1,0 +1,13 @@
+const layer = f => { const l = document.createElement('canvas'); l.width = W; l.height = H; f(l.getContext('2d')); return l; };
+const ROCK = ['#4a3a2e', '#3e2f25', '#33271f', '#2a2019', '#241b15', '#1d1511', '#17100c', '#0f0a07'];
+function rockBands(g, y0 = H * 0.33) { const h = (H - y0) / ROCK.length; ROCK.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, y0 + i * h, W, h + 1); }); }
+function night(g, t) { g.fillStyle = '#070a14'; g.fillRect(0, 0, W, H * 0.33); for (let i = 0; i < 60; i++) { g.fillStyle = `rgba(255,255,255,${0.4 + 0.5 * Math.abs(Math.sin(i * 3 + t))})`; g.fillRect((i * 173) % W, (i * 97) % (H * 0.3), 2, 2); }
+  for (let j = 0; j < 3; j++) { g.strokeStyle = `rgba(90,230,140,${0.12 - j * 0.03})`; g.lineWidth = 40; g.beginPath(); for (let x = 0; x <= W; x += 20) { const y = H * (0.1 + j * 0.04) + Math.sin(x / 180 + t * 0.4 + j) * 30; x ? g.lineTo(x, y) : g.moveTo(x, y); } g.stroke(); }
+  g.fillStyle = '#e8eef5'; g.fillRect(0, H * 0.33 - 14, W, 14); }
+function tower(g) { g.strokeStyle = '#9aa0aa'; g.lineWidth = 4; g.beginPath(); g.moveTo(W / 2 - 90, H * 0.33); g.lineTo(W / 2, H * 0.14); g.lineTo(W / 2 + 90, H * 0.33); g.stroke(); for (let i = 1; i < 6; i++) { const y = H * 0.14 + (H * 0.19) * i / 6, w = 90 * i / 6; g.beginPath(); g.moveTo(W / 2 - w, y); g.lineTo(W / 2 + w, y); g.moveTo(W / 2 - w, y); g.lineTo(W / 2 + w * 0.9, y - (H * 0.19) / 6 * 0.9); g.stroke(); } }
+const c = makeCanvas(), g = c.getContext('2d');
+window.renderFrame = function (t) { const k = clamp(t / DURATION), p = ease.inOut(clamp((k - 0.1) / 0.6)), rx = W * 0.22, y0 = H * 0.24, y1 = H * 0.7;
+  g.globalAlpha = 1; g.fillStyle = '#0b0e16'; g.fillRect(0, 0, W, H);
+  g.strokeStyle = 'rgba(255,255,255,0.35)'; g.lineWidth = 4; g.beginPath(); g.moveTo(rx, y0); g.lineTo(rx, y1); g.stroke(); for (let i = 0; i <= 12; i++) { const y = y0 + (y1 - y0) * i / 12; g.strokeStyle = y <= lerp(y0, y1, p) ? ACCENT : 'rgba(255,255,255,0.35)'; g.beginPath(); g.moveTo(rx - 22, y); g.lineTo(rx + 22, y); g.stroke(); }
+  const ly = lerp(y0, y1, p); g.strokeStyle = ACCENT; g.lineWidth = 8; g.shadowColor = ACCENT; g.shadowBlur = 20; g.beginPath(); g.moveTo(rx, y0); g.lineTo(rx, ly); g.stroke(); g.shadowBlur = 0; g.fillStyle = '#fff'; g.beginPath(); g.arc(rx, ly, 10, 0, 6.283); g.fill();
+  const cx = W * 0.68, cy = H * 0.46, pulse = k > 0.6 && k < 0.7 ? 1 + 0.15 * Math.sin((k - 0.6) * 31) : 1; g.strokeStyle = 'rgba(255,255,255,0.5)'; g.lineWidth = 3; g.beginPath(); g.arc(cx, cy, 150, 0, 6.283); g.stroke(); g.beginPath(); g.arc(cx, cy, 100, 0, 6.283); g.stroke(); g.fillStyle = ACCENT; g.beginPath(); g.arc(cx, cy, 25 * pulse, 0, 6.283); g.fill(); };

@@ -1,0 +1,16 @@
+const layer = f => { const l = document.createElement('canvas'); l.width = W; l.height = H; f(l.getContext('2d')); return l; };
+const ROCK = ['#4a3a2e', '#3e2f25', '#33271f', '#2a2019', '#241b15', '#1d1511', '#17100c', '#0f0a07'];
+function rockBands(g, y0 = H * 0.33) { const h = (H - y0) / ROCK.length; ROCK.forEach((c, i) => { g.fillStyle = c; g.fillRect(0, y0 + i * h, W, h + 1); }); }
+function night(g, t) { g.fillStyle = '#070a14'; g.fillRect(0, 0, W, H * 0.33); for (let i = 0; i < 60; i++) { g.fillStyle = `rgba(255,255,255,${0.4 + 0.5 * Math.abs(Math.sin(i * 3 + t))})`; g.fillRect((i * 173) % W, (i * 97) % (H * 0.3), 2, 2); }
+  for (let j = 0; j < 3; j++) { g.strokeStyle = `rgba(90,230,140,${0.12 - j * 0.03})`; g.lineWidth = 40; g.beginPath(); for (let x = 0; x <= W; x += 20) { const y = H * (0.1 + j * 0.04) + Math.sin(x / 180 + t * 0.4 + j) * 30; x ? g.lineTo(x, y) : g.moveTo(x, y); } g.stroke(); }
+  g.fillStyle = '#e8eef5'; g.fillRect(0, H * 0.33 - 14, W, 14); }
+function tower(g) { g.strokeStyle = '#9aa0aa'; g.lineWidth = 4; g.beginPath(); g.moveTo(W / 2 - 90, H * 0.33); g.lineTo(W / 2, H * 0.14); g.lineTo(W / 2 + 90, H * 0.33); g.stroke(); for (let i = 1; i < 6; i++) { const y = H * 0.14 + (H * 0.19) * i / 6, w = 90 * i / 6; g.beginPath(); g.moveTo(W / 2 - w, y); g.lineTo(W / 2 + w, y); g.moveTo(W / 2 - w, y); g.lineTo(W / 2 + w * 0.9, y - (H * 0.19) / 6 * 0.9); g.stroke(); } }
+const c = makeCanvas(), g = c.getContext('2d'); const spk = Array.from({length: 120}, () => [rand(), rand()]), pores = Array.from({length: 30}, () => [rand() * 2 - 1, rand() * 2 - 1, 8 + rand() * 18]);
+window.renderFrame = function (t) { const k = clamp(t / DURATION), cx = W * 0.68, cy = H * 0.46;
+  g.globalAlpha = 1; g.fillStyle = '#0b0e16'; g.fillRect(0, 0, W, H);
+  g.fillStyle = '#6a6e76'; g.beginPath(); g.roundRect(W * 0.3 - 90, cy - 300, 180, 600, 60); g.fill(); g.fillStyle = '#4a4e56'; for (const [x, y] of spk) g.fillRect(W * 0.3 - 80 + x * 160, cy - 290 + y * 580, 4, 3);
+  g.strokeStyle = ACCENT; g.lineWidth = 3; g.setLineDash([8, 6]); g.strokeRect(W * 0.3 - 40, cy - 60, 80, 80); g.setLineDash([]); g.beginPath(); g.moveTo(W * 0.3 + 40, cy - 20); g.lineTo(cx - 230, cy - 20); g.stroke();
+  g.save(); g.beginPath(); g.arc(cx, cy, 230, 0, 6.283); g.clip(); g.fillStyle = '#5a5e66'; g.fillRect(cx - 230, cy - 230, 460, 460);
+  pores.forEach(([px, py, r], i) => { g.fillStyle = '#3a3e46'; g.beginPath(); g.ellipse(cx + px * 200, cy + py * 200, r, r * 0.7, i, 0, 6.283); g.fill(); if (i < 12) { const d = clamp((k - 0.1 - i * 0.03) / 0.3); g.fillStyle = `rgba(110,190,255,${d})`; g.shadowColor = '#6ab8ff'; g.shadowBlur = 12 * d; g.beginPath(); g.arc(cx + px * 200, cy + py * 200, r * 0.5, 0, 6.283); g.fill(); g.shadowBlur = 0; } });
+  for (let i = 0; i < 8; i++) { const d = clamp((k - 0.5 - i * 0.04) / 0.3); if (d <= 0) continue; const a = i * 0.8, fx = cx + Math.cos(a) * 140, fy = cy + Math.sin(a) * 120; g.save(); g.translate(fx, fy); g.rotate(Math.sin(t + i) * 0.05); g.strokeStyle = `rgba(255,255,255,${d})`; g.lineWidth = 2; g.beginPath(); for (let s = 0; s < 40; s++) { const r = s * 0.6, an = s * 0.5; s ? g.lineTo(Math.cos(an) * r, Math.sin(an) * r) : g.moveTo(0, 0); } g.stroke(); g.restore(); }
+  g.restore(); g.strokeStyle = '#c8ccd4'; g.lineWidth = 5; g.beginPath(); g.arc(cx, cy, 230, 0, 6.283); g.stroke(); };
