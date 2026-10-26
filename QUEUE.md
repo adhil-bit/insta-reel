@@ -1,10 +1,10 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 04:42 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 04:43 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Mon 26 Oct · 06:33 PM | India's first Christmas cake was baked in Thalassery | Enceladus |
+| 1 | Mon 26 Oct · 06:06 PM | India's first Christmas cake was baked in Thalassery | Enceladus |
 | 2 | Tue 27 Oct · 01:05 AM | Kodinhi: Kerala's village of twins | Zephyr |
 | 3 | Tue 27 Oct · 02:56 AM | Jatinga: where birds fall at night | Zephyr |
 | 4 | Tue 27 Oct · 08:07 AM | Lonar: the meteor lake that turned pink | Puck |
