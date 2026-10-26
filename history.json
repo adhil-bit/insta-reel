@@ -148,5 +148,31 @@
     "status": "pending",
     "voice": "Despina",
     "created": "2026-10-26T09:19"
+  },
+  {
+    "title": "The real KGF: one of the world's deepest gold mines",
+    "category": "MONEY",
+    "folder": "kgf-deepest-gold-mine",
+    "status": "pending",
+    "voice": "Enceladus",
+    "priority": 2.5,
+    "created": "2026-10-26T21:02"
+  },
+  {
+    "title": "Padmanabhaswamy Temple: the mystery of Vault B",
+    "category": "MYSTERY",
+    "folder": "padmanabhaswamy-vault-b",
+    "status": "pending",
+    "voice": "Callirrhoe",
+    "priority": 4,
+    "created": "2026-10-26T21:04"
+  },
+  {
+    "title": "Kallanai: a 2,000-year-old dam still in use",
+    "category": "TECH",
+    "folder": "kallanai-2000-year-dam",
+    "status": "pending",
+    "voice": "Puck",
+    "created": "2026-10-26T21:05"
   }
 ]

@@ -1,36 +1,371 @@
-Rendering job thalassery-first-cake: India's first Christmas cake was baked in Thalassery
-3/6 Recording the voiceover (voice: Enceladus)...
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  one-take recording couldn't be split (Gemini TTS kept hitting its rate limit); recording line by line with Enceladus
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 66, in build_reel
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
     media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
   File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
     _gemini_voice(joined, full, voice_name)
   File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
     return _gemini_voice(text, out_path, voice_name, model=alt[0])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 107, in _gemini_voice
-    raise RuntimeError("Gemini TTS kept hitting its rate limit")
-RuntimeError: Gemini TTS kept hitting its rate limit
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
 
-During handling of the above exception, another exception occurred:
+The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 547, in <module>
-    render_job(Path(args.folder))
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 230, in render_job
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 73, in build_reel
-    media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice["id"], provider="gemini")
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 113, in generate_voice
-    return _gemini_voice(text, out_path, voice_id or config.GEMINI_VOICE_POOL[0]["id"])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
   File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
     return _gemini_voice(text, out_path, voice_name, model=alt[0])
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 107, in _gemini_voice
-    raise RuntimeError("Gemini TTS kept hitting its rate limit")
-RuntimeError: Gemini TTS kept hitting its rate limit
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 67, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 257, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 71, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job kgf-deepest-gold-mine: The real KGF: one of the world's deepest gold mines
+3/6 Recording the voiceover (voice: Enceladus)...
+  whole narration recorded in one Gemini take
+  narration sped up 1.12x to keep the reel short (43s -> 38s)
+4/6 Writing and rendering 6 code animations (3 at a time)...
+    animation 2 rendered
+    animation 3 rendered
+    animation 4 rendered
+    animation 5 rendered
+    animation 1 rendered
+    animation 6 rendered
+5/6 Assembling the video...
+  follow end card added
+6/6 Sound design, thumbnail and export...
+  sound: generated pad + transitions
+  thumbnail ready
+
+Done: /home/runner/work/insta-reel/insta-reel/output/kgf-deepest-gold-mine/reel.mp4
+
+Check these claims before posting:
+  - KGF in Karnataka; modern mining from 1880s (John Taylor & Sons) -> BGML history
+  - Mines roughly 3 km deep, among the world's deepest -> BGML history
+  - Electricity from Shivanasamudra in 1902, among Asia's earliest -> power station history
+  - Mines closed in 2001 -> BGML history
+  - Written in chat without live web search: double-check before posting
+
+Sources: Bharat Gold Mines Ltd history, Karnataka Power Corporation / Shivanasamudra history, The Hindu features on KGF
+
+When happy: python main.py post kgf-deepest-gold-mine
+Rendering job padmanabhaswamy-vault-b: Padmanabhaswamy Temple: the mystery of Vault B
+3/6 Recording the voiceover (voice: Callirrhoe)...
+  whole narration recorded in one Gemini take
+  narration sped up 1.12x to keep the reel short (42s -> 38s)
+4/6 Writing and rendering 6 code animations (3 at a time)...
+    animation 1 rendered
+    animation 2 rendered
+    animation 3 rendered
+    animation 6 rendered
+    animation 4 rendered
+    animation 5 rendered
+5/6 Assembling the video...
+  follow end card added
+6/6 Sound design, thumbnail and export...
+  sound: generated pad + transitions
+  thumbnail ready
+
+Done: /home/runner/work/insta-reel/insta-reel/output/padmanabhaswamy-vault-b/reel.mp4
+
+Check these claims before posting:
+  - Several vaults beneath the temple -> news reporting
+  - 2011 Supreme Court-appointed inventory -> news reporting
+  - Reported value over ₹1 lakh crore -> media estimates (2011)
+  - Vault B not fully opened/inventoried; opposed on religious grounds -> news reporting
+  - July 2020 SC upheld Travancore royal family's rights in administration -> SC judgment
+  - Sensitive religious topic: wording kept factual and respectful
+  - Written in chat without live web search: double-check before posting
+
+Sources: Supreme Court of India judgment (July 2020), The Hindu / Indian Express reporting (2011-2020), Reports of the court-appointed committee
+
+When happy: python main.py post padmanabhaswamy-vault-b
+Rendering job damascus-steel: Damascus steel: the sword made from Indian steel
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! damascus-steel failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job lake-nyos: Lake Nyos: the lake that breathed out death
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! lake-nyos failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job mary-celeste: Mary Celeste: the ship with no one on board
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! mary-celeste failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job kola-borehole: Kola Superdeep Borehole: the deepest hole ever dug
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! kola-borehole failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job gobekli-tepe: Göbekli Tepe: the temple older than farming
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! gobekli-tepe failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job indus-script: The Indus script nobody can read
+3/6 Recording the voiceover (voice: Puck)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! indus-script failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job kallanai-2000-year-dam: Kallanai: a 2,000-year-old dam still in use
+3/6 Recording the voiceover (voice: Puck)...
+  whole narration recorded in one Gemini take
+  narration sped up 1.12x to keep the reel short (44s -> 40s)
+4/6 Writing and rendering 6 code animations (3 at a time)...
+    animation 1 rendered
+    animation 2 rendered
+    animation 3 rendered
+    animation 4 rendered
+    animation 5 rendered
+    animation 6 rendered
+5/6 Assembling the video...
+  follow end card added
+6/6 Sound design, thumbnail and export...
+  sound: generated pad + transitions
+  thumbnail ready
+
+Done: /home/runner/work/insta-reel/insta-reel/output/kallanai-2000-year-dam/reel.mp4
+
+Check these claims before posting:
+  - Kallanai / Grand Anicut on the Kaveri, Tamil Nadu -> TN WRD
+  - Credited to Chola king Karikalan, ~2,000 years ago -> histories
+  - Unhewn stone, no cement or machines -> histories
+  - Stones settled by the current ('thought to') -> popular explanation
+  - Among the oldest water-regulating structures still in use -> encyclopaedic references
+  - Written in chat without live web search: double-check before posting
+
+Sources: Tamil Nadu Water Resources Department, Histories of the Grand Anicut, Encyclopaedic references on Kallanai
+
+When happy: python main.py post kallanai-2000-year-dam
+Rendering job kottayam-literacy: Kottayam: India's first fully literate town
+3/6 Recording the voiceover (voice: Zephyr)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! kottayam-literacy failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job malayalam-palindrome: Malayalam: a language whose name is a palindrome
+3/6 Recording the voiceover (voice: Zephyr)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! malayalam-palindrome failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job roopkund-skeleton-lake: Roopkund: the lake of skeletons
+3/6 Recording the voiceover (voice: Zephyr)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! roopkund-skeleton-lake failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendering job silent-valley: Silent Valley: the forest Kerala saved
+3/6 Recording the voiceover (voice: Zephyr)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+!! silent-valley failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+Rendered 3 job(s). Failed: ['damascus-steel', 'lake-nyos', 'mary-celeste', 'kola-borehole', 'gobekli-tepe', 'indus-script', 'kottayam-literacy', 'malayalam-palindrome', 'roopkund-skeleton-lake', 'silent-valley']
