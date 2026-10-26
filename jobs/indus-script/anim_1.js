@@ -1,0 +1,20 @@
+const layer = f => { const l = document.createElement('canvas'); l.width = W; l.height = H; f(l.getContext('2d')); return l; };
+// invented abstract signs (NOT real letters): strokes, forks, circles, fish-like shapes
+function sign(g, kind, x, y, s, col) { g.save(); g.translate(x, y); g.scale(s, s); g.strokeStyle = col; g.fillStyle = col; g.lineWidth = 4; g.lineCap = 'round'; g.beginPath();
+  switch (kind % 7) { case 0: g.moveTo(-12, -20); g.lineTo(-12, 20); g.moveTo(12, -20); g.lineTo(12, 20); g.moveTo(-12, 0); g.lineTo(12, 0); break; case 1: g.moveTo(0, 20); g.lineTo(0, -4); g.lineTo(-14, -22); g.moveTo(0, -4); g.lineTo(14, -22); break;
+    case 2: g.arc(0, 0, 14, 0, 6.283); g.moveTo(0, -14); g.lineTo(0, -24); break; case 3: g.moveTo(-18, 0); g.quadraticCurveTo(0, -22, 18, 0); g.quadraticCurveTo(0, 22, -18, 0); g.moveTo(18, 0); g.lineTo(26, -8); g.moveTo(18, 0); g.lineTo(26, 8); break;
+    case 4: g.moveTo(-14, -20); g.lineTo(14, 20); g.moveTo(14, -20); g.lineTo(-14, 20); break; case 5: g.moveTo(-16, -16); g.lineTo(16, -16); g.lineTo(16, 16); g.lineTo(-16, 16); g.closePath(); g.moveTo(0, -16); g.lineTo(0, 16); break;
+    default: g.moveTo(-16, 20); g.lineTo(-16, -10); g.lineTo(0, -22); g.lineTo(16, -10); g.lineTo(16, 20); } g.stroke(); g.restore(); }
+function bull(g, x, y, s, col = '#4a2e18') { g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = col; g.beginPath(); g.ellipse(0, 0, 150, 70, 0, 0, 6.283); g.fill(); g.beginPath(); g.ellipse(-150, -40, 50, 36, 0.3, 0, 6.283); g.fill();
+  for (const lx of [-90, -40, 40, 90]) g.fillRect(lx - 10, 50, 20, 90); g.strokeStyle = col; g.lineWidth = 8; g.lineCap = 'round'; g.beginPath(); g.moveTo(-180, -70); g.quadraticCurveTo(-220, -170, -150, -220); g.stroke(); g.beginPath(); g.moveTo(150, -10); g.quadraticCurveTo(200, 10, 190, 60); g.stroke();
+  g.lineWidth = 6; g.beginPath(); g.moveTo(-230, 20); g.lineTo(-230, 140); g.stroke(); g.beginPath(); g.arc(-230, 10, 22, 0, 6.283); g.stroke(); g.restore(); }
+function seal(g, x, y, size, rot, t, kSigns = 1, lit = -1) { g.save(); g.translate(x, y); g.rotate(rot); g.fillStyle = '#8a6a44'; g.beginPath(); g.roundRect(-size / 2 + 10, -size / 2 + 10, size, size, size * 0.06); g.fill(); g.fillStyle = '#c9a678'; g.beginPath(); g.roundRect(-size / 2, -size / 2, size, size, size * 0.06); g.fill();
+  bull(g, 0, size * 0.12, size / 720); for (let i = 0; i < 6; i++) { const col = i === lit ? ACCENT : '#4a2e18'; if (i < kSigns * 6) sign(g, i, -size * 0.36 + i * size * 0.145, -size * 0.33, size / 720 * 1.6, col); } g.restore(); }
+const c = makeCanvas(), g = c.getContext('2d'); const people = Array.from({length: 40}, () => ({x: rand(), y: rand(), d: rand() < 0.5}));
+window.renderFrame = function (t) { const k = clamp(t / DURATION);
+  g.globalAlpha = 1; g.fillStyle = '#d8c49a'; g.fillRect(0, 0, W, H);
+  const gp = ease.inOut(clamp(k / 0.4)); g.strokeStyle = '#7a4a32'; g.lineWidth = 10; for (let i = 0; i < 6; i++) { const x = W * 0.12 + i * W * 0.152; g.beginPath(); g.moveTo(x, H * 0.22); g.lineTo(x, H * 0.22 + gp * H * 0.5); g.stroke(); } for (let j = 0; j < 8; j++) { const y = H * 0.22 + j * H * 0.0714; g.beginPath(); g.moveTo(W * 0.12, y); g.lineTo(W * 0.12 + gp * W * 0.76, y); g.stroke(); }
+  const bp = clamp((k - 0.2) / 0.4); let n = 0; for (let j = 0; j < 7; j++) for (let i = 0; i < 5; i++) { if (n++ / 35 > bp) continue; g.fillStyle = '#a86a48'; g.fillRect(W * 0.12 + i * W * 0.152 + 16, H * 0.22 + j * H * 0.0714 + 14, W * 0.152 - 32, H * 0.0714 - 28); }
+  if (k > 0.6) { const s = 0.8 + 0.2 * ease.out(clamp((k - 0.6) / 0.1)); g.save(); g.translate(W * 0.42, H * 0.4); g.scale(s, s); g.fillStyle = '#8a5a3a'; g.fillRect(-150, -80, 300, 160); g.fillStyle = '#3a7ac0'; g.fillRect(-110, -50, 220, 100); g.restore(); }
+  g.fillStyle = '#2a1a10'; for (const p of people) { const u = (t * 0.1 + p.y) % 1; const x = p.d ? W * 0.12 + Math.floor(p.x * 6) * W * 0.152 + 2 : W * 0.12 + u * W * 0.76, y = p.d ? H * 0.22 + u * H * 0.5 : H * 0.22 + Math.floor(p.x * 8) * H * 0.0714 + 2; g.fillRect(x, y, 6, 6); }
+  g.fillStyle = 'rgba(120,90,60,0.08)'; for (let i = 0; i < 300; i++) g.fillRect((i * 173) % W, (i * 311) % H, 3, 3); };
