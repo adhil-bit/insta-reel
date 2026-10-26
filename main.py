@@ -384,7 +384,7 @@ def queue_md() -> None:
     plan, left = [], list(pending)
     for day in range(21):
         d = now + timedelta(days=day)
-        for slot in config.POST_SLOTS.get(d.strftime("%a"), []):
+        for slot in slots_for(d):
             when = datetime.strptime(f"{d.date()} {slot}", "%Y-%m-%d %H:%M").replace(tzinfo=ist)
             if when <= now or not left:
                 continue
@@ -431,12 +431,30 @@ def skip(folder_name: str) -> None:
     print(f"Skipped {folder_name}")
 
 
+def slots_for(d) -> list[str]:
+    """Posting slots (IST, HH:MM) for a date, honouring one-off overrides."""
+    return getattr(config, "SLOT_OVERRIDES", {}).get(d.date().isoformat(), config.POST_SLOTS.get(d.strftime("%a"), []))
+
+
+def slot_wait() -> int:
+    """Seconds until today's next slot if it's less than 35 minutes away, else 0 (lets an early
+    trigger wait for the exact slot instead of skipping it)."""
+    from datetime import timedelta, timezone
+    ist = timezone(timedelta(hours=5, minutes=30)); now = datetime.now(ist)
+    for s in slots_for(now):
+        when = datetime.strptime(f"{now.date()} {s}", "%Y-%m-%d %H:%M").replace(tzinfo=ist)
+        secs = int((when - now).total_seconds())
+        if 0 < secs < 35 * 60:
+            return secs + 5
+    return 0
+
+
 def is_due() -> bool:
     """True if a posting slot has passed today (IST) that no post has used yet."""
     from datetime import timedelta, timezone
     ist = timezone(timedelta(hours=5, minutes=30))
     now = datetime.now(ist)
-    slots = config.POST_SLOTS.get(now.strftime("%a"), [])
+    slots = slots_for(now)
     passed = sum(1 for s in slots if now.strftime("%H:%M") >= s)
     posts_today, last = 0, None
     for h in history():
@@ -508,7 +526,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -533,6 +551,8 @@ if __name__ == "__main__":
         render_pending()
     elif args.command == "latest":
         print(latest_pending() or "")
+    elif args.command == "slot-wait":
+        print(slot_wait())
     elif args.command == "queue-md":
         queue_md()
     elif args.command == "due":

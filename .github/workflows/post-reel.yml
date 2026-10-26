@@ -5,6 +5,7 @@ name: Post reel
 on:
   schedule:   # checks every hour; posts only when a slot from config.POST_SLOTS is due
     - cron: "17 */2 * * *"   # backup; the main hourly trigger comes from cron-job.org (action: auto)
+    - cron: "45 12 26 10 *"  # one-off: Mon 26 Oct, waits for the 6:33 PM IST slot
   workflow_dispatch:
     inputs:
       reel:
@@ -51,6 +52,7 @@ jobs:
         run: |
           pip install -q -r requirements.txt
           AUTO=0; { [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.action }}" = "auto" ]; } && AUTO=1
+          if [ "$AUTO" = "1" ]; then W=$(python main.py slot-wait); [ "$W" -gt 0 ] && { echo "Waiting ${W}s for the slot"; sleep "$W"; }; fi
           if [ "$AUTO" = "1" ] && [ "$(python main.py due)" != "yes" ]; then
             echo "No posting slot due right now."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0
           fi

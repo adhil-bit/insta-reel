@@ -130,4 +130,8 @@ POST_SLOTS = {
     "Fri": ["04:06", "11:54", "14:07"], "Sat": ["10:04", "17:55", "19:06"],
     "Sun": ["06:05", "06:53", "15:04"],
 }
+# One-off changes to a specific day's slots (IST), e.g. moving tonight's post earlier
+SLOT_OVERRIDES = {
+    "2026-10-26": ["04:54", "09:06", "18:33"],   # Thalassery cake at ~6:33 PM instead of 8:53 PM
+}
 MIN_GAP_MINUTES = 40   # never post two reels closer together than this
