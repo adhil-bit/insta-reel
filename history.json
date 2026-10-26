@@ -129,5 +129,22 @@
     "status": "pending",
     "voice": "Puck",
     "created": "2026-10-26T07:13"
+  },
+  {
+    "title": "India's first Christmas cake was baked in Thalassery",
+    "category": "HISTORY",
+    "folder": "thalassery-first-cake",
+    "status": "pending",
+    "voice": "Enceladus",
+    "priority": 1,
+    "created": "2026-10-26T08:56"
+  },
+  {
+    "title": "Delhi's Iron Pillar: 1,600 years without rust",
+    "category": "SCIENCE",
+    "folder": "iron-pillar-no-rust",
+    "status": "pending",
+    "voice": "Despina",
+    "created": "2026-10-26T09:19"
   }
 ]

@@ -1,17 +1,18 @@
 # Posting queue
 
-_Updated Mon 26 Oct, 03:35 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 26 Oct, 03:36 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Mon 26 Oct · 06:33 PM | Kodinhi: Kerala's village of twins | Zephyr |
-| 2 | Tue 27 Oct · 01:05 AM | Jatinga: where birds fall at night | Zephyr |
-| 3 | Tue 27 Oct · 02:56 AM | Lonar: the meteor lake that turned pink | Puck |
-| 4 | Sun 01 Nov · 06:05 AM | Before 1956 there was no Kerala state | Zephyr |
+| 1 | Mon 26 Oct · 06:33 PM | India's first Christmas cake was baked in Thalassery | Enceladus |
+| 2 | Tue 27 Oct · 01:05 AM | Kodinhi: Kerala's village of twins | Zephyr |
+| 3 | Tue 27 Oct · 02:56 AM | Jatinga: where birds fall at night | Zephyr |
+| 4 | Tue 27 Oct · 08:07 AM | Lonar: the meteor lake that turned pink | Puck |
+| 5 | Wed 28 Oct · 05:55 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 6 | Sun 01 Nov · 06:05 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
 
-- iron-pillar-no-rust
 - kallanai-2000-year-dam
 - kgf-deepest-gold-mine
 - kottayam-literacy
@@ -19,7 +20,6 @@ _Updated Mon 26 Oct, 03:35 PM IST. Times are approximate: each reel posts within
 - padmanabhaswamy-vault-b
 - roopkund-skeleton-lake
 - silent-valley
-- thalassery-first-cake
 
 ## Recently posted
 
