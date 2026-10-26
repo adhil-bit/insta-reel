@@ -1,0 +1,134 @@
+{
+  "topic": {
+    "title": "The Indus script nobody can read",
+    "category": "MYSTERY",
+    "angle": "The Indus (Harappan) civilisation flourished around 2600-1900 BCE in what is now Pakistan and north-west India",
+    "key_facts": [
+      "The Indus (Harappan) civilisation flourished around 2600-1900 BCE in what is now Pakistan and north-west India",
+      "Thousands of inscribed seals and objects survive, but the script has never been deciphered",
+      "Inscriptions are very short, typically around five signs, with roughly 400 distinct signs",
+      "There is no known bilingual text, unlike the Rosetta Stone, which is a major reason it resists decipherment",
+      "In January 2025 Tamil Nadu's chief minister announced a US$1 million prize for anyone who deciphers it"
+    ],
+    "sources": [
+      "BBC News; The Hindu (Jan 2025)",
+      "Britannica",
+      "Britannica: 'Indus civilization'",
+      "Britannica: 'Indus script'",
+      "Britannica; academic summaries (Parpola)"
+    ]
+  },
+  "category": "MYSTERY",
+  "priority": 11,
+  "template": "explainer",
+  "opening": {
+    "type": "hero",
+    "why": "The seal with its unreadable signs is the hook; the region is well known to Indian viewers."
+  },
+  "headline": [
+    "INDIA'S CODE",
+    "NO ONE CAN READ"
+  ],
+  "accent_words": [
+    "NO ONE"
+  ],
+  "thumbnail_ml": "ആർക്കും വായിക്കാനാവാത്ത 4,000 വർഷം പഴയ ലിപി",
+  "thumbnail_accent": [
+    "ആർക്കും"
+  ],
+  "hook_voiceover": "4,000 വർഷം പഴയ ഒരു ഇന്ത്യൻ ലിപി. ജീവിച്ചിരിക്കുന്ന ഒരാൾക്കും അത് വായിക്കാനാവില്ല!",
+  "cover_visual": "A small square clay seal fills the frame: a carved unicorn-like bull and a row of strange signs above it, lit from the side.",
+  "scenes": [
+    {
+      "voiceover": "മോഹൻജൊദാരോ, ഹാരപ്പ. 4,000 വർഷം മുമ്പ് ഇന്ത്യൻ ഉപഭൂഖണ്ഡത്തിലെ ഏറ്റവും വലിയ നഗരങ്ങൾ. വലിയ കുളങ്ങൾ, നേരായ തെരുവുകൾ, അഴുക്കുചാലുകൾ.",
+      "caption": "CITIES 4,000 YEARS AGO",
+      "highlight": "4,000",
+      "labels": [
+        {
+          "text": "MOHENJO-DARO",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "A top-down plan of a brick city grows: straight streets, blocks, and a large bath; tiny dots of people move along the streets."
+    },
+    {
+      "voiceover": "ആ നഗരങ്ങളിൽ നിന്ന് ആയിരക്കണക്കിന് മുദ്രകൾ കിട്ടി. ഓരോന്നിലും കുറച്ച് അടയാളങ്ങൾ. ഒരു ഭാഷയാണെന്ന് ഉറപ്പ്. പക്ഷേ എന്ത് ഭാഷ?",
+      "caption": "THOUSANDS OF SEALS",
+      "highlight": "SEALS",
+      "labels": [
+        {
+          "text": "~400 SIGNS",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.5
+        }
+      ],
+      "visual": "A grid of small seals fills the screen one by one, each with a different animal and a few signs; the camera drifts over them."
+    },
+    {
+      "voiceover": "പ്രശ്നം ഇതാണ്: ഓരോ എഴുത്തും വളരെ ചെറുതാണ്. ശരാശരി അഞ്ച് അടയാളം മാത്രം. പിന്നെ റൊസെറ്റ സ്റ്റോൺ പോലെ, അറിയാവുന്ന ഒരു ഭാഷയിലേക്ക് പരിഭാഷപ്പെടുത്തിയ ഒരു എഴുത്തും കിട്ടിയിട്ടില്ല.",
+      "caption": "NO ROSETTA STONE",
+      "highlight": "ROSETTA",
+      "labels": [
+        {
+          "text": "AVG. 5 SIGNS",
+          "x": 0.3,
+          "y": 0.6,
+          "at": 0.25
+        },
+        {
+          "text": "NO BILINGUAL TEXT",
+          "x": 0.7,
+          "y": 0.6,
+          "at": 0.6
+        }
+      ],
+      "visual": "Left: a short row of five signs with a question mark pulse; right: a stone slab with three text bands where two are unreadable and one is blank where a translation should be."
+    },
+    {
+      "voiceover": "ദ്രാവിഡ ഭാഷയാണോ? സംസ്കൃതത്തിന്റെ പൂർവികനോ? ഭാഷയേ അല്ലെന്ന് പോലും ചിലർ വാദിക്കുന്നു. കമ്പ്യൂട്ടറുകളും AI-യും ശ്രമിച്ചു. ഇതുവരെ ഉത്തരമില്ല.",
+      "caption": "EVERY THEORY FAILED",
+      "highlight": "FAILED",
+      "labels": [
+        {
+          "text": "DRAVIDIAN?",
+          "x": 0.28,
+          "y": 0.6,
+          "at": 0.2
+        },
+        {
+          "text": "NOT A LANGUAGE?",
+          "x": 0.72,
+          "y": 0.6,
+          "at": 0.55
+        }
+      ],
+      "visual": "Signs float in the air while glowing 'keys' (theory shapes) try to fit a lock and bounce off; a computer screen of scrolling symbols flickers behind."
+    },
+    {
+      "voiceover": "2025-ൽ തമിഴ്നാട് സർക്കാർ ഒരു വെല്ലുവിളി വെച്ചു: ഈ ലിപി വായിക്കുന്നവർക്ക് ഒരു മില്യൺ ഡോളർ! അപ്പോൾ, ആരാകും ആ നാലായിരം വർഷത്തെ നിശ്ശബ്ദത പൊളിക്കുന്നത്?",
+      "caption": "$1 MILLION PRIZE",
+      "highlight": "$1 MILLION",
+      "labels": [
+        {
+          "text": "TAMIL NADU · 2025",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.15
+        }
+      ],
+      "visual": "A spotlight on the seal from the cover; a glowing prize ring and coins orbit it; the signs stay unlit, waiting."
+    }
+  ],
+  "instagram_caption": "A 4,000-year-old Indian script that nobody has ever been able to read. 🔍\n\nThe Indus cities of Mohenjo-daro and Harappa left thousands of seals with short inscriptions, about five signs each, and no bilingual text to help. Every theory, from Dravidian to 'not a language at all', has failed. In 2025 Tamil Nadu announced a $1 million prize for anyone who cracks it. 💰\n\nCould it be a language we still speak today? 👀\n\nSend this to someone who loves puzzles. 💛\n\n📚 Britannica · BBC News\nEducational · Animated illustrations\n\n#IndusScript #Harappa #MohenjoDaro #Malayalam #MalayalamReels UnexploredTruths Mystery",
+  "fact_check": [
+    "Indus civilisation ~2600-1900 BCE -> Britannica",
+    "Thousands of seals, undeciphered -> Britannica",
+    "~5 signs average, ~400 signs -> Britannica/Parpola",
+    "No bilingual text -> Britannica",
+    "$1 million prize, Tamil Nadu, Jan 2025 -> BBC/The Hindu"
+  ],
+  "plan_locked": true
+}

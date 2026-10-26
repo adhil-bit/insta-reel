@@ -1,0 +1,124 @@
+{
+  "topic": {
+    "title": "Göbekli Tepe: the temple older than farming",
+    "category": "HISTORY",
+    "angle": "Göbekli Tepe in south-eastern Turkey dates to around 9500 BCE, about 11,500 years ago",
+    "key_facts": [
+      "Göbekli Tepe in south-eastern Turkey dates to around 9500 BCE, about 11,500 years ago",
+      "It has large T-shaped limestone pillars, some over 5 m tall, arranged in circles and carved with animals",
+      "It was built by hunter-gatherers before farming and before pottery",
+      "That makes it thousands of years older than Stonehenge and the Egyptian pyramids",
+      "Major excavations began in 1995 under archaeologist Klaus Schmidt"
+    ],
+    "sources": [
+      "Smithsonian Magazine",
+      "UNESCO World Heritage listing (2018)",
+      "UNESCO; Smithsonian",
+      "UNESCO; Smithsonian Magazine"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 10,
+  "template": "explainer",
+  "opening": {
+    "type": "globe",
+    "lat": 37.22,
+    "lon": 38.92,
+    "label": "GÖBEKLI TEPE · TURKEY",
+    "why": "A little-known hilltop; placing it near the edge of the Fertile Crescent sets up the age shock."
+  },
+  "headline": [
+    "OLDER THAN",
+    "FARMING ITSELF"
+  ],
+  "accent_words": [
+    "OLDER"
+  ],
+  "thumbnail_ml": "കൃഷിക്കും മുമ്പ് പണിത ക്ഷേത്രം!",
+  "thumbnail_accent": [
+    "മുമ്പത്തെ"
+  ],
+  "hook_voiceover": "ആദ്യം കൃഷി, പിന്നെ ക്ഷേത്രം. അങ്ങനെയാണ് നമ്മൾ പഠിച്ചത്. 11,500 വർഷം പഴയ ഈ ക്ഷേത്രം പറയുന്നു: അല്ല!",
+  "cover_visual": "Dawn light on a hilltop: a ring of tall T-shaped stone pillars casting long shadows, dust in the air.",
+  "scenes": [
+    {
+      "voiceover": "തുർക്കിയിലെ ഗൊബെക്ലി തെപ്പെ. 1995-ൽ ക്ലൗസ് ഷ്മിറ്റ് എന്ന പുരാവസ്തു ഗവേഷകൻ ഇവിടെ കുഴിച്ചു തുടങ്ങി. മണ്ണിനടിയിൽ നിന്ന് വന്നത് ലോകത്തെ ഞെട്ടിച്ചു.",
+      "caption": "DUG UP IN 1995",
+      "highlight": "1995",
+      "labels": [
+        {
+          "text": "SOUTH-EAST TURKEY",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "A hill of earth; brushes and trowels sweep soil away to reveal the top of a T-shaped pillar."
+    },
+    {
+      "voiceover": "കൂറ്റൻ T ആകൃതിയിലുള്ള കൽത്തൂണുകൾ. ചിലത് അഞ്ച് മീറ്ററിലധികം ഉയരം. വൃത്താകൃതിയിൽ നിരത്തി വെച്ചിരിക്കുന്നു. മുകളിൽ കുറുക്കനും പാമ്പും പക്ഷികളും കൊത്തിയിട്ടുണ്ട്.",
+      "caption": "GIANT T-PILLARS",
+      "highlight": "T-PILLARS",
+      "labels": [
+        {
+          "text": "OVER 5 M TALL",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "A single pillar fills the frame; carved animals (fox, snake, crane) light up one by one along its face."
+    },
+    {
+      "voiceover": "ഏറ്റവും അത്ഭുതം ഇതിന്റെ പ്രായമാണ്. ഏകദേശം 11,500 വർഷം! പിരമിഡുകളേക്കാൾ 7,000 വർഷം പഴയത്. സ്റ്റോൺഹെഞ്ചിനേക്കാൾ 6,000 വർഷം.",
+      "caption": "11,500 YEARS OLD",
+      "highlight": "11,500",
+      "labels": [
+        {
+          "text": "PYRAMIDS: ~4,500 YRS",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.45
+        }
+      ],
+      "visual": "A timeline runs across the screen: Göbekli Tepe at the far left, then a long empty gap, then Stonehenge, then the pyramids, then today."
+    },
+    {
+      "voiceover": "ഇത് പണിതവർ കർഷകരല്ല. വേട്ടയാടി ജീവിച്ചിരുന്ന മനുഷ്യരാണ്. അപ്പോൾ ചരിത്ര പുസ്തകങ്ങൾ പറഞ്ഞത് തിരുത്തണം: ആദ്യം ക്ഷേത്രം, പിന്നെ കൃഷി.",
+      "caption": "TEMPLE BEFORE FARMING",
+      "highlight": "BEFORE",
+      "labels": [
+        {
+          "text": "HUNTER-GATHERERS",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.3
+        }
+      ],
+      "visual": "Two panels: a hunting scene with figures and a deer silhouette; then wheat sprouts rising, with an arrow showing temple first, farming after."
+    },
+    {
+      "voiceover": "ഇന്നും അവിടെ മിക്കവാറും ഭാഗങ്ങൾ മണ്ണിനടിയിൽ തന്നെയാണ്. ആരാണ് ഇത് പണിതത്, എന്തിനാണ് ഇത് മൂടിയത്, ആർക്കും അറിയില്ല.",
+      "caption": "STILL BURIED",
+      "highlight": "BURIED",
+      "labels": [
+        {
+          "text": "MOST STILL UNDERGROUND",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.2
+        }
+      ],
+      "visual": "A cutaway hillside: the excavated circle at the top, and beneath it faint ghost outlines of many more buried circles fading into the earth."
+    }
+  ],
+  "instagram_caption": "A temple built 7,000 years before the pyramids, by people who hadn't invented farming. 🏛️\n\nGöbekli Tepe in Turkey is about 11,500 years old: rings of giant T-shaped pillars carved with foxes, snakes and birds, raised by hunter-gatherers. It rewrote the order of history: first the temple, then farming. Most of it is still underground. 🔍\n\nWho built it, and why was it buried? 👀\n\nSend this to a history lover. 💛\n\n📚 UNESCO · Smithsonian Magazine\nEducational · Animated illustrations\n\n#GobekliTepe #Archaeology #History #Malayalam #MalayalamReels UnexploredTruths Ancient",
+  "fact_check": [
+    "~9500 BCE / 11,500 years -> UNESCO",
+    "T-pillars over 5 m, carved animals -> UNESCO/Smithsonian",
+    "Built by hunter-gatherers pre-farming -> UNESCO/Smithsonian",
+    "Older than Stonehenge and pyramids -> Smithsonian",
+    "Excavations from 1995, Klaus Schmidt -> Smithsonian"
+  ],
+  "plan_locked": true
+}

@@ -1,0 +1,13 @@
+const layer = f => { const l = document.createElement('canvas'); l.width = W; l.height = H; f(l.getContext('2d')); return l; };
+function tpillar(g, x, y, s, col = '#c8a878') { g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = '#9a7a56'; g.fillRect(-30 + 8, -300, 60, 300); g.fillStyle = col; g.fillRect(-30, -300, 52, 300); g.fillStyle = '#9a7a56'; g.fillRect(-70 + 8, -360, 140, 60); g.fillStyle = col; g.fillRect(-70, -360, 132, 56); g.restore(); }
+function fox(g, x, y, s) { g.save(); g.translate(x, y); g.scale(s, s); g.lineWidth = 3; g.beginPath(); g.moveTo(-60, 20); g.quadraticCurveTo(-30, -20, 20, -10); g.lineTo(50, -30); g.lineTo(60, -10); g.lineTo(40, 10); g.quadraticCurveTo(0, 30, -20, 25); g.lineTo(-30, 40); g.moveTo(10, 25); g.lineTo(10, 42); g.moveTo(-60, 20); g.quadraticCurveTo(-90, 10, -100, 30); g.stroke(); g.restore(); }
+function snake(g, x, y, s) { g.save(); g.translate(x, y); g.scale(s, s); g.lineWidth = 3; g.beginPath(); for (let i = 0; i <= 12; i++) { const px = -90 + i * 15, py = Math.sin(i * 1.3) * 18; i ? g.lineTo(px, py) : g.moveTo(px, py); } g.stroke(); g.restore(); }
+function bird(g, x, y, s) { g.save(); g.translate(x, y); g.scale(s, s); g.lineWidth = 3; g.beginPath(); g.ellipse(0, 0, 40, 22, 0, 0, 6.283); g.moveTo(30, -10); g.lineTo(55, -40); g.lineTo(75, -36); g.moveTo(-10, 20); g.lineTo(-14, 70); g.moveTo(10, 20); g.lineTo(14, 70); g.stroke(); g.restore(); }
+const c = makeCanvas(), g = c.getContext('2d'); const dust = Array.from({length: 40}, () => [rand(), rand(), rand()]);
+window.renderFrame = function (t) { const k = clamp(t / DURATION), push = 1 + 0.06 * k;
+  g.globalAlpha = 1; const s = g.createLinearGradient(0, 0, 0, H * 0.5); s.addColorStop(0, '#2a1a3a'); s.addColorStop(1, '#f2a65a'); g.fillStyle = s; g.fillRect(0, 0, W, H);
+  g.save(); g.translate(W / 2, H * 0.5); g.scale(push, push); g.translate(-W / 2, -H * 0.5);
+  g.fillStyle = '#4a3a2a'; g.beginPath(); g.moveTo(0, H); g.lineTo(0, H * 0.56); g.quadraticCurveTo(W / 2, H * 0.44, W, H * 0.56); g.lineTo(W, H); g.fill();
+  const ring = []; for (let i = 0; i < 10; i++) { const a = i / 10 * 6.283 + 0.3; ring.push([W / 2 + Math.cos(a) * 350, H * 0.5 + Math.sin(a) * 110, 0.9, i]); } ring.push([W / 2 - 60, H * 0.5, 1.3, 10], [W / 2 + 60, H * 0.5, 1.3, 11]); ring.sort((p, q) => p[1] - q[1]);
+  for (const [x, y, sc, i] of ring) { const r = ease.out(clamp((k - i * 0.04) / 0.12)); if (r <= 0) continue; g.fillStyle = 'rgba(40,25,15,0.35)'; g.beginPath(); g.ellipse(x - 160 * sc * r, y + 6, 160 * sc * r, 14, 0, 0, 6.283); g.fill(); tpillar(g, x, y, sc * r); }
+  for (const [x, y, z] of dust) { g.fillStyle = `rgba(255,220,170,${0.3 + 0.4 * z})`; g.fillRect(((x + t * 0.01 * (1 + z)) % 1) * W, y * H * 0.7, 3, 3); } g.restore(); };
