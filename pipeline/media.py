@@ -83,7 +83,7 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str, model: str | None 
                 details = []
             quota_ids = [v.get("quotaId", "") for d in details for v in d.get("violations", [])]
             delay = next((d.get("retryDelay") for d in details if d.get("retryDelay")), "20s")
-            if quota_ids and all("PerDay" in q for q in quota_ids):
+            if quota_ids and any("PerDay" in q for q in quota_ids):      # daily allowance gone: fail fast
                 alt = [mm for mm in config.GEMINI_TTS_MODELS if mm != model]
                 if alt and model == config.GEMINI_TTS_MODEL:
                     print(f"  daily limit reached on {model}; trying {alt[0]}")
