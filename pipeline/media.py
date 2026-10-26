@@ -72,11 +72,20 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str) -> Path:
     body = {"contents": [{"parts": [{"text": f"{config.GEMINI_STYLE}:\n{text}"}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
-    for attempt in range(4):
+    for attempt in range(6):
         r = requests.post(url, headers={"x-goog-api-key": config.GEMINI_API_KEY}, json=body, timeout=180)
-        if r.status_code == 429 and "quota" in r.text.lower() and "per day" in r.text.lower():
-            raise RuntimeError("Gemini daily voice quota used up")
-        if r.status_code == 429 or r.status_code >= 500:          # short rate limit / busy: wait and retry
+        if r.status_code == 429:
+            # tell a per-minute limit (wait and retry) from the daily limit (give up for today)
+            try:
+                details = r.json().get("error", {}).get("details", [])
+            except Exception:
+                details = []
+            quota_ids = [v.get("quotaId", "") for d in details for v in d.get("violations", [])]
+            delay = next((d.get("retryDelay") for d in details if d.get("retryDelay")), "20s")
+            if quota_ids and all("PerDay" in q for q in quota_ids):
+                raise RuntimeError("Gemini daily voice quota used up")
+            time.sleep(min(70, float(str(delay).rstrip("s") or 20) + 2)); continue
+        if r.status_code >= 500:
             time.sleep(15 * (attempt + 1)); continue
         if r.status_code >= 400:
             raise RuntimeError(f"Gemini TTS error {r.status_code}: {r.text[:300]}")
