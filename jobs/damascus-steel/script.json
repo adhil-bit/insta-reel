@@ -1,0 +1,127 @@
+{
+  "topic": {
+    "title": "Damascus steel: the sword made from Indian steel",
+    "category": "HISTORY",
+    "angle": "Wootz was a crucible steel made in South India, exported for centuries",
+    "key_facts": [
+      "Wootz was a crucible steel made in South India, exported for centuries",
+      "Blades forged from wootz in the Middle East became known as Damascus steel, famous for a wavy surface pattern",
+      "The knowledge of making true Damascus blades was lost by around the 18th-19th century",
+      "In 2006 researchers at TU Dresden reported carbon nanotubes in a 17th-century Damascus sabre",
+      "The word 'wootz' is linked to South Indian words for steel such as Kannada 'ukku'"
+    ],
+    "sources": [
+      "Britannica: 'Damascus steel'",
+      "Britannica: 'wootz'",
+      "Encyclopaedia Britannica: 'wootz'",
+      "Reibold et al., Nature 444, 286 (2006)"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 6,
+  "template": "explainer",
+  "opening": {
+    "type": "hero",
+    "why": "The subject is an object (the blade); the wavy steel pattern is the hook, not a place."
+  },
+  "headline": [
+    "NOBODY COULD",
+    "COPY THIS SWORD"
+  ],
+  "accent_words": [
+    "COPY"
+  ],
+  "thumbnail_ml": "200 വർഷം ആർക്കും പകർത്താനാവാത്ത വാൾ!",
+  "thumbnail_accent": [
+    "ഇന്ത്യൻ"
+  ],
+  "hook_voiceover": "ഈ വാൾ 200 വർഷം ലോകത്ത് ആർക്കും പകർത്താനായില്ല. എന്തുകൊണ്ടെന്നോ?",
+  "cover_visual": "A curved sabre blade fills the frame diagonally; its surface shows a flowing, wavy watered-steel pattern that shimmers.",
+  "scenes": [
+    {
+      "voiceover": "നൂറ്റാണ്ടുകൾക്ക് മുമ്പ് ദക്ഷിണേന്ത്യയിൽ ഉണ്ടാക്കിയിരുന്ന ഒരു പ്രത്യേക ഉരുക്ക്. അതിന്റെ പേര് വൂട്സ്. കന്നഡയിലെ 'ഉക്കു' എന്ന വാക്കിൽ നിന്നാണ് ആ പേര്.",
+      "caption": "WOOTZ: INDIA'S STEEL",
+      "highlight": "WOOTZ",
+      "labels": [
+        {
+          "text": "SOUTH INDIA",
+          "x": 0.5,
+          "y": 0.58,
+          "at": 0.3
+        }
+      ],
+      "visual": "A clay crucible glowing in a furnace; ingots of steel cool on the ground; a simple south-India outline glows behind."
+    },
+    {
+      "voiceover": "കപ്പലുകളിലും ഒട്ടകപ്പുറത്തും ഈ ഉരുക്ക് മിഡിൽ ഈസ്റ്റിലേക്ക് പോയി. അവിടെ ഡമാസ്കസിലെ കൊല്ലന്മാർ അതിൽ നിന്ന് വാളുകൾ തീർത്തു.",
+      "caption": "SHIPPED TO DAMASCUS",
+      "highlight": "DAMASCUS",
+      "labels": [
+        {
+          "text": "INDIA",
+          "x": 0.72,
+          "y": 0.52,
+          "at": 0.15
+        },
+        {
+          "text": "DAMASCUS",
+          "x": 0.32,
+          "y": 0.36,
+          "at": 0.6
+        }
+      ],
+      "visual": "A trade route animates from south India across the Arabian Sea to the Middle East; small ship and camel icons travel along it."
+    },
+    {
+      "voiceover": "ആ വാളുകൾക്ക് ഒരു പ്രത്യേകതയുണ്ടായിരുന്നു. വെള്ളം ഒഴുകുന്നത് പോലെ ഒരു അലയടയാളം. മൂർച്ചയും കരുത്തും കൊണ്ട് ലോകം മുഴുവൻ അതിനെ ഭയപ്പെട്ടു.",
+      "caption": "THE WAVY PATTERN",
+      "highlight": "WAVY",
+      "labels": [
+        {
+          "text": "WATERED STEEL",
+          "x": 0.5,
+          "y": 0.6,
+          "at": 0.35
+        }
+      ],
+      "visual": "Extreme close-up of the blade surface; the wavy pattern flows like water; a drop of water ripples across it."
+    },
+    {
+      "voiceover": "പിന്നെ സംഭവിച്ചത് വിചിത്രമാണ്. ഏകദേശം 1800-ഓടെ ആ ഉരുക്ക് ഉണ്ടാക്കുന്ന വിദ്യ തന്നെ നഷ്ടപ്പെട്ടു. ആർക്കും അതേ വാൾ പിന്നെ ഉണ്ടാക്കാനായില്ല.",
+      "caption": "THE RECIPE WAS LOST",
+      "highlight": "LOST",
+      "labels": [
+        {
+          "text": "~1800",
+          "x": 0.5,
+          "y": 0.58,
+          "at": 0.5
+        }
+      ],
+      "visual": "A page of a recipe book burns to ash from the corner; an anvil with a half-made blade goes cold."
+    },
+    {
+      "voiceover": "2006-ൽ ജർമ്മനിയിലെ ഗവേഷകർ ഒരു പഴയ ഡമാസ്കസ് വാൾ മൈക്രോസ്കോപ്പിൽ നോക്കി. അതിനുള്ളിൽ കണ്ടത് കാർബൺ നാനോട്യൂബുകൾ! നമ്മുടെ പൂർവികർ അറിയാതെ ചെയ്ത നാനോ ടെക്നോളജി.",
+      "caption": "NANOTUBES INSIDE",
+      "highlight": "NANOTUBES",
+      "labels": [
+        {
+          "text": "2006 · DRESDEN",
+          "x": 0.5,
+          "y": 0.26,
+          "at": 0.15
+        }
+      ],
+      "visual": "A microscope zoom: the blade surface magnifies step by step until a lattice of tiny tubes appears, glowing."
+    }
+  ],
+  "instagram_caption": "The world's most legendary sword was made from Indian steel. ⚔️\n\nWootz, a crucible steel from South India, was shipped to the Middle East, where Damascus smiths forged blades with a famous wavy pattern. Then the recipe was lost, and in 2006 scientists found carbon nanotubes inside an old Damascus sabre. 🔬\n\nDid you know this one? 👀\n\nSend this to a history lover. 💛\n\n📚 Britannica · Reibold et al., Nature (2006)\nEducational · Animated illustrations\n\n#DamascusSteel #Wootz #History #Malayalam #MalayalamReels UnexploredTruths India",
+  "fact_check": [
+    "Wootz = South Indian crucible steel -> Britannica",
+    "Damascus blades forged from wootz; wavy pattern -> Britannica",
+    "Technique lost ~18th-19th c. -> Britannica",
+    "Nanotubes found 2006 (TU Dresden) -> Nature 2006",
+    "'wootz' linked to 'ukku' -> Britannica"
+  ],
+  "plan_locked": true
+}
