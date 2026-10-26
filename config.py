@@ -120,6 +120,7 @@ WIDTH, HEIGHT, FPS = 1080, 1920, 24  # 24 fps: looks the same on Reels, ~20% les
 COVER_MIN_SECONDS = 1.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.18     # small pause after each voice line
 END_CARD_SECONDS = 2.0  # 'follow us' card at the end of every reel
+RENDER_LIMIT = 4        # voice at most this many reels per render run, just in time (0 = no limit)
 TARGET_SECONDS = 35     # aim for ~35 s (ig-reel: 15-45 s, keep beats under 4 s)
 MAX_SPEEDUP = 1.12      # never speed the voice up more than this (done by the voice engine itself)
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel

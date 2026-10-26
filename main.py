@@ -248,11 +248,23 @@ def render_pending() -> None:
     out = config.OUTPUT_DIR / "rendered.txt"
     out.write_text("", encoding="utf-8")
     ok, failed = 0, []
+    from datetime import date, timedelta
+    soon = (date.today() + timedelta(days=2)).isoformat()
+
+    def urgency(p):
+        sc = load_json(p, {})
+        if sc.get("post_on") and sc["post_on"] <= soon:          # a dated reel due within 2 days goes first
+            return -1
+        return sc.get("priority", 999)
+
     job_files = sorted((config.ROOT / "jobs").glob("*/script.json"))
-    job_files.sort(key=lambda p: load_json(p, {}).get("priority", 999))          # most urgent first
-    for job in job_files:
-        if job.parent.name in done:
-            continue
+    job_files.sort(key=urgency)                                  # most urgent first
+    todo = [j for j in job_files if j.parent.name not in done]
+    limit = int(os.getenv("RENDER_LIMIT", config.RENDER_LIMIT))
+    if limit > 0 and len(todo) > limit:
+        print(f"Voicing only the {limit} most urgent reels this run (just-in-time); {len(todo) - limit} wait for the next run.")
+        todo = todo[:limit]
+    for job in todo:
         try:
             name = render_job(job.parent).name
             with open(out, "a", encoding="utf-8") as f:
