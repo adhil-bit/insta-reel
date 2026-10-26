@@ -56,7 +56,7 @@ jobs:
           if [ "$AUTO" = "1" ] && [ "$(python main.py due)" != "yes" ]; then
             echo "No posting slot due right now."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0
           fi
-          [ "$AUTO" = "1" ] && sleep $(( RANDOM % 240 ))
+          [ "$AUTO" = "1" ] && sleep $(( RANDOM % 150 ))
           REEL="${INPUT_REEL:-$(python main.py next)}"
           if [ -z "$REEL" ]; then echo "Queue is empty, nothing to post."; echo "SKIP=1" >> "$GITHUB_ENV"; exit 0; fi
           echo "REEL=$REEL" >> "$GITHUB_ENV"
