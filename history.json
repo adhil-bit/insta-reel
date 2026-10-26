@@ -95,7 +95,7 @@
     "status": "pending",
     "voice": "Midhun",
     "created": "2026-10-25T17:43",
-    "priority": 1
+    "priority": 2.5
   },
   {
     "title": "Kodinhi: Kerala's village of twins",
@@ -203,7 +203,7 @@
     "folder": "thalassery-first-cake",
     "status": "pending",
     "voice": "Midhun",
-    "priority": 2,
+    "priority": 1,
     "created": "2026-10-26T07:17"
   }
 ]
