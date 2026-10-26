@@ -35,6 +35,9 @@ body `{"ref":"main","inputs":{"reel":"","action":"auto"}}`, time zone UTC.
 For a single day, use `SLOT_OVERRIDES` in `config.py`, and make sure a cron-job.org run exists at
 (or just after) the new time, otherwise nothing fires.
 
-## Rule 3: alerts
+## Rule 3: voicing is just in time
+Each render run voices at most `RENDER_LIMIT` (4) reels, the most urgent first (date-locked reels due within 2 days, then by priority). The daily run at ~12:50 PM IST keeps about a day of reels ahead of posting, so later script changes never waste Gemini allowance.
+
+## Rule 4: alerts
 Every post, failed post and render is reported to the Telegram group "Adl and insta-reel".
 Cancelled runs and runs that never start are NOT reported.
