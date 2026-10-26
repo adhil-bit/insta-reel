@@ -2,11 +2,6 @@ name: Telegram setup
 
 on:
   workflow_dispatch:
-    inputs:
-      send_status:
-        description: "Send the pipeline status to Telegram"
-        required: false
-        default: "no"
 
 permissions:
   contents: write
@@ -20,28 +15,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Find the chat id and send a test message
+        run: bash -x scripts/telegram_setup.sh > logs/telegram-debug.txt 2>&1 || echo "setup script failed (see logs/telegram-debug.txt)"
+      - name: Save the result
+        if: ${{ always() }}
         run: |
-          mkdir -p logs
-          curl -s "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/getUpdates" > logs/telegram-updates.json
-          python3 - << 'PY'
-          import json
-          d = json.load(open("logs/telegram-updates.json"))
-          ids = {}
-          for u in d.get("result", []):
-              c = (u.get("message") or u.get("my_chat_member") or u.get("channel_post") or {}).get("chat")
-              if c: ids[str(c["id"])] = c.get("title") or c.get("first_name", "")
-          json.dump({"chat_ids": ids}, open("logs/telegram.json", "w"), indent=2); print(ids or "no messages yet: send /start to the bot first")
-          PY
-          rm -f logs/telegram-updates.json
-          if [ "${{ github.event.inputs.send_status }}" = "yes" ]; then
-            pip install -q -r requirements.txt >/dev/null 2>&1 || true
-            bash scripts/notify.sh "$(python main.py status)"
-          else
-            if [ -n "$TELEGRAM_CHAT_ID" ]; then
-            STATUS=$(python3 scripts/status.py)
-            bash scripts/notify.sh "$(printf '🔔 Test from the reel pipeline (@unexplored.truths)\n%s' "$STATUS")"
-          fi
-          fi
-      - run: |
           git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          sed -i 's/bot[0-9]*:[A-Za-z0-9_-]*/bot***/g' logs/telegram-debug.txt
           git add logs && git commit -qm "telegram setup" && git pull -q --rebase && git push -q || true
