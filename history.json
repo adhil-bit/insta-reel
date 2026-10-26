@@ -94,15 +94,8 @@
     "folder": "kgf-deepest-gold-mine",
     "status": "pending",
     "voice": "Midhun",
-    "created": "2026-10-25T17:43"
-  },
-  {
-    "title": "India's first Christmas cake was baked in Thalassery",
-    "category": "HISTORY",
-    "folder": "thalassery-first-cake",
-    "status": "pending",
-    "voice": "Sobhana",
-    "created": "2026-10-25T18:01"
+    "created": "2026-10-25T17:43",
+    "priority": 1
   },
   {
     "title": "Kodinhi: Kerala's village of twins",
@@ -110,7 +103,8 @@
     "folder": "kodinhi-twin-village",
     "status": "pending",
     "voice": "Zephyr",
-    "created": "2026-10-25T17:45"
+    "created": "2026-10-25T17:45",
+    "priority": 3
   },
   {
     "title": "Padmanabhaswamy Temple: the mystery of Vault B",
@@ -118,7 +112,8 @@
     "folder": "padmanabhaswamy-vault-b",
     "status": "pending",
     "voice": "Midhun",
-    "created": "2026-10-25T17:54"
+    "created": "2026-10-25T17:54",
+    "priority": 4
   },
   {
     "title": "Jatinga: where birds fall at night",
@@ -126,7 +121,8 @@
     "folder": "jatinga-birds",
     "status": "pending",
     "voice": "Zephyr",
-    "created": "2026-10-25T17:37"
+    "created": "2026-10-25T17:37",
+    "priority": 5
   },
   {
     "title": "Delhi's Iron Pillar: 1,600 years without rust",
@@ -145,29 +141,12 @@
     "created": "2026-10-25T17:39"
   },
   {
-    "title": "Before 1956 there was no Kerala state",
-    "category": "HISTORY",
-    "folder": "kerala-piravi-1956",
-    "status": "pending",
-    "voice": "Sobhana",
-    "post_on": "2026-11-01",
-    "created": "2026-10-25T17:41"
-  },
-  {
     "title": "Kottayam: India's first fully literate town",
     "category": "HISTORY",
     "folder": "kottayam-literacy",
     "status": "pending",
     "voice": "Midhun",
     "created": "2026-10-25T17:47"
-  },
-  {
-    "title": "Lonar: the meteor lake that turned pink",
-    "category": "SPACE",
-    "folder": "lonar-pink-lake",
-    "status": "pending",
-    "voice": "Sobhana",
-    "created": "2026-10-25T17:49"
   },
   {
     "title": "Malayalam: a language whose name is a palindrome",
@@ -177,22 +156,6 @@
     "voice": "Midhun",
     "post_on": "2026-11-01",
     "created": "2026-10-25T17:51"
-  },
-  {
-    "title": "Neelakurinji: the flower that blooms once in 12 years",
-    "category": "NATURE",
-    "folder": "neelakurinji-12-years",
-    "status": "pending",
-    "voice": "Sobhana",
-    "created": "2026-10-25T17:52"
-  },
-  {
-    "title": "Roopkund: the lake of skeletons",
-    "category": "HISTORY",
-    "folder": "roopkund-skeleton-lake",
-    "status": "pending",
-    "voice": "Sobhana",
-    "created": "2026-10-25T17:57"
   },
   {
     "title": "Silent Valley: the forest Kerala saved",

@@ -66,9 +66,9 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
             one_take = True
             print("  whole narration recorded in one Gemini take")
         except Exception as e:
-            print(f"  Gemini voice unavailable ({str(e)[:120]}); using the {'Sobhana' if voice.get('gender') == 'f' else 'Midhun'} voice")
+            print(f"  Gemini voice unavailable ({str(e)[:120]}); using the Midhun voice")
             provider = "edge"
-            voice = {**config.EDGE_VOICE_POOL[1 if voice.get("gender") == "f" else 0], "provider": "edge"}
+            voice = {**config.EDGE_VOICE_POOL[0], "provider": "edge"}
     for i, s in enumerate(scenes):
         if one_take:
             break
@@ -82,8 +82,7 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
                 raise
             print(f"  Gemini voice failed ({str(e)[:120]}); switching this reel to the Edge voices")
             provider = "edge"
-            edge_pool = config.EDGE_VOICE_POOL
-            voice = {**edge_pool[1 if voice.get("gender") == "f" else 0], "provider": "edge"}
+            voice = {**config.EDGE_VOICE_POOL[0], "provider": "edge"}
             for j in range(i + 1):                                  # redo earlier lines so the voice stays consistent
                 media.generate_voice(scenes[j]["voiceover"], work / f"voice_{j}.mp3", voice["id"], provider="edge")
     durations = [video.scene_duration(work / f"voice_{i}.mp3", config.COVER_MIN_SECONDS if s.get("cover") else 0)
@@ -198,6 +197,7 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     hist.append({"title": topic["title"], "category": topic["category"],
                  "folder": folder.name, "status": "pending", "voice": voice["name"],
                  **({"post_on": script["post_on"]} if script.get("post_on") else {}),
+                 **({"priority": script["priority"]} if script.get("priority") else {}),
                  "created": datetime.now().isoformat(timespec="minutes")})
     save_json(config.HISTORY_FILE, hist)
 
@@ -283,7 +283,7 @@ def pick_voice(script: dict, hist: list) -> dict:
         pick = (males if used % 2 == 0 else females)[(used // 2) % 2]
         return {**pick, "provider": "gemini"}
     if config.VOICE_PROVIDER in ("edge", "gemini"):
-        return config.EDGE_VOICE_POOL[used % 2]                    # Midhun, Sobhana, Midhun, ...
+        return config.EDGE_VOICE_POOL[0]                           # Midhun (no robotic female fallback)
     pool = config.VOICE_POOL
     want = script.get("voice")
     if want:
@@ -423,6 +423,7 @@ def next_pending() -> str | None:
     from datetime import timedelta, timezone
     today = datetime.now(timezone(timedelta(hours=5, minutes=30))).date().isoformat()   # IST
     pending = [h for h in history() if h["status"] == "pending" and h.get("post_on", today) <= today]
+    pending = sorted(pending, key=lambda h: h.get("priority", 999))        # stable: FIFO within the same priority
     dated = [h for h in pending if h.get("post_on") == today]
     pick = (dated or pending)
     return pick[0]["folder"] if pick else None

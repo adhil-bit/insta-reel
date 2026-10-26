@@ -57,9 +57,8 @@ GEMINI_VOICE_POOL = [   # your picks: Zephyr + Kore (female), Charon + Puck (mal
 
 # Free native Malayalam voices (Microsoft read-aloud). Variants by speed and pitch so
 # reels don't all sound the same. id format: "voice|rate|pitch"
-EDGE_VOICE_POOL = [   # natural settings only: changing pitch made the voice sound robotic
+EDGE_VOICE_POOL = [   # Midhun only: the free female voice (Sobhana) sounded robotic
     {"name": "Midhun", "id": "ml-IN-MidhunNeural|+0%|+0Hz", "style": "male"},
-    {"name": "Sobhana", "id": "ml-IN-SobhanaNeural|+0%|+0Hz", "style": "female"},
 ]
 OPENAI_TTS_MODEL = os.getenv("OPENAI_TTS_MODEL", "gpt-4o-mini-tts")
 OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")

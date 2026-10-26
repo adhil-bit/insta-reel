@@ -7,6 +7,11 @@ on:
     paths:
       - "jobs/**"
   workflow_dispatch:
+    inputs:
+      wait_until_utc:
+        description: "Optional: start rendering at this UTC time (HH:MM), e.g. after the Gemini voice quota resets"
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -66,7 +71,11 @@ jobs:
       - name: Render new jobs
         env:
           GH_TOKEN: ${{ github.token }}
+          WAIT_UNTIL: ${{ github.event.inputs.wait_until_utc }}
         run: |
+          if [ -n "$WAIT_UNTIL" ]; then
+            secs=$(( $(date -u -d "$WAIT_UNTIL" +%s) - $(date -u +%s) )); [ $secs -gt 0 ] && [ $secs -lt 20000 ] && { echo "Waiting $secs s until $WAIT_UNTIL UTC"; sleep $secs; }
+          fi
           git pull -q origin main || true
           mkdir -p output
           python main.py render-pending 2>&1 | tee output/render-log.txt
