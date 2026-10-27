@@ -1,13 +1,12 @@
 {
   "applied": true,
-  "created": [
-    "insta-reel render daily"
-  ],
+  "created": [],
   "updated": [
     "insta-reel Mon+Fri",
     "insta-reel Tue+Thu",
     "insta-reel Wed",
-    "insta-reel Sat+Sun"
+    "insta-reel Sat+Sun",
+    "insta-reel render daily"
   ],
   "disabled": [],
   "wanted": [
@@ -20,7 +19,8 @@
       "hours": [
         0,
         6,
-        10
+        10,
+        15
       ],
       "minutes": [
         37
@@ -35,7 +35,8 @@
       "hours": [
         1,
         7,
-        11
+        11,
+        15
       ],
       "minutes": [
         37
@@ -49,7 +50,8 @@
       "hours": [
         2,
         8,
-        13
+        13,
+        15
       ],
       "minutes": [
         37
@@ -64,6 +66,7 @@
       "hours": [
         4,
         8,
+        11,
         14
       ],
       "minutes": [
