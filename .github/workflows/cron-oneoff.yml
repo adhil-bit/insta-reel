@@ -1,0 +1,28 @@
+name: Schedule one reel at an exact time
+
+on:
+  workflow_dispatch:
+    inputs:
+      reel:
+        description: "Reel folder name (e.g. itty-cora-1-trader)"
+        required: true
+      when_ist:
+        description: "Date and time in IST, YYYY-MM-DD HH:MM"
+        required: true
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    env:
+      CRONJOB_API_KEY: ${{ secrets.CRONJOB_API_KEY }}
+      CRON_TRIGGER_TOKEN: ${{ secrets.CRON_TRIGGER_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Create the one-off trigger
+        run: |
+          set -o pipefail
+          python3 scripts/cron_oneoff.py "${{ github.event.inputs.reel }}" "${{ github.event.inputs.when_ist }}" 2>&1 | tee once.txt
+      - if: ${{ always() }}
+        run: bash scripts/notify.sh "$(printf '🗓️ Scheduled (%s): %s at %s IST' "${{ job.status }}" "${{ github.event.inputs.reel }}" "${{ github.event.inputs.when_ist }}")" || true
