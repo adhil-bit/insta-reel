@@ -72,6 +72,7 @@ def _css(accent: str) -> str:
         color:#fff; font:800 30px Inter; padding:10px 22px 8px; border-radius:40px; letter-spacing:1.5px; white-space:nowrap;
         box-shadow:0 0 30px {accent}55; }}
 .pill i {{ display:inline-block; width:14px; height:14px; border-radius:50%; background:{accent}; margin-right:12px; vertical-align:1px; font-style:normal; }}
+.disc {{ position:absolute; bottom:300px; left:60px; right:60px; text-align:center; font:700 26px/1.3 Noto, Inter; color:#ffd27a; text-shadow:0 2px 8px rgba(0,0,0,.9); }}
 .src {{ position:absolute; bottom:330px; left:60px; right:60px; text-align:center; font:500 20px Inter; color:rgba(255,255,255,.42); }}
 .brand {{ position:absolute; top:150px; left:64px; font:800 28px Inter; letter-spacing:3px; color:rgba(255,255,255,.85); }}
 .brand em {{ font-style:normal; color:{accent}; margin-left:14px; border:2px solid {accent}; border-radius:20px; padding:2px 14px; font-size:22px; }}
@@ -175,6 +176,8 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
         body = f'<div class="head" id="head">{_accent_html(head, [scene.get("highlight", "")])}{kick}</div><div class="sub" id="sub"></div>'
         chunks = _chunks(scene.get("voiceover", ""), speech)
     src = " · ".join((script.get("topic", {}).get("sources") or script.get("sources") or [])[:2])
+    if script.get("disclaimer"):
+        body += f'<div class="disc">{html.escape(script["disclaimer"])}</div>'
     body += "".join(f'<div class="pill" id="pill{i}" style="left:{p["x"] * 100}%;top:{p["y"] * 100}%"><i></i>{html.escape(p["text"])}</div>'
                     for i, p in enumerate(pills))
     state = json.dumps({"chunks": chunks, "pills": pills, "beat": round(duration, 3) if kind != "cover" and duration > 4.5 else 0},

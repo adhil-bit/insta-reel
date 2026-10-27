@@ -1,0 +1,96 @@
+{
+  "topic": {
+    "title": "The Merchant of Infinity (Francis Itty Cora), Part 2/3",
+    "category": "HISTORY",
+    "angle": [
+      "KERALA COUNTED",
+      "TO INFINITY"
+    ],
+    "key_facts": [
+      "Madhava of Sangamagrama, c.1340–1425, near Irinjalakuda -> Britannica",
+      "Infinite series for π, sine, cosine -> Britannica/K.V. Sarma",
+      "Europe ~250 years later (Gregory, Newton, Leibniz) -> Britannica",
+      "Yuktibhasa c.1530 in Malayalam (Jyeshthadeva) -> K.V. Sarma"
+    ],
+    "sources": [
+      "Francis Itty Cora, T.D. Ramakrishnan (DC Books, 2009)",
+      "K.V. Sarma; George Gheverghese Joseph, 'The Crest of the Peacock'",
+      "Britannica: Madhava of Sangamagrama"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 0,
+  "template": "explainer",
+  "post_on": "2099-01-01",
+  "voice_lock": "Charon",
+  "series": "itty-cora",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "THE MERCHANT",
+    "OF INFINITY · 2/3"
+  ],
+  "accent_words": [
+    "INFINITY"
+  ],
+  "thumbnail_ml": "അനന്തതയുടെ വ്യാപാരി · ഭാഗം 2",
+  "thumbnail_accent": [
+    "അനന്തതയുടെ"
+  ],
+  "hook_voiceover": "ന്യൂട്ടന് മുമ്പ്. ലെബ്നിസിന് മുമ്പ്. നമ്മുടെ കേരളത്തിൽ ഒരാൾ അനന്തത കണക്കുകൂട്ടി!",
+  "cover_visual": "series cover",
+  "scenes": [
+    {
+      "voiceover": "സംഗമഗ്രാമത്തിലെ മാധവൻ. പതിനാലാം നൂറ്റാണ്ടിലെ ഗണിതജ്ഞൻ. ഇരിങ്ങാലക്കുടയ്ക്കടുത്ത്.",
+      "caption": "MADHAVA OF SANGAMAGRAMA",
+      "highlight": "MADHAVA",
+      "kicker": "c. 1340 – 1425",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പൈയുടെ മൂല്യം കണ്ടെത്താൻ അനന്ത ശ്രേണി. സൈനിനും കൊസൈനിനും അതുപോലെ.",
+      "caption": "INFINITE SERIES",
+      "highlight": "INFINITE",
+      "kicker": "π · SINE · COSINE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "യൂറോപ്പ് ഇതേ കണക്കിൽ എത്തിയത് ഏകദേശം 250 വർഷം കഴിഞ്ഞ്.",
+      "caption": "250 YEARS EARLIER",
+      "highlight": "250",
+      "kicker": "BEFORE NEWTON & LEIBNIZ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1530-നടുത്ത് യുക്തിഭാഷ എന്ന പുസ്തകം. ഈ കണക്കുകൾ വിശദീകരിച്ചത്, മലയാളത്തിൽ!",
+      "caption": "WRITTEN IN MALAYALAM",
+      "highlight": "MALAYALAM",
+      "kicker": "YUKTIBHASA · c. 1530",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഈ അറിവ് യൂറോപ്പിൽ എത്തിയോ? അതാണ് ഇട്ടിക്കോരയുടെ ചോദ്യം. ഭാഗം മൂന്ന് നാളെ.",
+      "caption": "DID IT REACH EUROPE?",
+      "highlight": "EUROPE?",
+      "kicker": "PART 3 TOMORROW",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ന്യൂട്ടന് മുമ്പ് കേരളം അനന്തത കണക്കുകൂട്ടി 🔢 അനന്തതയുടെ വ്യാപാരി · ഭാഗം 2/3\nKerala counted to infinity before Newton. Part 2/3\n\nസംഗമഗ്രാമ മാധവൻ (c.1340–1425) പൈ, സൈൻ, കൊസൈൻ എന്നിവയ്ക്ക് അനന്ത ശ്രേണികൾ കണ്ടെത്തി. 1530-നടുത്ത് എഴുതിയ യുക്തിഭാഷ മലയാളത്തിലാണ്.\nMadhava of Sangamagrama found infinite series for π, sine and cosine, about 250 years before Europe. Yuktibhasa (c.1530) explained them in Malayalam.\n\nസ്കൂളിൽ ഇത് ആരെങ്കിലും പഠിപ്പിച്ചിരുന്നോ?\nDid anyone teach you this at school?\n\nPart 3 tomorrow. Share this with a friend who loves maths. 📩\n\n#Madhava #KeralaMathematics #IttyCora #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Madhava of Sangamagrama, c.1340–1425, near Irinjalakuda -> Britannica",
+    "Infinite series for π, sine, cosine -> Britannica/K.V. Sarma",
+    "Europe ~250 years later (Gregory, Newton, Leibniz) -> Britannica",
+    "Yuktibhasa c.1530 in Malayalam (Jyeshthadeva) -> K.V. Sarma",
+    "Itty Cora is a fictional character; the reel says so",
+    "Written without live web search: double-check"
+  ],
+  "disclaimer": "📖 ഇട്ടിക്കോര സാങ്കൽപ്പികം · മാധവനും യുക്തിഭാഷയും ചരിത്രം · Itty Cora is fiction; the maths is history",
+  "series_title": "അനന്തതയുടെ വ്യാപാരി · The Merchant of Infinity"
+}
