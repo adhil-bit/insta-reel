@@ -1,0 +1,24 @@
+name: Reminders
+
+# One-off reminders sent to the Telegram group.
+on:
+  schedule:
+    - cron: "30 4 10 11 *"    # 10 Nov, 10:00 AM IST: name field can be changed again
+    - cron: "30 4 15 12 *"    # 15 Dec, 10:00 AM IST: renew the Instagram token (expires ~22 Dec)
+  workflow_dispatch:
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    env:
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          if [ "$(date -u +%m-%d)" = "11-10" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            bash scripts/notify.sh "$(printf '⏰ Reminder: Instagram now lets you change the name field again.\nSet it to: Malayalam Facts | Unexplored\n(Edit profile, Name)')"
+          fi
+          if [ "$(date -u +%m-%d)" = "12-15" ]; then
+            bash scripts/notify.sh "$(printf '⏰ Reminder: renew the Instagram token this week (it expires around 22 Dec).\nSteps: RUNBOOK.md section 8.')"
+          fi
