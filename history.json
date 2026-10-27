@@ -217,5 +217,50 @@
     "voice": "Enceladus",
     "priority": 9,
     "created": "2026-10-27T08:51"
+  },
+  {
+    "title": "Theyyam: the man who becomes a god for one night",
+    "category": "CULTURE",
+    "folder": "theyyam-god-for-a-night",
+    "status": "pending",
+    "voice": "Callirrhoe",
+    "priority": 5,
+    "created": "2026-10-27T08:54"
+  },
+  {
+    "title": "Yakshi: why you never stop under a pala tree at night",
+    "category": "MYSTERY",
+    "folder": "yakshi-pala-tree",
+    "status": "pending",
+    "voice": "Puck",
+    "priority": 8,
+    "created": "2026-10-27T08:56"
+  },
+  {
+    "title": "Göbekli Tepe: the temple older than farming",
+    "category": "HISTORY",
+    "folder": "gobekli-tepe",
+    "status": "pending",
+    "voice": "Zephyr",
+    "priority": 12,
+    "created": "2026-10-27T08:58"
+  },
+  {
+    "title": "The Indus script nobody can read",
+    "category": "MYSTERY",
+    "folder": "indus-script",
+    "status": "pending",
+    "voice": "Charon",
+    "priority": 15,
+    "created": "2026-10-27T09:00"
+  },
+  {
+    "title": "Kottayam: India's first fully literate town",
+    "category": "HISTORY",
+    "folder": "kottayam-literacy",
+    "status": "pending",
+    "voice": "Despina",
+    "priority": 16,
+    "created": "2026-10-27T09:02"
   }
 ]
