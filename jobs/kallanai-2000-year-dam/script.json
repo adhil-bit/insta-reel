@@ -76,5 +76,6 @@
     "Stones settled by the current ('thought to') -> popular explanation",
     "Among the oldest water-regulating structures still in use -> encyclopaedic references",
     "Written in chat without live web search: double-check before posting"
-  ]
+  ],
+  "priority": 10
 }

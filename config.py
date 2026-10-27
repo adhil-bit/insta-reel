@@ -120,7 +120,7 @@ WIDTH, HEIGHT, FPS = 1080, 1920, 24  # 24 fps: looks the same on Reels, ~20% les
 COVER_MIN_SECONDS = 1.2  # the headline cover is shown at least this long
 SCENE_PADDING = 0.18     # small pause after each voice line
 END_CARD_SECONDS = 2.0  # 'follow us' card at the end of every reel
-RENDER_LIMIT = 4        # voice at most this many reels per render run, just in time (0 = no limit)
+RENDER_LIMIT = 5        # voice at most this many reels per render run, just in time (0 = no limit)
 TARGET_SECONDS = 35     # aim for ~35 s (ig-reel: 15-45 s, keep beats under 4 s)
 MAX_SPEEDUP = 1.12      # never speed the voice up more than this (done by the voice engine itself)
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel
@@ -128,11 +128,11 @@ RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in
 
 # Posting table (IST). The post workflow checks every hour and posts whenever a slot
 # has passed that hasn't been used yet, so a late or skipped GitHub run is caught up.
-POST_SLOTS = {   # 3 posts a day (IST). KEEP IN SYNC WITH cron-job.org: see OPERATIONS.md, run `python main.py cron-plan`
-    "Mon": ["06:06", "12:06", "16:06"], "Tue": ["07:06", "13:06", "17:06"],
-    "Wed": ["08:06", "14:06", "19:06"], "Thu": ["07:06", "13:06", "17:06"],
-    "Fri": ["06:06", "12:06", "16:06"], "Sat": ["10:06", "14:06", "20:06"],
-    "Sun": ["10:06", "14:06", "20:06"],
+POST_SLOTS = {   # 4 posts a day (IST, test week from 27 Oct). KEEP IN SYNC WITH cron-job.org: run the sync workflow
+    "Mon": ["06:06", "12:06", "16:06", "21:06"], "Tue": ["07:06", "13:06", "17:06", "21:06"],
+    "Wed": ["08:06", "14:06", "19:06", "21:06"], "Thu": ["07:06", "13:06", "17:06", "21:06"],
+    "Fri": ["06:06", "12:06", "16:06", "21:06"], "Sat": ["10:06", "14:06", "17:06", "20:06"],
+    "Sun": ["10:06", "14:06", "17:06", "20:06"],
 }
 # One-off changes to a specific day's slots (IST), e.g. moving tonight's post earlier
 SLOT_OVERRIDES = {

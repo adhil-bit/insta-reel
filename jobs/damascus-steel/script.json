@@ -18,7 +18,7 @@
     ]
   },
   "category": "HISTORY",
-  "priority": 6,
+  "priority": 2,
   "template": "explainer",
   "opening": {
     "type": "hero",

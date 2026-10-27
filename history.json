@@ -106,7 +106,7 @@
     "status": "pending",
     "voice": "Zephyr",
     "created": "2026-10-25T17:37",
-    "priority": 5
+    "priority": 3
   },
   {
     "title": "Neelakurinji: the flower that blooms once in 12 years",
@@ -130,7 +130,8 @@
     "folder": "lonar-pink-lake",
     "status": "pending",
     "voice": "Puck",
-    "created": "2026-10-26T07:13"
+    "created": "2026-10-26T07:13",
+    "priority": 7
   },
   {
     "title": "India's first Christmas cake was baked in Thalassery",
@@ -149,7 +150,8 @@
     "folder": "iron-pillar-no-rust",
     "status": "pending",
     "voice": "Despina",
-    "created": "2026-10-26T09:19"
+    "created": "2026-10-26T09:19",
+    "priority": 13
   },
   {
     "title": "The real KGF: one of the world's deepest gold mines",
@@ -168,7 +170,7 @@
     "folder": "padmanabhaswamy-vault-b",
     "status": "pending",
     "voice": "Callirrhoe",
-    "priority": 4,
+    "priority": 1,
     "created": "2026-10-26T21:04"
   },
   {
@@ -177,6 +179,7 @@
     "folder": "kallanai-2000-year-dam",
     "status": "pending",
     "voice": "Puck",
-    "created": "2026-10-26T21:05"
+    "created": "2026-10-26T21:05",
+    "priority": 10
   }
 ]

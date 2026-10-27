@@ -18,7 +18,7 @@
     ]
   },
   "category": "MYSTERY",
-  "priority": 8,
+  "priority": 6,
   "template": "explainer",
   "opening": {
     "type": "hero",

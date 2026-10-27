@@ -1,14 +1,14 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 01:09 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 02:17 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 | 1 | Tue 27 Oct · 05:06 PM | Padmanabhaswamy Temple: the mystery of Vault B | Callirrhoe |
-| 2 | Wed 28 Oct · 08:06 AM | Jatinga: where birds fall at night | Zephyr |
-| 3 | Wed 28 Oct · 02:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 4 | Wed 28 Oct · 07:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
-| 5 | Thu 29 Oct · 07:06 AM | Kallanai: a 2,000-year-old dam still in use | Puck |
+| 2 | Tue 27 Oct · 09:06 PM | Jatinga: where birds fall at night | Zephyr |
+| 3 | Wed 28 Oct · 08:06 AM | Lonar: the meteor lake that turned pink | Puck |
+| 4 | Wed 28 Oct · 02:06 PM | Kallanai: a 2,000-year-old dam still in use | Puck |
+| 5 | Wed 28 Oct · 07:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 | 6 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
