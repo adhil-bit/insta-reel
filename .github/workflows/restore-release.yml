@@ -18,7 +18,10 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           F="${{ github.event.inputs.folder }}"
-          gh release delete "$F" -y --cleanup-tag 2>/dev/null || true
-          gh release create "$F" restore/$F/* --title "$F" --notes "Restored render"
+          if gh release view "$F" > /dev/null 2>&1; then
+            gh release upload "$F" restore/$F/* --clobber          # replace just these files (e.g. a new cover)
+          else
+            gh release create "$F" restore/$F/* --title "$F" --notes "Restored render"
+          fi
           git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
           git rm -rq restore/$F && git commit -qm "restore: $F released" && git pull -q --rebase && git push -q
