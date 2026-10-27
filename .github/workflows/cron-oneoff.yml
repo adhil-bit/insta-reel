@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       reel:
-        description: "Reel folder name (e.g. itty-cora-1-trader)"
+        description: "Reel folder name (e.g. itty-cora-1-trader), or --delete to remove one-off jobs matching when_ist"
         required: true
       when_ist:
         description: "Date and time in IST, YYYY-MM-DD HH:MM"
