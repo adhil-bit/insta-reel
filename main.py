@@ -553,7 +553,8 @@ def is_due() -> bool:
             continue
         t = datetime.fromisoformat(p).replace(tzinfo=timezone.utc).astimezone(ist)   # stored in UTC
         last = max(last, t) if last else t
-        if t.date() == now.date():
+        series = h.get("series") or load_json(config.ROOT / "jobs" / h["folder"] / "script.json", {}).get("series")
+        if t.date() == now.date() and not series:      # series posts don't use up regular slots
             posts_today += 1
     if last and (now - last).total_seconds() < config.MIN_GAP_MINUTES * 60:
         return False
