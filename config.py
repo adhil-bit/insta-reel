@@ -139,4 +139,5 @@ SLOT_OVERRIDES = {
     "2026-10-26": ["04:54", "09:06", "18:06"],   # Thalassery cake at the 6:07 PM check
     "2026-10-27": ["07:06", "13:06", "19:06", "21:06"],   # series Part 1 at 5:10 PM; regular reel at 9:07 PM
 }
+POSTING_PAUSED = True    # regular slots paused (series posts via exact-time triggers still go out)
 MIN_GAP_MINUTES = 40   # never post two reels closer together than this

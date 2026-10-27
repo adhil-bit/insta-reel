@@ -539,6 +539,8 @@ def slot_wait() -> int:
 
 def is_due() -> bool:
     """True if a posting slot has passed today (IST) that no post has used yet."""
+    if getattr(config, "POSTING_PAUSED", False):
+        return False
     from datetime import timedelta, timezone
     ist = timezone(timedelta(hours=5, minutes=30))
     now = datetime.now(ist)
