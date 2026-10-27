@@ -58,11 +58,12 @@ def add_pulse(bed: Path, total: float, out: Path) -> Path:
             e = f"if(eq(mod(floor(t/2),4),{ci}),{inner},{e})"
         return e
     f = note_expr()
+    opening_hit = "0.5*sin(2*PI*48*t)*exp(-5*t)*lt(t,1.2)+0.18*(random(1)*2-1)*exp(-9*t)*lt(t,0.5)"   # boom at frame 1
     pluck = f"0.07*(sin(2*PI*({f})*t)+0.3*sin(4*PI*({f})*t))*exp(-7*mod(t,0.25))"
     sub = "0.10*sin(2*PI*55*t)*exp(-9*mod(t,0.5))"
     hat = "0.012*(random(0)*2-1)*exp(-45*mod(t+0.125,0.25))"
     fade = f"min(1,t/1.5)*min(1,({total:.3f}-t)/1.5)"
-    run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"aevalsrc=exprs='({pluck}+{sub}+{hat})*{fade}':s={SR}:d={total:.3f}",
+    run(["ffmpeg", "-y", "-v", "error", "-f", "lavfi", "-i", f"aevalsrc=exprs='({pluck}+{sub}+{hat})*{fade}+{opening_hit}':s={SR}:d={total:.3f}",
          "-i", str(bed), "-filter_complex", "[0:a]lowpass=f=5200,aecho=0.8:0.5:250:0.25[p];[1:a][p]amix=inputs=2:weights='1 0.9':normalize=0[a]",
          "-map", "[a]", "-ar", str(SR), str(out)])
     return out

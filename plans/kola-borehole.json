@@ -52,7 +52,7 @@
     "thumbnail_accent": [
       "ആഴമുള്ള"
     ],
-    "hook_voiceover_ml": "സോവിയറ്റുകാർ ഭൂമിയിലേക്ക് 12 കിലോമീറ്റർ കുഴിച്ചു. പിന്നെ എന്തോ ഒന്ന് അവരെ നിർത്തിച്ചു.",
+    "hook_voiceover_ml": "12 കിലോമീറ്റർ താഴേക്ക്. ഇരുപത് വർഷത്തിലേറെ പണി. പിന്നെ പെട്ടെന്ന് നിർത്തി. എന്തിന്?",
     "visual": "A snowy Arctic plain at night with a drilling tower; beneath it a thin, impossibly deep shaft drops into glowing dark rock.",
     "build_cmd": "Top 35%: night sky (#070a14) with 60 stars and a faint green aurora band (3 wavy translucent strokes, drifting). Snow ground line at y0.33. A lattice drilling tower (triangular frame of thin lines) at x0.5 from y0.14 to y0.33. Below ground: rock layers (8 horizontal bands, browns to near-black) down to the bottom of the frame; a thin vertical shaft (10px, accent colour) extends downward from the tower, growing from y0.33 to y0.9 over the first 60% of the scene with a glowing tip. Keep the bottom 25% quiet (dark rock) for the text."
   },
@@ -148,6 +148,6 @@
     "Water and microfossils ~6 km -> BBC Future",
     "Welded shut -> BBC Future"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "hook_note": "staccato paradox hook (reference-style), 27 Oct",
   "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

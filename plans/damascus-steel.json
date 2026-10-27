@@ -45,7 +45,7 @@
     "thumbnail_accent": [
       "ഇന്ത്യൻ"
     ],
-    "hook_voiceover_ml": "ഈ വാൾ 200 വർഷം ലോകത്ത് ആർക്കും പകർത്താനായില്ല. എന്തുകൊണ്ടെന്നോ?",
+    "hook_voiceover_ml": "ഒരു വാൾ. ഇരുനൂറ് വർഷം. ആർക്കും അത് പകർത്താനായില്ല. എന്തുകൊണ്ട്?",
     "visual": "A curved sabre blade fills the frame diagonally; its surface shows a flowing, wavy watered-steel pattern that shimmers.",
     "build_cmd": "Dark charcoal background with a faint warm glow top-right. Draw one curved sabre (blade from x0.15,y0.62 to x0.85,y0.30, a slight curve, 60px wide, golden crossguard near the lower end). Fill the blade with a wavy 'watered steel' pattern: 25 horizontal sine-wave bands (amplitude 6px, wavelength 90px) in alternating light grey #d8dce4 and dark grey #6a7080, clipped to the blade shape. Over the whole reel a soft highlight band sweeps along the blade every 2.0s. From t=0 to 25% the blade slides in from the left with ease-out; keep top 20% and bottom 25% of the frame uncluttered."
   },
@@ -140,6 +140,6 @@
     "Nanotubes found 2006 (TU Dresden) -> Nature 2006",
     "'wootz' linked to 'ukku' -> Britannica"
   ],
-  "hook_note": "opening line replaced with the /ig-reel winning hook (scored 58-75); everything else as designed",
+  "hook_note": "staccato paradox hook (reference-style), 27 Oct",
   "edit_note": "trimmed to ~35 s with a loop line (owner-approved redesign, 27 Oct); hook, shots and facts unchanged"
 }

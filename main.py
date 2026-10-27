@@ -172,7 +172,13 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     try:
         from pipeline import thumbnail
         bg = _frame_at(visuals[0], work, 0.8)
-        if archive_mode:                       # the cover frame already is the thumbnail
+        if template == "explainer" and codes and codes[0]:      # clean cover art + big Malayalam headline
+            from pipeline import explainer as _ex
+            accent = config.BRAND["categories"].get(script["category"], "#FACC15")
+            clean = _ex.clean_frame(codes[0], accent, durations[0], work / "thumb_bg.jpg")
+            _ex.thumbnail(script, clean, folder / "thumbnail.jpg")
+            import shutil; shutil.copy(folder / "thumbnail.jpg", folder / "cover.jpg")
+        elif archive_mode:                     # the cover frame already is the thumbnail
             import shutil
             shutil.copy(bg, folder / "thumbnail.jpg")
         else:

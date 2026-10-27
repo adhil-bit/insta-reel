@@ -3,8 +3,6 @@ name: Render jobs
 # Renders reels whose script + animations were written ahead of time (e.g. by Claude
 # in a chat) and committed to jobs/<name>/. No Anthropic API key needed.
 on:
-  schedule:
-    - cron: "20 7 * * *"   # daily, just after Gemini's free voice limit resets: voices any reels still waiting
   push:
     paths:
       - "jobs/**"

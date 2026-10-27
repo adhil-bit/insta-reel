@@ -48,6 +48,10 @@ for utc, days in groups.items():
     for minute, hours in by_min.items():
         title = f"insta-reel {'+'.join(days)}" + (f" :{minute:02d}" if len(by_min) > 1 else "")
         wanted.append({"title": title, "wdays": sorted(WD[d] for d in days), "hours": sorted(hours), "minutes": [minute]})
+# daily voicing/render run, just after Gemini's free allowance resets (07:00 UTC)
+wanted.append({"title": "insta-reel render daily", "wdays": [0, 1, 2, 3, 4, 5, 6], "hours": [7], "minutes": [20],
+               "url": "https://api.github.com/repos/adhil-bit/insta-reel/actions/workflows/render-jobs.yml/dispatches",
+               "body": json.dumps({"ref": "main"})})
 print("Wanted cron-job.org jobs (UTC):")
 for w in wanted:
     print(f"  {w['title']}: weekdays {w['wdays']} hours {w['hours']} minute {w['minutes']}")
@@ -59,11 +63,11 @@ ours = {j["title"]: j for j in existing if j.get("title", "").lower().startswith
 print("Existing insta-reel jobs:", {t: (j["jobId"], j.get("enabled")) for t, j in ours.items()})
 result = {"created": [], "updated": [], "disabled": []}
 for w in wanted:
-    job = {"title": w["title"], "url": URL, "enabled": True, "saveResponses": True, "requestMethod": 1,
+    job = {"title": w["title"], "url": w.get("url", URL), "enabled": True, "saveResponses": True, "requestMethod": 1,
            "schedule": {"timezone": "UTC", "expiresAt": 0, "mdays": [-1], "months": [-1],
                         "wdays": w["wdays"], "hours": w["hours"], "minutes": w["minutes"]},
            "extendedData": {"headers": {"Authorization": f"Bearer {TRIGGER}", "Accept": "application/vnd.github+json"},
-                            "body": json.dumps({"ref": "main", "inputs": {"reel": "", "action": "auto"}})}}
+                            "body": w.get("body") or json.dumps({"ref": "main", "inputs": {"reel": "", "action": "auto"}})}}
     if w["title"] in ours:
         if APPLY: call("PATCH", f"/jobs/{ours[w['title']]['jobId']}", {"job": job})
         result["updated"].append(w["title"])

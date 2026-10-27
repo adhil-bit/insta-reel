@@ -38,7 +38,7 @@ html,body {{ margin:0; width:{SW}px; height:{SH}px; overflow:hidden; background:
 def _frame(folder: Path, out: Path, accent: str) -> Path:
     """Render the reel's cover animation at a nice moment, full 1080x1920."""
     code = (folder / "anim_0.js").read_text()
-    html_doc = (animate.TEMPLATE % {"W": 1080, "H": 1920, "THREE": animate.THREE_JS, "EARTH": animate.EARTH_TEX,
+    html_doc = (animate.TEMPLATE % {"W": 1080, "H": 1920, "THREE": animate.THREE_JS, "EARTH": animate.EARTH_TEX, "SCENES": animate.SCENES_JS,
                                      "ACCENT": accent, "DURATION": 5.0, "SEED": 1000}).replace("/*CODE*/", code)
     hp = out.with_suffix(".html"); hp.write_text(html_doc, encoding="utf-8")
     from playwright.sync_api import sync_playwright
