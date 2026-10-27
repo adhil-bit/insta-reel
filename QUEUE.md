@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 07:32 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 07:34 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -29,7 +29,7 @@ _Updated Tue 27 Oct, 07:32 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
-| Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5 | 2026-10-27T14:02 |
+| Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5 | 2026-10-27T14:04 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5 | 2026-10-27T11:48 |
 | The real KGF: one of the world's deepest gold mines | 2026-10-27T02:11 |
 | India's first Christmas cake was baked in Thalassery | 2026-10-26T13:09 |
