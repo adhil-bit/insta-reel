@@ -198,3 +198,20 @@ def publish_carousel(images: list[Path], caption: str, location_id: str | None =
     except Exception:
         pass
     return media_id
+
+
+def recently_posted(caption: str, hours: int = 12) -> bool:
+    """True if a post with the same opening caption line went out in the last `hours` (guards against duplicate triggers)."""
+    from datetime import datetime, timedelta, timezone
+    key = caption.strip().split("\n")[0][:60]
+    try:
+        r = requests.get(f"{GRAPH}/{config.IG_USER_ID}/media", params={"fields": "caption,timestamp", "limit": 8,
+                                                                      "access_token": config.IG_ACCESS_TOKEN}, timeout=60).json()
+    except Exception:
+        return False
+    cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+    for m in r.get("data", []):
+        ts = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if ts > cutoff and (m.get("caption") or "").strip().split("\n")[0][:60] == key:
+            return True
+    return False

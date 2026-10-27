@@ -391,6 +391,11 @@ def post(folder_name: str) -> None:
     if sc.get("thumbnail_ml") and not re.search(r"[\u0D00-\u0D7F]", text.split("\n")[0]):   # bilingual: Malayalam hook first
         text = f"{sc['thumbnail_ml']} 🔥\n{text}"
     text = tidy_caption(text, sc)
+    if instagram.recently_posted(text):
+        print(f"{folder_name}: the same caption was posted in the last 12 hours; skipping (duplicate trigger).")
+        for h in (hist := history()):
+            if h["folder"] == folder_name: h["status"] = "posted"
+        save_json(config.HISTORY_FILE, hist); return
     locs = load_json(config.ROOT / "locations.json", {})
     location_id = locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
     media_id = instagram.publish_reel(reel, text, location_id=location_id,
