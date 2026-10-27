@@ -1,24 +1,23 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 02:32 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 04:25 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Tue 27 Oct · 05:06 PM | Padmanabhaswamy Temple: the mystery of Vault B | Callirrhoe |
-| 2 | Tue 27 Oct · 09:06 PM | Jatinga: where birds fall at night | Zephyr |
-| 3 | Wed 28 Oct · 08:06 AM | Theyyam: the man who becomes a god for one night | Callirrhoe |
-| 4 | Wed 28 Oct · 02:06 PM | Damascus steel: the sword made from Indian steel | Zephyr |
-| 5 | Wed 28 Oct · 07:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 6 | Wed 28 Oct · 09:06 PM | Lake Nyos: the lake that breathed out death | Charon |
-| 7 | Thu 29 Oct · 07:06 AM | Mary Celeste: the ship with no one on board | Despina |
-| 8 | Thu 29 Oct · 01:06 PM | Yakshi: why you never stop under a pala tree at night | Puck |
-| 9 | Thu 29 Oct · 05:06 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
-| 10 | Thu 29 Oct · 09:06 PM | Kallanai: a 2,000-year-old dam still in use | Puck |
-| 11 | Fri 30 Oct · 06:06 AM | Göbekli Tepe: the temple older than farming | Zephyr |
-| 12 | Fri 30 Oct · 12:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
-| 13 | Fri 30 Oct · 04:06 PM | The Indus script nobody can read | Charon |
-| 14 | Fri 30 Oct · 09:06 PM | Kottayam: India's first fully literate town | Despina |
-| 15 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
+| 1 | Tue 27 Oct · 05:06 PM | Jatinga: where birds fall at night | Zephyr |
+| 2 | Tue 27 Oct · 09:06 PM | Theyyam: the man who becomes a god for one night | Callirrhoe |
+| 3 | Wed 28 Oct · 08:06 AM | Damascus steel: the sword made from Indian steel | Zephyr |
+| 4 | Wed 28 Oct · 02:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 5 | Wed 28 Oct · 07:06 PM | Lake Nyos: the lake that breathed out death | Charon |
+| 6 | Wed 28 Oct · 09:06 PM | Mary Celeste: the ship with no one on board | Despina |
+| 7 | Thu 29 Oct · 07:06 AM | Yakshi: why you never stop under a pala tree at night | Puck |
+| 8 | Thu 29 Oct · 01:06 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
+| 9 | Thu 29 Oct · 05:06 PM | Kallanai: a 2,000-year-old dam still in use | Puck |
+| 10 | Thu 29 Oct · 09:06 PM | Göbekli Tepe: the temple older than farming | Zephyr |
+| 11 | Fri 30 Oct · 06:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 12 | Fri 30 Oct · 12:06 PM | The Indus script nobody can read | Charon |
+| 13 | Fri 30 Oct · 04:06 PM | Kottayam: India's first fully literate town | Despina |
+| 14 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
 
