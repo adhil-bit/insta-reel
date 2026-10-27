@@ -215,3 +215,20 @@ def recently_posted(caption: str, hours: int = 12) -> bool:
         if ts > cutoff and (m.get("caption") or "").strip().split("\n")[0][:60] == key:
             return True
     return False
+
+
+def already_on_instagram(caption: str, hours: int = 48) -> str | None:
+    """Last line of defence against double posts: is a post with this caption already live?"""
+    from datetime import datetime, timedelta, timezone
+    key = next((l.strip() for l in caption.splitlines() if l.strip()), "")[:60]
+    try:
+        r = requests.get(f"{GRAPH}/{config.IG_USER_ID}/media", params={
+            "fields": "id,caption,timestamp,permalink", "limit": 12, "access_token": config.IG_ACCESS_TOKEN}, timeout=60).json()
+    except Exception:
+        return None
+    since = datetime.now(timezone.utc) - timedelta(hours=hours)
+    for m in r.get("data", []):
+        ts = datetime.strptime(m["timestamp"], "%Y-%m-%dT%H:%M:%S%z")
+        if ts >= since and key and (m.get("caption") or "").strip().startswith(key):
+            return m.get("permalink") or m["id"]
+    return None

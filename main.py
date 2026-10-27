@@ -396,6 +396,12 @@ def post(folder_name: str) -> None:
         for h in (hist := history()):
             if h["folder"] == folder_name: h["status"] = "posted"
         save_json(config.HISTORY_FILE, hist); return
+    live = instagram.already_on_instagram(text)
+    if live:
+        print(f"{folder_name} is already live ({live}); not posting it again.")
+        for h in (hist := history()):
+            if h["folder"] == folder_name: h.update(status="posted", posted=datetime.now().isoformat(timespec="minutes"))
+        save_json(config.HISTORY_FILE, hist); return
     locs = load_json(config.ROOT / "locations.json", {})
     location_id = locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
     media_id = instagram.publish_reel(reel, text, location_id=location_id,
