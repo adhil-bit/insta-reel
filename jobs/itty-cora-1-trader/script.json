@@ -52,7 +52,20 @@
       "caption": "A PEPPER TRADER",
       "highlight": "PEPPER",
       "kicker": "KUNNAMKULAM · 15TH CENTURY",
-      "labels": [],
+      "labels": [
+        {
+          "text": "KUNNAMKULAM",
+          "x": 0.76,
+          "y": 0.5,
+          "at": 0.15
+        },
+        {
+          "text": "EUROPE",
+          "x": 0.22,
+          "y": 0.255,
+          "at": 0.85
+        }
+      ],
       "visual": ""
     },
     {
