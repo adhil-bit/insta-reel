@@ -1,7 +1,7 @@
 """Make cron-job.org match config.POST_SLOTS (needs CRONJOB_API_KEY and CRON_TRIGGER_TOKEN).
 Creates/updates one job per group of days with the same times; disables other 'insta-reel' jobs.
 Usage: python scripts/cron_sync.py [--apply]   (without --apply it only prints the plan)"""
-import json, os, sys, urllib.request
+import json, os, sys, urllib.request, urllib.error
 sys.path.insert(0, ".")
 import config
 
@@ -14,6 +14,20 @@ URL = "https://api.github.com/repos/adhil-bit/insta-reel/actions/workflows/post-
 
 
 def call(method, path, body=None):
+    import time
+    for attempt in range(5):
+        try:
+            return _call(method, path, body)
+        except urllib.error.HTTPError as e:
+            if e.code == 429 or e.code >= 500:          # cron-job.org rate limit: wait and retry
+                time.sleep(3 * (attempt + 1)); continue
+            raise RuntimeError(f"{method} {path} -> HTTP {e.code}: {e.read().decode()[:200]}")
+    raise RuntimeError(f"{method} {path}: still rate-limited")
+
+
+def _call(method, path, body=None):
+    import time
+    time.sleep(1.5)                                       # stay under the API's per-second limit
     req = urllib.request.Request(API + path, method=method, data=json.dumps(body).encode() if body is not None else None,
                                  headers={"Authorization": f"Bearer {KEY}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=30) as r:

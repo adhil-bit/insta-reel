@@ -27,7 +27,9 @@ jobs:
           python-version: "3.12"
       - run: pip install -q python-dotenv || true
       - name: Sync
-        run: python scripts/cron_sync.py ${{ github.event.inputs.apply == 'true' && '--apply' || '' }} 2>&1 | tee logs-cron.txt
+        run: |
+          set -o pipefail
+          python scripts/cron_sync.py ${{ github.event.inputs.apply == 'true' && '--apply' || '' }} 2>&1 | tee logs-cron.txt
       - name: Report
         if: ${{ always() }}
         run: |
