@@ -135,5 +135,17 @@
     "Lifeboat missing; last log ~10 days earlier -> Britannica/Smithsonian",
     "Theories unproven -> Smithsonian"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "മേരി സെലസ്റ്റ്",
+    "കപ്പൽ രഹസ്യം",
+    "കടൽ"
+  ],
+  "hashtags": [
+    "MaryCeleste",
+    "GhostShip",
+    "SeaMystery",
+    "History",
+    "Unsolved"
+  ]
 }

@@ -83,5 +83,17 @@
     "lon": 76.44,
     "label": "SILENT VALLEY · PALAKKAD"
   },
-  "priority": 20
+  "priority": 20,
+  "search_ml": [
+    "സൈലന്റ് വാലി",
+    "സിംഹവാലൻ കുരങ്ങ്",
+    "പാലക്കാട്"
+  ],
+  "hashtags": [
+    "SilentValley",
+    "LionTailedMacaque",
+    "Palakkad",
+    "Rainforest",
+    "Kerala"
+  ]
 }

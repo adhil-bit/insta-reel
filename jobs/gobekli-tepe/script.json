@@ -120,5 +120,17 @@
     "Older than Stonehenge and pyramids -> Smithsonian",
     "Excavations from 1995, Klaus Schmidt -> Smithsonian"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "ഗൊബെക്ലി തെപ്പെ",
+    "പഴയ ക്ഷേത്രം",
+    "തുർക്കി"
+  ],
+  "hashtags": [
+    "GobekliTepe",
+    "Archaeology",
+    "Turkey",
+    "AncientHistory",
+    "Neolithic"
+  ]
 }

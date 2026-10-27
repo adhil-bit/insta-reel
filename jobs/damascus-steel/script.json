@@ -123,5 +123,17 @@
     "Nanotubes found 2006 (TU Dresden) -> Nature 2006",
     "'wootz' linked to 'ukku' -> Britannica"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "ഡമാസ്കസ് വാൾ",
+    "വൂട്സ് ഉരുക്ക്",
+    "ഇന്ത്യൻ ചരിത്രം"
+  ],
+  "hashtags": [
+    "DamascusSteel",
+    "WootzSteel",
+    "SwordHistory",
+    "IndianHistory",
+    "Metallurgy"
+  ]
 }

@@ -88,5 +88,17 @@
     "Written without live web search: double-check"
   ],
   "disclaimer": "📖 ഇട്ടിക്കോര കഥ മാത്രം; യൂറോപ്പ് സിദ്ധാന്തം തെളിയിക്കപ്പെട്ടിട്ടില്ല · Story, not a real event; theory unproven",
-  "series_title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ"
+  "series_title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ",
+  "search_ml": [
+    "ഇട്ടിക്കോര",
+    "ജെസ്യൂട്ട്",
+    "കേരള ഗണിതം"
+  ],
+  "hashtags": [
+    "IttyCora",
+    "KeralaMathematics",
+    "Jesuits",
+    "Kochi",
+    "HistoryOfMaths"
+  ]
 }

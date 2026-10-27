@@ -77,5 +77,18 @@
     "Awareness has reduced bird killing -> news reporting",
     "Written in chat without live web search: double-check before posting"
   ],
-  "priority": 3
+  "priority": 3,
+  "search_ml": [
+    "ജതിംഗ",
+    "പക്ഷികൾ",
+    "അസം",
+    "രഹസ്യം"
+  ],
+  "hashtags": [
+    "Jatinga",
+    "Assam",
+    "BirdMystery",
+    "NortheastIndia",
+    "Nature"
+  ]
 }

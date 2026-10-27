@@ -78,7 +78,7 @@ or a debate people have opinions on. Each scene may carry a small "kicker" label
 (e.g. "KERALA · 2,000 YEARS AGO", "LEGEND 1 · KALAKATTU ILLAM").
 CAPTION: bilingual. First line a Malayalam hook + emoji, then the English line; then 2 short paragraphs,
 each Malayalam followed by English; end with a personal question ("Which story did your grandmother tell
-you?") and ONE share line ("Share this with that friend who loves history."); 4-5 hashtags incl. #UnexploredTruths.
+you?") and ONE share line ("Share this with that friend who loves history."); at most 5 hashtags, all about the topic (no #viral/#explorepage/#reels or other generic tags). Also give \"search_ml\": 3-4 Malayalam words people would search for this topic.
 
 DESIGN PLAN (you are the video designer as well as the writer)
 - opening: decide how the reel opens.
@@ -110,7 +110,8 @@ Reply with ONLY a JSON object, no other text:
   ],
   "thumbnail_ml": "a short, curiosity-driving question or claim in Malayalam for the cover (max 8 words)",
   "thumbnail_accent": ["1-2 words from thumbnail_ml to colour"],
-  "instagram_caption": "first line under 60 chars with a name or number; 2-3 sentences; ONE ask only, phrased 'Share this with someone from <place>'; 4-6 hashtags at the end",
+  "instagram_caption": "first line under 60 chars with a name or number; 2-3 sentences; ONE ask only, phrased 'Share this with someone from <place>'; at most 5 topic hashtags at the end",
+  "search_ml": ["3-4 Malayalam search words for this topic"],
   "fact_check": ["each factual claim in the script -> which fact/source supports it"]
 }}
 Use 5-7 scenes."""

@@ -112,7 +112,7 @@ BRAND = {
         "main_html": "കൂടുതൽ കഥകൾക്ക് <b>ഫോളോ</b> ചെയ്യൂ",
         "share": "ഒരു സുഹൃത്തിന് അയച്ചുകൊടുക്കൂ 📩",
     },
-    "broad_hashtags": ["#explorepage", "#reelstagram", "#viral", "#reelitfeelit"],  # 0.0-1.0, background music under the voice
+    "broad_hashtags": [],   # none: only topic hashtags (max 5)  # 0.0-1.0, background music under the voice
 }
 
 # ---------------- Video ----------------

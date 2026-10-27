@@ -92,5 +92,17 @@
     "Written without live web search: double-check"
   ],
   "disclaimer": "📖 ഇട്ടിക്കോര സാങ്കൽപ്പികം · മാധവനും യുക്തിഭാഷയും ചരിത്രം · Itty Cora is fiction; the maths is history",
-  "series_title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ"
+  "series_title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ",
+  "search_ml": [
+    "ഇട്ടിക്കോര",
+    "സംഗമഗ്രാമ മാധവൻ",
+    "കേരള ഗണിതം"
+  ],
+  "hashtags": [
+    "IttyCora",
+    "Madhava",
+    "KeralaMathematics",
+    "Yuktibhasa",
+    "KeralaHistory"
+  ]
 }

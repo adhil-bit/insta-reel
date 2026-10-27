@@ -75,5 +75,17 @@
     "Protective film linked to high phosphorus (IIT Kanpur) -> Balasubramaniam papers",
     "Written in chat without live web search: double-check before posting"
   ],
-  "priority": 13
+  "priority": 13,
+  "search_ml": [
+    "ഇരുമ്പ് തൂൺ",
+    "ഡൽഹി",
+    "തുരുമ്പ്"
+  ],
+  "hashtags": [
+    "IronPillar",
+    "Delhi",
+    "QutubMinar",
+    "Metallurgy",
+    "IndianHistory"
+  ]
 }

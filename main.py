@@ -349,6 +349,30 @@ def _first_frame(visual: Path, work: Path) -> Path:
     return frame
 
 
+GENERIC_TAGS = {"viral", "explorepage", "explore", "reelstagram", "reelitfeelit", "reels", "fyp", "trending", "instagood",
+                "didyouknow", "malayalam", "malayalamreels", "unexploredtruths", "reelsinstagram", "foryou"}
+
+
+def tidy_caption(text: str, script: dict) -> str:
+    """Malayalam search words first; at most 5 topic hashtags, all with '#'; no generic tags."""
+    lines = text.rstrip().split("\n")
+    tag_lines = [i for i, l in enumerate(lines) if re.search(r"#\w", l) and len(re.sub(r"#?\w+|\s", "", l)) < 3]
+    words = []
+    for i in tag_lines:
+        words += [w.lstrip("#") for w in lines[i].split() if re.fullmatch(r"#?\w+", w)]
+    body = "\n".join(l for i, l in enumerate(lines) if i not in tag_lines).rstrip()
+    body = re.sub(r"(?<!\w)#(\w+)", r"\1", body) if tag_lines else body       # no stray tags inside the text
+    seen, tags = set(), []
+    for w in list(script.get("hashtags", [])) + words:
+        w = w.lstrip("#")
+        if w and w.lower() not in seen and w.lower() not in GENERIC_TAGS:
+            seen.add(w.lower()); tags.append("#" + w)
+    search = script.get("search_ml")
+    if search and not body.startswith(search[0] if isinstance(search, list) else search):
+        body = (" · ".join(search) if isinstance(search, list) else search) + "\n" + body
+    return body + ("\n\n" + " ".join(tags[:5]) if tags else "")
+
+
 def post(folder_name: str) -> None:
     from pipeline import instagram
 
@@ -363,12 +387,10 @@ def post(folder_name: str) -> None:
     text = caption.read_text(encoding="utf-8").rstrip()
     # ig-caption: exactly one clear ask ("share this") so the post has a single job
     text = re.sub(r"\bSend this to\b", "Share this with", text)
-    sc = load_json(folder / "script.json", {}) or load_json(config.ROOT / "jobs" / folder_name / "script.json", {})
+    sc = {**load_json(folder / "script.json", {}), **load_json(config.ROOT / "jobs" / folder_name / "script.json", {})}   # latest job file wins
     if sc.get("thumbnail_ml") and not re.search(r"[\u0D00-\u0D7F]", text.split("\n")[0]):   # bilingual: Malayalam hook first
         text = f"{sc['thumbnail_ml']} 🔥\n{text}"
-    extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
-    if extra:
-        text += " " + " ".join(extra)
+    text = tidy_caption(text, sc)
     locs = load_json(config.ROOT / "locations.json", {})
     location_id = locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
     media_id = instagram.publish_reel(reel, text, location_id=location_id,

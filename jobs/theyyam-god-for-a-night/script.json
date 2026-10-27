@@ -87,5 +87,18 @@
     "Performers' communities and the inversion -> folklore studies",
     "Planned without live web search: double-check before posting"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "തെയ്യം",
+    "കണ്ണൂർ",
+    "തെയ്യക്കാലം",
+    "മലബാർ"
+  ],
+  "hashtags": [
+    "Theyyam",
+    "Kannur",
+    "Kasaragod",
+    "Malabar",
+    "KeralaCulture"
+  ]
 }

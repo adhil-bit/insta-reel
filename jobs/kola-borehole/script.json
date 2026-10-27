@@ -128,5 +128,17 @@
     "Water and microfossils ~6 km -> BBC Future",
     "Welded shut -> BBC Future"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "കോല കുഴി",
+    "ഭൂമിയുടെ ആഴം",
+    "റഷ്യ"
+  ],
+  "hashtags": [
+    "KolaBorehole",
+    "DeepestHole",
+    "Russia",
+    "EarthScience",
+    "Science"
+  ]
 }

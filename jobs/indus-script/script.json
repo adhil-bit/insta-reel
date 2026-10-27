@@ -130,5 +130,17 @@
     "No bilingual text -> Britannica",
     "$1 million prize, Tamil Nadu, Jan 2025 -> BBC/The Hindu"
   ],
-  "plan_locked": true
+  "plan_locked": true,
+  "search_ml": [
+    "സിന്ധു ലിപി",
+    "ഹാരപ്പ",
+    "മോഹൻജൊദാരോ"
+  ],
+  "hashtags": [
+    "IndusScript",
+    "Harappa",
+    "MohenjoDaro",
+    "IndusValley",
+    "AncientIndia"
+  ]
 }
