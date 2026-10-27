@@ -353,6 +353,8 @@ def post(folder_name: str) -> None:
     from pipeline import instagram
 
     folder = config.OUTPUT_DIR / folder_name
+    if any(h["folder"] == folder_name and h.get("status") == "posted" for h in history()):
+        print(f"{folder_name} was already posted; skipping (duplicate trigger)."); return
     reel, caption = folder / "reel.mp4", folder / "caption.txt"
     if not reel.exists():
         sys.exit(f"No reel found in {folder}")
