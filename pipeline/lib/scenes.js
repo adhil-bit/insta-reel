@@ -86,5 +86,22 @@ const SK = (() => {
     g.save(); g.globalAlpha = a; g.fillStyle = '#0a0a0a'; g.fillRect(0, 0, 70, H); g.fillRect(W - 70, 0, 70, H); g.fillStyle = '#e8e0d0';
     const off = (t * 120) % 90; for (let y = -90 + off; y < H; y += 90) { g.fillRect(22, y, 26, 44); g.fillRect(W - 48, y, 26, 44); } g.restore();
   }
-  return { P, ink, sky, sun, birds, palm, house, boat, sea, ground, person, crowd, lamp, gopuram, rays, door, grain, filmFrame };
+  function stage(g, t, x = 60, y = 360, w = W - 120, h = 760) {   // lit cloth screen with a row of oil lamps (shadow-puppet theatre)
+    g.fillStyle = '#0a0604'; g.fillRect(0, 0, W, H);
+    const gl = g.createRadialGradient(x + w / 2, y + h * 0.55, 40, x + w / 2, y + h / 2, w * 0.75); gl.addColorStop(0, '#ffd28a'); gl.addColorStop(0.55, '#e0902e'); gl.addColorStop(1, '#5a2a0a');
+    g.fillStyle = gl; g.fillRect(x, y, w, h); g.strokeStyle = '#2a1608'; g.lineWidth = 14; g.strokeRect(x, y, w, h);
+    g.fillStyle = '#1a0e06'; for (let i = 0; i < 26; i++) { g.beginPath(); g.moveTo(x + i * w / 26, y); g.lineTo(x + (i + 0.5) * w / 26, y + 18); g.lineTo(x + (i + 1) * w / 26, y); g.fill(); }
+    for (let i = 0; i < 9; i++) { const lx = x + 40 + i * (w - 80) / 8, f = 1 + 0.2 * Math.sin(t * 9 + i * 1.7); g.fillStyle = '#c08a2a'; g.fillRect(lx - 10, y + h - 14, 20, 10);
+      g.fillStyle = '#ffe2a0'; g.beginPath(); g.ellipse(lx, y + h - 24, 5, 12 * f, 0, 0, 6.283); g.fill(); }
+  }
+  function puppet(g, x, y, h = 380, t = 0, armUp = true, col = '#120a04') {   // flat shadow-puppet figure with crown, (x,y) = feet
+    g.save(); g.translate(x, y); const s = h / 380; g.scale(s, s); g.fillStyle = col; g.strokeStyle = col; g.lineCap = 'round';
+    g.beginPath(); g.arc(0, -330, 30, 0, 6.283); g.fill(); g.beginPath(); g.moveTo(-14, -356); g.lineTo(0, -400 - Math.sin(t * 3) * 6); g.lineTo(14, -356); g.fill();
+    g.beginPath(); g.moveTo(-40, -296); g.lineTo(40, -296); g.lineTo(60, -120); g.lineTo(-60, -120); g.closePath(); g.fill();
+    g.fillStyle = 'rgba(255,214,140,0.6)'; for (let i = 0; i < 6; i++) { g.beginPath(); g.arc(-36 + i * 14, -140, 4, 0, 6.283); g.fill(); } g.fillStyle = col;
+    g.lineWidth = 14; g.beginPath(); g.moveTo(-20, -120); g.lineTo(-24, 0); g.moveTo(20, -120); g.lineTo(24, 0); g.stroke();
+    g.lineWidth = 12; g.beginPath(); g.moveTo(-36, -280); g.lineTo(-70, -200); g.stroke(); g.beginPath(); g.moveTo(36, -280);
+    if (armUp) { g.lineTo(80, -380 + Math.sin(t * 2) * 10); } else { g.lineTo(70, -200); } g.stroke(); g.restore();
+  }
+  return { P, ink, stage, puppet, sky, sun, birds, palm, house, boat, sea, ground, person, crowd, lamp, gopuram, rays, door, grain, filmFrame };
 })();

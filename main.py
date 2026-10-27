@@ -361,6 +361,9 @@ def post(folder_name: str) -> None:
     text = caption.read_text(encoding="utf-8").rstrip()
     # ig-caption: exactly one clear ask ("share this") so the post has a single job
     text = re.sub(r"\bSend this to\b", "Share this with", text)
+    sc = load_json(folder / "script.json", {}) or load_json(config.ROOT / "jobs" / folder_name / "script.json", {})
+    if sc.get("thumbnail_ml") and not re.search(r"[\u0D00-\u0D7F]", text.split("\n")[0]):   # bilingual: Malayalam hook first
+        text = f"{sc['thumbnail_ml']} 🔥\n{text}"
     extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
     if extra:
         text += " " + " ".join(extra)

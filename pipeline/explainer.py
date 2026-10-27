@@ -38,7 +38,7 @@ def _chunks(text: str, speech_secs: float, start: float = 0.08) -> list[dict]:
     chunks, cur = [], []
     for i, w in enumerate(words):
         cur.append(i)
-        if len(cur) >= 4 or re.search(r"[.,?!:;]$", w):
+        if len(cur) >= 3 or re.search(r"[.,?!:;]$", w):
             chunks.append(cur); cur = []
     if cur:
         chunks.append(cur)
@@ -66,6 +66,7 @@ def _css(accent: str) -> str:
 .sub {{ position:absolute; left:70px; right:70px; bottom:400px; text-align:center; font:700 56px/1.38 Noto, Inter; color:#fff;
        text-shadow:0 3px 14px rgba(0,0,0,.9); }}
 .sub span {{ transition:none; }}
+.kicker {{ display:block; margin-top:14px; font:800 26px Inter; letter-spacing:4px; color:rgba(255,255,255,.75); text-transform:uppercase; text-shadow:none; }}
 .sub span.on {{ color:{accent}; }}
 .pill {{ position:absolute; transform:translate(-50%,-50%) scale(0); background:rgba(12,12,16,.78); border:3px solid {accent};
         color:#fff; font:800 30px Inter; padding:10px 22px 8px; border-radius:40px; letter-spacing:1.5px; white-space:nowrap;
@@ -170,7 +171,8 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
         chunks = _chunks(scene.get("voiceover", ""), speech)
     else:
         head = scene.get("caption", "")
-        body = f'<div class="head" id="head">{_accent_html(head, [scene.get("highlight", "")])}</div><div class="sub" id="sub"></div>'
+        kick = f'<span class="kicker">{html.escape(scene["kicker"])}</span>' if scene.get("kicker") else ""
+        body = f'<div class="head" id="head">{_accent_html(head, [scene.get("highlight", "")])}{kick}</div><div class="sub" id="sub"></div>'
         chunks = _chunks(scene.get("voiceover", ""), speech)
     src = " · ".join((script.get("topic", {}).get("sources") or script.get("sources") or [])[:2])
     body += "".join(f'<div class="pill" id="pill{i}" style="left:{p["x"] * 100}%;top:{p["y"] * 100}%"><i></i>{html.escape(p["text"])}</div>'

@@ -43,6 +43,7 @@ which is loaded into every animation page.
 | `gopuram(g, x, y, s, col, lit)` | temple tower |
 | `door(g, x, y, w, h, open)` · `rays(g, x, y, spread, len, a)` | opening door onto light · light beams |
 | `grain(g, t, amount)` · `filmFrame(g, t, a)` | finish · film strip border |
+| `stage(g, t)` · `puppet(g, x, y, h, t, armUp)` | shadow-puppet theatre (lit screen, oil lamps) for myths and legends |
 
 Example (calm beach, then the sea rises):
 ```js
@@ -55,6 +56,15 @@ window.renderFrame = t => { const rise = ease.inOut(clamp((t / DURATION - 0.45) 
   SK.grain(g, t); };
 ```
 
-## 4. Sound
+## 4. What makes Malayalis share
+- **Tie the topic to something current**: a new Malayalam film (myths behind Bramayugam/Lokah-style stories),
+  the season (monsoon onset, Thulavarsham thunder), this week's news.
+- **Identity and nostalgia**: grandmother's stories, the Gulf, school days, festivals.
+- **Subtitles in tiny beats**: 1-3 words each ("പക്ഷേ" alone is fine).
+- **Scene kickers**: a small label under each title ("KERALA · 2,000 YEARS AGO", "LEGEND 1 · …").
+- **Caption**: bilingual (Malayalam line, then English), a personal question ("Which story did your grandmother
+  tell you?"), one share line, 4-5 hashtags incl. #UnexploredTruths.
+
+## 5. Sound
 The music bed adds a deep boom at frame 1 and a soft pulse; narration carries the story. Keep the
 hook spoken within the first second; no silent intro.

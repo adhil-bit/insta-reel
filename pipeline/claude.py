@@ -72,6 +72,14 @@ and technical terms that people say in English as they are. Captions, headline a
 image/visual fields stay in English.
 Scene 0 is the cover: the hook that makes people stop scrolling.
 
+WHAT MAKES MALAYALIS SHARE (use at least one): a link to something trending (a new Malayalam film, the season,
+this week's weather or news), Kerala identity or nostalgia (grandmother's stories, Gulf, Onam, school days),
+or a debate people have opinions on. Each scene may carry a small "kicker" label under its title
+(e.g. "KERALA · 2,000 YEARS AGO", "LEGEND 1 · KALAKATTU ILLAM").
+CAPTION: bilingual. First line a Malayalam hook + emoji, then the English line; then 2 short paragraphs,
+each Malayalam followed by English; end with a personal question ("Which story did your grandmother tell
+you?") and ONE share line ("Share this with that friend who loves history."); 4-5 hashtags incl. #UnexploredTruths.
+
 DESIGN PLAN (you are the video designer as well as the writer)
 - opening: decide how the reel opens.
   * "globe" = a 3D globe spins and zooms to the location with a pin, then the cover visual appears.
