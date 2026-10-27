@@ -106,7 +106,7 @@
     "status": "pending",
     "voice": "Zephyr",
     "created": "2026-10-25T17:37",
-    "priority": 5
+    "priority": 3
   },
   {
     "title": "Neelakurinji: the flower that blooms once in 12 years",
@@ -170,7 +170,7 @@
     "folder": "padmanabhaswamy-vault-b",
     "status": "pending",
     "voice": "Callirrhoe",
-    "priority": 4,
+    "priority": 1,
     "created": "2026-10-26T21:04",
     "post_on": "2099-01-01"
   },
@@ -189,7 +189,7 @@
     "folder": "damascus-steel",
     "status": "pending",
     "voice": "Zephyr",
-    "priority": 6,
+    "priority": 2,
     "created": "2026-10-27T08:42"
   },
   {
@@ -198,7 +198,7 @@
     "folder": "lake-nyos",
     "status": "pending",
     "voice": "Charon",
-    "priority": 7,
+    "priority": 4,
     "created": "2026-10-27T08:46"
   },
   {
@@ -207,7 +207,7 @@
     "folder": "mary-celeste",
     "status": "pending",
     "voice": "Despina",
-    "priority": 8,
+    "priority": 6,
     "created": "2026-10-27T08:48"
   },
   {
