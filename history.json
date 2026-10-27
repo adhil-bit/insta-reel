@@ -106,7 +106,7 @@
     "status": "pending",
     "voice": "Zephyr",
     "created": "2026-10-25T17:37",
-    "priority": 3
+    "priority": 5
   },
   {
     "title": "Neelakurinji: the flower that blooms once in 12 years",
@@ -170,7 +170,7 @@
     "folder": "padmanabhaswamy-vault-b",
     "status": "pending",
     "voice": "Callirrhoe",
-    "priority": 1,
+    "priority": 4,
     "created": "2026-10-26T21:04"
   },
   {
@@ -181,5 +181,41 @@
     "voice": "Puck",
     "created": "2026-10-26T21:05",
     "priority": 10
+  },
+  {
+    "title": "Damascus steel: the sword made from Indian steel",
+    "category": "HISTORY",
+    "folder": "damascus-steel",
+    "status": "pending",
+    "voice": "Zephyr",
+    "priority": 6,
+    "created": "2026-10-27T08:42"
+  },
+  {
+    "title": "Lake Nyos: the lake that breathed out death",
+    "category": "NATURE",
+    "folder": "lake-nyos",
+    "status": "pending",
+    "voice": "Charon",
+    "priority": 7,
+    "created": "2026-10-27T08:46"
+  },
+  {
+    "title": "Mary Celeste: the ship with no one on board",
+    "category": "MYSTERY",
+    "folder": "mary-celeste",
+    "status": "pending",
+    "voice": "Despina",
+    "priority": 8,
+    "created": "2026-10-27T08:48"
+  },
+  {
+    "title": "Kola Superdeep Borehole: the deepest hole ever dug",
+    "category": "SCIENCE",
+    "folder": "kola-borehole",
+    "status": "pending",
+    "voice": "Enceladus",
+    "priority": 9,
+    "created": "2026-10-27T08:51"
   }
 ]

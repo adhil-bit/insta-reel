@@ -1,28 +1,30 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 02:17 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 02:21 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 | 1 | Tue 27 Oct · 05:06 PM | Padmanabhaswamy Temple: the mystery of Vault B | Callirrhoe |
 | 2 | Tue 27 Oct · 09:06 PM | Jatinga: where birds fall at night | Zephyr |
-| 3 | Wed 28 Oct · 08:06 AM | Lonar: the meteor lake that turned pink | Puck |
-| 4 | Wed 28 Oct · 02:06 PM | Kallanai: a 2,000-year-old dam still in use | Puck |
-| 5 | Wed 28 Oct · 07:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
-| 6 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
+| 3 | Wed 28 Oct · 08:06 AM | Damascus steel: the sword made from Indian steel | Zephyr |
+| 4 | Wed 28 Oct · 02:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 5 | Wed 28 Oct · 07:06 PM | Lake Nyos: the lake that breathed out death | Charon |
+| 6 | Wed 28 Oct · 09:06 PM | Mary Celeste: the ship with no one on board | Despina |
+| 7 | Thu 29 Oct · 07:06 AM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
+| 8 | Thu 29 Oct · 01:06 PM | Kallanai: a 2,000-year-old dam still in use | Puck |
+| 9 | Thu 29 Oct · 05:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 10 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
 
-- damascus-steel
 - gobekli-tepe
 - indus-script
-- kola-borehole
 - kottayam-literacy
-- lake-nyos
 - malayalam-palindrome
-- mary-celeste
 - roopkund-skeleton-lake
 - silent-valley
+- theyyam-god-for-a-night
+- yakshi-pala-tree
 
 ## Recently posted
 
