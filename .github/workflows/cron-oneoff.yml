@@ -25,4 +25,5 @@ jobs:
           set -o pipefail
           python3 scripts/cron_oneoff.py "${{ github.event.inputs.reel }}" "${{ github.event.inputs.when_ist }}" 2>&1 | tee once.txt
       - if: ${{ always() }}
-        run: bash scripts/notify.sh "$(printf '🗓️ Scheduled (%s): %s at %s IST' "${{ job.status }}" "${{ github.event.inputs.reel }}" "${{ github.event.inputs.when_ist }}")" || true
+        run: |
+          bash scripts/notify.sh "$(printf '🗓️ Scheduled (%s) %s at %s IST' "${{ job.status }}" "${{ github.event.inputs.reel }}" "${{ github.event.inputs.when_ist }}")" || true
