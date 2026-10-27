@@ -50,6 +50,8 @@ Names only, never paste values into files or chats you don't control.
 | `TELEGRAM_BOT_TOKEN` | Telegram alerts | ✅ set |
 | `TELEGRAM_CHAT_ID` | The group (-5581267888) | ✅ set |
 | `ELEVENLABS_API_KEY`, `ELEVENLABS_VOICE_ID` | Old voices | set, unused |
+| `CRONJOB_API_KEY` | Lets the sync workflow manage cron-job.org jobs | ✅ set |
+| `CRON_TRIGGER_TOKEN` | The token cron-job.org uses to call GitHub | ✅ set |
 | `ANTHROPIC_API_KEY` | Only for automatic batches without chat (`auto-batch.yml`) | not set (optional, paid) |
 | `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN` | YouTube Shorts | not set (paused) |
 
@@ -119,6 +121,10 @@ Every cron-job.org job: **POST** `https://api.github.com/repos/adhil-bit/insta-r
 headers `Authorization: Bearer <cron-trigger token>` and `Accept: application/vnd.github+json`,
 body `{"ref":"main","inputs":{"reel":"","action":"auto"}}`, time zone UTC. Test run must return **204**.
 
+**These jobs are managed automatically:** Actions → **Sync cron-job.org schedule** (secrets `CRONJOB_API_KEY` and
+`CRON_TRIGGER_TOKEN`) creates/updates them from `POST_SLOTS` and disables any other `insta-reel` job. Run it after every
+change to posting times (run it with *apply* off first to preview).
+
 | Setting | Value |
 |---|---|
 | Voices (Gemini, alternate male/female) | **Charon, Enceladus, Puck** (male) · **Despina, Callirrhoe, Zephyr** (female). Midhun/Sobhana are **not** used. A reel can force one with `"voice_lock"`. |
@@ -164,8 +170,8 @@ rebuilds it (or run `render-one.yml` with the folder name to do it now).
 Actions → **Post reel** → Run workflow → action `post` (optionally give a folder name).
 
 ### Change posting times
-Follow **OPERATIONS.md**: edit `POST_SLOTS` in config.py, run `python main.py cron-plan`, then update the
-cron-job.org jobs to match. One-off change for a single date: `SLOT_OVERRIDES` in config.py (and make sure a
+Edit `POST_SLOTS` in config.py, push, then run Actions → **Sync cron-job.org schedule** (apply on).
+That's all: cron-job.org is updated automatically (see OPERATIONS.md). One-off change for a single date: `SLOT_OVERRIDES` in config.py (and make sure a
 cron-job.org run happens at that time).
 
 ### Try new voices
