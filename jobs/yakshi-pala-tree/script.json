@@ -1,0 +1,90 @@
+{
+  "topic": {
+    "title": "Yakshi: why you never stop under a pala tree at night",
+    "category": "MYSTERY",
+    "angle": "In Kerala folklore the Yakshi is a female spirit in a white sari with long hair",
+    "key_facts": [
+      "In Kerala folklore the Yakshi is a female spirit in a white sari with long hair",
+      "She is associated with the pala tree (Alstonia scholaris), whose strongly scented flowers bloom in the evening",
+      "In the stories she asks passers-by for chunnambu (lime for betel)",
+      "Kalliyankattu Neeli is the most famous Yakshi legend",
+      "Legend says the priest Kadamattathu Kathanar subdued her with a nail"
+    ],
+    "sources": [
+      "Aithihyamala",
+      "Aithihyamala (Kottarathil Sankunni); Kerala folklore studies",
+      "Aithihyamala; botanical references on Alstonia scholaris",
+      "Kerala folklore"
+    ]
+  },
+  "category": "MYSTERY",
+  "priority": 8,
+  "template": "explainer",
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "headline": [
+    "DON'T STOP",
+    "UNDER THE PALA"
+  ],
+  "accent_words": [
+    "PALA"
+  ],
+  "thumbnail_ml": "ചുണ്ണാമ്പ് ചോദിക്കുന്ന യക്ഷി!",
+  "thumbnail_accent": [
+    "യക്ഷി!"
+  ],
+  "hook_voiceover": "രാത്രി. ഒരു പാലമരം. പൂവിന്റെ മണം. അവിടെ നിൽക്കരുതെന്ന് പറഞ്ഞത് എന്തിനാണെന്നറിയാമോ?",
+  "cover_visual": "Moonlit path, a huge pala tree with glowing white flower clusters; a faint white figure appears behind the trunk",
+  "scenes": [
+    {
+      "voiceover": "യക്ഷി. നമ്മുടെ നാട്ടിലെ ഏറ്റവും പേടിപ്പിക്കുന്ന കഥ. വെള്ള സാരി, നീണ്ട മുടി.",
+      "caption": "KERALA'S OWN GHOST",
+      "highlight": "GHOST",
+      "labels": [],
+      "kicker": "FOLKLORE",
+      "visual": "A ghostly white figure with flowing hair on the moonlit path"
+    },
+    {
+      "voiceover": "അവളുടെ താവളം പാലമരം എന്നാണ് വിശ്വാസം. രാത്രി പൂക്കുന്ന പാലപ്പൂവിന്റെ മണം അടയാളം.",
+      "caption": "THE PALA TREE",
+      "highlight": "PALA",
+      "labels": [],
+      "kicker": "ITS FLOWERS BLOOM AT NIGHT",
+      "visual": "Close-up of the canopy, flowers opening, scent particles rising"
+    },
+    {
+      "voiceover": "ഏറ്റവും പേരുകേട്ടവൾ കള്ളിയങ്കാട്ട് നീലി. ഐതിഹ്യമാലയിലെ കഥ.",
+      "caption": "KALLIYANKATTU NEELI",
+      "highlight": "NEELI",
+      "labels": [],
+      "kicker": "FROM AITHIHYAMALA",
+      "visual": "Shadow-puppet stage telling the legend"
+    },
+    {
+      "voiceover": "കടമറ്റത്ത് കത്തനാർ അവളെ ഒരു ആണി കൊണ്ട് തളച്ചെന്നാണ് കഥ.",
+      "caption": "TAMED WITH A NAIL",
+      "highlight": "NAIL",
+      "labels": [],
+      "kicker": "THE KATHANAR LEGEND",
+      "visual": "On the stage, a priest figure raises a glowing nail"
+    },
+    {
+      "voiceover": "ഇനി രാത്രി പാലപ്പൂ മണക്കുമ്പോൾ, ആരെങ്കിലും ചുണ്ണാമ്പ് ചോദിച്ചാൽ... തിരിഞ്ഞു നോക്കരുത്!",
+      "caption": "DON'T LOOK BACK",
+      "highlight": "BACK",
+      "labels": [],
+      "kicker": "",
+      "visual": "A walker on the night road; behind, a faint white figure"
+    }
+  ],
+  "instagram_caption": "രാത്രി പാലമരത്തിനടിയിൽ നിൽക്കരുതെന്ന് പറയുന്നത് എന്തിനാണ്? 👻\nWhy were you told never to stop under a pala tree at night?\n\nവെള്ള സാരി, നീണ്ട മുടി, ചുണ്ണാമ്പ് ചോദിക്കുന്ന ശബ്ദം. ഐതിഹ്യമാലയിലെ കള്ളിയങ്കാട്ട് നീലിയുടെ കഥ.\nA white sari, long hair, a voice asking for lime: the legend of Kalliyankattu Neeli from Aithihyamala.\n\nനിങ്ങളുടെ മുത്തശ്ശി പറഞ്ഞ യക്ഷിക്കഥ ഏതാണ്? കമന്റിൽ പറയൂ.\nWhich Yakshi story did your grandmother tell you? Tell us below.\n\nShare this with that friend who still won't walk past a pala tree at night. 📩\n\n#Yakshi #KeralaMyths #Aithihyamala #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Yakshi description; pala tree; lime -> Aithihyamala/folklore",
+    "Kalliyankattu Neeli; Kadamattathu Kathanar -> Aithihyamala",
+    "Told as legend ('it is said'), not fact",
+    "Planned without live web search: double-check before posting"
+  ],
+  "plan_locked": true
+}

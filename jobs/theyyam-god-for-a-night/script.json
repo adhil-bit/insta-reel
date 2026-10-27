@@ -1,0 +1,91 @@
+{
+  "topic": {
+    "title": "Theyyam: the man who becomes a god for one night",
+    "category": "CULTURE",
+    "angle": "Theyyam is a ritual art form of North Malabar (Kannur and Kasaragod)",
+    "key_facts": [
+      "Theyyam is a ritual art form of North Malabar (Kannur and Kasaragod)",
+      "The Theyyam season runs roughly from Thulam (Oct–Nov) to Edavam (May–Jun)",
+      "There are said to be around 400 forms of Theyyam",
+      "Many performers come from communities historically pushed to the margins, yet during the ritual devotees bow to them as the deity",
+      "Make-up and costume take hours; some Theyyams involve fire"
+    ],
+    "sources": [
+      "Kerala Folklore Academy",
+      "Kerala Folklore Academy; academic studies of Theyyam",
+      "Kerala Tourism",
+      "Kerala Tourism; Kerala Folklore Academy"
+    ]
+  },
+  "category": "CULTURE",
+  "priority": 5,
+  "template": "explainer",
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "headline": [
+    "THE GOD",
+    "OF ONE NIGHT"
+  ],
+  "accent_words": [
+    "ONE"
+  ],
+  "thumbnail_ml": "ഒരു രാത്രി ദൈവമാകുന്ന മനുഷ്യൻ!",
+  "thumbnail_accent": [
+    "ദൈവമാകുന്ന"
+  ],
+  "hook_voiceover": "തെയ്യരാത്രി. ചെണ്ടമേളം. നാട് മുഴുവൻ ഒരാളുടെ മുന്നിൽ തൊഴുന്നു. ആരാണയാൾ? നിങ്ങൾ ഊഹിക്കില്ല!",
+  "cover_visual": "Night village courtyard with torches; a silhouette stands still, then a huge red-gold circular headdress rises behind him",
+  "scenes": [
+    {
+      "voiceover": "വടക്കൻ മലബാറിൽ തെയ്യക്കാലം തുടങ്ങിക്കഴിഞ്ഞു. തുലാം മുതൽ ഇടവം വരെ.",
+      "caption": "THEYYAM SEASON IS HERE",
+      "highlight": "SEASON",
+      "labels": [],
+      "kicker": "NORTH MALABAR · THULAM TO EDAVAM",
+      "visual": "Malabar hills at dusk, drummers' silhouettes, a calendar leaf turning to Thulam"
+    },
+    {
+      "voiceover": "നാനൂറോളം തെയ്യങ്ങൾ. ഓരോന്നിനും സ്വന്തം കഥ, സ്വന്തം വേഷം.",
+      "caption": "AROUND 400 FORMS",
+      "highlight": "400",
+      "labels": [],
+      "kicker": "EACH WITH ITS OWN STORY",
+      "visual": "A grid of headdresses lighting up one by one"
+    },
+    {
+      "voiceover": "മണിക്കൂറുകൾ നീളുന്ന ചമയം. ചുവപ്പും മഞ്ഞയും നിറങ്ങൾ, കൂറ്റൻ മുടി.",
+      "caption": "HOURS OF MAKEUP",
+      "highlight": "HOURS",
+      "labels": [],
+      "kicker": "FACE PAINT · HEADDRESS",
+      "visual": "A face in profile being painted stroke by stroke"
+    },
+    {
+      "voiceover": "പല തെയ്യക്കാരും സമൂഹം അകറ്റി നിർത്തിയ സമുദായങ്ങളിൽ നിന്നുള്ളവർ. പക്ഷേ ആ രാത്രി, എല്ലാവരും അവരെ തൊഴുന്നു.",
+      "caption": "THE WORLD TURNS AROUND",
+      "highlight": "AROUND",
+      "labels": [],
+      "kicker": "ONE NIGHT, EVERYONE BOWS",
+      "visual": "A crowd bowing towards the glowing Theyyam figure"
+    },
+    {
+      "voiceover": "പുലരുമ്പോൾ ചായം കഴുകും. അവൻ വീണ്ടും സാധാരണക്കാരൻ. അടുത്ത തെയ്യരാത്രി വരെ.",
+      "caption": "UNTIL NEXT NIGHT",
+      "highlight": "NIGHT",
+      "labels": [],
+      "kicker": "DAWN",
+      "visual": "Dawn: the headdress is set down; a plain man walks home"
+    }
+  ],
+  "instagram_caption": "തെയ്യരാത്രിയിൽ നാട് മുഴുവൻ ആരെയാണ് തൊഴുന്നത്? 🔥\nOn Theyyam night, who does the whole village bow to?\n\nവടക്കൻ മലബാറിൽ തുലാം മുതൽ ഇടവം വരെ തെയ്യക്കാലം. നാനൂറോളം തെയ്യങ്ങൾ, മണിക്കൂറുകൾ നീളുന്ന ചമയം.\nIn North Malabar, Theyyam season runs from Thulam to Edavam: around 400 forms, hours of make-up.\n\nഒരു രാത്രി ദൈവം, പുലർച്ചെ വീണ്ടും സാധാരണക്കാരൻ.\nA god for one night, an ordinary man again by dawn.\n\nനിങ്ങൾ നേരിട്ട് കണ്ട ആദ്യ തെയ്യം ഏതാണ്? കമന്റിൽ പറയൂ.\nWhich was the first Theyyam you saw in person? Tell us below.\n\nShare this with that friend from Kannur. 📩\n\n#Theyyam #Kannur #Kerala #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "North Malabar ritual art -> Kerala Tourism",
+    "Season Thulam–Edavam -> Kerala Tourism",
+    "~400 forms -> Kerala Folklore Academy",
+    "Performers' communities and the inversion -> folklore studies",
+    "Planned without live web search: double-check before posting"
+  ],
+  "plan_locked": true
+}
