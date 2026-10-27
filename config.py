@@ -137,6 +137,6 @@ POST_SLOTS = {   # 4 posts a day (IST, test week from 27 Oct). KEEP IN SYNC WITH
 # One-off changes to a specific day's slots (IST), e.g. moving tonight's post earlier
 SLOT_OVERRIDES = {
     "2026-10-26": ["04:54", "09:06", "18:06"],   # Thalassery cake at the 6:07 PM check
-    "2026-10-27": ["07:06", "13:06", "21:06"],   # 5:07 PM slot freed for the Pathinettam Koottam series (Part 1 at 5:10, Part 2 at 7:30)
+    "2026-10-27": ["07:06", "13:06", "17:06", "21:06"],   # regular day; series Part 1 added at 7:30 PM (one-off)
 }
 MIN_GAP_MINUTES = 40   # never post two reels closer together than this
