@@ -60,7 +60,7 @@ def _css(accent: str) -> str:
 .ov {{ position:absolute; inset:0; z-index:50; pointer-events:none; }}
 .vig {{ position:absolute; inset:0; background:
    linear-gradient(180deg, rgba(0,0,0,.62) 0%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 58%, rgba(0,0,0,.72) 86%, rgba(0,0,0,.85) 100%); }}
-.head {{ position:absolute; top:210px; left:56px; right:56px; text-align:center; font:800 88px/1.08 Cinzel, Archivo; color:#fff;
+.head {{ position:absolute; top:210px; left:56px; right:56px; text-align:center; font:800 88px/1.08 Cinzel, Baloo, Noto, Archivo; color:#fff;
         text-transform:uppercase; letter-spacing:1px; text-shadow:0 6px 28px rgba(0,0,0,.7); will-change:transform,opacity; }}
 .head b {{ font-weight:400; color:{accent}; }}
 .sub {{ position:absolute; left:70px; right:70px; bottom:400px; text-align:center; font:700 56px/1.38 Noto, Inter; color:#fff;
@@ -79,7 +79,7 @@ def _css(accent: str) -> str:
 .cover {{ position:absolute; left:60px; right:60px; bottom:420px; text-align:center; }}
 .cover .kick {{ font:800 112px/1.18 Baloo, Noto; color:#fff; margin-bottom:26px; text-shadow:0 6px 30px rgba(0,0,0,.85); }}
 .cover .kick b {{ font-weight:800; color:{accent}; }}
-.cover .big {{ font:800 44px/1.2 Cinzel, Archivo; color:#f2ece0; text-transform:uppercase; letter-spacing:3px; text-shadow:0 4px 18px rgba(0,0,0,.8); }}
+.cover .big {{ font:800 44px/1.2 Cinzel, Baloo, Noto, Archivo; color:#f2ece0; text-transform:uppercase; letter-spacing:3px; text-shadow:0 4px 18px rgba(0,0,0,.8); }}
 .cover .big b {{ font-weight:400; color:{accent}; }}
 .bar {{ width:120px; height:10px; background:{accent}; border-radius:5px; margin:0 auto 26px; }}
 """
