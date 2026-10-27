@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 05:20 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 05:24 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -17,14 +17,13 @@ _Updated Tue 27 Oct, 05:20 PM IST. Times are approximate: each reel posts within
 | 11 | Fri 30 Oct · 12:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 | 12 | Fri 30 Oct · 04:06 PM | The Indus script nobody can read | Charon |
 | 13 | Fri 30 Oct · 09:06 PM | Kottayam: India's first fully literate town | Despina |
-| 14 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
+| 14 | Sat 31 Oct · 10:06 AM | Roopkund: the lake of skeletons | Zephyr |
+| 15 | Sat 31 Oct · 02:06 PM | Silent Valley: the forest Kerala saved | Charon |
+| 16 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 
 ## Being rendered (joins the queue when done)
 
-- itty-cora-5-europe
 - malayalam-palindrome
-- roopkund-skeleton-lake
-- silent-valley
 
 ## Recently posted
 
