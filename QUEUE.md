@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 05:13 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 05:14 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -21,7 +21,6 @@ _Updated Tue 27 Oct, 05:13 PM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- itty-cora-2-madhava
 - itty-cora-5-europe
 - malayalam-palindrome
 - roopkund-skeleton-lake
