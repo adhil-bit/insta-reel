@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 27 Oct, 05:49 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 27 Oct, 07:32 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -29,6 +29,7 @@ _Updated Tue 27 Oct, 05:49 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5 | 2026-10-27T14:02 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5 | 2026-10-27T11:48 |
 | The real KGF: one of the world's deepest gold mines | 2026-10-27T02:11 |
 | India's first Christmas cake was baked in Thalassery | 2026-10-26T13:09 |
@@ -38,4 +39,3 @@ _Updated Tue 27 Oct, 05:49 PM IST. Times are approximate: each reel posts within
 | Dhanushkodi: the town the sea took | 2026-10-25T13:08 |
 | Chandrayaan-3: first to the Moon's south pole | 2026-10-25T06:33 |
 | Edakkal Caves: Stone Age art in Wayanad | 2026-10-25T04:59 |
-| Munnar once had a train | 2026-10-24T16:56 |
