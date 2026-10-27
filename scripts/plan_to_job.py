@@ -16,7 +16,7 @@ script = {
     "thumbnail_ml": cover["thumbnail_ml"], "thumbnail_accent": cover.get("thumbnail_accent", []),
     "hook_voiceover": cover["hook_voiceover_ml"], "cover_visual": cover["visual"],
     "scenes": [{"voiceover": s["voiceover_ml"], "caption": s["headline"], "highlight": s.get("highlight", ""),
-                "labels": s.get("labels", []), "visual": s["visual"]} for s in plan["scenes"]],
+                "labels": s.get("labels", []), "kicker": s.get("kicker", ""), "visual": s["visual"]} for s in plan["scenes"]],
     "instagram_caption": plan["instagram_caption"], "fact_check": plan["fact_check"],
     "plan_locked": True,
 }

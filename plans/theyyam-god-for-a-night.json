@@ -1,0 +1,110 @@
+{
+  "slug": "theyyam-god-for-a-night",
+  "title": "Theyyam: the man who becomes a god for one night",
+  "category": "CULTURE",
+  "priority": 12,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "Theyyam is a ritual art form of North Malabar (Kannur and Kasaragod)",
+      "source": "Kerala Tourism; Kerala Folklore Academy"
+    },
+    {
+      "claim": "The Theyyam season runs roughly from Thulam (Oct–Nov) to Edavam (May–Jun)",
+      "source": "Kerala Tourism"
+    },
+    {
+      "claim": "There are said to be around 400 forms of Theyyam",
+      "source": "Kerala Folklore Academy"
+    },
+    {
+      "claim": "Many performers come from communities historically pushed to the margins, yet during the ritual devotees bow to them as the deity",
+      "source": "Kerala Folklore Academy; academic studies of Theyyam"
+    },
+    {
+      "claim": "Make-up and costume take hours; some Theyyams involve fire",
+      "source": "Kerala Tourism"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#FF4D5E",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "You'd never guess who the village bows to on Theyyam night.",
+  "hook_score": 77.8,
+  "cover": {
+    "headline": [
+      "THE GOD",
+      "OF ONE NIGHT"
+    ],
+    "accent_words": [
+      "ONE"
+    ],
+    "thumbnail_ml": "ഒരു രാത്രി ദൈവമാകുന്ന മനുഷ്യൻ!",
+    "thumbnail_accent": [
+      "ദൈവമാകുന്ന"
+    ],
+    "hook_voiceover_ml": "തെയ്യരാത്രി. ചെണ്ടമേളം. നാട് മുഴുവൻ ഒരാളുടെ മുന്നിൽ തൊഴുന്നു. ആരാണയാൾ? നിങ്ങൾ ഊഹിക്കില്ല!",
+    "visual": "Night village courtyard with torches; a silhouette stands still, then a huge red-gold circular headdress rises behind him",
+    "build_cmd": "SK.sky(g,'night',0.6); dark ground from y0.62. Two SK.house silhouettes left/right at y0.62 with lit windows. Six torches (thin poles + flickering flame ellipses + glow) in an arc behind the centre. Centre: SK.person at x0.5,y0.66,h380 'stand'. From 40% a giant circular headdress (concentric rings: red #c0302a, gold #f2b632, white dots on the rim, 24 radiating spokes) rises from behind the figure, scale 0→1 by 75%, glowing. Chenda beat: a soft accent ring pulses from the centre every 0.5 s."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "വടക്കൻ മലബാറിൽ തെയ്യക്കാലം തുടങ്ങിക്കഴിഞ്ഞു. തുലാം മുതൽ ഇടവം വരെ.",
+      "headline": "THEYYAM SEASON IS HERE",
+      "highlight": "SEASON",
+      "kicker": "NORTH MALABAR · THULAM TO EDAVAM",
+      "labels": [],
+      "visual": "Malabar hills at dusk, drummers' silhouettes, a calendar leaf turning to Thulam",
+      "build_cmd": "SK.sky(g,'dusk',0.6); layered hill silhouettes; four drummer SK.person silhouettes at y0.62 with round drums (circles) that bounce on the beat (t*4). At 50% a palm-leaf calendar card slides in (cream rect) and its top leaf flips to a red-highlighted card. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "നാനൂറോളം തെയ്യങ്ങൾ. ഓരോന്നിനും സ്വന്തം കഥ, സ്വന്തം വേഷം.",
+      "headline": "AROUND 400 FORMS",
+      "highlight": "400",
+      "kicker": "EACH WITH ITS OWN STORY",
+      "labels": [],
+      "visual": "A grid of headdresses lighting up one by one",
+      "build_cmd": "Dark background. A 4x3 grid of small circular headdresses (each a different colour pair: red/gold, black/white, green/gold, orange/black) pops in one by one over 0–70%; at 75% they all pulse once and a counter ring fills. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "മണിക്കൂറുകൾ നീളുന്ന ചമയം. ചുവപ്പും മഞ്ഞയും നിറങ്ങൾ, കൂറ്റൻ മുടി.",
+      "headline": "HOURS OF MAKEUP",
+      "highlight": "HOURS",
+      "kicker": "FACE PAINT · HEADDRESS",
+      "labels": [],
+      "visual": "A face in profile being painted stroke by stroke",
+      "build_cmd": "Large oval face (x0.5,y0.45, 420x560) in warm skin tone with closed eyes. Paint strokes draw on progressively: red base fills from 10–40%, then yellow curves and white dots trace along cheeks 40–80% (stroke-dash animation). A brush silhouette follows the active stroke. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "പല തെയ്യക്കാരും സമൂഹം അകറ്റി നിർത്തിയ സമുദായങ്ങളിൽ നിന്നുള്ളവർ. പക്ഷേ ആ രാത്രി, എല്ലാവരും അവരെ തൊഴുന്നു.",
+      "headline": "THE WORLD TURNS AROUND",
+      "highlight": "AROUND",
+      "kicker": "ONE NIGHT, EVERYONE BOWS",
+      "labels": [],
+      "visual": "A crowd bowing towards the glowing Theyyam figure",
+      "build_cmd": "SK.sky(g,'night'). Centre-right: tall figure with the circular headdress (reuse cover design, smaller) glowing. Left: SK.crowd of 7 silhouettes that bend forward (rotate each 0→0.35 rad around the feet, staggered) between 30% and 70%. Torchlight flicker. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "പുലരുമ്പോൾ ചായം കഴുകും. അവൻ വീണ്ടും സാധാരണക്കാരൻ. അടുത്ത തെയ്യരാത്രി വരെ.",
+      "headline": "UNTIL NEXT NIGHT",
+      "highlight": "NIGHT",
+      "kicker": "DAWN",
+      "labels": [],
+      "visual": "Dawn: the headdress is set down; a plain man walks home",
+      "build_cmd": "SK.sky(g,'dawn',0.6); SK.sun rising at x0.5. The headdress rests on the ground at x0.3 (dimmed). A plain SK.person walks from x0.45 to x0.8 (legs swing). Torches burn out (flames shrink to 0) by 60%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "തെയ്യരാത്രിയിൽ നാട് മുഴുവൻ ആരെയാണ് തൊഴുന്നത്? 🔥\nOn Theyyam night, who does the whole village bow to?\n\nവടക്കൻ മലബാറിൽ തുലാം മുതൽ ഇടവം വരെ തെയ്യക്കാലം. നാനൂറോളം തെയ്യങ്ങൾ, മണിക്കൂറുകൾ നീളുന്ന ചമയം.\nIn North Malabar, Theyyam season runs from Thulam to Edavam: around 400 forms, hours of make-up.\n\nഒരു രാത്രി ദൈവം, പുലർച്ചെ വീണ്ടും സാധാരണക്കാരൻ.\nA god for one night, an ordinary man again by dawn.\n\nനിങ്ങൾ നേരിട്ട് കണ്ട ആദ്യ തെയ്യം ഏതാണ്? കമന്റിൽ പറയൂ.\nWhich was the first Theyyam you saw in person? Tell us below.\n\nShare this with that friend from Kannur. 📩\n\n#Theyyam #Kannur #Kerala #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "North Malabar ritual art -> Kerala Tourism",
+    "Season Thulam–Edavam -> Kerala Tourism",
+    "~400 forms -> Kerala Folklore Academy",
+    "Performers' communities and the inversion -> folklore studies",
+    "Planned without live web search: double-check before posting"
+  ]
+}

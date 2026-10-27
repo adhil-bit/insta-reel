@@ -1,0 +1,106 @@
+{
+  "slug": "petrichor-first-rain",
+  "title": "Petrichor: the smell of first rain isn't the soil",
+  "category": "SCIENCE",
+  "priority": 15,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "The smell of rain on dry earth was named 'petrichor' in 1964 by Australian scientists Isabel Bear and Richard Thomas",
+      "source": "Nature (1964); CSIRO"
+    },
+    {
+      "claim": "A key molecule in the smell is geosmin, produced by soil bacteria such as Streptomyces",
+      "source": "Britannica; Royal Society of Chemistry"
+    },
+    {
+      "claim": "Raindrops hitting soil release tiny aerosols that carry the scent into the air",
+      "source": "MIT News (2015), Nature Communications"
+    },
+    {
+      "claim": "Humans can smell geosmin at extremely low concentrations (parts per trillion)",
+      "source": "Royal Society of Chemistry; scientific reviews"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#34D399",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "You love the smell of first rain. Soil doesn't make it. Bacteria do.",
+  "hook_score": 66.0,
+  "cover": {
+    "headline": [
+      "THE SMELL",
+      "OF FIRST RAIN"
+    ],
+    "accent_words": [
+      "RAIN"
+    ],
+    "thumbnail_ml": "പുതുമഴയുടെ മണം മണ്ണിന്റേതല്ല!",
+    "thumbnail_accent": [
+      "മണ്ണിന്റേതല്ല!"
+    ],
+    "hook_voiceover_ml": "പുതുമഴ. നനഞ്ഞ മണ്ണ്. ആ മണം. പക്ഷേ ആ മണം ഉണ്ടാക്കുന്നത് മണ്ണല്ല. ബാക്ടീരിയയാണ്!",
+    "visual": "A Kerala courtyard at dusk; first big drops hit the red earth and scent wisps rise",
+    "build_cmd": "SK.sky(g,'dusk',0.55) with dark clouds (grey ellipses drifting). Red laterite courtyard ground from y0.6 (#9a4a2a→#6a2e1a), a SK.house at x0.75 with lit windows, SK.palm at x0.15. Big raindrops (white elongated drops) fall one by one; each impact makes a dark wet spot and a small splash; from each spot a green-tinted scent wisp (thin wavy translucent line) rises. Rate of drops increases over the scene."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "ഈ മണത്തിന് ഒരു പേരുണ്ട്. പെട്രിക്കോർ. 1964-ൽ ശാസ്ത്രജ്ഞർ ഇട്ട പേര്.",
+      "headline": "IT HAS A NAME",
+      "highlight": "NAME",
+      "kicker": "PETRICHOR · 1964",
+      "labels": [],
+      "visual": "An old journal page with the word appearing letter by letter",
+      "build_cmd": "Cream journal page (x0.5,y0.45) with faint printed lines; a quill draws a long underline at 30%; rain streaks on a window frame behind. A green glow pulses at 70%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "മണ്ണിലെ കുഞ്ഞൻ ബാക്ടീരിയകൾ ജിയോസ്മിൻ എന്നൊരു രാസവസ്തു ഉണ്ടാക്കുന്നു.",
+      "headline": "BACTERIA MAKE IT",
+      "highlight": "BACTERIA",
+      "kicker": "GEOSMIN",
+      "labels": [],
+      "visual": "A microscope view of soil: filament-like bacteria release glowing molecules",
+      "build_cmd": "Microscope circle (radius 380, x0.5,y0.45) with brown soil grains; 8 branching filament chains (green lines with beads) grow outwards 0–60%; from their tips small glowing hexagon molecules pop out and drift 50–100%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "മഴത്തുള്ളി മണ്ണിൽ വീഴുമ്പോൾ, ആ മണം കുഞ്ഞു കുമിളകളായി വായുവിലേക്ക് ഉയരുന്നു.",
+      "headline": "RAINDROPS LAUNCH IT",
+      "highlight": "LAUNCH",
+      "kicker": "TINY AEROSOLS",
+      "labels": [],
+      "visual": "Slow-motion raindrop hits soil; tiny bubbles burst and fling aerosols upward",
+      "build_cmd": "Huge slow-motion drop falls to a soil surface at y0.6 (0–35%), flattens on impact; 20 tiny bubbles rise inside it and burst at the top (45–80%), each burst flinging 3 glowing dots upward. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "നമ്മുടെ മൂക്കിന് ഇത് തീരെ ചെറിയ അളവിൽ പോലും തിരിച്ചറിയാൻ കഴിയും.",
+      "headline": "YOUR NOSE IS A DETECTOR",
+      "highlight": "DETECTOR",
+      "kicker": "PARTS PER TRILLION",
+      "labels": [],
+      "visual": "A face in profile breathing in glowing scent particles; a meter needle jumps",
+      "build_cmd": "Large face profile silhouette (left, x0.3) facing right; stream of tiny glowing dots flows into the nose 20–70%; a round gauge (right, x0.72) with a needle that swings from 0 to max at 60%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "അടുത്ത പുതുമഴയിൽ ആ മണം വരുമ്പോൾ ഓർക്കുക: അത് മണ്ണിനുള്ളിലെ ജീവന്റെ മണമാണ്.",
+      "headline": "THE SMELL OF LIFE",
+      "highlight": "LIFE",
+      "kicker": "",
+      "labels": [],
+      "visual": "A child at a window watching the rain, green wisps drifting in",
+      "build_cmd": "Window frame (wood) with rain outside; SK.person child silhouette at the sill (x0.5), green scent wisps drift in through the window; warm lamp light inside (SK.lamp at x0.8). Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "പുതുമഴയുടെ ആ മണം മണ്ണിന്റേതല്ല! 🌧️\nThat smell of the first rain doesn't come from the soil!\n\nഅതിന് ഒരു പേരുണ്ട്: പെട്രിക്കോർ. മണ്ണിലെ ബാക്ടീരിയകൾ ഉണ്ടാക്കുന്ന ജിയോസ്മിൻ ആണ് ആ മണത്തിന് പിന്നിൽ.\nIt's called petrichor, and the scent comes from geosmin, made by soil bacteria.\n\nപുതുമഴ പെയ്യുമ്പോൾ നിങ്ങൾക്ക് ഓർമ്മ വരുന്നത് എന്താണ്?\nWhat do you remember when the first rain falls?\n\nShare this with a friend who loves the monsoon. 📩\n\n#Petrichor #Monsoon #Science #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Petrichor named 1964, Bear & Thomas -> Nature 1964",
+    "Geosmin from Streptomyces -> Britannica/RSC",
+    "Aerosols from raindrops -> MIT 2015",
+    "Detection at parts per trillion -> RSC",
+    "Planned without live web search: double-check before posting"
+  ]
+}

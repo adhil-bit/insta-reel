@@ -1,0 +1,106 @@
+{
+  "slug": "kalari-shaolin-legend",
+  "title": "Kalaripayattu and the legend of Shaolin",
+  "category": "HISTORY",
+  "priority": 16,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "Kalaripayattu is a martial art from Kerala, often described as one of the oldest surviving martial arts",
+      "source": "Britannica: Kalaripayattu; Kerala Tourism"
+    },
+    {
+      "claim": "Kalari includes animal-inspired stances and weapons such as the urumi, a flexible sword",
+      "source": "Kerala Tourism"
+    },
+    {
+      "claim": "Bodhidharma was a Buddhist monk traditionally said to have come from South India and travelled to China around the 5th–6th century",
+      "source": "Britannica: Bodhidharma"
+    },
+    {
+      "claim": "A popular legend credits him with teaching the Shaolin monks, but historians dispute this link",
+      "source": "Britannica: Bodhidharma; academic histories of Shaolin"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#FACC15",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "Kung fu. Shaolin. China. But one legend says it all started in Kerala.",
+  "hook_score": 56.2,
+  "cover": {
+    "headline": [
+      "DID KUNG FU",
+      "START HERE?"
+    ],
+    "accent_words": [
+      "HERE?"
+    ],
+    "thumbnail_ml": "കുങ്ഫുവിന്റെ വേര് നമ്മുടെ നാട്ടിലോ?",
+    "thumbnail_accent": [
+      "നമ്മുടെ"
+    ],
+    "hook_voiceover_ml": "കുങ്ഫു. ഷാവോലിൻ. ചൈന. പക്ഷേ ഒരു കഥ പറയുന്നു, ഇതെല്ലാം തുടങ്ങിയത് നമ്മുടെ നാട്ടിൽ നിന്നാണെന്ന്!",
+    "visual": "Two silhouettes in matching stances: a Kalari fighter on red earth and a Shaolin monk, mirrored",
+    "build_cmd": "Split frame: left half warm red-earth kalari (gradient #6a2a1a→#2a0e08, oil lamps SK.lamp at the edges), right half misty mountain dusk (SK.sky 'dusk' with pagoda roof silhouette). Two fighter silhouettes (SK.person h360) mirror each other: from 20% both raise one arm and bend one knee (animate limbs with lines). At 60% a thin glowing line connects them and a pulsing '?' made of strokes appears between."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "കളരിപ്പയറ്റ്. ലോകത്തിലെ ഏറ്റവും പഴക്കമുള്ള ആയോധനകലകളിൽ ഒന്ന്.",
+      "headline": "KALARIPAYATTU",
+      "highlight": "KALARI",
+      "kicker": "ONE OF THE OLDEST MARTIAL ARTS",
+      "labels": [],
+      "visual": "A kalari pit lit by lamps; a fighter leaps",
+      "build_cmd": "Sunken kalari pit (dark red trapezoid) with SK.lamp at the corners. A fighter silhouette performs a high leap: y rises then lands (ease) at 50%, legs split mid-air; dust puffs on landing. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "മൃഗങ്ങളുടെ ചുവടുകൾ, വാളും പരിചയും. പിന്നെ ഉറുമി എന്ന വളയുന്ന വാൾ!",
+      "headline": "THE BENDING SWORD",
+      "highlight": "BENDING",
+      "kicker": "URUMI",
+      "labels": [],
+      "visual": "An urumi whip-sword swirls in glowing metal arcs",
+      "build_cmd": "Fighter silhouette centre; from the hand a long flexible blade drawn as a metallic ribbon (gradient white→grey) that swirls in spiral arcs following a sine path (t*4); motion trails fade behind it; sparks at 60%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ബോധിധർമ്മൻ എന്ന ബുദ്ധസന്യാസി ദക്ഷിണേന്ത്യയിൽ നിന്ന് ചൈനയിലേക്ക് പോയി എന്നാണ് കഥ.",
+      "headline": "A MONK'S JOURNEY",
+      "highlight": "MONK'S",
+      "kicker": "BODHIDHARMA · 5TH–6TH CENTURY",
+      "labels": [],
+      "visual": "A route draws from South India to China; a robed monk walks along it",
+      "build_cmd": "Simple map (dark blue sea, tan land shapes for India and China). Dashed accent route draws from South India to central China 10–75%; a small robed monk silhouette with a staff walks along the route. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ഷാവോലിൻ സന്യാസിമാരെ അദ്ദേഹം പരിശീലിപ്പിച്ചു എന്ന് ഐതിഹ്യം. പക്ഷേ ചരിത്രകാരന്മാർക്ക് ഉറപ്പില്ല.",
+      "headline": "LEGEND OR HISTORY?",
+      "highlight": "LEGEND",
+      "kicker": "HISTORIANS DISAGREE",
+      "labels": [],
+      "visual": "Monks training in a temple courtyard; a stamp 'LEGEND?' floats over",
+      "build_cmd": "Temple courtyard: pagoda gate silhouette, 6 monk silhouettes in a row doing the same stance (synchronised). At 55% a large balance scale appears top-centre, tipping slowly back and forth (uncertainty). Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "സത്യം എന്തായാലും, കളരി ഇന്നും ജീവിക്കുന്നു. ആ കഥ തുടങ്ങിയത് നമ്മുടെ നാട്ടിൽ നിന്നോ?",
+      "headline": "STILL ALIVE TODAY",
+      "highlight": "ALIVE",
+      "kicker": "",
+      "labels": [],
+      "visual": "Dawn kalari: a young student salutes the lamp",
+      "build_cmd": "SK.sky(g,'dawn'). Kalari pit; a child student silhouette (SK.person 'child') bows to a lamp (SK.lamp) at 40%, then takes a stance; light rays (SK.rays) from the doorway. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "കുങ്ഫുവിന്റെ വേര് നമ്മുടെ നാട്ടിലോ? 🥋\nDid kung fu start in Kerala?\n\nകളരിപ്പയറ്റ്, ഉറുമി, പിന്നെ ബോധിധർമ്മന്റെ ചൈന യാത്രയുടെ ഐതിഹ്യം. ചരിത്രകാരന്മാർക്ക് ഉറപ്പില്ല, പക്ഷേ കഥ ഇന്നും ജീവിക്കുന്നു.\nKalaripayattu, the urumi, and the legend of Bodhidharma's journey to China. Historians aren't sure, but the story lives on.\n\nനിങ്ങൾ കളരി പഠിച്ചിട്ടുണ്ടോ? കമന്റിൽ പറയൂ.\nHave you ever trained in kalari? Tell us below.\n\nShare this with your gym friend. 📩\n\n#Kalaripayattu #Kerala #History #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Kalari among oldest martial arts -> Britannica",
+    "Urumi -> Kerala Tourism",
+    "Bodhidharma from South India (traditional), to China -> Britannica",
+    "Shaolin link disputed -> Britannica",
+    "Planned without live web search: double-check before posting"
+  ]
+}

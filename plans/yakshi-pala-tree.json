@@ -1,0 +1,109 @@
+{
+  "slug": "yakshi-pala-tree",
+  "title": "Yakshi: why you never stop under a pala tree at night",
+  "category": "MYSTERY",
+  "priority": 13,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "In Kerala folklore the Yakshi is a female spirit in a white sari with long hair",
+      "source": "Aithihyamala (Kottarathil Sankunni); Kerala folklore studies"
+    },
+    {
+      "claim": "She is associated with the pala tree (Alstonia scholaris), whose strongly scented flowers bloom in the evening",
+      "source": "Aithihyamala; botanical references on Alstonia scholaris"
+    },
+    {
+      "claim": "In the stories she asks passers-by for chunnambu (lime for betel)",
+      "source": "Kerala folklore"
+    },
+    {
+      "claim": "Kalliyankattu Neeli is the most famous Yakshi legend",
+      "source": "Aithihyamala"
+    },
+    {
+      "claim": "Legend says the priest Kadamattathu Kathanar subdued her with a nail",
+      "source": "Aithihyamala"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#A78BFA",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "You were told never to stop under a pala tree at night. Here's why.",
+  "hook_score": 75.7,
+  "cover": {
+    "headline": [
+      "DON'T STOP",
+      "UNDER THE PALA"
+    ],
+    "accent_words": [
+      "PALA"
+    ],
+    "thumbnail_ml": "ചുണ്ണാമ്പ് ചോദിക്കുന്ന യക്ഷി!",
+    "thumbnail_accent": [
+      "യക്ഷി!"
+    ],
+    "hook_voiceover_ml": "രാത്രി. ഒരു പാലമരം. പൂവിന്റെ മണം. അവിടെ നിൽക്കരുതെന്ന് പറഞ്ഞത് എന്തിനാണെന്നറിയാമോ?",
+    "visual": "Moonlit path, a huge pala tree with glowing white flower clusters; a faint white figure appears behind the trunk",
+    "build_cmd": "SK.sky(g,'night',0.62); big moon (SK.sun with col '#f4f0e0', glow 0.35) at x0.75,y0.18. Ground and a pale path curving to the horizon. Pala tree at x0.42: thick dark trunk from y0.66 to y0.36, canopy of 8 overlapping dark ellipses, 40 small white flower clusters that twinkle. Scent wisps (thin translucent curves) drift right. From 60% a pale white figure (tall narrow shape, long dark hair, 0→0.55 opacity) fades in half-hidden behind the trunk."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "യക്ഷി. നമ്മുടെ നാട്ടിലെ ഏറ്റവും പേടിപ്പിക്കുന്ന കഥ. വെള്ള സാരി, നീണ്ട മുടി.",
+      "headline": "KERALA'S OWN GHOST",
+      "highlight": "GHOST",
+      "kicker": "FOLKLORE",
+      "labels": [],
+      "visual": "A ghostly white figure with flowing hair on the moonlit path",
+      "build_cmd": "Night scene. A semi-transparent white figure (sari as a tapered white shape, long black hair that waves with t) at x0.5,y0.62, opacity breathing 0.5–0.8. Fireflies drift. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "അവളുടെ താവളം പാലമരം എന്നാണ് വിശ്വാസം. രാത്രി പൂക്കുന്ന പാലപ്പൂവിന്റെ മണം അടയാളം.",
+      "headline": "THE PALA TREE",
+      "highlight": "PALA",
+      "kicker": "ITS FLOWERS BLOOM AT NIGHT",
+      "labels": [],
+      "visual": "Close-up of the canopy, flowers opening, scent particles rising",
+      "build_cmd": "Close-up canopy filling the middle band: dark leaves, 30 white star-shaped flowers that open (scale 0→1) one after another; tiny glowing particles rise and drift (the scent). Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ഏറ്റവും പേരുകേട്ടവൾ കള്ളിയങ്കാട്ട് നീലി. ഐതിഹ്യമാലയിലെ കഥ.",
+      "headline": "KALLIYANKATTU NEELI",
+      "highlight": "NEELI",
+      "kicker": "FROM AITHIHYAMALA",
+      "labels": [],
+      "visual": "Shadow-puppet stage telling the legend",
+      "build_cmd": "SK.stage(g,t). On the screen: SK.puppet at x0.62 (the Yakshi, armUp false) and a small house silhouette at x0.3. At 50% the puppet glides 80 px left. Title card rendered by the overlay only. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "കടമറ്റത്ത് കത്തനാർ അവളെ ഒരു ആണി കൊണ്ട് തളച്ചെന്നാണ് കഥ.",
+      "headline": "TAMED WITH A NAIL",
+      "highlight": "NAIL",
+      "kicker": "THE KATHANAR LEGEND",
+      "labels": [],
+      "visual": "On the stage, a priest figure raises a glowing nail",
+      "build_cmd": "SK.stage(g,t). Two puppets: priest (x0.35, armUp true) and Yakshi (x0.65, armUp false). A glowing nail (thin white rect with a bright tip) appears in the priest's raised hand at 40%; at 70% a burst of light rays (SK.rays) from the nail; the Yakshi puppet dims to 0.3. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ഇനി രാത്രി പാലപ്പൂ മണക്കുമ്പോൾ, ആരെങ്കിലും ചുണ്ണാമ്പ് ചോദിച്ചാൽ... തിരിഞ്ഞു നോക്കരുത്!",
+      "headline": "DON'T LOOK BACK",
+      "highlight": "BACK",
+      "kicker": "",
+      "labels": [],
+      "visual": "A walker on the night road; behind, a faint white figure",
+      "build_cmd": "Night road under the moon. A SK.person walks away from the camera towards the horizon (shrinking 1→0.6). Far behind (x0.2) the faint white figure appears at 50% and follows, opacity 0.4. The walker never turns. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "രാത്രി പാലമരത്തിനടിയിൽ നിൽക്കരുതെന്ന് പറയുന്നത് എന്തിനാണ്? 👻\nWhy were you told never to stop under a pala tree at night?\n\nവെള്ള സാരി, നീണ്ട മുടി, ചുണ്ണാമ്പ് ചോദിക്കുന്ന ശബ്ദം. ഐതിഹ്യമാലയിലെ കള്ളിയങ്കാട്ട് നീലിയുടെ കഥ.\nA white sari, long hair, a voice asking for lime: the legend of Kalliyankattu Neeli from Aithihyamala.\n\nനിങ്ങളുടെ മുത്തശ്ശി പറഞ്ഞ യക്ഷിക്കഥ ഏതാണ്? കമന്റിൽ പറയൂ.\nWhich Yakshi story did your grandmother tell you? Tell us below.\n\nShare this with that friend who still won't walk past a pala tree at night. 📩\n\n#Yakshi #KeralaMyths #Aithihyamala #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Yakshi description; pala tree; lime -> Aithihyamala/folklore",
+    "Kalliyankattu Neeli; Kadamattathu Kathanar -> Aithihyamala",
+    "Told as legend ('it is said'), not fact",
+    "Planned without live web search: double-check before posting"
+  ]
+}

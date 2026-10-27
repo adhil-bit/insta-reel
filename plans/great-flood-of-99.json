@@ -1,0 +1,110 @@
+{
+  "slug": "great-flood-of-99",
+  "title": "The flood of '99: the 1924 flood that took a hill",
+  "category": "HISTORY",
+  "priority": 14,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "Kerala's great flood of July 1924 is called the 'flood of 99' after the Malayalam Era year 1099",
+      "source": "Wikipedia: Great flood of 99; The Hindu"
+    },
+    {
+      "claim": "It followed about three weeks of very heavy rain in July 1924",
+      "source": "The Hindu; KSDMA"
+    },
+    {
+      "claim": "The flood destroyed the Kundala Valley Railway in Munnar",
+      "source": "The Hindu; Kerala Tourism"
+    },
+    {
+      "claim": "It is said that the Karinthiri hill (and the road over it) was washed away",
+      "source": "Wikipedia: Great flood of 99"
+    },
+    {
+      "claim": "The 2018 Kerala floods were widely described as the worst since 1924",
+      "source": "BBC; The Hindu (2018)"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#F59E3B",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "You were told 2018 was Kerala's worst flood. 1924 took a whole hill.",
+  "hook_score": 78.0,
+  "cover": {
+    "headline": [
+      "THE FLOOD",
+      "OF 99"
+    ],
+    "accent_words": [
+      "99"
+    ],
+    "thumbnail_ml": "99-ലെ വെള്ളപ്പൊക്കം: ഒരു മല തന്നെ ഒലിച്ചുപോയി!",
+    "thumbnail_accent": [
+      "99-ലെ"
+    ],
+    "hook_voiceover_ml": "2018-ലെ പ്രളയം ഓർമ്മയുണ്ടോ? അതിലും വലിയ ഒന്ന് മുമ്പ് വന്നിട്ടുണ്ട്. 1924-ൽ. അത് ഒരു മല തന്നെ കൊണ്ടുപോയി!",
+    "visual": "Green hills under black clouds and heavy rain; a hill slides away",
+    "build_cmd": "Dark storm sky (gradient #1a2230→#3a4a5a). Three layered green hill silhouettes. 300 rain streaks (diagonal lines) falling fast. A river band (SK.sea with brown water cols ['#6a5a3a','#4a3e28']) at the bottom whose top rises by 60 px over the scene. From 55% the middle hill slides down-right (translate 0→120 px, rotate 0→0.08) and fades to 0.4 with brown mud particles."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "1924 ജൂലൈ. മലയാള വർഷം 1099. അതുകൊണ്ടാണ് പേര്, 99-ലെ വെള്ളപ്പൊക്കം.",
+      "headline": "JULY 1924",
+      "highlight": "1924",
+      "kicker": "MALAYALAM ERA 1099",
+      "labels": [],
+      "visual": "An old calendar page flips from 1924 to 1099",
+      "build_cmd": "Cream calendar card (x0.5,y0.42, 560x620) on a dark wall. At 40% the page flips (scaleY to 0 and back) revealing a second page with a red band. Rain streaks on a window behind. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ആഴ്ചകളോളം നിർത്താതെ മഴ. പുഴകൾ എല്ലാം കരകവിഞ്ഞു.",
+      "headline": "THE RAIN WOULDN'T STOP",
+      "highlight": "RAIN",
+      "kicker": "THREE WEEKS",
+      "labels": [],
+      "visual": "A Kerala village where the river rises over the banks",
+      "build_cmd": "SK.sky(g,'dusk',0.5) darkened; palms (SK.palm) and two SK.house; brown flood water (SK.sea brown cols) rising from y0.72 to y0.6 over the scene, covering the bottom of the houses. Rain streaks. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "മൂന്നാറിലെ ട്രെയിൻ ഓർമ്മയില്ലേ? അതും ഈ പ്രളയത്തിൽ ഇല്ലാതായി.",
+      "headline": "MUNNAR LOST ITS TRAIN",
+      "highlight": "TRAIN",
+      "kicker": "KUNDALA VALLEY RAILWAY",
+      "labels": [],
+      "visual": "A small steam train on a hill track; the track breaks and the train tilts",
+      "build_cmd": "Hill slope with a narrow track (two lines + sleepers). A small steam train (engine + 3 wagons, dark with a lit headlamp) moves left→right until 40%, then a section of track breaks (gap opens) and the last wagon tilts down 20°. Rain. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "കരിന്തിരി മല എന്നൊരു മല തന്നെ ഇടിഞ്ഞു പോയെന്നാണ് പറയപ്പെടുന്നത്.",
+      "headline": "A HILL DISAPPEARED",
+      "highlight": "HILL",
+      "kicker": "KARINTHIRI MALA",
+      "labels": [],
+      "visual": "A hill with a road crumbles into the river",
+      "build_cmd": "One big hill with a winding road (thin pale line). From 30% the hill's top half slides and breaks into 8 chunks that fall into a brown river; dust/mud particles. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "2018-ൽ വീണ്ടും കേരളം മുങ്ങിയപ്പോൾ, പഴമക്കാർ ഓർത്തു: 99-ലെ ആ മഴ.",
+      "headline": "2018 BROUGHT IT BACK",
+      "highlight": "2018",
+      "kicker": "THE WORST SINCE 1924",
+      "labels": [],
+      "visual": "A modern flooded street with a rescue boat; an old couple watching from a window",
+      "build_cmd": "Flooded street: SK.house x3 with water up to the windows (brown SK.sea band y0.58–0.75), a rescue boat (SK.boat, orange) moving left→right. In one lit window, two elderly silhouettes (SK.person h200) watching. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "2018-ലെ പ്രളയത്തേക്കാൾ വലിയ ഒന്ന് 1924-ൽ വന്നിരുന്നു 🌧️\nKerala had a flood bigger than 2018, back in 1924.\n\nമലയാള വർഷം 1099. ആഴ്ചകൾ നീണ്ട മഴ. മൂന്നാറിലെ ട്രെയിനും കരിന്തിരി മലയും ഒലിച്ചുപോയി.\nMalayalam Era 1099: weeks of rain that took Munnar's railway and, it is said, a whole hill.\n\nനിങ്ങളുടെ വീട്ടിലെ പഴമക്കാർ 99-ലെ വെള്ളപ്പൊക്കത്തെക്കുറിച്ച് എന്താണ് പറഞ്ഞിട്ടുള്ളത്?\nWhat did the elders in your family say about the flood of 99?\n\nShare this with someone who lived through 2018. 📩\n\n#KeralaFloods #History #Munnar #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "'Flood of 99' naming, July 1924 -> Wikipedia/The Hindu",
+    "Munnar railway destroyed -> The Hindu",
+    "Karinthiri hill (stated as 'it is said') -> Wikipedia",
+    "2018 worst since 1924 -> BBC/The Hindu",
+    "Planned without live web search: double-check before posting"
+  ]
+}

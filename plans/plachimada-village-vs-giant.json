@@ -1,0 +1,111 @@
+{
+  "slug": "plachimada-village-vs-giant",
+  "title": "Plachimada: the village that took on a global giant",
+  "category": "CLIMATE",
+  "priority": 17,
+  "locked": true,
+  "planner": "Claude Opus 5.5 (Fable at its limit), 27 Oct 2026",
+  "facts": [
+    {
+      "claim": "A Coca-Cola bottling plant began operating at Plachimada, Palakkad district, around 2000",
+      "source": "The Hindu; BBC"
+    },
+    {
+      "claim": "Villagers, many of them Adivasi, alleged that wells dried up and water was polluted",
+      "source": "The Hindu; BBC"
+    },
+    {
+      "claim": "A protest began in 2002, with Mayilamma among its best-known leaders",
+      "source": "The Hindu"
+    },
+    {
+      "claim": "The Perumatty panchayat refused to renew the plant's licence and the plant stopped production in 2004",
+      "source": "The Hindu; BBC"
+    },
+    {
+      "claim": "The company has denied wrongdoing; a 2011 Kerala bill for a compensation tribunal did not take effect",
+      "source": "The Hindu"
+    }
+  ],
+  "opening": {
+    "type": "hero",
+    "why": "Story/object hook; location isn't the surprise."
+  },
+  "accent": "#FF4D5E",
+  "voice": "auto",
+  "music_mood": "warm, suspenseful",
+  "hook_en": "You'd never guess who shut down a global giant's plant in Kerala: its neighbours.",
+  "hook_score": 72.1,
+  "cover": {
+    "headline": [
+      "A VILLAGE",
+      "VS A GIANT"
+    ],
+    "accent_words": [
+      "GIANT"
+    ],
+    "thumbnail_ml": "വമ്പൻ കമ്പനിയെ നേരിട്ട ഒരു ഗ്രാമം!",
+    "thumbnail_accent": [
+      "ഗ്രാമം!"
+    ],
+    "hook_voiceover_ml": "ഒരു വമ്പൻ കമ്പനി. ഒരു ചെറിയ ഗ്രാമം. ആര് ജയിക്കുമെന്നാണ് കരുതുന്നത്? നിങ്ങൾ ഊഹിക്കില്ല!",
+    "visual": "A tiny village of huts facing a huge factory with smokestacks",
+    "build_cmd": "SK.sky(g,'sunset',0.62). Right side: a huge dark factory silhouette (rectangles, 3 smokestacks with drifting smoke) scaled 1.3. Left: five small SK.house huts and SK.palm. A dry-crack pattern spreads across the ground from the factory towards the huts over the scene. At 60% a single SK.person with raised arm ('arm_up') appears in front of the huts, glowing rim light."
+  },
+  "scenes": [
+    {
+      "voiceover_ml": "പാലക്കാട്ടെ പ്ലാച്ചിമട. 2000-ൽ അവിടെ ഒരു വലിയ ശീതളപാനീയ പ്ലാന്റ് വന്നു.",
+      "headline": "PLACHIMADA, 2000",
+      "highlight": "2000",
+      "kicker": "PALAKKAD",
+      "labels": [],
+      "visual": "Trucks roll into a new factory; pipes reach underground",
+      "build_cmd": "Factory centre; two delivery trucks (rectangles + wheels) roll in from the left; a cross-section strip below ground shows pipes going down to a blue groundwater layer that starts to shrink slowly. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "കുറച്ചു വർഷങ്ങൾക്കുള്ളിൽ കിണറുകൾ വറ്റിയെന്നും വെള്ളം മോശമായെന്നും നാട്ടുകാർ പരാതിപ്പെട്ടു.",
+      "headline": "THE WELLS RAN DRY",
+      "highlight": "DRY",
+      "kicker": "VILLAGERS ALLEGED",
+      "labels": [],
+      "visual": "A well cross-section: the water level drops, a bucket comes up empty",
+      "build_cmd": "Cross-section of a stone well (cylinder) centre; blue water level drops from y0.6 to y0.72 0–70%; a rope bucket lowers and comes up empty at 80%; cracked earth around. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "2002-ൽ സമരം തുടങ്ങി. മുന്നിൽ മയിലമ്മ എന്ന ആദിവാസി സ്ത്രീ.",
+      "headline": "THE PROTEST",
+      "highlight": "PROTEST",
+      "kicker": "LED BY MAYILAMMA",
+      "labels": [],
+      "visual": "A crowd gathers at the gate, led by one woman",
+      "build_cmd": "Factory gate (two pillars, closed bars). SK.crowd of 9 people gathers from the left 0–50% (slide in); at 50% a woman silhouette (SK.person 'arm_up', slightly larger) steps to the front; blank placards (cream rectangles on sticks) rise. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "പഞ്ചായത്ത് ലൈസൻസ് പുതുക്കിയില്ല. 2004-ൽ പ്ലാന്റിന്റെ പ്രവർത്തനം നിലച്ചു.",
+      "headline": "THE PLANT STOPPED",
+      "highlight": "STOPPED",
+      "kicker": "2004",
+      "labels": [],
+      "visual": "Factory lights switch off one by one; smoke stops",
+      "build_cmd": "Factory at night with 12 lit windows; windows switch off one by one 20–80%; smokestack smoke thins to nothing; a padlock appears on the gate at 85%. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    },
+    {
+      "voiceover_ml": "ഒരു ചെറിയ ഗ്രാമം ഒരു വമ്പനോട് പൊരുതിയ കഥ. ലോകം മുഴുവൻ അത് ശ്രദ്ധിച്ചു.",
+      "headline": "THE WORLD NOTICED",
+      "highlight": "WORLD",
+      "kicker": "",
+      "labels": [],
+      "visual": "Rain returns to the village; green shoots on the cracked ground",
+      "build_cmd": "SK.sky(g,'dawn'). Village huts; light rain falls; the cracked ground slowly turns green (cracks fade, green blades grow); children silhouettes splash at the well. Keep the top 20% and bottom 25% clear; finish every frame with SK.grain(g, t)."
+    }
+  ],
+  "instagram_caption": "ഒരു വമ്പൻ കമ്പനിയെ നേരിട്ട ഒരു ചെറിയ ഗ്രാമം 💧\nA small Kerala village that took on a global giant.\n\nപാലക്കാട്ടെ പ്ലാച്ചിമടയിൽ 2000-ൽ ഒരു ശീതളപാനീയ പ്ലാന്റ് വന്നു. കിണറുകൾ വറ്റിയെന്ന് നാട്ടുകാർ പരാതിപ്പെട്ടു. 2004-ൽ പ്ലാന്റ് നിലച്ചു.\nIn Plachimada, Palakkad, a bottling plant opened in 2000. Villagers said their wells ran dry; by 2004 the plant had stopped.\n\nവെള്ളത്തിന് വേണ്ടിയുള്ള സമരങ്ങൾ ഇനിയും വരുമെന്ന് നിങ്ങൾ കരുതുന്നുണ്ടോ?\nDo you think more fights over water are coming?\n\nShare this with someone who cares about our rivers. 📩\n\n#Plachimada #Palakkad #Water #MalayalamReels #UnexploredTruths",
+  "fact_check": [
+    "Plant at Plachimada c.2000 -> The Hindu/BBC",
+    "Villagers' allegations (stated as allegations) -> The Hindu",
+    "Protest 2002, Mayilamma -> The Hindu",
+    "Licence refused; production stopped 2004 -> The Hindu/BBC",
+    "Company denied wrongdoing -> The Hindu",
+    "Planned without live web search: double-check before posting"
+  ]
+}
