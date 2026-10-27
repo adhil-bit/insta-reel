@@ -1,0 +1,24 @@
+name: Restore a reel release from restore/<folder>
+
+on:
+  workflow_dispatch:
+    inputs:
+      folder:
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          F="${{ github.event.inputs.folder }}"
+          gh release delete "$F" -y --cleanup-tag 2>/dev/null || true
+          gh release create "$F" restore/$F/* --title "$F" --notes "Restored render"
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git rm -rq restore/$F && git commit -qm "restore: $F released" && git pull -q --rebase && git push -q
