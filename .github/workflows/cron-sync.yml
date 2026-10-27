@@ -1,0 +1,36 @@
+name: Sync cron-job.org schedule
+
+# Makes the cron-job.org jobs match POST_SLOTS in config.py. Run after changing posting times.
+on:
+  workflow_dispatch:
+    inputs:
+      apply:
+        description: "Apply the changes (otherwise just show the plan)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      CRONJOB_API_KEY: ${{ secrets.CRONJOB_API_KEY }}
+      CRON_TRIGGER_TOKEN: ${{ secrets.CRON_TRIGGER_TOKEN }}
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q python-dotenv || true
+      - name: Sync
+        run: python scripts/cron_sync.py ${{ github.event.inputs.apply == 'true' && '--apply' || '' }} 2>&1 | tee logs-cron.txt
+      - name: Report
+        if: ${{ always() }}
+        run: |
+          bash scripts/notify.sh "$(printf '🗓️ cron-job.org sync (%s)\n%s' "${{ job.status }}" "$(tail -3 logs-cron.txt)")" || true
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs && git commit -qm "cron sync" && git pull -q --rebase && git push -q || true

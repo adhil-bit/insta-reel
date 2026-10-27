@@ -7,7 +7,7 @@
    GitHub has no posting timer of its own, so nothing posts unless cron-job.org fires)
 
 **Whenever the posting times change, update both in the same change.**
-After editing `POST_SLOTS`, run:
+After editing `POST_SLOTS`, run the **Sync cron-job.org schedule** workflow (needs the `CRONJOB_API_KEY` secret), or manually run:
 
 ```
 python main.py cron-plan
