@@ -87,7 +87,7 @@ def _instagram_safe(video: Path) -> Path:
     return out
 
 
-def publish_reel(video: Path, caption: str, cover: Path | None = None) -> str:
+def publish_reel(video: Path, caption: str, cover: Path | None = None, location_id: str | None = None) -> str:
     if not (config.IG_USER_ID and config.IG_ACCESS_TOKEN):
         raise RuntimeError("Set IG_USER_ID and IG_ACCESS_TOKEN in .env first.")
 
@@ -103,14 +103,26 @@ def publish_reel(video: Path, caption: str, cover: Path | None = None) -> str:
             print(f"  thumbnail upload failed ({e}); using the first frame")
 
     # 1) Create the Reels container from the public link
-    container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data={
+    data = {
         "media_type": "REELS",
         "video_url": url,
         "caption": caption,
         "share_to_feed": "true",
         **({"cover_url": cover_url} if cover_url else {"thumb_offset": "0"}),
         "access_token": config.IG_ACCESS_TOKEN,
-    }, timeout=120))
+    }
+    if location_id:
+        data["location_id"] = str(location_id)
+    try:
+        container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data=data, timeout=120))
+        if location_id:
+            print(f"  location tag added ({location_id})")
+    except Exception as e:
+        if not location_id:
+            raise
+        print(f"  location tag not accepted ({str(e)[:160]}); posting without it")
+        data.pop("location_id", None)
+        container = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data=data, timeout=120))
     container_id = container["id"]
     print(f"  container: {container_id}, waiting for Instagram to process...")
 
@@ -137,6 +149,51 @@ def publish_reel(video: Path, caption: str, cover: Path | None = None) -> str:
         link = _check(requests.get(f"{GRAPH}/{media_id}", params={
             "fields": "permalink", "access_token": config.IG_ACCESS_TOKEN,
         }, timeout=60)).get("permalink", "")
+        print(f"  live: {link}")
+    except Exception:
+        pass
+    return media_id
+
+
+def _wait_finished(container_id: str, what: str) -> None:
+    for _ in range(60):
+        st = _check(requests.get(f"{GRAPH}/{container_id}", params={
+            "fields": "status_code,status", "access_token": config.IG_ACCESS_TOKEN}, timeout=60))
+        if st.get("status_code") == "FINISHED":
+            return
+        if st.get("status_code") in {"ERROR", "EXPIRED"}:
+            raise RuntimeError(f"{what} processing failed: {st}")
+        time.sleep(5)
+    raise TimeoutError(f"{what}: Instagram took too long")
+
+
+def publish_carousel(images: list[Path], caption: str, location_id: str | None = None) -> str:
+    """Post a carousel (2-10 JPEG images, 4:5) and return the media id."""
+    if not 2 <= len(images) <= 10:
+        raise ValueError("A carousel needs 2-10 images")
+    children = []
+    for i, img in enumerate(images, 1):
+        url = _temporary_url(img, kind="image/jpeg")
+        item = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data={
+            "image_url": url, "is_carousel_item": "true", "access_token": config.IG_ACCESS_TOKEN}, timeout=120))
+        _wait_finished(item["id"], f"slide {i}")
+        children.append(item["id"]); print(f"  slide {i}/{len(images)} ready")
+    data = {"media_type": "CAROUSEL", "children": ",".join(children), "caption": caption,
+            "access_token": config.IG_ACCESS_TOKEN}
+    if location_id:
+        data["location_id"] = str(location_id)
+    try:
+        box = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data=data, timeout=120))
+    except Exception as e:
+        if not location_id:
+            raise
+        print(f"  location tag not accepted ({str(e)[:160]}); posting without it")
+        data.pop("location_id"); box = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media", data=data, timeout=120))
+    _wait_finished(box["id"], "carousel")
+    media_id = _check(requests.post(f"{GRAPH}/{config.IG_USER_ID}/media_publish", data={
+        "creation_id": box["id"], "access_token": config.IG_ACCESS_TOKEN}, timeout=120))["id"]
+    try:
+        link = _check(requests.get(f"{GRAPH}/{media_id}", params={"fields": "permalink", "access_token": config.IG_ACCESS_TOKEN}, timeout=60)).get("permalink", "")
         print(f"  live: {link}")
     except Exception:
         pass

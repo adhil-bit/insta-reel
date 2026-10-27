@@ -12,6 +12,7 @@ AutoReel: Claude-powered Instagram Reels pipeline.
   python main.py auto             make + post with no review (not recommended)
 """
 import argparse
+import os
 import re
 import sys
 from datetime import datetime
@@ -357,7 +358,9 @@ def post(folder_name: str) -> None:
     extra = [h for h in config.BRAND.get("broad_hashtags", []) if h.lower() not in text.lower()]
     if extra:
         text += " " + " ".join(extra)
-    media_id = instagram.publish_reel(reel, text,
+    locs = load_json(config.ROOT / "locations.json", {})
+    location_id = locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
+    media_id = instagram.publish_reel(reel, text, location_id=location_id,
                                       cover=thumb if thumb.exists() else None)
     hist = history()
     for h in hist:
@@ -405,6 +408,29 @@ def status_text() -> str:
         lines.append(f"🎬 Waiting to be voiced/rendered: {len(waiting)} ({', '.join(waiting[:5])}{'…' if len(waiting) > 5 else ''})")
     lines.append("📋 Full order: https://github.com/adhil-bit/insta-reel/blob/main/QUEUE.md")
     return "\n".join(lines)
+
+
+def carousel_run(spec: str | None, publish: bool) -> None:
+    """Build a carousel (and post it if publish). spec='' picks the oldest due, unposted one."""
+    from datetime import timedelta, timezone
+    from pipeline import carousel, instagram
+    posted_file = config.ROOT / "carousels" / "posted.json"
+    posted = load_json(posted_file, {})
+    today = datetime.now(timezone(timedelta(hours=5, minutes=30))).date().isoformat()
+    if spec:
+        path = Path(spec) if spec.endswith(".json") else config.ROOT / "carousels" / f"{spec}.json"
+    else:
+        due = [p for p in sorted((config.ROOT / "carousels").glob("*.json"))
+               if p.name != "posted.json" and p.stem not in posted and load_json(p, {}).get("post_on", "9999") <= today]
+        if not due:
+            print("No carousel due."); return
+        path = due[0]
+    slides, caption = carousel.build(path)
+    print(f"Built {len(slides)} slides for {path.stem}")
+    if publish:
+        media_id = instagram.publish_carousel(slides, caption)
+        posted[path.stem] = {"media_id": media_id, "posted": datetime.now().isoformat(timespec="minutes")}
+        save_json(posted_file, posted)
 
 
 def queue_md() -> None:
@@ -579,7 +605,7 @@ def preview() -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "status", "cron-plan", "skip", "list", "latest", "next", "auto", "preview"])
+    parser.add_argument("command", choices=["make", "fill", "render", "render-pending", "post", "youtube", "merge-history", "due", "queue-md", "slot-wait", "status", "cron-plan", "carousel", "skip", "list", "latest", "next", "auto", "preview"])
     parser.add_argument("folder", nargs="?", help="output folder name (for post)")
     parser.add_argument("--topic", help="use your own topic instead of a trending one")
     parser.add_argument("--target", type=int, default=7, help="fill: reels to keep waiting in the queue")
@@ -606,6 +632,8 @@ if __name__ == "__main__":
         print(latest_pending() or "")
     elif args.command == "status":
         print(status_text())
+    elif args.command == "carousel":
+        carousel_run(args.folder or "", publish=os.getenv("CAROUSEL_PUBLISH") == "1")
     elif args.command == "cron-plan":
         print(cron_plan())
     elif args.command == "slot-wait":

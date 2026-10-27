@@ -1,0 +1,77 @@
+name: Weekly carousel
+
+on:
+  schedule:
+    - cron: "37 11 * * 0"     # Sundays ~5:07 PM IST: post the carousel that is due this week
+  workflow_dispatch:
+    inputs:
+      spec:
+        description: "Carousel file name in carousels/ (empty = the one due now)"
+        required: false
+        default: ""
+      publish:
+        description: "Post to Instagram (off = build a preview only)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: autoreel-post
+  cancel-in-progress: false
+
+env:
+  IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+  IG_USER_ID: ${{ secrets.IG_USER_ID }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+jobs:
+  carousel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Cache the rendering browser
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: playwright-${{ hashFiles('requirements.txt') }}
+      - name: Install
+        run: |
+          pip install -q -r requirements.txt
+          python -m playwright install --with-deps chromium > /dev/null
+      - name: Build (and post on schedule or when asked)
+        env:
+          CAROUSEL_PUBLISH: ${{ (github.event_name == 'schedule' || github.event.inputs.publish == 'true') && '1' || '0' }}
+        run: |
+          set -o pipefail
+          python main.py carousel "${{ github.event.inputs.spec }}" 2>&1 | tee carousel-log.txt
+      - name: Save slides for review (Releases)
+        if: ${{ always() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for d in output/carousel-*; do
+            [ -d "$d" ] || continue; tag=$(basename "$d")
+            gh release delete "$tag" -y --cleanup-tag 2>/dev/null || true
+            gh release create "$tag" $d/slide_*.jpg $d/caption.txt --title "$tag" --notes "Carousel slides" || true
+          done
+      - name: Save posted list
+        if: ${{ success() }}
+        run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add carousels/posted.json 2>/dev/null && git commit -qm "carousel posted" && git pull -q --rebase && git push -q || true
+      - name: Telegram alert
+        if: ${{ always() }}
+        run: |
+          LINK=$(grep -o 'https://www.instagram.com/[^ ]*' carousel-log.txt | tail -1)
+          if [ "${{ job.status }}" = "success" ]; then
+            MSG=$(printf '🖼️ Carousel %s\n%s\n%s' "$([ -n "$LINK" ] && echo posted || echo built, preview on Releases)" "$(grep -E 'Built|No carousel' carousel-log.txt | tail -1)" "$LINK")
+          else
+            MSG=$(printf '❌ Carousel FAILED\n%s' "$(tail -c 400 carousel-log.txt)")
+          fi
+          bash scripts/notify.sh "$MSG" || true
