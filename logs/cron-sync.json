@@ -1,6 +1,8 @@
 {
-  "applied": false,
-  "created": [],
+  "applied": true,
+  "created": [
+    "insta-reel render daily"
+  ],
   "updated": [
     "insta-reel Mon+Fri",
     "insta-reel Tue+Thu",
@@ -67,6 +69,26 @@
       "minutes": [
         37
       ]
+    },
+    {
+      "title": "insta-reel render daily",
+      "wdays": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "hours": [
+        7
+      ],
+      "minutes": [
+        20
+      ],
+      "url": "https://api.github.com/repos/adhil-bit/insta-reel/actions/workflows/render-jobs.yml/dispatches",
+      "body": "{\"ref\": \"main\"}"
     }
   ]
 }
