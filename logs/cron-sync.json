@@ -1,0 +1,74 @@
+{
+  "applied": false,
+  "created": [
+    "insta-reel Mon+Fri",
+    "insta-reel Tue+Thu",
+    "insta-reel Wed",
+    "insta-reel Sat+Sun"
+  ],
+  "updated": [],
+  "disabled": [
+    "insta-reel hourly check"
+  ],
+  "wanted": [
+    {
+      "title": "insta-reel Mon+Fri",
+      "wdays": [
+        1,
+        5
+      ],
+      "hours": [
+        0,
+        6,
+        10
+      ],
+      "minutes": [
+        37
+      ]
+    },
+    {
+      "title": "insta-reel Tue+Thu",
+      "wdays": [
+        2,
+        4
+      ],
+      "hours": [
+        1,
+        7,
+        11
+      ],
+      "minutes": [
+        37
+      ]
+    },
+    {
+      "title": "insta-reel Wed",
+      "wdays": [
+        3
+      ],
+      "hours": [
+        2,
+        8,
+        13
+      ],
+      "minutes": [
+        37
+      ]
+    },
+    {
+      "title": "insta-reel Sat+Sun",
+      "wdays": [
+        0,
+        6
+      ],
+      "hours": [
+        4,
+        8,
+        14
+      ],
+      "minutes": [
+        37
+      ]
+    }
+  ]
+}
