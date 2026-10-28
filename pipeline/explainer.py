@@ -63,6 +63,10 @@ def _css(accent: str) -> str:
 .head {{ position:absolute; top:210px; left:56px; right:56px; text-align:center; font:800 88px/1.08 Cinzel, Baloo, Noto, Archivo; color:#fff;
         text-transform:uppercase; letter-spacing:1px; text-shadow:0 6px 28px rgba(0,0,0,.7); will-change:transform,opacity; }}
 .head b {{ font-weight:400; color:{accent}; }}
+.claim {{ position:absolute; left:56px; right:56px; top:640px; text-align:center; font:800 92px/1.16 Baloo, Noto; color:#fff;
+          text-shadow:0 6px 30px rgba(0,0,0,.9), 0 0 2px rgba(0,0,0,.9); animation:pop .35s cubic-bezier(.2,1.4,.4,1) both; }}
+.claim b {{ color:{accent}; font-weight:800; }}
+@keyframes pop {{ from {{ transform:scale(.6); opacity:0; }} to {{ transform:scale(1); opacity:1; }} }}
 .sub {{ position:absolute; left:70px; right:70px; bottom:400px; text-align:center; font:700 56px/1.38 Noto, Inter; color:#fff;
        text-shadow:0 3px 14px rgba(0,0,0,.9); }}
 .sub span {{ transition:none; }}
@@ -169,6 +173,11 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
         title = " ".join(script.get("headline", []))
         body = (f'<div class="brand">UNEXPLORED TRUTHS<em>{html.escape(script.get("category", ""))}</em></div>'
                 f'<div class="head" id="head">{_accent_html(title, script.get("accent_words", []))}</div><div class="sub" id="sub"></div>')
+        if script.get("claim_first", True) and script.get("thumbnail_ml"):     # the surprise, big, from frame 1
+            claim = html.escape(script["thumbnail_ml"].split(" · ")[0])
+            for a in script.get("thumbnail_accent", []):
+                claim = claim.replace(html.escape(a), f"<b>{html.escape(a)}</b>")
+            body += f'<div class="claim">{claim}</div>'
         chunks = _chunks(scene.get("voiceover", ""), speech)
     else:
         head = scene.get("caption", "")

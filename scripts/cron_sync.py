@@ -52,6 +52,9 @@ for utc, days in groups.items():
 wanted.append({"title": "insta-reel render daily", "wdays": [0, 1, 2, 3, 4, 5, 6], "hours": [7], "minutes": [20],
                "url": "https://api.github.com/repos/adhil-bit/insta-reel/actions/workflows/render-jobs.yml/dispatches",
                "body": json.dumps({"ref": "main"})})
+wanted.append({"title": "insta-reel stats daily", "wdays": [0, 1, 2, 3, 4, 5, 6], "hours": [3], "minutes": [30],
+               "url": "https://api.github.com/repos/adhil-bit/insta-reel/actions/workflows/stats.yml/dispatches",
+               "body": json.dumps({"ref": "main"})})
 print("Wanted cron-job.org jobs (UTC):")
 for w in wanted:
     print(f"  {w['title']}: weekdays {w['wdays']} hours {w['hours']} minute {w['minutes']}")
