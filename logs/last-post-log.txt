@@ -1,9 +1,9 @@
-Publishing itty-cora-2-madhava...
+Publishing theyyam-god-for-a-night...
   uguu: link serves video/mp4
-  temporary video link ready (h.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18134892190694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfABzgtivkg/
+  container: 18135070978694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfBr6itCe18/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
