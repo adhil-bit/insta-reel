@@ -18,7 +18,7 @@
     ]
   },
   "category": "CULTURE",
-  "priority": 5,
+  "priority": 1,
   "template": "explainer",
   "opening": {
     "type": "hero",
