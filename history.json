@@ -100,15 +100,6 @@
     "posted": "2026-10-27T07:39"
   },
   {
-    "title": "Jatinga: where birds fall at night",
-    "category": "NATURE",
-    "folder": "jatinga-birds",
-    "status": "pending",
-    "voice": "Zephyr",
-    "created": "2026-10-25T17:37",
-    "priority": 6
-  },
-  {
     "title": "Neelakurinji: the flower that blooms once in 12 years",
     "category": "NATURE",
     "folder": "neelakurinji-12-years",
@@ -175,15 +166,6 @@
     "post_on": "2099-01-01"
   },
   {
-    "title": "Kallanai: a 2,000-year-old dam still in use",
-    "category": "TECH",
-    "folder": "kallanai-2000-year-dam",
-    "status": "pending",
-    "voice": "Puck",
-    "created": "2026-10-26T21:05",
-    "priority": 4
-  },
-  {
     "title": "Damascus steel: the sword made from Indian steel",
     "category": "HISTORY",
     "folder": "damascus-steel",
@@ -191,15 +173,6 @@
     "voice": "Zephyr",
     "priority": 9,
     "created": "2026-10-27T08:42"
-  },
-  {
-    "title": "Lake Nyos: the lake that breathed out death",
-    "category": "NATURE",
-    "folder": "lake-nyos",
-    "status": "pending",
-    "voice": "Charon",
-    "priority": 7,
-    "created": "2026-10-27T08:46"
   },
   {
     "title": "Mary Celeste: the ship with no one on board",
@@ -242,15 +215,6 @@
     "created": "2026-10-27T08:56",
     "media_id": "17954116413295269",
     "posted": "2026-10-28T14:03"
-  },
-  {
-    "title": "Göbekli Tepe: the temple older than farming",
-    "category": "HISTORY",
-    "folder": "gobekli-tepe",
-    "status": "pending",
-    "voice": "Zephyr",
-    "priority": 5,
-    "created": "2026-10-27T08:58"
   },
   {
     "title": "The Indus script nobody can read",
