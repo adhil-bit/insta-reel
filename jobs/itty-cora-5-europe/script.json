@@ -27,14 +27,14 @@
   },
   "headline": [
     "പതിനെട്ടാം കൂറ്റം",
-    "ഭാഗം 5/5"
+    "ഭാഗം 5/5 · അവസാനം"
   ],
   "accent_words": [
     "5/5"
   ],
-  "thumbnail_ml": "പതിനെട്ടാം കൂറ്റം · ഭാഗം 5",
+  "thumbnail_ml": "കേരളത്തിന്റെ കണക്ക് യൂറോപ്പിൽ എത്തിയോ?",
   "thumbnail_accent": [
-    "പതിനെട്ടാം"
+    "യൂറോപ്പിൽ"
   ],
   "hook_voiceover": "കേരളത്തിന്റെ കണക്ക്. യൂറോപ്പിന്റെ കാൽക്കുലസ്. ഇടയിൽ ഒരു കപ്പൽ യാത്ര ഉണ്ടായിരുന്നോ?",
   "cover_visual": "series cover",
@@ -52,7 +52,20 @@
       "caption": "A BOLD THEORY",
       "highlight": "THEORY",
       "kicker": "SOME HISTORIANS ARGUE",
-      "labels": [],
+      "labels": [
+        {
+          "text": "KOCHI",
+          "x": 0.8,
+          "y": 0.47,
+          "at": 0.1
+        },
+        {
+          "text": "LISBON",
+          "x": 0.2,
+          "y": 0.235,
+          "at": 0.85
+        }
+      ],
       "visual": ""
     },
     {
@@ -72,15 +85,15 @@
       "visual": ""
     },
     {
-      "voiceover": "ഇട്ടിക്കോര കഥയാണ്. പക്ഷേ ആ കപ്പൽ യാത്ര? അത് ചരിത്രം ഇനിയും ഉത്തരം തരേണ്ട ചോദ്യമാണ്.",
+      "voiceover": "ഇട്ടിക്കോര ഒരു കഥയാണ്. പക്ഷേ ആ കപ്പൽ യാത്ര? അത് ചരിത്രം ഇനിയും ഉത്തരം തരേണ്ട ചോദ്യം. പതിനെട്ടാം കൂറ്റം ഇവിടെ അവസാനിക്കുന്നു.",
       "caption": "FICTION OR HISTORY?",
       "highlight": "HISTORY?",
-      "kicker": "നോവൽ സാങ്കൽപ്പികം · THE NOVEL IS FICTION",
+      "kicker": "THE END · പരമ്പര അവസാനിച്ചു",
       "labels": [],
       "visual": ""
     }
   ],
-  "instagram_caption": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ\nകേരളത്തിന്റെ കണക്ക് യൂറോപ്പിൽ എത്തിയോ? 🚢 ഭാഗം 5/5\nDid Kerala's maths reach Europe? Part 5/5\n\nപതിനാറാം നൂറ്റാണ്ടിൽ കൊച്ചിയിലെത്തിയ ജെസ്യൂട്ടുകൾ വഴി കേരളത്തിന്റെ കണക്ക് യൂറോപ്പിൽ എത്തിയിരിക്കാമെന്ന് ചില ഗവേഷകർ വാദിക്കുന്നു. തെളിവ് ഇതുവരെയില്ല.\nSome historians argue Kerala's maths travelled to Europe through Jesuits in 16th-century Kochi. There's no proof yet, and the novel plays on that open question.\n\nനിങ്ങൾ എന്ത് കരുതുന്നു: ചരിത്രമോ കഥയോ?\nWhat do you think: history or fiction?\n\nShare this with someone who'll argue about it. 📩\n\n#IttyCora #KeralaMathematics #History #MalayalamReels #UnexploredTruths",
+  "instagram_caption": "കേരളത്തിന്റെ കണക്ക് യൂറോപ്പിൽ എത്തിയോ? 🚢 ഭാഗം 5/5 · അവസാന ഭാഗം\nDid Kerala's maths reach Europe? Part 5/5, the finale\nപതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ\n\nപതിനാറാം നൂറ്റാണ്ടിൽ കൊച്ചിയിലെത്തിയ ജെസ്യൂട്ടുകൾ വഴി കേരളത്തിന്റെ കണക്ക് യൂറോപ്പിൽ എത്തിയിരിക്കാമെന്ന് ചില ഗവേഷകർ വാദിക്കുന്നു. തെളിവ് ഇതുവരെയില്ല. ഇട്ടിക്കോര ഒരു കഥാപാത്രം മാത്രം.\nSome historians argue Kerala's maths travelled to Europe through Jesuits in 16th-century Kochi. There's no proof yet, and Itty Cora is a fictional character.\n\nഅഞ്ച് ഭാഗങ്ങളിൽ ഏതാണ് നിങ്ങൾക്ക് ഏറ്റവും ഇഷ്ടപ്പെട്ടത്? കമന്റിൽ പറയൂ.\nWhich of the five parts did you like most? Tell us below.\n\nShare this with someone who'll argue about it. 📩",
   "fact_check": [
     "Jesuits active in Kochi/Kerala in the 16th century -> histories",
     "Transmission hypothesis (e.g. George Gheverghese Joseph), unproven -> 'The Crest of the Peacock'",

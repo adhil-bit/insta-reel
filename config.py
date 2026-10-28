@@ -138,6 +138,7 @@ POST_SLOTS = {   # 4 posts a day (IST, test week from 27 Oct). KEEP IN SYNC WITH
 SLOT_OVERRIDES = {
     "2026-10-26": ["04:54", "09:06", "18:06"],   # Thalassery cake at the 6:07 PM check
     "2026-10-27": ["07:06", "13:06"],   # rest of today: series Part 1 6:00 PM, Part 2 7:30 PM, Jatinga 9:10 PM (exact-time triggers)
+    "2026-10-29": ["07:06", "13:06", "17:11", "21:06"],   # Kallanai 7:07, Göbekli 1:07, series Part 5 (finale) 5:07 PM, Lake Nyos 9:07
     "2026-10-28": ["14:06", "17:11", "19:31", "21:06"],   # 4 today: Vault B 2:07 PM, series Part 3 5:10 PM, Part 4 7:30 PM, Damascus 9:07 PM
 }
 POSTING_PAUSED = False   # regular slots paused (series posts via exact-time triggers still go out)

@@ -1,0 +1,6 @@
+const c = makeCanvas(), g = c.getContext('2d');
+window.renderFrame = function (t) { const k = clamp(t / DURATION); SK.sky(g, 'night', 0.6); for (let i = 0; i < 120; i++) { g.fillStyle = `rgba(255,255,255,${0.3 + 0.4 * ((i * 37) % 10) / 10})`; g.fillRect((i * 173) % W, (i * 97) % (H * 0.55), 2, 2); }
+  SK.sea(g, H * 0.6, t, ['#16244a', '#101a36', '#0a1024'], false, H * 0.74); g.fillStyle = '#05070c'; g.fillRect(0, H * 0.74, W, H); SK.palm(g, W * 0.1, H * 0.76, 480, 40, SK.ink, t);
+  g.save(); g.translate(lerp(W * 0.55, W * 0.4, k), H * 0.62); g.fillStyle = SK.ink; g.beginPath(); g.moveTo(-180, -10); g.quadraticCurveTo(0, 40, 200, -30); g.lineTo(160, 30); g.lineTo(-150, 30); g.fill(); g.fillRect(-5, -250, 10, 240); g.fillStyle = '#e8dcc0'; g.beginPath(); g.moveTo(-70, -220); g.lineTo(70, -220); g.lineTo(60, -80); g.lineTo(-60, -80); g.fill(); g.restore();
+  const s = ['π', '∞', 'Σ', 'sin', '½'], gl = ease.out(clamp(k * 2)); g.textAlign = 'center'; s.forEach((ch, i) => { g.font = `700 ${ch.length > 1 ? 60 : 96}px Inter, serif`; g.fillStyle = rgba('#FFE2A8', gl * (0.6 + 0.4 * Math.sin(t * 2 + i))); g.shadowColor = ACCENT; g.shadowBlur = 20; g.fillText(ch, W * (0.25 + i * 0.13), H * (0.36 + Math.sin(i * 2) * 0.03) - Math.sin(t + i) * 10); }); g.shadowBlur = 0;
+  SK.grain(g, t, 0.07); };
