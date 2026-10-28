@@ -1,13 +1,13 @@
 # Posting queue
 
-_Updated Wed 28 Oct, 08:47 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 28 Oct, 08:59 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 | 1 | Wed 28 Oct · 09:06 PM | Kallanai: a 2,000-year-old dam still in use | Charon |
 | 2 | Thu 29 Oct · 07:06 AM | Göbekli Tepe: the temple older than farming | Despina |
 | 3 | Thu 29 Oct · 01:06 PM | Jatinga: where birds fall at night | Enceladus |
-| 4 | Thu 29 Oct · 05:06 PM | Lake Nyos: the lake that breathed out death | Callirrhoe |
+| 4 | Thu 29 Oct · 05:11 PM | Lake Nyos: the lake that breathed out death | Callirrhoe |
 | 5 | Thu 29 Oct · 09:06 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
 | 6 | Fri 30 Oct · 06:06 AM | Damascus steel: the sword made from Indian steel | Zephyr |
 | 7 | Fri 30 Oct · 12:06 PM | The Indus script nobody can read | Charon |
