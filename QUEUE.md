@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 28 Oct, 11:01 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 28 Oct, 12:53 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -19,10 +19,7 @@ _Updated Wed 28 Oct, 11:01 AM IST. Times are approximate: each reel posts within
 | 13 | Sat 31 Oct · 10:06 AM | Lonar: the meteor lake that turned pink | Puck |
 | 14 | Sat 31 Oct · 02:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 | 15 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
-
-## Being rendered (joins the queue when done)
-
-- malayalam-palindrome
+| 16 | Sun 01 Nov · 02:06 PM | Malayalam: a language whose name is a palindrome | Callirrhoe |
 
 ## Recently posted
 
