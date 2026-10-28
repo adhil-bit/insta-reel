@@ -205,10 +205,12 @@
     "title": "Mary Celeste: the ship with no one on board",
     "category": "MYSTERY",
     "folder": "mary-celeste",
-    "status": "pending",
+    "status": "posted",
     "voice": "Despina",
     "priority": 3,
-    "created": "2026-10-27T08:48"
+    "created": "2026-10-27T08:48",
+    "media_id": "18634266238043938",
+    "posted": "2026-10-28T12:16"
   },
   {
     "title": "Kola Superdeep Borehole: the deepest hole ever dug",
