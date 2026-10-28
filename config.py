@@ -42,6 +42,7 @@ VOICE_POOL = [
 # Gemini text-to-speech (Google AI Studio key). Expressive voices; the style prompt
 # below is applied to every line. Falls back to the Edge voices if Gemini fails.
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+GEMINI_API_KEYS = [k for k in (os.getenv("GEMINI_API_KEY"), os.getenv("GEMINI_API_KEY_2")) if k]   # tried in order when a daily limit is hit
 GEMINI_TTS_MODEL = os.getenv("GEMINI_TTS_MODEL", "gemini-2.5-flash-preview-tts")
 GEMINI_TTS_MODELS = [GEMINI_TTS_MODEL, "gemini-2.5-pro-preview-tts"]   # each has its own free daily limit
 GEMINI_STYLE = os.getenv("GEMINI_STYLE", "You are a native Malayali from Kerala narrating a popular Malayalam Instagram explainer. "

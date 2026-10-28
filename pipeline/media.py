@@ -66,15 +66,16 @@ def _edge_voice(text: str, out_path: Path, voice_id: str) -> Path:
     raise RuntimeError(f"Edge voice failed: {err if 'err' in dir() else 'empty audio'}")
 
 
-def _gemini_voice(text: str, out_path: Path, voice_name: str, model: str | None = None) -> Path:
+def _gemini_voice(text: str, out_path: Path, voice_name: str, model: str | None = None, key_index: int = 0) -> Path:
     import base64, subprocess, time
+    keys = getattr(config, "GEMINI_API_KEYS", None) or [config.GEMINI_API_KEY]
     model = model or config.GEMINI_TTS_MODEL
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     body = {"contents": [{"parts": [{"text": f"{config.GEMINI_STYLE}:\n{text}"}]}],
             "generationConfig": {"responseModalities": ["AUDIO"],
                                  "speechConfig": {"voiceConfig": {"prebuiltVoiceConfig": {"voiceName": voice_name}}}}}
     for attempt in range(6):
-        r = requests.post(url, headers={"x-goog-api-key": config.GEMINI_API_KEY}, json=body, timeout=180)
+        r = requests.post(url, headers={"x-goog-api-key": keys[key_index]}, json=body, timeout=180)
         if r.status_code == 429:
             # tell a per-minute limit (wait and retry) from the daily limit (give up for today)
             try:
@@ -87,7 +88,10 @@ def _gemini_voice(text: str, out_path: Path, voice_name: str, model: str | None 
                 alt = [mm for mm in config.GEMINI_TTS_MODELS if mm != model]
                 if alt and model == config.GEMINI_TTS_MODEL:
                     print(f"  daily limit reached on {model}; trying {alt[0]}")
-                    return _gemini_voice(text, out_path, voice_name, model=alt[0])
+                    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
+                if key_index + 1 < len(keys):                       # both models used up on this key: next key
+                    print(f"  daily limit reached on key {key_index + 1}; switching to key {key_index + 2}")
+                    return _gemini_voice(text, out_path, voice_name, model=config.GEMINI_TTS_MODEL, key_index=key_index + 1)
                 raise RuntimeError("Gemini daily voice quota used up")
             time.sleep(min(70, float(str(delay).rstrip("s") or 20) + 2)); continue
         if r.status_code >= 500:

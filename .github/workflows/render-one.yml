@@ -19,6 +19,7 @@ env:
   VISUAL_MODE: code
   VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'gemini' }}
   GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
   ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
   ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
   ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL || 'eleven_v3' }}
