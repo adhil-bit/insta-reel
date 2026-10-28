@@ -1,3 +1,6 @@
+Rendering job itty-cora-5-europe: Pathinettam Koottam: the unseen side of Itty Cora, Part 5/5
+3/6 Recording the voiceover (voice: Charon)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
     media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
@@ -13,17 +16,11 @@ RuntimeError: Gemini daily voice quota used up
 The above exception was the direct cause of the following exception:
 
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
-    name = render_job(job.parent).name
-           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 675, in <module>
+    render_job(Path(args.folder))
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 72, in build_reel
     raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
 RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
-Rendering job malayalam-palindrome: Malayalam: a language whose name is a palindrome
-3/6 Recording the voiceover (voice: Despina)...
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-!! malayalam-palindrome failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
-Rendered 0 job(s). Failed: ['malayalam-palindrome']
