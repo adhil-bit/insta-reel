@@ -313,16 +313,18 @@
     "status": "pending",
     "voice": "Charon",
     "post_on": "2099-01-01",
-    "created": "2026-10-28T15:39"
+    "created": "2026-10-27T11:48"
   },
   {
     "title": "Kallanai: a 2,000-year-old dam still in use",
     "category": "TECH",
     "folder": "kallanai-2000-year-dam",
-    "status": "pending",
+    "status": "posted",
     "voice": "Charon",
     "priority": 4,
-    "created": "2026-10-28T15:05"
+    "created": "2026-10-28T15:05",
+    "media_id": "18644048299045337",
+    "posted": "2026-10-28T15:41"
   },
   {
     "title": "Göbekli Tepe: the temple older than farming",
