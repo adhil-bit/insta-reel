@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 28 Oct, 07:33 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 28 Oct, 08:09 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -24,6 +24,7 @@ _Updated Wed 28 Oct, 07:33 PM IST. Times are approximate: each reel posts within
 | Reel | Posted (UTC) |
 |---|---|
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 3/5 | 2026-10-28T08:41 |
+| Pathinettam Koottam: the unseen side of Itty Cora, Part 4/5 | 2026-10-28T14:39 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5 | 2026-10-27T14:04 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5 | 2026-10-27T11:48 |
 | Yakshi: why you never stop under a pala tree at night | 2026-10-28T14:03 |
@@ -32,4 +33,3 @@ _Updated Wed 28 Oct, 07:33 PM IST. Times are approximate: each reel posts within
 | The real KGF: one of the world's deepest gold mines | 2026-10-27T02:11 |
 | India's first Christmas cake was baked in Thalassery | 2026-10-26T13:09 |
 | Kodinhi: Kerala's village of twins | 2026-10-27T07:39 |
-| Chundan Vallam: 100 rowers, one boat | 2026-10-26T04:23 |
