@@ -1,0 +1,121 @@
+{
+  "topic": {
+    "title": "MV Kairali: Kerala's ship that vanished with 51 aboard",
+    "category": "MYSTERY",
+    "angle": "Kerala's own ship vanished in 1979 without a trace; it was the Arabian Sea, not the Bermuda Triangle",
+    "key_facts": [
+      "MV Kairali, owned by the Kerala Shipping Corporation, left Margao/Marmagao, Goa on 30 June 1979",
+      "Cargo about 20,000 tonnes of iron ore, bound for Rostock (East Germany) via Djibouti for refuelling",
+      "Last contact around 3 July 1979; no distress signal; never reached Djibouti; never found",
+      "51 aboard per The New Indian Express (2025); some earlier reports say 49",
+      "A Kerala court judgment records findings of defective radars before the voyage (a lead, not proof)",
+      "Theories: overloading, cargo shift, weather, piracy, insurance irregularities: none proven",
+      "Lok Sabha record: 'Enquiry into the Disappearance of MV Kairali', 18 April 1985"
+    ],
+    "sources": [
+      "The New Indian Express (30 Jun 2025)",
+      "The News Minute",
+      "Lok Sabha debates, 18 Apr 1985",
+      "Kerala court judgment (radar findings)"
+    ]
+  },
+  "category": "MYSTERY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "KERALA'S",
+    "LOST SHIP"
+  ],
+  "accent_words": [
+    "LOST"
+  ],
+  "thumbnail_ml": "51 പേരുമായി കടലിൽ മറഞ്ഞ കേരളത്തിന്റെ കപ്പൽ!",
+  "thumbnail_accent": [
+    "കേരളത്തിന്റെ"
+  ],
+  "hook_voiceover": "കേരളത്തിന്റെ സ്വന്തം കപ്പൽ. 51 പേർ. 20,000 ടൺ ഇരുമ്പയിര്. പിന്നെ ഒരു തുമ്പും ബാക്കിയില്ല!",
+  "scenes": [
+    {
+      "voiceover": "എം.വി. കൈരളി. കേരള ഷിപ്പിംഗ് കോർപ്പറേഷന്റെ കപ്പൽ. 1979 ജൂൺ 30-ന് ഗോവയിൽ നിന്ന് പുറപ്പെട്ടു.",
+      "caption": "MV KAIRALI",
+      "highlight": "KAIRALI",
+      "kicker": "KERALA SHIPPING CORPORATION · 1979",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ലക്ഷ്യം കിഴക്കൻ ജർമ്മനിയിലെ റോസ്റ്റോക്ക്. വഴിയിൽ ജിബൂട്ടിയിൽ ഇന്ധനം നിറയ്ക്കണം.",
+      "caption": "GOA TO EAST GERMANY",
+      "highlight": "GERMANY",
+      "kicker": "VIA DJIBOUTI",
+      "labels": [
+        {
+          "text": "GOA",
+          "x": 0.82,
+          "y": 0.47,
+          "at": 0.08
+        },
+        {
+          "text": "DJIBOUTI",
+          "x": 0.42,
+          "y": 0.535,
+          "at": 0.3
+        },
+        {
+          "text": "ROSTOCK",
+          "x": 0.26,
+          "y": 0.27,
+          "at": 0.3
+        }
+      ],
+      "visual": ""
+    },
+    {
+      "voiceover": "ജൂലൈ 3. അവസാന റേഡിയോ സന്ദേശം. പിന്നെ നിശ്ശബ്ദത. ഒരു അപായ സന്ദേശം പോലും ഇല്ല.",
+      "caption": "LAST CONTACT: 3 JULY",
+      "highlight": "3 JULY",
+      "kicker": "NO DISTRESS CALL",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "റഡാർ തകരാറിലായിരുന്നുവെന്ന് ഒരു കോടതി വിധിയിൽ രേഖയുണ്ട്. ഓവർലോഡ്? കൊടുങ്കാറ്റ്? കടൽക്കൊള്ള? തെളിവില്ല.",
+      "caption": "THEORIES, NO PROOF",
+      "highlight": "PROOF",
+      "kicker": "RADAR FAULTS ON RECORD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ബെർമുഡ ട്രയാംഗിൾ എന്ന് ഇന്നും പലരും പറയും. പക്ഷേ കൈരളി മറഞ്ഞത് അറബിക്കടലിലാണ്. ആ 51 പേർക്ക് എന്ത് സംഭവിച്ചു? നിങ്ങളുടെ ഊഹം കമന്റിൽ പറയൂ!",
+      "caption": "WHAT HAPPENED TO THE 51?",
+      "highlight": "51?",
+      "kicker": "YOUR THEORY? COMMENT BELOW",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "എം.വി. കൈരളി: 51 പേരുമായി മറഞ്ഞ കേരളത്തിന്റെ കപ്പൽ 🚢\nMV Kairali: the Kerala ship that vanished with 51 people aboard.\n\n1979 ജൂൺ 30-ന് ഗോവയിൽ നിന്ന് 20,000 ടൺ ഇരുമ്പയിരുമായി പുറപ്പെട്ടു. ജൂലൈ 3-ന് ശേഷം ഒരു വിവരവുമില്ല. കപ്പലോ ആളുകളോ ഇന്നുവരെ കണ്ടെത്തിയിട്ടില്ല.\nIt left Goa on 30 June 1979 with iron ore for East Germany. After 3 July, silence. Neither the ship nor its crew was ever found.\n\nബെർമുഡ ട്രയാംഗിൾ അല്ല, അറബിക്കടൽ. ആ 51 പേർക്ക് എന്ത് സംഭവിച്ചുവെന്നാണ് നിങ്ങൾ കരുതുന്നത്?\nNot the Bermuda Triangle: the Arabian Sea. What do you think happened to the 51?\n\nShare this with someone who loves unsolved mysteries. 📩",
+  "search_ml": [
+    "എം.വി. കൈരളി",
+    "കൈരളി കപ്പൽ",
+    "കപ്പൽ രഹസ്യം",
+    "1979"
+  ],
+  "hashtags": [
+    "MVKairali",
+    "KeralaHistory",
+    "MaritimeMystery",
+    "ArabianSea",
+    "KeralaShippingCorporation"
+  ],
+  "fact_check": [
+    "51 vs 49 aboard: reports differ; the reel uses 51 (TNIE 2025)",
+    "Radar fault: recorded in a court judgment; presented as a record, not the cause",
+    "Departure port reported as Margao/Marmagao, Goa"
+  ]
+}
