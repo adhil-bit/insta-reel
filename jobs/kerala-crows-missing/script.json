@@ -39,34 +39,34 @@
   "cover_visual": "bali leaf, empty sky",
   "scenes": [
     {
-      "voiceover": "ആദ്യ സംശയം കറന്റ് കമ്പികളും ട്രാൻസ്ഫോർമറുകളും. രണ്ട് കമ്പിയിൽ ഒരുമിച്ച് തൊട്ടാൽ, ഷോക്കേറ്റ് താഴെ വീഴും.",
+      "voiceover": "ആദ്യ കാരണം KSEB-യുടെ ലൈൻ കമ്പികളും ട്രാൻസ്ഫോർമറുകളും തന്നെ. രണ്ട് കമ്പിയിൽ ഒരുമിച്ച് തൊട്ടാൽ, ഷോക്കേറ്റ് കാക്ക താഴെ.",
       "caption": "THE LIVE WIRE",
       "highlight": "WIRE",
-      "kicker": "SUSPECT 1 · ELECTROCUTION",
+      "kicker": "REASON 1 · KSEB LINES & TRANSFORMERS",
       "labels": [],
       "visual": ""
     },
     {
-      "voiceover": "വലിയ മരങ്ങൾ മുറിഞ്ഞു. കൂടുകൂട്ടാനും രാത്രി ചേക്കേറാനും ഇടമില്ല.",
+      "voiceover": "രണ്ടാം കാരണം, വലിയ മരങ്ങൾ മുറിഞ്ഞത്. കൂടുകൂട്ടാനും രാത്രി ചേക്കേറാനും ഇടമില്ല.",
       "caption": "NOWHERE TO ROOST",
       "highlight": "ROOST",
-      "kicker": "SUSPECT 2 · URBANISATION",
+      "kicker": "REASON 2 · URBANISATION",
       "labels": [],
       "visual": ""
     },
     {
-      "voiceover": "വയലിലെ കീടനാശിനി. വിഷം കലർന്ന ഭക്ഷണം കാക്കകളുടെ ഉള്ളിലുമെത്തുന്നു.",
+      "voiceover": "മൂന്നാം കാരണം, വയലിലെ കീടനാശിനി. വിഷം കലർന്ന ഭക്ഷണം കാക്കകളുടെ ഉള്ളിലുമെത്തുന്നു.",
       "caption": "POISON IN THE FOOD",
       "highlight": "POISON",
-      "kicker": "SUSPECT 3 · PESTICIDES",
+      "kicker": "REASON 3 · PESTICIDES",
       "labels": [],
       "visual": ""
     },
     {
-      "voiceover": "ചിലയിടങ്ങളിൽ രോഗം വന്ന് കൂട്ടത്തോടെ ചത്തുവീഴുന്നതും കണ്ടിട്ടുണ്ട്.",
+      "voiceover": "നാലാമത്, രോഗം. ചിലയിടങ്ങളിൽ കൂട്ടത്തോടെ ചത്തുവീഴുന്നതും കണ്ടിട്ടുണ്ട്.",
       "caption": "SUDDEN DEATHS",
       "highlight": "DEATHS",
-      "kicker": "SUSPECT 4 · DISEASE",
+      "kicker": "REASON 4 · DISEASE",
       "labels": [],
       "visual": ""
     },
@@ -79,7 +79,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "നമ്മളൊക്കെ ചെറുപ്പത്തിൽ കണ്ട കാക്കകൾ എവിടെ പോയി? 🐦‍⬛\nWhere did the crows of our childhood go?\n\nകറന്റ് കമ്പികളും ട്രാൻസ്ഫോർമറുകളും, മുറിഞ്ഞുപോയ മരങ്ങൾ, കീടനാശിനി, രോഗം. പക്ഷേ ചിലയിടത്ത് കാക്കകൾ പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു.\nPower lines and transformers, lost trees, pesticides, disease, and maybe just a move to new places.\n\nനിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ.\nHave crows become fewer where you live? Tell us below.\n\nShare this with someone who still waits for crows at Vavu bali. 📩",
+  "instagram_caption": "നമ്മളൊക്കെ ചെറുപ്പത്തിൽ കണ്ട കാക്കകൾ എവിടെ പോയി? 🐦‍⬛\nWhere did the crows of our childhood go?\n\nആദ്യ കാരണം KSEB ലൈൻ കമ്പികളും ട്രാൻസ്ഫോർമറുകളും. പിന്നെ മുറിഞ്ഞുപോയ മരങ്ങൾ, കീടനാശിനി, രോഗം. പക്ഷേ ചിലയിടത്ത് കാക്കകൾ പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു.\nFirst, KSEB power lines and transformers; then lost trees, pesticides and disease, and maybe just a move to new places.\n\nനിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ.\nHave crows become fewer where you live? Tell us below.\n\nShare this with someone who still waits for crows at Vavu bali. 📩",
   "search_ml": [
     "കാക്ക",
     "കാക്കകൾ കുറയുന്നു",
@@ -88,9 +88,9 @@
   ],
   "hashtags": [
     "Crows",
+    "KSEB",
     "KeralaBirds",
     "Electrocution",
-    "Urbanisation",
     "BirdConservation"
   ],
   "fact_check": [
