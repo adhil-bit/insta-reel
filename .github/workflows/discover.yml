@@ -1,0 +1,38 @@
+name: Discover similar creators
+
+on:
+  workflow_dispatch:
+    inputs:
+      queries:
+        description: "Web searches separated by |"
+        required: false
+        default: ""
+      handles:
+        description: "Instagram handles to look up, separated by |"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    env:
+      IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.IG_USER_ID }}
+      IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
+      QUERIES: ${{ github.event.inputs.queries }}
+      HANDLES: ${{ github.event.inputs.handles }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q requests python-dotenv
+      - run: python scripts/discover.py
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs/discover.json && git commit -qm "discover" && git pull -q --rebase && git push -q || true
