@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 29 Oct, 10:43 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 29 Oct, 11:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -17,6 +17,10 @@ _Updated Thu 29 Oct, 10:43 AM IST. Times are approximate: each reel posts within
 | 11 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
 | 12 | Sun 01 Nov · 02:06 PM | Malayalam: a language whose name is a palindrome | Callirrhoe |
 | 13 | Sun 01 Nov · 05:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+
+## Being rendered (joins the queue when done)
+
+- mv-kairali
 
 ## Recently posted
 
