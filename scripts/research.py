@@ -57,6 +57,13 @@ for n in picks[:12]:                             # follow the links and keep rea
         out["articles"].append({"title": n["title"], "url": r.url, "text": keep})
     except Exception as e:
         out["articles"].append({"title": n["title"], "error": str(e)[:120]})
+for title in [t for t in os.environ.get("WIKI_PAGES", "").split("|") if t]:        # full text of named Wikipedia pages
+    try:
+        w = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "query", "prop": "extracts", "explaintext": 1, "titles": title, "format": "json"}, headers=UA, timeout=30).json()
+        for pg in w["query"]["pages"].values():
+            out.setdefault("wiki_pages", []).append({"title": pg.get("title"), "text": (pg.get("extract") or "")[:12000]})
+    except Exception as e:
+        out.setdefault("wiki_pages", []).append({"title": title, "error": str(e)[:120]})
 os.makedirs("logs/research", exist_ok=True)
 json.dump(out, open(f"logs/research/{slug}.json", "w"), indent=2, ensure_ascii=False)
 print(len(out["news"]), "news,", len(out["wiki"]), "wiki,", len(out["articles"]), "articles")

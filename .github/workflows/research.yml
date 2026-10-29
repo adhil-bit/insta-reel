@@ -12,6 +12,10 @@ on:
         description: "Only read articles whose title matches this (regex)"
         required: false
         default: "."
+      wiki_pages:
+        description: "Wikipedia pages to read in full, separated by |"
+        required: false
+        default: ""
       follow:
         description: "Only follow articles whose titles contain these words (|-separated)"
         required: false
