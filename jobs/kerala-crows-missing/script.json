@@ -1,0 +1,102 @@
+{
+  "topic": {
+    "title": "Where did Kerala's crows go?",
+    "category": "NATURE",
+    "angle": "Fewer crows: power lines, lost trees, pesticides, disease, or relocation",
+    "key_facts": [
+      "People across India and Kerala report fewer crows, even at shraddha/bali rituals (TOI 2018; The Hindu 2017)",
+      "Birds are electrocuted when they bridge two live wires or a wire and earthed equipment such as transformers",
+      "Loss of large trees and urban growth reduce nesting and roosting sites",
+      "Pesticides can poison birds through contaminated food",
+      "Local mass deaths from disease are reported from time to time",
+      "A 2025 Kerala Kaumudi report says Kerala's crows may be relocating rather than vanishing"
+    ],
+    "sources": [
+      "The Times of India (2018)",
+      "The Hindu (2017)",
+      "Kerala Kaumudi (2025)",
+      "The New Indian Express (2024)"
+    ]
+  },
+  "category": "NATURE",
+  "priority": 1,
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "WHERE DID",
+    "OUR CROWS GO?"
+  ],
+  "accent_words": [
+    "CROWS"
+  ],
+  "thumbnail_ml": "നമ്മുടെ കാക്കകൾ എവിടെ പോയി?",
+  "thumbnail_accent": [
+    "കാക്കകൾ"
+  ],
+  "hook_voiceover": "നമ്മളൊക്കെ ചെറുപ്പത്തിൽ കണ്ട കാക്കകൾ ഒക്കെ എവിടെ പോയി? ബലിയിടുമ്പോൾ പോലും ഇപ്പോൾ കാത്തിരിക്കണം!",
+  "cover_visual": "bali leaf, empty sky",
+  "scenes": [
+    {
+      "voiceover": "ആദ്യ സംശയം കറന്റ് കമ്പികളും ട്രാൻസ്ഫോർമറുകളും. രണ്ട് കമ്പിയിൽ ഒരുമിച്ച് തൊട്ടാൽ, ഷോക്കേറ്റ് താഴെ വീഴും.",
+      "caption": "THE LIVE WIRE",
+      "highlight": "WIRE",
+      "kicker": "SUSPECT 1 · ELECTROCUTION",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വലിയ മരങ്ങൾ മുറിഞ്ഞു. കൂടുകൂട്ടാനും രാത്രി ചേക്കേറാനും ഇടമില്ല.",
+      "caption": "NOWHERE TO ROOST",
+      "highlight": "ROOST",
+      "kicker": "SUSPECT 2 · URBANISATION",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വയലിലെ കീടനാശിനി. വിഷം കലർന്ന ഭക്ഷണം കാക്കകളുടെ ഉള്ളിലുമെത്തുന്നു.",
+      "caption": "POISON IN THE FOOD",
+      "highlight": "POISON",
+      "kicker": "SUSPECT 3 · PESTICIDES",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചിലയിടങ്ങളിൽ രോഗം വന്ന് കൂട്ടത്തോടെ ചത്തുവീഴുന്നതും കണ്ടിട്ടുണ്ട്.",
+      "caption": "SUDDEN DEATHS",
+      "highlight": "DEATHS",
+      "kicker": "SUSPECT 4 · DISEASE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഒരു ട്വിസ്റ്റ്. ചിലയിടത്ത് കാക്കകൾ ഇല്ലാതായതല്ല, പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു. നിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ!",
+      "caption": "GONE, OR JUST MOVED?",
+      "highlight": "MOVED?",
+      "kicker": "YOUR AREA? COMMENT BELOW",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "നമ്മളൊക്കെ ചെറുപ്പത്തിൽ കണ്ട കാക്കകൾ എവിടെ പോയി? 🐦‍⬛\nWhere did the crows of our childhood go?\n\nകറന്റ് കമ്പികളും ട്രാൻസ്ഫോർമറുകളും, മുറിഞ്ഞുപോയ മരങ്ങൾ, കീടനാശിനി, രോഗം. പക്ഷേ ചിലയിടത്ത് കാക്കകൾ പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു.\nPower lines and transformers, lost trees, pesticides, disease, and maybe just a move to new places.\n\nനിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ.\nHave crows become fewer where you live? Tell us below.\n\nShare this with someone who still waits for crows at Vavu bali. 📩",
+  "search_ml": [
+    "കാക്ക",
+    "കാക്കകൾ കുറയുന്നു",
+    "കറന്റ് കമ്പി",
+    "ബലി"
+  ],
+  "hashtags": [
+    "Crows",
+    "KeralaBirds",
+    "Electrocution",
+    "Urbanisation",
+    "BirdConservation"
+  ],
+  "fact_check": [
+    "'Fewer crows' is reported by people and newspapers, not proven by a Kerala-wide census: the reel says so",
+    "Electrocution is presented as a suspect, not proven as the main cause",
+    "Relocation idea: Kerala Kaumudi, May 2025"
+  ],
+  "post_on": "2099-01-01"
+}
