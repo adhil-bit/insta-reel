@@ -23,13 +23,25 @@ for q in queries:
             out["wiki"].append({"q": q, "title": r["title"], "snippet": html.unescape(re.sub(r"<.*?>", "", r["snippet"]))})
     except Exception as e:
         out["wiki"].append({"q": q, "error": str(e)[:120]})
-for n in out["news"][:14]:                       # follow the top links and keep readable text
-    if "link" not in n: continue
+def real_url(title):
+    """Google News links are JS redirects: find the publisher's own URL via DuckDuckGo's HTML search."""
+    r = requests.post("https://html.duckduckgo.com/html/", data={"q": title}, headers=UA, timeout=30).text
+    m = re.search(r'class="result__a" href="([^"]+)"', r)
+    if not m: return None
+    u = html.unescape(m.group(1))
+    if "uddg=" in u: u = urllib.parse.unquote(re.search(r"uddg=([^&]+)", u).group(1))
+    return u
+picks = [n for n in out["news"] if "title" in n]
+want = os.environ.get("FOLLOW", "")
+if want: picks = [n for n in picks if any(w.lower() in n["title"].lower() for w in want.split("|"))] or picks
+for n in picks[:12]:                             # follow the links and keep readable text
     try:
-        r = requests.get(n["link"], headers=UA, timeout=30, allow_redirects=True)
+        url = real_url(re.sub(r" - [^-]+$", "", n["title"])) or n["link"]
+        r = requests.get(url, headers=UA, timeout=30, allow_redirects=True)
         txt = re.sub(r"(?s)<(script|style|nav|header|footer).*?</\1>", " ", r.text)
         txt = html.unescape(re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", txt)))
-        keep = " ".join(s for s in re.split(r"(?<=[.!?]) ", txt) if re.search(r"crow|കാക്ക|KSEB|electrocut|transformer|bird", s, re.I))[:3000]
+        kw = os.environ.get("KEYWORDS", "crow|കാക്ക|KSEB|electrocut|transformer|bird")
+        keep = " ".join(s for s in re.split(r"(?<=[.!?]) ", txt) if re.search(kw, s, re.I))[:3500]
         out["articles"].append({"title": n["title"], "url": r.url, "text": keep})
     except Exception as e:
         out["articles"].append({"title": n["title"], "error": str(e)[:120]})
