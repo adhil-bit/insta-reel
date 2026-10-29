@@ -19,7 +19,7 @@
     ]
   },
   "category": "NATURE",
-  "priority": 1,
+  "priority": 0,
   "template": "explainer",
   "opening": {
     "type": "hero"
@@ -79,12 +79,9 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "നമ്മളൊക്കെ ചെറുപ്പത്തിൽ കണ്ട കാക്കകൾ എവിടെ പോയി? 🐦‍⬛\nWhere did the crows of our childhood go?\n\nആദ്യ കാരണം KSEB ലൈൻ കമ്പികളും ട്രാൻസ്ഫോർമറുകളും. പിന്നെ മുറിഞ്ഞുപോയ മരങ്ങൾ, കീടനാശിനി, രോഗം. പക്ഷേ ചിലയിടത്ത് കാക്കകൾ പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു.\nFirst, KSEB power lines and transformers; then lost trees, pesticides and disease, and maybe just a move to new places.\n\nനിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ.\nHave crows become fewer where you live? Tell us below.\n\nShare this with someone who still waits for crows at Vavu bali. 📩",
+  "instagram_caption": "കാക്കകൾ എവിടെ പോയി? ഒരു കാരണം KSEB കമ്പി ⚡\nWhere did the crows of our childhood go?\n\nആദ്യ കാരണം KSEB ലൈൻ കമ്പികളും ട്രാൻസ്ഫോർമറുകളും. പിന്നെ മുറിഞ്ഞുപോയ മരങ്ങൾ, കീടനാശിനി, രോഗം. പക്ഷേ ചിലയിടത്ത് കാക്കകൾ പുതിയ ഇടങ്ങളിലേക്ക് മാറിയതാണെന്നും പറയുന്നു.\nFirst, KSEB power lines and transformers; then lost trees, pesticides and disease, and maybe just a move to new places.\n\nനിങ്ങളുടെ നാട്ടിൽ കാക്കകൾ കുറഞ്ഞോ? കമന്റിൽ പറയൂ.\nHave crows become fewer where you live? Tell us below.\n\nShare this with someone who still waits for crows at Vavu bali. 📩",
   "search_ml": [
-    "കാക്ക",
-    "കാക്കകൾ കുറയുന്നു",
-    "കറന്റ് കമ്പി",
-    "ബലി"
+    "കാക്കകൾ എവിടെ പോയി? ഒരു കാരണം KSEB കമ്പി ⚡"
   ],
   "hashtags": [
     "Crows",
@@ -97,6 +94,5 @@
     "'Fewer crows' is reported by people and newspapers, not proven by a Kerala-wide census: the reel says so",
     "Electrocution is presented as a suspect, not proven as the main cause",
     "Relocation idea: Kerala Kaumudi, May 2025"
-  ],
-  "post_on": "2099-01-01"
+  ]
 }
