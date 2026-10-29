@@ -8,6 +8,10 @@ on:
       queries:
         description: "Search queries separated by |"
         required: true
+      focus:
+        description: "Only read articles whose title matches this (regex)"
+        required: false
+        default: "."
       follow:
         description: "Only follow articles whose titles contain these words (|-separated)"
         required: false
