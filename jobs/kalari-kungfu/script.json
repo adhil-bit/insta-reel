@@ -1,0 +1,114 @@
+{
+  "topic": {
+    "title": "Did Kalaripayattu become Kung Fu? The Bodhidharma legend",
+    "category": "HISTORY",
+    "angle": "The 7aum Arivu story vs the historical record: a timeline gap",
+    "key_facts": [
+      "Bodhidharma is traditionally associated with bringing Chan Buddhism to China, 5th-6th century CE (Smithsonian Folklife)",
+      "His role in Shaolin martial arts is presented as tradition/legend, not documented origin (Smithsonian Folklife)",
+      "Kalaripayattu's origins are uncertain (Kerala Tourism); the tradition is clearly documented later; Duarte Barbosa described Kerala's martial training in the early 16th century (Cambridge)",
+      "No reliable evidence that Bodhidharma trained in Kalaripayattu or brought it to China (MDPI; 'When Yogis Become Warriors')",
+      "The Tamil film 7aum Arivu (2011) popularised the story"
+    ],
+    "sources": [
+      "Smithsonian Folklife Festival: Martial Arts along the Silk Road",
+      "Kerala Tourism: Kalaripayattu",
+      "Cambridge University Press: Kalarippayatt",
+      "MDPI: When Yogis Become Warriors"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "THE BODHIDHARMA",
+    "LEGEND"
+  ],
+  "accent_words": [
+    "LEGEND"
+  ],
+  "thumbnail_ml": "കുങ്ഫു പഠിപ്പിച്ചത് കളരിയോ?",
+  "thumbnail_accent": [
+    "കളരിയോ?"
+  ],
+  "hook_voiceover": "ഏഴാം അറിവിൽ നിങ്ങൾ കണ്ട ബോധിധർമ്മൻ. പക്ഷേ ആ കഥയിൽ ഒരു വലിയ പ്രശ്നമുണ്ടെന്ന് നിങ്ങൾ ഊഹിക്കില്ല!",
+  "cover_visual": "Kalari fighter vs crane-stance fighter, split frame, question mark",
+  "scenes": [
+    {
+      "voiceover": "കഥ ഇങ്ങനെ: കളരി പഠിച്ച ഒരു സന്യാസി ചൈനയിലെത്തി. അദ്ദേഹം പഠിപ്പിച്ചതാണ് കുങ്ഫു.",
+      "caption": "THE POPULAR STORY",
+      "highlight": "STORY",
+      "kicker": "KERALA → HIMALAYAS → CHINA",
+      "labels": [
+        {
+          "text": "KERALA",
+          "x": 0.26,
+          "y": 0.555,
+          "at": 0.08
+        },
+        {
+          "text": "SHAOLIN",
+          "x": 0.78,
+          "y": 0.33,
+          "at": 0.85
+        }
+      ],
+      "visual": ""
+    },
+    {
+      "voiceover": "ബോധിധർമ്മൻ യഥാർത്ഥ ചരിത്രപുരുഷനാണ്. ചൈനയിൽ ബുദ്ധമതത്തിന്റെ വളർച്ചയുമായി ബന്ധപ്പെട്ട ഒരു സന്യാസി.",
+      "caption": "BODHIDHARMA WAS REAL",
+      "highlight": "REAL",
+      "kicker": "5TH–6TH CENTURY · BUDDHIST MONK",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ കളരിപ്പയറ്റ് ഒരു വ്യവസ്ഥാപിത കലയായി രേഖകളിൽ വ്യക്തമാകുന്നത് നൂറ്റാണ്ടുകൾ കഴിഞ്ഞാണ്.",
+      "caption": "THE TIMELINE PROBLEM",
+      "highlight": "PROBLEM",
+      "kicker": "KALARI: CLEARER IN LATER RECORDS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഷാവോലിൻ ആയോധനകല വളർന്നത് പല ചൈനീസ് പാരമ്പര്യങ്ങളിൽ നിന്ന്. ബോധിധർമ്മൻ കുങ്ഫു പഠിപ്പിച്ചു എന്നത് ഒരു ഐതിഹ്യം.",
+      "caption": "LEGEND, NOT RECORD",
+      "highlight": "LEGEND,",
+      "kicker": "SHAOLIN HAD MANY ROOTS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അപ്പോൾ ഇത് ചരിത്രമോ, ഐതിഹ്യമോ, അതോ അഭിമാനത്തോടെ നമ്മൾ വിശ്വസിച്ച ഒരു കഥയോ? കമന്റിൽ പറയൂ!",
+      "caption": "HISTORY OR PRIDE?",
+      "highlight": "PRIDE?",
+      "kicker": "WHAT DO YOU THINK?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കുങ്ഫു പഠിപ്പിച്ചത് കളരിയോ? 🥋\nDid Kalaripayattu really become Kung Fu?\n\nബോധിധർമ്മൻ ചരിത്രപുരുഷനാണ്, ചൈനയിൽ ബുദ്ധമതവുമായി ബന്ധപ്പെട്ടയാൾ. പക്ഷേ അദ്ദേഹം കളരി ചൈനയിലെത്തിച്ച് കുങ്ഫുവാക്കി എന്നതിന് വിശ്വസനീയമായ രേഖകളില്ല. കളരി ഒരു സംഘടിത കലയായി രേഖകളിൽ വ്യക്തമാകുന്നത് നൂറ്റാണ്ടുകൾ കഴിഞ്ഞാണ്.\nBodhidharma is linked to the spread of Buddhism in China, but no reliable record shows he took Kalaripayattu there and turned it into Kung Fu. That part is legend, popularised by the film 7aum Arivu.\n\nചരിത്രമോ, ഐതിഹ്യമോ, അഭിമാനമോ? കമന്റിൽ പറയൂ.\nHistory, legend or pride? Tell us below.\n\nShare this with your kalari friend. 📩",
+  "search_ml": [
+    "കളരിപ്പയറ്റ്",
+    "ബോധിധർമ്മൻ",
+    "കുങ്ഫു",
+    "ഏഴാം അറിവ്"
+  ],
+  "hashtags": [
+    "Kalaripayattu",
+    "Bodhidharma",
+    "KungFu",
+    "7aumArivu",
+    "KeralaHistory"
+  ],
+  "fact_check": [
+    "Bodhidharma's martial-arts role stated as legend",
+    "Kalari dating: uncertain; clearer in later records (Barbosa, 16th c.)",
+    "No claim Kalari is younger than 500 CE in absolute terms: 'clearer in records later'"
+  ]
+}
