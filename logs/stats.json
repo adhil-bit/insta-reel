@@ -1,71 +1,101 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 63,
-    "follows_count": 221,
-    "media_count": 17,
+    "followers_count": 78,
+    "follows_count": 253,
+    "media_count": 19,
     "id": "28876323268696257"
   },
   "reels": [
     {
+      "id": "18636109006022361",
+      "timestamp": "2026-10-29T01:40:17+0000",
+      "like_count": 1,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/DfD2Q7uDIbc/",
+      "title": "ഗൊബെക്ലി തെപ്പെ · പഴയ ക്ഷേത്രം · തുർക്കി",
+      "views": 24,
+      "reach": 14,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 12590,
+      "ig_reels_video_view_total_time": 176265
+    },
+    {
+      "id": "18644048299045337",
+      "timestamp": "2026-10-28T15:41:21+0000",
+      "like_count": 16,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/DfCxuoDieJi/",
+      "title": "കല്ലണൈ · കാവേരി · ചോള · പഴയ അണക്കെട്ട്",
+      "views": 1231,
+      "reach": 1063,
+      "saved": 5,
+      "shares": 1,
+      "total_interactions": 22,
+      "ig_reels_avg_watch_time": 9500,
+      "ig_reels_video_view_total_time": 10089215
+    },
+    {
       "id": "18078998393417449",
       "timestamp": "2026-10-28T14:39:30+0000",
-      "like_count": 0,
+      "like_count": 6,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfCqmkignNn/",
       "title": "കുരുമുളക് · വാസ്കോ ഡ ഗാമ · കോഴിക്കോട് · 1498",
-      "views": 3,
-      "reach": 1,
-      "saved": 0,
+      "views": 289,
+      "reach": 259,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 0,
-      "ig_reels_avg_watch_time": 10680,
-      "ig_reels_video_view_total_time": 21360
+      "total_interactions": 7,
+      "ig_reels_avg_watch_time": 8312,
+      "ig_reels_video_view_total_time": 2161293
     },
     {
       "id": "17954116413295269",
       "timestamp": "2026-10-28T14:03:00+0000",
-      "like_count": 1,
+      "like_count": 23,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfCmeECD2SJ/",
       "title": "യക്ഷി · പാലമരം · ഐതിഹ്യമാല · കള്ളിയങ്കാട്ട് നീലി",
-      "views": 59,
-      "reach": 19,
-      "saved": 0,
+      "views": 1205,
+      "reach": 1048,
+      "saved": 4,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 5012,
-      "ig_reels_video_view_total_time": 85216
+      "total_interactions": 27,
+      "ig_reels_avg_watch_time": 9932,
+      "ig_reels_video_view_total_time": 10359619
     },
     {
       "id": "18634266238043938",
       "timestamp": "2026-10-28T12:16:41+0000",
-      "like_count": 3,
+      "like_count": 5,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfCaTT1ADji/",
       "title": "മേരി സെലസ്റ്റ് · കപ്പൽ രഹസ്യം · കടൽ",
-      "views": 20,
-      "reach": 15,
+      "views": 47,
+      "reach": 44,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 3,
-      "ig_reels_avg_watch_time": 13375,
-      "ig_reels_video_view_total_time": 200639
+      "total_interactions": 5,
+      "ig_reels_avg_watch_time": 9432,
+      "ig_reels_video_view_total_time": 405613
     },
     {
       "id": "18117761219007586",
       "timestamp": "2026-10-28T08:41:28+0000",
-      "like_count": 44,
+      "like_count": 47,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfCBrazDZcD/",
       "title": "നീലകണ്ഠ സോമയാജി · തന്ത്രസംഗ്രഹം · കേരള ജ്യോതിശാസ്ത്രം",
-      "views": 1158,
-      "reach": 1066,
+      "views": 1199,
+      "reach": 1093,
       "saved": 8,
-      "shares": 2,
-      "total_interactions": 54,
-      "ig_reels_avg_watch_time": 11815,
-      "ig_reels_video_view_total_time": 12323388
+      "shares": 3,
+      "total_interactions": 58,
+      "ig_reels_avg_watch_time": 11885,
+      "ig_reels_video_view_total_time": 12824205
     },
     {
       "id": "18198878647380276",
@@ -74,13 +104,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfBr6itCe18/",
       "title": "തെയ്യം · കണ്ണൂർ · തെയ്യക്കാലം · മലബാർ",
-      "views": 150,
-      "reach": 124,
+      "views": 161,
+      "reach": 133,
       "saved": 0,
       "shares": 1,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 5745,
-      "ig_reels_video_view_total_time": 758444
+      "ig_reels_avg_watch_time": 5600,
+      "ig_reels_video_view_total_time": 784074
     },
     {
       "id": "18414308206091691",
@@ -89,13 +119,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfABp1Rjqui/",
       "title": "ഇട്ടിക്കോര · സംഗമഗ്രാമ മാധവൻ · കേരള ഗണിതം",
-      "views": 125,
-      "reach": 110,
+      "views": 126,
+      "reach": 112,
       "saved": 0,
       "shares": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6247,
-      "ig_reels_video_view_total_time": 749754
+      "ig_reels_avg_watch_time": 6210,
+      "ig_reels_video_view_total_time": 751529
     },
     {
       "id": "18159772189515254",
@@ -104,13 +134,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De_yRS_EwwL/",
       "title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ",
-      "views": 141,
-      "reach": 116,
+      "views": 148,
+      "reach": 124,
       "saved": 1,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 5655,
-      "ig_reels_video_view_total_time": 763467
+      "ig_reels_avg_watch_time": 5422,
+      "ig_reels_video_view_total_time": 775437
     },
     {
       "id": "18091550033678764",
@@ -119,13 +149,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De_VxyQkstt/",
       "title": "A village in Kerala where twins are everywhere. 👯",
-      "views": 664,
-      "reach": 591,
+      "views": 665,
+      "reach": 592,
       "saved": 0,
       "shares": 2,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 5659,
-      "ig_reels_video_view_total_time": 3457784
+      "ig_reels_avg_watch_time": 5662,
+      "ig_reels_video_view_total_time": 3465317
     },
     {
       "id": "17883411108535253",
@@ -134,13 +164,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De-wJSmDKCO/",
       "title": "Long before the movie, KGF had a real story. ⛏️✨",
-      "views": 2089,
-      "reach": 1742,
+      "views": 2107,
+      "reach": 1765,
       "saved": 3,
       "shares": 2,
       "total_interactions": 41,
-      "ig_reels_avg_watch_time": 16662,
-      "ig_reels_video_view_total_time": 29775450
+      "ig_reels_avg_watch_time": 16679,
+      "ig_reels_video_view_total_time": 30023715
     },
     {
       "id": "18145514062589407",
@@ -149,13 +179,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De9WsjYFeuZ/",
       "title": "India's first Christmas cake was baked in Kerala. 🎄🍰",
-      "views": 148,
-      "reach": 127,
+      "views": 149,
+      "reach": 128,
       "saved": 1,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 5658,
-      "ig_reels_video_view_total_time": 752623
+      "ig_reels_avg_watch_time": 5622,
+      "ig_reels_video_view_total_time": 753374
     },
     {
       "id": "18128020852812486",
@@ -169,8 +199,8 @@
       "saved": 1,
       "shares": 0,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 5473,
-      "ig_reels_video_view_total_time": 722465
+      "ig_reels_avg_watch_time": 5435,
+      "ig_reels_video_view_total_time": 722923
     },
     {
       "id": "18104200403028579",
@@ -205,32 +235,32 @@
     {
       "id": "17964978498213126",
       "timestamp": "2026-10-25T06:33:25+0000",
-      "like_count": 7,
+      "like_count": 8,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De6EogMkV-m/",
       "title": "No country had landed near the Moon's south pole. Then India did. 🇮🇳🌕",
-      "views": 149,
-      "reach": 136,
+      "views": 152,
+      "reach": 138,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 7,
-      "ig_reels_avg_watch_time": 6903,
-      "ig_reels_video_view_total_time": 1007952
+      "total_interactions": 8,
+      "ig_reels_avg_watch_time": 6884,
+      "ig_reels_video_view_total_time": 1018901
     },
     {
       "id": "18129497707843091",
       "timestamp": "2026-10-25T04:59:36+0000",
-      "like_count": 44,
+      "like_count": 46,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De555_wEjpt/",
       "title": "Stone Age art, right here in Kerala. 🪨✨",
-      "views": 1625,
-      "reach": 1242,
+      "views": 1631,
+      "reach": 1247,
       "saved": 8,
       "shares": 11,
-      "total_interactions": 64,
-      "ig_reels_avg_watch_time": 15941,
-      "ig_reels_video_view_total_time": 20612436
+      "total_interactions": 66,
+      "ig_reels_avg_watch_time": 15929,
+      "ig_reels_video_view_total_time": 20677038
     },
     {
       "id": "18117391745518145",
@@ -239,13 +269,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De4nFwggFtD/",
       "title": "Munnar once had its own train. 🚂",
-      "views": 1682,
+      "views": 1683,
       "reach": 1345,
       "saved": 6,
       "shares": 2,
       "total_interactions": 43,
-      "ig_reels_avg_watch_time": 23068,
-      "ig_reels_video_view_total_time": 31326655
+      "ig_reels_avg_watch_time": 23059,
+      "ig_reels_video_view_total_time": 31338539
     },
     {
       "id": "17881003500548537",
@@ -254,28 +284,28 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De4CJ8qzMeL/",
       "title": "In 2001, it rained blood red in Kerala. 🩸🌧️",
-      "views": 202,
-      "reach": 162,
+      "views": 206,
+      "reach": 166,
       "saved": 1,
       "shares": 0,
       "total_interactions": 10,
-      "ig_reels_avg_watch_time": 9799,
-      "ig_reels_video_view_total_time": 1665843
+      "ig_reels_avg_watch_time": 9914,
+      "ig_reels_video_view_total_time": 1725046
     },
     {
       "id": "18084277040368667",
       "timestamp": "2026-10-24T10:34:06+0000",
-      "like_count": 9,
+      "like_count": 10,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De357XFzFhY/",
       "title": "Rice grown below sea level, right here in Kerala. Kuttanad is one of t",
-      "views": 191,
-      "reach": 162,
+      "views": 192,
+      "reach": 164,
       "saved": 0,
       "shares": 0,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 8891,
-      "ig_reels_video_view_total_time": 1573866
+      "total_interactions": 10,
+      "ig_reels_avg_watch_time": 8792,
+      "ig_reels_video_view_total_time": 1582675
     }
   ]
 }
