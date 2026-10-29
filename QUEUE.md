@@ -18,7 +18,6 @@ _Updated Thu 29 Oct, 07:25 PM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- mv-kairali
 - padmanabhapuram-palace
 
 ## Recently posted
