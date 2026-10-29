@@ -11,11 +11,14 @@ found = {}
 for q in queries:
     try:
         r = requests.post("https://html.duckduckgo.com/html/", data={"q": q}, headers=UA, timeout=30).text
-        for m in re.finditer(r'class="result__a" href="([^"]+)"[^>]*>(.*?)</a>', r, re.S):
+        snips = [re.sub(r"<.*?>", "", x) for x in re.findall(r'class="result__snippet"[^>]*>(.*?)</a>', r, re.S)]
+        for i, m in enumerate(re.finditer(r'class="result__a" href="([^"]+)"[^>]*>(.*?)</a>', r, re.S)):
             u = html.unescape(m.group(1)); u = urllib.parse.unquote(re.search(r"uddg=([^&]+)", u).group(1)) if "uddg=" in u else u
             hm = re.search(r"instagram\.com/([A-Za-z0-9_.]+)/?", u)
             if hm and hm.group(1).lower() not in ("p", "reel", "reels", "explore", "stories", "accounts", "tv"):
-                found.setdefault(hm.group(1).lower(), {"query": q, "title": re.sub(r"<.*?>", "", m.group(2))[:120]})
+                sn = html.unescape(snips[i]) if i < len(snips) else ""
+                cur = found.setdefault(hm.group(1).lower(), {"query": q, "title": re.sub(r"<.*?>", "", m.group(2))[:120], "snippet": ""})
+                if re.search(r"Followers", sn) or not cur["snippet"]: cur["snippet"] = sn[:300]
     except Exception as e:
         print("search failed", q, e)
 for h in extra:
