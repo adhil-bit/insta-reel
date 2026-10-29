@@ -158,6 +158,8 @@ def gemini_narration(lines: list[str], outs: list[Path], voice_name: str) -> lis
     cuts = [0.0] + [(a + b) / 2 for a, b in gaps] + [total]
     for i, out in enumerate(outs):
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(full), "-ss", f"{cuts[i]:.3f}", "-to", f"{cuts[i + 1]:.3f}",
-                        "-af", "silenceremove=start_periods=1:start_threshold=-45dB,areverse,silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        "-af", "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.12,areverse,"
+                               "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.12,areverse"
+                               + (",adelay=350:all=1" if i == 0 else ""),      # keep soft first syllables; 0.35 s lead-in so the first words aren't lost
                         "-c:a", "libmp3lame", "-b:a", "160k", str(out)], check=True)
     return outs
