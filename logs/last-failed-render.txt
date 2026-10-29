@@ -1,26 +1,14 @@
-Rendering job itty-cora-5-europe: Pathinettam Koottam: the unseen side of Itty Cora, Part 5/5
-3/6 Recording the voiceover (voice: Charon)...
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
-    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 144, in gemini_narration
-    _gemini_voice(joined, full, voice_name)
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 90, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=alt[0])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
-    raise RuntimeError("Gemini daily voice quota used up")
-RuntimeError: Gemini daily voice quota used up
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 675, in <module>
-    render_job(Path(args.folder))
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 72, in build_reel
-    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
-RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
+    "visual": script["cover_visual"],
+              ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cover_visual'
+Rendering job mv-kairali: MV Kairali: Kerala's ship that vanished with 51 aboard
+!! mv-kairali failed: 'cover_visual'
+Rendered 0 job(s). Failed: ['mv-kairali']
