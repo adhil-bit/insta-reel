@@ -338,24 +338,6 @@
     "posted": "2026-10-29T01:40"
   },
   {
-    "title": "Jatinga: where birds fall at night",
-    "category": "NATURE",
-    "folder": "jatinga-birds",
-    "status": "pending",
-    "voice": "Enceladus",
-    "priority": 6,
-    "created": "2026-10-28T15:10"
-  },
-  {
-    "title": "Lake Nyos: the lake that breathed out death",
-    "category": "NATURE",
-    "folder": "lake-nyos",
-    "status": "pending",
-    "voice": "Callirrhoe",
-    "priority": 7,
-    "created": "2026-10-28T15:15"
-  },
-  {
     "title": "Where did Kerala's crows go?",
     "category": "NATURE",
     "folder": "kerala-crows-missing",
@@ -365,33 +347,6 @@
     "created": "2026-10-29T05:06",
     "media_id": "18012647463004831",
     "posted": "2026-10-29T07:39"
-  },
-  {
-    "title": "MV Kairali: Kerala's ship that vanished with 51 aboard",
-    "category": "MYSTERY",
-    "folder": "mv-kairali",
-    "status": "pending",
-    "voice": "Zephyr",
-    "post_on": "2099-01-01",
-    "created": "2026-10-29T05:43"
-  },
-  {
-    "title": "Alummoottil Meda: the real house behind Manichitrathazhu",
-    "category": "MYSTERY",
-    "folder": "alummoottil-meda",
-    "status": "pending",
-    "voice": "Despina",
-    "post_on": "2099-01-01",
-    "created": "2026-10-29T08:43"
-  },
-  {
-    "title": "Did Kalaripayattu become Kung Fu? The Bodhidharma legend",
-    "category": "HISTORY",
-    "folder": "kalari-kungfu",
-    "status": "pending",
-    "voice": "Enceladus",
-    "post_on": "2099-01-01",
-    "created": "2026-10-29T13:24"
   },
   {
     "title": "Two protests, one classroom: Vimochana Samaram (1959) and the Cockroach Janta Party (2026)",
