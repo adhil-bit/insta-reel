@@ -1,302 +1,141 @@
 {
   "queries": [
-    "Kerala crows decline",
-    "KSEB crows electrocution transformer",
-    "crows electrocuted Kerala power line",
-    "crow population decline Kerala",
-    "house crow decline India study",
-    "Karkidaka Vavu crows not coming",
-    "crows dying transformer power outage Kerala"
+    "Kerala crow population relocating Kerala Kaumudi",
+    "Professor concerned disappearance of crows The Hindu",
+    "crows electrocuted transformer KSEB",
+    "Bird species decline north south Kerala survey",
+    "house crows shradh disappearance"
   ],
   "news": [
     {
-      "q": "Kerala crows decline",
-      "title": "Wings of woe! Bird species decline in north and south Kerala, shows survey - The New Indian Express",
-      "source": "The New Indian Express",
-      "date": "Fri, 22 Nov 2024 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcy1Vc0RPTkJwR1U2TzFPdHBlQzBac3hPVlpCTFhJeGw0TWpMVG1YU01WUEY4OTVEeXdLR2dtS2tIMnlBVGVEZjJJS3R2dlF0bEJ2X25KbERFMTJLS1lkSjFKU2FvSmNZQ09LU3A3ald0TXhveFNEbjdyMko1N1ZXRHpQVEoybWM5ZXFFWXNKT0h4VndYdEtuXzRUZGZZY0kxMTZHRE43MWkwMmxlYl9yb2w2akNuY1U1ckxpdzNXZXpjYjB1aUs1SFdHa9IB2AFBVV95cUxNT0dKYmRKVlI1azlDNG10OHN4OHYxbzExSDRuWlI5Njc0YmJfS0h3V2FBYmczcm84WDRJcXNVbVFvSjVnaDVMMVNVanhEUzBJbG1oQ3cxWlJXZ1FZS01ZYWNEUmNhMEhUb2xsRnc0WjdQME11eWRWOHNKc0tfa0NoS2hwanZjNXNFMzBNNU1DbGlZM0NveVRISTVnMjZyNDctY29mOHQ1V1RMMnJfekFyaUlST09BN2NERTY4aUd3VWVqY0FSWkVRWkQxbTRDWFRnNjVWVmpfZVE?oc=5"
-    },
-    {
-      "q": "Kerala crows decline",
-      "title": "After decline in sparrows, numbers of crows also fall in Bengaluru - The News Minute",
-      "source": "The News Minute",
-      "date": "Wed, 25 Nov 2015 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdHU0bGU4SDBHSE1NdkhnOHhkb283RFpJU1QzdVFpV0JyOUxpeEpYRTBUMGZfYk9sRHVLaUEtRmI0S0t0ZEpZVHlRMmlYb3gxTEhLVnJWbXhRdmV1SjFrN2s5eGptRHF4RHJJeEZFeHE2ZVVFcDhQYjZHRng3TWVtYWNUWFdUcGpGT3FzcHBjVjhjSVZQT05Xc2x0NHF2QdIBqwFBVV95cUxQdEhJNlE3Vnh3SXBqNlRWQkY5Nlp4Wi05Z1h0S01LMWJkQnJOeVdQQTdhVDBtLUZxTUt3bG1yOWtZOElBNmtXMGxlRWFCR0l1WkhRZkpYUzI2bGRBZ3RIMnczaFVycGVkN3hGOHdFd0ZyYmFrUXVFc0FPTkU2ZW1reVFJMFBHTm9neHV2TlVIazJOWW84NlVxTHZlOU1XS0laU3ctNUxkV2FDNm8?oc=5"
-    },
-    {
-      "q": "Kerala crows decline",
-      "title": "Kerala High Court declines Jolly Joseph’s appeal to halt web series Anali’s release - The Times of India",
-      "source": "The Times of India",
-      "date": "Fri, 19 Dec 2025 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQm0zWi1GdFhJMjV4YlZvSU5QdWdsRXRWVlE4X3c1VVVSZTl6WUlpa3gtXzh6Y3NuWHpGVkh4ajRmdnMybDFmMW80ZzU0N3NMaTk0VklkZm9SOHlCNGNEQ1RBNGRXcEVNN1FSdV82Q2lZWjZkV2dPZk5Hc1U1WDd4cGI2LVUyakV5aXl6ZXlSbTZhWEhzNHZieDluazFaaFhPZi1PYXFwZlJraG51VHVMVV83WUptME16UFRSU25PdEQ4RmVVSnVTUWFLZU5vMnNXOU5FVGhTeDluTm5ORHNwZnRvbmo4NllRRWdBd1RST244dkdHY1FzWDkxOXBHQdIBgwJBVV95cUxPYjRINlJmODlwNTR1aGdjTWJ4WjFiZFpMbl81YkNobXFUT1MwRHE0Y2FzQVIzMENYc0pnQTBjOEpqbloweUNUQWZ0eVg5YWtpeElMR0YtdjVxQVpUV0lPRkNjZ2xoMlprdTZ1OXFPd1l6Q1FfT0l3X0EzSjhrQUFsdDVGNk4xU09SQ2d0SjNNN1dCb1h4TkhBTHdha29HNmZGTzdxVlhod1VyZndMZGNDMGdRMnhkbWZKM0hYcHMzb2R1VUVKY3hvZkpqRTVyLXpFNmZGeVl3amFNcFlWOWJSQmtBbU1nTW9GMk9aUm1IMEE3MWdGZ05SZXdjWG1maEZnb0NN?oc=5"
-    },
-    {
-      "q": "Kerala crows decline",
+      "q": "Kerala crow population relocating Kerala Kaumudi",
       "title": "Not vanishing, just relocating: Kerala's crow population mystery solved - KERALA - GENERAL - Kerala Kaumudi",
       "source": "Kerala Kaumudi",
       "date": "Sat, 24 May 2025 07:00:00 GMT",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWi1PWXJUSXExZUhUUFVEdFI3X2RvSXBLTFNZQU9LWjA0WUlZY0FEZ3AzcUQ4eW0yaFNHOGZLTUtMSXJ4N0pVOGZGWWROd2ZJY2g4cDNZUll5Q0wzaktsVmNQa24xSFFDbm1LOW5iUGJZTzlxZXpKWXVYaFA2MHgyZzhuNXBTMVZFUWdjZWJyVE9HTEJXYXlNTEU3QmItQ1pRRHlING5TQkxqeEFRbm1rdld4V3FHU2h3VjFrcw?oc=5"
     },
     {
-      "q": "Kerala crows decline",
-      "title": "Availability of free-range country eggs in Kerala declines - Mathrubhumi English",
-      "source": "Mathrubhumi English",
-      "date": "Wed, 03 Jan 2024 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYXVtVGRBOTlvekpwMGFaa2RXZ3pxVnhDU21KUkdVb2FwakgyQVpBclhYd1lHS2VpRk1GdlVvOXczeW9FWkRJVUlfQUpXak5lNmhjTU1kWDFPaU9wRmd2cjNIVnIzeC1lZXJCTUpRaDdXTWxtcU1uV2N1N2pMOHpfRzBqMC0wSWtsdEJRWUg0ak1GeDExYUYtVDdLajBpeWE2VWl0X0pIb2paaXNib2Y5SHZmQWFWMkhBSnNpX9IBwgFBVV95cUxON1BZWGN5NDRaakVtWk1BX1J2ZnNiVmtib0F6TFpRRkNKMjRDMFBBZVVmbTRsME5xVWtqb2o5TVp6d20xQTFvQmpZdVZTQXd0X0thWEFlVzZTRHFaQ3VlcWhaWXJJdU5ZZmZGd3J0V09xNlptSTNkSnNvLXd5YkdNRXhQLUtxVGN3MFNYWHl2dmNIYVFsX0JseU00NFM3UUlGN3owWjRvMDBNNDV3cDZGT3hmZ04xd0J4SWtsVFhqaUZQQQ?oc=5"
-    },
-    {
-      "q": "crows electrocuted Kerala power line",
-      "title": "Freight train carrying fuel catches minor fire - The Hindu",
-      "source": "The Hindu",
-      "date": "Tue, 13 Jan 2026 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcW1Tei11TFdjUE51dGtaUmRpeThOMGliV0VMaWRRbktDczVNYnNEckctbzdRNmFaUFpvdGNkLXpDdFRibWNLa29pT3lHa1c0NGVrVzFhbTV5VmVyZEQybkl3QVFNOHFEYXdYc21aU2JJQ0N2dmVud2FyeWFFVUFKQ3BDZjlfTHNWYUR2akR6Nk5XajFJYUI1a0hCRjg2a3lwVXBkc2NpdFRSb1lFVE5wOHJB0gG4AUFVX3lxTFBpaV9xRzhyV1VUMXowSUIyVzkyaUxsdmFzOGowZ21mc1RyZGs1TEpjMnQzc1JOaGgxdkVZcEZOWUw3UDAxZnEzOXg3Z0VPSlEwQU42b1VfdHljb1h0cGk4c2dFSlZNZUxqMjhSYld1WFhEcDJ5dDh6M3gyMHYydUpBZC16QWNqQVVjUXVVQzdXR1EtalkxUmVleExTUW9XOGE2RDVqR29oblJpSFVUYlhGTHZRdmQzeFA?oc=5"
-    },
-    {
-      "q": "crow population decline Kerala",
-      "title": "The bird that woke us up has fallen silent. Can we bring back the Sparrow's chirp? - The Times of India",
-      "source": "The Times of India",
-      "date": "Sat, 06 Jun 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXk1ZW9NVTRiYmh4UlV6WDBXOFBlSnF1Y2piSzQ0VWNMc28yUUhqc1BvWEVYbnB0VDFFaXVEUk5FWGZ4WGRZakhhcTRXQ29TWndwRG5uUGFqLVFzZjBDTWUtZjBoY3ZyQ1RqdjRKbm5HZXd2TW1ldGlRbHd1STkyTEtvZ252NTBCUUh5eGFwNU1GYUNQVk5SQVZMSWtNY0kzdWFSSk55NzBLRUlNaGRCT3ZMY2hhQnh6UktZNVlPZ1J4QXNUdEx5NmNlTWJ6alQyLU9xZ21qZ1ZwZ2NWTFVqbw?oc=5"
-    },
-    {
-      "q": "crow population decline Kerala",
+      "q": "Professor concerned disappearance of crows The Hindu",
       "title": "Professor concerned over ‘disappearance’ of crows - The Hindu",
       "source": "The Hindu",
       "date": "Sun, 23 Apr 2017 07:00:00 GMT",
       "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNFVlVkdObGZvbW9QZlBDQW5GVks1a19GeVRkWFpsMUppQWpjYlZHU3lIN2ZCRUxHdm5iUFd4ejNhU1VONmdFcHJ1YnBtOWhWam5rdTRMZU5iYnN5SUlCNTBSdmljR3hYbUVhcnQxSFJlUHBHb01Cd1Vjb1ZUZzFhSG9qTXJyWnhtMW1ESWlNWF9xTkxwclcxVjhKRm1mbTN2M09UdEt4aEVpenNSYkVsOWM4VFY4LUXSAb4BQVVfeXFMTWFQeDQ3TlVlaWJQMHpUV3RuN2hDVlV3Y0dfbmVKUWI4OVJwenZ6cjlobVFkN0wyNFVhaHpJUU5JeHA5UUVUc1hYZmxKTjRuZFV0TlMtWl9DSk0zWUJKRW56ZERLUmQtX0pSWGw5a3EyM0pmZjdpTGJXMjBud1R2T2kwZlNMWEhvSFlyRXVkZlVkaWxacGJIa0tzVVpFdkxLeU1odU0zUi14Z3hpU3d1Q2hjSW5tUHVnaHlUc21IQQ?oc=5"
     },
     {
-      "q": "crow population decline Kerala",
-      "title": "Where Have Kashmir’s Morning Birds Gone? - Kashmir Observer",
-      "source": "Kashmir Observer",
-      "date": "Mon, 02 Feb 2026 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObzEtcmUzQUtzXzVPczZvT0o5dmdSMG1xajVKdnlNTnRoYjRsUG9IUmNJT0dObHdBUThGWFRya0VxemptZTNUQ044dkFaZ2o2TVA3alRHVWZLWFB6YUhnRDlYYVp0ejVsTXNwdHF0Nm5XbkZ0WHJuYVFYVXJwUUlERWZyVmw?oc=5"
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Vegetation structure and elevation determine the occupancy and abundance of the Sky Island endemic Banasura laughingthrush in the Western Ghats | Scientific Reports - Nature",
+      "source": "Nature",
+      "date": "Tue, 25 Aug 2026 07:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1hZDZRUzlOOFVZSmY4RzBfRkRna1JFTEZqQlBmQ2ZiUWFaRFJiQkptRUlOQkxoVmItMXNYQjZaRFZkbmEwWjMzMXRWQ0swWG9YZXQyZG1veERUY2VNT0hJ?oc=5"
     },
     {
-      "q": "crow population decline Kerala",
-      "title": "Save The Sparrows - Madras Courier",
-      "source": "Madras Courier",
-      "date": "Wed, 20 Mar 2019 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xMERsNGxXaTBXYTNGMnNpNDgtX0I3OGRUYUdkaUdwR3hXaUN4UExDdFRTc1dRVGw1N3ltWS13aTE2RkxWWEFaWTl4OVR1YTRPWkVqdHo5cGlBX0E3QnFncFhHYXVpZGM?oc=5"
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Wings of woe! Bird species decline in north and south Kerala, shows survey - The New Indian Express",
+      "source": "The New Indian Express",
+      "date": "Fri, 22 Nov 2024 08:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcy1Vc0RPTkJwR1U2TzFPdHBlQzBac3hPVlpCTFhJeGw0TWpMVG1YU01WUEY4OTVEeXdLR2dtS2tIMnlBVGVEZjJJS3R2dlF0bEJ2X25KbERFMTJLS1lkSjFKU2FvSmNZQ09LU3A3ald0TXhveFNEbjdyMko1N1ZXRHpQVEoybWM5ZXFFWXNKT0h4VndYdEtuXzRUZGZZY0kxMTZHRE43MWkwMmxlYl9yb2w2akNuY1U1ckxpdzNXZXpjYjB1aUs1SFdHa9IB2AFBVV95cUxNT0dKYmRKVlI1azlDNG10OHN4OHYxbzExSDRuWlI5Njc0YmJfS0h3V2FBYmczcm84WDRJcXNVbVFvSjVnaDVMMVNVanhEUzBJbG1oQ3cxWlJXZ1FZS01ZYWNEUmNhMEhUb2xsRnc0WjdQME11eWRWOHNKc0tfa0NoS2hwanZjNXNFMzBNNU1DbGlZM0NveVRISTVnMjZyNDctY29mOHQ1V1RMMnJfekFyaUlST09BN2NERTY4aUd3VWVqY0FSWkVRWkQxbTRDWFRnNjVWVmpfZVE?oc=5"
     },
     {
-      "q": "house crow decline India study",
-      "title": "House crows aid efforts to enhance green cover across arid Rayalaseema, finds study - The Hindu",
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Decline in white-bellied sea eagle nests in coastal areas raises concerns - Mongabay India",
+      "source": "Mongabay India",
+      "date": "Thu, 02 Jan 2025 08:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQWkRPazMtOHBWZ3hNTUNEUW1qeFkxRXQ5eC1FZTBUU1htQjBpNnhpNEpPaDVSSFl5YlpMZEpUZFh1ekpBSmFWeEZPM1BqbVRHU3pYbXFDYVdoU3lyODh2WW5VTEpvdEc0WWtqWFRCMk11MGZUajNKWDQ4LUt6ZU9OTTktamlYQ0doNFJubUlWRVJqcV8yN01ZUFk2bzlYV3liMkU4UEZxa2poOFoyVkE?oc=5"
+    },
+    {
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Female mammals usually outlive males, but a 27-year study found the pattern was reversed among dozens of - The Times of India",
+      "source": "The Times of India",
+      "date": "Fri, 31 Jul 2026 07:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNdGU3eVpjMlFYVW5YaXpITm5wcXNQTVdHOHRQZnpkTWFWSG02YzVLZW9xRjlyNDg1TzRMZ3IxcFE2RVdzcGthdDFjejFuaUU4TE92NDJhVFdUdFFmb2ZYTE1iall3TzRtM1JYNW1HZ3NFT1JaRmFGdDVta1E3NGxkaGxKLWs4Mlk3UGhSQWxXMzlOaXo0LU9UT2xlZW1HR0dnZDZ3T0dDdzVtdEo5THVtR2k0cWxIN3d6YUpVMkVqblk5TG5FR0RaNVpIVHNRUWc1MVhzdFVxdWZZSUp6aktRUVZJX0VxRmR4c3dqVWVKY0VjUVJVMnRUdl9kajd6NV8td3FHZkx1OWowcGl2Qk1XQmZUeFYxOWd6OWZSX1FFMFRsTUVVNUctNtIBrgJBVV95cUxObjhJcWlBelBtRG1mMElQSzNGQmxCMGFQa0R6bkg4QkdsQlNlcnRNdWlUaGdWZlNIbUlmRWxwN1dPRHEzeFJYejc3bVlGcHhWWV9hNE05UlJFbXNGb2YyWU1ZZ2swZjE4ekxBV0o4UktFVFdhdjhySDd3Z1M2TG9BTzZBVENCbHRzZ0V2NjljdV90SC0yYWJ4NmFsamNJQ1R5OWlHRHF3cXhqSC1KTzhKSjZBTDU1R1E4cC1yUnRMZ1Vyc1BFMlBjUkRrX1lsNWt0cHYwTDRQYU5wLTNEakFROGZSSU1lY05pZkZRWFRqeTB0ZlBjdU9hMG5KRWQxcUFsN0Uyblppa21JTlFrMHBTT1UySlZuUTFBcjhUX0lsdVp4b2V2dFJRT1lhaTFCdw?oc=5"
+    },
+    {
+      "q": "Bird species decline north south Kerala survey",
+      "title": "‘Toxic’ mix of warming and agriculture is decimating US birds - study - Euronews.com",
+      "source": "Euronews.com",
+      "date": "Thu, 03 Sep 2026 07:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOanZnakgtOFNxdVNhYlhhMzl0QlRDSVhsVFpuQjN1QndUNEhOTEpYNWNUM0NBWjhNUTI3T0ZlNllveVJuWi1zUjV4OFdFZGJjMDRqcUMtZ1N1SFZaZ1RyTnZUN1dhWU1UZ0dOcG9PaTg2ci1OVU4xV2pDNzg2ZlZMWlNDSEt3WWJUUHRVZkVLaWxCcXkyNDg1ZURkVG5wMUJmMFRiRFA1S3VhMjh4UTJwWW1TbHQzMkJOVDA0bWtKQ0lja1lK?oc=5"
+    },
+    {
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Kerala, Tamil Nadu and Karnataka to begin the first synchronised vulture survey on February 24 - The Hindu",
       "source": "The Hindu",
-      "date": "Tue, 22 Sep 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPYTRqNW1JZFpiNjFtWEp6aU9sU01zbUxRN1pMNGw3b3JkNEpWMDFYR1lpakhJZGFJblhIRUxMY3hEaWtvejBqZmJUX0lQQlpNdHY1MF93ampELU11YnB1WDhXYmZ0YkZUWmVJbkFhZEgtWnA1Y2I1bGhwVDlieVREQXRicHl1NnJWLXExbW41U0VucnZJRmhCTjN0a1JNV0tMSnI1UUhucDJ0d29nZ05BRElwMmw3WWV3WkZqb3RIMXBOZ1d6cWdJSERudFdGcjVhWDA1TmpZT0VveWVTSXFNWklzcjY2Z2xlck9QMdIB8wFBVV95cUxNdEJzenNSSTVBRi1DQWpCWEphaTRla29Tb2I1X3lNck1XSkktS3lKRmtVcE5KNDNkZUktUjdPeHpocC00YkowRWg0d0JfV1Jib1lBNF9FUU8xUEFxX3d4ZXZZc1RGbEE0cmlxY1ltUzV2Qk9RV2JmaGVMMzZFd2NhTkFJZGxMYWJMSVN2bnB5UnR6U0QzNlZobGhYR3NmT2J4V3g1OXotVFhGQkZ5MWhMR2JqTEJ2X2pVNk5rU1RpaFpraThoYnJnYWpYN1RFMnBybXVqcnFFcFZwRS1FamM2RnA3WHRLa0w1MHh6X21LODhqSmM?oc=5"
+      "date": "Tue, 21 Feb 2023 08:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPYjBVMDNWS056TmhtcUc2ZGNtNXYyNlNSQkxZZjMtLThpU0ZnUndVZ01Xc2t3Z0g3UzlQcTg1N3pFeF92a1ltb2N3ZWN5WDZVa0x6OUptaW5GRU5WYW1GNGptWjBzeTd1MEdjZ3RXaEMtSHQwYVJGTVYzMEFFME5BTEFkVnlrVEpNRjZ1SWVIUTFuRGt1ZXppNENXY2RHd2V5ZHBUQjhFOVNGMkJhZU9XbTZyeGZwemRnemh1U2JSU19MVlNoWlpWTGpDRzdFMERfbXdqNFln0gHcAUFVX3lxTE5tUy1VRWNmTVREZE9vSWRqUlJSQ01yakN2dkFtbnFEZXVzNktaZWhWZk1ickVxb3RpX3NFY1lrZGE1aGRZSVk0NHNTV1R5UTNYSzFoZnBXaDlXZERBZWdiVndGZkJRZzRzWXUyVTVneUdjZ3dzZUNjLXdBYWt6bGVtVzZndzNNOGJmbUxXZEJPLUFIdExGTmdOQTN5aWZXVnZVOXNudFprNDhIWEFGOE9oaFhNYUdrTXpyODVHY01XVVoycWFITmdLV1NCY1lzd1BWOF9hcDY1eTlld3E?oc=5"
     },
     {
-      "q": "house crow decline India study",
-      "title": "Where have the crows gone? Odisha witnesses alarming decline in crow population - prameyanews.com",
-      "source": "prameyanews.com",
-      "date": "Sat, 18 Jul 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaDFNa19NZlRwcFp3UnQ0d1k2YjJZUVprTnpLYU54VkFuOFN6LTNyczFpRUdDUXVfbGJ6M1VmS0szWXV5aWpDYjVzZXNyTHRoY0NSek1sbFVUdVhYbHl0TlVucWFpdTEzMHMyVW5iV3FoZFQzMUxLRm1LVnpqcThaMWVIUThRZXNMVnZ2ZGpUZ1dtWG10cVNuSi1JTk80U011VzhBQWs0NVI2QQ?oc=5"
+      "q": "Bird species decline north south Kerala survey",
+      "title": "New study puts spotlight on neglected mammal, bird pollinators - Mongabay India",
+      "source": "Mongabay India",
+      "date": "Mon, 08 Jul 2024 07:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNSTJUVm1pMDZpM04zNTc4cGZCWk1zMEY5WW5LaHJXVUh3YjNYRUFERXZLQVFUaGhXbm5SeGtHZHczcmFqSERGTjhpYXRoNURtTGJoV2JnbVRWeUhWMEFuS1JLZFBpWFhDLTZOaV9DOTdQRzBCM21jU0JiTkZZS3k0WWcxN0VlbVBqa2NjZW9jZnBXU0k1YnpIa09jQ2V6Zw?oc=5"
     },
     {
-      "q": "house crow decline India study",
-      "title": "Rapid Urban Expansion in Guwahati Drives Sharp Decline in Bird Diversity - guwahati Plus News",
-      "source": "guwahati Plus News",
-      "date": "Sat, 27 Jun 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORWFLRzFNeGp6QmRKcjRJTnIzRm9lMENZUTZBM3ZCdFR2RzVET2wxb1lpWV9LcUtuVWFkVm92bU9hUE8xSkFESG83WlcwU2FIbFM1OGdIUEhMeUw5LUxvODM2VHROOHFZQ3AxOFFVUXEzdU9KS3lOeTY3Y2FyaXdLc1pwMlQzcHcyVEdSbzZpMU13MloyMmlVd1pGTXUtYmdhOHExa1ZLcjI0TVdwdnFTbEdn?oc=5"
-    },
-    {
-      "q": "house crow decline India study",
+      "q": "Bird species decline north south Kerala survey",
       "title": "Avian neighbours: density patterns of synanthropic birds along a rural–urban landscape gradient in Northern India - Nature",
       "source": "Nature",
       "date": "Sun, 01 Feb 2026 08:00:00 GMT",
       "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUWEdLa3gyMGdia0ZQSE9CVW9VN0pxR3pkT3Eyc2t3Z2JyXzVSb1BCWkEyZlVnMVN3QVZmYnR3bjdhYjlXQXFiYUpscGxqeXpSdU9xWDFJZXpiNVJCQ3Qw?oc=5"
     },
     {
-      "q": "house crow decline India study",
-      "title": "Where have all the crows gone? Bengaluru's vanishing birds signal ecological alarm - The Times of India",
-      "source": "The Times of India",
-      "date": "Sat, 31 May 2025 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNWU5YWDJTYlhCVFR1SmpoMXNsejRTNXlHLXVVQjNobHJzbEZNSVZ2SHV3ekdWeFVkdGlnZVZkc0xGc0hodjVueVB2NVpHUlhNeTB1OEt5eFVMZmsxcnE4V1UxbkJmbDFPRHllUVdXRTRiVVBIbHJDOXdFcXRfejFQZ0NpRGhsWF9yT2U0MWNoMC10a29LQjJHdlRHUk5MNmUtQlVtcFU0WXJDS1hibzNGRlcwR2RqcDRERWMtVE130gHDAUFVX3lxTFBNOXhPaXVUc1czUWFKdFlmaHowOGFlUElYTUlqbzktZkh5V3NQdzJWS1podDhJWkNVbnFBRmZZVmhibHc0Y3hBangyRWdONHZxZGdYRVNTQzczM2pHU3Z6UTF4ZDhJY1BESlllczV2dl8wVG5PY3BvRmlIeVI3SXhwdS1TZlZ0ZUJOUHU1SzFOS29pbTVLeEdwa25SNllxSjR1RjZFWVNFTTZ6UnNCRzNLTl9xZE5XcFBNcjloalFZcVNNVQ?oc=5"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "Where Have All The Crows Gone? - ETV Bharat",
-      "source": "ETV Bharat",
-      "date": "Tue, 11 Nov 2025 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNQnUzY0dJQ3Bzb3NEUlZEZzhvSWl6cmJOMXUzSFh3d0hqSDdiUnpaY2d3NkI1dUJPTmdGanJyMDhDdndpVUVCeHl0UGExSHhFN3lIREhrYkwtNWNubTBmalhMeHhPTnlVY0F2YmVMLWJiQUYxY3Vpc1ZFZlloUU9xdFA4NFRDSDF60gGOAUFVX3lxTE1ZNjdFLW9vempweHA1NEZwb1VVcTJHdW1SbmhlNGxZOHJqa0E2MUxsaGRDOGsyZEJHV29xMzkwc3dmdzJOWXczUWRMWEFfZUQ5Y2JFbmlPejQwOU9NZ1hJWjlvbjBhd204QmgydG03c1Z4bThmUGJhSDk0NUVNZlNLRmJNWUVvRUZOS1JmV3c?oc=5"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "Indian cities and their symbiotic relationship with birds - orfonline.org",
-      "source": "orfonline.org",
-      "date": "Fri, 26 Jul 2024 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNc1ptSlMtR0VReklDc2JqYXFva1Yyd29ONmxqQVZ6NmsyallqNVdYZ1ViSkhPRlIyaFZGRlIyRmVQdjdXekJsOVJhemlCTkoyZGZIRVJqRElfTVB2bGZXRkdIaC1DMUVfVENDejB4SVRfaDhZZk1hTVBDTU5kUXZBdlFMdGlUN0s5cnlsZkJVLXEzZUNKMHFUSDQwYjA?oc=5"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "State of birds: Most species show dip, Indian Peafowl among those flourishing - The Indian Express",
-      "source": "The Indian Express",
-      "date": "Sat, 26 Aug 2023 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQQmwzaHQ0YmsxRGluTUIxVTU3cWVsVDlMaGlRdmQ1SDBIUUw2eXVTY1J1b2Nkal9ubGJoLW82UWtnRDZWWWF2dlVaZWNESGdrN0EtX3I1ei1iU2REODl6TlZZZzlUWnhKWXFvc1ZfYnhSclJrdzJHUFV0U1FiOS1wa3BkbDlGZ0NEaEhCd0RELVNvcFBxS3htbkZtZjNSY3locERWN25EZ1J4TmJFamEyQVItVlZ0NnExNVJRSkJmdlN3Z9IByAFBVV95cUxOREZfb1NaZTN6d2xRMndRNGkzSkV0MXU1WkxRcXBDUG1GaF9NcFU3a2VET0xfSVBDTElhZVJJNTRxSnlacm5WTDNsQlRPYXlmS3pwWGJweHRRa2VWd000Yk5WdGUzSFdncDMyczVrLVJFeTdjZEFlSUNoR1NhN0JKUG5ta002Wi15LWpoSnRILUNjX2syOXk4WDNRSUNLcm1YcVY3dWVvUWxJcExWdm5XQ1ZhX2d6SFRjOGhFa0d3T2RXMk1kTWpjeQ?oc=5"
-    },
-    {
-      "q": "Karkidaka Vavu crows not coming",
-      "title": "Ambedkar, śrāddha, and the gendered continuity of caste - Frontline Magazine",
-      "source": "Frontline Magazine",
-      "date": "Fri, 18 Sep 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMivgFBVV95cUxObTM2a3oyOTFPcUVZWGpJS00tQTU1bkdBbEU3WENodEFyVjJUbzNoMWVSZVRQbERHeGZNVkxiRWx5S0VVRmlURExNVS0zRHlvd2pHc3F0TkpTZHlXT09ycWFtLUdFUlRFSURtWmVEdWVTNTY5VURMTEZKZHlSMU90NE9qd1hnS0gzb3RYSmZWeTZJdU10blBoVXN1WDdRWmFFYURyWV9zVFZYTmZEUjBQMjIwSVA0bWNoZ1BOa3dB0gHEAUFVX3lxTE01SktDMi1TcTZfMTNHOFVleFV6U3dlWmxtYUhreVE0WG9zYVNfX2czcmpmS0N2WjJONVd2WVYyUU42NU1QakhmQmtCX0pvZ3hNNkJrSzVaTkY1ZFJ4WHJsVG9mUTlFTjZTNkNyVmdQcFR0bWQ3YWM2NnRlZ2lFS1BHVG9zTWFRTVplNHBaUXB0N04zNkVNZWh1YUhrSk1IV3B3Tjc2OEt1cmg5bGdsRlVMOTJsMjVpSUFNTFB1N2wtSmV2VEQ?oc=5"
-    },
-    {
-      "q": "Karkidaka Vavu crows not coming",
+      "q": "house crows shradh disappearance",
       "title": "Disappearance of house crows causes problems for performing shradh - The Times of India",
       "source": "The Times of India",
       "date": "Mon, 24 Sep 2018 07:00:00 GMT",
       "link": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRkpQdFdWMGN2U0FZM1dlbW1oVWlxckM4ZEtxZkIzaFZ2bmhxS3ZCUnJwSUoxYV9YR1E3VzlrWk9LR056akxTcUEzTHNsbXdfZDZzTG1FSkRkTkFhOGVKYWotaGRuOTRvQjZLWUVHNmVaanlzRVk4dDl3RGFqblBVQjRyM2JwNFoxUF9zcEpuQjExTXBSTDVhT2RpSmRRTG53OUJQNlA4VDdpUjFBTnBUTFFBTGF2R2UzTU1jZTNZX1Vydk02S1UtYnFpNmJvZnRGR21FVDBaMWfSAd4BQVVfeXFMTmcybW0zTHVwNG9ybnFRMjRkY3lIUlU3YzkxQ0twbEdnQ2pMb0Q4SXNFdWN2RHpYODZ1Y2NyV2dINXJvelc5dEdLb3pQM2ZlT1NMdmpRRFBwZjlNTGQ5bjdDZUdOT3lQQnNSQ3hKT3BYUkZJdjdoSzJUZHkzS0dEdnJVUERKc0M2cFQwajZmR2FzNjdNVkJaeWpYQnJzX0RSZzA3NG8wX3QyaVMyOE13RXk0SVRxbHRJS000eFUzSWNfQU52T0ZLd1NhTjR5angyY25SUkd6WXZ4bk02RXR3?oc=5"
     },
     {
-      "q": "Karkidaka Vavu crows not coming",
-      "title": "Karkidaka Vavu Bali in Fiji Islands? This actor makes an offering to ancestors, gets trolled in Kerala - The Financial Express",
-      "source": "The Financial Express",
-      "date": "Mon, 24 Jul 2017 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOWnAzMXFoYldJeTdjNllzM1BQQmNiMVg4bFhzbWNiYjhlb2pHX3ltMFFINXhuNFJYTXpMakxQVkJJbWtzMEdSRlh4T2JLNGlqSVcweElacUZMLTYtWV9JeEk3UDBmeHlmc0pRODJXX3NhVlRpX1Q4QnVVYkIteFBwS3hxcUdGZnp3czlsU0RqckpZRVZ4eXdOZDVXakNQaDBrQTczN2gxQUtOU2dHMGYybFV5WGJtd1F0R1Bubjd5SlhSV3RyRy1UTG1xRW1fQXBHM2g2MnMtLU0zaERtbDROd2NpQ2FSTjjSAe4BQVVfeXFMUDBvQ3Q0ajV6MFl4WFdaOXAtVHNKZzVScjVrQWZOdldpVThHYjRlTWZqbFVRWVVMY1hOY21RN3NnWHVPb1RKaXhPbG5hLTFWb2tjbDhqLVdMNkYxMnJOMXJrV2h0bnVoSkRnS25yajZvN3poLW5vSUo0ei1Ka2FiWEpCbXFhSkF0eHJfcXUwUzdyeHhJbnYtQ2tBaHZibFo5bjVRNUU4RlludXBHQkZuY2d5SkJXbm1uQlF3R0dRbWNkMnFvWHRyRTRqSFRZaGFoWE9VNkgzMTZuSHhlS2QtN2o2c0xTLTgzNk1WX3VjUQ?oc=5"
-    },
-    {
-      "q": "crows dying transformer power outage Kerala",
-      "title": "5,300 chickens dead in Odisha. It's not due to bird flu. What killed them? - India Today",
-      "source": "India Today",
-      "date": "Mon, 18 May 2026 07:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQUWNQbXktYVluOGl0cWE0bFJwTjBwWDhCc2RXYzE3YVBJQkNBc0lOOWJGdWFqRjAxZi1GSDZjeEJMWmRKTllWOEtuZjIzcUp1RFJfSVFJd3Q2Z2xaWkwyVGN4OEZfQXRnVEhva0FYRW9fQzRlc0FmLXlqbS1LSDRMcEwzc0tleDFNeV9OcnlVT1g1eGFtWXl1bTc4N2ZVaUlhWmtzTWt2RGtqVVRJRkJDSk9tT2ZUUW1MZy1KTU40T0hBV3ZYMENCblJjb1A5bHYyeWZFWElxMUlCZGVFeUHSAeMBQVVfeXFMUGF5cWg3Qjc4Z0Z6TnZfU0trYzVWdHh6aGdkT0ZBVTVNalFlOWdydGI0c2hqQTFzS1RaRkFZbGNueE5yY0xaY3M3WHp3My1lRklzOXdQOEt1VW90NUVJWGQ3aktuMFVqbjlzVGhKRFJycVp4UmtrX2tSR0lnOXJiLXZGSWNpcnBTMko5X2JRUWtZQW1VSk1lVWF2NlplV1dQcERIeC02WmJfMlZZSGpyRnFJQnp1dTN2aGkyd0pZakhNT1VxLUNZSG5QZURISWRqT3JxR0V0RzBUSFlRaFE5VHkyb2s?oc=5"
-    },
-    {
-      "q": "crows dying transformer power outage Kerala",
-      "title": "Upset Over Power Cut Due To Unpaid Bills, Kerala Man Removes Transformers' Fuses - News18",
-      "source": "News18",
-      "date": "Sat, 15 Nov 2025 08:00:00 GMT",
-      "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNbE1lV0NTUzJONUVGRDlNaTJaMmEzODFKaUZLeHZFTkxscGNDTnZDYlRpSV9yZ04wejYxa0Zqd2xUX2Z4VnVJYUt5U3ZZVGhTTmd1dGZvWlF3cFFPLThwQzg3N19TNmI1cDZwdVJvTUcwMkxGMi0xZGgtWmVHX0FVT0JyeHFETEtUYTFuRmNWSEhXTEtMSEpydDZMdWpkSWthdXFna1ZUY2M2eWdYOXJYMGMzQVJPa3hjaXZMR2FHaVEzTVFt0gHKAUFVX3lxTE1vcHFWNGpPQ3FwVWhpN21MM2dvQXRZeXp6UmtaSWdGcXlrcWg4S3FLMHpyTTF4bktLWVZiRFpvQl83eHdyeVoxeG1sdHMtTUNYWkN3eXhSMVNneWNmVXV4di1Wdk1RU1VoVGtIOGU2WklWdzlqN3NjMWk4NktRNUszS2ZXQWFHS1VPVjVrYTVTUUM2NzVuUEd1Yjh5bk9GVV9jTmhUWmJXLTl1N0ZjTkxtSEgzYUxEQ2doTGZ4Wk12YjBUa2k2QndQWGc?oc=5"
+      "q": "house crows shradh disappearance",
+      "title": "Crows disappoint Shraddha Karma performers - The Hindu",
+      "source": "The Hindu",
+      "date": "Wed, 24 Sep 2014 07:00:00 GMT",
+      "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZmdPX184SF8tQ0lmQzZEY2lBbEMxYkhIbHRPajhxOVF1emYyQmZvUkw3QW85ajA5eUQtdm91bE1rMUFOalhhOWJjRkpzS3NvaGRvZ0FnZ3VLVXFFeXpBSFZia3pwT2g2YXAzLWNQbUVHY0htSnJQb21hUzJVYWhrU1p1cHdyeTdDdV9qd1FGSWFmUVlJeTltRVRmOFNMUHRnWUgyX1F2bktsaVJjZUpuNi1iNzR1UdIBvAFBVV95cUxQTFJKY3ZCemlja0tCLXNNNFFkYTNtV0g4elNoczZTTTMwTGtXb0NoZEh6WnQ0RHVUbktRREV6Sk5aOUFpZE1LQWMxejhZRXJ5cUhsVGt3RnhUX1lRNHlBVlRtZV9mdTN2TURrS1pYamt3dGhfZXJsakJEZ2plT2V3V3RlR21nYzBsQ1ZUTXI0QzN3TjdYUW5rbVQ1c0JoNzBVMFBHOW5vYXhRd3JDX0xfU3c1V2g2TjJCQm81bw?oc=5"
     }
   ],
   "wiki": [
     {
-      "q": "Kerala crows decline",
-      "title": "Anglo-Indian people",
-      "snippet": "Bangalore during World War II (2006) is by the same author. In the Shadow of Crows (2009) by David Charles Manners, is the critically acclaimed true account"
+      "q": "Professor concerned disappearance of crows The Hindu",
+      "title": "American Jews",
+      "snippet": "the high rate of interfaith marriage will result in the eventual disappearance of the American Jewish community. Intermarriage rates have risen from roughly"
     },
     {
-      "q": "Kerala crows decline",
-      "title": "Kaveri",
-      "snippet": "81,155 km2 (31,334 sq mi), across the states of Tamil Nadu, Karnataka, Kerala, and the Union Territory of Puducherry. The river rises at Talakaveri from"
+      "q": "Professor concerned disappearance of crows The Hindu",
+      "title": "Racism in the United States",
+      "snippet": "misunderstandings of current day Nativeness. The tandem exoticization and devaluation of Native American lives contributes to the epidemic of disappearances and murders"
     },
     {
-      "q": "Kerala crows decline",
-      "title": "Admiral Sportswear",
-      "snippet": "England national team, Rangers, Leeds United, Manchester United, Wolves, Kerala Blasters and some teams of the now-defunct NASL. The Admiral brand was resurrected"
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Kerala",
+      "snippet": "regions: North Malabar (far-north Kerala), South Malabar (north-central Kerala), Kochi (central Kerala), Northern Travancore (south-central Kerala), Central"
     },
     {
-      "q": "crows electrocuted Kerala power line",
-      "title": "List of entertainers who died during a performance",
-      "snippet": "Harvey, lead guitarist of the Glasgow rock band Stone the Crows, died after being electrocuted by his microphone while performing at Swansea's Top Rank"
-    },
-    {
-      "q": "crows electrocuted Kerala power line",
+      "q": "Bird species decline north south Kerala survey",
       "title": "Steppe eagle",
-      "snippet": "fail due to the parents being electrocuted on powerlines. Across the border in Orenburg, Russia, a high rate of electrocutions is known be occurring as well"
+      "snippet": "study on the habitat quality of the sacred groves of North Kerala with birds as indicators. Kerala Research Programme for Local Level Development. Centre"
     },
     {
-      "q": "crow population decline Kerala",
-      "title": "Anglo-Indian people",
-      "snippet": "in Pondicherry. Significant populations also reside in the towns of Alappuzha, Kozhikode, and Cannanore (Kannur) in Kerala; Jamalpur in Bihar; Dehradun"
-    },
-    {
-      "q": "crow population decline Kerala",
-      "title": "Kaveri",
-      "snippet": "81,155 km2 (31,334 sq mi), across the states of Tamil Nadu, Karnataka, Kerala, and the Union Territory of Puducherry. The river rises at Talakaveri from"
-    },
-    {
-      "q": "crow population decline Kerala",
-      "title": "2.0 (film)",
-      "snippet": "this film in spreading the falsehood linking radio waves and bird population decline. He mentioned that this film drove traffic to YouTube channels dedicated"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "Jim Crow laws",
-      "snippet": "The Jim Crow laws were state and local laws introduced in the Southern United States from the late 19th century to the mid-20th century that enforced racial"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "Democracy in India",
-      "snippet": "Modi, India has experienced significant democratic backsliding. The Economist Democracy Index classifies India as a flawed democracy. Freedom House classifies"
-    },
-    {
-      "q": "house crow decline India study",
-      "title": "Corvidae",
-      "snippet": "bird species, leading to declines. Several studies have shown this concern to be unfounded. One study examined American crows, which had increased in numbers"
+      "q": "Bird species decline north south Kerala survey",
+      "title": "Little egret",
+      "snippet": "The little egret (Egretta garzetta) is a species of small heron in the family Ardeidae. It is a white bird with a slender black beak, long black legs"
     }
   ],
   "articles": [
+    {
+      "title": "Not vanishing, just relocating: Kerala's crow population mystery solved - KERALA - GENERAL - Kerala Kaumudi",
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+    },
+    {
+      "title": "Professor concerned over ‘disappearance’ of crows - The Hindu",
+      "error": "('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+    },
     {
       "title": "Wings of woe! Bird species decline in north and south Kerala, shows survey - The New Indian Express",
       "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNcy1Vc0RPTkJwR1U2TzFPdHBlQzBac3hPVlpCTFhJeGw0TWpMVG1YU01WUEY4OTVEeXdLR2dtS2tIMnlBVGVEZjJJS3R2dlF0bEJ2X25KbERFMTJLS1lkSjFKU2FvSmNZQ09LU3A3ald0TXhveFNEbjdyMko1N1ZXRHpQVEoybWM5ZXFFWXNKT0h4VndYdEtuXzRUZGZZY0kxMTZHRE43MWkwMmxlYl9yb2w2akNuY1U1ckxpdzNXZXpjYjB1aUs1SFdHa9IB2AFBVV95cUxNT0dKYmRKVlI1azlDNG10OHN4OHYxbzExSDRuWlI5Njc0YmJfS0h3V2FBYmczcm84WDRJcXNVbVFvSjVnaDVMMVNVanhEUzBJbG1oQ3cxWlJXZ1FZS01ZYWNEUmNhMEhUb2xsRnc0WjdQME11eWRWOHNKc0tfa0NoS2hwanZjNXNFMzBNNU1DbGlZM0NveVRISTVnMjZyNDctY29mOHQ1V1RMMnJfekFyaUlST09BN2NERTY4aUd3VWVqY0FSWkVRWkQxbTRDWFRnNjVWVmpfZVE?oc=5&hl=en-US&gl=US&ceid=US:en",
       "text": ""
     },
     {
-      "title": "After decline in sparrows, numbers of crows also fall in Bengaluru - The News Minute",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNdHU0bGU4SDBHSE1NdkhnOHhkb283RFpJU1QzdVFpV0JyOUxpeEpYRTBUMGZfYk9sRHVLaUEtRmI0S0t0ZEpZVHlRMmlYb3gxTEhLVnJWbXhRdmV1SjFrN2s5eGptRHF4RHJJeEZFeHE2ZVVFcDhQYjZHRng3TWVtYWNUWFdUcGpGT3FzcHBjVjhjSVZQT05Xc2x0NHF2QdIBqwFBVV95cUxQdEhJNlE3Vnh3SXBqNlRWQkY5Nlp4Wi05Z1h0S01LMWJkQnJOeVdQQTdhVDBtLUZxTUt3bG1yOWtZOElBNmtXMGxlRWFCR0l1WkhRZkpYUzI2bGRBZ3RIMnczaFVycGVkN3hGOHdFd0ZyYmFrUXVFc0FPTkU2ZW1reVFJMFBHTm9neHV2TlVIazJOWW84NlVxTHZlOU1XS0laU3ctNUxkV2FDNm8?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Kerala High Court declines Jolly Joseph’s appeal to halt web series Anali’s release - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQQm0zWi1GdFhJMjV4YlZvSU5QdWdsRXRWVlE4X3c1VVVSZTl6WUlpa3gtXzh6Y3NuWHpGVkh4ajRmdnMybDFmMW80ZzU0N3NMaTk0VklkZm9SOHlCNGNEQ1RBNGRXcEVNN1FSdV82Q2lZWjZkV2dPZk5Hc1U1WDd4cGI2LVUyakV5aXl6ZXlSbTZhWEhzNHZieDluazFaaFhPZi1PYXFwZlJraG51VHVMVV83WUptME16UFRSU25PdEQ4RmVVSnVTUWFLZU5vMnNXOU5FVGhTeDluTm5ORHNwZnRvbmo4NllRRWdBd1RST244dkdHY1FzWDkxOXBHQdIBgwJBVV95cUxPYjRINlJmODlwNTR1aGdjTWJ4WjFiZFpMbl81YkNobXFUT1MwRHE0Y2FzQVIzMENYc0pnQTBjOEpqbloweUNUQWZ0eVg5YWtpeElMR0YtdjVxQVpUV0lPRkNjZ2xoMlprdTZ1OXFPd1l6Q1FfT0l3X0EzSjhrQUFsdDVGNk4xU09SQ2d0SjNNN1dCb1h4TkhBTHdha29HNmZGTzdxVlhod1VyZndMZGNDMGdRMnhkbWZKM0hYcHMzb2R1VUVKY3hvZkpqRTVyLXpFNmZGeVl3amFNcFlWOWJSQmtBbU1nTW9GMk9aUm1IMEE3MWdGZ05SZXdjWG1maEZnb0NN?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Not vanishing, just relocating: Kerala's crow population mystery solved - KERALA - GENERAL - Kerala Kaumudi",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWi1PWXJUSXExZUhUUFVEdFI3X2RvSXBLTFNZQU9LWjA0WUlZY0FEZ3AzcUQ4eW0yaFNHOGZLTUtMSXJ4N0pVOGZGWWROd2ZJY2g4cDNZUll5Q0wzaktsVmNQa24xSFFDbm1LOW5iUGJZTzlxZXpKWXVYaFA2MHgyZzhuNXBTMVZFUWdjZWJyVE9HTEJXYXlNTEU3QmItQ1pRRHlING5TQkxqeEFRbm1rdld4V3FHU2h3VjFrcw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Availability of free-range country eggs in Kerala declines - Mathrubhumi English",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOYXVtVGRBOTlvekpwMGFaa2RXZ3pxVnhDU21KUkdVb2FwakgyQVpBclhYd1lHS2VpRk1GdlVvOXczeW9FWkRJVUlfQUpXak5lNmhjTU1kWDFPaU9wRmd2cjNIVnIzeC1lZXJCTUpRaDdXTWxtcU1uV2N1N2pMOHpfRzBqMC0wSWtsdEJRWUg0ak1GeDExYUYtVDdLajBpeWE2VWl0X0pIb2paaXNib2Y5SHZmQWFWMkhBSnNpX9IBwgFBVV95cUxON1BZWGN5NDRaakVtWk1BX1J2ZnNiVmtib0F6TFpRRkNKMjRDMFBBZVVmbTRsME5xVWtqb2o5TVp6d20xQTFvQmpZdVZTQXd0X0thWEFlVzZTRHFaQ3VlcWhaWXJJdU5ZZmZGd3J0V09xNlptSTNkSnNvLXd5YkdNRXhQLUtxVGN3MFNYWHl2dmNIYVFsX0JseU00NFM3UUlGN3owWjRvMDBNNDV3cDZGT3hmZ04xd0J4SWtsVFhqaUZQQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Freight train carrying fuel catches minor fire - The Hindu",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcW1Tei11TFdjUE51dGtaUmRpeThOMGliV0VMaWRRbktDczVNYnNEckctbzdRNmFaUFpvdGNkLXpDdFRibWNLa29pT3lHa1c0NGVrVzFhbTV5VmVyZEQybkl3QVFNOHFEYXdYc21aU2JJQ0N2dmVud2FyeWFFVUFKQ3BDZjlfTHNWYUR2akR6Nk5XajFJYUI1a0hCRjg2a3lwVXBkc2NpdFRSb1lFVE5wOHJB0gG4AUFVX3lxTFBpaV9xRzhyV1VUMXowSUIyVzkyaUxsdmFzOGowZ21mc1RyZGs1TEpjMnQzc1JOaGgxdkVZcEZOWUw3UDAxZnEzOXg3Z0VPSlEwQU42b1VfdHljb1h0cGk4c2dFSlZNZUxqMjhSYld1WFhEcDJ5dDh6M3gyMHYydUpBZC16QWNqQVVjUXVVQzdXR1EtalkxUmVleExTUW9XOGE2RDVqR29oblJpSFVUYlhGTHZRdmQzeFA?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "The bird that woke us up has fallen silent. Can we bring back the Sparrow's chirp? - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxObXk1ZW9NVTRiYmh4UlV6WDBXOFBlSnF1Y2piSzQ0VWNMc28yUUhqc1BvWEVYbnB0VDFFaXVEUk5FWGZ4WGRZakhhcTRXQ29TWndwRG5uUGFqLVFzZjBDTWUtZjBoY3ZyQ1RqdjRKbm5HZXd2TW1ldGlRbHd1STkyTEtvZ252NTBCUUh5eGFwNU1GYUNQVk5SQVZMSWtNY0kzdWFSSk55NzBLRUlNaGRCT3ZMY2hhQnh6UktZNVlPZ1J4QXNUdEx5NmNlTWJ6alQyLU9xZ21qZ1ZwZ2NWTFVqbw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Professor concerned over ‘disappearance’ of crows - The Hindu",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNFVlVkdObGZvbW9QZlBDQW5GVks1a19GeVRkWFpsMUppQWpjYlZHU3lIN2ZCRUxHdm5iUFd4ejNhU1VONmdFcHJ1YnBtOWhWam5rdTRMZU5iYnN5SUlCNTBSdmljR3hYbUVhcnQxSFJlUHBHb01Cd1Vjb1ZUZzFhSG9qTXJyWnhtMW1ESWlNWF9xTkxwclcxVjhKRm1mbTN2M09UdEt4aEVpenNSYkVsOWM4VFY4LUXSAb4BQVVfeXFMTWFQeDQ3TlVlaWJQMHpUV3RuN2hDVlV3Y0dfbmVKUWI4OVJwenZ6cjlobVFkN0wyNFVhaHpJUU5JeHA5UUVUc1hYZmxKTjRuZFV0TlMtWl9DSk0zWUJKRW56ZERLUmQtX0pSWGw5a3EyM0pmZjdpTGJXMjBud1R2T2kwZlNMWEhvSFlyRXVkZlVkaWxacGJIa0tzVVpFdkxLeU1odU0zUi14Z3hpU3d1Q2hjSW5tUHVnaHlUc21IQQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Where Have Kashmir’s Morning Birds Gone? - Kashmir Observer",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxObzEtcmUzQUtzXzVPczZvT0o5dmdSMG1xajVKdnlNTnRoYjRsUG9IUmNJT0dObHdBUThGWFRya0VxemptZTNUQ044dkFaZ2o2TVA3alRHVWZLWFB6YUhnRDlYYVp0ejVsTXNwdHF0Nm5XbkZ0WHJuYVFYVXJwUUlERWZyVmw?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Save The Sparrows - Madras Courier",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xMERsNGxXaTBXYTNGMnNpNDgtX0I3OGRUYUdkaUdwR3hXaUN4UExDdFRTc1dRVGw1N3ltWS13aTE2RkxWWEFaWTl4OVR1YTRPWkVqdHo5cGlBX0E3QnFncFhHYXVpZGM?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "House crows aid efforts to enhance green cover across arid Rayalaseema, finds study - The Hindu",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPYTRqNW1JZFpiNjFtWEp6aU9sU01zbUxRN1pMNGw3b3JkNEpWMDFYR1lpakhJZGFJblhIRUxMY3hEaWtvejBqZmJUX0lQQlpNdHY1MF93ampELU11YnB1WDhXYmZ0YkZUWmVJbkFhZEgtWnA1Y2I1bGhwVDlieVREQXRicHl1NnJWLXExbW41U0VucnZJRmhCTjN0a1JNV0tMSnI1UUhucDJ0d29nZ05BRElwMmw3WWV3WkZqb3RIMXBOZ1d6cWdJSERudFdGcjVhWDA1TmpZT0VveWVTSXFNWklzcjY2Z2xlck9QMdIB8wFBVV95cUxNdEJzenNSSTVBRi1DQWpCWEphaTRla29Tb2I1X3lNck1XSkktS3lKRmtVcE5KNDNkZUktUjdPeHpocC00YkowRWg0d0JfV1Jib1lBNF9FUU8xUEFxX3d4ZXZZc1RGbEE0cmlxY1ltUzV2Qk9RV2JmaGVMMzZFd2NhTkFJZGxMYWJMSVN2bnB5UnR6U0QzNlZobGhYR3NmT2J4V3g1OXotVFhGQkZ5MWhMR2JqTEJ2X2pVNk5rU1RpaFpraThoYnJnYWpYN1RFMnBybXVqcnFFcFZwRS1FamM2RnA3WHRLa0w1MHh6X21LODhqSmM?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Where have the crows gone? Odisha witnesses alarming decline in crow population - prameyanews.com",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPaDFNa19NZlRwcFp3UnQ0d1k2YjJZUVprTnpLYU54VkFuOFN6LTNyczFpRUdDUXVfbGJ6M1VmS0szWXV5aWpDYjVzZXNyTHRoY0NSek1sbFVUdVhYbHl0TlVucWFpdTEzMHMyVW5iV3FoZFQzMUxLRm1LVnpqcThaMWVIUThRZXNMVnZ2ZGpUZ1dtWG10cVNuSi1JTk80U011VzhBQWs0NVI2QQ?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Rapid Urban Expansion in Guwahati Drives Sharp Decline in Bird Diversity - guwahati Plus News",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORWFLRzFNeGp6QmRKcjRJTnIzRm9lMENZUTZBM3ZCdFR2RzVET2wxb1lpWV9LcUtuVWFkVm92bU9hUE8xSkFESG83WlcwU2FIbFM1OGdIUEhMeUw5LUxvODM2VHROOHFZQ3AxOFFVUXEzdU9KS3lOeTY3Y2FyaXdLc1pwMlQzcHcyVEdSbzZpMU13MloyMmlVd1pGTXUtYmdhOHExa1ZLcjI0TVdwdnFTbEdn?oc=5&hl=en-US&gl=US&ceid=US:en",
-      "text": ""
-    },
-    {
-      "title": "Avian neighbours: density patterns of synanthropic birds along a rural–urban landscape gradient in Northern India - Nature",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBUWEdLa3gyMGdia0ZQSE9CVW9VN0pxR3pkT3Eyc2t3Z2JyXzVSb1BCWkEyZlVnMVN3QVZmYnR3bjdhYjlXQXFiYUpscGxqeXpSdU9xWDFJZXpiNVJCQ3Qw?oc=5&hl=en-US&gl=US&ceid=US:en",
+      "title": "Disappearance of house crows causes problems for performing shradh - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRkpQdFdWMGN2U0FZM1dlbW1oVWlxckM4ZEtxZkIzaFZ2bmhxS3ZCUnJwSUoxYV9YR1E3VzlrWk9LR056akxTcUEzTHNsbXdfZDZzTG1FSkRkTkFhOGVKYWotaGRuOTRvQjZLWUVHNmVaanlzRVk4dDl3RGFqblBVQjRyM2JwNFoxUF9zcEpuQjExTXBSTDVhT2RpSmRRTG53OUJQNlA4VDdpUjFBTnBUTFFBTGF2R2UzTU1jZTNZX1Vydk02S1UtYnFpNmJvZnRGR21FVDBaMWfSAd4BQVVfeXFMTmcybW0zTHVwNG9ybnFRMjRkY3lIUlU3YzkxQ0twbEdnQ2pMb0Q4SXNFdWN2RHpYODZ1Y2NyV2dINXJvelc5dEdLb3pQM2ZlT1NMdmpRRFBwZjlNTGQ5bjdDZUdOT3lQQnNSQ3hKT3BYUkZJdjdoSzJUZHkzS0dEdnJVUERKc0M2cFQwajZmR2FzNjdNVkJaeWpYQnJzX0RSZzA3NG8wX3QyaVMyOE13RXk0SVRxbHRJS000eFUzSWNfQU52T0ZLd1NhTjR5angyY25SUkd6WXZ4bk02RXR3?oc=5&hl=en-US&gl=US&ceid=US:en",
       "text": ""
     }
   ]
