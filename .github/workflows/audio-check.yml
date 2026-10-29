@@ -1,0 +1,31 @@
+name: Audio check (what is actually spoken at the start)
+
+on:
+  workflow_dispatch:
+    inputs:
+      tags:
+        description: "Release tags separated by |"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          sudo apt-get -qq install -y ffmpeg > /dev/null
+          pip install -q faster-whisper
+      - run: python scripts/audio_check.py "${{ github.event.inputs.tags }}"
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs/audio-check.json && git commit -qm "audio check" && git pull -q --rebase && git push -q || true
