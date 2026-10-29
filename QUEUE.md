@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 29 Oct, 06:54 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 29 Oct, 07:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -12,10 +12,9 @@ _Updated Thu 29 Oct, 06:54 PM IST. Times are approximate: each reel posts within
 | 6 | Sat 31 Oct · 05:06 PM | Kottayam: India's first fully literate town | Despina |
 | 7 | Sat 31 Oct · 08:06 PM | Roopkund: the lake of skeletons | Zephyr |
 | 8 | Sun 01 Nov · 10:06 AM | Before 1956 there was no Kerala state | Zephyr |
-| 9 | Sun 01 Nov · 02:06 PM | Malayalam: a language whose name is a palindrome | Callirrhoe |
-| 10 | Sun 01 Nov · 05:06 PM | Silent Valley: the forest Kerala saved | Charon |
-| 11 | Sun 01 Nov · 08:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 12 | Mon 02 Nov · 06:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 9 | Sun 01 Nov · 02:06 PM | Silent Valley: the forest Kerala saved | Charon |
+| 10 | Sun 01 Nov · 05:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 11 | Sun 01 Nov · 08:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
 ## Recently posted
 
