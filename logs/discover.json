@@ -1,0 +1,64 @@
+{
+  "profiles": [
+    {
+      "handle": "malayalam.movie.reels",
+      "query": "Malayalam AI story reels instagram",
+      "title": "Kerala AI Stories | 3D Reels (@malayalam.movie.reels) - Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "ai.thakida",
+      "query": "Malayalam AI animated story instagram page",
+      "title": "ai.malayalam (@ai.thakida) • Instagram photos and videos",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "stories_in_animation",
+      "query": "Malayalam AI animated story instagram page",
+      "title": "Animation stories (@stories_in_animation) - Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "inforeelsmalayalam",
+      "query": "Malayalam explained reels instagram history mystery",
+      "title": "Info Reels Malayalam (@inforeelsmalayalam) - Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "popular",
+      "query": "Malayalam explained reels instagram history mystery",
+      "title": "Reels Malayalam • 1.6M reels on Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "malayalam.facts",
+      "query": "Malayalam facts reels instagram page",
+      "title": "Malayalam Facts (@malayalam.facts) • Instagram photos and videos",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "factmalayalam_official",
+      "query": "Malayalam facts reels instagram page",
+      "title": "Fact Malayalam (@factmalayalam_official) - Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "malayalam",
+      "query": "Malayalam facts reels instagram page",
+      "title": "Malayalam | Kerala ️ (@malayalam) • Instagram photos and videos",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "malayalam__reels__official",
+      "query": "Malayalam facts reels instagram page",
+      "title": "Malayalam reels (@malayalam__reels__official) - Instagram",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    },
+    {
+      "handle": "kathayum.karyavum",
+      "query": "given",
+      "title": "",
+      "error": "Tried accessing nonexisting field (business_discovery)"
+    }
+  ]
+}
