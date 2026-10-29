@@ -30,21 +30,21 @@
   "accent": "#FACC15",
   "voice": "auto",
   "music_mood": "warm, suspenseful",
-  "hook_en": "Kung fu. Shaolin. China. But one legend says it all started in Kerala.",
-  "hook_score": 56.2,
+  "hook_en": "You saw Bodhidharma in 7aum Arivu. You'd never guess the problem with that story.",
+  "hook_score": 64.7,
   "cover": {
     "headline": [
-      "DID KUNG FU",
-      "START HERE?"
+      "THE BODHIDHARMA",
+      "LEGEND"
     ],
     "accent_words": [
-      "HERE?"
+      "LEGEND"
     ],
-    "thumbnail_ml": "കുങ്ഫുവിന്റെ വേര് നമ്മുടെ നാട്ടിലോ?",
+    "thumbnail_ml": "കുങ്ഫു പഠിപ്പിച്ചത് കളരിയോ?",
     "thumbnail_accent": [
-      "നമ്മുടെ"
+      "കളരിയോ?"
     ],
-    "hook_voiceover_ml": "കുങ്ഫു. ഷാവോലിൻ. ചൈന. പക്ഷേ ഒരു കഥ പറയുന്നു, ഇതെല്ലാം തുടങ്ങിയത് നമ്മുടെ നാട്ടിൽ നിന്നാണെന്ന്!",
+    "hook_voiceover_ml": "ഏഴാം അറിവിൽ നിങ്ങൾ കണ്ട ബോധിധർമ്മൻ. പക്ഷേ ആ കഥയിൽ ഒരു വലിയ പ്രശ്നമുണ്ടെന്ന് നിങ്ങൾ ഊഹിക്കില്ല!",
     "visual": "Two silhouettes in matching stances: a Kalari fighter on red earth and a Shaolin monk, mirrored",
     "build_cmd": "Split frame: left half warm red-earth kalari (gradient #6a2a1a→#2a0e08, oil lamps SK.lamp at the edges), right half misty mountain dusk (SK.sky 'dusk' with pagoda roof silhouette). Two fighter silhouettes (SK.person h360) mirror each other: from 20% both raise one arm and bend one knee (animate limbs with lines). At 60% a thin glowing line connects them and a pulsing '?' made of strokes appears between."
   },
@@ -114,5 +114,6 @@
     "Shaolin",
     "MartialArts",
     "Kerala"
-  ]
+  ],
+  "timeline_note": "Bodhidharma: 5th-6th c. CE (tradition). Kalaripayattu as a documented tradition: clearer from medieval Kerala; Duarte Barbosa described Kerala martial training in the early 16th c. Use as the twist."
 }
