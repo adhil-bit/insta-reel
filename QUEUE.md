@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 29 Oct, 07:26 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 29 Oct, 07:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -20,6 +20,7 @@ _Updated Thu 29 Oct, 07:26 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Two protests, one classroom: Vimochana Samaram (1959) and the Cockroach Janta Party (2026) | 2026-10-29T14:21 |
 | Where did Kerala's crows go? | 2026-10-29T07:39 |
 | Göbekli Tepe: the temple older than farming | 2026-10-29T01:40 |
 | Kallanai: a 2,000-year-old dam still in use | 2026-10-28T15:41 |
@@ -29,4 +30,3 @@ _Updated Thu 29 Oct, 07:26 PM IST. Times are approximate: each reel posts within
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5 | 2026-10-27T11:48 |
 | Yakshi: why you never stop under a pala tree at night | 2026-10-28T14:03 |
 | Theyyam: the man who becomes a god for one night | 2026-10-28T05:31 |
-| Mary Celeste: the ship with no one on board | 2026-10-28T12:16 |
