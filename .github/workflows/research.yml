@@ -37,6 +37,7 @@ jobs:
       - run: pip install -q requests
       - env:
           FOLLOW: ${{ github.event.inputs.follow }}
+          WIKI_PAGES: ${{ github.event.inputs.wiki_pages }}
         run: python scripts/research.py "${{ github.event.inputs.slug }}" "${{ github.event.inputs.queries }}"
       - run: |
           git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
