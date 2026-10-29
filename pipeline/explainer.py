@@ -225,7 +225,12 @@ body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve(
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
 </style><div class="shade"></div><div class="brand">UNEXPLORED TRUTHS<em>{html.escape(script.get('category', ''))}</em></div>
-<div class="cover"><div class="bar"></div><div class="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>"""
+<div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
+<script>/* fitKick: shrink the headline until its longest word fits the width */
+document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');
+  const words = k.textContent.split(/\\s+/).filter(Boolean); let fs = 112;
+  const widest = f => {{ cv.font = `800 ${{f}}px ${{cs.fontFamily}}`; return Math.max(...words.map(w => cv.measureText(w).width)); }};
+  while (fs > 56 && widest(fs) > k.clientWidth - 8) fs -= 4; k.style.fontSize = fs + 'px'; }});</script>"""
     hp = out.with_suffix(".html"); hp.write_text(doc, encoding="utf-8")
     with sync_playwright() as pw:
         b = pw.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1920})
