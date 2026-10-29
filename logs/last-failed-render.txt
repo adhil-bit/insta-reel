@@ -1,7 +1,7 @@
+Rendering job mv-kairali: MV Kairali: Kerala's ship that vanished with 51 aboard
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
-    name = render_job(job.parent).name
-           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 675, in <module>
+    render_job(Path(args.folder))
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -9,6 +9,3 @@ Traceback (most recent call last):
     "visual": script["cover_visual"],
               ~~~~~~^^^^^^^^^^^^^^^^
 KeyError: 'cover_visual'
-Rendering job mv-kairali: MV Kairali: Kerala's ship that vanished with 51 aboard
-!! mv-kairali failed: 'cover_visual'
-Rendered 0 job(s). Failed: ['mv-kairali']
