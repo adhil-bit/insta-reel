@@ -58,7 +58,7 @@ def add_pulse(bed: Path, total: float, out: Path) -> Path:
             e = f"if(eq(mod(floor(t/2),4),{ci}),{inner},{e})"
         return e
     f = note_expr()
-    opening_hit = "0.5*sin(2*PI*48*t)*exp(-5*t)*lt(t,1.2)+0.18*(random(1)*2-1)*exp(-9*t)*lt(t,0.5)"   # boom at frame 1
+    opening_hit = "0.22*sin(2*PI*48*t)*exp(-7*t)*lt(t,0.8)"   # soft low thump only: no noise burst, so the first spoken words stay clear   # boom at frame 1
     pluck = f"0.07*(sin(2*PI*({f})*t)+0.3*sin(4*PI*({f})*t))*exp(-7*mod(t,0.25))"
     sub = "0.10*sin(2*PI*55*t)*exp(-9*mod(t,0.5))"
     hat = "0.012*(random(0)*2-1)*exp(-45*mod(t+0.125,0.25))"

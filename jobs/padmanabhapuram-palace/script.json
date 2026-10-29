@@ -1,0 +1,105 @@
+{
+  "topic": {
+    "title": "Travancore's palace in Tamil Nadu, still Kerala's",
+    "category": "HISTORY",
+    "angle": "Kerala Piravi: what Kerala lost in 1956, and the palace it kept",
+    "key_facts": [
+      "Kerala was formed on 1 November 1956 (States Reorganisation Act)",
+      "Travancore's four southern taluks (Thovalai, Agastheeswaram, Kalkulam, Vilavancode) went to Madras State, forming Kanyakumari district",
+      "Padmanabhapuram Palace in Thuckalay was Travancore's capital until the capital moved to Thiruvananthapuram in the late 18th century",
+      "The palace, in Tamil Nadu, is maintained by Kerala's Department of Archaeology"
+    ],
+    "sources": [
+      "States Reorganisation Act 1956",
+      "Kerala Department of Archaeology",
+      "Wikipedia: Padmanabhapuram Palace; Kanyakumari district"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "KERALA'S PALACE",
+    "IN TAMIL NADU"
+  ],
+  "accent_words": [
+    "TAMIL NADU"
+  ],
+  "thumbnail_ml": "തിരുവിതാംകൂറിന്റെ കൊട്ടാരം തമിഴ്നാട്ടിൽ!",
+  "thumbnail_accent": [
+    "തമിഴ്നാട്ടിൽ!"
+  ],
+  "hook_voiceover": "തിരുവിതാംകൂറിന്റെ പഴയ തലസ്ഥാനം ഇന്ന് എവിടെയാണെന്ന് നിങ്ങൾ ഊഹിക്കില്ല. കേരളത്തിലല്ല!",
+  "cover_visual": "Travancore's palace in Tamil Nadu, still Kerala's",
+  "scenes": [
+    {
+      "voiceover": "1956 നവംബർ 1. കേരളം പിറന്നു. പക്ഷേ ചിലത് നമുക്ക് നഷ്ടപ്പെട്ടു.",
+      "caption": "1 NOVEMBER 1956",
+      "highlight": "1956",
+      "kicker": "KERALA IS BORN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തിരുവിതാംകൂറിന്റെ തെക്കേയറ്റത്തെ നാല് താലൂക്കുകൾ തമിഴ്നാട്ടിലേക്ക് പോയി. ഇന്നത്തെ കന്യാകുമാരി ജില്ല.",
+      "caption": "FOUR TALUKS LEFT",
+      "highlight": "LEFT",
+      "kicker": "THOVALAI · AGASTHEESWARAM · KALKULAM · VILAVANCODE",
+      "labels": [
+        {
+          "text": "KANYAKUMARI DISTRICT",
+          "x": 0.62,
+          "y": 0.6,
+          "at": 0.45
+        }
+      ],
+      "visual": ""
+    },
+    {
+      "voiceover": "അതോടെ തിരുവിതാംകൂറിന്റെ പഴയ തലസ്ഥാനമായ പത്മനാഭപുരം കൊട്ടാരവും തമിഴ്നാട്ടിലായി.",
+      "caption": "PADMANABHAPURAM PALACE",
+      "highlight": "PALACE",
+      "kicker": "TRAVANCORE'S OLD CAPITAL",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഇന്നും ആ കൊട്ടാരം നോക്കുന്നത് കേരള സർക്കാർ. തമിഴ്നാട്ടിലെ മണ്ണിൽ, കേരളത്തിന്റെ കൊട്ടാരം.",
+      "caption": "STILL KERALA'S",
+      "highlight": "KERALA'S",
+      "kicker": "MAINTAINED BY KERALA ARCHAEOLOGY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഈ കേരളപ്പിറവിക്ക് ഒരു ചോദ്യം: നിങ്ങൾ ആ കൊട്ടാരം കണ്ടിട്ടുണ്ടോ? കമന്റിൽ പറയൂ!",
+      "caption": "HAPPY KERALA PIRAVI",
+      "highlight": "PIRAVI",
+      "kicker": "HAVE YOU BEEN THERE?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "തിരുവിതാംകൂറിന്റെ കൊട്ടാരം തമിഴ്നാട്ടിൽ! 🏰\nTravancore's palace is in Tamil Nadu, and Kerala still looks after it.\n\n1956-ൽ കേരളം പിറന്നപ്പോൾ തിരുവിതാംകൂറിന്റെ നാല് തെക്കൻ താലൂക്കുകൾ തമിഴ്നാട്ടിലായി; ഒപ്പം പഴയ തലസ്ഥാനമായ പത്മനാഭപുരം കൊട്ടാരവും. ഇന്നും അത് പരിപാലിക്കുന്നത് കേരള പുരാവസ്തു വകുപ്പ്.\nWhen Kerala was formed in 1956, Travancore's four southern taluks went to Madras State, and with them Padmanabhapuram Palace, the old capital. Kerala's Archaeology Department still maintains it.\n\nനിങ്ങൾ ആ കൊട്ടാരം കണ്ടിട്ടുണ്ടോ?\nHave you visited it? Tell us below.\n\nHappy Kerala Piravi! Share this with someone from Thiruvananthapuram. 📩",
+  "search_ml": [
+    "പത്മനാഭപുരം കൊട്ടാരം",
+    "കേരളപ്പിറവി",
+    "തിരുവിതാംകൂർ",
+    "കന്യാകുമാരി"
+  ],
+  "hashtags": [
+    "KeralaPiravi",
+    "PadmanabhapuramPalace",
+    "Travancore",
+    "Kanyakumari",
+    "KeralaHistory"
+  ],
+  "fact_check": [
+    "Taluks and 1956 transfer: States Reorganisation",
+    "Palace maintained by Kerala Archaeology: well documented; double-check wording"
+  ]
+}
