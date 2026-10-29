@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 29 Oct, 07:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 29 Oct, 07:11 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -16,11 +16,16 @@ _Updated Thu 29 Oct, 07:02 PM IST. Times are approximate: each reel posts within
 | 10 | Sun 01 Nov · 05:06 PM | Lonar: the meteor lake that turned pink | Puck |
 | 11 | Sun 01 Nov · 08:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
+## Being rendered (joins the queue when done)
+
+- bonacaud-bungalow
+- kuriyedathu-thathri
+- padmanabhapuram-palace
+
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
-| Two protests, one classroom: Vimochana Samaram (1959) and the Cockroach Janta Party (2026) | 2026-10-29T13:02 |
 | Where did Kerala's crows go? | 2026-10-29T07:39 |
 | Göbekli Tepe: the temple older than farming | 2026-10-29T01:40 |
 | Kallanai: a 2,000-year-old dam still in use | 2026-10-28T15:41 |
@@ -30,3 +35,4 @@ _Updated Thu 29 Oct, 07:02 PM IST. Times are approximate: each reel posts within
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5 | 2026-10-27T11:48 |
 | Yakshi: why you never stop under a pala tree at night | 2026-10-28T14:03 |
 | Theyyam: the man who becomes a god for one night | 2026-10-28T05:31 |
+| Mary Celeste: the ship with no one on board | 2026-10-28T12:16 |
