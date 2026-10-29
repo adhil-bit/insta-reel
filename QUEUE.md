@@ -17,7 +17,6 @@ _Updated Thu 29 Oct, 07:24 PM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- alummoottil-meda
 - bonacaud-bungalow
 - kalari-kungfu
 - lake-nyos
