@@ -17,6 +17,18 @@ for q in queries:
                 seen.add(t); out["news"].append({"q": q, "title": t, "source": src, "date": date, "link": link})
     except Exception as e:
         out["news"].append({"q": q, "error": str(e)[:120]})
+    try:                                         # Bing News RSS gives the articles' real addresses
+        rss = requests.get("https://www.bing.com/news/search", params={"q": q, "format": "rss", "cc": "IN"}, headers=UA, timeout=30).text
+        for it in re.findall(r"<item>(.*?)</item>", rss, re.S)[:8]:
+            t = html.unescape(re.sub(r"<.*?>", "", re.search(r"<title>(.*?)</title>", it, re.S).group(1)))
+            link = html.unescape(re.search(r"<link>(.*?)</link>", it, re.S).group(1).strip())
+            qs = urllib.parse.parse_qs(urllib.parse.urlparse(link).query); link = qs.get("url", [link])[0]
+            desc = html.unescape(re.sub(r"<.*?>", "", (re.search(r"<description>(.*?)</description>", it, re.S) or [None, ""])[1]))
+            date = (re.search(r"<pubDate>(.*?)</pubDate>", it) or [None, ""])[1]
+            if t not in seen:
+                seen.add(t); out["news"].append({"q": q, "title": t, "source": urllib.parse.urlparse(link).netloc, "date": date, "link": link, "desc": desc[:300], "direct": True})
+    except Exception as e:
+        out["news"].append({"q": q, "error": "bing " + str(e)[:100]})
     try:
         w = requests.get("https://en.wikipedia.org/w/api.php", params={"action": "query", "list": "search", "srsearch": q, "format": "json", "srlimit": 3}, headers=UA, timeout=30).json()
         for r in w.get("query", {}).get("search", []):
