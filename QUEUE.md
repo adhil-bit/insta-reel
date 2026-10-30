@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 30 Oct, 10:53 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 30 Oct, 10:54 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -19,7 +19,6 @@ _Updated Fri 30 Oct, 10:53 AM IST. Times are approximate: each reel posts within
 
 - bathe-after-funeral
 - kerala-piravi-1956
-- padmanabhapuram-palace
 - photography-prohibited
 
 ## Recently posted
