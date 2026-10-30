@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 30 Oct, 08:26 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 30 Oct, 09:27 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -9,7 +9,7 @@ _Updated Fri 30 Oct, 08:26 AM IST. Times are approximate: each reel posts within
 | 3 | Sat 31 Oct · 10:11 AM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
 | 4 | Sat 31 Oct · 02:11 PM | Damascus steel: the sword made from Indian steel | Zephyr |
 | 5 | Sat 31 Oct · 08:11 PM | The Indus script nobody can read | Charon |
-| 6 | Sun 01 Nov · 10:11 AM | Before 1956 there was no Kerala state | Puck |
+| 6 | Sun 01 Nov · 10:11 AM | Before Kerala: when Malabar was ruled from Madras | Puck |
 | 7 | Sun 01 Nov · 02:11 PM | Kottayam: India's first fully literate town | Despina |
 | 8 | Sun 01 Nov · 08:11 PM | Roopkund: the lake of skeletons | Zephyr |
 | 9 | Mon 02 Nov · 06:06 AM | Silent Valley: the forest Kerala saved | Charon |
