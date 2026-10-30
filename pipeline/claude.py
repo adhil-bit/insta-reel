@@ -70,7 +70,7 @@ Write every voiceover line (hook_voiceover and scenes[].voiceover) in natural, s
 {config.VOICE_LANGUAGE} in its own script, the way a popular explainer creator talks. Keep names
 and technical terms that people say in English as they are. Captions, headline and
 image/visual fields stay in English.
-Scene 0 is the cover: the hook that makes people stop scrolling.
+Scene 0 is the cover: the hook that makes people stop scrolling. In Malayalam, end a held-back hook with 'നിങ്ങൾക്കറിയാമോ?' (do you know?), never 'നിങ്ങൾ ഊഹിക്കില്ല' (you'd never guess), which can sound negative.
 
 WHAT MAKES MALAYALIS SHARE (use at least one): a link to something trending (a new Malayalam film, the season,
 this week's weather or news), Kerala identity or nostalgia (grandmother's stories, Gulf, Onam, school days),

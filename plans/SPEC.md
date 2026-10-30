@@ -42,6 +42,7 @@ each `build_cmd` into animation code. Changes go back to the planner.
 ```
 
 ## Rules the plan must follow
+- Hook phrasing: end a held-back hook with 'നിങ്ങൾക്കറിയാമോ?', never 'നിങ്ങൾ ഊഹിക്കില്ല'.
 - Length: about 35 s (≈60 Malayalam words incl. the hook). No shot holds longer than ~4 s: give every scene a mid-scene change.
 - Loop line: the last spoken line echoes a word or phrase from the hook.
 - Hero subject first: every scene has one clear subject; motion explains the point.

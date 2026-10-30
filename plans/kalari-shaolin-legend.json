@@ -44,7 +44,7 @@
     "thumbnail_accent": [
       "കളരിയോ?"
     ],
-    "hook_voiceover_ml": "ഏഴാം അറിവിൽ നിങ്ങൾ കണ്ട ബോധിധർമ്മൻ. പക്ഷേ ആ കഥയിൽ ഒരു വലിയ പ്രശ്നമുണ്ടെന്ന് നിങ്ങൾ ഊഹിക്കില്ല!",
+    "hook_voiceover_ml": "ഏഴാം അറിവിൽ നിങ്ങൾ കണ്ട ബോധിധർമ്മൻ. പക്ഷേ ആ കഥയിൽ ഒരു വലിയ പ്രശ്നമുണ്ടെന്ന് നിങ്ങൾക്കറിയാമോ?",
     "visual": "Two silhouettes in matching stances: a Kalari fighter on red earth and a Shaolin monk, mirrored",
     "build_cmd": "Split frame: left half warm red-earth kalari (gradient #6a2a1a→#2a0e08, oil lamps SK.lamp at the edges), right half misty mountain dusk (SK.sky 'dusk' with pagoda roof silhouette). Two fighter silhouettes (SK.person h360) mirror each other: from 20% both raise one arm and bend one knee (animate limbs with lines). At 60% a thin glowing line connects them and a pulsing '?' made of strokes appears between."
   },

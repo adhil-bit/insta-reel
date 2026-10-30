@@ -48,7 +48,7 @@
     "thumbnail_accent": [
       "ഗ്രാമം!"
     ],
-    "hook_voiceover_ml": "ഒരു വമ്പൻ കമ്പനി. ഒരു ചെറിയ ഗ്രാമം. ആര് ജയിക്കുമെന്നാണ് കരുതുന്നത്? നിങ്ങൾ ഊഹിക്കില്ല!",
+    "hook_voiceover_ml": "ഒരു വമ്പൻ കമ്പനി. ഒരു ചെറിയ ഗ്രാമം. ഒടുവിൽ ആര് ജയിച്ചുവെന്ന് നിങ്ങൾക്കറിയാമോ?",
     "visual": "A tiny village of huts facing a huge factory with smokestacks",
     "build_cmd": "SK.sky(g,'sunset',0.62). Right side: a huge dark factory silhouette (rectangles, 3 smokestacks with drifting smoke) scaled 1.3. Left: five small SK.house huts and SK.palm. A dry-crack pattern spreads across the ground from the factory towards the huts over the scene. At 60% a single SK.person with raised arm ('arm_up') appears in front of the huts, glowing rim light."
   },

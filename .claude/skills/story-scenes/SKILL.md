@@ -17,6 +17,8 @@ which is loaded into every animation page.
 - **The scene animates the twist**: start calm and pretty, then the event happens *in the same shot*
   (the sea climbs the beach, the door opens to light, the crowd turns). No cut needed for the payoff.
 
+- **Malayalam phrasing:** end a held-back hook with **'നിങ്ങൾക്കറിയാമോ?'** (do you know?). Never use 'നിങ്ങൾ ഊഹിക്കില്ല' (you'd never guess): it can sound negative.
+
 ## 2. The look
 - One warm palette per reel: `SK.sky(g, 'sunset' | 'dusk' | 'dawn' | 'day' | 'night' | 'temple')`.
 - Flat silhouettes in near-black (`SK.ink`) against glowing skies; Kerala motifs: palms, sloped-roof
