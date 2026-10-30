@@ -17,7 +17,6 @@ _Updated Fri 30 Oct, 10:54 AM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- bathe-after-funeral
 - kerala-piravi-1956
 - photography-prohibited
 
