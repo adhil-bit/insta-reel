@@ -1,9 +1,9 @@
-Publishing kalari-kungfu...
+Publishing alummoottil-meda...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18135621133694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfGa0yyiq4P/
+  container: 18135677257694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfHEIgtjTuO/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
