@@ -9,15 +9,15 @@ _Updated Fri 30 Oct, 10:54 AM IST. Times are approximate: each reel posts within
 | 3 | Sat 31 Oct · 10:11 AM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
 | 4 | Sat 31 Oct · 02:11 PM | Damascus steel: the sword made from Indian steel | Zephyr |
 | 5 | Sat 31 Oct · 08:11 PM | The Indus script nobody can read | Charon |
-| 6 | Sun 01 Nov · 10:11 AM | Kottayam: India's first fully literate town | Despina |
-| 7 | Sun 01 Nov · 02:11 PM | Roopkund: the lake of skeletons | Zephyr |
-| 8 | Sun 01 Nov · 08:11 PM | Silent Valley: the forest Kerala saved | Charon |
-| 9 | Mon 02 Nov · 06:06 AM | Lonar: the meteor lake that turned pink | Puck |
-| 10 | Mon 02 Nov · 12:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 6 | Sun 01 Nov · 10:11 AM | Before Kerala: when Malabar was ruled from Madras | Enceladus |
+| 7 | Sun 01 Nov · 02:11 PM | Kottayam: India's first fully literate town | Despina |
+| 8 | Sun 01 Nov · 08:11 PM | Roopkund: the lake of skeletons | Zephyr |
+| 9 | Mon 02 Nov · 06:06 AM | Silent Valley: the forest Kerala saved | Charon |
+| 10 | Mon 02 Nov · 12:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 11 | Mon 02 Nov · 04:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
 ## Being rendered (joins the queue when done)
 
-- kerala-piravi-1956
 - photography-prohibited
 
 ## Recently posted
