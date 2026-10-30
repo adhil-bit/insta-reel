@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 30 Oct, 10:28 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 30 Oct, 10:35 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -15,6 +15,10 @@ _Updated Fri 30 Oct, 10:28 AM IST. Times are approximate: each reel posts within
 | 9 | Mon 02 Nov · 06:06 AM | Silent Valley: the forest Kerala saved | Charon |
 | 10 | Mon 02 Nov · 12:06 PM | Lonar: the meteor lake that turned pink | Puck |
 | 11 | Mon 02 Nov · 04:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+
+## Being rendered (joins the queue when done)
+
+- photography-prohibited
 
 ## Recently posted
 
