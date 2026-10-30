@@ -360,15 +360,6 @@
     "created": "2026-10-29T13:54"
   },
   {
-    "title": "Alummoottil Meda: the real house behind Manichitrathazhu",
-    "category": "MYSTERY",
-    "folder": "alummoottil-meda",
-    "status": "pending",
-    "voice": "Puck",
-    "post_on": "2099-01-01",
-    "created": "2026-10-29T13:54"
-  },
-  {
     "title": "Lake Nyos: the lake that breathed out death",
     "category": "NATURE",
     "folder": "lake-nyos",
@@ -398,24 +389,6 @@
     "created": "2026-10-29T13:55"
   },
   {
-    "title": "Before Kerala: when Malabar was ruled from Madras",
-    "category": "HISTORY",
-    "folder": "kerala-piravi-1956",
-    "status": "pending",
-    "voice": "Enceladus",
-    "post_on": "2026-11-01",
-    "created": "2026-10-30T04:35"
-  },
-  {
-    "title": "Travancore's palace in Tamil Nadu, still Kerala's",
-    "category": "HISTORY",
-    "folder": "padmanabhapuram-palace",
-    "status": "pending",
-    "voice": "Enceladus",
-    "post_on": "2099-01-01",
-    "created": "2026-10-30T04:36"
-  },
-  {
     "title": "Bonacaud Bungalow: ghost or myth?",
     "category": "MYSTERY",
     "folder": "bonacaud-bungalow",
@@ -423,23 +396,5 @@
     "voice": "Puck",
     "post_on": "2099-01-01",
     "created": "2026-10-30T04:42"
-  },
-  {
-    "title": "Why we bathe after visiting a house of death",
-    "category": "CULTURE",
-    "folder": "bathe-after-funeral",
-    "status": "pending",
-    "voice": "Zephyr",
-    "post_on": "2099-01-01",
-    "created": "2026-10-30T05:05"
-  },
-  {
-    "title": "The story behind the 'Photography Prohibited' board",
-    "category": "HISTORY",
-    "folder": "photography-prohibited",
-    "status": "pending",
-    "voice": "Zephyr",
-    "post_on": "2099-01-01",
-    "created": "2026-10-30T05:06"
   }
 ]

@@ -54,7 +54,18 @@ const SK = (() => {
     g.restore();
   }
   function crowd(g, x0, x1, y, n, h = 260, t = 0, col = ink) { for (let i = 0; i < n; i++) { const x = x0 + (x1 - x0) * (i + 0.5) / n; person(g, x, y + (i % 2) * 6, h * (0.9 + (i * 37 % 20) / 100), i % 4 === 1 ? 'arm_up' : 'stand', col, t + i); } }
-  function lamp(g, x, y, s = 1, t = 0) {   // nilavilakku-style oil lamp, flickering
+  function lamp(g, x, y, s = 1, t = 0) {   // neutral light: kerosene hurricane lantern (no religious meaning). (x,y) = base centre
+    g.save(); g.translate(x, y); g.scale(s, s);
+    const f = 1 + 0.12 * Math.sin(t * 11) + 0.06 * Math.sin(t * 17);
+    const gl = g.createRadialGradient(0, -80, 4, 0, -80, 170 * f); gl.addColorStop(0, 'rgba(255,190,100,0.55)'); gl.addColorStop(1, 'rgba(255,190,100,0)'); g.fillStyle = gl; g.fillRect(-170, -250, 340, 340);
+    g.fillStyle = '#5a4a3a'; g.beginPath(); g.ellipse(0, -8, 52, 12, 0, 0, 6.283); g.fill(); g.fillRect(-48, -38, 96, 30);
+    g.fillStyle = 'rgba(255,236,190,0.35)'; g.beginPath(); g.moveTo(-34, -40); g.quadraticCurveTo(-52, -95, -30, -140); g.lineTo(30, -140); g.quadraticCurveTo(52, -95, 34, -40); g.closePath(); g.fill();
+    g.fillStyle = '#ffd27a'; g.beginPath(); g.ellipse(0, -82, 7, 20 * f, 0, 0, 6.283); g.fill();
+    g.strokeStyle = '#5a4a3a'; g.lineWidth = 5; for (const sx of [-1, 1]) { g.beginPath(); g.moveTo(sx * 44, -38); g.lineTo(sx * 34, -146); g.stroke(); }
+    g.fillStyle = '#5a4a3a'; g.fillRect(-36, -152, 72, 14); g.beginPath(); g.moveTo(-22, -152); g.lineTo(0, -172); g.lineTo(22, -152); g.fill();
+    g.lineWidth = 4; g.beginPath(); g.arc(0, -172, 26, Math.PI * 1.05, Math.PI * 1.95); g.stroke(); g.restore();
+  }
+  function nilavilakku(g, x, y, s = 1, t = 0) {   // brass oil lamp: ONLY for stories that are specifically about a Hindu ritual
     g.save(); g.translate(x, y); g.scale(s, s); const br = g.createLinearGradient(-50, 0, 50, 0); br.addColorStop(0, '#8a5a1a'); br.addColorStop(0.5, '#f0c050'); br.addColorStop(1, '#8a5a1a');
     g.fillStyle = br; g.beginPath(); g.ellipse(0, 0, 70, 16, 0, 0, 6.283); g.fill(); g.fillRect(-8, -150, 16, 150); g.beginPath(); g.ellipse(0, -150, 50, 12, 0, 0, 6.283); g.fill();
     const f = 1 + 0.18 * Math.sin(t * 11) + 0.08 * Math.sin(t * 17); g.fillStyle = '#ffd27a'; g.beginPath(); g.ellipse(0, -176, 8, 22 * f, 0, 0, 6.283); g.fill();
@@ -103,5 +114,5 @@ const SK = (() => {
     g.lineWidth = 12; g.beginPath(); g.moveTo(-36, -280); g.lineTo(-70, -200); g.stroke(); g.beginPath(); g.moveTo(36, -280);
     if (armUp) { g.lineTo(80, -380 + Math.sin(t * 2) * 10); } else { g.lineTo(70, -200); } g.stroke(); g.restore();
   }
-  return { P, ink, stage, puppet, sky, sun, birds, palm, house, boat, sea, ground, person, crowd, lamp, gopuram, rays, door, grain, filmFrame };
+  return { P, ink, stage, puppet, sky, sun, birds, palm, house, boat, sea, ground, person, crowd, lamp, nilavilakku, gopuram, rays, door, grain, filmFrame };
 })();
