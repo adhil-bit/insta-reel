@@ -1,11 +1,29 @@
-Rendering job mv-kairali: MV Kairali: Kerala's ship that vanished with 51 aboard
+Rendering job bonacaud-bungalow: Bonacaud Bungalow: ghost or myth?
+3/6 Recording the voiceover (voice: Enceladus)...
+  one-take recording couldn't be split (could not find the pauses between lines (2 of 5)); recording line by line with Enceladus
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+  daily limit reached on key 1; switching to key 2
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 155, in gemini_narration
+    raise RuntimeError(f"could not find the pauses between lines ({len(gaps)} of {len(lines) - 1})")
+RuntimeError: could not find the pauses between lines (2 of 5)
+
+During handling of the above exception, another exception occurred:
+
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 675, in <module>
     render_job(Path(args.folder))
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
-    "visual": script["cover_visual"],
-              ~~~~~~^^^^^^^^^^^^^^^^
-KeyError: 'cover_visual'
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 75, in build_reel
+    media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice["id"], provider="gemini")
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 117, in generate_voice
+    return _gemini_voice(text, out_path, voice_id or config.GEMINI_VOICE_POOL[0]["id"])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 101, in _gemini_voice
+    part = r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+KeyError: 'content'
