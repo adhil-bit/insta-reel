@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 30 Oct, 11:54 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 31 Oct, 10:09 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -20,6 +20,7 @@ _Updated Fri 30 Oct, 11:54 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Why we bathe after visiting a house of death | 2026-10-31T04:39 |
 | Alummoottil Meda: the real house behind Manichitrathazhu | 2026-10-30T07:39 |
 | MV Kairali: Kerala's ship that vanished with 51 aboard | 2026-10-30T14:39 |
 | Did Kalaripayattu become Kung Fu? The Bodhidharma legend | 2026-10-30T01:38 |
@@ -29,4 +30,3 @@ _Updated Fri 30 Oct, 11:54 PM IST. Times are approximate: each reel posts within
 | Kallanai: a 2,000-year-old dam still in use | 2026-10-28T15:41 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 3/5 | 2026-10-28T08:41 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 4/5 | 2026-10-28T14:39 |
-| Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5 | 2026-10-27T14:04 |
