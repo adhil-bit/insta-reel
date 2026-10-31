@@ -1,9 +1,9 @@
-Publishing karuthachanootu...
+Publishing jatinga-birds...
   uguu: link serves video/mp4
-  temporary video link ready (d.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18135943081694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfJvrBfDLaL/
+  container: 18136022500694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfKZjcfkfDM/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.

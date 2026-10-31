@@ -354,10 +354,12 @@
     "title": "Jatinga: where birds fall at night",
     "category": "NATURE",
     "folder": "jatinga-birds",
-    "status": "pending",
+    "status": "posted",
     "voice": "Puck",
     "priority": 6,
-    "created": "2026-10-29T13:54"
+    "created": "2026-10-29T13:54",
+    "media_id": "18131297521695404",
+    "posted": "2026-10-31T14:44"
   },
   {
     "title": "Lake Nyos: the lake that breathed out death",
