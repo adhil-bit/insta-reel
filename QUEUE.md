@@ -1,20 +1,20 @@
 # Posting queue
 
-_Updated Sat 31 Oct, 10:09 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 31 Oct, 12:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Sat 31 Oct · 10:11 AM | Jatinga: where birds fall at night | Puck |
-| 2 | Sat 31 Oct · 02:11 PM | Lake Nyos: the lake that breathed out death | Puck |
-| 3 | Sat 31 Oct · 08:11 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
-| 4 | Sun 01 Nov · 10:11 AM | Before Kerala: when Malabar was ruled from Madras | Enceladus |
-| 5 | Sun 01 Nov · 02:11 PM | Damascus steel: the sword made from Indian steel | Zephyr |
-| 6 | Sun 01 Nov · 08:11 PM | The Indus script nobody can read | Charon |
-| 7 | Mon 02 Nov · 06:06 AM | Kottayam: India's first fully literate town | Despina |
-| 8 | Mon 02 Nov · 12:06 PM | Roopkund: the lake of skeletons | Zephyr |
-| 9 | Mon 02 Nov · 04:06 PM | Silent Valley: the forest Kerala saved | Charon |
-| 10 | Mon 02 Nov · 09:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 11 | Tue 03 Nov · 07:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 1 | Sat 31 Oct · 02:11 PM | Jatinga: where birds fall at night | Puck |
+| 2 | Sat 31 Oct · 08:11 PM | Lake Nyos: the lake that breathed out death | Puck |
+| 3 | Sun 01 Nov · 10:11 AM | Before Kerala: when Malabar was ruled from Madras | Enceladus |
+| 4 | Sun 01 Nov · 02:11 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
+| 5 | Sun 01 Nov · 08:11 PM | Damascus steel: the sword made from Indian steel | Zephyr |
+| 6 | Mon 02 Nov · 06:06 AM | The Indus script nobody can read | Charon |
+| 7 | Mon 02 Nov · 12:06 PM | Kottayam: India's first fully literate town | Despina |
+| 8 | Mon 02 Nov · 04:06 PM | Roopkund: the lake of skeletons | Zephyr |
+| 9 | Mon 02 Nov · 09:06 PM | Silent Valley: the forest Kerala saved | Charon |
+| 10 | Tue 03 Nov · 07:06 AM | Lonar: the meteor lake that turned pink | Puck |
+| 11 | Tue 03 Nov · 01:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
 ## Recently posted
 
