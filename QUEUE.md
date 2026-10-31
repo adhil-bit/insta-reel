@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sat 31 Oct, 08:14 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 31 Oct, 08:16 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -22,10 +22,10 @@ _Updated Sat 31 Oct, 08:14 PM IST. Times are approximate: each reel posts within
 | Karuthachanootu: Kerala's devil-worship rumours, truth or story? | 2026-10-31T08:38 |
 | Why we bathe after visiting a house of death | 2026-10-31T04:39 |
 | Alummoottil Meda: the real house behind Manichitrathazhu | 2026-10-30T07:39 |
+| Bonacaud Bungalow: ghost or myth? | 2026-10-31T14:46 |
 | MV Kairali: Kerala's ship that vanished with 51 aboard | 2026-10-30T14:39 |
 | Did Kalaripayattu become Kung Fu? The Bodhidharma legend | 2026-10-30T01:38 |
 | Jatinga: where birds fall at night | 2026-10-31T14:44 |
 | Two protests, one classroom: Vimochana Samaram (1959) and the Cockroach Janta Party (2026) | 2026-10-29T14:21 |
 | Where did Kerala's crows go? | 2026-10-29T07:39 |
 | Göbekli Tepe: the temple older than farming | 2026-10-29T01:40 |
-| Kallanai: a 2,000-year-old dam still in use | 2026-10-28T15:41 |
