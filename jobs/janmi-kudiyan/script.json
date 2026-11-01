@@ -1,0 +1,110 @@
+{
+  "topic": {
+    "title": "Who owned Kerala's land? From janmi–kudiyan to land reform",
+    "category": "HISTORY",
+    "angle": "200 years of who owned the field, ending with who land reform actually helped",
+    "key_facts": [
+      "Janmam–kanam system: janmi (landlord), kanakkar (intermediate leaseholders), cultivating tenants",
+      "Hyder Ali invaded Malabar in 1766; Mysore introduced direct land assessment; historians differ on Mysorean rule (tax relief vs. violence and forced conversions)",
+      "Malabar ceded to the British in 1792 (Treaty of Seringapatam); British treated janmam as absolute private property, enabling evictions and rack-renting",
+      "Recurrent outbreaks in Malabar from 1836; the 1921 rebellion (contested interpretations)",
+      "1957: Kerala Stay of Eviction Proceedings ordinance; Agrarian Relations Bill (K.R. Gouri Amma)",
+      "Kerala Land Reforms (Amendment) Act 1969, in force 1 January 1970, abolished landlordism; tenants got ownership",
+      "Kudikidappukar (hutment dwellers, mostly agricultural labourers) got rights to small house plots (up to 10 cents in rural areas)"
+    ],
+    "sources": [
+      "Kerala Land Reforms Act 1963 / Amendment 1969",
+      "Malabar Tenancy Act 1929",
+      "Standard histories of Malabar (K.N. Panikkar; William Logan's Malabar Manual)"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "WHO OWNED",
+    "KERALA'S LAND?"
+  ],
+  "accent_words": [
+    "LAND?"
+  ],
+  "thumbnail_ml": "നിങ്ങളുടെ മുത്തച്ഛന്റെ വയൽ ആരുടേതായിരുന്നു?",
+  "thumbnail_accent": [
+    "ആരുടേതായിരുന്നു?"
+  ],
+  "hook_voiceover": "നൂറ് വർഷം മുമ്പ് വയലിൽ പണിയെടുത്ത കർഷകന് ആ വയൽ സ്വന്തമായിരുന്നില്ല. പിന്നെ ആരുടേതായിരുന്നുവെന്ന് നിങ്ങൾക്കറിയാമോ?",
+  "cover_visual": "A farmer in a paddy field below a landlord's mansion",
+  "scenes": [
+    {
+      "voiceover": "മുകളിൽ ജന്മി. നടുവിൽ കാണക്കാരൻ. താഴെ മണ്ണിൽ പണിയെടുക്കുന്ന കുടിയാൻ. ഇതായിരുന്നു ജന്മി–കുടിയാൻ വ്യവസ്ഥ.",
+      "caption": "THE JANMI–KUDIYAN SYSTEM",
+      "highlight": "JANMI–KUDIYAN",
+      "kicker": "JANMI · KANAKKAR · KUDIYAN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1766-ൽ മൈസൂർ സൈന്യം മലബാറിലെത്തി. നികുതി നേരിട്ട് കർഷകരിൽ നിന്ന്. ചിലർക്ക് ആശ്വാസം, മറ്റുചിലർക്ക് ഭീകരത. ചരിത്രകാരന്മാർ ഇന്നും തർക്കിക്കുന്നു.",
+      "caption": "1766: MYSORE ARRIVES",
+      "highlight": "MYSORE",
+      "kicker": "RELIEF OR TERROR? HISTORIANS DIFFER",
+      "labels": [
+        {
+          "text": "MALABAR",
+          "x": 0.42,
+          "y": 0.42,
+          "at": 0.15
+        }
+      ],
+      "visual": ""
+    },
+    {
+      "voiceover": "പിന്നെ ബ്രിട്ടീഷുകാർ ജന്മം പൂർണ്ണ സ്വകാര്യ സ്വത്താക്കി. കുടിയൊഴിപ്പിക്കലും പാട്ടം കൂട്ടലും. മലബാർ കലാപങ്ങളിൽ പൊട്ടിത്തെറിച്ചു.",
+      "caption": "BRITISH RULE: EVICTIONS",
+      "highlight": "EVICTIONS",
+      "kicker": "1836–1921 · REVOLTS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കർഷക സംഘങ്ങൾ സമരം ചെയ്തു. 1957-ൽ കുടിയൊഴിപ്പിക്കൽ നിരോധിച്ചു. 1970-ൽ ഭൂപരിഷ്കരണത്തോടെ ജന്മിത്വം നിയമപരമായി അവസാനിച്ചു.",
+      "caption": "1970: LAND TO THE TILLER",
+      "highlight": "TILLER",
+      "kicker": "KERALA LAND REFORMS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഭൂമി കിട്ടിയത് പ്രധാനമായും പാട്ടക്കാർക്ക്. കർഷകത്തൊഴിലാളികൾക്ക് പലപ്പോഴും കിട്ടിയത് പത്ത് സെന്റ് കുടികിടപ്പ് മാത്രം. ഭൂപരിഷ്കരണം പൂർണ്ണ വിജയമോ? കമന്റിൽ പറയൂ!",
+      "caption": "A JOB HALF DONE?",
+      "highlight": "HALF",
+      "kicker": "TENANTS GAINED, LABOURERS LESS",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "നിങ്ങളുടെ മുത്തച്ഛന്റെ വയൽ ആരുടേതായിരുന്നു? 🌾\nWho owned the field your great-grandfather farmed?\n\nജന്മി, കാണക്കാരൻ, കുടിയാൻ. 1766-ലെ മൈസൂർ ഭരണം (ചരിത്രകാരന്മാർക്കിടയിൽ ഇന്നും തർക്കം), ബ്രിട്ടീഷുകാരുടെ കുടിയൊഴിപ്പിക്കൽ, കർഷക സമരങ്ങൾ, 1957, ഒടുവിൽ 1970-ലെ ഭൂപരിഷ്കരണം. പക്ഷേ കർഷകത്തൊഴിലാളികൾക്ക് പലപ്പോഴും കിട്ടിയത് പത്ത് സെന്റ് മാത്രം.\nJanmi, kanakkar, kudiyan: from Mysorean rule (still debated) and British evictions to the 1970 land reforms. Tenants gained land; many labourers got only small house plots.\n\nഭൂപരിഷ്കരണം പൂർണ്ണ വിജയമോ? കമന്റിൽ പറയൂ.\nWas land reform a full success? Tell us below.\n\nShare this with someone who knows their family's land story. 📩",
+  "search_ml": [
+    "ജന്മി കുടിയാൻ",
+    "ഭൂപരിഷ്കരണം",
+    "മലബാർ",
+    "കാണം"
+  ],
+  "hashtags": [
+    "KeralaHistory",
+    "LandReforms",
+    "Malabar",
+    "JanmiSystem",
+    "KeralaModel"
+  ],
+  "fact_check": [
+    "Tipu death year not used (1799, not 1792)",
+    "Mysore: both views",
+    "1921: no verdict",
+    "No community blamed"
+  ]
+}
