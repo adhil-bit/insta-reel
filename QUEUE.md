@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 01 Nov, 02:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 01 Nov, 07:22 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -18,6 +18,7 @@ _Updated Sun 01 Nov, 02:08 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| 'Kunnamkulam made': how a town got the name | 2026-11-01T13:52 |
 | Karuthachanootu: Kerala's devil-worship rumours, truth or story? | 2026-10-31T08:38 |
 | Before Kerala: when Malabar was ruled from Madras | 2026-11-01T04:43 |
 | Why we bathe after visiting a house of death | 2026-10-31T04:39 |
@@ -27,4 +28,3 @@ _Updated Sun 01 Nov, 02:08 PM IST. Times are approximate: each reel posts within
 | MV Kairali: Kerala's ship that vanished with 51 aboard | 2026-10-30T14:39 |
 | Did Kalaripayattu become Kung Fu? The Bodhidharma legend | 2026-10-30T01:38 |
 | Jatinga: where birds fall at night | 2026-10-31T14:44 |
-| Two protests, one classroom: Vimochana Samaram (1959) and the Cockroach Janta Party (2026) | 2026-10-29T14:21 |
