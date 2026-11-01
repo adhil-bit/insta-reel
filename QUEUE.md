@@ -14,10 +14,6 @@ _Updated Sun 01 Nov, 11:12 AM IST. Times are approximate: each reel posts within
 | 8 | Tue 03 Nov · 05:06 PM | Lonar: the meteor lake that turned pink | Puck |
 | 9 | Tue 03 Nov · 09:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
-## Being rendered (joins the queue when done)
-
-- kunnamkulam-made
-
 ## Recently posted
 
 | Reel | Posted (UTC) |
