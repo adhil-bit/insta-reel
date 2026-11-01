@@ -477,5 +477,14 @@
     "voice": "Callirrhoe",
     "post_on": "2099-01-01",
     "created": "2026-11-01T17:46"
+  },
+  {
+    "title": "Lake Nyos: the lake that breathed out death",
+    "category": "NATURE",
+    "folder": "lake-nyos",
+    "status": "pending",
+    "voice": "Callirrhoe",
+    "priority": 7,
+    "created": "2026-11-01T18:37"
   }
 ]
