@@ -41,7 +41,7 @@ def render_scene(visual: Path, overlay: Path, audio: Path, out: Path,
         "ffmpeg", "-y", *video_in, *over_in, "-i", str(audio),
         "-filter_complex", vf, "-map", "[v]", "-map", "[a]",
         "-t", f"{duration:.3f}", "-r", str(FPS),
-        "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-crf", "16", "-maxrate", "14M", "-bufsize", "28M", "-profile:v", "high", "-level", "4.2",
+        "-c:v", "libx264", "-preset", "medium", "-tune", "animation", "-crf", "15", "-x264-params", "aq-mode=3", "-maxrate", "14M", "-bufsize", "28M", "-profile:v", "high", "-level", "4.2",
         "-c:a", "aac", "-b:a", "192k", "-ac", "2", str(out),
     ])
     return out

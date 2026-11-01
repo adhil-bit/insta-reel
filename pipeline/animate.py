@@ -11,7 +11,9 @@ import config
 W, H, FPS = config.WIDTH, config.HEIGHT, config.FPS
 import base64 as _b64
 # inlined as a data URI: WebGL refuses textures loaded from file:// pages
-EARTH_TEX = "data:image/jpeg;base64," + _b64.b64encode((Path(__file__).resolve().parent.parent / "vendor" / "earth_2048.jpg").read_bytes()).decode()
+_VENDOR = Path(__file__).resolve().parent.parent / "vendor"
+_EARTH_FILE = _VENDOR / "earth_hd.jpg" if (_VENDOR / "earth_hd.jpg").exists() else _VENDOR / "earth_2048.jpg"   # HD NASA map when available
+EARTH_TEX = "data:image/jpeg;base64," + _b64.b64encode(_EARTH_FILE.read_bytes()).decode()
 SCENES_JS = (Path(__file__).resolve().parent / "lib" / "scenes.js").as_uri()
 THREE_JS = (config.ROOT / "vendor" / "three.min.js").resolve().as_uri()
 
@@ -107,7 +109,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
     """Render the animation to an MP4 of exactly `duration` seconds."""
     from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
-    html = TEMPLATE % {"W": W, "H": H, "THREE": THREE_JS, "EARTH": EARTH_TEX, "SCENES": SCENES_JS, "ACCENT": accent,
+    html = TEMPLATE % {"W": W, "H": H, "THREE": THREE_JS, "EARTH": EARTH_TEX if "earthTex" in (js_code + (wrap or "")) else "", "SCENES": SCENES_JS, "ACCENT": accent,
                        "DURATION": duration, "SEED": seed}
     html = html.replace("document.body.appendChild(c)", "(document.getElementById('stage')||document.body).appendChild(c)")
     if wrap:                     # a reel template wraps the animation (it draws into #stage)

@@ -1,0 +1,40 @@
+name: Fetch HD Earth map (NASA Blue Marble, public domain)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q pillow requests
+      - run: |
+          python - << 'PY'
+          import io, requests
+          from PIL import Image
+          Image.MAX_IMAGE_PIXELS = None
+          urls = ["https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x21600x10800.jpg",
+                  "https://eoimages.gsfc.nasa.gov/images/imagerecords/74000/74218/world.200412.3x21600x10800.jpg",
+                  "https://eoimages.gsfc.nasa.gov/images/imagerecords/73000/73909/world.topo.bathy.200412.3x5400x2700.jpg"]
+          for u in urls:
+              try:
+                  r = requests.get(u, timeout=300); r.raise_for_status()
+                  im = Image.open(io.BytesIO(r.content)).convert("RGB"); print("got", u, im.size); break
+              except Exception as e:
+                  print("failed", u, e)
+          w = min(im.width, 10800); im = im.resize((w, w // 2), Image.LANCZOS)
+          im.save("vendor/earth_hd.jpg", quality=88, optimize=True, progressive=True)
+          import os; print("saved", im.size, os.path.getsize("vendor/earth_hd.jpg") // 1024, "KB")
+          PY
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add vendor/earth_hd.jpg && git commit -qm "HD Earth map (NASA Blue Marble)" && git pull -q --rebase && git push -q
