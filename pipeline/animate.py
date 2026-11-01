@@ -150,20 +150,20 @@ def render(js_code: str, accent: str, duration: float, seed: int,
             fast = not wrap and page.evaluate("document.querySelectorAll('canvas').length") == 1
             if fast:
                 import base64, io
-                b64 = page.evaluate("t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.92).split(',')[1]; }", duration / 2)
+                b64 = page.evaluate("t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.97).split(',')[1]; }", duration / 2)
                 img = Image.open(io.BytesIO(base64.b64decode(b64))).convert("L")
                 fast = max(ImageStat.Stat(img).stddev) >= 4 and img.size == (W, H)
             ffmpeg = subprocess.Popen(
                 ["ffmpeg", "-y", "-v", "error", "-f", "image2pipe", "-framerate", str(FPS),
-                 "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "veryfast",
-                 "-crf", "16", "-pix_fmt", "yuv420p", str(out)],
+                 "-c:v", "mjpeg", "-i", "-", "-c:v", "libx264", "-preset", "veryfast", "-tune", "animation",
+                 "-crf", "14", "-pix_fmt", "yuv420p", str(out)],
                 stdin=subprocess.PIPE,
             )
             BATCH = 8
             for start in range(0, frames, BATCH):
                 ts = [i / FPS for i in range(start, min(frames, start + BATCH))]
                 if fast:
-                    batch = page.evaluate("ts => ts.map(t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.92).split(',')[1]; })", ts)
+                    batch = page.evaluate("ts => ts.map(t => { window.renderFrame(t); return document.querySelector('canvas').toDataURL('image/jpeg', 0.97).split(',')[1]; })", ts)
                     if errors:
                         raise AnimationError(f"At t={ts[0]:.2f}s: " + "; ".join(errors[:3]))
                     for b in batch:
@@ -171,7 +171,7 @@ def render(js_code: str, accent: str, duration: float, seed: int,
                 else:
                     for t in ts:
                         frame(t)
-                        ffmpeg.stdin.write(page.screenshot(type="jpeg", quality=92))
+                        ffmpeg.stdin.write(page.screenshot(type="jpeg", quality=97))
         except PlaywrightError as err:
             raise AnimationError(str(err).split("\n")[0][:500]) from None
         finally:

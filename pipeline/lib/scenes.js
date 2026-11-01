@@ -89,7 +89,7 @@ const SK = (() => {
   function grain(g, t, amount = 0.07) {   // film grain + vignette
     if (!grainTile) { grainTile = document.createElement('canvas'); grainTile.width = 256; grainTile.height = 256; const c = grainTile.getContext('2d'), d = c.createImageData(256, 256);
       let s = 7; for (let i = 0; i < d.data.length; i += 4) { s = (s * 16807) % 2147483647; const v = s % 255; d.data[i] = d.data[i + 1] = d.data[i + 2] = v; d.data[i + 3] = 255; } c.putImageData(d, 0, 0); }
-    g.save(); g.globalAlpha = amount; g.globalCompositeOperation = 'overlay'; const ox = (Math.floor(t * 24) * 37) % 256, oy = (Math.floor(t * 24) * 91) % 256;
+    g.save(); g.globalAlpha = amount * 0.35; g.globalCompositeOperation = 'overlay'; const ox = (Math.floor(t * 4) * 37) % 256, oy = (Math.floor(t * 4) * 91) % 256;   // light, slow grain: survives Instagram's re-compression
     for (let x = -ox; x < W; x += 256) for (let y = -oy; y < H; y += 256) g.drawImage(grainTile, x, y); g.restore();
     const v = g.createRadialGradient(W / 2, H * 0.42, H * 0.25, W / 2, H * 0.45, H * 0.8); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(0,0,0,0.55)'); g.fillStyle = v; g.fillRect(0, 0, W, H);
   }
