@@ -140,7 +140,7 @@ SLOT_OVERRIDES = {
     "2026-10-26": ["04:54", "09:06", "18:06"],   # Thalassery cake at the 6:07 PM check
     "2026-10-27": ["07:06", "13:06"],   # rest of today: series Part 1 6:00 PM, Part 2 7:30 PM, Jatinga 9:10 PM (exact-time triggers)
     "2026-10-31": ["10:11", "14:11", "20:11"],   # Sat: funeral bath 10:07, Karuthachanootu 2:07, Bonacaud 8:07 (exact-time triggers)
-    "2026-11-01": ["10:11", "14:11", "20:11"],   # Sun: Kerala Piravi 10:07, Padmanabhapuram 2:07, Thathri 8:07
+    "2026-11-01": ["23:59"],   # Sun: ALL posts via exact-time triggers; the sentinel keeps every regular check quiet even if delayed
     "2026-10-30": ["07:06", "13:06", "20:06"],   # Fri: 3 reels via exact-time triggers (Kalari 7:07, Kairali 1:07, Manichitrathazhu 8:07)
     "2026-10-29": ["07:06", "13:06", "18:31"],   # 3 today: Göbekli, crows, two protests at 6:30 PM; no 5:07 or 9:07 post
     "2026-10-28": ["14:06", "17:11", "19:31", "21:06"],   # 4 today: Vault B 2:07 PM, series Part 3 5:10 PM, Part 4 7:30 PM, Damascus 9:07 PM
