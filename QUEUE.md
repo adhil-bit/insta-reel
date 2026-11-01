@@ -1,18 +1,18 @@
 # Posting queue
 
-_Updated Sun 01 Nov, 10:13 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 01 Nov, 11:07 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Sun 01 Nov · 02:11 PM | Lake Nyos: the lake that breathed out death | Puck |
-| 2 | Sun 01 Nov · 08:11 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
-| 3 | Mon 02 Nov · 06:06 AM | Damascus steel: the sword made from Indian steel | Zephyr |
-| 4 | Mon 02 Nov · 12:06 PM | The Indus script nobody can read | Charon |
-| 5 | Mon 02 Nov · 04:06 PM | Kottayam: India's first fully literate town | Despina |
-| 6 | Mon 02 Nov · 09:06 PM | Roopkund: the lake of skeletons | Zephyr |
-| 7 | Tue 03 Nov · 07:06 AM | Silent Valley: the forest Kerala saved | Charon |
-| 8 | Tue 03 Nov · 01:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 9 | Tue 03 Nov · 05:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 1 | Sun 01 Nov · 11:59 PM | Lake Nyos: the lake that breathed out death | Puck |
+| 2 | Mon 02 Nov · 06:06 AM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
+| 3 | Mon 02 Nov · 12:06 PM | Damascus steel: the sword made from Indian steel | Zephyr |
+| 4 | Mon 02 Nov · 04:06 PM | The Indus script nobody can read | Charon |
+| 5 | Mon 02 Nov · 09:06 PM | Kottayam: India's first fully literate town | Despina |
+| 6 | Tue 03 Nov · 07:06 AM | Roopkund: the lake of skeletons | Zephyr |
+| 7 | Tue 03 Nov · 01:06 PM | Silent Valley: the forest Kerala saved | Charon |
+| 8 | Tue 03 Nov · 05:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 9 | Tue 03 Nov · 09:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
 ## Recently posted
 
