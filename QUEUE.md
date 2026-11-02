@@ -1,16 +1,14 @@
 # Posting queue
 
-_Updated Mon 02 Nov, 02:23 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 02 Nov, 02:37 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Mon 02 Nov · 11:59 PM | Damascus steel: the sword made from Indian steel | Zephyr |
-| 2 | Tue 03 Nov · 07:06 AM | The Indus script nobody can read | Charon |
-| 3 | Tue 03 Nov · 01:06 PM | Kottayam: India's first fully literate town | Despina |
-| 4 | Tue 03 Nov · 05:06 PM | Roopkund: the lake of skeletons | Zephyr |
-| 5 | Tue 03 Nov · 09:06 PM | Silent Valley: the forest Kerala saved | Charon |
-| 6 | Wed 04 Nov · 08:06 AM | Lonar: the meteor lake that turned pink | Puck |
-| 7 | Wed 04 Nov · 02:06 PM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+
+## Being rendered (joins the queue when done)
+
+- itty-cora-5-europe
+- kuriyedathu-thathri
 
 ## Recently posted
 
