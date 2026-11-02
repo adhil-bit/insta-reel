@@ -1,0 +1,19 @@
+function chest(g, x, y, s, glow, t) { g.save(); g.translate(x, y); g.scale(s, s);
+  if (glow > 0) { const gl = g.createRadialGradient(0, -20, 10, 0, -20, 260); gl.addColorStop(0, `rgba(255,200,80,${0.6 * glow * (0.85 + 0.15 * Math.sin(t * 4))})`); gl.addColorStop(1, 'rgba(255,200,80,0)'); g.fillStyle = gl; g.fillRect(-260, -280, 520, 520); }
+  g.fillStyle = '#5a3416'; g.fillRect(-90, -50, 180, 90); g.fillStyle = '#7a4a22'; g.beginPath(); g.moveTo(-90, -50); g.quadraticCurveTo(0, -110, 90, -50); g.fill();
+  g.fillStyle = '#d8a83a'; g.fillRect(-94, -54, 188, 10); g.fillRect(-10, -60, 20, 40); g.fillRect(-94, 30, 188, 10);
+  for (let i = 0; i < 6; i++) { g.fillStyle = '#ffd34a'; g.beginPath(); g.ellipse(-60 + i * 24, -58 - (i % 2) * 8, 12, 6, 0, 0, 6.283); g.fill(); } g.restore(); }
+function streetlight(g, x, base, t) { g.fillStyle = '#2a2a30'; g.fillRect(x - 6, base - 520, 12, 520); g.fillRect(x - 6, base - 520, 120, 10); const f = 0.85 + 0.15 * Math.sin(t * 13);
+  const gl = g.createRadialGradient(x + 110, base - 500, 5, x + 110, base - 300, 420); gl.addColorStop(0, `rgba(255,214,140,${0.45 * f})`); gl.addColorStop(1, 'rgba(255,214,140,0)'); g.fillStyle = gl; g.beginPath(); g.moveTo(x + 110, base - 505); g.lineTo(x - 160, base); g.lineTo(x + 380, base); g.fill(); g.fillStyle = '#ffe2a0'; g.fillRect(x + 92, base - 512, 36, 10); }
+function road(g, top, t) { g.fillStyle = '#16161c'; g.fillRect(0, top, W, H - top); g.fillStyle = '#2a2a32'; g.beginPath(); g.moveTo(W * 0.3, top); g.lineTo(W * 0.7, top); g.lineTo(W, H); g.lineTo(0, H); g.fill(); g.fillStyle = 'rgba(255,255,255,0.55)'; for (let i = 0; i < 6; i++) { const y = top + 40 + i * i * 22; g.fillRect(W / 2 - 4 - i * 3, y, 8 + i * 6, 16 + i * 6); } }
+const c = makeCanvas(), g = c.getContext('2d');
+window.renderFrame = function (t) { const k = clamp(t / DURATION), jcb = ease.inOut(clamp((k - 0.35) / 0.4)), warn = ease.out(clamp((k - 0.7) / 0.15));
+  g.fillStyle = '#120c08'; g.fillRect(0, 0, W, H * 0.5);
+  g.save(); g.translate(W * 0.5, H * 0.26); g.rotate(-0.04); g.fillStyle = '#efe4c8'; g.fillRect(-260, -200, 520, 380); g.fillStyle = '#3a2a1a'; g.font = '800 36px Inter'; g.textAlign = 'center'; g.fillText('TREASURE TROVE ACT', 0, -130); g.font = '700 30px Inter'; g.fillText('1878', 0, -88);
+  g.fillStyle = '#7a6a54'; for (let i = 0; i < 6; i++) g.fillRect(-200, -40 + i * 34, 400 - (i * 37) % 90, 8); g.fillStyle = '#9a1a1a'; g.beginPath(); g.arc(170, 140, 36, 0, 6.283); g.fill(); g.restore();
+  SK.sky(g, 'day', 1); g.save(); g.beginPath(); g.rect(0, H * 0.5, W, H); g.clip(); SK.sky(g, 'day', 1); road(g, H * 0.72, t); g.restore(); g.fillStyle = '#120c08'; g.fillRect(0, 0, W, H * 0.5);
+  g.save(); g.translate(W * 0.5, H * 0.26); g.rotate(-0.04); g.fillStyle = '#efe4c8'; g.fillRect(-260, -200, 520, 380); g.fillStyle = '#3a2a1a'; g.font = '800 36px Inter'; g.textAlign = 'center'; g.fillText('TREASURE TROVE ACT', 0, -130); g.font = '700 30px Inter'; g.fillText('1878', 0, -88); g.fillStyle = '#7a6a54'; for (let i = 0; i < 6; i++) g.fillRect(-200, -40 + i * 34, 400 - (i * 37) % 90, 8); g.restore();
+  const jx = lerp(-300, W * 0.45, jcb), jy = H * 0.74; g.fillStyle = '#e8b000'; g.fillRect(jx - 140, jy - 120, 220, 90); g.fillRect(jx + 20, jy - 200, 70, 90); g.fillStyle = '#1a1a1a'; g.beginPath(); g.arc(jx - 90, jy - 20, 40, 0, 6.283); g.arc(jx + 40, jy - 20, 40, 0, 6.283); g.fill();
+  g.strokeStyle = '#e8b000'; g.lineWidth = 18; g.beginPath(); g.moveTo(jx + 80, jy - 110); g.lineTo(jx + 220, jy - 220); g.lineTo(jx + 300, jy - 80); g.stroke();
+  if (warn > 0) { g.save(); g.globalAlpha = warn; g.fillStyle = '#FACC15'; g.beginPath(); g.moveTo(W * 0.82, H * 0.55); g.lineTo(W * 0.94, H * 0.66); g.lineTo(W * 0.7, H * 0.66); g.closePath(); g.fill(); g.fillStyle = '#120c08'; g.font = '800 70px Inter'; g.textAlign = 'center'; g.fillText('!', W * 0.82, H * 0.65); g.restore(); }
+  SK.grain(g, t, 0.05); };
