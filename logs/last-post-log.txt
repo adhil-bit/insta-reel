@@ -1,9 +1,9 @@
-Publishing kunnamkulam-made...
+Publishing lake-nyos...
   uguu: link serves video/mp4
-  temporary video link ready (d.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18136298602694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfM4dWoCiO3/
+  container: 18136422439694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfOCjYQDrVG/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.

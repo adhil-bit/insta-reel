@@ -1,23 +1,23 @@
 # Posting queue
 
-_Updated Mon 02 Nov, 02:43 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 02 Nov, 06:10 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-| 1 | Mon 02 Nov · 06:06 AM | Lake Nyos: the lake that breathed out death | Callirrhoe |
-| 2 | Mon 02 Nov · 12:06 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
-| 3 | Mon 02 Nov · 04:06 PM | Damascus steel: the sword made from Indian steel | Zephyr |
-| 4 | Mon 02 Nov · 09:06 PM | The Indus script nobody can read | Charon |
-| 5 | Tue 03 Nov · 07:06 AM | Kottayam: India's first fully literate town | Despina |
-| 6 | Tue 03 Nov · 01:06 PM | Roopkund: the lake of skeletons | Zephyr |
-| 7 | Tue 03 Nov · 05:06 PM | Silent Valley: the forest Kerala saved | Charon |
-| 8 | Tue 03 Nov · 09:06 PM | Lonar: the meteor lake that turned pink | Puck |
-| 9 | Wed 04 Nov · 08:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
+| 1 | Mon 02 Nov · 12:06 PM | Kola Superdeep Borehole: the deepest hole ever dug | Enceladus |
+| 2 | Mon 02 Nov · 04:06 PM | Damascus steel: the sword made from Indian steel | Zephyr |
+| 3 | Mon 02 Nov · 09:06 PM | The Indus script nobody can read | Charon |
+| 4 | Tue 03 Nov · 07:06 AM | Kottayam: India's first fully literate town | Despina |
+| 5 | Tue 03 Nov · 01:06 PM | Roopkund: the lake of skeletons | Zephyr |
+| 6 | Tue 03 Nov · 05:06 PM | Silent Valley: the forest Kerala saved | Charon |
+| 7 | Tue 03 Nov · 09:06 PM | Lonar: the meteor lake that turned pink | Puck |
+| 8 | Wed 04 Nov · 08:06 AM | Delhi's Iron Pillar: 1,600 years without rust | Despina |
 
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
+| Lake Nyos: the lake that breathed out death | 2026-11-02T00:40 |
 | 'Kunnamkulam made': how a town got the name | 2026-11-01T13:52 |
 | Karuthachanootu: Kerala's devil-worship rumours, truth or story? | 2026-10-31T08:38 |
 | Before Kerala: when Malabar was ruled from Madras | 2026-11-01T04:43 |
@@ -27,4 +27,3 @@ _Updated Mon 02 Nov, 02:43 AM IST. Times are approximate: each reel posts within
 | Bonacaud Bungalow: ghost or myth? | 2026-10-31T14:46 |
 | MV Kairali: Kerala's ship that vanished with 51 aboard | 2026-10-30T14:39 |
 | Did Kalaripayattu become Kung Fu? The Bodhidharma legend | 2026-10-30T01:38 |
-| Jatinga: where birds fall at night | 2026-10-31T14:44 |
