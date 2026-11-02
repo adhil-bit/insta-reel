@@ -79,7 +79,7 @@ for w in wanted:
         if APPLY: call("PUT", "/jobs", {"job": job})
         result["created"].append(w["title"])
 for title, j in ours.items():
-    if title not in {w["title"] for w in wanted} and j.get("enabled"):
+    if title not in {w["title"] for w in wanted} and j.get("enabled") and not title.startswith("insta-reel once"):   # never touch exact-time one-off triggers
         if APPLY: call("PATCH", f"/jobs/{j['jobId']}", {"job": {"enabled": False}})
         result["disabled"].append(title)
 print(("APPLIED: " if APPLY else "DRY RUN (add --apply): ") + json.dumps(result))
