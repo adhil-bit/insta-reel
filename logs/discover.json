@@ -1,115 +1,65 @@
 {
   "profiles": [
     {
-      "handle": "kathayum.karyavum",
-      "query": "instagram kathayum.karyavum followers",
-      "title": "Malayalam Explained (@kathayum.karyavum) - Instagram",
-      "snippet": "0 Followers, 0 Following, 4 Posts - See Instagram photos and videos from കഥയും കാര്യവും | Malayalam Explained (@kathayum.karyavum)",
+      "handle": "iamyshow",
+      "query": "instagram aimyshow",
+      "title": "Kagisho (@iamyshow) • Instagram photos and videos",
+      "snippet": "1,786 Followers, 1,120 Following, 55 Posts - See Instagram photos and videos from Kagisho (@iamyshow)",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "kaliyum_karyavum",
-      "query": "instagram kathayum.karyavum followers",
-      "title": "Kaliyum_Karyavum (Fun &amp; Fact) (@kaliyum_karyavum) - Instagram",
-      "snippet": "138 Followers, 1,120 Following, 42 Posts - See Instagram photos and videos from Kaliyum_Karyavum (Fun & Fact) (@kaliyum_karyavum)",
+      "handle": "amyshowme",
+      "query": "instagram aimyshow",
+      "title": "Amy (@amyshowme) • Instagram photos and videos",
+      "snippet": "396 Followers, 30 Following, 50 Posts - Amy💕 (@amyshowme) on Instagram: \"Please see all my hard work bel0w\"",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "malayalam.movie.reels",
-      "query": "instagram malayalam.movie.reels Kerala AI Stories followers",
-      "title": "Kerala AI Stories | 3D Reels (@malayalam.movie.reels) - Instagram",
-      "snippet": "2,203 Followers, 5 Following, 6 Posts - See Instagram photos and videos from Kerala AI Stories | 3D Reels (@malayalam.movie.reels)",
+      "handle": "aimybeats",
+      "query": "instagram aimyshow",
+      "title": "Aimy Nguyen (@aimybeats) • Instagram photos and videos",
+      "snippet": "272K Followers, 756 Following, 499 Posts - See Instagram photos and videos from Aimy Nguyen (@aimybeats)",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "ai.malayalistories",
-      "query": "instagram malayalam.movie.reels Kerala AI Stories followers",
-      "title": "AI MALAYALI (@ai.malayalistories) • Instagram photos and videos",
-      "snippet": "13 Followers, 10 Following, 7 Posts - AI MALAYALI (@ai.malayalistories) on Instagram: \"🎬 AI SHORT FILMS | MALAYALAM 🤖 Stories Created With AI 🎭 Cinema • Comedy • Mystery • Emotion 🔥 New AI Reels Every Week 📍 Kerala\"",
+      "handle": "aimy___93",
+      "query": "instagram aimyshow",
+      "title": "AiMY (@aimy___93) • Instagram photos and videos",
+      "snippet": "113K Followers, 12 Following, 410 Posts - AiMY (@aimy___93) on Instagram: \"dancing & dressing up! tiny energy, big smiles ⚡️🎀 cosplay is my magic! watch me dance below 👇\"",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "popular",
-      "query": "instagram malayalam.movie.reels Kerala AI Stories followers",
-      "title": "Malayalam Love Reel Ideas",
-      "snippet": "Watch short videos about malayalam love reel ideas from people around the world. Malayalam Reels, Love Malayalam, Love Reels Ideas And More...",
+      "handle": "amy_show",
+      "query": "instagram aimyshow",
+      "title": "Amy (@amy_show) • Instagram photos and videos",
+      "snippet": "49 Followers, 166 Following, 228 Posts - See Instagram photos and videos from Amy (@amy_show)",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "ai.thakida",
-      "query": "instagram ai.thakida followers",
-      "title": "ai.malayalam (@ai.thakida) • Instagram photos and videos",
-      "snippet": "13K Followers, 18 Following, 33 Posts - ai.malayalam (@ai.thakida) on Instagram: \"🎬 ai-Animated stories ️ ai-Content creator ️ Short stories\"",
+      "handle": "amydshow",
+      "query": "instagram aimyshow",
+      "title": "Amy Show (@amydshow) • Instagram photos and videos",
+      "snippet": "24 Followers, 25 Following, 1 Posts - Amy Show (@amydshow) on Instagram: \"\"",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "ai_thakida",
-      "query": "instagram ai.thakida followers",
-      "title": "(@ai_thakida) • Instagram photos and videos",
-      "snippet": "14 Followers, 20 Following, 2 Posts - @ai_thakida on Instagram: \"ai- Animated dtories ai- content cretor . short stories\"",
+      "handle": "aimyyz",
+      "query": "instagram aimyshow",
+      "title": "a i m m y y y (@aimyyz) • Instagram photos and videos",
+      "snippet": "140K Followers, 609 Following, 474 Posts - a i m m y y y (@aimyyz) on Instagram: \"beauty ♡ lifestyle ♡ fashion ♡ food ♡ collab: aimypotato@gmail.com\"",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "inforeelsmalayalam",
-      "query": "instagram inforeelsmalayalam followers",
-      "title": "Info Reels Malayalam (@inforeelsmalayalam) - Instagram",
-      "snippet": "51K Followers, 0 Following, 567 Posts - Info Reels Malayalam (@inforeelsmalayalam) on Instagram: \"💎 Daily Malayalam Facts 🔥 👉 നിഷ്പക്ഷ നിലപാട് 👍 👉 Follow For promotions DM or contact🔻 Inforecordsirm@gmail.com\"",
+      "handle": "aimy",
+      "query": "aimyshow instagram followers",
+      "title": "(@aimy) • Instagram photos and videos",
+      "snippet": "83 Followers, 20 Following, 11 Posts - See Instagram photos and videos from (@aimy)",
       "error": "Tried accessing nonexisting field (business_discovery)"
     },
     {
-      "handle": "malayalam.facts",
-      "query": "instagram malayalam.facts followers",
-      "title": "Malayalam Facts (@malayalam.facts) • Instagram photos and videos",
-      "snippet": "207 Followers, 6 Following, 128 Posts - Malayalam Facts (@malayalam.facts) on Instagram: \"ഇത് വരെ കേട്ടിട്ടില്ലാത്ത ഫ്രഷ് facts 😃 എന്നും മിനിമം 3 കിടിലൻ facts ♥️ Follow ചെയ്താൽ സൂപ്പർ ആവും 🤩\"",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "malayalam.facts_",
-      "query": "instagram malayalam.facts followers",
-      "title": "(@malayalam.facts_) • Instagram photos and videos",
-      "snippet": "3 Followers, 6 Following, 2 Posts - @malayalam.facts_ on Instagram: \"അറിവ് വിളമ്പുന്ന ഇടം. 🧠 Unfolding the world's secrets in Malayalam. 🌍 Facts you didn't know you needed. Stay smart, stay Mallu. \"",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "factmalayalam_official",
-      "query": "instagram factmalayalam_official followers",
-      "title": "Fact Malayalam (@factmalayalam_official) - Instagram",
-      "snippet": "1 Followers, 4 Following, 2 Posts - Fact Malayalam (@factmalayalam_official) on Instagram: \"🧠 Daily Malayalam Facts 🌍 Science | Mystery | History 🎥 New Reels Every Day 👇 Follow for Amazing Facts\"",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "fact_malayalam_",
-      "query": "instagram factmalayalam_official followers",
-      "title": "Fact Malayalam (@fact_malayalam_) • Instagram photos and videos",
-      "snippet": "788 Followers, 7 Following, 60 Posts - See Instagram photos and videos from Fact Malayalam (@fact_malayalam_)",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "factmalayali",
-      "query": "instagram factmalayalam_official followers",
-      "title": "FACT MALAYALAM (@factmalayali) • Instagram photos and videos",
-      "snippet": "10 Followers, 2 Following, 10 Posts - FACT MALAYALAM (@factmalayali) on Instagram: \"📚 Hidden Facts | Real Stories 🎙️ Malayalam Storytelling 🌍 Facts you never knew 👇 Follow for daily facts\"",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "fxcts_malayalam",
-      "query": "instagram factmalayalam_official followers",
-      "title": "Fact Malayalam (@fxcts_malayalam) • Instagram photos and videos",
-      "snippet": "1,393 Followers, 6,570 Following, 155 Posts - See Instagram photos and videos from Facts Malayalam (@fxcts_malayalam)",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "facts_official_malayalam",
-      "query": "instagram factmalayalam_official followers",
-      "title": "Facts official Malayalam (@facts_official_malayalam) - Instagram",
-      "snippet": "143 Followers, 1 Following, 21 Posts - See Instagram photos and videos from Facts official Malayalam (@facts_official_malayalam)",
-      "error": "Tried accessing nonexisting field (business_discovery)"
-    },
-    {
-      "handle": "fcmalayalam",
-      "query": "instagram factmalayalam_official followers",
-      "title": "Fact Crescendo Malayalam (@fcmalayalam) - Instagram",
-      "snippet": "963 Followers, 11 Following, 2,865 Posts - See Instagram photos and videos from Fact Crescendo Malayalam (@fcmalayalam)",
+      "handle": "aimyshow",
+      "query": "given",
+      "title": "",
       "error": "Tried accessing nonexisting field (business_discovery)"
     }
   ]
