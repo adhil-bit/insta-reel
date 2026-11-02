@@ -17,7 +17,16 @@ for m in media.get("data", []):
             row[d["name"]] = d["values"][0]["value"] if d.get("values") else d.get("total_value", {}).get("value")
     else:
         row["insights_error"] = r.get("error", {}).get("message", "")[:120]
+    for metric in ("follows", "profile_visits"):          # not available for every media type: try each, ignore errors
+        x = requests.get(f"{GRAPH}/{m['id']}/insights", params={"metric": metric, "access_token": tok}, timeout=60).json()
+        if "data" in x and x["data"]:
+            d = x["data"][0]; row[metric] = d["values"][0]["value"] if d.get("values") else d.get("total_value", {}).get("value")
+        else:
+            row.setdefault("extra_errors", {})[metric] = x.get("error", {}).get("message", "")[:100]
     out["reels"].append(row)
 os.makedirs("logs", exist_ok=True)
 json.dump(out, open("logs/stats.json", "w"), indent=2, ensure_ascii=False)
+import datetime
+with open("logs/followers.jsonl", "a") as f:                   # follower history, one line per run
+    f.write(json.dumps({"at": datetime.datetime.utcnow().isoformat(timespec="minutes"), "followers": acct.get("followers_count"), "following": acct.get("follows_count")}) + "\n")
 print("account:", acct); print(len(out["reels"]), "reels")
