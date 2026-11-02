@@ -1,8 +1,8 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 115,
-    "follows_count": 272,
+    "followers_count": 116,
+    "follows_count": 273,
     "media_count": 32,
     "id": "28876323268696257"
   },
@@ -10,17 +10,17 @@
     {
       "id": "18103330790530580",
       "timestamp": "2026-11-02T00:40:05+0000",
-      "like_count": 1,
+      "like_count": 5,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfOCjYQDrVG/",
       "title": "ന്യോസ് തടാകം · കാമറൂൺ · 1986 ദുരന്തം",
-      "views": 70,
-      "reach": 49,
-      "saved": 0,
+      "views": 355,
+      "reach": 293,
+      "saved": 1,
       "shares": 0,
-      "total_interactions": 1,
-      "ig_reels_avg_watch_time": 15640,
-      "ig_reels_video_view_total_time": 750758
+      "total_interactions": 7,
+      "ig_reels_avg_watch_time": 14992,
+      "ig_reels_video_view_total_time": 4422806
     },
     {
       "id": "18099886064451345",
@@ -29,13 +29,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfM4dWoCiO3/",
       "title": "കുന്നംകുളം · കുന്നംകുളം മെയ്ഡ് · തൃശൂർ · ഡ്യൂപ്ലിക്കേറ്റ്",
-      "views": 128,
-      "reach": 115,
+      "views": 131,
+      "reach": 116,
       "saved": 1,
       "shares": 2,
       "total_interactions": 7,
-      "ig_reels_avg_watch_time": 7556,
-      "ig_reels_video_view_total_time": 876506
+      "ig_reels_avg_watch_time": 7501,
+      "ig_reels_video_view_total_time": 877721
     },
     {
       "id": "17990355012086061",
@@ -59,13 +59,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfL5lKCivyb/",
       "title": "കേരളപ്പിറവി · മദ്രാസ് പ്രസിഡൻസി · മലബാർ · 1956",
-      "views": 1159,
-      "reach": 998,
+      "views": 1160,
+      "reach": 1000,
       "saved": 4,
       "shares": 1,
       "total_interactions": 37,
-      "ig_reels_avg_watch_time": 12016,
-      "ig_reels_video_view_total_time": 12329382
+      "ig_reels_avg_watch_time": 12011,
+      "ig_reels_video_view_total_time": 12336236
     },
     {
       "id": "18127222661480628",
@@ -105,12 +105,12 @@
       "permalink": "https://www.instagram.com/reel/DfJvrBfDLaL/",
       "title": "കറുത്തച്ചനൂട്ട്: സത്യമോ കഥയോ? 🕯️",
       "views": 981,
-      "reach": 820,
+      "reach": 822,
       "saved": 11,
       "shares": 7,
       "total_interactions": 60,
-      "ig_reels_avg_watch_time": 9826,
-      "ig_reels_video_view_total_time": 8332807
+      "ig_reels_avg_watch_time": 9817,
+      "ig_reels_video_view_total_time": 8335239
     },
     {
       "id": "17935761381411420",
@@ -194,13 +194,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfEfW-BkvBe/",
       "title": "കാക്കകൾ എവിടെ പോയി? ഒരു കാരണം KSEB കമ്പി ⚡",
-      "views": 1384,
-      "reach": 1212,
+      "views": 1386,
+      "reach": 1213,
       "saved": 1,
       "shares": 6,
       "total_interactions": 36,
-      "ig_reels_avg_watch_time": 13174,
-      "ig_reels_video_view_total_time": 16046683
+      "ig_reels_avg_watch_time": 13170,
+      "ig_reels_video_view_total_time": 16054691
     },
     {
       "id": "18636109006022361",
@@ -359,13 +359,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De-wJSmDKCO/",
       "title": "Long before the movie, KGF had a real story. ⛏️✨",
-      "views": 2143,
+      "views": 2144,
       "reach": 1796,
       "saved": 3,
       "shares": 3,
       "total_interactions": 42,
-      "ig_reels_avg_watch_time": 16697,
-      "ig_reels_video_view_total_time": 30540445
+      "ig_reels_avg_watch_time": 16709,
+      "ig_reels_video_view_total_time": 30578070
     },
     {
       "id": "18145514062589407",
@@ -449,13 +449,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De555_wEjpt/",
       "title": "Stone Age art, right here in Kerala. 🪨✨",
-      "views": 1654,
-      "reach": 1266,
+      "views": 1655,
+      "reach": 1267,
       "saved": 8,
       "shares": 11,
       "total_interactions": 67,
-      "ig_reels_avg_watch_time": 16028,
-      "ig_reels_video_view_total_time": 21062048
+      "ig_reels_avg_watch_time": 16018,
+      "ig_reels_video_view_total_time": 21064381
     }
   ]
 }
