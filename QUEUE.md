@@ -1,13 +1,9 @@
 # Posting queue
 
-_Updated Mon 02 Nov, 02:37 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 02 Nov, 02:38 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-
-## Being rendered (joins the queue when done)
-
-- kuriyedathu-thathri
 
 ## Recently posted
 
