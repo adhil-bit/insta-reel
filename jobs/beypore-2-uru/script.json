@@ -1,0 +1,101 @@
+{
+  "topic": {
+    "title": "Beypore Part 2: the Uru and the Khalasis",
+    "category": "HISTORY",
+    "angle": "Ships built without blueprints, launched without cranes",
+    "key_facts": [
+      "Beypore is known for building wooden dhows called urus, for Arab merchants (Wikipedia)",
+      "A shipbuilding tradition of about 1,500 years (Kerala Tourism)",
+      "Built mainly of teak, once from Nilambur forests, now imported",
+      "Khalasis (Chaliyam is famous for them) launch urus with ropes, pulleys and rollers",
+      "Urus are still built and exported to Arab nations"
+    ],
+    "sources": [
+      "Wikipedia: Beypore; Chaliyam",
+      "Kerala Tourism (Uru, Khalasis)",
+      "Imperial Gazetteer of India (1885)",
+      "Photos: Wikimedia Commons (Beypore Railway Station c.1860s, public domain; Pradeep717, Ziegler175, Bipinlakeview CC BY-SA 3.0; Gnoeee CC BY-SA 4.0)"
+    ]
+  },
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "ബേപ്പൂർ",
+    "ഭാഗം 2/2"
+  ],
+  "accent_words": [
+    "2/2"
+  ],
+  "thumbnail_ml": "ക്രെയിനില്ലാതെ കപ്പൽ കടലിലിറക്കുന്നവർ!",
+  "thumbnail_accent": [
+    "ക്രെയിനില്ലാതെ"
+  ],
+  "hook_voiceover": "ക്രെയിനുകളില്ലാത്ത കാലത്ത് കൂറ്റൻ കപ്പലുകളെ കടലിലിറക്കിയ മനുഷ്യരെ നിങ്ങൾക്കറിയാമോ?",
+  "cover_visual": "Beypore Part 2: the Uru and the Khalasis",
+  "scenes": [
+    {
+      "voiceover": "ബേപ്പൂരിലെ ഉരു. അറബ് വ്യാപാരികൾക്കായി കേരളം പണിത മരക്കപ്പൽ. ഏകദേശം ആയിരത്തഞ്ഞൂറ് വർഷത്തെ പാരമ്പര്യം.",
+      "caption": "THE BEYPORE URU",
+      "highlight": "URU",
+      "kicker": "~1,500 YEARS OF SHIPBUILDING",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പണ്ട് നിലമ്പൂർ തേക്ക്. വരച്ച പ്ലാനില്ല. തലമുറകളായി കൈമാറിയ അറിവ് മാത്രം.",
+      "caption": "NO BLUEPRINTS",
+      "highlight": "BLUEPRINTS",
+      "kicker": "TEAK · KNOWLEDGE BY HAND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പണി കഴിഞ്ഞാൽ ഉരു കടലിലിറക്കുന്നത് ഖലാസികൾ. കയറും കപ്പിയും മരത്തടികളും മാത്രം.",
+      "caption": "THE KHALASIS",
+      "highlight": "KHALASIS",
+      "kicker": "ROPES · PULLEYS · ROLLERS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്നും ബേപ്പൂരിൽ നിന്ന് ഗൾഫിലേക്ക് ഉരുക്കൾ പോകുന്നു.",
+      "caption": "STILL SAILING",
+      "highlight": "SAILING",
+      "kicker": "BEYPORE → THE GULF",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "യന്ത്രങ്ങളുടെ കാലത്ത് ഈ കല നിലനിൽക്കുമോ? കമന്റിൽ പറയൂ!",
+      "caption": "WILL THIS ART SURVIVE?",
+      "highlight": "SURVIVE?",
+      "kicker": "YOUR VIEW?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ക്രെയിനില്ലാതെ കപ്പൽ കടലിലിറക്കുന്നവർ! ⛵ ഭാഗം 2/2\nShips built without blueprints, launched without cranes. Part 2/2\n\nബേപ്പൂരിലെ ഉരുക്കൾ: അറബ് വ്യാപാരികൾക്കായി കേരളം പണിത മരക്കപ്പലുകൾ, ഏകദേശം 1,500 വർഷത്തെ പാരമ്പര്യം. ഉരു കടലിലിറക്കുന്നത് ഖലാസികൾ, കയറും കപ്പിയും മരത്തടികളും കൊണ്ട്.\nBeypore's urus, wooden ships built for Arab merchants for about 1,500 years, are still launched by Khalasis with ropes, pulleys and rollers.\n\nഈ കല നിലനിൽക്കുമോ? കമന്റിൽ പറയൂ.\nWill this craft survive? Tell us below.\n\nPhotos: Wikimedia Commons (Beypore Railway Station c.1860s, public domain; Pradeep717, Ziegler175, Bipinlakeview CC BY-SA 3.0; Gnoeee CC BY-SA 4.0)\nShare this with someone from Kozhikode or Malappuram. 📩",
+  "search_ml": [
+    "ബേപ്പൂർ ഉരു",
+    "ഖലാസി",
+    "ചാലിയം",
+    "കപ്പൽ നിർമ്മാണം"
+  ],
+  "hashtags": [
+    "Beypore",
+    "Uru",
+    "Khalasi",
+    "KeralaHeritage",
+    "Kozhikode"
+  ],
+  "fact_check": [
+    "Kerala's first railway (not India's)",
+    "Terminus named Beypore but located at Chaliyam",
+    "Photos credited"
+  ]
+}
