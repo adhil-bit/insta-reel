@@ -103,17 +103,19 @@
     "title": "Neelakurinji: the flower that blooms once in 12 years",
     "category": "NATURE",
     "folder": "neelakurinji-12-years",
-    "status": "skipped",
-    "note": "removed by owner, 26 Oct"
+    "status": "dropped",
+    "note": "removed by owner, 26 Oct",
+    "post_on": "2099-01-01"
   },
   {
     "title": "Lonar: the meteor lake that turned pink",
     "category": "SPACE",
     "folder": "lonar-pink-lake",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Puck",
     "created": "2026-10-26T07:13",
-    "priority": 14
+    "priority": 14,
+    "post_on": "2099-01-01"
   },
   {
     "title": "India's first Christmas cake was baked in Thalassery",
@@ -130,10 +132,11 @@
     "title": "Delhi's Iron Pillar: 1,600 years without rust",
     "category": "SCIENCE",
     "folder": "iron-pillar-no-rust",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Despina",
     "created": "2026-10-26T09:19",
-    "priority": 15
+    "priority": 15,
+    "post_on": "2099-01-01"
   },
   {
     "title": "The real KGF: one of the world's deepest gold mines",
@@ -160,10 +163,11 @@
     "title": "Damascus steel: the sword made from Indian steel",
     "category": "HISTORY",
     "folder": "damascus-steel",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Zephyr",
     "priority": 9,
-    "created": "2026-10-27T08:42"
+    "created": "2026-10-27T08:42",
+    "post_on": "2099-01-01"
   },
   {
     "title": "Mary Celeste: the ship with no one on board",
@@ -213,19 +217,21 @@
     "title": "The Indus script nobody can read",
     "category": "MYSTERY",
     "folder": "indus-script",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Charon",
     "priority": 10,
-    "created": "2026-10-27T09:00"
+    "created": "2026-10-27T09:00",
+    "post_on": "2099-01-01"
   },
   {
     "title": "Kottayam: India's first fully literate town",
     "category": "HISTORY",
     "folder": "kottayam-literacy",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Despina",
     "priority": 11,
-    "created": "2026-10-27T09:02"
+    "created": "2026-10-27T09:02",
+    "post_on": "2099-01-01"
   },
   {
     "title": "Pathinettam Koottam: the unseen side of Itty Cora, Part 1/5",
@@ -243,19 +249,11 @@
     "title": "Roopkund: the lake of skeletons",
     "category": "HISTORY",
     "folder": "roopkund-skeleton-lake",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Zephyr",
     "priority": 12,
-    "created": "2026-10-27T11:51"
-  },
-  {
-    "title": "Silent Valley: the forest Kerala saved",
-    "category": "NATURE",
-    "folder": "silent-valley",
-    "status": "pending",
-    "voice": "Charon",
-    "priority": 13,
-    "created": "2026-10-27T11:54"
+    "created": "2026-10-27T11:51",
+    "post_on": "2099-01-01"
   },
   {
     "title": "Pathinettam Koottam: the unseen side of Itty Cora, Part 2/5",
@@ -294,19 +292,10 @@
     "title": "Malayalam: a language whose name is a palindrome",
     "category": "CULTURE",
     "folder": "malayalam-palindrome",
-    "status": "pending",
+    "status": "dropped",
     "voice": "Callirrhoe",
     "post_on": "2099-01-01",
     "created": "2026-10-28T07:23"
-  },
-  {
-    "title": "Pathinettam Koottam: the unseen side of Itty Cora, Part 5/5",
-    "category": "HISTORY",
-    "folder": "itty-cora-5-europe",
-    "status": "pending",
-    "voice": "Charon",
-    "post_on": "2099-01-01",
-    "created": "2026-10-27T11:48"
   },
   {
     "title": "Kallanai: a 2,000-year-old dam still in use",
@@ -450,15 +439,6 @@
     "created": "2026-10-30T18:24",
     "media_id": "17922375075446286",
     "posted": "2026-10-31T08:38"
-  },
-  {
-    "title": "Kuriyedathu Thathri: the trial that shook Kerala",
-    "category": "HISTORY",
-    "folder": "kuriyedathu-thathri",
-    "status": "pending",
-    "voice": "Enceladus",
-    "post_on": "2099-01-01",
-    "created": "2026-11-01T05:37"
   },
   {
     "title": "'Kunnamkulam made': how a town got the name",
