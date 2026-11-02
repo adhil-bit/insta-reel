@@ -1,7 +1,8 @@
 """Fetch lead images (with licence + author) for Wikipedia pages, for use in reels. Writes assets/<slug>/*.jpg + credits.json"""
 import json, os, sys, re, requests
 slug, titles = sys.argv[1], [t for t in sys.argv[2].split("|") if t]
-UA = {"User-Agent": "autoreel/1.0 (facts page; contact via GitHub)"}
+UA = {"User-Agent": "AutoReelResearch/1.0 (https://github.com/adhil-bit; educational reels) python-requests"}
+import time
 os.makedirs(f"assets/{slug}", exist_ok=True); credits = []
 for title in titles:
     try:
@@ -14,7 +15,13 @@ for title in titles:
             if not ii.get("thumburl"): continue
             md = ii.get("extmetadata", {}); lic = md.get("LicenseShortName", {}).get("value", "?"); artist = re.sub(r"<.*?>", "", md.get("Artist", {}).get("value", "?"))[:80]
             out = f"assets/{slug}/{re.sub(r'[^A-Za-z0-9]+', '_', fname)[:60]}.jpg"
-            open(out, "wb").write(requests.get(ii["thumburl"], headers=UA, timeout=60).content)
+            for attempt in range(4):
+                time.sleep(2 + attempt * 3)
+                rr = requests.get(ii["thumburl"], headers=UA, timeout=60)
+                if rr.ok and rr.headers.get("content-type", "").startswith("image"): break
+                print("retry", rr.status_code, fname)
+            if not (rr.ok and rr.headers.get("content-type", "").startswith("image")): continue
+            open(out, "wb").write(rr.content)
             credits.append({"page": title, "file": fname, "path": out, "license": lic, "author": artist, "source": ii.get("descriptionurl")}); print("got", fname, lic, artist)
     except Exception as e:
         print("failed", title, e)
