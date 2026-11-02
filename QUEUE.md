@@ -7,7 +7,6 @@ _Updated Mon 02 Nov, 02:37 PM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- itty-cora-5-europe
 - kuriyedathu-thathri
 
 ## Recently posted
