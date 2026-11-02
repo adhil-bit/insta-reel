@@ -1,0 +1,21 @@
+name: Fetch real images (Wikimedia, with credits)
+on:
+  workflow_dispatch:
+    inputs:
+      slug: {required: true}
+      titles: {description: "Wikipedia page titles separated by |", required: true}
+permissions:
+  contents: write
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: python scripts/fetch_images.py "${{ github.event.inputs.slug }}" "${{ github.event.inputs.titles }}"
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add assets && git commit -qm "images: ${{ github.event.inputs.slug }}" && git pull -q --rebase && git push -q || true
