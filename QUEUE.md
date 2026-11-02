@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 02 Nov, 02:38 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 02 Nov, 04:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -9,6 +9,7 @@ _Updated Mon 02 Nov, 02:38 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Arakkal: Kerala's only Muslim royal family, often ruled by queens | 2026-11-02T10:38 |
 | Lake Nyos: the lake that breathed out death | 2026-11-02T00:40 |
 | 'Kunnamkulam made': how a town got the name | 2026-11-01T13:52 |
 | Karuthachanootu: Kerala's devil-worship rumours, truth or story? | 2026-10-31T08:38 |
@@ -18,4 +19,3 @@ _Updated Mon 02 Nov, 02:38 PM IST. Times are approximate: each reel posts within
 | Alummoottil Meda: the real house behind Manichitrathazhu | 2026-10-30T07:39 |
 | Bonacaud Bungalow: ghost or myth? | 2026-10-31T14:46 |
 | MV Kairali: Kerala's ship that vanished with 51 aboard | 2026-10-30T14:39 |
-| Did Kalaripayattu become Kung Fu? The Bodhidharma legend | 2026-10-30T01:38 |
