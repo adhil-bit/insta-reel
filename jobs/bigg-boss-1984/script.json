@@ -32,11 +32,11 @@
   "thumbnail_accent": [
     "നോവലിൽ!"
   ],
-  "hook_voiceover": "ബിഗ് ബോസ് പിറന്നത് ഒരു ഏകാധിപതിയെക്കുറിച്ചുള്ള 1949-ലെ നോവലിൽ നിന്നാണ്!",
+  "hook_voiceover": "ബിഗ് ബോസ് പിറന്നത് 1949-ലെ ഒരു നോവലിൽ!",
   "cover_visual": "A giant eye opening over a wall of screens",
   "scenes": [
     {
-      "voiceover": "1949. ജോർജ് ഓർവെലിന്റെ 1984. അതിലെ ഏകാധിപതി ബിഗ് ബ്രദർ. എല്ലാ വീട്ടിലും സ്ക്രീൻ, എപ്പോഴും നിരീക്ഷണം.",
+      "voiceover": "ഓർവെലിന്റെ 1984. ഏകാധിപതി ബിഗ് ബ്രദർ എല്ലാവരെയും ക്യാമറയിൽ നിരീക്ഷിക്കുന്നു.",
       "caption": "1984 · BIG BROTHER",
       "highlight": "BIG BROTHER",
       "kicker": "GEORGE ORWELL, 1949",
@@ -44,7 +44,7 @@
       "visual": ""
     },
     {
-      "voiceover": "1999-ൽ ഒരു ഡച്ച് ടിവി ഷോ ഈ ആശയം കടമെടുത്തു. ഒരു വീട്, അപരിചിതർ, എല്ലായിടത്തും ക്യാമറ.",
+      "voiceover": "1999-ൽ അതൊരു ഡച്ച് റിയാലിറ്റി ഷോ ആയി.",
       "caption": "1999: THE TV SHOW",
       "highlight": "1999",
       "kicker": "NETHERLANDS · BIG BROTHER",
@@ -52,7 +52,7 @@
       "visual": ""
     },
     {
-      "voiceover": "ഇന്ത്യയിലെത്തിയപ്പോൾ ബ്രദർ ബോസായി. 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ.",
+      "voiceover": "ഇന്ത്യയിൽ ബ്രദർ ബോസായി. 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ.",
       "caption": "BROTHER → BOSS",
       "highlight": "BOSS",
       "kicker": "2006 INDIA · 2018 MALAYALAM",
@@ -60,7 +60,7 @@
       "visual": ""
     },
     {
-      "voiceover": "ഓർവെൽ പേടിച്ച ക്യാമറകൾ, നമ്മൾ ആസ്വദിച്ച് കാണുന്നു! നിങ്ങളുടെ ബിഗ് ബോസ് ഫാൻ സുഹൃത്തിന് ഇത് അയക്കൂ.",
+      "voiceover": "ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു! ബിഗ് ബോസ് ഫാനിന് അയക്കൂ.",
       "caption": "WATCHED, BY CHOICE",
       "highlight": "CHOICE",
       "kicker": "SEND THIS TO A BIGG BOSS FAN",
