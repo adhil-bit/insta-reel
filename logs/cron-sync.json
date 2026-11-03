@@ -1,36 +1,13 @@
 {
   "applied": true,
-  "created": [
-    "insta-reel Mon+Tue+Wed+Thu+Fri"
-  ],
+  "created": [],
   "updated": [
+    "insta-reel Mon+Tue+Wed+Thu+Fri",
     "insta-reel Sat+Sun",
     "insta-reel render daily",
     "insta-reel stats daily"
   ],
-  "disabled": [
-    "insta-reel once photography-prohibited 2026-11-03 07:07 IST",
-    "insta-reel once janmi-kudiyan 2026-11-03 13:07 IST",
-    "insta-reel once beypore-2-uru 2026-11-03 21:07 IST",
-    "insta-reel once silent-valley 2026-11-04 07:07 IST",
-    "insta-reel once kuriyedathu-thathri 2026-11-04 13:07 IST",
-    "insta-reel once itty-cora-5-europe 2026-11-04 20:07 IST",
-    "insta-reel once beypore-1-railway 2026-11-02 20:27 IST",
-    "insta-reel Mon+Fri",
-    "insta-reel Tue+Thu",
-    "insta-reel Wed",
-    "insta-reel once two-protests-classroom 2026-10-29 18:30 IST",
-    "insta-reel once kalari-kungfu 2026-10-30 07:07 IST",
-    "insta-reel once bonacaud-bungalow 2026-10-31 20:07 IST",
-    "insta-reel once kerala-piravi-1956 2026-11-01 10:07 IST",
-    "insta-reel once padmanabhapuram-palace 2026-11-01 14:07 IST",
-    "insta-reel once alummoottil-meda 2026-10-30 13:07 IST",
-    "insta-reel once mv-kairali 2026-10-30 20:07 IST",
-    "insta-reel once bathe-after-funeral 2026-10-31 10:07 IST",
-    "insta-reel once karuthachanootu 2026-10-31 14:07 IST",
-    "insta-reel once kunnamkulam-made 2026-11-01 19:20 IST",
-    "insta-reel once arakkal-queens 2026-11-02 16:07 IST"
-  ],
+  "disabled": [],
   "wanted": [
     {
       "title": "insta-reel Mon+Tue+Wed+Thu+Fri",
@@ -43,7 +20,6 @@
       ],
       "hours": [
         1,
-        7,
         14
       ],
       "minutes": [
@@ -58,7 +34,6 @@
       ],
       "hours": [
         4,
-        8,
         14
       ],
       "minutes": [
