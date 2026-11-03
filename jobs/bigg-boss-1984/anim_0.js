@@ -8,4 +8,7 @@ function rec(g, x, y, t) { if (Math.sin(t * 6) > 0) { g.fillStyle = '#ff2a2a'; g
 const c = makeCanvas(), g = c.getContext('2d');
 window.renderFrame = function (t) { const k = clamp(t / DURATION), open = ease.out(clamp(t / 0.8));
   g.fillStyle = '#05060a'; g.fillRect(0, 0, W, H); screens(g, t, 1); const gl = g.createRadialGradient(W / 2, H * 0.42, 40, W / 2, H * 0.42, 600); gl.addColorStop(0, 'rgba(192,57,43,0.35)'); gl.addColorStop(1, 'rgba(192,57,43,0)'); g.fillStyle = gl; g.fillRect(0, 0, W, H);
-  eye(g, W / 2, H * 0.42, 380 * (1 + 0.05 * k), open, t); SK.grain(g, t, 0.05); };
+  eye(g, W / 2, H * 0.42, 380 * (1 + 0.05 * k), open, t);
+  g.textAlign = 'center'; g.font = '800 64px Inter'; g.fillStyle = '#FACC15'; g.shadowColor = 'rgba(0,0,0,0.8)'; g.shadowBlur = 18; g.fillText('1949  →  2018', W / 2, H * 0.635); g.shadowBlur = 0;
+  g.font = '600 22px Inter'; g.fillStyle = 'rgba(255,255,255,0.7)'; g.fillText('Bigg Boss® is a trademark of its owners · not affiliated', W / 2, H * 0.665);
+  SK.grain(g, t, 0.05); };
