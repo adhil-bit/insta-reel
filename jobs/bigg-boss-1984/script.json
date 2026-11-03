@@ -1,0 +1,89 @@
+{
+  "topic": {
+    "title": "Bigg Boss got its name from a 1949 novel",
+    "category": "CULTURE",
+    "angle": "From Orwell's 1984 to reality TV to Bigg Boss Malayalam",
+    "key_facts": [
+      "George Orwell's Nineteen Eighty-Four (1949): the ruler 'Big Brother', telescreens watch everyone; 'Big Brother is watching you'",
+      "Big Brother reality show created by John de Mol, first aired in the Netherlands in 1999",
+      "Indian version Bigg Boss began in 2006 (Hindi)",
+      "Bigg Boss Malayalam began in 2018, hosted by Mohanlal"
+    ],
+    "sources": [
+      "Wikipedia: Nineteen Eighty-Four; Big Brother (franchise); Bigg Boss; Bigg Boss (Malayalam TV series)"
+    ]
+  },
+  "category": "CULTURE",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "format": "v2 (short, motion-first, share line, loop)",
+  "headline": [
+    "THE NOVEL BEHIND",
+    "BIGG BOSS"
+  ],
+  "accent_words": [
+    "BIGG BOSS"
+  ],
+  "thumbnail_ml": "ബിഗ് ബോസ് പിറന്നത് ഒരു നോവലിൽ!",
+  "thumbnail_accent": [
+    "നോവലിൽ!"
+  ],
+  "hook_voiceover": "ബിഗ് ബോസ് പിറന്നത് ഒരു ഏകാധിപതിയെക്കുറിച്ചുള്ള 1949-ലെ നോവലിൽ നിന്നാണ്!",
+  "cover_visual": "A giant eye opening over a wall of screens",
+  "scenes": [
+    {
+      "voiceover": "1949. ജോർജ് ഓർവെലിന്റെ 1984. അതിലെ ഏകാധിപതി ബിഗ് ബ്രദർ. എല്ലാ വീട്ടിലും സ്ക്രീൻ, എപ്പോഴും നിരീക്ഷണം.",
+      "caption": "1984 · BIG BROTHER",
+      "highlight": "BIG BROTHER",
+      "kicker": "GEORGE ORWELL, 1949",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1999-ൽ ഒരു ഡച്ച് ടിവി ഷോ ഈ ആശയം കടമെടുത്തു. ഒരു വീട്, അപരിചിതർ, എല്ലായിടത്തും ക്യാമറ.",
+      "caption": "1999: THE TV SHOW",
+      "highlight": "1999",
+      "kicker": "NETHERLANDS · BIG BROTHER",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്ത്യയിലെത്തിയപ്പോൾ ബ്രദർ ബോസായി. 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ.",
+      "caption": "BROTHER → BOSS",
+      "highlight": "BOSS",
+      "kicker": "2006 INDIA · 2018 MALAYALAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഓർവെൽ പേടിച്ച ക്യാമറകൾ, നമ്മൾ ആസ്വദിച്ച് കാണുന്നു! നിങ്ങളുടെ ബിഗ് ബോസ് ഫാൻ സുഹൃത്തിന് ഇത് അയക്കൂ.",
+      "caption": "WATCHED, BY CHOICE",
+      "highlight": "CHOICE",
+      "kicker": "SEND THIS TO A BIGG BOSS FAN",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ബിഗ് ബോസ് എന്ന പേരിന് പിന്നിൽ 1949-ലെ ഒരു നോവൽ! 📺👁️\nBigg Boss got its name from a 1949 novel.\n\nജോർജ് ഓർവെലിന്റെ 1984-ലെ 'ബിഗ് ബ്രദർ', 1999-ലെ ഡച്ച് റിയാലിറ്റി ഷോ, 2006-ൽ ഇന്ത്യയിൽ 'ബിഗ് ബോസ്', 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ. ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു!\nOrwell's 'Big Brother' (1984) → a Dutch reality show (1999) → Bigg Boss in India (2006) → Malayalam with Mohanlal (2018).\n\nഓർവെൽ ഇത് കണ്ടിരുന്നെങ്കിൽ എന്ത് പറയുമായിരുന്നു?\nWhat would Orwell say? Tell us below.\n\nSend this to your Bigg Boss fan friend. 📩",
+  "search_ml": [
+    "ബിഗ് ബോസ്",
+    "ബിഗ് ബോസ് മലയാളം",
+    "ജോർജ് ഓർവെൽ",
+    "1984 നോവൽ"
+  ],
+  "hashtags": [
+    "BiggBossMalayalam",
+    "Mohanlal",
+    "GeorgeOrwell",
+    "1984",
+    "BigBrother"
+  ],
+  "fact_check": [
+    "No show logos or celebrity likeness used",
+    "Dates from Wikipedia"
+  ]
+}
