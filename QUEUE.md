@@ -28,7 +28,6 @@ _Updated Tue 03 Nov, 12:18 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
-- k2-porotta-origin
 - kalari-kungfu
 - kallanai-2000-year-dam
 - karuthachanootu
