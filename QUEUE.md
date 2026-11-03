@@ -1,21 +1,63 @@
 # Posting queue
 
-_Updated Tue 03 Nov, 01:04 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 03 Nov, 07:06 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
+
+## Being rendered (joins the queue when done)
+
+- alummoottil-meda
+- arakkal-queens
+- aranmula-kannadi
+- bathe-after-funeral
+- beypore-1-railway
+- beypore-2-uru
+- bigg-boss-1984
+- bonacaud-bungalow
+- chandrayaan-3-south-pole
+- chundan-vallam
+- dhanushkodi-ghost-town
+- edakkal-caves
+- emden-chempakaraman
+- gobekli-tepe
+- itty-cora-1-trader
+- itty-cora-2-madhava
+- itty-cora-3-nilakantha
+- itty-cora-4-pepper
+- itty-cora-5-europe
+- janmi-kudiyan
+- jatinga-birds
+- kalari-kungfu
+- kallanai-2000-year-dam
+- karuthachanootu
+- kerala-crows-missing
+- kerala-piravi-1956
+- kerala-red-rain
+- kgf-deepest-gold-mine
+- kodinhi-twin-village
+- kola-borehole
+- kothayi-treasure
+- kunnamkulam-made
+- kuriyedathu-thathri
+- kuttanad-below-sea-level
+- lake-nyos
+- mary-celeste
+- munnar-lost-railway
+- mv-kairali
+- padmanabhapuram-palace
+- padmanabhaswamy-vault-b
+- photography-prohibited
+- porotta-origin
+- silent-valley
+- thalassery-first-cake
+- theyyam-god-for-a-night
+- two-protests-classroom
+- yakshi-pala-tree
 
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
-| Beypore Part 1: Kerala's first train, and the station that wasn't in Beypore | 2026-11-02T14:58 |
-| Arakkal: Kerala's only Muslim royal family, often ruled by queens | 2026-11-02T10:38 |
-| Lake Nyos: the lake that breathed out death | 2026-11-02T00:40 |
-| The story behind the 'Photography Prohibited' board | 2026-11-03T01:39 |
-| 'Kunnamkulam made': how a town got the name | 2026-11-01T13:52 |
-| Karuthachanootu: Kerala's devil-worship rumours, truth or story? | 2026-10-31T08:38 |
-| Before Kerala: when Malabar was ruled from Madras | 2026-11-01T04:43 |
-| Why we bathe after visiting a house of death | 2026-10-31T04:39 |
-| Travancore's palace in Tamil Nadu, still Kerala's | 2026-11-01T08:38 |
-| Alummoottil Meda: the real house behind Manichitrathazhu | 2026-10-30T07:39 |
+| Is porotta really Kerala's? Three origin theories | 2026-11-03T13:36 |
+| Kuriyedathu Thathri: the trial that shook Kerala | 2026-11-03T06:18 |
