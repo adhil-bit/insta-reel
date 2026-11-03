@@ -24,9 +24,10 @@ class AnimationError(Exception):
 
 # Helpers every animation can use. Claude's code is inserted at /*CODE*/.
 TEMPLATE = """<!doctype html><html><head><meta charset="utf-8">
-<style>html,body{margin:0;padding:0;background:#04060b;overflow:hidden;width:%(W)dpx;height:%(H)dpx}
+<style>@font-face{font-family:Inter;src:url('%(FINTER)s')}@font-face{font-family:Baloo;src:url('%(FBALOO)s')}@font-face{font-family:Noto;src:url('%(FNOTO)s')}
+html,body{margin:0;padding:0;background:#04060b;overflow:hidden;width:%(W)dpx;height:%(H)dpx}
 canvas{display:block;position:absolute;left:0;top:0}</style>
-<script src="%(THREE)s"></script><script src="%(SCENES)s"></script></head><body><img id="earthTex" src="%(EARTH)s" style="display:none"><script>
+<script src="%(THREE)s"></script><script src="%(SCENES)s"></script></head><body><span style="font:800 20px Baloo;position:absolute;opacity:0">അ</span><span style="font:800 20px Inter;position:absolute;opacity:0">A</span><span style="font:700 20px Noto;position:absolute;opacity:0">അ</span><img id="earthTex" src="%(EARTH)s" style="display:none"><script>
 const W=%(W)d, H=%(H)d, ACCENT="%(ACCENT)s", DURATION=%(DURATION).3f;
 function mulberry32(a){return function(){a|=0;a=a+0x6D2B79F5|0;let t=Math.imul(a^a>>>15,1|a);
   t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
@@ -41,6 +42,14 @@ function makeCanvas(){const c=document.createElement('canvas');c.width=W;c.heigh
 /*CODE*/
 }
 </script></body></html>"""
+
+_FONTS_DIR = (Path(__file__).resolve().parent.parent / "assets" / "fonts")
+try:
+    import config as _cfg; _FONTS_DIR = _cfg.FONTS_DIR.resolve()
+except Exception:
+    pass
+TEMPLATE = (TEMPLATE.replace("%(FINTER)s", (_FONTS_DIR / "Inter.ttf").as_uri()).replace("%(FBALOO)s", (_FONTS_DIR / "BalooChettan2.ttf").as_uri())
+            .replace("%(FNOTO)s", (_FONTS_DIR / "NotoSansMalayalam.ttf").as_uri()))   # fonts baked in, so callers need no new keys
 
 # Built-in animation: used by `preview`, as the style example for Claude,
 # and as a fallback if a generated animation keeps failing.

@@ -26,11 +26,11 @@
     "type": "hero"
   },
   "headline": [
-    "WHO OWNED",
-    "KERALA'S LAND?"
+    "കേരളത്തിന്റെ ഭൂമി",
+    "ആരുടേതായിരുന്നു?"
   ],
   "accent_words": [
-    "LAND?"
+    "ആരുടേതായിരുന്നു?"
   ],
   "thumbnail_ml": "നിങ്ങളുടെ മുത്തച്ഛന്റെ വയൽ ആരുടേതായിരുന്നു?",
   "thumbnail_accent": [
@@ -41,20 +41,20 @@
   "scenes": [
     {
       "voiceover": "മുകളിൽ ജന്മി. നടുവിൽ കാണക്കാരൻ. താഴെ മണ്ണിൽ പണിയെടുക്കുന്ന കുടിയാൻ.",
-      "caption": "THE JANMI–KUDIYAN SYSTEM",
-      "highlight": "JANMI–KUDIYAN",
-      "kicker": "JANMI · KANAKKAR · KUDIYAN",
+      "caption": "ജന്മി–കുടിയാൻ വ്യവസ്ഥ",
+      "highlight": "ജന്മി–കുടിയാൻ",
+      "kicker": "ജന്മി · കാണക്കാരൻ · കുടിയാൻ",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "1766-ൽ മൈസൂർ സൈന്യം മലബാറിലെത്തി. ചിലർക്ക് ആശ്വാസം, മറ്റുചിലർക്ക് ഭീകരത. ചരിത്രകാരന്മാർ ഇന്നും തർക്കിക്കുന്നു.",
-      "caption": "1766: MYSORE ARRIVES",
-      "highlight": "MYSORE",
-      "kicker": "RELIEF OR TERROR? HISTORIANS DIFFER",
+      "caption": "1766: മൈസൂർ എത്തുന്നു",
+      "highlight": "മൈസൂർ",
+      "kicker": "ആശ്വാസമോ ഭീകരതയോ? ചരിത്രകാരന്മാർക്ക് ഭിന്നാഭിപ്രായം",
       "labels": [
         {
-          "text": "MALABAR",
+          "text": "മലബാർ",
           "x": 0.42,
           "y": 0.42,
           "at": 0.15
@@ -64,25 +64,25 @@
     },
     {
       "voiceover": "പിന്നെ ബ്രിട്ടീഷുകാർ ജന്മം സ്വകാര്യ സ്വത്താക്കി. കുടിയൊഴിപ്പിക്കൽ. കലാപങ്ങൾ.",
-      "caption": "BRITISH RULE: EVICTIONS",
-      "highlight": "EVICTIONS",
-      "kicker": "1836–1921 · REVOLTS",
+      "caption": "ബ്രിട്ടീഷ് ഭരണം: കുടിയൊഴിപ്പിക്കൽ",
+      "highlight": "കുടിയൊഴിപ്പിക്കൽ",
+      "kicker": "1836–1921 · കലാപങ്ങൾ",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "കർഷക സമരങ്ങൾക്കൊടുവിൽ, 1970-ൽ ഭൂപരിഷ്കരണത്തോടെ ജന്മിത്വം അവസാനിച്ചു.",
-      "caption": "1970: LAND TO THE TILLER",
-      "highlight": "TILLER",
-      "kicker": "KERALA LAND REFORMS",
+      "caption": "1970: കൃഷിഭൂമി കർഷകന്",
+      "highlight": "കർഷകന്",
+      "kicker": "ഭൂപരിഷ്കരണം",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "പക്ഷേ ഭൂമി കിട്ടിയത് പ്രധാനമായും പാട്ടക്കാർക്ക്. തൊഴിലാളികൾക്ക് പലപ്പോഴും പത്ത് സെന്റ് മാത്രം. ഭൂപരിഷ്കരണം പൂർണ്ണ വിജയമോ? കമന്റിൽ പറയൂ!",
-      "caption": "A JOB HALF DONE?",
-      "highlight": "HALF",
-      "kicker": "TENANTS GAINED, LABOURERS LESS",
+      "caption": "പാതി വിജയമോ?",
+      "highlight": "പാതി",
+      "kicker": "പാട്ടക്കാർക്ക് ഭൂമി, തൊഴിലാളികൾക്ക് കുറവ്",
       "labels": [],
       "visual": ""
     }

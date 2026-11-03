@@ -120,7 +120,8 @@ BRAND = {
     "broad_hashtags": [],   # none: only topic hashtags (max 5)  # 0.0-1.0, background music under the voice
 }
 if ACCOUNT == "2":
-    BRAND["name"] = "KATHAYUM CHARITHRAVUM"
+    BRAND["name"] = "കഥയും ചരിത്രവും"
+    BRAND["category_labels"] = {"HISTORY": "ചരിത്രം", "CULTURE": "സംസ്കാരം", "MYSTERY": "രഹസ്യം", "SCIENCE": "ശാസ്ത്രം", "NATURE": "പ്രകൃതി", "MYTH": "ഐതിഹ്യം"}
 
 # ---------------- Video ----------------
 WIDTH, HEIGHT, FPS = 1080, 1920, 30  # 30 fps: Instagram's native rate, smoother motion

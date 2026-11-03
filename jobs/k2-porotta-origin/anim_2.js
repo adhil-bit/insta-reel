@@ -2,8 +2,8 @@ function loadImg(src) { const im = new Image(); im.src = src; return im; }
 function photo(g, im, x, y, w, h, zoom, alpha, filt) { if (!im.complete || !im.naturalWidth) return; g.save(); g.globalAlpha = alpha; g.beginPath(); g.rect(x, y, w, h); g.clip(); if (filt) g.filter = filt;
   const r = Math.max(w / im.naturalWidth, h / im.naturalHeight) * zoom, iw = im.naturalWidth * r, ih = im.naturalHeight * r; g.drawImage(im, x + (w - iw) / 2, y + (h - ih) / 2, iw, ih); g.filter = 'none'; g.restore(); }
 function framed(g, im, x, y, w, h, a) { g.save(); g.globalAlpha = a; g.fillStyle = '#efe4c8'; g.beginPath(); g.roundRect(x - 12, y - 12, w + 24, h + 24, 16); g.fill(); g.restore(); photo(g, im, x, y, w, h, 1.0, a); }
-function credit(g, txt) { g.font = '600 20px Inter'; g.textAlign = 'right'; g.fillStyle = 'rgba(255,255,255,0.6)'; g.fillText(txt, W - 24, H * 0.205); }
-function chip(g, x, y, txt, col, a) { if (a <= 0) return; g.save(); g.globalAlpha = a; g.font = '800 38px Inter'; const w = g.measureText(txt).width + 56; g.fillStyle = 'rgba(8,6,10,0.85)'; g.beginPath(); g.roundRect(x - w / 2, y - 38, w, 72, 36); g.fill(); g.strokeStyle = col; g.lineWidth = 4; g.stroke(); g.fillStyle = col; g.textAlign = 'center'; g.fillText(txt, x, y + 13); g.restore(); }
+function credit(g, txt) { g.font = '600 20px Inter, Baloo, Noto'; g.textAlign = 'right'; g.fillStyle = 'rgba(255,255,255,0.6)'; g.fillText(txt, W - 24, H * 0.205); }
+function chip(g, x, y, txt, col, a) { if (a <= 0) return; g.save(); g.globalAlpha = a; g.font = '800 38px Inter, Baloo, Noto'; const w = g.measureText(txt).width + 56; g.fillStyle = 'rgba(8,6,10,0.85)'; g.beginPath(); g.roundRect(x - w / 2, y - 38, w, 72, 36); g.fill(); g.strokeStyle = col; g.lineWidth = 4; g.stroke(); g.fillStyle = col; g.textAlign = 'center'; g.fillText(txt, x, y + 13); g.restore(); }
 function porotta(g, x, y, r, t) { g.save(); g.translate(x, y); for (let i = 18; i > 0; i--) { const rr = r * i / 18; g.strokeStyle = i % 2 ? '#d9a35a' : '#f2d29a'; g.lineWidth = r / 14; g.beginPath(); g.arc(0, 0, rr, t * 0.3 + i, t * 0.3 + i + 5.6); g.stroke(); }
   g.fillStyle = 'rgba(160,90,30,0.5)'; for (let i = 0; i < 14; i++) { g.beginPath(); g.arc(Math.cos(i * 2.4) * r * 0.6, Math.sin(i * 2.4) * r * 0.6, r * 0.05, 0, 6.283); g.fill(); } g.restore(); }
 function bubble(g, q, col) { if (q <= 0) return; g.fillStyle = rgba(col, q); g.beginPath(); g.roundRect(W / 2 - 150, H * 0.08, 300, 110, 30); g.fill(); g.fillStyle = '#0c0a10'; for (let j = 0; j < 3; j++) { g.beginPath(); g.arc(W / 2 - 70 + j * 70, H * 0.08 + 55, 14, 0, 6.283); g.fill(); } }
@@ -15,5 +15,5 @@ function edges(g, top, hgt) { const f = (y0, y1, a, b) => { const gr = g.createL
 const c = makeCanvas(), g = c.getContext('2d');
 window.renderFrame = function (t) { const k = clamp(t / DURATION), a = ease.out(clamp((k - 0.25) / 0.25));
   g.fillStyle = '#06080c'; g.fillRect(0, 0, W, H); const top = H * 0.2, hgt = H * 0.6; const P = mapCrop(g, 72.5, 83.5, 14.5, top, hgt); edges(g, top, hgt);
-  const [kx, ky] = P(10.5, 76.2), [sx, sy] = P(7.3, 80.7); pin(g, kx, ky, '#FACC15', t); pin(g, sx, sy, '#38BDF8', t + 0.5); chip(g, kx - 40, ky - 80, 'KERALA', '#FACC15', 1); chip(g, sx - 40, sy + 90, 'SRI LANKA', '#38BDF8', a);
+  const [kx, ky] = P(10.5, 76.2), [sx, sy] = P(7.3, 80.7); pin(g, kx, ky, '#FACC15', t); pin(g, sx, sy, '#38BDF8', t + 0.5); chip(g, kx - 40, ky - 80, 'കേരളം', '#FACC15', 1); chip(g, sx - 40, sy + 90, 'ശ്രീലങ്ക', '#38BDF8', a);
   if (a > 0) porotta(g, W * 0.78, H * 0.3, 90 * a, t); SK.grain(g, t, 0.04); };

@@ -70,15 +70,15 @@ def _css(accent: str) -> str:
 .sub {{ position:absolute; left:70px; right:70px; bottom:400px; text-align:center; font:700 56px/1.38 Noto, Inter; color:#fff;
        text-shadow:0 3px 14px rgba(0,0,0,.9); }}
 .sub span {{ transition:none; }}
-.kicker {{ display:block; margin-top:14px; font:800 26px Inter; letter-spacing:4px; color:rgba(255,255,255,.75); text-transform:uppercase; text-shadow:none; }}
+.kicker {{ display:block; margin-top:14px; font:800 26px Inter, Baloo, Noto; letter-spacing:4px; color:rgba(255,255,255,.75); text-transform:uppercase; text-shadow:none; }}
 .sub span.on {{ color:{accent}; }}
 .pill {{ position:absolute; transform:translate(-50%,-50%) scale(0); background:rgba(12,12,16,.78); border:3px solid {accent};
-        color:#fff; font:800 30px Inter; padding:10px 22px 8px; border-radius:40px; letter-spacing:1.5px; white-space:nowrap;
+        color:#fff; font:800 30px Inter, Baloo, Noto; padding:10px 22px 8px; border-radius:40px; letter-spacing:1.5px; white-space:nowrap;
         box-shadow:0 0 30px {accent}55; }}
 .pill i {{ display:inline-block; width:14px; height:14px; border-radius:50%; background:{accent}; margin-right:12px; vertical-align:1px; font-style:normal; }}
 .disc {{ position:absolute; bottom:300px; left:60px; right:60px; text-align:center; font:700 26px/1.3 Noto, Inter; color:#ffd27a; text-shadow:0 2px 8px rgba(0,0,0,.9); }}
 .src {{ position:absolute; bottom:330px; left:60px; right:60px; text-align:center; font:500 20px Inter; color:rgba(255,255,255,.42); }}
-.brand {{ position:absolute; top:150px; left:64px; font:800 28px Inter; letter-spacing:3px; color:rgba(255,255,255,.85); }}
+.brand {{ position:absolute; top:150px; left:64px; font:800 28px Inter, Baloo, Noto; letter-spacing:3px; color:rgba(255,255,255,.85); }}
 .brand em {{ font-style:normal; color:{accent}; margin-left:14px; border:2px solid {accent}; border-radius:20px; padding:2px 14px; font-size:22px; }}
 .cover {{ position:absolute; left:60px; right:60px; bottom:420px; text-align:center; }}
 .cover .kick {{ font:800 112px/1.18 Baloo, Noto; color:#fff; margin-bottom:26px; text-shadow:0 6px 30px rgba(0,0,0,.85); }}
@@ -171,7 +171,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     if kind == "cover":
         # story-style opening: the English title at the top, the hook spoken as short Malayalam beats
         title = " ".join(script.get("headline", []))
-        body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(script.get("category", ""))}</em></div>'
+        body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>'
                 f'<div class="head" id="head">{_accent_html(title, script.get("accent_words", []))}</div><div class="sub" id="sub"></div>')
         if script.get("claim_first", True) and script.get("thumbnail_ml"):     # the surprise, big, from frame 1
             claim = html.escape(script["thumbnail_ml"].split(" · ")[0])
@@ -224,7 +224,7 @@ def thumbnail(script: dict, bg: Path, out: Path) -> Path:
 body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve().as_uri()}') center/cover; }}
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
-</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(script.get('category', ''))}</em></div>
+</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
 <div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
 <script>/* fitKick: shrink the headline until its longest word fits the width */
 document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');

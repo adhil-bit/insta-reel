@@ -23,11 +23,11 @@
     "type": "hero"
   },
   "headline": [
-    "IS POROTTA",
-    "REALLY OURS?"
+    "പൊറോട്ട",
+    "ശരിക്കും നമ്മുടേതോ?"
   ],
   "accent_words": [
-    "OURS?"
+    "നമ്മുടേതോ?"
   ],
   "thumbnail_ml": "നിങ്ങളുടെ പൊറോട്ട നമ്മുടേതല്ലേ?",
   "thumbnail_accent": [
@@ -38,41 +38,41 @@
   "scenes": [
     {
       "voiceover": "ഒരു ക്ലൂ. കേരളത്തിന്റെ പരമ്പരാഗത ഭക്ഷണം അരി. പക്ഷേ പൊറോട്ട മൈദ. അപ്പോൾ ഇത് എവിടുന്ന് വന്നു?",
-      "caption": "THE CLUE: MAIDA, NOT RICE",
-      "highlight": "MAIDA,",
-      "kicker": "WHERE DID IT COME FROM?",
+      "caption": "ക്ലൂ: അരിയല്ല, മൈദ",
+      "highlight": "മൈദ",
+      "kicker": "എവിടുന്ന് വന്നു?",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "ഒന്നാം തിയറി ശ്രീലങ്ക. അവിടത്തെ ഗോദമ്പ റൊട്ടി നമ്മുടെ പൊറോട്ടയുടെ ഇരട്ട സഹോദരൻ.",
-      "caption": "THEORY 1: SRI LANKA",
-      "highlight": "SRI LANKA",
-      "kicker": "GODHAMBA ROTI",
+      "caption": "തിയറി 1: ശ്രീലങ്ക",
+      "highlight": "ശ്രീലങ്ക",
+      "kicker": "ഗോദമ്പ റൊട്ടി",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "രണ്ടാം തിയറി: അറബ് വ്യാപാരികൾ മലബാറിലെത്തിച്ച പശ്ചിമേഷ്യൻ റൊട്ടി. പല ഭക്ഷണചരിത്രകാരന്മാരും ഇതാണ് സാധ്യത കൂടുതലെന്ന് പറയുന്നു.",
-      "caption": "THEORY 2: WEST ASIA",
-      "highlight": "WEST ASIA",
-      "kicker": "VIA MALABAR'S ARAB TRADERS",
+      "caption": "തിയറി 2: പശ്ചിമേഷ്യ",
+      "highlight": "പശ്ചിമേഷ്യ",
+      "kicker": "അറബ് വ്യാപാരികൾ വഴി",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "മൂന്നാം തിയറി തമിഴ്നാട്. മധുര, വിരുദുനഗർ പൊറോട്ടകൾ. അത് മലേഷ്യയിലെത്തിയപ്പോൾ റൊട്ടി ചനായി.",
-      "caption": "THEORY 3: TAMIL NADU",
-      "highlight": "TAMIL NADU",
-      "kicker": "MADURAI · VIRUDHUNAGAR · MALAYSIA",
+      "caption": "തിയറി 3: തമിഴ്നാട്",
+      "highlight": "തമിഴ്നാട്",
+      "kicker": "മധുര · വിരുദുനഗർ · മലേഷ്യ",
       "labels": [],
       "visual": ""
     },
     {
       "voiceover": "എവിടെ ജനിച്ചു എന്ന് ഉറപ്പില്ല. പക്ഷേ പൊറോട്ട-ബീഫ് കോമ്പോ നമ്മുടെ സ്വന്തം! ഏത് തിയറിയാണ് ശരി? കമന്റ് ചെയ്യൂ!",
-      "caption": "NO ONE KNOWS FOR SURE",
-      "highlight": "SURE",
-      "kicker": "WHICH THEORY? COMMENT",
+      "caption": "ആർക്കും ഉറപ്പില്ല",
+      "highlight": "ഉറപ്പില്ല",
+      "kicker": "ഏത് തിയറി? കമന്റ് ചെയ്യൂ",
       "labels": [],
       "visual": ""
     }
