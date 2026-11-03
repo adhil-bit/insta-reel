@@ -5,6 +5,11 @@ name: Post reel
 on:
   workflow_dispatch:
     inputs:
+      account:
+        description: "1 = @unexplored.truths, 2 = @kathayum.charithravum"
+        type: choice
+        options: ["1", "2"]
+        default: "1"
       reel:
         description: "Reel to post (release name). Leave empty for the next one in the queue."
         required: false
@@ -23,12 +28,16 @@ concurrency:
   cancel-in-progress: false
 
 env:
+  IG_ACCOUNT: ${{ github.event.inputs.account || '1' }}
+  HISTORY_PATH: ${{ github.event.inputs.account == '2' && 'history_2.json' || 'history.json' }}
+  IG_USER_ID_2: ${{ secrets.IG_USER_ID_2 }}
+  IG_ACCESS_TOKEN_2: ${{ secrets.IG_ACCESS_TOKEN_2 }}
   IG_USER_ID: ${{ secrets.IG_USER_ID }}
   IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
   IG_GRAPH_HOST: ${{ vars.IG_GRAPH_HOST || 'graph.instagram.com' }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-  YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+  YT_CLIENT_ID: ${{ github.event.inputs.account != '2' && secrets.YT_CLIENT_ID || '' }}
   YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
   YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
 
@@ -105,7 +114,7 @@ jobs:
         if: ${{ env.SKIP != '1' && github.event.inputs.action != 'reject' }}
         run: |
           LINK=$(grep -o 'https://www.instagram.com/[^ ]*' logs/last-post-log.txt | tail -1)
-          TITLE=$(python -c "import json;h=json.load(open('history.json'));print(next((e.get('title','') for e in h if e['folder']=='$REEL'),'$REEL'))")
+          TITLE=$(python -c "import json;h=json.load(open('$HISTORY_PATH'));print(next((e.get('title','') for e in h if e['folder']=='$REEL'),'$REEL'))")
           WHEN=$(TZ=Asia/Kolkata date '+%a %d %b, %I:%M %p IST')
           COUNTS=$(python main.py status | sed -n 2,3p | tr '\n' ' ')
           bash scripts/notify.sh "$(printf '✅ Posted to Instagram\n%s\n%s\n%s\n%s' "$TITLE" "$LINK" "$WHEN" "$COUNTS")"

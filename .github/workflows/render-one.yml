@@ -5,6 +5,11 @@ name: Render one reel (urgent, runs in parallel)
 on:
   workflow_dispatch:
     inputs:
+      account:
+        description: "1 = @unexplored.truths, 2 = @kathayum.charithravum"
+        type: choice
+        options: ["1", "2"]
+        default: "1"
       job:
         description: "Folder name under jobs/ to render right now"
         required: true
@@ -14,6 +19,10 @@ permissions:
 
 
 env:
+  IG_ACCOUNT: ${{ github.event.inputs.account || '1' }}
+  HISTORY_PATH: ${{ github.event.inputs.account == '2' && 'history_2.json' || 'history.json' }}
+  IG_USER_ID_2: ${{ secrets.IG_USER_ID_2 }}
+  IG_ACCESS_TOKEN_2: ${{ secrets.IG_ACCESS_TOKEN_2 }}
   TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
   TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
   VISUAL_MODE: code

@@ -171,7 +171,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     if kind == "cover":
         # story-style opening: the English title at the top, the hook spoken as short Malayalam beats
         title = " ".join(script.get("headline", []))
-        body = (f'<div class="brand">UNEXPLORED TRUTHS<em>{html.escape(script.get("category", ""))}</em></div>'
+        body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(script.get("category", ""))}</em></div>'
                 f'<div class="head" id="head">{_accent_html(title, script.get("accent_words", []))}</div><div class="sub" id="sub"></div>')
         if script.get("claim_first", True) and script.get("thumbnail_ml"):     # the surprise, big, from frame 1
             claim = html.escape(script["thumbnail_ml"].split(" · ")[0])
@@ -224,7 +224,7 @@ def thumbnail(script: dict, bg: Path, out: Path) -> Path:
 body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve().as_uri()}') center/cover; }}
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
-</style><div class="shade"></div><div class="brand">UNEXPLORED TRUTHS<em>{html.escape(script.get('category', ''))}</em></div>
+</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(script.get('category', ''))}</em></div>
 <div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
 <script>/* fitKick: shrink the headline until its longest word fits the width */
 document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');

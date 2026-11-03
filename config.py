@@ -69,6 +69,10 @@ OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")
 
 IG_USER_ID = os.getenv("IG_USER_ID")
 IG_ACCESS_TOKEN = os.getenv("IG_ACCESS_TOKEN")
+ACCOUNT = os.getenv("IG_ACCOUNT", "1")          # "1" = @unexplored.truths, "2" = @kathayum.charithravum
+if ACCOUNT == "2":
+    IG_USER_ID, IG_ACCESS_TOKEN = os.getenv("IG_USER_ID_2"), os.getenv("IG_ACCESS_TOKEN_2")
+    HISTORY_FILE = ROOT / "history_2.json"          # separate queue/history: nothing mixes with account 1
 IG_GRAPH_HOST = os.getenv("IG_GRAPH_HOST", "graph.facebook.com")
 GRAPH_API_VERSION = os.getenv("GRAPH_API_VERSION", "v23.0")
 
@@ -115,6 +119,8 @@ BRAND = {
     },
     "broad_hashtags": [],   # none: only topic hashtags (max 5)  # 0.0-1.0, background music under the voice
 }
+if ACCOUNT == "2":
+    BRAND["name"] = "KATHAYUM CHARITHRAVUM"
 
 # ---------------- Video ----------------
 WIDTH, HEIGHT, FPS = 1080, 1920, 30  # 30 fps: Instagram's native rate, smoother motion
