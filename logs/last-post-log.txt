@@ -1,9 +1,9 @@
-Publishing photography-prohibited...
+Publishing k2-kuriyedathu-thathri...
   uguu: link serves video/mp4
-  temporary video link ready (d.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18136699597694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfQuFZPFM5n/
+  container: 18053743862602043, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfROAa3ga-T/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
