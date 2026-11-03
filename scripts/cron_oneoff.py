@@ -18,7 +18,7 @@ job = {"title": f"insta-reel once {reel} {when_ist} IST", "enabled": True, "save
        "schedule": {"timezone": "UTC", "expiresAt": int(exp), "mdays": [utc.day], "months": [utc.month], "wdays": [-1],
                     "hours": [utc.hour], "minutes": [utc.minute]},
        "extendedData": {"headers": {"Authorization": f"Bearer {os.environ['CRON_TRIGGER_TOKEN']}", "Accept": "application/vnd.github+json"},
-                        "body": json.dumps({"ref": "main", "inputs": {"reel": reel, "action": "post"}})}}
+                        "body": json.dumps({"ref": "main", "inputs": {"reel": reel, "action": "post", "account": "2" if reel.startswith("k2-") else "1"}})}}
 req = urllib.request.Request("https://api.cron-job.org/jobs", method="PUT", data=json.dumps({"job": job}).encode(),
                              headers={"Authorization": f"Bearer {os.environ['CRONJOB_API_KEY']}", "Content-Type": "application/json"})
 with urllib.request.urlopen(req, timeout=30) as r:
