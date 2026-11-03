@@ -1,9 +1,9 @@
-Publishing beypore-1-railway...
+Publishing photography-prohibited...
   uguu: link serves video/mp4
-  temporary video link ready (h.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18136585873694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfPkw47kXz_/
+  container: 18136699597694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfQuFZPFM5n/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
