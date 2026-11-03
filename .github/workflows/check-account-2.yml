@@ -1,0 +1,16 @@
+name: Check second Instagram account
+on: workflow_dispatch
+permissions:
+  contents: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: main}
+      - run: |
+          mkdir -p logs
+          curl -s "https://graph.instagram.com/v22.0/me?fields=user_id,username,account_type,followers_count,media_count&access_token=${{ secrets.IG_ACCESS_TOKEN_2 }}" > logs/account-2.json
+          python3 -c "import json;d=json.load(open('logs/account-2.json'));d.pop('access_token',None);print(d);json.dump(d,open('logs/account-2.json','w'))"
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add logs/account-2.json && git commit -qm "check account 2" && git pull -q --rebase && git push -q || true
