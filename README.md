@@ -1,3 +1,5 @@
+> **New chat? Read [`HANDOFF.md`](HANDOFF.md) first:** two pages, posting flow, schedule, house rules.
+
 # AutoReel
 
 > 📘 **Start here:** [RUNBOOK.md](RUNBOOK.md) explains the whole system, setup, daily flow, tasks and fixes.
