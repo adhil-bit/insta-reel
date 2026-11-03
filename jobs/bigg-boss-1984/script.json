@@ -21,7 +21,7 @@
   "opening": {
     "type": "hero"
   },
-  "format": "v2 (short, motion-first, share line, loop)",
+  "format": "v2 + debate ending",
   "headline": [
     "BIGG BOSS",
     "1949 → 2018"
@@ -62,15 +62,15 @@
       "visual": ""
     },
     {
-      "voiceover": "ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു! ബിഗ് ബോസ് ഫാനിന് അയക്കൂ.",
-      "caption": "WATCHED, BY CHOICE",
-      "highlight": "CHOICE",
-      "kicker": "SEND THIS TO A BIGG BOSS FAN",
+      "voiceover": "ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു. പക്ഷേ ഇന്നത് വിനോദമോ, അതോ ടിആർപിക്കായുള്ള വിവാദ മാർക്കറ്റിങ്ങോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "ENTERTAINMENT OR TRP MACHINE?",
+      "highlight": "TRP",
+      "kicker": "YOUR VIEW? COMMENT BELOW",
       "labels": [],
       "visual": ""
     }
   ],
-  "instagram_caption": "ബിഗ് ബോസ് എന്ന പേരിന് പിന്നിൽ 1949-ലെ ഒരു നോവൽ! 📺👁️\nBigg Boss got its name from a 1949 novel.\n\nജോർജ് ഓർവെലിന്റെ 1984-ലെ 'ബിഗ് ബ്രദർ', 1999-ലെ ഡച്ച് റിയാലിറ്റി ഷോ, 2006-ൽ ഇന്ത്യയിൽ 'ബിഗ് ബോസ്', 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ. ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു!\nOrwell's 'Big Brother' (1984) → a Dutch reality show (1999) → Bigg Boss in India (2006) → Malayalam with Mohanlal (2018).\n\nഓർവെൽ ഇത് കണ്ടിരുന്നെങ്കിൽ എന്ത് പറയുമായിരുന്നു?\nWhat would Orwell say? Tell us below.\n\nBigg Boss and Big Brother are trademarks of their respective owners. Not affiliated or endorsed.\nSend this to your Bigg Boss fan friend. 📩",
+  "instagram_caption": "ബിഗ് ബോസ് എന്ന പേരിന് പിന്നിൽ 1949-ലെ ഒരു നോവൽ! 📺👁️\nBigg Boss got its name from a 1949 novel.\n\nജോർജ് ഓർവെലിന്റെ 1984-ലെ 'ബിഗ് ബ്രദർ', 1999-ലെ ഡച്ച് റിയാലിറ്റി ഷോ, 2006-ൽ ഇന്ത്യയിൽ 'ബിഗ് ബോസ്', 2018-ൽ മോഹൻലാലിനൊപ്പം മലയാളത്തിൽ. ഓർവെൽ പേടിച്ചത് നമ്മൾ ആസ്വദിക്കുന്നു!\nOrwell's 'Big Brother' (1984) → a Dutch reality show (1999) → Bigg Boss in India (2006) → Malayalam with Mohanlal (2018).\n\nഇന്ന് ബിഗ് ബോസ് വിനോദമോ, അതോ ടിആർപിക്കും പരസ്യത്തിനും വേണ്ടിയുള്ള വിവാദ മാർക്കറ്റിങ്ങോ?\nToday: entertainment, or a TRP and advertising machine built on controversy? Tell us below.\n\nBigg Boss and Big Brother are trademarks of their respective owners. Not affiliated or endorsed.\nSend this to your Bigg Boss fan friend. 📩",
   "search_ml": [
     "ബിഗ് ബോസ്",
     "ബിഗ് ബോസ് മലയാളം",
