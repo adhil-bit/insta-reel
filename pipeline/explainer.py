@@ -70,7 +70,7 @@ def _css(accent: str) -> str:
 .sub {{ position:absolute; left:70px; right:70px; bottom:400px; text-align:center; font:700 56px/1.38 Noto, Inter; color:#fff;
        text-shadow:0 3px 14px rgba(0,0,0,.9); }}
 .sub span {{ transition:none; }}
-.kicker {{ display:block; margin-top:14px; font:800 26px Inter, Baloo, Noto; letter-spacing:4px; color:rgba(255,255,255,.75); text-transform:uppercase; text-shadow:none; }}
+.kicker {{ display:block; margin-top:14px; font:800 26px Inter, Baloo, Noto; letter-spacing:{0 if config.ACCOUNT == '2' else 4}px; color:rgba(255,255,255,.75); text-transform:uppercase; text-shadow:none; }}
 .sub span.on {{ color:{accent}; }}
 .pill {{ position:absolute; transform:translate(-50%,-50%) scale(0); background:rgba(12,12,16,.78); border:3px solid {accent};
         color:#fff; font:800 30px Inter, Baloo, Noto; padding:10px 22px 8px; border-radius:40px; letter-spacing:1.5px; white-space:nowrap;
@@ -78,7 +78,7 @@ def _css(accent: str) -> str:
 .pill i {{ display:inline-block; width:14px; height:14px; border-radius:50%; background:{accent}; margin-right:12px; vertical-align:1px; font-style:normal; }}
 .disc {{ position:absolute; bottom:300px; left:60px; right:60px; text-align:center; font:700 26px/1.3 Noto, Inter; color:#ffd27a; text-shadow:0 2px 8px rgba(0,0,0,.9); }}
 .src {{ position:absolute; bottom:330px; left:60px; right:60px; text-align:center; font:500 20px Inter; color:rgba(255,255,255,.42); }}
-.brand {{ position:absolute; top:150px; left:64px; font:800 28px Inter, Baloo, Noto; letter-spacing:3px; color:rgba(255,255,255,.85); }}
+.brand {{ position:absolute; top:150px; left:64px; font:800 28px Inter, Baloo, Noto; letter-spacing:{0 if config.ACCOUNT == '2' else 3}px; color:rgba(255,255,255,.85); }}
 .brand em {{ font-style:normal; color:{accent}; margin-left:14px; border:2px solid {accent}; border-radius:20px; padding:2px 14px; font-size:22px; }}
 .cover {{ position:absolute; left:60px; right:60px; bottom:420px; text-align:center; }}
 .cover .kick {{ font:800 112px/1.18 Baloo, Noto; color:#fff; margin-bottom:26px; text-shadow:0 6px 30px rgba(0,0,0,.85); }}
