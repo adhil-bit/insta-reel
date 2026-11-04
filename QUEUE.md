@@ -1,15 +1,9 @@
 # Posting queue
 
-_Updated Wed 04 Nov, 07:08 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 04 Nov, 01:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
-
-## Being rendered (joins the queue when done)
-
-- k2-janmi-kudiyan
-- k2-kuriyedathu-thathri
-- k2-porotta-origin
 
 ## Recently posted
 
