@@ -1,26 +1,64 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 119,
-    "follows_count": 271,
-    "media_count": 29,
+    "followers_count": 123,
+    "follows_count": 273,
+    "media_count": 31,
     "id": "28876323268696257"
   },
   "reels": [
     {
+      "id": "18000324041898536",
+      "timestamp": "2026-11-04T01:38:28+0000",
+      "like_count": 1,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/DfTS1ChgKTs/",
+      "title": "സൈലന്റ് വാലി · സിംഹവാലൻ കുരങ്ങ് · പാലക്കാട്",
+      "views": 126,
+      "reach": 115,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 6391,
+      "ig_reels_video_view_total_time": 728685,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
+    {
+      "id": "18074307896782036",
+      "timestamp": "2026-11-03T14:38:44+0000",
+      "like_count": 16,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/DfSHT3Wgc33/",
+      "title": "ബിഗ് ബോസ് എന്ന പേരിന് പിന്നിൽ 1949-ലെ ഒരു നോവൽ! 📺👁️",
+      "views": 1213,
+      "reach": 1058,
+      "saved": 4,
+      "shares": 1,
+      "total_interactions": 21,
+      "ig_reels_avg_watch_time": 10618,
+      "ig_reels_video_view_total_time": 11499601,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
+    {
       "id": "18169898536470008",
       "timestamp": "2026-11-03T01:39:16+0000",
-      "like_count": 21,
+      "like_count": 22,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfQuFZPFM5n/",
       "title": "ഫോട്ടോഗ്രഫി നിരോധിതം · നേവൽ ബേസ് · കൊച്ചി · ഏഴിമല",
-      "views": 1227,
-      "reach": 1090,
+      "views": 1243,
+      "reach": 1095,
       "saved": 1,
       "shares": 0,
-      "total_interactions": 22,
-      "ig_reels_avg_watch_time": 13364,
-      "ig_reels_video_view_total_time": 14593819,
+      "total_interactions": 23,
+      "ig_reels_avg_watch_time": 13264,
+      "ig_reels_video_view_total_time": 14670217,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -33,13 +71,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfPkw47kXz_/",
       "title": "ബേപ്പൂർ സ്റ്റേഷൻ ബേപ്പൂരിലല്ലായിരുന്നു! 🚂 ഭാഗം 1/2",
-      "views": 134,
-      "reach": 129,
+      "views": 135,
+      "reach": 130,
       "saved": 0,
       "shares": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 7031,
-      "ig_reels_video_view_total_time": 928203,
+      "ig_reels_avg_watch_time": 7011,
+      "ig_reels_video_view_total_time": 939599,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -57,8 +95,8 @@
       "saved": 2,
       "shares": 0,
       "total_interactions": 4,
-      "ig_reels_avg_watch_time": 9592,
-      "ig_reels_video_view_total_time": 1275820,
+      "ig_reels_avg_watch_time": 9543,
+      "ig_reels_video_view_total_time": 1278893,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -67,17 +105,17 @@
     {
       "id": "18387270400226064",
       "timestamp": "2026-11-02T06:40:01+0000",
-      "like_count": 23,
+      "like_count": 24,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfOrv5IjSZQ/",
       "title": "കോല കുഴി · ഭൂമിയുടെ ആഴം · റഷ്യ",
-      "views": 1257,
-      "reach": 1045,
+      "views": 1262,
+      "reach": 1048,
       "saved": 3,
       "shares": 0,
-      "total_interactions": 26,
-      "ig_reels_avg_watch_time": 17921,
-      "ig_reels_video_view_total_time": 18566284,
+      "total_interactions": 27,
+      "ig_reels_avg_watch_time": 18000,
+      "ig_reels_video_view_total_time": 18702890,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -90,13 +128,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfOCjYQDrVG/",
       "title": "ന്യോസ് തടാകം · കാമറൂൺ · 1986 ദുരന്തം",
-      "views": 1197,
-      "reach": 1023,
+      "views": 1199,
+      "reach": 1024,
       "saved": 5,
       "shares": 1,
       "total_interactions": 29,
-      "ig_reels_avg_watch_time": 15383,
-      "ig_reels_video_view_total_time": 16260213,
+      "ig_reels_avg_watch_time": 15395,
+      "ig_reels_video_view_total_time": 16303717,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -109,13 +147,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfM4dWoCiO3/",
       "title": "കുന്നംകുളം · കുന്നംകുളം മെയ്ഡ് · തൃശൂർ · ഡ്യൂപ്ലിക്കേറ്റ്",
-      "views": 135,
-      "reach": 119,
+      "views": 136,
+      "reach": 120,
       "saved": 1,
       "shares": 2,
       "total_interactions": 9,
-      "ig_reels_avg_watch_time": 7553,
-      "ig_reels_video_view_total_time": 936685,
+      "ig_reels_avg_watch_time": 7470,
+      "ig_reels_video_view_total_time": 941340,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -133,8 +171,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 7,
-      "ig_reels_avg_watch_time": 4833,
-      "ig_reels_video_view_total_time": 657339,
+      "ig_reels_avg_watch_time": 4817,
+      "ig_reels_video_view_total_time": 659984,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -185,13 +223,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfJvrBfDLaL/",
       "title": "കറുത്തച്ചനൂട്ട്: സത്യമോ കഥയോ? 🕯️",
-      "views": 987,
-      "reach": 823,
+      "views": 989,
+      "reach": 825,
       "saved": 11,
       "shares": 7,
       "total_interactions": 63,
-      "ig_reels_avg_watch_time": 9775,
-      "ig_reels_video_view_total_time": 8348115,
+      "ig_reels_avg_watch_time": 9758,
+      "ig_reels_video_view_total_time": 8353014,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -209,8 +247,8 @@
       "saved": 1,
       "shares": 0,
       "total_interactions": 12,
-      "ig_reels_avg_watch_time": 11683,
-      "ig_reels_video_view_total_time": 1565562,
+      "ig_reels_avg_watch_time": 11599,
+      "ig_reels_video_view_total_time": 1565963,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -242,13 +280,13 @@
       "comments_count": 1,
       "permalink": "https://www.instagram.com/reel/DfHEIgtjTuO/",
       "title": "മണിച്ചിത്രത്താഴ് · ആലുമൂട്ടിൽ മേട · മുട്ടം · ആലപ്പുഴ",
-      "views": 1297,
-      "reach": 1114,
+      "views": 1299,
+      "reach": 1115,
       "saved": 8,
       "shares": 4,
       "total_interactions": 70,
-      "ig_reels_avg_watch_time": 10672,
-      "ig_reels_video_view_total_time": 12273344,
+      "ig_reels_avg_watch_time": 10665,
+      "ig_reels_video_view_total_time": 12275972,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -261,13 +299,13 @@
       "comments_count": 5,
       "permalink": "https://www.instagram.com/reel/DfGa0yyiq4P/",
       "title": "കളരിപ്പയറ്റ് · ബോധിധർമ്മൻ · കുങ്ഫു · ഏഴാം അറിവ്",
-      "views": 2043,
-      "reach": 1704,
+      "views": 2045,
+      "reach": 1705,
       "saved": 17,
       "shares": 5,
       "total_interactions": 100,
-      "ig_reels_avg_watch_time": 17391,
-      "ig_reels_video_view_total_time": 30209117,
+      "ig_reels_avg_watch_time": 17375,
+      "ig_reels_video_view_total_time": 30216824,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -356,13 +394,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfCmeECD2SJ/",
       "title": "യക്ഷി · പാലമരം · ഐതിഹ്യമാല · കള്ളിയങ്കാട്ട് നീലി",
-      "views": 1236,
+      "views": 1237,
       "reach": 1077,
       "saved": 4,
       "shares": 0,
       "total_interactions": 31,
-      "ig_reels_avg_watch_time": 9920,
-      "ig_reels_video_view_total_time": 10624970,
+      "ig_reels_avg_watch_time": 9911,
+      "ig_reels_video_view_total_time": 10625464,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -508,13 +546,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De555_wEjpt/",
       "title": "Stone Age art, right here in Kerala. 🪨✨",
-      "views": 1661,
-      "reach": 1271,
+      "views": 1663,
+      "reach": 1273,
       "saved": 8,
       "shares": 11,
       "total_interactions": 67,
-      "ig_reels_avg_watch_time": 15985,
-      "ig_reels_video_view_total_time": 21148685,
+      "ig_reels_avg_watch_time": 15974,
+      "ig_reels_video_view_total_time": 21150151,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -534,44 +572,6 @@
       "total_interactions": 43,
       "ig_reels_avg_watch_time": 22997,
       "ig_reels_video_view_total_time": 31346215,
-      "extra_errors": {
-        "follows": "The Media Insights API does not support the follows metric for this media product type.",
-        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
-      }
-    },
-    {
-      "id": "17881003500548537",
-      "timestamp": "2026-10-24T11:42:48+0000",
-      "like_count": 10,
-      "comments_count": 0,
-      "permalink": "https://www.instagram.com/reel/De4CJ8qzMeL/",
-      "title": "In 2001, it rained blood red in Kerala. 🩸🌧️",
-      "views": 220,
-      "reach": 175,
-      "saved": 1,
-      "shares": 0,
-      "total_interactions": 11,
-      "ig_reels_avg_watch_time": 9991,
-      "ig_reels_video_view_total_time": 1838419,
-      "extra_errors": {
-        "follows": "The Media Insights API does not support the follows metric for this media product type.",
-        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
-      }
-    },
-    {
-      "id": "18084277040368667",
-      "timestamp": "2026-10-24T10:34:06+0000",
-      "like_count": 11,
-      "comments_count": 0,
-      "permalink": "https://www.instagram.com/reel/De357XFzFhY/",
-      "title": "Rice grown below sea level, right here in Kerala. Kuttanad is one of t",
-      "views": 214,
-      "reach": 179,
-      "saved": 1,
-      "shares": 0,
-      "total_interactions": 12,
-      "ig_reels_avg_watch_time": 8893,
-      "ig_reels_video_view_total_time": 1725272,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
