@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 05 Nov, 11:10 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 05 Nov, 11:13 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -29,6 +29,7 @@ _Updated Thu 05 Nov, 11:10 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
+- k2-christmas-cake-1883
 - kalari-kungfu
 - kallanai-2000-year-dam
 - karuthachanootu
