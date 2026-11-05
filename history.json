@@ -640,9 +640,9 @@
     "category": "MYSTERY",
     "folder": "kothayi-ink",
     "status": "pending",
-    "voice": "Charon",
+    "voice": "Enceladus",
     "post_on": "2099-01-01",
-    "created": "2026-11-05T18:00"
+    "created": "2026-11-05T18:06"
   },
   {
     "title": "Beypore Part 2: the Uru and the Khalasis",
@@ -661,5 +661,14 @@
     "voice": "Despina",
     "post_on": "2099-01-01",
     "created": "2026-11-05T18:05"
+  },
+  {
+    "title": "Thalassery and India's first Christmas cake (1883)",
+    "category": "CULTURE",
+    "folder": "k2-christmas-cake-1883",
+    "status": "pending",
+    "voice": "Despina",
+    "post_on": "2099-01-01",
+    "created": "2026-11-05T18:03"
   }
 ]
