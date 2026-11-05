@@ -134,3 +134,47 @@ Dropped (moved to `jobs/_dropped/`): Kottayam literacy, Roopkund, Indus script, 
 - [Claude] Check Bigg Boss (first v2 reel) at the 3–4 h mark against older reels: completion %, shares, comments.
 - [Claude] Optional: Remotion caption test (skills installed in `.claude/skills/remotion-*`); a district series ("#1 Kasaragod …") for page 2.
 - Archived on page 1 (hidden, restorable): Mary Celeste, Two protests, Chandrayaan, Chundan Vallam, Thalassery cake, Jatinga, Theyyam. Kept: Kuttanad (first reel). Archive Kola/Kunnamkulam later only if needed.
+
+---
+
+## 9. Genre styles (from 5 Nov 2026): every reel uses a different look
+
+Set `"theme"` in `script.json` and call `NB.use('<style>')` at the top of every `anim_*.js`. Kit: `NB` in `pipeline/lib/scenes.js`;
+text themes in `pipeline/explainer.py` (`THEMES`). Keep drawings inside y 560–1380 (headline above, subtitles below).
+
+| Style | `theme` / `NB.use` | Look | Use for |
+|---|---|---|---|
+| Notebook | `notebook` | Pen inks lines over a faint pencil ghost on cream paper, then washes | Food, everyday history |
+| Ink-wash | `inkwash` | Tapered brush strokes, misty mountains (`NB.ridge`, `NB.mist`), red seal | Legends, folklore, ghosts |
+| Retro collage | `retro` | Real photos as B/W torn cut-outs (`NB.cutout`), paper labels, clippings, halftone on red paper; text on cream strips | Colonial / maritime history with archive photos |
+| Whiteboard | `whiteboard` | A hand draws with a blue marker on white | Explainers, laws, "how it works" |
+| Manim | `manim` | Glowing lines on black, no pen | Science, numbers, maps |
+| Cartoon | (no theme) | Existing flat SK scenes | Character stories |
+
+Rules: frame 1 must already show the idea (ghost sketch or a photo cut-out at ≥55% opacity); never open on an empty page.
+
+**Style map (upcoming):**
+| When | Page | Reel | Style |
+|---|---|---|---|
+| Fri 6 · 7:07 AM | main | Kalla Kothayi's treasure (`kothayi-ink-v2`) | Ink-wash ✅ |
+| Fri 6 · 1:07 PM | page 2 | Murickan, the Kayal King | Whiteboard (to build Fri morning) |
+| Fri 6 · 8:07 PM | main | Beypore Part 2 (`beypore-2-collage`) | Retro collage ✅ |
+| Sat 7 · 10:07 AM | main | Kayamkulam Kochunni | Cartoon |
+| Sat 7 · 1:07 PM | page 2 | Kolumban & the Idukki dam | Ink-wash |
+| Sat 7 · 8:07 PM | main | The 1341 flood that created Kochi | Manim (animated map) |
+| Sun 8 · 10:07 AM | main | Flood of '99 (1924) | Notebook |
+| Sun 8 · 1:07 PM | page 2 | Keeleri Kunhikannan (circus) | Cartoon |
+| Sun 8 · 8:07 PM | main | Who brought Kochi's Chinese nets? | Ink-wash |
+| Mon 9 · 7:07 AM | main | Mullaperiyar's 999-year lease | Whiteboard |
+| Mon 9 · 1:07 PM | page 2 | Vizhinjam | Manim |
+| Mon 9 · 8:07 PM | main | Kadamattathu Kathanar | Cartoon |
+| Tue 10 · 7:07 AM | main | Theyyam (reworked, costume details, no faces) | Retro collage |
+| Tue 10 · 1:07 PM | page 2 | Kunjali Marakkar | Retro collage (public-domain engravings) |
+| Wed 11 · 1:07 PM | page 2 | Mavoor & the Chaliyar | Notebook |
+| Thu 12 · 1:07 PM | page 2 | Plachimada | Whiteboard |
+| unscheduled | main | Vasco's empty grave | Retro collage |
+
+**Session gotchas (5 Nov):** `gh` GraphQL is blocked here, so use `gh api` REST only (dispatch: `gh api -X POST repos/adhil-bit/insta-reel/actions/workflows/<wf>.yml/dispatches -f ref=main -f 'inputs[job]=…'`).
+Releases can't be deleted from a Claude session, and a render skips any job that already has a release, so **re-render under a new slug** (e.g. `-v2`) and repoint the trigger
+(delete by title text, then create). Trigger results show in the cron-oneoff job log (`scheduled:` / `deleted:` lines).
+Done 5 Nov: `k2-christmas-cake-1883` (notebook, Thalassery cake reworked from the archived reel) posted to page 2.
