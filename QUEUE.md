@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 05 Nov, 11:15 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 05 Nov, 11:18 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -60,6 +60,7 @@ _Updated Thu 05 Nov, 11:15 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Thalassery and India's first Christmas cake (1883) | 2026-11-05T17:48 |
 | How Kerala's 14 districts got their names | 2026-11-05T07:38 |
 | Is porotta really Kerala's? Three origin theories | 2026-11-03T13:36 |
 | Who owned Kerala's land? From janmi–kudiyan to land reform | 2026-11-04T07:38 |
