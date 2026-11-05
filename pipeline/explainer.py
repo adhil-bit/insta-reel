@@ -173,7 +173,7 @@ def _nb_css() -> str:
 .pill {{ background:#f3ead6; color:{NB_INK}; border:3px solid {NB_INK}; box-shadow:none; font:400 38px Chilanka, Inter; }}
 .pill i {{ background:{NB_RED}; }}
 .disc {{ color:{NB_RED}; text-shadow:none; }}
-.src {{ color:rgba(43,36,32,.45); }}
+.src {{ color:rgba(43,36,32,.45); bottom:250px; }}
 .brand {{ color:rgba(43,36,32,.72); letter-spacing:1px; }}
 .brand em {{ color:{NB_RED}; border-color:{NB_RED}; }}
 .shade {{ display:none; }}
