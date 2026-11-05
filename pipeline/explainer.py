@@ -157,38 +157,69 @@ JS = """
 
 
 NB_INK, NB_RED = "#2b2420", "#c2412d"
-def _nb_css() -> str:
-    """Kerala Notebook theme: dark ink on cream paper, no shadows (the animation draws the paper)."""
-    return f"""
+# genre themes: (ink, accent). Light papers get dark text; retro puts text on cream paper labels; manim keeps the dark overlay.
+THEMES = {"notebook": ("#2b2420", "#c2412d"), "inkwash": ("#1b1b1b", "#b5281f"), "whiteboard": ("#1f2a44", "#2a6fdb"),
+          "retro": ("#141414", "#8f1d12"), "manim": ("#ececec", "#58c4dd")}
+LIGHT = {"notebook", "inkwash", "whiteboard", "retro"}
+
+
+def _theme(script: dict):
+    t = script.get("theme")
+    return t if t in THEMES else None
+
+
+def _nb_css(theme: str = "notebook") -> str:
+    """Text overlay for the genre themes (the animation draws the paper)."""
+    ink, acc = THEMES[theme]
+    if theme == "manim":
+        return f"""
+.head {{ font:800 76px/1.12 Baloo, Noto, Inter; text-transform:none; letter-spacing:0; text-shadow:0 0 24px {acc}66; }}
+.head b, .claim b, .sub span.on {{ color:{acc}; }}
+.kicker {{ color:rgba(236,236,236,.6); }}
+.vig {{ background:linear-gradient(180deg, rgba(0,0,0,.4) 0%, rgba(0,0,0,0) 20%, rgba(0,0,0,0) 70%, rgba(0,0,0,.6) 100%); }}
+"""
+    css = f"""
 @font-face {{ font-family: Chilanka; src: url('{(F / "Chilanka-Regular.ttf").as_uri()}'); }}
 .vig {{ display:none; }}
-.head {{ top:190px; color:{NB_INK}; text-shadow:none; font:800 74px/1.14 Baloo, Noto, Inter; text-transform:none; letter-spacing:0; }}
-.head b {{ font-weight:800; color:{NB_RED}; }}
-.claim {{ top:190px; color:{NB_INK}; text-shadow:none; font:800 96px/1.16 Baloo, Noto; }}
-.claim b {{ color:{NB_RED}; }}
+.head {{ top:190px; color:{ink}; text-shadow:none; font:800 74px/1.14 Baloo, Noto, Inter; text-transform:none; letter-spacing:0; }}
+.head b {{ font-weight:800; color:{acc}; }}
+.claim {{ top:190px; color:{ink}; text-shadow:none; font:800 96px/1.16 Baloo, Noto; }}
+.claim b {{ color:{acc}; }}
 .kcover .head {{ display:none; }}
-.sub {{ bottom:330px; color:{NB_INK}; text-shadow:none; font:700 54px/1.36 Baloo, Noto, Inter; }}
-.sub span.on {{ color:{NB_RED}; }}
-.kicker {{ color:rgba(43,36,32,.62); letter-spacing:1px; font:400 34px Chilanka, Inter; text-transform:none; }}
-.pill {{ background:#f3ead6; color:{NB_INK}; border:3px solid {NB_INK}; box-shadow:none; font:400 38px Chilanka, Inter; }}
-.pill i {{ background:{NB_RED}; }}
-.disc {{ color:{NB_RED}; text-shadow:none; }}
-.src {{ color:rgba(43,36,32,.45); bottom:250px; }}
-.brand {{ color:rgba(43,36,32,.72); letter-spacing:1px; }}
-.brand em {{ color:{NB_RED}; border-color:{NB_RED}; }}
+.sub {{ bottom:330px; color:{ink}; text-shadow:none; font:700 54px/1.36 Baloo, Noto, Inter; }}
+.sub span.on {{ color:{acc}; }}
+.kicker {{ color:{ink}a0; letter-spacing:1px; font:400 34px Chilanka, Inter; text-transform:none; }}
+.pill {{ background:#f3ead6; color:{ink}; border:3px solid {ink}; box-shadow:none; font:400 38px Chilanka, Inter; }}
+.pill i {{ background:{acc}; }}
+.disc {{ color:{acc}; text-shadow:none; }}
+.src {{ color:{ink}73; bottom:250px; }}
+.brand {{ color:{ink}b8; letter-spacing:1px; }}
+.brand em {{ color:{acc}; border-color:{acc}; }}
 .shade {{ display:none; }}
 .cover {{ top:180px; bottom:auto; }}
-.cover .kick {{ color:{NB_INK}; text-shadow:none; }}
-.cover .kick b {{ color:{NB_RED}; }}
-.cover .big {{ color:rgba(43,36,32,.7); text-shadow:none; font:400 46px Chilanka, Inter; text-transform:none; letter-spacing:0; }}
-.cover .big b {{ color:{NB_RED}; }}
-.bar {{ background:{NB_RED}; }}
+.cover .kick {{ color:{ink}; text-shadow:none; }}
+.cover .kick b {{ color:{acc}; }}
+.cover .big {{ color:{ink}b0; text-shadow:none; font:400 46px Chilanka, Inter; text-transform:none; letter-spacing:0; }}
+.cover .big b {{ color:{acc}; }}
+.bar {{ background:{acc}; }}
 """
+    if theme == "retro":                       # text sits on torn cream paper strips over red paper
+        css += f"""
+.head, .claim, .sub {{ left:90px; right:90px; background:#f2e6c9; padding:14px 26px 10px; transform:rotate(-1.2deg); box-shadow:0 10px 24px rgba(0,0,0,.35); }}
+.sub {{ transform:rotate(.8deg); }}
+.kicker {{ color:#141414b0; }}
+.brand {{ color:#f2e6c9; }} .brand em {{ color:#f2e6c9; border-color:#f2e6c9; }}
+.src {{ color:#f2e6c9a0; }}
+.cover .kick {{ background:#f2e6c9; padding:12px 24px; transform:rotate(-1.5deg); box-shadow:0 10px 24px rgba(0,0,0,.35); }}
+.cover .big {{ color:#f2e6c9; }}
+"""
+    return css
+
 
 
 def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -> str:
-    nb = script.get("theme") == "notebook"
-    accent = NB_RED if nb else config.BRAND["categories"].get(script.get("category", ""), "#FACC15")
+    th = _theme(script)
+    accent = THEMES[th][1] if th else config.BRAND["categories"].get(script.get("category", ""), "#FACC15")
     pills = []
     opening = script.get("opening") or {}
     globe_on = kind == "cover" and opening.get("type") == "globe" and "lat" in opening and "lon" in opening
@@ -225,7 +256,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     globe_html = (GLOBE.replace("%(LAT)s", str(opening["lat"])).replace("%(LON)s", str(opening["lon"]))
                   .replace("%(D)s", f"{duration:.3f}").replace("ACC", accent)) if globe_on else ""
     globe_mark, globe_js = (globe_html.split("<script>", 1)[0], "<script>" + globe_html.split("<script>", 1)[1]) if globe_on else ("", "")
-    return (f'<style>{_css(accent)}{_nb_css() if nb else ""}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
+    return (f'<style>{_css(accent)}{_nb_css(th) if th else ""}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
             f'<div class="src">Sources: {html.escape(src)} · Animated illustration</div></div>' + JS.replace("%(STATE)s", state) + globe_js)
 
 
@@ -246,8 +277,8 @@ def clean_frame(code: str, accent: str, duration: float, out: Path, at: float = 
 def thumbnail(script: dict, bg: Path, out: Path) -> Path:
     """Grid cover: big Malayalam headline (the hero), small English line under it."""
     from playwright.sync_api import sync_playwright
-    nb = script.get("theme") == "notebook"
-    accent = NB_RED if nb else config.BRAND["categories"].get(script.get("category", ""), "#FACC15")
+    th = _theme(script)
+    accent = THEMES[th][1] if th else config.BRAND["categories"].get(script.get("category", ""), "#FACC15")
     kick = html.escape(script.get("thumbnail_ml", ""))
     for a in script.get("thumbnail_accent", []):
         kick = kick.replace(html.escape(a), f"<b>{html.escape(a)}</b>")
@@ -256,7 +287,7 @@ def thumbnail(script: dict, bg: Path, out: Path) -> Path:
 body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve().as_uri()}') center/cover; }}
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
-{_nb_css() if nb else ""}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
+{_nb_css(th) if th else ""}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
 <div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
 <script>/* fitKick: shrink the headline until its longest word fits the width */
 document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');

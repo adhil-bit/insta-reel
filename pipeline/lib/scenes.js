@@ -127,21 +127,33 @@ const SK = (() => {
 const NB = (() => {
   const INK = '#2b2420', RED = '#c2412d', GOLD = '#d9a23a', BLUE = '#3d6b8c', GREEN = '#6c8f4e', BROWN = '#b5835a', PAPER = '#f3ead6';
   const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2, cl = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
-  let paperC = null;
+  // genre styles (pick one per reel with NB.use('inkwash') before building sketches)
+  const STYLES = {
+    notebook:   { bg: '#f3ead6', speck: 'rgba(120,90,50,', vig: 'rgba(80,50,20,0.28)', ink: '#2b2420', accent: '#c2412d', ghost: '#6b5d52', tool: 'pen' },
+    inkwash:    { bg: '#ece5d6', speck: 'rgba(90,80,70,', vig: 'rgba(60,50,40,0.30)', ink: '#1b1b1b', accent: '#b5281f', ghost: '#8a8378', tool: 'brush', brush: true },
+    whiteboard: { bg: '#f7f7f4', speck: 'rgba(140,150,160,', vig: 'rgba(60,70,80,0.12)', ink: '#1f2a44', accent: '#2a6fdb', ghost: '#9aa3b2', tool: 'hand' },
+    manim:      { bg: '#0e0f12', speck: 'rgba(255,255,255,', vig: 'rgba(0,0,0,0.5)', ink: '#ececec', accent: '#58c4dd', ghost: '#3a3d45', tool: 'none', glow: true },
+    retro:      { bg: '#c8452f', speck: 'rgba(40,10,5,', vig: 'rgba(40,5,0,0.45)', ink: '#141414', accent: '#f2e6c9', ghost: '#7a2a1c', tool: 'none' },
+  };
+  let ST = STYLES.notebook; const paperC = {};
+  function use(name) { ST = STYLES[name] || STYLES.notebook; return ST; }
   function paper(g) {
-    if (!paperC) { paperC = document.createElement('canvas'); paperC.width = W; paperC.height = H; const p = paperC.getContext('2d'); let s = 11;
+    const key = Object.keys(STYLES).find(k => STYLES[k] === ST);
+    if (!paperC[key]) { const pc = document.createElement('canvas'); pc.width = W; pc.height = H; const p = pc.getContext('2d'); let s = 11;
       const r = () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
-      p.fillStyle = PAPER; p.fillRect(0, 0, W, H);
-      for (let i = 0; i < 9000; i++) { p.fillStyle = `rgba(120,90,50,${r() * 0.05})`; p.fillRect(r() * W, r() * H, 2, 2); }
-      const v = p.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 1250); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, 'rgba(80,50,20,0.28)'); p.fillStyle = v; p.fillRect(0, 0, W, H); }
-    g.drawImage(paperC, 0, 0);
+      p.fillStyle = ST.bg; p.fillRect(0, 0, W, H);
+      for (let i = 0; i < 9000; i++) { p.fillStyle = ST.speck + (r() * (ST.glow ? 0.025 : 0.05)) + ')'; p.fillRect(r() * W, r() * H, 2, 2); }
+      if (ST.brush) for (let i = 0; i < 260; i++) { p.strokeStyle = 'rgba(120,105,85,0.07)'; p.lineWidth = 1; p.beginPath(); const x = r() * W, y = r() * H; p.moveTo(x, y); p.lineTo(x + (r() - .5) * 60, y + (r() - .5) * 60); p.stroke(); }
+      const v = p.createRadialGradient(W / 2, H / 2, 300, W / 2, H / 2, 1250); v.addColorStop(0, 'rgba(0,0,0,0)'); v.addColorStop(1, ST.vig); p.fillStyle = v; p.fillRect(0, 0, W, H);
+      paperC[key] = pc; }
+    g.drawImage(paperC[key], 0, 0);
   }
   function sketch(seed = 7) {
     let s = seed; const rnd = () => { s = (s * 16807) % 2147483647; return s / 2147483647; };
     const strokes = []; let ox = 0, oy = 0;
     function add(p, o = {}) { const amp = o.amp ?? 2.2; const pts = p.map(([x, y]) => [x + ox + (rnd() - .5) * amp, y + oy + (rnd() - .5) * amp]);
       let L = 0; for (let i = 1; i < pts.length; i++) L += Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]);
-      strokes.push({ pts, L: Math.max(L, 1), w: o.w ?? 5, col: o.col ?? INK, dash: o.dash }); return api; }
+      strokes.push({ pts, L: Math.max(L, 1), w: o.w ?? 5, col: o.col ?? ST.ink, dash: o.dash }); return api; }
     function dens(pts) { const out = [pts[0]]; for (let i = 1; i < pts.length; i++) { const [a, b] = [pts[i - 1], pts[i]], n = Math.max(1, Math.ceil(Math.hypot(b[0] - a[0], b[1] - a[1]) / 18));
       for (let k = 1; k <= n; k++) out.push([a[0] + (b[0] - a[0]) * k / n, a[1] + (b[1] - a[1]) * k / n]); } return out; }
     function chaikin(pts, it = 3) { for (let k = 0; k < it; k++) { const o = [pts[0]]; for (let i = 0; i < pts.length - 1; i++) { const [a, b] = [pts[i], pts[i + 1]];
@@ -157,7 +169,7 @@ const NB = (() => {
       arrow(x1, y1, x2, y2, o = {}) { api.line(x1, y1, x2, y2, o); const a = Math.atan2(y2 - y1, x2 - x1), h = o.head ?? 30;
         api.line(x2, y2, x2 - h * Math.cos(a - .45), y2 - h * Math.sin(a - .45), o); return api.line(x2, y2, x2 - h * Math.cos(a + .45), y2 - h * Math.sin(a + .45), o); },
       hatch(x, y, w, h, n = 20, o = {}) { for (let i = 0; i < n; i++) { const px = x + rnd() * w, py = y + rnd() * h; api.line(px, py, px + 24, py + 14, { w: 3, amp: 1, ...o }); } return api; },
-      text(t, x, y, o = {}) { strokes.push({ txt: t, x: x + ox, y: y + oy, size: o.size ?? 52, col: o.col ?? INK, font: o.font ?? 'Chilanka, Hand', L: 140, align: o.align ?? 'center' }); return api; },
+      text(t, x, y, o = {}) { strokes.push({ txt: t, x: x + ox, y: y + oy, size: o.size ?? 52, col: o.col ?? ST.ink, font: o.font ?? 'Chilanka, Hand', L: 140, align: o.align ?? 'center' }); return api; },
       figure(x, y, h, pose = 'stand', o = {}) {             // simple notebook stick figure, feet at (x, y)
         const hr = h * .11, nk = y - h + hr * 2, hip = y - h * .45, sh = nk + h * .08;
         api.circle(x, y - h + hr, hr, o); api.line(x, nk, x, hip, o);
@@ -171,11 +183,11 @@ const NB = (() => {
       mark() { return strokes.length; },
       draw(g, t, opt = {}) {
         const parts = opt.parts ?? [[0, strokes.length, opt.t0 ?? 0, opt.t1 ?? DURATION * 0.6]];
-        if (opt.ghost !== false) { g.save(); g.globalAlpha = 0.15; strokes.forEach(st => paint(g, st, st.L, '#6b5d52', 2)); g.restore(); }
+        if (opt.ghost !== false) { g.save(); g.globalAlpha = ST.glow ? 0.35 : 0.15; strokes.forEach(st => paint(g, st, st.L, ST.ghost, 2)); g.restore(); }
         let tip = null;
         for (const [a, b, t0, t1] of parts) { const seg = strokes.slice(a, b), tot = seg.reduce((s, st) => s + st.L, 0), drawn = tot * ease(cl((t - t0) / Math.max(.01, t1 - t0)));
           let acc = 0; for (const st of seg) { const tp = paint(g, st, Math.min(st.L, drawn - acc)); if (tp && drawn < tot && drawn - acc < st.L) tip = tp; acc += st.L; } }
-        if (tip && opt.pen !== false) pen(g, tip[0], tip[1]);
+        if (tip && opt.pen !== false) tool(g, tip[0], tip[1]);
       },
     };
     return api;
@@ -183,12 +195,60 @@ const NB = (() => {
   function paint(g, st, len, ghostCol, thin) {
     if (len <= 0) return null;
     if (st.txt) { const a = cl(len / st.L); g.save(); g.globalAlpha *= ghostCol ? 1 : a; g.fillStyle = ghostCol ?? st.col; g.font = `${st.size}px ${st.font}`; g.textAlign = st.align; g.fillText(st.txt, st.x, st.y); g.restore(); return a < 1 ? [st.x, st.y] : null; }
+    if (ST.brush && !ghostCol && !st.dash) return brushPaint(g, st, len);
     g.strokeStyle = ghostCol ?? st.col; g.lineWidth = thin ? Math.max(2, st.w - thin) : st.w; g.lineCap = 'round'; g.lineJoin = 'round'; g.setLineDash(st.dash ? [4, 18] : []);
+    if (ST.glow && !ghostCol) { g.shadowColor = st.col; g.shadowBlur = 14; }
     g.beginPath(); g.moveTo(...st.pts[0]); let d = 0, tip = st.pts[0];
     for (let i = 1; i < st.pts.length; i++) { const a = st.pts[i - 1], b = st.pts[i], l = Math.hypot(b[0] - a[0], b[1] - a[1]);
       if (d + l > len) { const f = (len - d) / l; tip = [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f]; g.lineTo(...tip); break; } g.lineTo(...b); d += l; tip = b; }
-    g.stroke(); g.setLineDash([]); return tip;
+    g.stroke(); g.setLineDash([]); g.shadowBlur = 0; return tip;
   }
+  function brushPaint(g, st, len) {               // tapered wet-ink stroke: thick in the middle, thin at the ends
+    const n = st.pts.length; let d = 0, tip = st.pts[0]; g.strokeStyle = st.col; g.lineCap = 'round';
+    for (let i = 1; i < n; i++) { const a = st.pts[i - 1], b = st.pts[i], l = Math.hypot(b[0] - a[0], b[1] - a[1]); let e = b;
+      if (d + l > len) { const f = (len - d) / l; e = [a[0] + (b[0] - a[0]) * f, a[1] + (b[1] - a[1]) * f]; }
+      const u = i / n; g.globalAlpha = 0.92; g.lineWidth = st.w * (0.35 + 1.25 * Math.sin(Math.PI * Math.min(1, u * 1.05)));
+      g.beginPath(); g.moveTo(...a); g.lineTo(...e); g.stroke(); tip = e; if (d + l > len) break; d += l; }
+    g.globalAlpha = 1; return tip;
+  }
+  function tool(g, x, y) {
+    if (ST.tool === 'none') return; if (ST.tool === 'pen') return pen(g, x, y);
+    g.save(); g.translate(x, y);
+    if (ST.tool === 'brush') { g.rotate(-0.35); g.fillStyle = '#1b1b1b'; g.beginPath(); g.moveTo(0, 0); g.quadraticCurveTo(-12, 30, -9, 60); g.lineTo(9, 60); g.quadraticCurveTo(12, 30, 0, 0); g.fill();
+      g.fillStyle = '#8a5a2a'; g.fillRect(-7, 60, 14, 260); g.fillStyle = '#b5281f'; g.fillRect(-8, 300, 16, 14); }
+    else {                                         // whiteboard: a hand holding a marker
+      g.rotate(-0.5); g.fillStyle = '#2a6fdb'; g.fillRect(-10, 10, 20, 150); g.fillStyle = '#1f2a44'; g.beginPath(); g.moveTo(-10, 10); g.lineTo(10, 10); g.lineTo(0, -6); g.fill();
+      g.fillStyle = '#f1c7a5'; g.strokeStyle = '#7a5a48'; g.lineWidth = 3; g.beginPath(); g.ellipse(4, 120, 58, 72, 0.15, 0, 6.283); g.fill(); g.stroke();
+      g.beginPath(); g.ellipse(-46, 96, 22, 40, -0.4, 0, 6.283); g.fill(); g.stroke(); g.fillRect(-30, 170, 70, 160); g.strokeRect(-30, 170, 70, 160);
+      g.fillStyle = '#3d5a80'; g.fillRect(-36, 260, 82, 90); }
+    g.restore();
+  }
+  // retro collage pieces
+  function cutout(g, img, x, y, w, h, rot = 0, a = 1, o = {}) {   // B/W photo with a white torn border and shadow
+    if (a <= 0 || !img || !img.complete || !img.naturalWidth) return; g.save(); g.globalAlpha = a; g.translate(x + w / 2, y + h / 2); g.rotate(rot); const s = o.pop ? 0.85 + 0.15 * a : 1; g.scale(s, s);
+    g.shadowColor = 'rgba(0,0,0,0.45)'; g.shadowBlur = 24; g.shadowOffsetY = 10; g.fillStyle = '#f4efe4'; torn(g, -w / 2 - 16, -h / 2 - 16, w + 32, h + 32, 7); g.fill(); g.shadowBlur = 0; g.shadowOffsetY = 0;
+    g.save(); g.beginPath(); g.rect(-w / 2, -h / 2, w, h); g.clip(); g.filter = o.color ? 'contrast(1.1)' : 'grayscale(1) contrast(1.25) brightness(1.05)';
+    const r = Math.max(w / img.naturalWidth, h / img.naturalHeight), iw = img.naturalWidth * r, ih = img.naturalHeight * r; g.drawImage(img, -iw / 2, -ih / 2, iw, ih); g.filter = 'none'; g.restore(); g.restore();
+  }
+  function torn(g, x, y, w, h, seed) { let s = seed; const r = () => { s = (s * 16807) % 2147483647; return s / 2147483647; }; g.beginPath(); g.moveTo(x, y);
+    for (let i = 0; i <= 20; i++) g.lineTo(x + w * i / 20, y + (r() - .5) * 8); for (let i = 0; i <= 20; i++) g.lineTo(x + w + (r() - .5) * 8, y + h * i / 20);
+    for (let i = 20; i >= 0; i--) g.lineTo(x + w * i / 20, y + h + (r() - .5) * 8); for (let i = 20; i >= 0; i--) g.lineTo(x + (r() - .5) * 8, y + h * i / 20); g.closePath(); }
+  function label(g, t, x, y, a = 1, o = {}) {      // black text on a torn cream paper strip
+    if (a <= 0) return; g.save(); g.globalAlpha = a; g.translate(x, y); g.rotate(o.rot ?? -0.03); g.font = `${o.weight ?? 800} ${o.size ?? 70}px ${o.font ?? 'Baloo, Inter'}`; const w = g.measureText(t).width + 50, h = (o.size ?? 70) * 1.25;
+    g.shadowColor = 'rgba(0,0,0,0.35)'; g.shadowBlur = 14; g.shadowOffsetY = 6; g.fillStyle = o.bg ?? '#f2e6c9'; torn(g, -w / 2, -h / 2, w, h, 5); g.fill(); g.shadowBlur = 0; g.shadowOffsetY = 0;
+    g.fillStyle = o.col ?? '#141414'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(t, 0, 4); g.restore(); }
+  function clipping(g, title, lines, x, y, w, a = 1, rot = 0.04) {  // newspaper clipping
+    if (a <= 0) return; const h = 110 + lines * 34; g.save(); g.globalAlpha = a; g.translate(x, y); g.rotate(rot); g.shadowColor = 'rgba(0,0,0,0.35)'; g.shadowBlur = 16; g.shadowOffsetY = 8;
+    g.fillStyle = '#efe7d3'; torn(g, -w / 2, -h / 2, w, h, 9); g.fill(); g.shadowBlur = 0; g.shadowOffsetY = 0; g.fillStyle = '#141414'; g.textAlign = 'center';
+    g.font = '800 46px Baloo, Inter'; g.fillText(title, 0, -h / 2 + 62); g.fillStyle = 'rgba(20,20,20,0.55)'; for (let i = 0; i < lines; i++) g.fillRect(-w / 2 + 30, -h / 2 + 96 + i * 34, w - 60 - (i * 47) % 80, 9); g.restore(); }
+  function halftone(g, x, y, w, h, col = 'rgba(20,10,5,0.55)', step = 22) { g.save(); g.fillStyle = col; for (let yy = 0; yy < h; yy += step) for (let xx = 0; xx < w; xx += step) { const r = 3 + 6 * (xx / w); g.beginPath(); g.arc(x + xx + (yy / step % 2) * step / 2, y + yy, r, 0, 6.283); g.fill(); } g.restore(); }
+  function zigzag(g, x, y, n, a = 1, col = '#141414') { if (a <= 0) return; g.save(); g.globalAlpha = a; g.strokeStyle = col; g.lineWidth = 10; g.lineJoin = 'miter'; g.beginPath(); for (let i = 0; i <= n; i++) g.lineTo(x + i * 34, y + (i % 2 ? -24 : 0)); g.stroke(); g.restore(); }
+  function mist(g, y, h, a = 1) { if (a <= 0) return; g.save(); g.globalAlpha = a; const gr = g.createLinearGradient(0, y, 0, y + h); gr.addColorStop(0, 'rgba(236,229,214,0)'); gr.addColorStop(.5, 'rgba(236,229,214,0.85)'); gr.addColorStop(1, 'rgba(236,229,214,0)'); g.fillStyle = gr; g.fillRect(0, y, W, h); g.restore(); }
+  function ridge(g, y0, amp, col, a = 1, seed = 3, depth = 160) {  // ink-wash mountain layer that fades into mist below
+    if (a <= 0) return; let s = seed; const r = () => { s = (s * 16807) % 2147483647; return s / 2147483647; }; g.save(); g.globalAlpha = a;
+    const gr = g.createLinearGradient(0, y0 - amp, 0, y0 + depth); gr.addColorStop(0, col); gr.addColorStop(0.55, col); gr.addColorStop(1, 'rgba(236,229,214,0)'); g.fillStyle = gr;
+    g.beginPath(); g.moveTo(0, y0 + depth); let y = y0; for (let x = 0; x <= W; x += 30) { y = y0 - amp * (0.5 + 0.5 * Math.sin(x / 170 + seed)) - r() * amp * 0.25; g.lineTo(x, y); }
+    g.lineTo(W, y0 + depth); g.closePath(); g.fill(); g.restore(); }
   function pen(g, x, y) { g.save(); g.translate(x, y); g.rotate(-0.6); g.fillStyle = 'rgba(0,0,0,0.18)'; g.fillRect(14, 10, 30, 300); g.fillStyle = '#1d3557'; g.fillRect(-9, 40, 18, 260);
     g.fillStyle = '#c9a227'; g.fillRect(-9, 40, 18, 22); g.fillStyle = INK; g.beginPath(); g.moveTo(-9, 40); g.lineTo(9, 40); g.lineTo(0, 0); g.fill(); g.restore(); }
   function wash(g, r, col, a) { if (a <= 0) return; g.save(); g.globalAlpha = a * 0.55; g.fillStyle = col; g.beginPath();
@@ -199,5 +259,5 @@ const NB = (() => {
   function note(g, t, x, y, o = {}) { const a = o.a ?? 1; if (a <= 0) return; g.save(); g.globalAlpha = a; g.fillStyle = o.col ?? INK; g.font = `${o.size ?? 52}px ${o.font ?? 'Chilanka, Hand'}`; g.textAlign = o.align ?? 'center'; g.fillText(t, x, y); g.restore(); }
   function stamp(g, t, x, y, a, o = {}) { if (a <= 0) return; g.save(); g.translate(x, y); g.rotate(o.rot ?? -0.12); const s = 1.4 - 0.4 * a; g.scale(s, s); g.globalAlpha = a;
     g.font = `800 ${o.size ?? 64}px Baloo, Inter`; const w = g.measureText(t).width + 60; g.strokeStyle = o.col ?? RED; g.lineWidth = 8; g.strokeRect(-w / 2, -55, w, 100); g.fillStyle = o.col ?? RED; g.textAlign = 'center'; g.fillText(t, 0, 22); g.restore(); }
-  return { INK, RED, GOLD, BLUE, GREEN, BROWN, PAPER, ease, cl, paper, sketch, pen, wash, blob, glow, note, stamp };
+  return { INK, RED, GOLD, BLUE, GREEN, BROWN, PAPER, STYLES, use, get style() { return ST; }, ease, cl, paper, sketch, pen, tool, wash, blob, glow, note, stamp, cutout, label, clipping, halftone, zigzag, mist, ridge };
 })();
