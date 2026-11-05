@@ -1,0 +1,12 @@
+NB.use('inkwash'); const c = makeCanvas(), g = c.getContext('2d');
+const s = NB.sketch(35);
+s.figure(330, 1320, 300, 'sit'); s.figure(700, 1320, 200, 'stand');
+s.rect(130, 1180, 70, 100, { w: 7 }); s.arc(165, 1180, 35, Math.PI, 2 * Math.PI, { w: 6 });
+const A = s.mark();
+s.circle(540, 800, 280, { w: 8 }, 120); s.poly([[420, 905], [370, 1010], [480, 915]], { w: 8 });
+const B = s.mark();
+window.renderFrame = function (t) { NB.paper(g); NB.glow(g, 165, 1230, 300, 'rgba(255,200,110,0.55)', 1);
+  s.draw(g, t, { parts: [[0, A, 0, DURATION * 0.35], [A, B, DURATION * 0.35, DURATION * 0.55]] });
+  NB.note(g, 'കള്ള കോതായി!', 540, 825, { a: NB.cl((t - DURATION * 0.52) / 0.2), col: '#b5281f', size: 78 });
+  NB.stamp(g, 'തെളിവില്ല', 780, 1130, NB.cl((t - DURATION * 0.72) / 0.25), { col: '#b5281f', size: 60 });
+};

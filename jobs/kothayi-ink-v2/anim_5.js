@@ -1,0 +1,12 @@
+NB.use('inkwash'); const c = makeCanvas(), g = c.getContext('2d');
+const s = NB.sketch(65);
+s.figure(330, 1300, 250, 'sit'); s.figure(620, 1300, 170, 'stand'); s.figure(720, 1300, 150, 'stand');
+s.rect(870, 1230, 110, 70, { w: 7 }); s.curve([[870, 1230], [925, 1195], [980, 1230]], { w: 6 });
+const A = s.mark();
+s.circle(760, 760, 200, { w: 8 }, 95); s.poly([[700, 845], [650, 930], [760, 852]], { w: 8 });
+const B = s.mark();
+window.renderFrame = function (t) { NB.paper(g); NB.blob(g, 250, 640, 60, 60, '#d9d2c3', 1.4); NB.ridge(g, 1060, 130, 'rgba(60,60,60,0.22)', 1, 4); NB.mist(g, 1040, 150, 0.8);
+  NB.glow(g, 925, 1265, 160, 'rgba(240,190,80,0.6)', 1);
+  s.draw(g, t, { parts: [[0, A, 0, DURATION * 0.35], [A, B, DURATION * 0.35, DURATION * 0.55]] });
+  const q = NB.cl((t - DURATION * 0.6) / 0.25); for (let i = 0; i < 3; i++) NB.blob(g, 690 + i * 70, 760, 22 * q, 22 * q, '#1b1b1b', q * 1.6);
+};
