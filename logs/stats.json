@@ -3,62 +3,24 @@
     "username": "unexplored.truths",
     "followers_count": 125,
     "follows_count": 277,
-    "media_count": 34,
+    "media_count": 32,
     "id": "28876323268696257"
   },
   "reels": [
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 28,
+      "like_count": 31,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 1663,
+      "views": 1819,
       "reach": 1394,
-      "saved": 6,
-      "shares": 4,
-      "total_interactions": 38,
+      "saved": 9,
+      "shares": 46,
+      "total_interactions": 86,
       "ig_reels_avg_watch_time": 15729,
       "ig_reels_video_view_total_time": 21848683,
-      "extra_errors": {
-        "follows": "The Media Insights API does not support the follows metric for this media product type.",
-        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
-      }
-    },
-    {
-      "id": "18123354127985550",
-      "timestamp": "2026-11-05T12:58:28+0000",
-      "like_count": 7,
-      "comments_count": 0,
-      "permalink": "https://www.instagram.com/reel/DfXFc2KkrY5/",
-      "title": "കേരള ഭക്ഷണം · ജില്ലകൾ · തലശ്ശേരി ബിരിയാണി · കുഴിമന്തി",
-      "views": 148,
-      "reach": 124,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 8,
-      "ig_reels_avg_watch_time": 11386,
-      "ig_reels_video_view_total_time": 1491670,
-      "extra_errors": {
-        "follows": "The Media Insights API does not support the follows metric for this media product type.",
-        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
-      }
-    },
-    {
-      "id": "17926730490439532",
-      "timestamp": "2026-11-05T01:39:18+0000",
-      "like_count": 6,
-      "comments_count": 0,
-      "permalink": "https://www.instagram.com/reel/DfV3uJkiu1b/",
-      "title": "എമണ്ടൻ · ചെമ്പകരാമൻ പിള്ള · എംഡൻ · ജയ് ഹിന്ദ്",
-      "views": 134,
-      "reach": 120,
-      "saved": 0,
-      "shares": 0,
-      "total_interactions": 6,
-      "ig_reels_avg_watch_time": 6509,
-      "ig_reels_video_view_total_time": 807140,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -572,6 +534,44 @@
       "total_interactions": 54,
       "ig_reels_avg_watch_time": 13303,
       "ig_reels_video_view_total_time": 18664958,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
+    {
+      "id": "18111821228132855",
+      "timestamp": "2026-10-25T13:08:34+0000",
+      "like_count": 27,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/De6x2uhjspY/",
+      "title": "A town at India's tip, swallowed by the sea in one night. 🌊",
+      "views": 1293,
+      "reach": 1145,
+      "saved": 3,
+      "shares": 5,
+      "total_interactions": 35,
+      "ig_reels_avg_watch_time": 10424,
+      "ig_reels_video_view_total_time": 12091912,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
+    {
+      "id": "18129497707843091",
+      "timestamp": "2026-10-25T04:59:36+0000",
+      "like_count": 47,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/De555_wEjpt/",
+      "title": "Stone Age art, right here in Kerala. 🪨✨",
+      "views": 1668,
+      "reach": 1275,
+      "saved": 8,
+      "shares": 11,
+      "total_interactions": 67,
+      "ig_reels_avg_watch_time": 15938,
+      "ig_reels_video_view_total_time": 21166503,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
