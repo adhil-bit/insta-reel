@@ -1,7 +1,7 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 125,
+    "followers_count": 126,
     "follows_count": 277,
     "media_count": 32,
     "id": "28876323268696257"
@@ -10,17 +10,17 @@
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 31,
+      "like_count": 45,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 1819,
-      "reach": 1394,
-      "saved": 9,
-      "shares": 46,
-      "total_interactions": 86,
-      "ig_reels_avg_watch_time": 15729,
-      "ig_reels_video_view_total_time": 21848683,
+      "views": 2624,
+      "reach": 2063,
+      "saved": 13,
+      "shares": 151,
+      "total_interactions": 209,
+      "ig_reels_avg_watch_time": 16214,
+      "ig_reels_video_view_total_time": 33433824,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -34,12 +34,12 @@
       "permalink": "https://www.instagram.com/reel/DfUsD99mbxP/",
       "title": "ഇട്ടിക്കോര · ജെസ്യൂട്ട് · കേരള ഗണിതം",
       "views": 122,
-      "reach": 107,
+      "reach": 108,
       "saved": 1,
       "shares": 0,
       "total_interactions": 2,
-      "ig_reels_avg_watch_time": 5212,
-      "ig_reels_video_view_total_time": 578550,
+      "ig_reels_avg_watch_time": 5197,
+      "ig_reels_video_view_total_time": 582125,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -57,8 +57,8 @@
       "saved": 4,
       "shares": 1,
       "total_interactions": 21,
-      "ig_reels_avg_watch_time": 10532,
-      "ig_reels_video_view_total_time": 11627958,
+      "ig_reels_avg_watch_time": 10526,
+      "ig_reels_video_view_total_time": 11631380,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -76,8 +76,8 @@
       "saved": 1,
       "shares": 0,
       "total_interactions": 24,
-      "ig_reels_avg_watch_time": 13262,
-      "ig_reels_video_view_total_time": 14773973,
+      "ig_reels_avg_watch_time": 13251,
+      "ig_reels_video_view_total_time": 14775918,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -95,8 +95,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 6967,
-      "ig_reels_video_view_total_time": 947533,
+      "ig_reels_avg_watch_time": 6942,
+      "ig_reels_video_view_total_time": 951166,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -318,13 +318,13 @@
       "comments_count": 5,
       "permalink": "https://www.instagram.com/reel/DfGa0yyiq4P/",
       "title": "കളരിപ്പയറ്റ് · ബോധിധർമ്മൻ · കുങ്ഫു · ഏഴാം അറിവ്",
-      "views": 2048,
-      "reach": 1708,
+      "views": 2050,
+      "reach": 1710,
       "saved": 17,
       "shares": 5,
       "total_interactions": 101,
-      "ig_reels_avg_watch_time": 17371,
-      "ig_reels_video_view_total_time": 30261128,
+      "ig_reels_avg_watch_time": 17353,
+      "ig_reels_video_view_total_time": 30265131,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -508,13 +508,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De-wJSmDKCO/",
       "title": "Long before the movie, KGF had a real story. ⛏️✨",
-      "views": 2156,
-      "reach": 1811,
+      "views": 2157,
+      "reach": 1813,
       "saved": 3,
       "shares": 3,
       "total_interactions": 42,
-      "ig_reels_avg_watch_time": 16633,
-      "ig_reels_video_view_total_time": 30656223,
+      "ig_reels_avg_watch_time": 16625,
+      "ig_reels_video_view_total_time": 30657375,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -546,7 +546,7 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De6x2uhjspY/",
       "title": "A town at India's tip, swallowed by the sea in one night. 🌊",
-      "views": 1293,
+      "views": 1294,
       "reach": 1145,
       "saved": 3,
       "shares": 5,
@@ -565,13 +565,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De555_wEjpt/",
       "title": "Stone Age art, right here in Kerala. 🪨✨",
-      "views": 1668,
-      "reach": 1275,
+      "views": 1669,
+      "reach": 1277,
       "saved": 8,
       "shares": 11,
       "total_interactions": 67,
-      "ig_reels_avg_watch_time": 15938,
-      "ig_reels_video_view_total_time": 21166503,
+      "ig_reels_avg_watch_time": 15927,
+      "ig_reels_video_view_total_time": 21167434,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
