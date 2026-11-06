@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 05 Nov, 11:37 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 06 Nov, 07:08 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -9,6 +9,7 @@ _Updated Thu 05 Nov, 11:37 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Kalla Kothayi's treasure: the legend of Kothayimukku, Kannur | 2026-11-06T01:38 |
 | 14 districts, 14 flavours: Kerala's famous food by district | 2026-11-05T12:58 |
 | Bigg Boss got its name from a 1949 novel | 2026-11-03T14:38 |
 | Emden and Chempakaraman Pillai: the word 'emandan' and a forgotten revolutionary | 2026-11-05T01:39 |
@@ -18,4 +19,3 @@ _Updated Thu 05 Nov, 11:37 PM IST. Times are approximate: each reel posts within
 | Arakkal: Kerala's only Muslim royal family, often ruled by queens | 2026-11-02T10:38 |
 | Lake Nyos: the lake that breathed out death | 2026-11-02T00:40 |
 | The story behind the 'Photography Prohibited' board | 2026-11-03T01:39 |
-| 'Kunnamkulam made': how a town got the name | 2026-11-01T13:52 |
