@@ -158,11 +158,11 @@ Rules: frame 1 must already show the idea (ghost sketch or a photo cut-out at �
 |---|---|---|---|
 | Fri 6 · 7:07 AM | main | Kalla Kothayi's treasure (`kothayi-ink-v2`) | Ink-wash ✅ |
 | Fri 6 · 1:07 PM | page 2 | Murickan, the Kayal King | Whiteboard (to build Fri morning) |
-| Fri 6 · 8:07 PM | main | Beypore Part 2 (`beypore-2-collage`) | Retro collage ✅ |
-| Sat 7 · 10:07 AM | main | Kayamkulam Kochunni | Cartoon |
+| Fri 6 · 8:07 PM | main | Kalari fire: tradition or show? (`kalari-fire`) | Cartoon + 3D map ✅ |
+| Sat 7 · 10:07 AM | main | Beypore Part 2 (`beypore-2-collage`) | Retro collage ✅ |
 | Sat 7 · 1:07 PM | page 2 | Kolumban & the Idukki dam | Ink-wash |
 | Sat 7 · 8:07 PM | main | The 1341 flood that created Kochi | Manim (animated map) |
-| Sun 8 · 10:07 AM | main | Flood of '99 (1924) | Notebook |
+| Sun 8 · 10:07 AM | main | Kayamkulam Kochunni | Cartoon (CT fighter rig) |
 | Sun 8 · 1:07 PM | page 2 | Keeleri Kunhikannan (circus) | Cartoon |
 | Sun 8 · 8:07 PM | main | Who brought Kochi's Chinese nets? | Ink-wash |
 | Mon 9 · 7:07 AM | main | Mullaperiyar's 999-year lease | Whiteboard |
