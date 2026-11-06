@@ -1,0 +1,21 @@
+NB.use('whiteboard'); const c = makeCanvas(), g = c.getContext('2d'); const AC = NB.style.accent, RD = '#d23b2f';
+const s = NB.sketch(33);
+s.curve([[800, 580], [770, 700], [790, 820], [760, 960], [780, 1100], [750, 1240], [770, 1380]], { w: 8 });
+s.hatch(820, 640, 220, 700, 26, { col: '#6c8f4e' });
+for (let i = 0; i < 6; i++) { const y = 700 + i * 110, x0 = 90 + (i % 2) * 60; s.curve([[x0, y], [x0 + 40, y - 18], [x0 + 80, y], [x0 + 120, y - 18], [x0 + 160, y]], { w: 4, col: AC }); s.curve([[x0 + 330, y + 40], [x0 + 370, y + 22], [x0 + 410, y + 40], [x0 + 450, y + 22], [x0 + 490, y + 40]], { w: 4, col: AC }); }
+s.curve([[770, 1030], [728, 960], [738, 920], [770, 905], [802, 920], [812, 960], [770, 1030]], { w: 7, col: RD }); s.circle(770, 950, 15, { w: 5, col: RD });
+s.text('KOZHIKODE', 905, 1110, { size: 54, font: 'Hand', col: RD });
+const A = s.mark();
+s.text('ARABIA', 170, 640, { size: 56, font: 'Hand' }); s.arrow(110, 670, 260, 670, { w: 5 });
+const B = s.mark();
+const d = NB.sketch(8);
+d.curve([[-150, 0], [-90, 50], [90, 50], [160, -10]], { w: 7 }); d.line(-150, 0, 160, -10, { w: 6 });
+d.line(0, 0, 0, -230, { w: 6 }); d.poly([[0, -230], [130, -40], [-110, -30], [0, -230]], { w: 6 });
+const DA = d.mark();
+window.renderFrame = function (t) { NB.paper(g); const D = DURATION;
+  s.draw(g, t, { parts: [[0, A, 0, D * 0.45], [A, B, D * 0.1, D * 0.35]] });
+  const x = 120 + (560 - 120) * NB.ease(NB.cl(t / (D * 0.9))), y = 1000 + Math.sin(t * 2.4) * 10;
+  g.save(); g.translate(x, y); g.rotate(Math.sin(t * 2.4) * 0.04); NB.wash(g, [[-110, -30], [0, -230], [130, -40]], '#f2e6c9', NB.cl(t / 0.6));
+  d.draw(g, t, { parts: [[0, DA, 0, D * 0.4]], pen: false }); g.restore();
+  NB.stamp(g, 'AD 600s', 360, 1290, NB.cl((t - D * 0.55) / 0.25), { col: AC, size: 60 });
+};
