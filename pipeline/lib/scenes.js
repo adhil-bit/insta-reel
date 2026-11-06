@@ -261,3 +261,73 @@ const NB = (() => {
     g.font = `800 ${o.size ?? 64}px Baloo, Inter`; const w = g.measureText(t).width + 60; g.strokeStyle = o.col ?? RED; g.lineWidth = 8; g.strokeRect(-w / 2, -55, w, 100); g.fillStyle = o.col ?? RED; g.textAlign = 'center'; g.fillText(t, 0, 22); g.restore(); }
   return { INK, RED, GOLD, BLUE, GREEN, BROWN, PAPER, STYLES, use, get style() { return ST; }, ease, cl, paper, sketch, pen, tool, wash, blob, glow, note, stamp, cutout, label, clipping, halftone, zigzag, mist, ridge };
 })();
+
+// ---------------------------------------------------------------------------------------------
+// CT: "animation base" cartoon kit: flat painted characters on a jointed rig, keyframed poses.
+//   CT.fighter(g, x, groundY, scale, CT.at(keys, t), { dir: 1, weapon: 'sword', shield: true })
+//   keys = [[time, 'stance'], [time, 'strike'], ...] (poses interpolate with easing)
+// ---------------------------------------------------------------------------------------------
+const CT = (() => {
+  const D = Math.PI / 180, SKIN = '#c98a5a', SKIN2 = '#a8693f', RED = '#b52a2a', BLADE = '#dfe3ea', GOLDC = '#d9a23a', HAIR = '#1c1410';
+  const POSES = {
+    stance:   { torso: 12, rsh: 110, rel: 40, lsh: 35, lel: 70, lhip: 35, lknee: -35, rhip: -30, rknee: 5, lift: 0 },
+    elephant: { torso: 40, rsh: 90, rel: 60, lsh: 60, lel: 80, lhip: 55, lknee: -75, rhip: -40, rknee: 20, lift: 0 },
+    raise:    { torso: -5, rsh: 200, rel: 20, lsh: 80, lel: 30, lhip: 30, lknee: -30, rhip: -30, rknee: 0, lift: 0 },
+    strike:   { torso: 28, rsh: 110, rel: -5, lsh: 80, lel: 20, lhip: 55, lknee: -55, rhip: -45, rknee: 5, lift: 0 },
+    block:    { torso: -8, rsh: -20, rel: 60, lsh: 130, lel: 20, lhip: 28, lknee: -28, rhip: -28, rknee: 8, lift: 0 },
+    leap:     { torso: 30, rsh: 160, rel: 10, lsh: -40, lel: -20, lhip: 105, lknee: -120, rhip: 30, rknee: -110, lift: 150 },
+    salute:   { torso: 0, rsh: 150, rel: -125, lsh: 150, lel: -125, lhip: 8, lknee: 0, rhip: -8, rknee: 0, lift: 0 },
+    bow:      { torso: 78, rsh: 15, rel: 0, lsh: 5, lel: 0, lhip: 30, lknee: -45, rhip: -15, rknee: 10, lift: 0 },
+    stand:    { torso: 0, rsh: 10, rel: 10, lsh: -10, lel: 10, lhip: 6, lknee: 0, rhip: -6, rknee: 0, lift: 0 },
+  };
+  const ease = u => u < .5 ? 2 * u * u : 1 - Math.pow(-2 * u + 2, 2) / 2;
+  function mix(a, b, u) { const o = {}; for (const k in a) o[k] = a[k] + (b[k] - a[k]) * u; return o; }
+  function at(keys, t) {                                   // keys: [[time, poseName or pose], ...]
+    const P = k => typeof k === 'string' ? POSES[k] : k;
+    if (t <= keys[0][0]) return P(keys[0][1]); for (let i = 1; i < keys.length; i++) if (t <= keys[i][0]) { const [t0, a] = keys[i - 1], [t1, b] = keys[i]; return mix(P(a), P(b), ease((t - t0) / (t1 - t0))); }
+    return P(keys[keys.length - 1][1]);
+  }
+  function loop(keys, t) { const T = keys[keys.length - 1][0]; return at(keys, ((t % T) + T) % T); }
+  function fighter(g, x, groundY, s, P, o = {}) {
+    const dir = o.dir ?? 1, v = (a, L) => [Math.sin(a * D) * L * dir, Math.cos(a * D) * L];
+    const add = (p, q) => [p[0] + q[0], p[1] + q[1]];
+    const neck = [Math.sin(P.torso * D) * 115 * s * dir, -Math.cos(P.torso * D) * 115 * s], head = add(neck, [Math.sin(P.torso * D) * 34 * s * dir, -Math.cos(P.torso * D) * 34 * s]);
+    const L = { kn: v(P.lhip, 92 * s) }; L.ft = add(L.kn, v(P.lhip + P.lknee, 92 * s));
+    const R = { kn: v(P.rhip, 92 * s) }; R.ft = add(R.kn, v(P.rhip + P.rknee, 92 * s));
+    const sh = add(neck, [0, 10 * s]), rel = add(sh, v(P.rsh, 68 * s)), rh = add(rel, v(P.rsh + P.rel, 62 * s)), lel = add(sh, v(P.lsh, 68 * s)), lh = add(lel, v(P.lsh + P.lel, 62 * s));
+    const hipY = groundY - Math.max(L.ft[1], R.ft[1], 0) - (P.lift || 0) * s, T = p => [x + p[0], hipY + p[1]];
+    const lift = (P.lift || 0) / 150; g.save();
+    g.fillStyle = `rgba(0,0,0,${0.28 * (1 - 0.6 * lift)})`; g.beginPath(); g.ellipse(x, groundY + 6, 80 * s * (1 - 0.4 * lift), 14 * s, 0, 0, 6.283); g.fill();
+    const limb = (pts, w, col) => { g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.lineJoin = 'round'; g.beginPath(); g.moveTo(...T(pts[0])); pts.slice(1).forEach(p => g.lineTo(...T(p))); g.stroke(); };
+    limb([[0, 0], R.kn, R.ft], 26 * s, SKIN2); limb([sh, lel, lh], 21 * s, SKIN2);                              // far limbs
+    if (o.shield !== false && o.weapon !== 'none') { const [px, py] = T(lh); g.fillStyle = '#7a4a22'; g.beginPath(); g.arc(px, py, 38 * s, 0, 6.283); g.fill(); g.strokeStyle = GOLDC; g.lineWidth = 6 * s; g.stroke(); g.fillStyle = GOLDC; g.beginPath(); g.arc(px, py, 8 * s, 0, 6.283); g.fill(); }
+    limb([[0, 0], neck], 50 * s, SKIN);                                                                           // torso
+    g.fillStyle = RED; g.save(); g.translate(...T([0, 0])); g.rotate(P.torso * D * dir * 0.3); g.beginPath(); g.ellipse(0, 4 * s, 34 * s, 22 * s, 0, 0, 6.283); g.fill(); g.restore();   // kacha
+    const [hx, hy] = T(head); g.fillStyle = HAIR; g.beginPath(); g.arc(hx - 18 * s * dir, hy - 8 * s, 15 * s, 0, 6.283); g.fill();
+    g.fillStyle = SKIN; g.beginPath(); g.arc(hx, hy, 29 * s, 0, 6.283); g.fill(); g.fillStyle = HAIR; g.beginPath(); g.arc(hx, hy - 6 * s, 29 * s, Math.PI * 1.05, Math.PI * 1.95); g.fill();
+    g.strokeStyle = RED; g.lineWidth = 7 * s; g.beginPath(); g.arc(hx, hy - 4 * s, 29 * s, Math.PI * 1.1, Math.PI * 1.9); g.stroke();
+    g.fillStyle = HAIR; g.beginPath(); g.arc(hx + 13 * s * dir, hy + 2 * s, 3.5 * s, 0, 6.283); g.fill();          // eye
+    limb([[0, 0], L.kn, L.ft], 27 * s, SKIN); limb([sh, rel, rh], 22 * s, SKIN);                                  // near limbs
+    const wpn = o.weapon ?? 'sword', [rx, ry] = T(rh), fa = (P.rsh + P.rel) * D;
+    if (wpn === 'sword') { const d = [Math.sin(fa) * dir, Math.cos(fa)]; g.strokeStyle = BLADE; g.lineWidth = 8 * s; g.lineCap = 'round'; g.beginPath(); g.moveTo(rx, ry); g.lineTo(rx + d[0] * 140 * s, ry + d[1] * 140 * s); g.stroke();
+      g.strokeStyle = GOLDC; g.lineWidth = 9 * s; g.beginPath(); g.moveTo(rx - d[1] * 16 * s, ry + d[0] * 16 * s); g.lineTo(rx + d[1] * 16 * s, ry - d[0] * 16 * s); g.stroke(); }
+    else if (wpn === 'stick') { const d = [Math.sin(fa) * dir, Math.cos(fa)]; g.strokeStyle = '#8a5a2a'; g.lineWidth = 10 * s; g.beginPath(); g.moveTo(rx - d[0] * 90 * s, ry - d[1] * 90 * s); g.lineTo(rx + d[0] * 130 * s, ry + d[1] * 130 * s); g.stroke(); }
+    else if (wpn === 'urumi') { const d = [Math.sin(fa) * dir, Math.cos(fa)], n = [-d[1], d[0]]; g.strokeStyle = BLADE; g.lineWidth = 4 * s; g.beginPath(); g.moveTo(rx, ry);
+      for (let i = 1; i <= 30; i++) { const u = i / 30, w = Math.sin(u * 12 + (o.t || 0) * 9) * 26 * s * u; g.lineTo(rx + d[0] * 230 * s * u + n[0] * w, ry + d[1] * 230 * s * u + n[1] * w); } g.stroke(); }
+    else if (wpn === 'torch') { const d = [Math.sin(fa) * dir, Math.cos(fa)]; g.strokeStyle = '#6a4220'; g.lineWidth = 9 * s; g.beginPath(); g.moveTo(rx, ry); g.lineTo(rx + d[0] * 110 * s, ry + d[1] * 110 * s); g.stroke(); flame(g, rx + d[0] * 120 * s, ry + d[1] * 120 * s, 22 * s, o.t || 0, 1); }
+    g.restore(); return { hip: T([0, 0]), head: T(head), hand: T(rh), shieldHand: T(lh) };
+  }
+  function flame(g, x, y, r, t, a = 1, seed = 0) { if (a <= 0) return; g.save(); g.globalAlpha = a;
+    const f = 0.85 + 0.15 * Math.sin(t * 17 + seed * 3.1) + 0.08 * Math.sin(t * 29 + seed);
+    const gl = g.createRadialGradient(x, y, 2, x, y, r * 3); gl.addColorStop(0, 'rgba(255,190,80,0.45)'); gl.addColorStop(1, 'rgba(255,120,30,0)'); g.fillStyle = gl; g.fillRect(x - r * 3, y - r * 3, r * 6, r * 6);
+    for (const [col, k] of [['#e8541e', 1], ['#ffb02e', 0.68], ['#fff1b0', 0.36]]) { const h = r * 2.6 * k * f, w = r * k; g.fillStyle = col; g.beginPath(); g.moveTo(x - w, y); g.quadraticCurveTo(x - w, y - h * 0.5, x + Math.sin(t * 7 + seed) * w * 0.3, y - h); g.quadraticCurveTo(x + w, y - h * 0.5, x + w, y); g.arc(x, y, w, 0, Math.PI); g.fill(); }
+    g.restore(); }
+  function fireRing(g, cx, cy, rx, ry, t, half, a = 1) {  // half: 'back' | 'front' | 'all'
+    if (a <= 0) return; g.save(); g.strokeStyle = '#3a2a20'; g.lineWidth = 12; g.beginPath(); g.ellipse(cx, cy, rx, ry, 0, half === 'front' ? 0 : Math.PI, half === 'back' ? 2 * Math.PI : Math.PI * (half === 'front' ? 1 : 3)); g.stroke(); g.restore();
+    for (let i = 0; i < 28; i++) { const ang = i / 28 * 2 * Math.PI, front = Math.sin(ang) > 0; if ((half === 'back' && front) || (half === 'front' && !front)) continue;
+      flame(g, cx + Math.cos(ang) * rx, cy + Math.sin(ang) * ry, 20 + 6 * Math.sin(i * 1.7), t, a, i); } }
+  function sky(g, top, mid, bottom, y1 = H) { const gr = g.createLinearGradient(0, 0, 0, y1); gr.addColorStop(0, top); gr.addColorStop(0.6, mid); gr.addColorStop(1, bottom); g.fillStyle = gr; g.fillRect(0, 0, W, y1); }
+  function spark(g, x, y, t, a = 1) { if (a <= 0) return; g.save(); g.globalAlpha = a; g.strokeStyle = '#fff3c0'; g.lineWidth = 5; for (let i = 0; i < 10; i++) { const ang = i * 0.63 + t * 4, r1 = 14, r2 = 46 + 18 * Math.sin(i * 2.3 + t * 30);
+      g.beginPath(); g.moveTo(x + Math.cos(ang) * r1, y + Math.sin(ang) * r1); g.lineTo(x + Math.cos(ang) * r2, y + Math.sin(ang) * r2); g.stroke(); } g.restore(); }
+  return { POSES, at, loop, mix, fighter, flame, fireRing, sky, spark };
+})();
