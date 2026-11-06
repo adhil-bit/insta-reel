@@ -1,7 +1,40 @@
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 675, in <module>
-    render_job(Path(args.folder))
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 231, in render_job
-    topic = script.pop("topic")
-            ^^^^^^^^^^
-AttributeError: 'NoneType' object has no attribute 'pop'
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
+    "visual": script["cover_visual"],
+              ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cover_visual'
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
+    "visual": script["cover_visual"],
+              ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cover_visual'
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
+    return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
+    "visual": script["cover_visual"],
+              ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cover_visual'
+Rendering job mananchira: Mananchira: the pond a king dug in the heart of Kozhikode
+!! mananchira failed: 'cover_visual'
+Rendering job muniyara-dolmens: Muniyara: sages' homes or 2,000-year-old graves?
+!! muniyara-dolmens failed: 'cover_visual'
+Rendering job overbury-folly: Overbury's Folly: the seaside spot named 'foolishness'
+!! overbury-folly failed: 'cover_visual'
+Rendered 0 job(s). Failed: ['mananchira', 'muniyara-dolmens', 'overbury-folly']
