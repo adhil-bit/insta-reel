@@ -1,0 +1,110 @@
+{
+  "topic": {
+    "title": "Porotta-beef and Kozhikode: is there a link?",
+    "category": "CULTURE",
+    "angle": "Kerala's favourite combo traced back to the sea: Arab traders, Malabar's ports and Kozhikode",
+    "key_facts": [
+      "Arab merchants traded with Kozhikode as early as the 7th century; its port was the gateway for Arabs, Persians and Chinese (Wikipedia: Kozhikode)",
+      "Kozhikode held a superior position along the medieval Kerala coast (Wikipedia: Kozhikode)",
+      "Culinary anthropologist Kurush Dalal: Malabar parotta likely came with Arab traders; the layering method is foreign to India and wheat is not widely grown in Kerala; no conclusive evidence (Wikipedia: South Indian parotta; The Hindu)",
+      "Porotta was once confined to Malabar; now found from Kanhangad to Kaliyikkavila (The Hindu, Jan 2024)",
+      "As of 2022 parotta was the most popular dish ordered on Swiggy in Kerala (Wikipedia: South Indian parotta)",
+      "Parotta, particularly when paired with beef, is a cultural symbol of Kerala (Wikipedia)"
+    ],
+    "sources": [
+      "Wikipedia: South Indian parotta; Kozhikode",
+      "The Hindu: Kerala's signature dish, the Porotta (2024)"
+    ]
+  },
+  "category": "CULTURE",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "headline": [
+    "POROTTA-BEEF",
+    "& KOZHIKODE?"
+  ],
+  "accent_words": [
+    "KOZHIKODE?"
+  ],
+  "thumbnail_ml": "പൊറോട്ട-ബീഫും കോഴിക്കോടും: ട്രോൾ മാത്രമോ?",
+  "thumbnail_accent": [
+    "ട്രോൾ"
+  ],
+  "hook_voiceover": "പൊറോട്ട-ബീഫ്! ഏറ്റവും കൂടുതൽ ട്രോൾ മെറ്റീരിയൽ കോഴിക്കോട്ടുകാർക്കാണ്! പക്ഷേ ശരിക്കും എന്തെങ്കിലും ബന്ധമുണ്ടോ?",
+  "cover_visual": "Flat motion-design: glossy porotta and beef bowl on teal, red Kozhikode pin, TROLL badge",
+  "scenes": [
+    {
+      "voiceover": "ഈയിടെ ഒരു ട്രെയിലറിൽ ബീഫ് മാത്രം കണ്ടപ്പോൾ മലയാളികൾ ഒന്നേ ചോദിച്ചുള്ളൂ: പൊറോട്ട എവിടെ? കാരണം നമുക്ക് ഇത് രണ്ടല്ല, ഒന്നാണ്!",
+      "caption": "BEEF… WITHOUT POROTTA?",
+      "highlight": "POROTTA?",
+      "kicker": "THE INTERNET ASKED",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഉത്തരം കടലിലാണ്. ഏഴാം നൂറ്റാണ്ട് മുതൽ അറബ് കപ്പലുകൾ വന്നിറങ്ങിയ തുറമുഖം, കോഴിക്കോട്.",
+      "caption": "KOZHIKODE PORT · SINCE THE 600s",
+      "highlight": "KOZHIKODE",
+      "kicker": "ARAB SHIPS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പാളിയാക്കുന്ന ഈ രീതി പുറത്തുനിന്ന് വന്നതെന്ന് ഭക്ഷണചരിത്രകാരൻ കുരുഷ് ദലാൽ. കേരളത്തിൽ ഗോതമ്പ് കൃഷിയുമില്ല.",
+      "caption": "THE LAYERS CAME FROM OUTSIDE",
+      "highlight": "LAYERS",
+      "kicker": "KURUSH DALAL, FOOD HISTORIAN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അറബ് വ്യാപാരികൾ കൊണ്ടുവന്ന റൊട്ടി മലബാറിൽ പൊറോട്ടയായെന്നാണ് ശക്തമായ തിയറി. അന്ന് മലബാറിലെ ഏറ്റവും വലിയ തുറമുഖം കോഴിക്കോട്.",
+      "caption": "BORN ON THE MALABAR COAST?",
+      "highlight": "MALABAR",
+      "kicker": "STRONGEST THEORY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരുകാലത്ത് മലബാറിൽ മാത്രം. ഇന്ന് കാഞ്ഞങ്ങാട് മുതൽ കളിയിക്കാവിള വരെ. 2022-ൽ കേരളം സ്വിഗ്ഗിയിൽ ഏറ്റവും കൂടുതൽ ഓർഡർ ചെയ്തത് പൊറോട്ട!",
+      "caption": "#1 ORDER IN KERALA · 2022",
+      "highlight": "#1",
+      "kicker": "KANHANGAD TO KALIYIKKAVILA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ബീഫ് കൂട്ട് എവിടെ തുടങ്ങിയെന്ന് രേഖയില്ല. പക്ഷേ ഒന്നുറപ്പ്: പൊറോട്ട ഇല്ലാത്ത ബീഫ് മലയാളിക്ക് അപൂർണം! കോഴിക്കോട്ടുകാരേ, ശരിയാണോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "BEEF WITHOUT POROTTA = INCOMPLETE",
+      "highlight": "INCOMPLETE",
+      "kicker": "KOZHIKODE, TELL US",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ബീഫ് മാത്രം? പൊറോട്ട എവിടെ? 😂 പൊറോട്ട-ബീഫ് ട്രോൾ ഏറ്റവും കൂടുതൽ കോഴിക്കോട്ടുകാർക്ക്. പക്ഷേ ശരിക്കും ബന്ധമുണ്ടോ? 🫓🚢\nPorotta-beef: Kozhikode gets trolled the most. But is there a real link?\n\nഏഴാം നൂറ്റാണ്ട് മുതൽ അറബ് കപ്പലുകൾ വന്ന കോഴിക്കോട് തുറമുഖം. മാവ് പാളിയാക്കുന്ന രീതി പുറത്തുനിന്ന് വന്നതാണെന്ന് ഭക്ഷണചരിത്രകാരൻ കുരുഷ് ദലാൽ. ഒരുകാലത്ത് മലബാറിൽ മാത്രം, ഇന്ന് കേരളം മുഴുവൻ.\nArab ships reached Kozhikode from the 600s. Food historian Kurush Dalal says the layering came from West Asia. Once a Malabar bread, now Kerala's #1 order. Where the beef combo began, no one recorded.\n\nകോഴിക്കോട്ടുകാരേ, ശരിയാണോ? കമന്റ് ചെയ്യൂ.\nKozhikode, is this right? Tell us below.\n\nSources: Wikipedia (South Indian parotta; Kozhikode), The Hindu (2024)\nTag your porotta-beef partner. 📩",
+  "search_ml": [
+    "പൊറോട്ട",
+    "പൊറോട്ട ബീഫ്",
+    "കോഴിക്കോട്",
+    "മലബാർ പൊറോട്ട"
+  ],
+  "hashtags": [
+    "Porotta",
+    "PorottaBeef",
+    "Kozhikode",
+    "MalabarParotta",
+    "KeralaFood"
+  ],
+  "fact_check": [
+    "Origin stated as a theory, not fact (Dalal: no conclusive evidence)",
+    "No claim that porotta was invented in Kozhikode; only the trade-route link",
+    "Beef pairing origin explicitly 'no record'; no political angle",
+    "Trailer troll referenced without naming the film; joke is about the food only"
+  ],
+  "reworked_from": "porotta-kozhikode-v2"
+}
