@@ -1,8 +1,8 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 122,
-    "follows_count": 276,
+    "followers_count": 125,
+    "follows_count": 277,
     "media_count": 34,
     "id": "28876323268696257"
   },
@@ -10,17 +10,17 @@
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 1,
+      "like_count": 28,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 181,
-      "reach": 141,
-      "saved": 0,
-      "shares": 2,
-      "total_interactions": 3,
-      "ig_reels_avg_watch_time": 10175,
-      "ig_reels_video_view_total_time": 1434719,
+      "views": 1663,
+      "reach": 1394,
+      "saved": 6,
+      "shares": 4,
+      "total_interactions": 38,
+      "ig_reels_avg_watch_time": 15729,
+      "ig_reels_video_view_total_time": 21848683,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -33,13 +33,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfXFc2KkrY5/",
       "title": "കേരള ഭക്ഷണം · ജില്ലകൾ · തലശ്ശേരി ബിരിയാണി · കുഴിമന്തി",
-      "views": 147,
-      "reach": 123,
+      "views": 148,
+      "reach": 124,
       "saved": 0,
       "shares": 0,
       "total_interactions": 8,
-      "ig_reels_avg_watch_time": 11464,
-      "ig_reels_video_view_total_time": 1478908,
+      "ig_reels_avg_watch_time": 11386,
+      "ig_reels_video_view_total_time": 1491670,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -57,8 +57,8 @@
       "saved": 0,
       "shares": 0,
       "total_interactions": 6,
-      "ig_reels_avg_watch_time": 6544,
-      "ig_reels_video_view_total_time": 805026,
+      "ig_reels_avg_watch_time": 6509,
+      "ig_reels_video_view_total_time": 807140,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -356,13 +356,13 @@
       "comments_count": 5,
       "permalink": "https://www.instagram.com/reel/DfGa0yyiq4P/",
       "title": "കളരിപ്പയറ്റ് · ബോധിധർമ്മൻ · കുങ്ഫു · ഏഴാം അറിവ്",
-      "views": 2047,
-      "reach": 1707,
+      "views": 2048,
+      "reach": 1708,
       "saved": 17,
       "shares": 5,
       "total_interactions": 101,
-      "ig_reels_avg_watch_time": 17365,
-      "ig_reels_video_view_total_time": 30233781,
+      "ig_reels_avg_watch_time": 17371,
+      "ig_reels_video_view_total_time": 30261128,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -546,13 +546,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De-wJSmDKCO/",
       "title": "Long before the movie, KGF had a real story. ⛏️✨",
-      "views": 2154,
-      "reach": 1806,
+      "views": 2156,
+      "reach": 1811,
       "saved": 3,
       "shares": 3,
       "total_interactions": 42,
-      "ig_reels_avg_watch_time": 16648,
-      "ig_reels_video_view_total_time": 30649592,
+      "ig_reels_avg_watch_time": 16633,
+      "ig_reels_video_view_total_time": 30656223,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
