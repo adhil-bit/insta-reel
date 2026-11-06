@@ -1,0 +1,87 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Muniyara: sages' homes or 2,000-year-old graves?",
+    "category": "HISTORY",
+    "angle": "Stone chambers in Marayoor that locals call homes of sages are megalithic burial chambers",
+    "key_facts": [
+      "Marayoor (Idukki) hills have stone chambers locals call 'muniyara' (muni = sage, ara = chamber)",
+      "Archaeologists identify them as megalithic (Iron Age) dolmens: upright slabs with a capstone, built as burial chambers",
+      "Kerala megaliths commonly yield clay urns (black-and-red ware) and iron tools",
+      "VERIFY: age range, number surviving, damage by treasure hunters"
+    ],
+    "sources": [
+      "Kerala State Archaeology Dept",
+      "Wikipedia: Marayoor; Dolmen"
+    ]
+  },
+  "category": "HISTORY",
+  "style": "manim-3d (Three.js dolmen assembling slab by slab)",
+  "headline": [
+    "MUNIYARA:",
+    "SAGES' HOMES?"
+  ],
+  "accent_words": [
+    "SAGES'"
+  ],
+  "thumbnail_ml": "മുനിമാരുടെ വീടുകളോ, ശവക്കല്ലറകളോ?",
+  "thumbnail_accent": [
+    "ശവക്കല്ലറകളോ?"
+  ],
+  "hook_voiceover": "മറയൂരിലെ മലകളിൽ മുനിമാർ ധ്യാനിച്ചിരുന്ന കൽവീടുകൾ? അതോ രണ്ടായിരം വർഷം പഴക്കമുള്ള ശവക്കല്ലറകളോ?",
+  "scenes": [
+    {
+      "voiceover": "മൂന്നാറിനടുത്ത് മറയൂർ. മലഞ്ചെരുവിൽ നാല് കൽപ്പലകയും മുകളിൽ ഒരു വലിയ കല്ലും. നാട്ടുകാർ വിളിക്കുന്നത് മുനിയറ.",
+      "caption": "MARAYOOR · IDUKKI",
+      "highlight": "MARAYOOR",
+      "kicker": "4 SLABS + 1 CAPSTONE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മുനി എന്നാൽ സന്യാസി, അറ എന്നാൽ മുറി. പണ്ട് മുനിമാർ ഇവിടെ ധ്യാനിച്ചിരുന്നു എന്നാണ് വിശ്വാസം.",
+      "caption": "MUNI + ARA = SAGE'S ROOM",
+      "highlight": "SAGE'S",
+      "kicker": "THE LOCAL BELIEF",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ പുരാവസ്തു ഗവേഷകർ പറയുന്നത് മറ്റൊന്ന്: ഇവ മഹാശിലായുഗത്തിലെ ശവക്കല്ലറകളാണ്. രണ്ടായിരം വർഷത്തിലേറെ പഴക്കം.",
+      "caption": "MEGALITHIC BURIAL CHAMBERS",
+      "highlight": "BURIAL",
+      "kicker": "WHAT ARCHAEOLOGISTS SAY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇത്തരം കല്ലറകളിൽ മരിച്ചവരുടെ അസ്ഥി നിറച്ച മൺകുടങ്ങളും ഇരുമ്പായുധങ്ങളും കണ്ടെത്തിയിട്ടുണ്ട്. ക്രെയിൻ ഇല്ലാത്ത കാലത്ത് ടൺ കണക്കിന് ഭാരമുള്ള കല്ലുകൾ!",
+      "caption": "URNS · IRON TOOLS · NO CRANES",
+      "highlight": "NO CRANES",
+      "kicker": "FOUND IN KERALA MEGALITHS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മുനിമാരുടെ വീടോ, പൂർവികരുടെ കല്ലറയോ? നിങ്ങളുടെ നാട്ടിലും ഇതുപോലെ മുനിയറയുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "IS THERE ONE NEAR YOU?",
+      "highlight": "NEAR YOU?",
+      "kicker": "TELL US",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "hashtags": [
+    "Muniyara",
+    "Marayoor",
+    "Dolmen",
+    "KeralaHistory",
+    "Idukki"
+  ],
+  "status": "SCRIPT ONLY: facts marked VERIFY need sourcing before render"
+}

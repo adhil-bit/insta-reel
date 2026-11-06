@@ -1,0 +1,87 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Mananchira: the pond a king dug in the heart of Kozhikode",
+    "category": "HISTORY",
+    "angle": "The pond at Kozhikode's centre is named after the Zamorin who had it dug and once supplied the city's water",
+    "key_facts": [
+      "Mananchira, a large pond at the centre of Kozhikode, is traditionally said to have been dug by Zamorin Mana Vikrama; name from 'Mana Vikraman chira'",
+      "Fed by a natural spring; long a drinking-water source for the town",
+      "Mananchira Square park around it was created in the 1990s",
+      "VERIFY: dates, size, who led the 1990s project (Collector Amitabh Kant?), spring detail"
+    ],
+    "sources": [
+      "Wikipedia: Mananchira",
+      "Kerala Tourism"
+    ]
+  },
+  "category": "HISTORY",
+  "style": "retro collage + real photo",
+  "headline": [
+    "MANANCHIRA:",
+    "A KING'S POND"
+  ],
+  "accent_words": [
+    "KING'S"
+  ],
+  "thumbnail_ml": "കോഴിക്കോടിന് നടുവിൽ ഒരു രാജാവിന്റെ കുളം!",
+  "thumbnail_accent": [
+    "രാജാവിന്റെ"
+  ],
+  "hook_voiceover": "കോഴിക്കോട് നഗരത്തിന്റെ നടുക്ക് ഒരു രാജാവ് കുഴിപ്പിച്ച കുളം. അതിന്റെ പേരിൽ തന്നെയുണ്ട് ആ രാജാവ്!",
+  "scenes": [
+    {
+      "voiceover": "മാനാഞ്ചിറ. മിഠായിത്തെരുവിന്റെ തൊട്ടടുത്ത്, നഗരത്തിന്റെ ഹൃദയത്തിൽ ഒരു വലിയ കുളം.",
+      "caption": "MANANCHIRA · KOZHIKODE",
+      "highlight": "KOZHIKODE",
+      "kicker": "NEXT TO MITTAI THERUVU",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "സാമൂതിരി മാനവിക്രമൻ കുഴിപ്പിച്ചതാണെന്നാണ് ചരിത്രം. മാനവിക്രമന്റെ ചിറ, പിന്നെ മാനാഞ്ചിറ.",
+      "caption": "MANA VIKRAMAN'S CHIRA",
+      "highlight": "MANA VIKRAMAN'S",
+      "kicker": "THE ZAMORIN'S POND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഉറവയിൽ നിന്ന് വെള്ളം നിറയുന്ന കുളം. ഒരുകാലത്ത് നഗരത്തിന്റെ കുടിവെള്ളം ഇവിടെ നിന്നായിരുന്നു.",
+      "caption": "THE CITY'S WATER TANK",
+      "highlight": "WATER",
+      "kicker": "SPRING-FED",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തൊണ്ണൂറുകളിൽ ചുറ്റും പാർക്കായി, മാനാഞ്ചിറ സ്ക്വയർ. ഇന്ന് കോഴിക്കോട്ടുകാരുടെ വൈകുന്നേര താവളം.",
+      "caption": "MANANCHIRA SQUARE · 1990s",
+      "highlight": "SQUARE",
+      "kicker": "TODAY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കോഴിക്കോട്ടുകാരേ, മാനാഞ്ചിറയുടെ പേരിന്റെ കഥ അറിയാമായിരുന്നോ? കമന്റ് ചെയ്യൂ, കോഴിക്കോടൻ ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "DID YOU KNOW THE NAME?",
+      "highlight": "NAME?",
+      "kicker": "TAG A KOZHIKODE FRIEND",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "hashtags": [
+    "Mananchira",
+    "Kozhikode",
+    "Zamorin",
+    "Calicut",
+    "KeralaHistory"
+  ],
+  "status": "SCRIPT ONLY: facts marked VERIFY need sourcing before render"
+}

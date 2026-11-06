@@ -1,0 +1,87 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Overbury's Folly: the seaside spot named 'foolishness'",
+    "category": "HISTORY",
+    "angle": "A British judge's seaside garden in Thalassery carries the word 'folly' in its name",
+    "key_facts": [
+      "Overbury's Folly is a cliff-top seaside spot in Thalassery built by E. N. Overbury, a British judge",
+      "'Folly' in English architecture means a structure built for pleasure or show rather than use; literally 'foolishness'",
+      "Today a renovated public park with sea views near Thalassery",
+      "VERIFY: year built (1870s?), Overbury's post, purpose, renovation details"
+    ],
+    "sources": [
+      "Wikipedia: Overbury's Folly",
+      "Kerala Tourism / DTPC Kannur"
+    ]
+  },
+  "category": "HISTORY",
+  "style": "Anidoodle (doodle animation over a real-photo backdrop)",
+  "headline": [
+    "OVERBURY'S",
+    "FOLLY"
+  ],
+  "accent_words": [
+    "FOLLY"
+  ],
+  "thumbnail_ml": "തലശ്ശേരിയിലെ 'വിഡ്ഢിത്തം'!",
+  "thumbnail_accent": [
+    "വിഡ്ഢിത്തം"
+  ],
+  "hook_voiceover": "ഒരു ബ്രിട്ടീഷ് ജഡ്ജി തലശ്ശേരിയിലെ കടൽക്കരയിൽ ഒന്ന് പണിതു. അതിന്റെ പേരിന്റെ അർത്ഥം: വിഡ്ഢിത്തം!",
+  "scenes": [
+    {
+      "voiceover": "തലശ്ശേരി കടൽത്തീരത്തെ കുന്നിൻമുകളിൽ ഒരു ഇടം. പേര് ഓവർബറീസ് ഫോളി.",
+      "caption": "THALASSERY · CLIFF-TOP",
+      "highlight": "THALASSERY",
+      "kicker": "OVERBURY'S FOLLY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പണിതത് ഇ. എൻ. ഓവർബറി എന്ന ബ്രിട്ടീഷ് ജഡ്ജി. കടൽ കണ്ടിരിക്കാൻ ഒരു ഉദ്യാനം.",
+      "caption": "BUILT BY A BRITISH JUDGE",
+      "highlight": "JUDGE",
+      "kicker": "E. N. OVERBURY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഫോളി എന്ന ഇംഗ്ലീഷ് വാക്കിന് അർത്ഥം വിഡ്ഢിത്തം. പ്രത്യേകിച്ച് ഉപയോഗമൊന്നുമില്ലാതെ, ഭംഗിക്ക് മാത്രം പണിയുന്ന നിർമ്മിതികളെ ബ്രിട്ടീഷുകാർ വിളിച്ചിരുന്ന പേര്.",
+      "caption": "FOLLY = BUILT JUST FOR BEAUTY",
+      "highlight": "BEAUTY",
+      "kicker": "AN ENGLISH TRADITION",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഈ വിഡ്ഢിത്തം ഇന്നും തലശ്ശേരിക്കാരുടെ പ്രിയപ്പെട്ട സൂര്യാസ്തമയ സ്പോട്ട്.",
+      "caption": "TODAY: THALASSERY'S SUNSET SPOT",
+      "highlight": "SUNSET",
+      "kicker": "STILL STANDING",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തലശ്ശേരിക്കാരേ, ഓവർബറീസ് ഫോളിയിൽ പോയിട്ടുണ്ടോ? ഒപ്പം പോകേണ്ട ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "BEEN THERE?",
+      "highlight": "BEEN",
+      "kicker": "TAG YOUR SUNSET FRIEND",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "hashtags": [
+    "OverburysFolly",
+    "Thalassery",
+    "Kannur",
+    "KeralaHistory",
+    "Tellicherry"
+  ],
+  "status": "SCRIPT ONLY: facts marked VERIFY need sourcing before render"
+}
