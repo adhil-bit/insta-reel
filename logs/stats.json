@@ -1,7 +1,7 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 126,
+    "followers_count": 127,
     "follows_count": 277,
     "media_count": 32,
     "id": "28876323268696257"
@@ -10,17 +10,17 @@
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 59,
-      "comments_count": 3,
+      "like_count": 63,
+      "comments_count": 4,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 3270,
-      "reach": 2869,
-      "saved": 14,
+      "views": 3457,
+      "reach": 3029,
+      "saved": 17,
       "shares": 151,
-      "total_interactions": 227,
-      "ig_reels_avg_watch_time": 16830,
-      "ig_reels_video_view_total_time": 47933499,
+      "total_interactions": 235,
+      "ig_reels_avg_watch_time": 16920,
+      "ig_reels_video_view_total_time": 50980998,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -52,13 +52,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfSHT3Wgc33/",
       "title": "ബിഗ് ബോസ് എന്ന പേരിന് പിന്നിൽ 1949-ലെ ഒരു നോവൽ! 📺👁️",
-      "views": 1237,
+      "views": 1238,
       "reach": 1081,
       "saved": 4,
       "shares": 1,
       "total_interactions": 21,
-      "ig_reels_avg_watch_time": 10526,
-      "ig_reels_video_view_total_time": 11631380,
+      "ig_reels_avg_watch_time": 10519,
+      "ig_reels_video_view_total_time": 11634371,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -376,7 +376,7 @@
       "permalink": "https://www.instagram.com/reel/DfCxuoDieJi/",
       "title": "കല്ലണൈ · കാവേരി · ചോള · പഴയ അണക്കെട്ട്",
       "views": 1277,
-      "reach": 0,
+      "reach": 1096,
       "saved": 5,
       "shares": 1,
       "total_interactions": 26,
@@ -570,8 +570,8 @@
       "saved": 8,
       "shares": 11,
       "total_interactions": 67,
-      "ig_reels_avg_watch_time": 15927,
-      "ig_reels_video_view_total_time": 21167434,
+      "ig_reels_avg_watch_time": 15916,
+      "ig_reels_video_view_total_time": 21168684,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
