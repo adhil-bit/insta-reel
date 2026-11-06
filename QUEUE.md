@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 06 Nov, 07:39 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 06 Nov, 08:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -9,6 +9,7 @@ _Updated Fri 06 Nov, 07:39 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Fire in Kalari: tradition or show? | 2026-11-06T14:38 |
 | Kalla Kothayi's treasure: the legend of Kothayimukku, Kannur | 2026-11-06T01:38 |
 | 14 districts, 14 flavours: Kerala's famous food by district | 2026-11-05T12:58 |
 | Bigg Boss got its name from a 1949 novel | 2026-11-03T14:38 |
@@ -18,4 +19,3 @@ _Updated Fri 06 Nov, 07:39 PM IST. Times are approximate: each reel posts within
 | Beypore Part 1: Kerala's first train, and the station that wasn't in Beypore | 2026-11-02T14:58 |
 | Arakkal: Kerala's only Muslim royal family, often ruled by queens | 2026-11-02T10:38 |
 | Lake Nyos: the lake that breathed out death | 2026-11-02T00:40 |
-| The story behind the 'Photography Prohibited' board | 2026-11-03T01:39 |

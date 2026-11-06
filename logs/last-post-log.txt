@@ -1,9 +1,9 @@
-Publishing kothayi-ink-v2...
+Publishing kalari-fire-v2...
   uguu: link serves video/mp4
-  temporary video link ready (h.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18137423290694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfYccpvkWz9/
+  container: 18137555218694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfZ1sTAIXQ-/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
