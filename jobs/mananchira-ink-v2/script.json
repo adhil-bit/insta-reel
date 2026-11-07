@@ -1,0 +1,95 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Mananchira: the pond a king dug in the heart of Kozhikode",
+    "category": "HISTORY",
+    "angle": "The pond at Kozhikode's centre is named after the Zamorin who had it dug and once supplied the city's water",
+    "key_facts": [
+      "Mananchira, a large pond at the centre of Kozhikode, is traditionally said to have been dug by Zamorin Mana Vikrama; name from 'Mana Vikraman chira'",
+      "Fed by a natural spring; long a drinking-water source for the town",
+      "Mananchira Square park around it was created in the 1990s",
+      "VERIFY: dates, size, who led the 1990s project (Collector Amitabh Kant?), spring detail"
+    ],
+    "sources": [
+      "Wikipedia: Mananchira",
+      "Kerala Tourism"
+    ]
+  },
+  "category": "HISTORY",
+  "headline": [
+    "MANANCHIRA:",
+    "A KING'S NAME"
+  ],
+  "accent_words": [
+    "KING'S"
+  ],
+  "thumbnail_ml": "മാനാഞ്ചിറയുടെ പേരിൽ ഒരു രാജാവ്!",
+  "thumbnail_accent": [
+    "രാജാവ്!"
+  ],
+  "hook_voiceover": "കോഴിക്കോട് നഗരത്തിന് നടുവിലെ ഈ കുളത്തിന്റെ പേരിൽ ഒരു രാജാവ് ഒളിച്ചിരിപ്പുണ്ട്!",
+  "scenes": [
+    {
+      "voiceover": "മാനാഞ്ചിറ. മിഠായിത്തെരുവിന്റെ തൊട്ടടുത്ത്, നഗരത്തിന്റെ നടുവിൽ ഒരു വലിയ കുളം.",
+      "caption": "MANANCHIRA · KOZHIKODE",
+      "highlight": "KOZHIKODE",
+      "kicker": "NEXT TO MITTAI THERUVU",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇത് കുഴിപ്പിച്ചത് സാമൂതിരി മാനവിക്രമൻ ആണെന്നാണ് ചരിത്രം.",
+      "caption": "DUG FOR A ZAMORIN",
+      "highlight": "ZAMORIN",
+      "kicker": "MANA VIKRAMAN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മാനവിക്രമന്റെ ചിറ. പറഞ്ഞു പറഞ്ഞ് ചുരുങ്ങി: മാനാഞ്ചിറ!",
+      "caption": "MANA VIKRAMAN'S CHIRA → MANANCHIRA",
+      "highlight": "MANANCHIRA",
+      "kicker": "THE NAME'S SECRET",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരുകാലത്ത് നഗരത്തിന്റെ കുടിവെള്ളം ഇവിടെ നിന്നായിരുന്നു എന്നും പറയപ്പെടുന്നു. ഇന്ന് ചുറ്റും മാനാഞ്ചിറ സ്ക്വയർ.",
+      "caption": "FROM WATER TANK TO CITY SQUARE",
+      "highlight": "SQUARE",
+      "kicker": "THEN AND NOW",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കോഴിക്കോട്ടുകാരേ, ഈ പേരിന്റെ കഥ അറിയാമായിരുന്നോ? കോഴിക്കോടൻ ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "DID YOU KNOW?",
+      "highlight": "KNOW?",
+      "kicker": "TAG A KOZHIKODE FRIEND",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "hashtags": [
+    "Mananchira",
+    "Kozhikode",
+    "Zamorin",
+    "Calicut",
+    "KeralaHistory"
+  ],
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "cover_visual": "Ink-wash city pond with a golden crown reflected in the water and a red question mark",
+  "instagram_caption": "മാനാഞ്ചിറയുടെ പേരിൽ ഒളിച്ചിരിക്കുന്ന രാജാവ് 👑\nThe king hidden in Mananchira's name.\n\nകോഴിക്കോട് നഗരത്തിന് നടുവിലെ കുളം കുഴിപ്പിച്ചത് സാമൂതിരി മാനവിക്രമൻ ആണെന്നാണ് ചരിത്രം. മാനവിക്രമന്റെ ചിറ, പിന്നെ മാനാഞ്ചിറ.\nTradition says the pond at the heart of Kozhikode was dug for Zamorin Mana Vikraman: Mana Vikraman's chira became Mananchira.\n\nകോഴിക്കോട്ടുകാരേ, ഈ കഥ അറിയാമായിരുന്നോ? കോഴിക്കോടൻ ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ 👇\nKozhikode, did you know? Tag a friend from Calicut.\n\nSource: Wikipedia (Mananchira)\nSend this to your Kozhikode friend. 📩",
+  "fact_check": [
+    "Zamorin origin stated as 'history says'",
+    "Drinking-water role stated as 'it is said'",
+    "Square named without date or person"
+  ],
+  "reworked_from": "mananchira-ink"
+}
