@@ -102,9 +102,9 @@ Dropped (moved to `jobs/_dropped/`): Kottayam literacy, Roopkund, Indus script, 
 ### Queued scripts (added Sat 7 Nov, 1 AM): not rendered yet
 | Job | Story | Planned style | Note |
 |---|---|---|---|
-| muniyara-dolmens | Muniyara dolmens, Marayoor | Manim + Three.js dolmen | facts marked VERIFY |
-| mananchira | Mananchira, Kozhikode | Retro collage + real photo | facts marked VERIFY |
-| overbury-folly | Overbury's Folly, Thalassery | Anidoodle | facts marked VERIFY |
+| plans/drafts/muniyara-dolmens | Muniyara dolmens, Marayoor | Manim + Three.js dolmen | facts marked VERIFY |
+| plans/drafts/mananchira | Mananchira, Kozhikode | Retro collage + real photo | facts marked VERIFY |
+| plans/drafts/overbury-folly | Overbury's Folly, Thalassery | Anidoodle | facts marked VERIFY |
 
 ## 6. House rules for every reel
 
