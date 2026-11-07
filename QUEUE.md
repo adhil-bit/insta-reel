@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sat 07 Nov, 07:17 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 07 Nov, 11:32 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -8,6 +8,7 @@ _Updated Sat 07 Nov, 07:17 PM IST. Times are approximate: each reel posts within
 ## Being rendered (joins the queue when done)
 
 - k2-flood-99-v2
+- mananchira-ink
 
 ## Recently posted
 
