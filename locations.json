@@ -1,3 +1,5 @@
 {
-  "_how": "Instagram location id per reel folder. Find it: instagram.com -> search the place -> Places -> open it; the number in instagram.com/explore/locations/<ID>/... is the id."
+  "_how": "Instagram location id per reel folder. Find it: instagram.com -> search the place -> Places -> open it; the number in instagram.com/explore/locations/<ID>/... is the id.",
+  "_default_note": "_default (both pages) / _default_1 / _default_2: location id used when a reel has no own tag. Set to the Instagram 'Kerala' place id.",
+  "_default": ""
 }

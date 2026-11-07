@@ -403,7 +403,8 @@ def post(folder_name: str) -> None:
             if h["folder"] == folder_name: h.update(status="posted", posted=datetime.now().isoformat(timespec="minutes"))
         save_json(config.HISTORY_FILE, hist); return
     locs = load_json(config.ROOT / "locations.json", {})
-    location_id = locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
+    location_id = (locs.get(folder_name) or (load_json(folder / "script.json", {}) or {}).get("location_id")
+                   or locs.get(f"_default_{config.ACCOUNT}") or locs.get("_default"))  # fallback: Kerala tag on every reel
     media_id = instagram.publish_reel(reel, text, location_id=location_id,
                                       cover=thumb if thumb.exists() else None)
     hist = history()
