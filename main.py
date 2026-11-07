@@ -228,6 +228,9 @@ def render_job(job_dir: Path) -> Path:
     """Render a reel whose script and animations were written in advance
     (for example by Claude in a chat), with no Anthropic API calls."""
     script = load_json(job_dir / "script.json", None)
+    want = "2" if job_dir.name.startswith("k2-") or str(script.get("account", "")) == "2" else "1"
+    if config.ACCOUNT != want:   # never brand a page-2 reel as page 1 (or the other way round)
+        raise RuntimeError(f"{job_dir.name} belongs to account {want}; this run is account {config.ACCOUNT}. Skipped.")
     topic = script.pop("topic")
     topic["category"] = script["category"] = script["category"].upper()
     script["headline"] = [l.upper() for l in script["headline"]]
@@ -266,7 +269,10 @@ def render_pending() -> None:
 
     job_files = sorted((config.ROOT / "jobs").glob("*/script.json"))
     job_files.sort(key=urgency)                                  # most urgent first
-    todo = [j for j in job_files if j.parent.name not in done]
+    def mine(j):   # page-2 jobs (k2-*) only render in an account-2 run, and vice versa
+        two = j.parent.name.startswith("k2-") or str(load_json(j, {}).get("account", "")) == "2"
+        return two == (config.ACCOUNT == "2")
+    todo = [j for j in job_files if j.parent.name not in done and mine(j)]
     limit = int(os.getenv("RENDER_LIMIT", config.RENDER_LIMIT))
     if limit > 0 and len(todo) > limit:
         print(f"Voicing only the {limit} most urgent reels this run (just-in-time); {len(todo) - limit} wait for the next run.")

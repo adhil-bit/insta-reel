@@ -1,0 +1,104 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "The flood of '99: the 1924 flood that took a hill",
+    "category": "HISTORY",
+    "key_facts": [
+      "Kerala's great flood of July 1924 is called the 'flood of 99' after the Malayalam Era year 1099",
+      "It followed about three weeks of very heavy rain in July 1924",
+      "The flood destroyed the Kundala Valley Railway in Munnar",
+      "It is said that the Karinthiri hill (and the road over it) was washed away",
+      "The 2018 Kerala floods were widely described as the worst since 1924"
+    ],
+    "sources": [
+      "BBC; The Hindu (2018)",
+      "The Hindu; KSDMA",
+      "The Hindu; Kerala Tourism",
+      "Wikipedia: Great flood of 99",
+      "Wikipedia: Great flood of 99; The Hindu"
+    ]
+  },
+  "headline": [
+    "99-ലെ വെള്ളപ്പൊക്കം"
+  ],
+  "accent_words": [
+    "99-ലെ"
+  ],
+  "thumbnail_ml": "99-ലെ വെള്ളപ്പൊക്കം: ഒരു മല തന്നെ ഒലിച്ചുപോയി!",
+  "thumbnail_accent": [
+    "99-ലെ"
+  ],
+  "hook_voiceover": "2018-ലെ പ്രളയം ഓർമ്മയുണ്ടോ? അതിനും മുമ്പ്, 1924-ൽ, ഒരു മല തന്നെ ഒലിച്ചുപോയ പ്രളയം!",
+  "cover_visual": "Ink-wash hills under heavy rain, a hill sliding, red seal 1099",
+  "scenes": [
+    {
+      "voiceover": "1924 ജൂലൈ. മലയാള വർഷം 1099. അതുകൊണ്ടാണ് പേര്: 99-ലെ വെള്ളപ്പൊക്കം.",
+      "caption": "മലയാള വർഷം 1099",
+      "highlight": "1099",
+      "kicker": "1924 ജൂലൈ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആഴ്ചകളോളം നിർത്താതെ മഴ. പുഴകൾ കരകവിഞ്ഞു, നാടും വീടും മുങ്ങി.",
+      "caption": "നിർത്താത്ത മഴ",
+      "highlight": "മഴ",
+      "kicker": "ആഴ്ചകളോളം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മൂന്നാറിലെ കുണ്ടള വാലി റെയിൽവേ ഈ പ്രളയത്തിൽ ഇല്ലാതായി.",
+      "caption": "മൂന്നാറിന്റെ ട്രെയിൻ",
+      "highlight": "ട്രെയിൻ",
+      "kicker": "കുണ്ടള വാലി റെയിൽവേ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കരിന്തിരി മല എന്നൊരു മല തന്നെ ഇടിഞ്ഞു പോയെന്നാണ് പറയപ്പെടുന്നത്.",
+      "caption": "ഒരു മല അപ്രത്യക്ഷമായി?",
+      "highlight": "മല",
+      "kicker": "കരിന്തിരി മല",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "2018-ൽ കേരളം വീണ്ടും മുങ്ങിയപ്പോൾ പഴമക്കാർ ഓർത്തു: 99-ലെ ആ മഴ. നിങ്ങളുടെ വീട്ടിലെ പഴമക്കാർ എന്താണ് പറഞ്ഞിട്ടുള്ളത്? കമന്റ് ചെയ്യൂ!",
+      "caption": "പഴമക്കാരുടെ ഓർമ്മ",
+      "highlight": "ഓർമ്മ",
+      "kicker": "നിങ്ങൾ കേട്ട കഥ?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "2018-ലെ പ്രളയത്തിന് മുമ്പ്, 1924-ൽ കേരളം കണ്ട മഹാപ്രളയം 🌧️\n\nമലയാള വർഷം 1099. ആഴ്ചകൾ നീണ്ട മഴ. മൂന്നാറിലെ കുണ്ടള വാലി റെയിൽവേ ഇല്ലാതായി, കരിന്തിരി മല ഇടിഞ്ഞുപോയെന്നും പറയപ്പെടുന്നു. 2018-ലെ പ്രളയത്തെ '1924-ന് ശേഷമുള്ള ഏറ്റവും വലിയ പ്രളയം' എന്നാണ് വിശേഷിപ്പിച്ചത്.\n\nനിങ്ങളുടെ വീട്ടിലെ പഴമക്കാർ 99-ലെ വെള്ളപ്പൊക്കത്തെക്കുറിച്ച് എന്താണ് പറഞ്ഞിട്ടുള്ളത്? കമന്റ് ചെയ്യൂ 👇\n\nഉറവിടം: Wikipedia (Great flood of 99), The Hindu\nഈ കഥ വീട്ടിലെ ഗ്രൂപ്പിലേക്ക് അയക്കൂ 📩",
+  "search_ml": [
+    "99-ലെ വെള്ളപ്പൊക്കം",
+    "1924 പ്രളയം",
+    "മൂന്നാർ",
+    "കേരള ചരിത്രം"
+  ],
+  "hashtags": [
+    "FloodOf99",
+    "KeralaFloods",
+    "1924Flood",
+    "Munnar",
+    "KeralaHistory"
+  ],
+  "fact_check": [
+    "Karinthiri hill stated as 'it is said'",
+    "2018 'worst since 1924' in caption as a description",
+    "Munnar railway loss per The Hindu"
+  ],
+  "reworked_from": "k2-flood-99",
+  "voice_lock": "Despina"
+}

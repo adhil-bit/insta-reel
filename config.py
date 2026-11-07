@@ -121,6 +121,7 @@ BRAND = {
 }
 if ACCOUNT == "2":
     BRAND["name"] = "കഥയും ചരിത്രവും"
+    BRAND["handle"] = "@kathayum.charithravum"
     BRAND["category_labels"] = {"HISTORY": "ചരിത്രം", "CULTURE": "സംസ്കാരം", "MYSTERY": "രഹസ്യം", "SCIENCE": "ശാസ്ത്രം", "NATURE": "പ്രകൃതി", "MYTH": "ഐതിഹ്യം"}
 
 # ---------------- Video ----------------
