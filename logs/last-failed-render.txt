@@ -1,7 +1,7 @@
-Rendering job muniyara-ink: Muniyara: sages' homes or 2,000-year-old graves?
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 676, in <module>
-    render_job(Path(args.folder))
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
+    name = render_job(job.parent).name
+           ^^^^^^^^^^^^^^^^^^^^^^
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -9,3 +9,6 @@ Traceback (most recent call last):
     "visual": script["cover_visual"],
               ~~~~~~^^^^^^^^^^^^^^^^
 KeyError: 'cover_visual'
+Rendering job muniyara-ink: Muniyara: sages' homes or 2,000-year-old graves?
+!! muniyara-ink failed: 'cover_visual'
+Rendered 0 job(s). Failed: ['muniyara-ink']
