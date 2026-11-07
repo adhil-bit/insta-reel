@@ -37,33 +37,4 @@ Rendering job muniyara-dolmens: Muniyara: sages' homes or 2,000-year-old graves?
 !! muniyara-dolmens failed: 'cover_visual'
 Rendering job overbury-folly: Overbury's Folly: the seaside spot named 'foolishness'
 !! overbury-folly failed: 'cover_visual'
-Rendering job porotta-kozhikode-v5: Porotta-beef and Kozhikode: is there a link?
-3/6 Recording the voiceover (voice: Puck)...
-  whole narration recorded in one Gemini take
-  narration sped up 1.12x to keep the reel short (59s -> 54s)
-4/6 Writing and rendering 7 code animations (3 at a time)...
-    animation 1 rendered
-    animation 3 rendered
-    animation 5 rendered
-    animation 4 rendered
-    animation 6 rendered
-    animation 2 rendered
-    animation 7 rendered
-5/6 Assembling the video...
-  follow end card added
-6/6 Sound design, thumbnail and export...
-  sound: generated pad + transitions
-  thumbnail ready
-
-Done: /home/runner/work/insta-reel/insta-reel/output/porotta-kozhikode-v5/reel.mp4
-
-Check these claims before posting:
-  - Origin stated as a theory, not fact (Dalal: no conclusive evidence)
-  - No claim that porotta was invented in Kozhikode; only the trade-route link
-  - Beef pairing origin explicitly 'no record'; no political angle
-  - Trailer troll referenced without naming the film; joke is about the food only
-
-Sources: Wikipedia: South Indian parotta; Kozhikode, The Hindu: Kerala's signature dish, the Porotta (2024)
-
-When happy: python main.py post porotta-kozhikode-v5
-Rendered 1 job(s). Failed: ['mananchira', 'muniyara-dolmens', 'overbury-folly']
+Rendered 0 job(s). Failed: ['mananchira', 'muniyara-dolmens', 'overbury-folly']
