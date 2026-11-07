@@ -1,0 +1,10 @@
+NB.use('inkwash'); const c = makeCanvas(), g = c.getContext('2d'); function seal(g, t, x, y, a) { if (a <= 0) return; g.save(); g.globalAlpha = a * 0.92; g.translate(x, y); g.rotate(0.05); g.fillStyle = '#b5281f'; g.beginPath(); g.roundRect(-78, -70, 156, 140, 12); g.fill(); g.fillStyle = '#f3e9d8'; let fs = 50; g.font = '800 50px Baloo'; while (g.measureText(t).width > 136 && fs > 24) { fs -= 2; g.font = '800 ' + fs + 'px Baloo'; } g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(t, 0, 4); g.restore(); }
+function dolmen(s, x, y, k) { s.poly([[x - 250*k, y - 310*k], [x + 230*k, y - 345*k], [x + 270*k, y - 280*k], [x - 270*k, y - 250*k], [x - 250*k, y - 310*k]], { w: 12 }); s.rect(x - 230*k, y - 255*k, 46*k, 255*k, { w: 10 }); s.rect(x + 185*k, y - 285*k, 46*k, 285*k, { w: 10 }); s.rect(x - 150*k, y - 250*k, 300*k, 250*k, { w: 9 }); s.circle(x, y - 130*k, 40*k, { w: 8 }); s.line(x - 330*k, y, x + 330*k, y, { w: 12 }); }
+function dwash(g, x, y, k, a) { NB.wash(g, [[x - 250*k, y - 310*k], [x + 230*k, y - 345*k], [x + 270*k, y - 280*k], [x - 270*k, y - 250*k]], 'rgba(80,75,70,1)', 0.45*a); NB.wash(g, [x - 150*k, y - 250*k, 300*k, 250*k], 'rgba(60,55,50,1)', 0.3*a); }
+const s = NB.sketch(61); dolmen(s, 360, 1300, 0.6); s.figure(360, 1290, 85, 'sit'); dolmen(s, 760, 1300, 0.6); s.curve([[730, 1240], [715, 1270], [730, 1295], [790, 1295], [805, 1270], [790, 1240], [730, 1240]], { w: 6 }); const A = s.mark();
+s.circle(560, 860, 230, { w: 8 }, 100); s.poly([[500, 945], [450, 1020], [560, 952]], { w: 8 }); const B = s.mark();
+window.renderFrame = function (t) { const D = DURATION; NB.paper(g); NB.ridge(g, 1100, 120, 'rgba(60,60,60,0.2)', 1, 5); NB.mist(g, 1080, 140, 0.8);
+  dwash(g, 360, 1300, 0.6, 1); dwash(g, 760, 1300, 0.6, 1); NB.glow(g, 360, 1230, 120, 'rgba(255,214,120,0.55)', 1);
+  s.draw(g, t, { parts: [[0, A, 0, D * 0.35], [A, B, D * 0.35, D * 0.55]] });
+  NB.note(g, 'മുനി? കല്ലറ?', 560, 885, { a: NB.cl((t - D * 0.5) / 0.2), col: '#b5281f', size: 70 });
+};
