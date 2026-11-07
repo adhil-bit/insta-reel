@@ -754,9 +754,9 @@
     "category": "HISTORY",
     "folder": "muniyara-ink",
     "status": "pending",
-    "voice": "Despina",
+    "voice": "Charon",
     "post_on": "2099-01-01",
-    "created": "2026-11-07T06:24"
+    "created": "2026-11-07T06:21"
   },
   {
     "title": "The flood of '99: the 1924 flood that took a hill",
@@ -766,5 +766,14 @@
     "voice": "Charon",
     "post_on": "2099-01-01",
     "created": "2026-11-07T06:21"
+  },
+  {
+    "title": "Muniyara: sages' homes or 2,000-year-old graves?",
+    "category": "HISTORY",
+    "folder": "muniyara-ink-v2",
+    "status": "pending",
+    "voice": "Despina",
+    "post_on": "2099-01-01",
+    "created": "2026-11-07T06:27"
   }
 ]
