@@ -1,9 +1,9 @@
-Publishing muniyara-ink-v2...
+Publishing mananchira-ink-v2...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18137793223694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfcUp9LDCWY/
+  container: 18137949745694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/Dfd6nhRiqX5/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.

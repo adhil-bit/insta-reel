@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sat 07 Nov, 11:38 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 08 Nov, 10:08 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -13,6 +13,7 @@ _Updated Sat 07 Nov, 11:38 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
 | Muniyara: sages' homes or 2,000-year-old graves? | 2026-11-07T13:47 |
 | Porotta-beef and Kozhikode: is there a link? | 2026-11-07T04:39 |
 | Fire in Kalari: tradition or show? | 2026-11-06T14:38 |
@@ -22,4 +23,3 @@ _Updated Sat 07 Nov, 11:38 PM IST. Times are approximate: each reel posts within
 | Emden and Chempakaraman Pillai: the word 'emandan' and a forgotten revolutionary | 2026-11-05T01:39 |
 | Pathinettam Koottam: the unseen side of Itty Cora, Part 5/5 | 2026-11-04T14:38 |
 | Silent Valley: the forest Kerala saved | 2026-11-04T01:38 |
-| Beypore Part 1: Kerala's first train, and the station that wasn't in Beypore | 2026-11-02T14:58 |
