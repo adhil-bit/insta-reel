@@ -1,12 +1,31 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 192,
+    "followers_count": 193,
     "follows_count": 279,
-    "media_count": 28,
+    "media_count": 29,
     "id": "28876323268696257"
   },
   "reels": [
+    {
+      "id": "17923726809452782",
+      "timestamp": "2026-11-08T04:38:32+0000",
+      "like_count": 2,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/Dfd6nhRiqX5/",
+      "title": "മാനാഞ്ചിറയുടെ പേരിൽ ഒളിച്ചിരിക്കുന്ന രാജാവ് 👑",
+      "views": 147,
+      "reach": 122,
+      "saved": 0,
+      "shares": 0,
+      "total_interactions": 2,
+      "ig_reels_avg_watch_time": 7953,
+      "ig_reels_video_view_total_time": 1018083,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
     {
       "id": "17951171250349186",
       "timestamp": "2026-11-07T13:47:41+0000",
@@ -14,13 +33,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfcUp9LDCWY/",
       "title": "മുനിമാരുടെ വീടോ, രണ്ടായിരം വർഷം പഴക്കമുള്ള കല്ലറയോ? 🪨",
-      "views": 1184,
-      "reach": 1058,
+      "views": 1206,
+      "reach": 1078,
       "saved": 7,
-      "shares": 1,
-      "total_interactions": 36,
-      "ig_reels_avg_watch_time": 9305,
-      "ig_reels_video_view_total_time": 10068609,
+      "shares": 6,
+      "total_interactions": 41,
+      "ig_reels_avg_watch_time": 9292,
+      "ig_reels_video_view_total_time": 10277932,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -29,17 +48,17 @@
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 806,
+      "like_count": 823,
       "comments_count": 48,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 56301,
-      "reach": 47334,
-      "saved": 184,
-      "shares": 5657,
-      "total_interactions": 6712,
+      "views": 57628,
+      "reach": 48459,
+      "saved": 190,
+      "shares": 5845,
+      "total_interactions": 6924,
       "ig_reels_avg_watch_time": 18103,
-      "ig_reels_video_view_total_time": 852730800,
+      "ig_reels_video_view_total_time": 873217948,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -57,8 +76,8 @@
       "saved": 1,
       "shares": 0,
       "total_interactions": 5,
-      "ig_reels_avg_watch_time": 5661,
-      "ig_reels_video_view_total_time": 956747,
+      "ig_reels_avg_watch_time": 5635,
+      "ig_reels_video_view_total_time": 957967,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -91,12 +110,12 @@
       "permalink": "https://www.instagram.com/reel/DfQuFZPFM5n/",
       "title": "ഫോട്ടോഗ്രഫി നിരോധിതം · നേവൽ ബേസ് · കൊച്ചി · ഏഴിമല",
       "views": 1281,
-      "reach": 1129,
+      "reach": 1131,
       "saved": 1,
       "shares": 0,
       "total_interactions": 25,
-      "ig_reels_avg_watch_time": 13234,
-      "ig_reels_video_view_total_time": 15140396,
+      "ig_reels_avg_watch_time": 13223,
+      "ig_reels_video_view_total_time": 15141315,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -128,13 +147,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfOrv5IjSZQ/",
       "title": "കോല കുഴി · ഭൂമിയുടെ ആഴം · റഷ്യ",
-      "views": 1285,
-      "reach": 1069,
+      "views": 1286,
+      "reach": 1070,
       "saved": 3,
       "shares": 0,
       "total_interactions": 28,
-      "ig_reels_avg_watch_time": 17815,
-      "ig_reels_video_view_total_time": 18883935,
+      "ig_reels_avg_watch_time": 17840,
+      "ig_reels_video_view_total_time": 18928426,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -185,13 +204,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfJvrBfDLaL/",
       "title": "കറുത്തച്ചനൂട്ട്: സത്യമോ കഥയോ? 🕯️",
-      "views": 1004,
-      "reach": 840,
+      "views": 1007,
+      "reach": 841,
       "saved": 12,
       "shares": 7,
       "total_interactions": 65,
-      "ig_reels_avg_watch_time": 9709,
-      "ig_reels_video_view_total_time": 8447528,
+      "ig_reels_avg_watch_time": 9803,
+      "ig_reels_video_view_total_time": 8548680,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -432,13 +451,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/De-wJSmDKCO/",
       "title": "Long before the movie, KGF had a real story. ⛏️✨",
-      "views": 2229,
+      "views": 2230,
       "reach": 1870,
       "saved": 3,
       "shares": 3,
       "total_interactions": 42,
-      "ig_reels_avg_watch_time": 16490,
-      "ig_reels_video_view_total_time": 31546178,
+      "ig_reels_avg_watch_time": 16482,
+      "ig_reels_video_view_total_time": 31547178,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
