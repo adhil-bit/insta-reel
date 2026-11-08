@@ -1,7 +1,7 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 193,
+    "followers_count": 192,
     "follows_count": 279,
     "media_count": 28,
     "id": "28876323268696257"
@@ -10,17 +10,17 @@
     {
       "id": "17951171250349186",
       "timestamp": "2026-11-07T13:47:41+0000",
-      "like_count": 26,
+      "like_count": 27,
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfcUp9LDCWY/",
       "title": "മുനിമാരുടെ വീടോ, രണ്ടായിരം വർഷം പഴക്കമുള്ള കല്ലറയോ? 🪨",
-      "views": 1179,
-      "reach": 1056,
-      "saved": 4,
+      "views": 1184,
+      "reach": 1058,
+      "saved": 7,
       "shares": 1,
-      "total_interactions": 32,
-      "ig_reels_avg_watch_time": 9328,
-      "ig_reels_video_view_total_time": 10046848,
+      "total_interactions": 36,
+      "ig_reels_avg_watch_time": 9305,
+      "ig_reels_video_view_total_time": 10068609,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -29,17 +29,17 @@
     {
       "id": "18424694599152309",
       "timestamp": "2026-11-06T01:38:42+0000",
-      "like_count": 805,
+      "like_count": 806,
       "comments_count": 48,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 56255,
-      "reach": 47300,
+      "views": 56301,
+      "reach": 47334,
       "saved": 184,
       "shares": 5657,
-      "total_interactions": 6711,
-      "ig_reels_avg_watch_time": 18105,
-      "ig_reels_video_view_total_time": 852207901,
+      "total_interactions": 6712,
+      "ig_reels_avg_watch_time": 18103,
+      "ig_reels_video_view_total_time": 852730800,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -90,7 +90,7 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfQuFZPFM5n/",
       "title": "ഫോട്ടോഗ്രഫി നിരോധിതം · നേവൽ ബേസ് · കൊച്ചി · ഏഴിമല",
-      "views": 1280,
+      "views": 1281,
       "reach": 1129,
       "saved": 1,
       "shares": 0,
