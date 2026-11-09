@@ -1,0 +1,100 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "Ezhimala: Hanuman's fallen hill that's now off-limits",
+    "category": "MYSTERY",
+    "angle": "A lone seaside hill near Payyanur: Ramayana legend, ancient Mushika capital, now the Indian Naval Academy",
+    "key_facts": [
+      "Ezhimala is a hill by the sea in Kannur district, near Payyanur",
+      "Legend: a piece of the medicine mountain Hanuman carried fell here, hence rare herbs",
+      "Ezhimala was the seat of the ancient Mushika (Ezhimala) kingdom",
+      "The Indian Naval Academy is at Ezhimala; large areas are restricted to the public"
+    ],
+    "sources": [
+      "Wikipedia: Ezhimala; Indian Naval Academy",
+      "Local legend as commonly told"
+    ]
+  },
+  "headline": [
+    "EZHIMALA:",
+    "THE FORBIDDEN HILL"
+  ],
+  "accent_words": [
+    "FORBIDDEN"
+  ],
+  "thumbnail_ml": "ഹനുമാൻ താഴെയിട്ട മല? ഇന്ന് പ്രവേശനമില്ല!",
+  "thumbnail_accent": [
+    "പ്രവേശനമില്ല!"
+  ],
+  "cover_visual": "Ink-wash lone hill by the sea, a dashed arc of a falling mountain piece, a red no-entry board",
+  "hook_voiceover": "പയ്യന്നൂരിനടുത്ത് ഹനുമാൻ താഴെയിട്ട ഒരു മല? ഇന്ന് അതിന്റെ വലിയൊരു ഭാഗത്ത് ആർക്കും കയറാനാവില്ല!",
+  "scenes": [
+    {
+      "voiceover": "ഏഴിമല. കണ്ണൂരിൽ, കടലിനോട് ചേർന്ന് ഒറ്റയ്ക്ക് നിൽക്കുന്ന ഒരു മല.",
+      "caption": "EZHIMALA · KANNUR",
+      "highlight": "EZHIMALA",
+      "kicker": "A LONE HILL BY THE SEA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഐതിഹ്യം: മരുന്നുമലയുമായി ഹനുമാൻ പറന്നപ്പോൾ ഒരു കഷണം ഇവിടെ വീണു. അതുകൊണ്ടാണ് ഇവിടെ അപൂർവ ഔഷധസസ്യങ്ങൾ എന്നാണ് വിശ്വാസം.",
+      "caption": "A PIECE OF HANUMAN'S MOUNTAIN?",
+      "highlight": "HANUMAN'S",
+      "kicker": "THE LEGEND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചരിത്രം: പണ്ട് ഇത് മൂഷിക രാജാക്കന്മാരുടെ നാടായിരുന്നു. ഗുഹകളും നിധിയുമുണ്ടെന്ന് നാട്ടുകഥകൾ.",
+      "caption": "LAND OF THE MUSHIKA KINGS",
+      "highlight": "KINGS",
+      "kicker": "THE HISTORY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്ന് ഏഴിമലയുടെ വലിയൊരു ഭാഗം ഇന്ത്യൻ നാവിക അക്കാദമിയാണ്. പൊതുജനങ്ങൾക്ക് പ്രവേശനമില്ല.",
+      "caption": "TODAY: NAVAL ACADEMY · NO ENTRY",
+      "highlight": "NO ENTRY",
+      "kicker": "TODAY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഏഴിമല കണ്ടിട്ടുണ്ടോ? പയ്യന്നൂരിലെ ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "SEEN EZHIMALA?",
+      "highlight": "EZHIMALA?",
+      "kicker": "TAG A PAYYANUR FRIEND",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഹനുമാൻ താഴെയിട്ട മല? ഇന്ന് പ്രവേശനമില്ല! ⛰️⚓\nThe hill Hanuman dropped? Today it's off-limits.\n\nഐതിഹ്യം: മരുന്നുമലയുടെ ഒരു കഷണം വീണതാണ് ഏഴിമല. പണ്ട് മൂഷിക രാജാക്കന്മാരുടെ നാട്. ഇന്ന് വലിയൊരു ഭാഗം ഇന്ത്യൻ നാവിക അക്കാദമി.\nLegend says Ezhimala is a piece of the medicine mountain Hanuman carried. Once the land of the Mushika kings, today much of it is the Indian Naval Academy.\n\nഏഴിമല കണ്ടിട്ടുണ്ടോ? പയ്യന്നൂരിലെ ഫ്രണ്ടിനെ ടാഗ് ചെയ്യൂ 👇\nTag a friend from Payyanur.\n\nSources: Wikipedia (Ezhimala, Indian Naval Academy)\nSend this to someone from Kannur. 📩",
+  "search_ml": [
+    "ഏഴിമല",
+    "പയ്യന്നൂർ",
+    "കണ്ണൂർ",
+    "മൂഷിക രാജവംശം"
+  ],
+  "hashtags": [
+    "Ezhimala",
+    "Payyanur",
+    "Kannur",
+    "KeralaLegends",
+    "IndianNavalAcademy"
+  ],
+  "fact_check": [
+    "Hanuman story framed as legend/belief",
+    "Treasure/caves framed as 'നാട്ടുകഥകൾ'",
+    "No restricted-area imagery: only a generic gate drawing"
+  ]
+}
