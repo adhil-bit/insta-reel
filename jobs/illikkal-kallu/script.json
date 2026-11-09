@@ -1,0 +1,98 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "Illikkal Kallu: the creeper that makes you rich",
+    "category": "MYSTERY",
+    "angle": "A giant rock near Erattupetta; legend of the wealth-giving Neelakoduveli creeper guarded by serpents; Narakapalam ridge",
+    "key_facts": [
+      "Illikkal Kallu is a tall rock near Erattupetta in Kottayam district, a popular viewpoint",
+      "Local legend: a rare blue-flowered creeper, Neelakoduveli, grows at the top and brings lasting wealth to whoever owns it",
+      "Legend: it blooms rarely and serpents guard it",
+      "A narrow ridge near the top is called Narakapalam (hell's bridge); dangerous"
+    ],
+    "sources": [
+      "Local legend as commonly told; Kerala Tourism (Illikkal Kallu)"
+    ]
+  },
+  "headline": [
+    "THE PLANT THAT",
+    "MAKES YOU RICH"
+  ],
+  "accent_words": [
+    "RICH"
+  ],
+  "thumbnail_ml": "കോടീശ്വരനാക്കുന്ന ചെടി!",
+  "thumbnail_accent": [
+    "കോടീശ്വരനാക്കുന്ന"
+  ],
+  "cover_visual": "Ink-wash giant rock above clouds with a glowing blue flower at the top and a coiled serpent",
+  "hook_voiceover": "ഈ പാറയുടെ മുകളിൽ നിങ്ങളെ കോടീശ്വരനാക്കുന്ന ഒരു ചെടിയുണ്ടെന്ന് ഐതിഹ്യം! പക്ഷേ അത് കണ്ടവരാരുമില്ല...",
+  "scenes": [
+    {
+      "voiceover": "കോട്ടയം, ഈരാറ്റുപേട്ടയ്ക്കടുത്ത് ഇല്ലിക്കൽ കല്ല്. മേഘങ്ങൾക്കിടയിൽ ഉയർന്നുനിൽക്കുന്ന ഭീമൻ പാറ.",
+      "caption": "ILLIKKAL KALLU · KOTTAYAM",
+      "highlight": "ILLIKKAL",
+      "kicker": "A ROCK ABOVE THE CLOUDS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നാട്ടുകാർ പറയുന്നത്: അതിന്റെ മുകളിൽ നീലക്കൊടുവേലി എന്ന അപൂർവ ചെടി വളരുന്നു. അത് കിട്ടിയാൽ സമ്പത്ത് ഒഴിയില്ല.",
+      "caption": "NEELAKODUVELI: ENDLESS WEALTH?",
+      "highlight": "WEALTH?",
+      "kicker": "THE LEGEND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ അത് പൂക്കുന്നത് വളരെ അപൂർവം. കാവലിന് സർപ്പങ്ങളുണ്ടെന്നും കഥ.",
+      "caption": "GUARDED BY SERPENTS",
+      "highlight": "SERPENTS",
+      "kicker": "RARELY BLOOMS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മുകളിലേക്കുള്ള വഴിയിൽ ഒരു ഇടുങ്ങിയ വരമ്പുണ്ട്: നരകപ്പാലം! ഇന്നും അത് അപകടമേഖലയാണ്, കയറാൻ ശ്രമിക്കരുത്.",
+      "caption": "NARAKAPALAM: HELL'S BRIDGE",
+      "highlight": "HELL'S",
+      "kicker": "DANGER ZONE · DON'T CLIMB",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നീലക്കൊടുവേലി ശരിക്കും ഉണ്ടോ? നിങ്ങളുടെ നാട്ടിലെ നിധിക്കഥ കമന്റ് ചെയ്യൂ!",
+      "caption": "DOES IT EXIST?",
+      "highlight": "EXIST?",
+      "kicker": "YOUR TREASURE STORY?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കോടീശ്വരനാക്കുന്ന ചെടി! 🌿💰\nThe plant that makes you rich.\n\nഇല്ലിക്കൽ കല്ലിന്റെ മുകളിൽ നീലക്കൊടുവേലി എന്ന അപൂർവ ചെടിയുണ്ടെന്ന് നാട്ടുകാർ പറയുന്നു. കിട്ടിയാൽ സമ്പത്ത് ഒഴിയില്ല, പക്ഷേ അത് അപൂർവമായേ പൂക്കൂ, കാവലിന് സർപ്പങ്ങളും.\nLegend says a rare creeper, Neelakoduveli, grows atop Illikkal Kallu and brings endless wealth, but it rarely blooms and serpents guard it.\n\n⚠️ നരകപ്പാലം അപകടമേഖലയാണ്. സുരക്ഷിതമായി മാത്രം യാത്ര ചെയ്യൂ.\n⚠️ Narakapalam is dangerous. Please stay on safe paths.\n\nനിങ്ങളുടെ നാട്ടിലെ നിധിക്കഥ കമന്റ് ചെയ്യൂ 👇\nTell us your village's treasure legend.\n\nSend this to a friend from Kottayam. 📩",
+  "search_ml": [
+    "ഇല്ലിക്കൽ കല്ല്",
+    "നീലക്കൊടുവേലി",
+    "ഈരാറ്റുപേട്ട",
+    "കോട്ടയം"
+  ],
+  "hashtags": [
+    "IllikkalKallu",
+    "Neelakoduveli",
+    "Kottayam",
+    "KeralaLegends",
+    "Erattupetta"
+  ],
+  "fact_check": [
+    "Plant and serpents framed as legend",
+    "Safety warning in VO and caption; no encouragement to climb"
+  ]
+}
