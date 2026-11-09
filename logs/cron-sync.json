@@ -1,16 +1,12 @@
 {
   "applied": true,
-  "created": [
-    "insta-reel Mon+Tue+Wed+Thu+Fri+Sat+Sun"
-  ],
+  "created": [],
   "updated": [
+    "insta-reel Mon+Tue+Wed+Thu+Fri+Sat+Sun",
     "insta-reel render daily",
     "insta-reel stats daily"
   ],
-  "disabled": [
-    "insta-reel Sat+Sun",
-    "insta-reel Mon+Tue+Wed+Thu+Fri"
-  ],
+  "disabled": [],
   "wanted": [
     {
       "title": "insta-reel Mon+Tue+Wed+Thu+Fri+Sat+Sun",
@@ -24,10 +20,10 @@
         6
       ],
       "hours": [
-        14
+        13
       ],
       "minutes": [
-        37
+        35
       ]
     },
     {
