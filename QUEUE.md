@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 09 Nov, 10:39 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 09 Nov, 10:41 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -13,6 +13,7 @@ _Updated Mon 09 Nov, 10:39 AM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| The mountain still bowing for Agastya | 2026-11-09T05:11 |
 | Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
 | Muniyara: sages' homes or 2,000-year-old graves? | 2026-11-07T13:47 |
 | Porotta-beef and Kozhikode: is there a link? | 2026-11-07T04:39 |
@@ -22,4 +23,3 @@ _Updated Mon 09 Nov, 10:39 AM IST. Times are approximate: each reel posts within
 | 14 districts, 14 flavours: Kerala's famous food by district | 2026-11-05T12:58 |
 | Bigg Boss got its name from a 1949 novel | 2026-11-03T14:38 |
 | Emden and Chempakaraman Pillai: the word 'emandan' and a forgotten revolutionary | 2026-11-05T01:39 |
-| Pathinettam Koottam: the unseen side of Itty Cora, Part 5/5 | 2026-11-04T14:38 |
