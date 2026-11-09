@@ -1,0 +1,152 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Anchuthengu 1721: the Attingal revolt",
+    "category": "HISTORY",
+    "angle": "East India Company men carrying gifts to the Rani of Attingal were attacked and killed; the fort was besieged; seen as an early revolt against the British",
+    "key_facts": [
+      "The English East India Company built a fort at Anchuthengu (Anjengo), near Thiruvananthapuram, in the 1690s",
+      "In April 1721 a Company party taking gifts to the Rani of Attingal was attacked; more than a hundred were killed",
+      "Historians link it to anger over the Company's exploitative trade",
+      "The fort was then besieged for months; the event is described as one of the earliest revolts against British power in India",
+      "The fort and old European graves still stand"
+    ],
+    "sources": [
+      "Wikipedia: Anchuthengu Fort; Attingal Outbreak",
+      "Kerala Tourism / ASI"
+    ]
+  },
+  "headline": [
+    "1721: തിരിച്ചുവരാത്തവർ"
+  ],
+  "accent_words": [
+    "1721:"
+  ],
+  "thumbnail_ml": "സമ്മാനവുമായി പോയവർ തിരിച്ചുവന്നില്ല!",
+  "thumbnail_accent": [
+    "തിരിച്ചുവന്നില്ല!"
+  ],
+  "cover_visual": "Ink-wash procession of men carrying gift boxes past coconut palms toward a palace, a red 1721 seal",
+  "hook_voiceover": "1721. സമ്മാനങ്ങളുമായി റാണിയെ കാണാൻ പോയ നൂറിലേറെ ഇംഗ്ലീഷുകാർ... ആരും തിരിച്ചുവന്നില്ല!",
+  "scenes": [
+    {
+      "voiceover": "തിരുവനന്തപുരത്തിനടുത്ത് അഞ്ചുതെങ്ങ്. കടലിനോട് ചേർന്ന് ഈസ്റ്റ് ഇന്ത്യാ കമ്പനി ഇവിടെ ഒരു കോട്ട കെട്ടി.",
+      "caption": "അഞ്ചുതെങ്ങ് കോട്ട",
+      "highlight": "അഞ്ചുതെങ്ങ്",
+      "kicker": "ഈസ്റ്റ് ഇന്ത്യാ കമ്പനി",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1721 ഏപ്രിൽ. കമ്പനി ഉദ്യോഗസ്ഥർ ആറ്റിങ്ങൽ റാണിക്ക് കാഴ്ചകളുമായി പുറപ്പെട്ടു.",
+      "caption": "റാണിക്ക് സമ്മാനം",
+      "highlight": "സമ്മാനം",
+      "kicker": "1721 ഏപ്രിൽ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വഴിയിൽ നാട്ടുകാർ അവരെ ആക്രമിച്ചു. നൂറിലേറെ പേർ കൊല്ലപ്പെട്ടു. കമ്പനിയുടെ ചൂഷണത്തോടുള്ള രോഷമായിരുന്നു കാരണം എന്നാണ് ചരിത്രം.",
+      "caption": "ആറ്റിങ്ങൽ കലാപം",
+      "highlight": "കലാപം",
+      "kicker": "നൂറിലേറെ മരണം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പിന്നെ മാസങ്ങളോളം കോട്ട ഉപരോധിക്കപ്പെട്ടു. ബ്രിട്ടീഷുകാർക്കെതിരായ ആദ്യകാല ചെറുത്തുനിൽപ്പുകളിൽ ഒന്നായാണ് ഇതിനെ കാണുന്നത്.",
+      "caption": "ആദ്യകാല ചെറുത്തുനിൽപ്പ്",
+      "highlight": "ചെറുത്തുനിൽപ്പ്",
+      "kicker": "മാസങ്ങൾ നീണ്ട ഉപരോധം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആ കോട്ടയും പഴയ കല്ലറകളും ഇന്നും അഞ്ചുതെങ്ങിലുണ്ട്. നിങ്ങൾ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "ഇന്നും അവിടെ",
+      "highlight": "ഇന്നും",
+      "kicker": "നിങ്ങൾ പോയിട്ടുണ്ടോ?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "1721: സമ്മാനവുമായി പോയവർ തിരിച്ചുവന്നില്ല! 🏰\n\nഅഞ്ചുതെങ്ങിലെ ഈസ്റ്റ് ഇന്ത്യാ കമ്പനി ഉദ്യോഗസ്ഥർ ആറ്റിങ്ങൽ റാണിക്ക് കാഴ്ചകളുമായി പോയപ്പോൾ നാട്ടുകാർ ആക്രമിച്ചു. നൂറിലേറെ പേർ കൊല്ലപ്പെട്ടു, കോട്ട മാസങ്ങളോളം ഉപരോധിക്കപ്പെട്ടു. ബ്രിട്ടീഷുകാർക്കെതിരായ ആദ്യകാല ചെറുത്തുനിൽപ്പുകളിൽ ഒന്ന്: ആറ്റിങ്ങൽ കലാപം.\n\nഅഞ്ചുതെങ്ങ് കോട്ടയിൽ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\n\nഉറവിടം: Wikipedia (Anchuthengu Fort, Attingal Outbreak)\nഈ കഥ തിരുവനന്തപുരത്തുള്ള ഫ്രണ്ടിന് അയക്കൂ 📩",
+  "search_ml": [
+    "അഞ്ചുതെങ്ങ് കോട്ട",
+    "ആറ്റിങ്ങൽ കലാപം",
+    "1721",
+    "കേരള ചരിത്രം"
+  ],
+  "hashtags": [
+    "Anchuthengu",
+    "AttingalRevolt",
+    "KeralaHistory",
+    "Thiruvananthapuram",
+    "EastIndiaCompany"
+  ],
+  "fact_check": [
+    "Death toll softened to 'more than a hundred'",
+    "Cause attributed to historians",
+    "'First revolt' softened to 'one of the earliest'",
+    "No glorification of the killings"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          5
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 0,
+        "at": 0.7,
+        "f": 150
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": [
+          0.15,
+          0.4
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.5,
+        "count": 2
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": 0.2
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 150
+      }
+    ]
+  }
+}
