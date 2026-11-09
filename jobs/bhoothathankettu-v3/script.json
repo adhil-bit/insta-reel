@@ -1,0 +1,159 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "Bhoothathankettu: the demons' dam stopped by a rooster",
+    "category": "MYSTERY",
+    "angle": "A legend of demons damming the Periyar overnight to drown a temple, foiled by a rooster's early crow; the boulders are still in the river",
+    "key_facts": [
+      "Bhoothathankettu is near Kothamangalam (Ernakulam) on the Periyar, with large boulders across the river",
+      "Local legend: bhoothams tried to dam the Periyar in one night to flood the Thrikkariyoor temple",
+      "Legend: Shiva crowed early as a rooster; the demons fled thinking it was dawn, leaving the dam half-built"
+    ],
+    "sources": [
+      "Local legend as commonly told; Kerala Tourism (Bhoothathankettu)"
+    ]
+  },
+  "headline": [
+    "THE DEMONS'",
+    "HALF-BUILT DAM"
+  ],
+  "accent_words": [
+    "DEMONS'"
+  ],
+  "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ ഭൂതങ്ങൾ കെട്ടിയ അണ!",
+  "thumbnail_accent": [
+    "ഭൂതങ്ങൾ"
+  ],
+  "cover_visual": "Ink-wash night river with giant boulders half-blocking it, a temple downstream, a rooster silhouette and a red question mark",
+  "hook_voiceover": "ഒറ്റ രാത്രി കൊണ്ട് പെരിയാർ തടഞ്ഞ് ഒരു ക്ഷേത്രം മുക്കാൻ ഭൂതങ്ങൾ ശ്രമിച്ചു! പക്ഷേ ഒരു കോഴി കൂവി...",
+  "scenes": [
+    {
+      "voiceover": "കോതമംഗലത്തിനടുത്ത്, പെരിയാറിന് നടുവിൽ ഭീമൻ പാറക്കല്ലുകൾ. പേര്: ഭൂതത്താൻകെട്ട്.",
+      "caption": "BHOOTHATHANKETTU · ERNAKULAM",
+      "highlight": "BHOOTHATHANKETTU",
+      "kicker": "GIANT ROCKS IN THE PERIYAR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നാട്ടുകാർ പറയുന്ന കഥ: തൃക്കാരിയൂർ ക്ഷേത്രം വെള്ളത്തിൽ മുക്കാൻ ഭൂതങ്ങൾ രാത്രി അണകെട്ടാൻ തുടങ്ങി.",
+      "caption": "A DAM TO DROWN A TEMPLE",
+      "highlight": "DROWN",
+      "kicker": "THE LEGEND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പുലരും മുമ്പ് പണി തീരണം. അപ്പോൾ ശിവൻ കോഴിയുടെ രൂപത്തിൽ നേരത്തെ കൂവി!",
+      "caption": "THE ROOSTER CROWED EARLY",
+      "highlight": "ROOSTER",
+      "kicker": "BEFORE DAWN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നേരം വെളുത്തെന്ന് കരുതി ഭൂതങ്ങൾ ഓടിപ്പോയി. പാതി കെട്ടിയ അണയുടെ കല്ലുകൾ ഇന്നും പുഴയിലുണ്ട്.",
+      "caption": "THE HALF-BUILT DAM IS STILL THERE",
+      "highlight": "STILL",
+      "kicker": "TODAY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഭൂതത്താൻകെട്ടിൽ പോയിട്ടുണ്ടോ? നിങ്ങളുടെ നാട്ടിലെ ഇതുപോലൊരു കഥ കമന്റ് ചെയ്യൂ!",
+      "caption": "YOUR VILLAGE'S LEGEND?",
+      "highlight": "LEGEND?",
+      "kicker": "TELL US",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഒറ്റ രാത്രിയിൽ ഭൂതങ്ങൾ കെട്ടിയ അണ 👹🐓\nThe dam demons tried to build in one night.\n\nനാട്ടുകാർ പറയുന്ന കഥ: തൃക്കാരിയൂർ ക്ഷേത്രം മുക്കാൻ ഭൂതങ്ങൾ പെരിയാർ തടയാൻ തുടങ്ങി. ശിവൻ കോഴിയായി നേരത്തെ കൂവി, ഭൂതങ്ങൾ ഓടി. പാതി കെട്ടിയ അണയുടെ കല്ലുകൾ ഇന്നും പുഴയിൽ.\nLegend says demons tried to dam the Periyar overnight to drown a temple. A rooster crowed early, they fled, and the half-built dam's rocks are still in the river.\n\nനിങ്ങളുടെ നാട്ടിലെ ഇതുപോലൊരു കഥ കമന്റ് ചെയ്യൂ 👇\nTell us your village's legend below.\n\nSend this to a friend from Kothamangalam. 📩",
+  "search_ml": [
+    "ഭൂതത്താൻകെട്ട്",
+    "കോതമംഗലം",
+    "പെരിയാർ",
+    "ഐതിഹ്യം"
+  ],
+  "hashtags": [
+    "Bhoothathankettu",
+    "Kothamangalam",
+    "Periyar",
+    "KeralaLegends",
+    "Ernakulam"
+  ],
+  "fact_check": [
+    "Whole story framed as 'നാട്ടുകാർ പറയുന്ന കഥ' (what locals say)",
+    "Only physical claim: boulders in the river"
+  ],
+  "reworked_from": "bhoothathankettu-v2",
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          2
+        ]
+      },
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          4,
+          5
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 0,
+        "at": 0.15
+      },
+      {
+        "type": "gong",
+        "clip": 0,
+        "at": 0.65
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.55,
+          0.7,
+          0.85
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.3
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.35
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": 0.05
+      }
+    ]
+  }
+}

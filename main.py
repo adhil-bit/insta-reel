@@ -165,9 +165,14 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
 
     print("6/6 Sound design, thumbnail and export...")
     from pipeline import sound
-    bed = sound.make_bed(durations, script["category"], work / "bed.wav")
-    if template == "explainer":                      # livelier score: plucked arpeggio, soft pulse, hats
-        bed = sound.add_pulse(bed, sum(durations), work / "bed_pulse.wav")
+    if script.get("sound_plan"):                     # story-specific sound design (drone + scene effects)
+        from pipeline import story_sound
+        bed = story_sound.make(durations, script["sound_plan"], work / "bed_story.wav")
+        print("  sound: story sound plan")
+    else:
+        bed = sound.make_bed(durations, script["category"], work / "bed.wav")
+        if template == "explainer":                      # livelier score: plucked arpeggio, soft pulse, hats
+            bed = sound.add_pulse(bed, sum(durations), work / "bed_pulse.wav")
     final = video.add_music(joined, folder / "reel.mp4", bed=bed)
     try:
         from pipeline import thumbnail
