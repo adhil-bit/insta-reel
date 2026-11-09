@@ -1,0 +1,101 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "topic": {
+    "title": "'Konnal papam thinnal theerum': born from cannibalism?",
+    "category": "HISTORY",
+    "angle": "Myth-busting a viral theory linking the proverb to cannibalism via Logan's Malabar Manual (1887), and the slavery truth on the same page",
+    "key_facts": [
+      "The viral theory cites William Logan's Malabar Manual (1887)",
+      "Per the user's reading, Logan calls cannibalism 'uncertain' and cites only one, second-hand instance; the proverb is not mentioned",
+      "The proverb is commonly used about killing animals for food; a similar proverb exists in Tamil",
+      "The people in that account were slaves; slavery was abolished in Malabar in 1843 (Act V of 1843) and in Travancore in 1855"
+    ],
+    "sources": [
+      "William Logan, Malabar Manual (1887), via archive.org",
+      "Indian Slavery Act, 1843; Travancore proclamation, 1855"
+    ]
+  },
+  "headline": [
+    "A PROVERB FROM",
+    "CANNIBALISM?"
+  ],
+  "accent_words": [
+    "CANNIBALISM?"
+  ],
+  "thumbnail_ml": "ഈ ചൊല്ല് നരഭോജനത്തിൽ നിന്നോ?",
+  "thumbnail_accent": [
+    "നരഭോജനത്തിൽ"
+  ],
+  "cover_visual": "Ink-wash: the proverb in big brush letters, an old book and a magnifying glass, a red VIRAL? stamp",
+  "hook_voiceover": "കൊന്നാൽ പാപം തിന്നാൽ തീരും. ഈ ചൊല്ല് നരഭോജനത്തിൽ നിന്ന് വന്നതാണെന്ന് ഒരു തിയറി ഇപ്പോൾ വൈറലാണ്. ഞങ്ങൾ തെളിവ് പരിശോധിച്ചു.",
+  "scenes": [
+    {
+      "voiceover": "തെളിവായി കാണിക്കുന്നത് 1887ൽ ബ്രിട്ടീഷ് കളക്ടർ വില്യം ലോഗൻ എഴുതിയ മലബാർ മാന്വൽ. അതിൽ, ഒരാളുടെ മാംസം തിന്നാൽ കൊലപാതകത്തിന്റെ പാപം തീരുമെന്ന് വിശ്വസിച്ചവരെക്കുറിച്ച് ഒരു കഥയുണ്ട്.",
+      "caption": "THE 'PROOF': MALABAR MANUAL, 1887",
+      "highlight": "1887",
+      "kicker": "WILLIAM LOGAN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ അതേ പേജിൽ ലോഗൻ തന്നെ എഴുതുന്നു: നരഭോജനം നടന്നിരുന്നോ എന്ന് ഉറപ്പില്ല. ആകെ ഒരേയൊരു സംഭവം, അതും പറഞ്ഞുകേട്ടത്. ഈ പഴഞ്ചൊല്ലിനെക്കുറിച്ച് ഒരു വാക്കുപോലുമില്ല.",
+      "caption": "LOGAN HIMSELF: 'UNCERTAIN'",
+      "highlight": "UNCERTAIN",
+      "kicker": "NO WORD ON THE PROVERB",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഈ ചൊല്ല് നമ്മൾ പറയുന്നത് മൃഗങ്ങളെ കൊന്ന് ഭക്ഷിക്കുന്നതിനെക്കുറിച്ചാണ്. സമാനമായ ഒരു ചൊല്ല് തമിഴിലുമുണ്ട്.",
+      "caption": "IT'S ABOUT EATING ANIMALS",
+      "highlight": "ANIMALS",
+      "kicker": "A TAMIL VERSION TOO",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ആ പേജിൽ ആരും ശ്രദ്ധിക്കാത്ത ഒരു സത്യമുണ്ട്. ആ കഥയിലെ മനുഷ്യർ അടിമകളായിരുന്നു. മലബാറിൽ 1843ലും തിരുവിതാംകൂറിൽ 1855ലുമാണ് അടിമത്തം നിർത്തലാക്കിയത്.",
+      "caption": "KERALA ONCE SOLD HUMANS",
+      "highlight": "HUMANS",
+      "kicker": "ABOLISHED 1843 · 1855",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വൈറൽ തിയറിയേക്കാൾ ഞെട്ടിക്കുന്നതാണ് യഥാർത്ഥ ചരിത്രം. നിങ്ങൾ ഈ ചൊല്ല് ഏത് അർത്ഥത്തിലാണ് കേട്ടിട്ടുള്ളത്? കമന്റ് ചെയ്യൂ.",
+      "caption": "WHICH MEANING DID YOU HEAR?",
+      "highlight": "MEANING",
+      "kicker": "TELL US",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "\"കൊന്നാൽ പാപം തിന്നാൽ തീരും\" നരഭോജനത്തിൽ നിന്നോ? 1887ലെ മലബാർ മാന്വൽ പരിശോധിച്ചപ്പോൾ കിട്ടിയത് 📜🔍\n\nWas this proverb born from cannibalism? We checked Logan's Malabar Manual (1887).\n\nനിങ്ങൾ ഈ ചൊല്ല് ഏത് അർത്ഥത്തിലാണ് കേട്ടിട്ടുള്ളത്? കമന്റ് ചെയ്യൂ 👇\n\nSource: William Logan, Malabar Manual (1887), archive.org",
+  "search_ml": [
+    "കൊന്നാൽ പാപം തിന്നാൽ തീരും",
+    "മലബാർ മാന്വൽ",
+    "വില്യം ലോഗൻ",
+    "പഴഞ്ചൊല്ല്"
+  ],
+  "hashtags": [
+    "malabarmanual",
+    "williamlogan",
+    "keralahistory",
+    "malayalamproverb",
+    "mythbuster"
+  ],
+  "fact_check": [
+    "Script supplied by the user, who checked the Malabar Manual page",
+    "Quoted words 'uncertain' / 'only one authentic instance' per user; confirm against the page",
+    "Abolition dates: Malabar 1843, Travancore 1855"
+  ],
+  "reworked_from": "konnal-papam"
+}
