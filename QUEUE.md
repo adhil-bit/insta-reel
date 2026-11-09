@@ -1,95 +1,26 @@
 # Posting queue
 
-_Updated Mon 09 Nov, 04:32 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 09 Nov, 07:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
-- agastya-photo
-- agastya-photo-v2
-- alummoottil-meda
-- arakkal-queens
-- aranmula-kannadi
-- bathe-after-funeral
-- beypore-1-railway
-- beypore-2-collage
-- beypore-2-uru
-- bhoothathankettu
-- bhoothathankettu-v2
-- bhoothathankettu-v3
-- bigg-boss-1984
-- bonacaud-bungalow
-- chandrayaan-3-south-pole
-- chundan-vallam
-- dhanushkodi-ghost-town
-- district-foods
-- edakkal-caves
-- emden-chempakaraman
-- ezhimala
-- ezhimala-v2
-- gobekli-tepe
-- illikkal-kallu
-- itty-cora-1-trader
-- itty-cora-2-madhava
-- itty-cora-3-nilakantha
-- itty-cora-4-pepper
-- itty-cora-5-europe
-- janmi-kudiyan
-- jatinga-birds
-- kalari-fire
-- kalari-fire-v2
-- kalari-kungfu
-- kallanai-2000-year-dam
-- karuthachanootu
-- kerala-crows-missing
-- kerala-piravi-1956
-- kerala-red-rain
-- kgf-deepest-gold-mine
-- kodinhi-twin-village
-- kola-borehole
-- konnal-papam
-- konnal-papam-v2
-- kothayi-ink
-- kothayi-ink-v2
-- kothayi-treasure
-- kunnamkulam-made
-- kuriyedathu-thathri
-- kuttanad-below-sea-level
-- lake-nyos
-- mananchira-ink
-- mananchira-ink-v2
-- mary-celeste
-- muniyara-ink
-- muniyara-ink-v2
-- munnar-lost-railway
-- mv-kairali
-- padmanabhapuram-palace
-- padmanabhaswamy-vault-b
-- photography-prohibited
-- porotta-kozhikode
-- porotta-kozhikode-v2
-- porotta-kozhikode-v3
-- porotta-kozhikode-v4
-- porotta-kozhikode-v5
-- porotta-kozhikode-v6
-- porotta-origin
-- silent-valley
-- thalassery-first-cake
-- theyyam-god-for-a-night
-- two-protests-classroom
-- yakshi-pala-tree
+- k2-anchuthengu-1721
+- k2-flood-99-v2
 
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
-| Anchuthengu 1721: the Attingal revolt | 2026-11-09T11:02 |
-| The flood of '99: the 1924 flood that took a hill | 2026-11-07T13:23 |
-| The flood of '99: the 1924 flood that took a hill | 2026-11-07T13:03 |
-| Thalassery and India's first Christmas cake (1883) | 2026-11-05T17:48 |
-| How Kerala's 14 districts got their names | 2026-11-05T07:38 |
-| Is porotta really Kerala's? Three origin theories | 2026-11-03T13:36 |
-| Who owned Kerala's land? From janmi–kudiyan to land reform | 2026-11-04T07:38 |
-| Kuriyedathu Thathri: the trial that shook Kerala | 2026-11-03T06:18 |
+| Bhoothathankettu: the demons' dam stopped by a rooster | 2026-11-09T13:32 |
+| The mountain still bowing for Agastya | 2026-11-09T05:11 |
+| Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
+| Muniyara: sages' homes or 2,000-year-old graves? | 2026-11-07T13:47 |
+| Porotta-beef and Kozhikode: is there a link? | 2026-11-07T04:39 |
+| Fire in Kalari: tradition or show? | 2026-11-06T14:38 |
+| Kalla Kothayi's treasure: the legend of Kothayimukku, Kannur | 2026-11-06T01:38 |
+| Beypore Part 2: the Uru and the Khalasis | 2026-11-08T14:38 |
+| 14 districts, 14 flavours: Kerala's famous food by district | 2026-11-05T12:58 |
+| Bigg Boss got its name from a 1949 novel | 2026-11-03T14:38 |
