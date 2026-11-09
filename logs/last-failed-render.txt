@@ -1,4 +1,4 @@
-Rendering job bhoothathankettu-v2: Bhoothathankettu: the demons' dam stopped by a rooster
+Rendering job illikkal-kallu: Illikkal Kallu: the creeper that makes you rich
 3/6 Recording the voiceover (voice: Despina)...
   daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
   daily limit reached on key 1; switching to key 2
