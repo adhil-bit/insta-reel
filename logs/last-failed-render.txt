@@ -1,14 +1,34 @@
+Rendering job bhoothathankettu-v2: Bhoothathankettu: the demons' dam stopped by a rooster
+3/6 Recording the voiceover (voice: Despina)...
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+  daily limit reached on key 1; switching to key 2
+  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 276, in render_pending
-    name = render_job(job.parent).name
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 238, in render_job
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
+    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 148, in gemini_narration
+    _gemini_voice(joined, full, voice_name)
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 94, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=config.GEMINI_TTS_MODEL, key_index=key_index + 1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
+    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 95, in _gemini_voice
+    raise RuntimeError("Gemini daily voice quota used up")
+RuntimeError: Gemini daily voice quota used up
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 682, in <module>
+    render_job(Path(args.folder))
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 241, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
-    "visual": script["cover_visual"],
-              ~~~~~~^^^^^^^^^^^^^^^^
-KeyError: 'cover_visual'
-Rendering job muniyara-ink: Muniyara: sages' homes or 2,000-year-old graves?
-!! muniyara-ink failed: 'cover_visual'
-Rendered 0 job(s). Failed: ['muniyara-ink']
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 72, in build_reel
+    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
+RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
