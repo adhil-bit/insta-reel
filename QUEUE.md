@@ -8,7 +8,6 @@ _Updated Mon 09 Nov, 11:45 AM IST. Times are approximate: each reel posts within
 ## Being rendered (joins the queue when done)
 
 - bhoothathankettu
-- ezhimala
 - k2-flood-99-v2
 
 ## Recently posted
