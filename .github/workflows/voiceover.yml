@@ -1,0 +1,77 @@
+name: Voice-over a finished video (user edit)
+
+# Adds narration + story sound to a silent video. The silent video sits in a release
+# called "<slug>-src"; the job's script.json is in jobs-voiceover/<slug>/.
+on:
+  workflow_dispatch:
+    inputs:
+      account:
+        description: "1 = @unexplored.truths, 2 = @kathayum.charithravum"
+        type: choice
+        options: ["1", "2"]
+        default: "1"
+      slug:
+        description: "Folder name under jobs-voiceover/"
+        required: true
+
+permissions:
+  contents: write
+
+
+env:
+  IG_ACCOUNT: ${{ github.event.inputs.account || '1' }}
+  HISTORY_PATH: ${{ github.event.inputs.account == '2' && 'history_2.json' || 'history.json' }}
+  IG_USER_ID_2: ${{ secrets.IG_USER_ID_2 }}
+  IG_ACCESS_TOKEN_2: ${{ secrets.IG_ACCESS_TOKEN_2 }}
+  TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+  TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+  VISUAL_MODE: code
+  VOICE_PROVIDER: ${{ vars.VOICE_PROVIDER || 'gemini' }}
+  GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+  GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+  ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+  ELEVENLABS_VOICE_ID: ${{ secrets.ELEVENLABS_VOICE_ID }}
+  ELEVENLABS_MODEL: ${{ vars.ELEVENLABS_MODEL || 'eleven_v3' }}
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  RENDER_WORKERS: ${{ vars.RENDER_WORKERS || '3' }}
+
+jobs:
+  voiceover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Cache FFmpeg
+        uses: actions/cache@v4
+        with:
+          path: ~/ffmpeg
+          key: ffmpeg-static-v1
+      - name: Get FFmpeg
+        run: |
+          if [ ! -x ~/ffmpeg/ffmpeg ]; then
+            mkdir -p ~/ffmpeg
+            curl -sL https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-linux64-gpl.tar.xz \
+              | tar -xJ -C ~/ffmpeg --strip-components=2 --wildcards '*/bin/ffmpeg' '*/bin/ffprobe'
+          fi
+          echo "$HOME/ffmpeg" >> "$GITHUB_PATH"
+      - name: Install Python packages
+        run: pip install -r requirements.txt
+      - name: Fetch the silent video
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download "${{ github.event.inputs.slug }}-src" --dir "jobs-voiceover/${{ github.event.inputs.slug }}" --clobber
+      - name: Add narration and sound
+        run: |
+          mkdir -p output
+          set -o pipefail
+          python scripts/voiceover_video.py "jobs-voiceover/${{ github.event.inputs.slug }}" 2>&1 | tee output/render-log.txt
+      - name: Save as a release (same format as a render)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          REEL="${{ github.event.inputs.slug }}"; dir="output/$REEL"
+          gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" "$dir/script.json" output/render-log.txt --title "$REEL" --notes-file "$dir/review.md"
