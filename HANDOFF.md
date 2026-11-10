@@ -185,3 +185,27 @@ Rules: frame 1 must already show the idea (ghost sketch or a photo cut-out at �
 Releases can't be deleted from a Claude session, and a render skips any job that already has a release, so **re-render under a new slug** (e.g. `-v2`) and repoint the trigger
 (delete by title text, then create). Trigger results show in the cron-oneoff job log (`scheduled:` / `deleted:` lines).
 Done 5 Nov: `k2-christmas-cake-1883` (notebook, Thalassery cake reworked from the archived reel) posted to page 2.
+
+## 10. Motion-flow rules (owner's standing instruction, 10 Nov 2026)
+
+The owner asked that **future reels use the motion flows in `docs/design-refs/`** (a cinematic
+Malayalam explainer page's editing breakdown + 5 worked designs). Style reference only: no other
+page's watermark, name, hashtags or artwork. How to apply them in this pipeline:
+
+1. **Constant slow movement, few cuts.** Every scene has a slow push-in, pan or parallax
+   (3–5 layers moving at different speeds). No static frames. Prefer one continuous camera
+   idea across the reel (descent, fly-through, pan along a landscape) over unrelated scenes.
+2. **Colour tells the story.** Pick a palette arc (bright/safe → dark/danger, day → night,
+   turquoise → black) and **one accent colour** per reel (e.g. rescue red, lamp gold).
+3. **One overlay layer across all scenes** (rain, stars, fog, dust, marine snow) so cuts feel seamless.
+4. **History/real events open with a date/place stamp** in the first second ("1721 · അഞ്ചുതെങ്ങ്").
+5. **Voice leads.** Change the visual when the narration changes idea, not to a beat.
+6. **Sound plan on every reel** (`sound_plan` in script.json, pipeline/story_sound.py):
+   ambience bed + a moment of silence before the big reveal + one signature hit (rumble, gong, chime).
+7. **Template:** 0–3 s hook (strongest visual + question) · 3–10 s setup (slow push-in) ·
+   10–40 s one visual per idea, a diagram in the same art style, an everyday analogy ·
+   last 10 s payoff (most beautiful shot) + ending (loop zoom / "Part 2" / question CTA).
+8. **Long topics become a series** (Part 1/2/3, same title and cover layout).
+9. **Real tragedies:** respectful tone, no dramatised deaths or victims' faces, official numbers only.
+10. Keep our proven rules on top: stakes in the first 3 s, 30–45 s length, North Malabar local
+    stories share best, Despina voice, 7:05 PM daily slot.
