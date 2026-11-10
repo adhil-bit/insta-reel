@@ -1,0 +1,92 @@
+{
+  "source_video": "../illikkal-user/illikkal-kallu-reel-SILENT.mp4",
+  "voice_lock": "Despina",
+  "cover_at": 2.6,
+  "lines": [
+    {
+      "text": "കോടീശ്വരനാക്കുന്ന ഒരു ചെടി! അതും കോട്ടയത്തെ ഒരു മലമുകളിൽ.",
+      "start": 0.3
+    },
+    {
+      "text": "ഇല്ലിക്കൽ കല്ല്. സമുദ്രനിരപ്പിൽ നിന്ന് ഏകദേശം മൂവായിരത്തി നാനൂറ് അടി ഉയരം.",
+      "start": 5.2
+    },
+    {
+      "text": "ഇവിടെ മൂന്ന് പാറകളുണ്ട്. അതിൽ രണ്ടെണ്ണത്തെ ചേർക്കുന്നത് അര അടി മാത്രം വീതിയുള്ള ഒരു വരമ്പ്. പേര്, നരകപ്പാലം!",
+      "start": 11.3
+    },
+    {
+      "text": "ഈ പാറകൾക്ക് മുകളിൽ നീലക്കൊടുവേലി എന്ന അത്ഭുതച്ചെടി വളരുന്നുണ്ടെന്നാണ് ഐതിഹ്യം. സമ്പത്തും ഐശ്വര്യവും നല്ല വിളവും കൊണ്ടുവരുന്ന നീലപ്പൂവ്.",
+      "start": 19.7
+    },
+    {
+      "text": "പക്ഷേ, ഇന്നുവരെ ആരും അത് കണ്ടെത്തിയതായി തെളിവില്ല.",
+      "start": 30.3
+    },
+    {
+      "text": "ഒരുപക്ഷേ യഥാർത്ഥ നിധി ഇതാണ്. ഇവിടെ നിന്ന് തുടങ്ങുന്ന അരുവികൾ ഒഴുകി ചേരുന്നത് മീനച്ചിലാറിലേക്ക്.",
+      "start": 34.7
+    },
+    {
+      "text": "നീലക്കൊടുവേലിയിൽ നിങ്ങൾ വിശ്വസിക്കുന്നുണ്ടോ? കമന്റ് ചെയ്യൂ.",
+      "start": 42.3
+    }
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 0,
+        "at": 0.5,
+        "f": 190
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": 0.75
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.0
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.1,
+        "count": 2
+      },
+      {
+        "type": "river",
+        "clips": [
+          5,
+          6
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 6,
+        "at": 0.2,
+        "f": 190
+      }
+    ]
+  },
+  "instagram_caption": "കോടീശ്വരനാക്കുന്ന ഒരു ചെടി! അതും കോട്ടയത്തെ ഒരു മലമുകളിൽ 🌿💰\nA plant that makes you rich, on a Kottayam hilltop.\n\nഇല്ലിക്കൽ കല്ല്: സമുദ്രനിരപ്പിൽ നിന്ന് ഏകദേശം 3,400 അടി. അര അടി വീതിയുള്ള നരകപ്പാലം. ഐതിഹ്യത്തിലെ നീലക്കൊടുവേലി. പക്ഷേ ആരും കണ്ടെത്തിയതായി തെളിവില്ല. യഥാർത്ഥ നിധി ഒരുപക്ഷേ മീനച്ചിലാറിലേക്ക് ഒഴുകുന്ന അരുവികൾ.\nIllikkal Kallu, about 3,400 ft high. Narakapalam, a ridge just half a foot wide. The legendary Neelakoduveli, never found. Maybe the real treasure is the streams that feed the Meenachil river.\n\n⚠️ നരകപ്പാലം അപകടമേഖലയാണ്. സുരക്ഷിതമായി മാത്രം യാത്ര ചെയ്യൂ.\n\nനീലക്കൊടുവേലിയിൽ നിങ്ങൾ വിശ്വസിക്കുന്നുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\n\nSend this to a friend from Kottayam. 📩\n\n#IllikkalKallu #Neelakoduveli #Kottayam #Meenachil #KeralaLegends"
+}

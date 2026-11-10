@@ -40,11 +40,11 @@ def main(job: Path):
         ms = int(st * 1000); f.append(f"[{i + 1}:a]aresample=48000,aformat=channel_layouts=stereo,adelay={ms}|{ms}[v{i}]")
     f.append("".join(f"[v{i}]" for i in range(n)) + f"amix=inputs={n}:normalize=0[vo]")
     f.append(f"[{n + 1}:a]volume=0.55[bd]")
-    f.append("[vo][bd]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+    f.append("[vo][bd]amix=inputs=2:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[a]")
     pad = total - vdur
     f.append(f"[0:v]tpad=stop_mode=clone:stop_duration={pad:.2f}[v]" if pad > 0.05 else "[0:v]null[v]")
     cmd += ["-filter_complex", ";".join(f), "-map", "[v]", "-map", "[a]", "-t", f"{total:.2f}",
-            "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
+            "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
             "-movflags", "+faststart", str(out / "reel.mp4")]
     subprocess.run(cmd, check=True)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(s.get("cover_at", 2.5)), "-i", str(src), "-frames:v", "1", "-q:v", "2", str(out / "cover.jpg")], check=True)
