@@ -48,6 +48,7 @@ def main(job: Path):
             "-movflags", "+faststart", str(out / "reel.mp4")]
     subprocess.run(cmd, check=True)
     subprocess.run(["ffmpeg", "-y", "-v", "error", "-ss", str(s.get("cover_at", 2.5)), "-i", str(src), "-frames:v", "1", "-q:v", "2", str(out / "cover.jpg")], check=True)
+    import shutil; shutil.copy(out / "cover.jpg", out / "thumbnail.jpg")   # the poster sends thumbnail.jpg as the Reel cover
     (out / "caption.txt").write_text(s["instagram_caption"], encoding="utf-8")
     (out / "script.json").write_text(json.dumps(s, ensure_ascii=False, indent=2), encoding="utf-8")
     (out / "review.md").write_text(f"## {slug} (voice-over on the user's video)\n\nNarrator: {voice}. Length {total:.1f}s.\n\n### Caption\n{s['instagram_caption']}\n", encoding="utf-8")

@@ -76,4 +76,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           REEL="${{ github.event.inputs.slug }}"; dir="output/$REEL"
-          gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/caption.txt" "$dir/script.json" output/render-log.txt --title "$REEL" --notes-file "$dir/review.md"
+          gh release create "$REEL" "$dir/reel.mp4" "$dir/cover.jpg" "$dir/thumbnail.jpg" "$dir/caption.txt" "$dir/script.json" output/render-log.txt --title "$REEL" --notes-file "$dir/review.md"
