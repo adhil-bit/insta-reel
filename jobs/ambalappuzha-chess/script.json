@@ -1,0 +1,150 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "Ambalappuzha: the chess debt still being paid",
+    "category": "MYSTERY",
+    "angle": "The legend of the king who lost a chess game for rice doubling on each square; the debt became the daily paal payasam",
+    "key_facts": [
+      "Legend: the king of Ambalappuzha, a chess lover, was challenged by a sage",
+      "The prize: one grain of rice on the first square, doubling on every square",
+      "2^64 − 1 = 18,446,744,073,709,551,615 grains in all: far beyond the world's rice output for centuries",
+      "Legend: the sage revealed himself as Krishna and allowed the debt to be paid as paal payasam served to pilgrims daily",
+      "Ambalappuzha temple's paal payasam is famous"
+    ],
+    "sources": [
+      "Local legend as commonly told",
+      "Wheat and chessboard problem (mathematics)"
+    ]
+  },
+  "headline": [
+    "THE CHESS DEBT",
+    "STILL BEING PAID"
+  ],
+  "accent_words": [
+    "STILL"
+  ],
+  "thumbnail_ml": "ചെസ്സിൽ തോറ്റ രാജാവിന്റെ കടം!",
+  "thumbnail_accent": [
+    "കടം!"
+  ],
+  "cover_visual": "Dark palace, a lamp-lit chessboard overflowing with glowing gold rice, king and sage silhouettes",
+  "hook_voiceover": "ഒരു ചെസ്സ് കളിയിൽ തോറ്റ രാജാവ്… ആ കടം ഇന്നും വീട്ടിക്കൊണ്ടിരിക്കുന്നു, പായസമായി!",
+  "scenes": [
+    {
+      "voiceover": "ഐതിഹ്യം പറയുന്നു: അമ്പലപ്പുഴയിലെ രാജാവിന് ചെസ്സ് ജീവനായിരുന്നു. ഒരിക്കൽ ഒരു സന്യാസി അദ്ദേഹത്തെ വെല്ലുവിളിച്ചു.",
+      "caption": "A SAGE CHALLENGES THE KING",
+      "highlight": "SAGE",
+      "kicker": "AMBALAPPUZHA · LEGEND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "സമ്മാനം ചെറുതായിരുന്നു. ആദ്യ കളത്തിൽ ഒരു നെൽമണി, രണ്ടാമത്തേതിൽ രണ്ട്, പിന്നെ നാല്… ഓരോ കളത്തിലും ഇരട്ടി.",
+      "caption": "1 · 2 · 4 · 8 · 16…",
+      "highlight": "16…",
+      "kicker": "DOUBLE ON EVERY SQUARE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "രാജാവ് തോറ്റു. പക്ഷേ 64-ാം കളം എത്തുമ്പോൾ വേണ്ടത് കോടിക്കണക്കിന് കോടി മണികൾ. ലോകം മുഴുവൻ നൂറ്റാണ്ടുകൾ കൃഷി ചെയ്താലും തികയില്ല!",
+      "caption": "18,446,744,073,709,551,615 GRAINS",
+      "highlight": "GRAINS",
+      "kicker": "64 SQUARES LATER",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അപ്പോൾ സന്യാസി ശ്രീകൃഷ്ണനായി മാറിയെന്നാണ് ഐതിഹ്യം. കടം ഒറ്റയടിക്ക് വേണ്ട, ദിവസവും ഭക്തർക്ക് പാൽപ്പായസം നൽകിയാൽ മതി.",
+      "caption": "PAY IT AS PAYASAM",
+      "highlight": "PAYASAM",
+      "kicker": "THE SAGE WAS KRISHNA?",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അങ്ങനെയാണ് അമ്പലപ്പുഴ പാൽപ്പായസം തുടങ്ങിയതെന്നാണ് വിശ്വാസം. നിങ്ങൾ കഴിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "HAVE YOU TASTED IT?",
+      "highlight": "TASTED",
+      "kicker": "AMBALAPPUZHA PAAL PAYASAM",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ചെസ്സിൽ തോറ്റ രാജാവിന്റെ കടം… ഇന്നും പായസമായി! ♟️🍚\nThe king who lost at chess is still paying, in payasam.\n\nഐതിഹ്യം: ഓരോ കളത്തിലും ഇരട്ടി നെൽമണി. 64 കളം തികയുമ്പോൾ 18,446,744,073,709,551,615 മണികൾ! കടം വീട്ടാൻ ദിവസവും പാൽപ്പായസം.\nLegend: one grain on the first square, doubling every square. By the 64th, 18 quintillion grains, so the debt is paid as paal payasam every day.\n\nഅമ്പലപ്പുഴ പാൽപ്പായസം കഴിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\n\nSend this to a friend from Alappuzha. 📩",
+  "search_ml": [
+    "അമ്പലപ്പുഴ",
+    "പാൽപ്പായസം",
+    "ചെസ്സ്",
+    "ഐതിഹ്യം"
+  ],
+  "hashtags": [
+    "Ambalappuzha",
+    "PaalPayasam",
+    "Alappuzha",
+    "KeralaLegends",
+    "Chess"
+  ],
+  "fact_check": [
+    "Story framed as legend/belief",
+    "Grain total is exact math (2^64 − 1)",
+    "'Centuries of world rice output' is a safe order-of-magnitude claim"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 0,
+        "at": 0.7,
+        "f": 220
+      },
+      {
+        "type": "shimmer",
+        "clip": 2,
+        "from": 0.1
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.3,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": 0.75
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.35,
+        "f": 220
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.4
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.3,
+        "f": 220
+      }
+    ]
+  }
+}
