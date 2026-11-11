@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 11 Nov, 12:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 11 Nov, 07:07 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -15,6 +15,7 @@ _Updated Wed 11 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 | Reel | Posted (UTC) |
 |---|---|
 | Bhoothathankettu: the demons' dam stopped by a rooster | 2026-11-09T13:32 |
+| 'Konnal papam thinnal theerum': born from cannibalism? | 2026-11-11T13:37 |
 | Ezhimala: Hanuman's fallen hill that's now off-limits | 2026-11-10T01:38 |
 | The mountain still bowing for Agastya | 2026-11-09T05:11 |
 | Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
@@ -23,4 +24,3 @@ _Updated Wed 11 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 | Fire in Kalari: tradition or show? | 2026-11-06T14:38 |
 | Kalla Kothayi's treasure: the legend of Kothayimukku, Kannur | 2026-11-06T01:38 |
 | Beypore Part 2: the Uru and the Khalasis | 2026-11-08T14:38 |
-| 14 districts, 14 flavours: Kerala's famous food by district | 2026-11-05T12:58 |

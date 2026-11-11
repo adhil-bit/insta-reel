@@ -1,7 +1,9 @@
-Publishing illikkal-user-v2...
+Publishing konnal-papam-v2...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
-  container: 18138554611694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfkBzO2klPZ/
+  temporary video link ready (h.uguu.se)
+  uguu: link serves image/jpeg
+  thumbnail link ready
+  container: 18138829816694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/Dfmml9GJQkr/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
