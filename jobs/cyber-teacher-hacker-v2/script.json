@@ -1,0 +1,143 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "A hacker hunting a teacher for 4 years: is your phone safe?",
+    "category": "MYSTERY",
+    "angle": "News story + audience guess (student?) as an open question + one safety line + comment/mention prompt",
+    "key_facts": [
+      "Mathrubhumi News reported a teacher in Wayanad targeted by an unknown hacker since 2022 (4 years)",
+      "The report says the hacker even leaked Kerala Police emails and passwords",
+      "The headline asks whether there is no solution: the ordeal continues",
+      "India's national cybercrime helpline is 1930; complaints at cybercrime.gov.in"
+    ],
+    "sources": [
+      "Mathrubhumi News (Instagram post, Nov 2026; video dated 30 Oct 2026)",
+      "National Cyber Crime Reporting Portal (cybercrime.gov.in), helpline 1930"
+    ]
+  },
+  "headline": [
+    "4 YEARS.",
+    "ONE HACKER."
+  ],
+  "accent_words": [
+    "HACKER."
+  ],
+  "thumbnail_ml": "4 വർഷമായി ഫോണിൽ ഒരു അജ്ഞാതൻ!",
+  "thumbnail_accent": [
+    "അജ്ഞാതൻ!"
+  ],
+  "cover_visual": "Dark room, a glowing phone on a desk, a shadow with red eyes behind the screen, glitch lines",
+  "hook_voiceover": "നാല് വർഷമായി ഒരു അധ്യാപികയുടെ ഫോണിൽ ഒരു അജ്ഞാതൻ. പോലീസിന്റെ ഇമെയിൽ പോലും ചോർത്തി!",
+  "scenes": [
+    {
+      "voiceover": "വയനാട്ടിലെ ഒരു അധ്യാപിക. 2022 മുതൽ ഒരു ഹാക്കർ അവരുടെ പിന്നാലെയാണെന്ന് മാതൃഭൂമി ന്യൂസ് റിപ്പോർട്ട് ചെയ്യുന്നു.",
+      "caption": "ONE TEACHER · SINCE 2022",
+      "highlight": "2022",
+      "kicker": "MATHRUBHUMI NEWS REPORT",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കേരള പോലീസിന്റെ ഇമെയിലും പാസ്‌വേഡും വരെ ഈ അജ്ഞാതൻ ചോർത്തിയെന്നാണ് റിപ്പോർട്ട്. നാല് വർഷമായിട്ടും ഈ ദുരിതത്തിന് പരിഹാരമായിട്ടില്ല.",
+      "caption": "EVEN POLICE EMAILS LEAKED",
+      "highlight": "LEAKED",
+      "kicker": "4 YEARS, NO END",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആരായിരിക്കും ഈ വിരുതൻ? ആ അധ്യാപികയുടെ ഒരു വിദ്യാർത്ഥി ആകാനല്ലേ സാധ്യത? നിങ്ങൾ എന്ത് കരുതുന്നു? കമന്റ് ചെയ്യൂ.",
+      "caption": "WHO IS THE HACKER?",
+      "highlight": "WHO",
+      "kicker": "YOUR GUESS?",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ടു-സ്റ്റെപ്പ് വെരിഫിക്കേഷൻ ഓണാക്കിയിടൂ. ഹാക്കിംഗ് നേരിട്ടാൽ ഉടൻ 1930-ൽ വിളിക്കൂ.",
+      "caption": "2-STEP ON · CALL 1930",
+      "highlight": "1930",
+      "kicker": "STAY SAFE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങൾക്കും ഉണ്ടോ ഇതുപോലെ ഒരു അനുഭവം? കമന്റിൽ പറയൂ. നിങ്ങൾക്ക് പണി തരുന്ന, അല്ലെങ്കിൽ എപ്പോഴും പണി കിട്ടിക്കൊണ്ടിരിക്കുന്ന ആ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "MENTION THAT FRIEND",
+      "highlight": "FRIEND",
+      "kicker": "TAG YOUR ചങ്ക്",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "4 വർഷമായി ഒരു അധ്യാപികയെ വേട്ടയാടുന്ന ഹാക്കർ! 😨 പോലീസിന്റെ ഇമെയിൽ പോലും ചോർത്തി.\nA hacker has hunted a teacher for 4 years, and even leaked police emails.\n\nആരായിരിക്കും ഈ വിരുതൻ? 🤔 ഒരു വിദ്യാർത്ഥി ആകാനല്ലേ സാധ്യത? നിങ്ങളുടെ ഊഹം കമന്റ് ചെയ്യൂ 👇\nനിങ്ങൾക്കും ഉണ്ടോ ഇതുപോലെ ഒരു അനുഭവം?\n\nപണി തരുന്ന / പണി കിട്ടിക്കൊണ്ടിരിക്കുന്ന ആ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 😂\n\n🔐 ടു-സ്റ്റെപ്പ് വെരിഫിക്കേഷൻ ഓണാക്കൂ · 📞 സൈബർ ഹെൽപ്‌ലൈൻ 1930\n\nSource: Mathrubhumi News report\n\n#CyberSafety #KeralaPolice #Wayanad #CyberCrime #മലയാളം",
+  "search_ml": [
+    "ഹാക്കർ",
+    "സൈബർ ക്രൈം",
+    "വയനാട്",
+    "1930"
+  ],
+  "hashtags": [
+    "CyberSafety",
+    "KeralaPolice",
+    "Wayanad",
+    "CyberCrime"
+  ],
+  "fact_check": [
+    "Case facts only as visible in the Mathrubhumi News post, attributed",
+    "No victim name, school, photo or news footage",
+    "No hacking methods; only protection steps and official helpline",
+    "Student theory voiced only as an open question to viewers, not as a claim"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 4,
+        "gap": 0.8
+      },
+      {
+        "type": "rumble",
+        "clip": 0,
+        "at": 0.6
+      },
+      {
+        "type": "heartbeat",
+        "clip": 1,
+        "at": 0.2,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.15,
+          0.45
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.1,
+        "count": 4,
+        "gap": 0.7
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 196
+      }
+    ]
+  }
+}
