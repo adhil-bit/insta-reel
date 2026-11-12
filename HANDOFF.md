@@ -208,11 +208,13 @@ page's watermark, name, hashtags or artwork. How to apply them in this pipeline:
 8. **Long topics become a series** (Part 1/2/3, same title and cover layout).
 9. **Real tragedies:** respectful tone, no dramatised deaths or victims' faces, official numbers only.
 10. Keep our proven rules on top: stakes in the first 3 s, 30–45 s length, North Malabar local
-    stories share best, Despina voice, 7:05 PM daily slot.
+    stories share best, Despina voice.
+11. **Owner rule (12 Nov 2026): ONE post per day, MORNING ONLY (7:04 AM IST), on both pages. No evening posts.**
 
 ### Plan agreed 10 Nov 2026
 @unexplored.truths, 7:05 PM daily: Wed 11 konnal-papam-v2 (proverb) · Thu 12 ambalappuzha-chess (rendered, scheduled) ·
-Fri 13 Dharmadam Island · Sat 14 Muziris, the lost city · Sun 15 St. Angelo Fort's painting in Amsterdam.
+Fri 13 7:04 AM cyber-teacher-hacker-v2 · Sat 14 7:04 AM Dharmadam Island · then Muziris, St. Angelo (mornings).
+(Thalassery circus posted on page 2, 12 Nov.)
 കഥയും ചരിത്രവും (owner approves each video before posting): Thalassery, cradle of Indian circus (Keeleri Kunhikannan) ·
 Pazhassi Raja's last stand (1805) · 3-part series Muziris → 1341 flood → birth of Kochi (owner OK'd overlap with the main-page Muziris reel this once).
 Topics came from Claude's own knowledge (no web search available): fact-check every script; soft wording for legends.

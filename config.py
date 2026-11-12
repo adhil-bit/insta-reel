@@ -137,9 +137,9 @@ RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in
 
 # Posting table (IST). The post workflow checks every hour and posts whenever a slot
 # has passed that hasn't been used yet, so a late or skipped GitHub run is caught up.
-POST_SLOTS = {   # @unexplored.truths: 1 post a day at 7:05 PM IST from 9 Nov 2026 (exact-time triggers do the posting). KEEP IN SYNC WITH cron-job.org: run the sync workflow
-    "Mon": ["19:04"], "Tue": ["19:04"], "Wed": ["19:04"], "Thu": ["19:04"],
-    "Fri": ["19:04"], "Sat": ["19:04"], "Sun": ["19:04"],
+POST_SLOTS = {   # @unexplored.truths: 1 post a day, MORNING ONLY (7:05 AM IST) from 13 Nov 2026 (owner rule) (exact-time triggers do the posting). KEEP IN SYNC WITH cron-job.org: run the sync workflow
+    "Mon": ["07:04"], "Tue": ["07:04"], "Wed": ["07:04"], "Thu": ["07:04"],
+    "Fri": ["07:04"], "Sat": ["07:04"], "Sun": ["07:04"],
 }
 # One-off changes to a specific day's slots (IST), e.g. moving tonight's post earlier
 SLOT_OVERRIDES = {
