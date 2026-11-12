@@ -1,0 +1,139 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Thalassery: the cradle of Indian circus",
+    "category": "HISTORY",
+    "angle": "A kalari and gymnastics teacher, a visiting circus, and a training school that sent acrobats across India",
+    "key_facts": [
+      "Keeleri Kunhikannan was a kalari and gymnastics teacher in Thalassery",
+      "Vishnupant Chatre's Great Indian Circus visited in the late 1880s; Chatre is said to have asked Kunhikannan to train acrobats",
+      "Kunhikannan opened a circus training school at Chirakkara near Thalassery in 1901",
+      "His students and their students went on to perform in and found circus companies across India",
+      "Thalassery is known for its '3 Cs': cricket, cake and circus"
+    ],
+    "sources": [
+      "Standard Kerala history accounts of Keeleri Kunhikannan and the Chirakkara circus school"
+    ]
+  },
+  "headline": [
+    "സർക്കസിന്റെ തൊട്ടിൽ"
+  ],
+  "accent_words": [
+    "സർക്കസിന്റെ"
+  ],
+  "thumbnail_ml": "ഇന്ത്യൻ സർക്കസ് പിറന്നത് തലശ്ശേരിയിൽ!",
+  "thumbnail_accent": [
+    "തലശ്ശേരിയിൽ!"
+  ],
+  "cover_visual": "Ink-wash circus tent with red stripes, an acrobat mid-flight on a trapeze, a red 1901 seal",
+  "hook_voiceover": "ഇന്ത്യയിലെ സർക്കസ് കൂടാരങ്ങളിൽ പറന്ന അഭ്യാസികളിൽ ഏറെയും ഒരു നാട്ടിൽ നിന്ന്... തലശ്ശേരി! എങ്ങനെ?",
+  "scenes": [
+    {
+      "voiceover": "തലശ്ശേരിയിൽ കീലേരി കുഞ്ഞിക്കണ്ണൻ എന്ന ഒരു കളരി, ജിംനാസ്റ്റിക്സ് അധ്യാപകൻ ഉണ്ടായിരുന്നു.",
+      "caption": "കീലേരി കുഞ്ഞിക്കണ്ണൻ",
+      "highlight": "കുഞ്ഞിക്കണ്ണൻ",
+      "kicker": "കളരി ഗുരു",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1880-കളിൽ വിഷ്ണുപന്ത് ഛത്രെയുടെ സർക്കസ് തലശ്ശേരിയിലെത്തി. ഇവിടത്തെ കുട്ടികളെ അഭ്യാസികളാക്കാൻ ഛത്രെ കുഞ്ഞിക്കണ്ണനോട് ആവശ്യപ്പെട്ടെന്നാണ് കഥ.",
+      "caption": "ഒരു സർക്കസ് വന്നു",
+      "highlight": "സർക്കസ്",
+      "kicker": "1880-കൾ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1901-ൽ ചിറക്കരയിൽ അദ്ദേഹം ഒരു സർക്കസ് പരിശീലന കളരി തുടങ്ങി. കളരിയുടെ മെയ്‌വഴക്കം നേരെ ട്രപ്പീസിലേക്ക്!",
+      "caption": "1901 · ചിറക്കര",
+      "highlight": "1901",
+      "kicker": "സർക്കസ് കളരി",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അവിടെ പഠിച്ചവരും അവരുടെ ശിഷ്യരും പിന്നീട് ഇന്ത്യ മുഴുവൻ സർക്കസ് കമ്പനികളിൽ തിളങ്ങി, പലരും സ്വന്തം സർക്കസുകൾ തുടങ്ങി. അങ്ങനെ തലശ്ശേരി ഇന്ത്യൻ സർക്കസിന്റെ തൊട്ടിലായി.",
+      "caption": "ഇന്ത്യൻ സർക്കസിന്റെ തൊട്ടിൽ",
+      "highlight": "തൊട്ടിൽ",
+      "kicker": "ഇന്ത്യ മുഴുവൻ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ക്രിക്കറ്റ്, കേക്ക്, സർക്കസ്... തലശ്ശേരിയുടെ മൂന്ന് 'സി'! നിങ്ങളുടെ തലശ്ശേരിക്കാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ.",
+      "caption": "തലശ്ശേരിയുടെ 3 C",
+      "highlight": "3 C",
+      "kicker": "ചങ്കിനെ മെൻഷൻ ചെയ്യൂ",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഇന്ത്യൻ സർക്കസ് പിറന്നത് തലശ്ശേരിയിൽ! 🎪\n\nകളരി, ജിംനാസ്റ്റിക്സ് അധ്യാപകനായ കീലേരി കുഞ്ഞിക്കണ്ണൻ 1901-ൽ ചിറക്കരയിൽ ഒരു സർക്കസ് പരിശീലന കളരി തുടങ്ങി. അവിടെ നിന്ന് പഠിച്ചിറങ്ങിയവരും അവരുടെ ശിഷ്യരും ഇന്ത്യ മുഴുവൻ സർക്കസ് കൂടാരങ്ങളിൽ തിളങ്ങി. അങ്ങനെ തലശ്ശേരി 'ഇന്ത്യൻ സർക്കസിന്റെ തൊട്ടിൽ' ആയി.\n\nക്രിക്കറ്റ് 🏏 കേക്ക് 🎂 സർക്കസ് 🎪 = തലശ്ശേരിയുടെ 3 C\n\nനിങ്ങളുടെ തലശ്ശേരിക്കാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#Thalassery #IndianCircus #KeralaHistory #Kannur #കഥയുംചരിത്രവും",
+  "search_ml": [
+    "തലശ്ശേരി സർക്കസ്",
+    "കീലേരി കുഞ്ഞിക്കണ്ണൻ",
+    "ഇന്ത്യൻ സർക്കസ്",
+    "തലശ്ശേരി ചരിത്രം"
+  ],
+  "hashtags": [
+    "Thalassery",
+    "IndianCircus",
+    "KeralaHistory",
+    "Kannur"
+  ],
+  "fact_check": [
+    "Chatre's request framed as 'the story goes'",
+    "'1880-കൾ' instead of a precise year",
+    "No named circus companies or founders, to avoid shaky attributions"
+  ],
+  "sound_plan": {
+    "drone": "G",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clip": 0,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 0,
+        "at": 0.75,
+        "f": 220
+      },
+      {
+        "type": "heartbeat",
+        "clip": 2,
+        "at": 0.1,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 196
+      }
+    ]
+  }
+}
