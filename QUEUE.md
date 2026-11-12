@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 12 Nov, 12:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 12 Nov, 07:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -14,6 +14,7 @@ _Updated Thu 12 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Ambalappuzha: the chess debt still being paid | 2026-11-12T13:38 |
 | Bhoothathankettu: the demons' dam stopped by a rooster | 2026-11-09T13:32 |
 | 'Konnal papam thinnal theerum': born from cannibalism? | 2026-11-11T13:37 |
 | Ezhimala: Hanuman's fallen hill that's now off-limits | 2026-11-10T01:38 |
@@ -23,4 +24,3 @@ _Updated Thu 12 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 | Porotta-beef and Kozhikode: is there a link? | 2026-11-07T04:39 |
 | Fire in Kalari: tradition or show? | 2026-11-06T14:38 |
 | Kalla Kothayi's treasure: the legend of Kothayimukku, Kannur | 2026-11-06T01:38 |
-| Beypore Part 2: the Uru and the Khalasis | 2026-11-08T14:38 |
