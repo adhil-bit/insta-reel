@@ -1,0 +1,130 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Pazhassi Raja's last stand, 1805",
+    "category": "HISTORY",
+    "angle": "Guerrilla war in Wayanad forests; death at Mavila Thodu on 30 Nov 1805; memorial at Mananthavady",
+    "key_facts": [
+      "Kerala Varma Pazhassi Raja of the Kottayam (Malabar) royal family resisted the East India Company",
+      "He fought from the Wayanad forests with Kurichiya fighters and local people, using guerrilla warfare",
+      "The conflicts are known as the Cotiote (Kottayam) wars, 1790s to 1805",
+      "He was killed on 30 November 1805 near Mavila Thodu",
+      "His memorial is at Mananthavady"
+    ],
+    "sources": [
+      "Standard Kerala history; Malabar District records (Logan's Malabar Manual)"
+    ]
+  },
+  "headline": [
+    "കേരള സിംഹം"
+  ],
+  "accent_words": [
+    "സിംഹം"
+  ],
+  "thumbnail_ml": "1805: പഴശ്ശിയുടെ അവസാന പോരാട്ടം",
+  "thumbnail_accent": [
+    "അവസാന"
+  ],
+  "cover_visual": "Ink-wash Wayanad forest, a lone warrior silhouette with a sword, red sun, 1805 seal",
+  "hook_voiceover": "ബ്രിട്ടീഷ് സൈന്യത്തെ വർഷങ്ങളോളം വയനാടൻ കാടുകളിൽ വട്ടം കറക്കിയ ഒരു രാജാവ്. 1805-ൽ അദ്ദേഹത്തിന്റെ അവസാന പോരാട്ടം.",
+  "scenes": [
+    {
+      "voiceover": "കോട്ടയം രാജവംശത്തിലെ കേരളവർമ്മ പഴശ്ശിരാജ. കമ്പനിയുടെ അമിത നികുതിക്കും അധികാരത്തിനുമെതിരെ അദ്ദേഹം ആയുധമെടുത്തു.",
+      "caption": "കേരളവർമ്മ പഴശ്ശിരാജ",
+      "highlight": "പഴശ്ശിരാജ",
+      "kicker": "കോട്ടയം രാജവംശം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വയനാടൻ കാടുകളായിരുന്നു അദ്ദേഹത്തിന്റെ കോട്ട. കുറിച്യ പോരാളികളും നാട്ടുകാരും ഒപ്പം ചേർന്നു. ഒളിപ്പോരിൽ ബ്രിട്ടീഷ് സൈന്യം പലതവണ പതറി.",
+      "caption": "ഒളിപ്പോര്",
+      "highlight": "ഒളിപ്പോര്",
+      "kicker": "വയനാടൻ കാടുകൾ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വർഷങ്ങൾ നീണ്ട ഈ ചെറുത്തുനിൽപ്പ് കോട്ടയം യുദ്ധങ്ങൾ എന്ന പേരിൽ ചരിത്രത്തിലുണ്ട്.",
+      "caption": "കോട്ടയം യുദ്ധങ്ങൾ",
+      "highlight": "യുദ്ധങ്ങൾ",
+      "kicker": "വർഷങ്ങൾ നീണ്ട പോരാട്ടം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1805 നവംബർ 30. മാവിലത്തോടിനടുത്ത് കമ്പനി സൈന്യം അദ്ദേഹത്തെ വളഞ്ഞു. ആ പോരാട്ടത്തിൽ പഴശ്ശിരാജ വീരമൃത്യു വരിച്ചു.",
+      "caption": "1805 നവംബർ 30",
+      "highlight": "30",
+      "kicker": "മാവിലത്തോട്",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മാനന്തവാടിയിൽ ഇന്നും അദ്ദേഹത്തിന്റെ സ്മാരകമുണ്ട്. കേരള സിംഹത്തിന് ഒരു സല്യൂട്ട് കമന്റ് ചെയ്യൂ. വയനാട്ടുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "കേരള സിംഹത്തിന് സല്യൂട്ട്",
+      "highlight": "സല്യൂട്ട്",
+      "kicker": "മാനന്തവാടി സ്മാരകം",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "1805 നവംബർ 30: പഴശ്ശിരാജയുടെ അവസാന പോരാട്ടം ⚔️\n\nവയനാടൻ കാടുകളിൽ കുറിച്യ പോരാളികൾക്കും നാട്ടുകാർക്കുമൊപ്പം വർഷങ്ങളോളം കമ്പനി സൈന്യത്തെ ചെറുത്ത കേരള സിംഹം. മാവിലത്തോടിനടുത്ത് വീരമൃത്യു. സ്മാരകം മാനന്തവാടിയിൽ.\n\nകേരള സിംഹത്തിന് ഒരു സല്യൂട്ട് കമന്റ് ചെയ്യൂ 🫡 വയനാട്ടുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#PazhassiRaja #Wayanad #KeralaHistory #Mananthavady #കഥയുംചരിത്രവും",
+  "search_ml": [
+    "പഴശ്ശിരാജ",
+    "കേരള സിംഹം",
+    "വയനാട് ചരിത്രം",
+    "മാനന്തവാടി"
+  ],
+  "hashtags": [
+    "PazhassiRaja",
+    "Wayanad",
+    "KeralaHistory",
+    "Mananthavady"
+  ],
+  "fact_check": [
+    "Death shown respectfully: no violence on screen",
+    "No disputed details (suicide vs killed); only 'വീരമൃത്യു'"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          2
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 0,
+        "at": [
+          0.7
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.0,
+        "count": 5,
+        "gap": 0.8
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 196
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "topic": {
+    "title": "Kannur's fort in an Amsterdam museum",
+    "category": "HISTORY",
+    "angle": "A fort that changed four hands; its Dutch-era painting sits in the Rijksmuseum",
+    "key_facts": [
+      "Fort St. Angelo, Kannur, was built in 1505 by the Portuguese viceroy Francisco de Almeida",
+      "The Dutch captured it in 1663",
+      "The Dutch sold it to the Arakkal royal family in 1772",
+      "The British took it in 1790",
+      "A Dutch-era painting of the Kannur fort is in the Rijksmuseum, Amsterdam"
+    ],
+    "sources": [
+      "ASI / Kerala Tourism on Fort St. Angelo",
+      "Rijksmuseum collection (Dutch-era view of Cannanore)"
+    ]
+  },
+  "headline": [
+    "A KANNUR FORT",
+    "IN AMSTERDAM."
+  ],
+  "accent_words": [
+    "AMSTERDAM."
+  ],
+  "thumbnail_ml": "കണ്ണൂർ കോട്ട ആംസ്റ്റർഡാമിലെ മ്യൂസിയത്തിൽ!",
+  "thumbnail_accent": [
+    "ആംസ്റ്റർഡാമിലെ"
+  ],
+  "cover_visual": "A sea fort at dusk with a gilt museum frame closing around it",
+  "hook_voiceover": "കണ്ണൂരിലെ ഒരു കടൽക്കോട്ട... അതിന്റെ പഴയൊരു ചിത്രം ഇന്ന് ആംസ്റ്റർഡാമിലെ ഒരു മ്യൂസിയത്തിൽ! എങ്ങനെ?",
+  "scenes": [
+    {
+      "voiceover": "സെന്റ് ആഞ്ചലോ കോട്ട. 1505-ൽ പോർച്ചുഗീസ് വൈസ്രോയി ഫ്രാൻസിസ്കോ ഡി അൽമേഡ കടലിന് അഭിമുഖമായി പണിതത്.",
+      "caption": "FORT ST. ANGELO · 1505",
+      "highlight": "1505",
+      "kicker": "KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1663-ൽ ഡച്ചുകാർ പോർച്ചുഗീസുകാരിൽ നിന്ന് കോട്ട പിടിച്ചെടുത്തു. കേരളതീരത്ത് ഡച്ചുകാരുടെ കാലം തുടങ്ങി.",
+      "caption": "1663 · THE DUTCH",
+      "highlight": "DUTCH",
+      "kicker": "NEW OWNERS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആ കാലത്തെ കണ്ണൂർ കോട്ടയുടെ ഒരു ഡച്ച് ചിത്രം ഇന്നും ആംസ്റ്റർഡാമിലെ റൈക്സ്മ്യൂസിയത്തിൽ സൂക്ഷിച്ചിട്ടുണ്ട്.",
+      "caption": "RIJKSMUSEUM · AMSTERDAM",
+      "highlight": "AMSTERDAM",
+      "kicker": "THE PAINTING",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1772-ൽ ഡച്ചുകാർ കോട്ട അറയ്ക്കൽ രാജവംശത്തിന് വിറ്റു. 1790-ൽ ബ്രിട്ടീഷുകാർ പിടിച്ചെടുത്തു. നാല് കൈകൾ മാറിയ ഒരു കോട്ട!",
+      "caption": "4 OWNERS · 1 FORT",
+      "highlight": "4",
+      "kicker": "1505 → 1790",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങൾ സെന്റ് ആഞ്ചലോ കോട്ട കണ്ടിട്ടുണ്ടോ? കണ്ണൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "TAG YOUR KANNUR ചങ്ക്",
+      "highlight": "KANNUR",
+      "kicker": "BEEN THERE?",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കണ്ണൂർ കോട്ട ആംസ്റ്റർഡാമിലെ മ്യൂസിയത്തിൽ! 🏰🖼️\nKannur's Fort St. Angelo has a Dutch-era painting in Amsterdam's Rijksmuseum.\n\n1505 പോർച്ചുഗീസ് → 1663 ഡച്ച് → 1772 അറയ്ക്കൽ → 1790 ബ്രിട്ടീഷ്. നാല് കൈകൾ മാറിയ കോട്ട!\n\nനിങ്ങൾ കോട്ട കണ്ടിട്ടുണ്ടോ? കണ്ണൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#StAngeloFort #Kannur #KeralaHistory #Arakkal #Rijksmuseum",
+  "search_ml": [
+    "സെന്റ് ആഞ്ചലോ കോട്ട",
+    "കണ്ണൂർ കോട്ട",
+    "അറയ്ക്കൽ",
+    "കണ്ണൂർ"
+  ],
+  "hashtags": [
+    "StAngeloFort",
+    "Kannur",
+    "KeralaHistory",
+    "Arakkal"
+  ],
+  "fact_check": [
+    "No painter name, date or catalogue number claimed for the painting",
+    "Only the four well-known ownership dates"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.1
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.1
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": [
+          0.15,
+          0.45,
+          0.75
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 220
+      }
+    ]
+  }
+}
