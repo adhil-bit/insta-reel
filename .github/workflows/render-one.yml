@@ -13,6 +13,10 @@ on:
       job:
         description: "Folder name under jobs/ to render right now"
         required: true
+      wait_until_utc:
+        description: "Optional: start at this UTC time (HH:MM), e.g. after the Gemini voice quota resets (08:05)"
+        required: false
+        default: ""
 
 permissions:
   contents: write
