@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 13 Nov, 09:02 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 13 Nov, 09:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -8,11 +8,14 @@ _Updated Fri 13 Nov, 09:02 AM IST. Times are approximate: each reel posts within
 ## Being rendered (joins the queue when done)
 
 - k2-1341-kochi
+- k2-1341-kochi-v2
 - k2-anchuthengu-1721
 - k2-flood-99-v2
 - k2-pazhassi-1805
+- k2-pazhassi-1805-v2
 - k2-thalassery-circus
 - k2-thalassery-circus-v2
+- st-angelo-amsterdam-v2
 
 ## Recently posted
 
