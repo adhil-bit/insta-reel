@@ -1,0 +1,132 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "Gundert and Rajyasamacharam: the first Malayalam newspaper",
+    "category": "HISTORY",
+    "angle": "A German missionary in Thalassery starts the first Malayalam newspaper; dictionary; Hermann Hesse link",
+    "key_facts": [
+      "Hermann Gundert (Basel Mission) came to Illikkunnu, Thalassery, in 1839",
+      "Rajyasamacharam, the first Malayalam newspaper, was lithographed at Illikkunnu in 1847",
+      "Gundert's Malayalam-English Dictionary was published in 1872",
+      "Nobel laureate Hermann Hesse (1946) was Gundert's grandson through his daughter Marie",
+      "Gundert Bungalow at Illikkunnu survives as a memorial"
+    ],
+    "sources": [
+      "Standard Malayalam literary history; Kerala Tourism (Gundert Bungalow)"
+    ]
+  },
+  "headline": [
+    "തലശ്ശേരിയിലെ ജർമ്മൻകാരൻ"
+  ],
+  "accent_words": [
+    "ജർമ്മൻകാരൻ"
+  ],
+  "thumbnail_ml": "ആദ്യ മലയാള പത്രം തുടങ്ങിയത് ഒരു ജർമ്മൻകാരൻ!",
+  "thumbnail_accent": [
+    "ജർമ്മൻകാരൻ!"
+  ],
+  "cover_visual": "Ink-wash newspaper page with the masthead രാജ്യസമാചാരം, a quill, a red 1847 seal",
+  "hook_voiceover": "ആദ്യത്തെ മലയാള പത്രം തുടങ്ങിയത് ഒരു മലയാളിയല്ല... തലശ്ശേരിയിൽ താമസിച്ച ഒരു ജർമ്മൻകാരൻ!",
+  "scenes": [
+    {
+      "voiceover": "ഹെർമൻ ഗുണ്ടർട്ട്. ബാസൽ മിഷന്റെ മിഷനറിയായി 1839-ൽ അദ്ദേഹം തലശ്ശേരിയിലെ ഇല്ലിക്കുന്നിലെത്തി.",
+      "caption": "ഹെർമൻ ഗുണ്ടർട്ട്",
+      "highlight": "ഗുണ്ടർട്ട്",
+      "kicker": "1839 · ഇല്ലിക്കുന്ന്",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1847-ൽ ഇല്ലിക്കുന്നിൽ നിന്ന് രാജ്യസമാചാരം പുറത്തിറങ്ങി. കല്ലച്ചിൽ അടിച്ച, മലയാളത്തിലെ ആദ്യത്തെ പത്രം!",
+      "caption": "രാജ്യസമാചാരം · 1847",
+      "highlight": "1847",
+      "kicker": "ആദ്യ മലയാള പത്രം",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മലയാളം പഠിച്ച്, ആ ഭാഷയെ സ്നേഹിച്ച അദ്ദേഹം 1872-ൽ ഒരു വലിയ മലയാളം-ഇംഗ്ലീഷ് നിഘണ്ടു പ്രസിദ്ധീകരിച്ചു.",
+      "caption": "ഗുണ്ടർട്ട് നിഘണ്ടു · 1872",
+      "highlight": "നിഘണ്ടു",
+      "kicker": "മലയാളം → ഇംഗ്ലീഷ്",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരു രസകരമായ കാര്യം കൂടി. നൊബേൽ സമ്മാനം നേടിയ ജർമ്മൻ എഴുത്തുകാരൻ ഹെർമൻ ഹെസ്സെ, ഗുണ്ടർട്ടിന്റെ കൊച്ചുമകനാണ്!",
+      "caption": "നൊബേൽ ജേതാവിന്റെ മുത്തച്ഛൻ",
+      "highlight": "നൊബേൽ",
+      "kicker": "ഹെർമൻ ഹെസ്സെ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇല്ലിക്കുന്നിലെ ഗുണ്ടർട്ട് ബംഗ്ലാവ് ഇന്നും അവിടെയുണ്ട്. മലയാളത്തെ സ്നേഹിക്കുന്ന ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "ഗുണ്ടർട്ട് ബംഗ്ലാവ്",
+      "highlight": "ബംഗ്ലാവ്",
+      "kicker": "ചങ്കിനെ മെൻഷൻ ചെയ്യൂ",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ആദ്യ മലയാള പത്രം തുടങ്ങിയത് ഒരു ജർമ്മൻകാരൻ! 📰\n\n1847-ൽ തലശ്ശേരി ഇല്ലിക്കുന്നിൽ നിന്ന് ഹെർമൻ ഗുണ്ടർട്ടിന്റെ 'രാജ്യസമാചാരം'. 1872-ൽ മലയാളം-ഇംഗ്ലീഷ് നിഘണ്ടു. നൊബേൽ ജേതാവ് ഹെർമൻ ഹെസ്സെയുടെ മുത്തച്ഛൻ!\n\nമലയാളത്തെ സ്നേഹിക്കുന്ന ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#Gundert #Thalassery #MalayalamHistory #Illikkunnu #കഥയുംചരിത്രവും",
+  "search_ml": [
+    "ഗുണ്ടർട്ട്",
+    "രാജ്യസമാചാരം",
+    "ആദ്യ മലയാള പത്രം",
+    "ഇല്ലിക്കുന്ന്"
+  ],
+  "hashtags": [
+    "Gundert",
+    "Thalassery",
+    "MalayalamHistory",
+    "Illikkunnu"
+  ],
+  "fact_check": [
+    "Only well-documented dates (1839, 1847, 1872)",
+    "Hesse is Gundert's grandson via daughter Marie"
+  ],
+  "sound_plan": {
+    "drone": "F",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clip": 0,
+        "from": 0.0
+      },
+      {
+        "type": "river",
+        "clips": [
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.2
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.2
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.15,
+        "f": 196
+      }
+    ]
+  }
+}
