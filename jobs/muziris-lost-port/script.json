@@ -1,0 +1,139 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "topic": {
+    "title": "Muziris: Rome's lost pepper port in Kerala",
+    "category": "HISTORY",
+    "angle": "Gold in, pepper out; vanished port; Pattanam dig; open question",
+    "key_facts": [
+      "Muziris was an ancient port near the Periyar mouth, generally placed near today's Kodungallur",
+      "Roman ships traded gold for pepper; Sangam poems describe Yavanas bringing gold and taking pepper",
+      "Pliny the Elder complained about Roman money flowing east",
+      "The Muziris papyrus (2nd c. CE, Vienna) records a shipment linked to Muziris",
+      "A great Periyar flood of 1341 is widely believed to have silted the old harbour",
+      "Excavations at Pattanam found Roman amphora fragments; many scholars link it to Muziris"
+    ],
+    "sources": [
+      "Periplus of the Erythraean Sea; Pliny, Natural History",
+      "Muziris papyrus (Austrian National Library)",
+      "KCHR Pattanam excavations"
+    ]
+  },
+  "headline": [
+    "ROME'S",
+    "LOST PORT."
+  ],
+  "accent_words": [
+    "LOST"
+  ],
+  "thumbnail_ml": "റോമിന്റെ സ്വർണ്ണം ഒഴുകിയ കേരള തുറമുഖം എവിടെ?",
+  "thumbnail_accent": [
+    "എവിടെ?"
+  ],
+  "cover_visual": "A Roman ship with a square sail at dusk off the Kerala coast, gold glints, a fading port",
+  "hook_voiceover": "റോമൻ സാമ്രാജ്യത്തിന്റെ സ്വർണ്ണം ഒഴുകിയെത്തിയ ഒരു കേരള തുറമുഖം... ഒരു ദിവസം അത് ഭൂപടത്തിൽ നിന്ന് മാഞ്ഞുപോയി!",
+  "scenes": [
+    {
+      "voiceover": "മുസിരിസ്. പെരിയാറിന്റെ അഴിമുഖത്ത്, ഇന്നത്തെ കൊടുങ്ങല്ലൂരിനടുത്ത് ഉണ്ടായിരുന്നു എന്ന് കരുതപ്പെടുന്ന പുരാതന തുറമുഖം.",
+      "caption": "MUZIRIS · PERIYAR",
+      "highlight": "MUZIRIS",
+      "kicker": "2000 YEARS AGO",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "റോമൻ കപ്പലുകൾ സ്വർണ്ണവുമായി വന്നു, കുരുമുളക് നിറച്ച് മടങ്ങി. യവനർ സ്വർണ്ണം കൊണ്ടുവന്ന് കുരുമുളക് കൊണ്ടുപോയെന്ന് സംഘകാല കവിതകൾ പറയുന്നു.",
+      "caption": "GOLD IN · PEPPER OUT",
+      "highlight": "PEPPER",
+      "kicker": "BLACK GOLD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "റോമിന്റെ പണം കിഴക്കോട്ട് ഒഴുകുന്നെന്ന് റോമൻ എഴുത്തുകാരനായ പ്ലിനി പോലും പരാതിപ്പെട്ടു. വിയന്നയിലെ ഒരു പുരാതന പാപ്പിറസിൽ മുസിരിസുമായി ബന്ധപ്പെട്ട ഒരു കപ്പൽച്ചരക്കിന്റെ കണക്കുമുണ്ട്.",
+      "caption": "THE MUZIRIS PAPYRUS",
+      "highlight": "PAPYRUS",
+      "kicker": "PROOF IN VIENNA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പിന്നെ മുസിരിസ് മാഞ്ഞുപോയി. 1341-ലെ പെരിയാർ പ്രളയം തുറമുഖം മണ്ണിട്ട് മൂടിയെന്നാണ് പ്രധാന വിശ്വാസം. പട്ടണത്ത് നടന്ന ഖനനത്തിൽ റോമൻ ഭരണികളുടെ കഷണങ്ങൾ കണ്ടെത്തി.",
+      "caption": "LOST · THEN FOUND?",
+      "highlight": "FOUND?",
+      "kicker": "PATTANAM DIG",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പട്ടണം തന്നെയാണോ പഴയ മുസിരിസ്? നിങ്ങൾ എന്ത് കരുതുന്നു? കൊടുങ്ങല്ലൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "IS PATTANAM MUZIRIS?",
+      "highlight": "MUZIRIS?",
+      "kicker": "TAG YOUR ചങ്ക്",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "റോമിന്റെ സ്വർണ്ണം ഒഴുകിയെത്തിയ കേരള തുറമുഖം, മുസിരിസ്! 🏺⛵\nRome's lost pepper port in Kerala.\n\nസ്വർണ്ണം വന്നു, കുരുമുളക് പോയി. പിന്നെ 1341-ലെ പ്രളയത്തിൽ തുറമുഖം മാഞ്ഞെന്ന് വിശ്വാസം. പട്ടണത്ത് റോമൻ ഭരണിക്കഷണങ്ങൾ കിട്ടി.\n\nപട്ടണം തന്നെയാണോ മുസിരിസ്? കമന്റ് ചെയ്യൂ 👇 കൊടുങ്ങല്ലൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!\n\n#Muziris #Kodungallur #Pattanam #KeralaHistory #Periyar",
+  "search_ml": [
+    "മുസിരിസ്",
+    "കൊടുങ്ങല്ലൂർ",
+    "പട്ടണം",
+    "കേരള ചരിത്രം"
+  ],
+  "hashtags": [
+    "Muziris",
+    "Kodungallur",
+    "Pattanam",
+    "KeralaHistory"
+  ],
+  "fact_check": [
+    "Location given as 'believed to be near Kodungallur'",
+    "1341 flood link framed as the main belief",
+    "Pattanam = Muziris left as an open question"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 2,
+        "from": 0.0
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": [
+          0.1,
+          0.35
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.5,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 196
+      }
+    ]
+  }
+}
