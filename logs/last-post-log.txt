@@ -1,9 +1,9 @@
-Publishing cyber-teacher-hacker-v2...
+Publishing dharmadam-island...
   uguu: link serves video/mp4
-  temporary video link ready (d.uguu.se)
+  temporary video link ready (n.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18139236550694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfqdoEvnCYv/
+  container: 18139500883694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DftCbfuGXiu/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
