@@ -102,6 +102,9 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     template = script.get("template") or config.BRAND.get("template")
     archive_mode = template in ("archive", "explainer") and config.VISUAL_MODE == "code"   # template drawn into frames
     wraps = [None] * len(scenes)
+    if codes:                    # cinematic pass: constant slow camera + one overlay across all scenes
+        from pipeline import cine
+        codes = [cine.wrap(c, script, i, sum(durations[:i])) for i, c in enumerate(codes)]
     if template == "explainer" and config.VISUAL_MODE == "code":
         from pipeline import explainer
         script.setdefault("sources", (topic or {}).get("sources", []))

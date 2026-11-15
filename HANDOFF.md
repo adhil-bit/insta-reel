@@ -209,6 +209,11 @@ page's watermark, name, hashtags or artwork. How to apply them in this pipeline:
 9. **Real tragedies:** respectful tone, no dramatised deaths or victims' faces, official numbers only.
 10. Keep our proven rules on top: stakes in the first 3 s, 30–45 s length, North Malabar local
     stories share best, Despina voice.
+12. **Cinematic pass is automatic (15 Nov 2026):** `pipeline/cine.py` wraps every scene's renderFrame:
+    slow eased push-in/pull-out + small pan (alternating per scene), ONE overlay layer across all scenes
+    driven by reel time (dust / embers / rain / fog / stars / ink), and a vignette. Configure with
+    `"cine": {"overlay": "rain", "color": "#cfe3ff"}` in script.json, or `"cine": false` to switch off.
+    Still do in the scene code yourself: parallax layers (3–5 depths), a colour arc, a beautiful payoff shot.
 11. **Owner rule (12 Nov 2026): ONE post per day, MORNING ONLY (7:04 AM IST), on both pages. No evening posts.**
 
 ### Plan agreed 10 Nov 2026
