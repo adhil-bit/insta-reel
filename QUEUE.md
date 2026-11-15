@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 15 Nov, 06:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 15 Nov, 09:55 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -10,6 +10,7 @@ _Updated Sun 15 Nov, 06:08 PM IST. Times are approximate: each reel posts within
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
+- k2-1341-kochi-v4
 - k2-anchuthengu-1721
 - k2-flood-99-v2
 - k2-gundert-1847
