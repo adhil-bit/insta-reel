@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 15 Nov, 06:06 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 15 Nov, 06:08 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -23,6 +23,7 @@ _Updated Sun 15 Nov, 06:06 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Why Malayalis fear the pala tree | 2026-11-15T12:38 |
 | Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
 | Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
 | A hacker hunting a teacher for 4 years: is your phone safe? | 2026-11-13T01:35 |
@@ -32,4 +33,3 @@ _Updated Sun 15 Nov, 06:06 PM IST. Times are approximate: each reel posts within
 | Ezhimala: Hanuman's fallen hill that's now off-limits | 2026-11-10T01:38 |
 | The mountain still bowing for Agastya | 2026-11-09T05:11 |
 | Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
-| Muniyara: sages' homes or 2,000-year-old graves? | 2026-11-07T13:47 |
