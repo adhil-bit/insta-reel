@@ -27,7 +27,7 @@ JS = r"""
   { const v = vig.getContext('2d'), rg = v.createRadialGradient(W / 2, H * 0.52, H * 0.22, W / 2, H * 0.52, H * 0.78);
     rg.addColorStop(0, 'rgba(0,0,0,0)'); rg.addColorStop(1, C.vigCol); v.fillStyle = rg; v.fillRect(0, 0, W, H); }
   const fog = document.createElement('canvas'); fog.width = W; fog.height = 360;
-  { const f = fog.getContext('2d'), lg = f.createLinearGradient(0, 0, 0, 360); lg.addColorStop(0, 'rgba(255,255,255,0)'); lg.addColorStop(0.5, 'rgba(255,255,255,1)'); lg.addColorStop(1, 'rgba(255,255,255,0)'); f.fillStyle = lg; f.fillRect(0, 0, W, 360); }
+  { const f = fog.getContext('2d'); for (let k = 0; k < 9; k++) { const cx = (k + 0.5) * W / 9, cy = 180 + 50 * Math.sin(k * 2.1); for (const dx of [-W, 0, W]) { const rg = f.createRadialGradient(cx + dx, cy, 0, cx + dx, cy, 170); rg.addColorStop(0, 'rgba(255,255,255,0.8)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); f.fillStyle = rg; f.fillRect(cx + dx - 170, cy - 170, 340, 340); } } }
   const wrap = (x, m) => ((x %% m) + m) %% m;
   window.renderFrame = function (t) {
     const k = Math.min(1, Math.max(0, t / DURATION)), e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
@@ -38,7 +38,7 @@ JS = r"""
     const T = t + C.t0;                       // reel time: the overlay continues across cuts
     g.save(); g.setTransform(1, 0, 0, 1, 0, 0);
     if (C.overlay === 'fog') {
-      for (let b = 0; b < 3; b++) { g.globalAlpha = 0.07 + 0.03 * b; g.drawImage(fog, wrap(T * (14 + b * 9) + b * 400, W * 2) - W, 520 + b * 330, W * 2, 360); }
+      for (let b = 0; b < 3; b++) { g.globalAlpha = 0.06 + 0.03 * b; const x0 = wrap(T * (14 + b * 9) + b * 400, W) - W, y0 = 520 + b * 330 + Math.sin(T * 0.3 + b) * 30; g.drawImage(fog, x0, y0, W, 360); g.drawImage(fog, x0 + W, y0, W, 360); }
     } else if (C.overlay === 'rain') {
       g.strokeStyle = C.color; g.lineWidth = 2;
       for (const q of P) { const y = wrap(q.y + T * 900 * q.v, H + 80) - 40, x = wrap(q.x - T * 160 * q.v, W);

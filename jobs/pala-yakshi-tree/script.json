@@ -1,0 +1,152 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "topic": {
+    "title": "Why Malayalis fear the pala tree",
+    "category": "MYSTERY",
+    "angle": "Yakshi folklore vs the real tree: Alstonia scholaris ('Devil's tree') flowers at night Oct–Dec with a heavy scent",
+    "key_facts": [
+      "Folklore: yakshis live in pala trees; the scent of pala flowers at night signals a yakshi",
+      "Kadamattathu Kathanar legend: a yakshi tamed by driving an iron nail into her head",
+      "Chottanikkara Keezhkkavu: a pala tree covered with nails driven in by devotees as part of belief in driving out spirits",
+      "The tree is Alstonia scholaris (ezhilampala, saptaparni), called 'Devil's tree' in English",
+      "It flowers at night roughly October to December; the strong scent can cause headaches or breathing discomfort in some people",
+      "Its soft wood was used for school slates, hence 'scholaris'"
+    ],
+    "sources": [
+      "Kerala folklore (Aithihyamala tradition); botanical descriptions of Alstonia scholaris"
+    ]
+  },
+  "headline": [
+    "THE DEVIL'S",
+    "TREE."
+  ],
+  "accent_words": [
+    "DEVIL'S"
+  ],
+  "thumbnail_ml": "പാലമരത്തെ മലയാളി ഭയക്കുന്നത് എന്തിന്?",
+  "thumbnail_accent": [
+    "ഭയക്കുന്നത്"
+  ],
+  "cover_visual": "Moonlit misty night, a huge dark pala tree with glowing white flower clusters, faint white figure far away",
+  "hook_voiceover": "രാത്രി പാലപ്പൂവിന്റെ മണം വന്നാൽ യക്ഷി അടുത്തുണ്ടെന്ന് പഴമക്കാർ. പക്ഷേ ആ മണത്തിന് പിന്നിൽ ഒരു സത്യമുണ്ട്!",
+  "scenes": [
+    {
+      "voiceover": "യക്ഷികൾ പാലമരത്തിൽ വസിക്കുന്നു, രാത്രി സുന്ദരിയായി വന്ന് വഴിയാത്രക്കാരെ വശീകരിക്കുന്നു എന്നാണ് കഥ. കടമറ്റത്ത് കത്തനാർ യക്ഷിയെ ആണിയടിച്ച് തളച്ച കഥയും നമ്മൾ കേട്ടിട്ടുണ്ട്.",
+      "caption": "YAKSHI · PALA",
+      "highlight": "YAKSHI",
+      "kicker": "THE LEGEND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചോറ്റാനിക്കര കീഴ്ക്കാവിൽ ഒരു പാലമരം നിറയെ ആണികളാണ്. ബാധ ഒഴിയാൻ ഭക്തർ ആണി അടിച്ചുകയറ്റുന്നു, ചിലർ നെറ്റികൊണ്ട് പോലും എന്നാണ് വിശ്വാസം.",
+      "caption": "CHOTTANIKKARA · KEEZHKKAVU",
+      "highlight": "CHOTTANIKKARA",
+      "kicker": "FAITH",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇനി ശാസ്ത്രം. ഏഴിലംപാല എന്ന മരമാണ് ഇത്. ഇംഗ്ലീഷിൽ പേര് തന്നെ ഡെവിൾസ് ട്രീ! ഒക്ടോബർ മുതൽ ഡിസംബർ വരെ രാത്രിയിലാണ് ഇത് പൂക്കുന്നത്.",
+      "caption": "ALSTONIA SCHOLARIS",
+      "highlight": "SCHOLARIS",
+      "kicker": "THE REAL TREE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആ പൂക്കളുടെ മണം വളരെ കടുത്തതാണ്. ചിലർക്ക് തലവേദനയും ശ്വാസംമുട്ടലും വരെ ഉണ്ടാകാം. ഇരുട്ട്, ഒറ്റപ്പെട്ട വഴി, പെട്ടെന്ന് ഒരു കടുത്ത മണം... ഭയം ജനിക്കാൻ ഇത് മതി.",
+      "caption": "THE SCENT IS REAL",
+      "highlight": "REAL",
+      "kicker": "SCIENCE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇതിന്റെ തടി പണ്ട് കുട്ടികളുടെ സ്ലേറ്റ് ഉണ്ടാക്കാൻ ഉപയോഗിച്ചിരുന്നു, അതാണ് സ്കോളാരിസ് എന്ന പേര്. ഇപ്പോൾ നിങ്ങളുടെ നാട്ടിൽ പാലപ്പൂ മണക്കുന്നുണ്ടോ? പേടിത്തൊണ്ടൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "TAG YOUR PEDITHONDAN",
+      "highlight": "TAG",
+      "kicker": "PALA SEASON NOW",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "പാലമരത്തെ മലയാളി ഭയക്കുന്നത് എന്തിന്? 🌳👻\nWhy Malayalis fear the pala tree, and the real reason behind the 'yakshi scent'.\n\nഏഴിലംപാല (Alstonia scholaris) ഇംഗ്ലീഷിൽ 'Devil's tree'. ഒക്ടോബർ–ഡിസംബർ രാത്രികളിൽ പൂക്കും, കടുത്ത മണം. പണ്ട് ഇതിന്റെ തടി കൊണ്ട് സ്ലേറ്റ് ഉണ്ടാക്കിയിരുന്നു!\n\nഇപ്പോൾ നിങ്ങളുടെ നാട്ടിൽ പാലപ്പൂ മണക്കുന്നുണ്ടോ? 👇 പേടിത്തൊണ്ടൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 😂\n\n#Yakshi #PalaTree #KeralaFolklore #Chottanikkara #മലയാളം",
+  "search_ml": [
+    "പാലമരം",
+    "യക്ഷി",
+    "ഏഴിലംപാല",
+    "ചോറ്റാനിക്കര"
+  ],
+  "hashtags": [
+    "Yakshi",
+    "PalaTree",
+    "KeralaFolklore",
+    "Chottanikkara"
+  ],
+  "fact_check": [
+    "Chottanikkara practice framed as belief, shown respectfully with no devotees on screen",
+    "Health effect softened: 'some people'",
+    "No mockery of faith"
+  ],
+  "cine": {
+    "overlay": "fog"
+  },
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1,
+          4
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.9
+      },
+      {
+        "type": "rumble",
+        "clip": 1,
+        "at": [
+          0.7
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 2,
+        "at": 0.1,
+        "f": 174
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.0
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.55,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  }
+}
