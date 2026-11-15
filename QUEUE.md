@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sat 14 Nov, 12:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 15 Nov, 07:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -22,6 +22,7 @@ _Updated Sat 14 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
 | Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
 | A hacker hunting a teacher for 4 years: is your phone safe? | 2026-11-13T01:35 |
 | Ambalappuzha: the chess debt still being paid | 2026-11-12T13:38 |
@@ -31,4 +32,3 @@ _Updated Sat 14 Nov, 12:51 PM IST. Times are approximate: each reel posts within
 | The mountain still bowing for Agastya | 2026-11-09T05:11 |
 | Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |
 | Muniyara: sages' homes or 2,000-year-old graves? | 2026-11-07T13:47 |
-| Porotta-beef and Kozhikode: is there a link? | 2026-11-07T04:39 |
