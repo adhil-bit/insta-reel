@@ -1,0 +1,141 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "topic": {
+    "title": "The Dutch sold a Kannur fort to a Malayali royal family",
+    "category": "HISTORY",
+    "angle": "Surprise/stakes hook: a European power sold Fort St. Angelo to Kannur's Arakkal family (1772); four flags; Dutch-era painting in Amsterdam",
+    "key_facts": [
+      "Fort St. Angelo, Kannur, built by the Portuguese in 1505",
+      "Captured by the Dutch in 1663; Dutch held it over a century",
+      "Sold by the Dutch to the Arakkal royal family of Kannur in 1772; Arakkal is known as Kerala's only Muslim royal dynasty",
+      "Taken by the British in 1790",
+      "A Dutch-era painting of the Kannur fort is in the Rijksmuseum, Amsterdam"
+    ],
+    "sources": [
+      "ASI / Kerala Tourism on Fort St. Angelo",
+      "Rijksmuseum collection (Dutch-era view of Cannanore)"
+    ]
+  },
+  "headline": [
+    "THE DUTCH",
+    "SOLD A FORT."
+  ],
+  "accent_words": [
+    "SOLD"
+  ],
+  "thumbnail_ml": "ഡച്ചുകാർ കണ്ണൂർ കോട്ട വിറ്റു! വാങ്ങിയത് ആര്?",
+  "thumbnail_accent": [
+    "ആര്?"
+  ],
+  "cover_visual": "Sea fort at dusk, Dutch flag coming down, gold coins, a big question mark",
+  "hook_voiceover": "ഡച്ചുകാർ യുദ്ധം ചെയ്ത് പിടിച്ച കണ്ണൂർ കോട്ട... പിന്നെ അവർ അത് വിറ്റു! വാങ്ങിയത് ആര്?",
+  "scenes": [
+    {
+      "voiceover": "1505-ൽ പോർച്ചുഗീസുകാർ പണിത സെന്റ് ആഞ്ചലോ കോട്ട. മലബാർ കടലിന്റെ താക്കോൽ.",
+      "caption": "FORT ST. ANGELO · 1505",
+      "highlight": "1505",
+      "kicker": "KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1663-ൽ ഡച്ചുകാർ കോട്ട പിടിച്ചെടുത്തു. പക്ഷേ നൂറ് വർഷത്തിന് ശേഷം അവർ അത് വിൽക്കാൻ തീരുമാനിച്ചു.",
+      "caption": "1663 · THE DUTCH",
+      "highlight": "DUTCH",
+      "kicker": "THEN THEY SOLD IT",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വാങ്ങിയത്... കണ്ണൂരിലെ അറയ്ക്കൽ രാജവംശം! കേരളത്തിലെ ഏക മുസ്ലിം രാജവംശം. വർഷം 1772.",
+      "caption": "SOLD TO ARAKKAL · 1772",
+      "highlight": "ARAKKAL",
+      "kicker": "THE TWIST",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1790-ൽ ബ്രിട്ടീഷുകാർ കോട്ട പിടിച്ചു. ഡച്ച് കാലത്തെ ഈ കോട്ടയുടെ ചിത്രം ഇന്നും ആംസ്റ്റർഡാമിലെ മ്യൂസിയത്തിൽ!",
+      "caption": "NOW IN AMSTERDAM",
+      "highlight": "AMSTERDAM",
+      "kicker": "1790 · BRITISH",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കോട്ടയും അറയ്ക്കൽ കെട്ടും കണ്ടിട്ടുണ്ടോ? കണ്ണൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "4 FLAGS · 1 FORT",
+      "highlight": "4",
+      "kicker": "TAG YOUR KANNUR ചങ്ക്",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഡച്ചുകാർ കണ്ണൂർ കോട്ട വിറ്റു! വാങ്ങിയത് ആര്? 🏰💰\nThe Dutch sold Kannur's Fort St. Angelo to the Arakkal royal family in 1772.\n\n1505 പോർച്ചുഗീസ് → 1663 ഡച്ച് → 1772 അറയ്ക്കൽ → 1790 ബ്രിട്ടീഷ്. ഡച്ച് കാലത്തെ ഈ കോട്ടയുടെ ചിത്രം ഇന്നും ആംസ്റ്റർഡാമിലെ മ്യൂസിയത്തിൽ!\n\nകോട്ടയും അറയ്ക്കൽ കെട്ടും കണ്ടിട്ടുണ്ടോ? കണ്ണൂരുകാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#StAngeloFort #Kannur #Arakkal #KeralaHistory #KannurFort",
+  "search_ml": [
+    "കണ്ണൂർ കോട്ട",
+    "അറയ്ക്കൽ",
+    "സെന്റ് ആഞ്ചലോ കോട്ട",
+    "കണ്ണൂർ ചരിത്രം"
+  ],
+  "hashtags": [
+    "StAngeloFort",
+    "Kannur",
+    "KeralaHistory",
+    "Arakkal"
+  ],
+  "fact_check": [
+    "No painter name, date or catalogue number claimed for the painting",
+    "Only the four well-known ownership dates"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.4,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "river",
+        "clips": [
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.15,
+          0.45
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.1,
+        "f": 220
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.1,
+        "f": 196
+      }
+    ]
+  }
+}
