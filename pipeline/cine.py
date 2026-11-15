@@ -31,7 +31,8 @@ JS = r"""
   const wrap = (x, m) => ((x %% m) + m) %% m;
   window.renderFrame = function (t) {
     const k = Math.min(1, Math.max(0, t / DURATION)), e = k < 0.5 ? 2 * k * k : 1 - Math.pow(-2 * k + 2, 2) / 2;
-    const z = 1.03 + C.push * (C.dir > 0 ? e : 1 - e), px = C.pan * (e - 0.5) * C.dir;
+    const kick = C.kick * Math.pow(1 - Math.min(1, t / 0.4), 3);   // punch-in at every cut: a pattern interrupt
+    const z = 1.03 + kick + C.push * (C.dir > 0 ? e : 1 - e), px = C.pan * (e - 0.5) * C.dir;
     g.save(); g.translate(540 + px, 1000); g.scale(z, z); g.translate(-540, -1000);
     orig(t);
     g.restore();
@@ -70,7 +71,7 @@ def config_for(script: dict, i: int, t0: float) -> dict | None:
                                  "stars": "#ffffff", "fog": "#ffffff"}.get(overlay, "#ffd59a")
     vig = cfg.get("vignette", 0.18 if light else 0.45)
     return {"overlay": overlay, "color": color, "push": cfg.get("push", 0.07), "pan": cfg.get("pan", 24),
-            "dir": 1 if i % 2 == 0 else -1, "i": i, "t0": round(t0, 3),
+            "dir": 1 if i % 2 == 0 else -1, "kick": cfg.get("kick", 0.08), "i": i, "t0": round(t0, 3),
             "vigCol": f"rgba({'60,40,20' if light else '0,0,0'},{vig})"}
 
 

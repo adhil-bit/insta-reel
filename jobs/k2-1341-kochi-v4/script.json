@@ -1,0 +1,135 @@
+{
+  "account": "2",
+  "theme": "inkwash",
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "topic": {
+    "title": "The 1341 flood that made Kochi",
+    "category": "HISTORY",
+    "angle": "One flood silts one port and opens another; Vypeen and the 'Puthuvaippu' tradition",
+    "key_facts": [
+      "Kodungallur was the chief port before the 14th century",
+      "A great Periyar flood in 1341 is traditionally said to have silted Kodungallur's harbour",
+      "The same flood is said to have opened a natural harbour at Kochi",
+      "Tradition links the formation of Vypeen island to this period; 'Puthuvaippu' means 'new deposit'",
+      "Kochi grew into the major port, later called the Queen of the Arabian Sea"
+    ],
+    "sources": [
+      "Standard Kerala history (tradition of the 1341 flood, Puthuvaippu era)"
+    ]
+  },
+  "headline": [
+    "ഒരു പ്രളയം, ഒരു നഗരം"
+  ],
+  "accent_words": [
+    "നഗരം"
+  ],
+  "thumbnail_ml": "കൊച്ചി ജനിച്ചത് ഒരു ദുരന്തത്തിൽ നിന്ന്!",
+  "thumbnail_accent": [
+    "ദുരന്തത്തിൽ"
+  ],
+  "cover_visual": "Ink-wash coastline, a river bursting into the sea, a new harbour opening, 1341 seal",
+  "hook_voiceover": "കൊച്ചി തുറമുഖം ജനിച്ചത് ഒരു ദുരന്തത്തിൽ നിന്നാണ്! 1341-ൽ പെരിയാറിൽ എന്താണ് സംഭവിച്ചത്?",
+  "scenes": [
+    {
+      "voiceover": "അന്ന് കേരളത്തിന്റെ പ്രധാന തുറമുഖം കൊച്ചിയല്ല, കൊടുങ്ങല്ലൂർ ആയിരുന്നു.",
+      "caption": "കൊടുങ്ങല്ലൂർ തുറമുഖം",
+      "highlight": "കൊടുങ്ങല്ലൂർ",
+      "kicker": "1341-ന് മുമ്പ്",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1341-ൽ പെരിയാറിൽ ഒരു മഹാപ്രളയം. പുഴ ഗതി മാറി, മണലും ചെളിയും ഒഴുകിയെത്തി.",
+      "caption": "1341 മഹാപ്രളയം",
+      "highlight": "1341",
+      "kicker": "പെരിയാർ",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കൊടുങ്ങല്ലൂർ അഴിമുഖം മണ്ണടിഞ്ഞ് അടഞ്ഞു. പക്ഷേ തെക്ക്, കൊച്ചിയിൽ ഒരു പുതിയ തുറമുഖം തുറന്നു!",
+      "caption": "കൊച്ചി തുറക്കുന്നു",
+      "highlight": "കൊച്ചി",
+      "kicker": "ഒന്ന് അടഞ്ഞു, ഒന്ന് തുറന്നു",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വൈപ്പിൻ ദ്വീപും അക്കാലത്ത് ഉയർന്നുവന്നെന്ന് പാരമ്പര്യം. പുതുവൈപ്പ് എന്നാൽ പുതിയ നിക്ഷേപം.",
+      "caption": "വൈപ്പിൻ · പുതുവൈപ്പ്",
+      "highlight": "വൈപ്പിൻ",
+      "kicker": "പുതിയ ദ്വീപ്",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അങ്ങനെ കൊച്ചി അറബിക്കടലിന്റെ റാണിയായി. കൊച്ചിക്കാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ!",
+      "caption": "അറബിക്കടലിന്റെ റാണി",
+      "highlight": "റാണി",
+      "kicker": "ചങ്കിനെ മെൻഷൻ ചെയ്യൂ",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഒരു വെള്ളപ്പൊക്കം കൊച്ചിയെ സൃഷ്ടിച്ചു! 🌊⚓\n\n1341-ലെ പെരിയാർ മഹാപ്രളയം കൊടുങ്ങല്ലൂർ തുറമുഖം മണ്ണിട്ട് മൂടി, കൊച്ചിയിൽ പുതിയ തുറമുഖം തുറന്നു എന്നാണ് ചരിത്രം. വൈപ്പിൻ ദ്വീപും ('പുതുവൈപ്പ്' = പുതിയ നിക്ഷേപം) ഇതേ കാലത്ത് രൂപപ്പെട്ടെന്ന് പാരമ്പര്യം.\n\nകൊച്ചിക്കാരൻ ചങ്കിനെ മെൻഷൻ ചെയ്യൂ 👇\n\n#Kochi #Kodungallur #Vypeen #KeralaHistory #കഥയുംചരിത്രവും",
+  "search_ml": [
+    "1341 പ്രളയം",
+    "കൊച്ചി ചരിത്രം",
+    "വൈപ്പിൻ",
+    "കൊടുങ്ങല്ലൂർ"
+  ],
+  "hashtags": [
+    "Kochi",
+    "Kodungallur",
+    "Vypeen",
+    "KeralaHistory"
+  ],
+  "fact_check": [
+    "Flood and Vypeen framed as 'history says' / 'tradition'"
+  ],
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.1,
+          0.4
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.3
+      },
+      {
+        "type": "shimmer",
+        "clip": 5,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.2,
+        "f": 220
+      }
+    ]
+  }
+}
