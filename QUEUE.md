@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 15 Nov, 10:01 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 16 Nov, 07:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -24,6 +24,7 @@ _Updated Sun 15 Nov, 10:01 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| The Dutch sold a Kannur fort to a Malayali royal family | 2026-11-16T01:35 |
 | Why Malayalis fear the pala tree | 2026-11-15T12:38 |
 | Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
 | Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
@@ -33,4 +34,3 @@ _Updated Sun 15 Nov, 10:01 PM IST. Times are approximate: each reel posts within
 | 'Konnal papam thinnal theerum': born from cannibalism? | 2026-11-11T13:37 |
 | Ezhimala: Hanuman's fallen hill that's now off-limits | 2026-11-10T01:38 |
 | The mountain still bowing for Agastya | 2026-11-09T05:11 |
-| Mananchira: the pond a king dug in the heart of Kozhikode | 2026-11-08T04:38 |

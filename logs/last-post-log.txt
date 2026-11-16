@@ -1,9 +1,9 @@
-Publishing pala-yakshi-tree...
+Publishing st-angelo-sold-v4...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18139916155694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DfwzG6SE2EM/
+  container: 18140085250694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DfyMA5pCrma/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
