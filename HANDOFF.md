@@ -209,6 +209,7 @@ page's watermark, name, hashtags or artwork. How to apply them in this pipeline:
 9. **Real tragedies:** respectful tone, no dramatised deaths or victims' faces, official numbers only.
 10. Keep our proven rules on top: stakes in the first 3 s, 30–45 s length, North Malabar local
     stories share best, Despina voice.
+14. **READ docs/design-system.md too (16 Nov 2026, Fable design review).** cine.py now adds grain, act grade, light leak, twist flash, payoff letterbox, series badge, map pin, text safety, parallax API (CINE.layer). Scene authors: hero ≥ 40% of height, foreground layer in the bottom third, shot scale changes every scene, Malayalam captions ≤ 4 words.
 13. **READ docs/1k-playbook.md before writing any script (15 Nov 2026).** Avg watch < 8 s = stuck at ~200. Hook: frame-1 strongest image, known name + twist + open question in ≤ 2.5 s; 35-45 s total (≤ 500 chars voice); a reveal every 5-7 s; answer the hook at the end; tag-a-place-friend ask. Never repeat a posted topic.
 12. **Cinematic pass is automatic (15 Nov 2026):** `pipeline/cine.py` wraps every scene's renderFrame:
     slow eased push-in/pull-out + small pan (alternating per scene), ONE overlay layer across all scenes

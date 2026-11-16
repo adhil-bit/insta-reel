@@ -234,7 +234,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
         # story-style opening: the English title at the top, the hook spoken as short Malayalam beats
         title = " ".join(script.get("headline", []))
         body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>'
-                f'<div class="head" id="head">{_accent_html(title, script.get("accent_words", []))}</div><div class="sub" id="sub"></div>')
+                (f'<div class="head" id="head">{_accent_html(title, script.get("accent_words", []))}</div>' if script.get("english_title") else '') + '<div class="sub" id="sub"></div>')
         if script.get("claim_first", True) and script.get("thumbnail_ml"):     # the surprise, big, from frame 1
             claim = html.escape(script["thumbnail_ml"].split(" · ")[0])
             for a in script.get("thumbnail_accent", []):
