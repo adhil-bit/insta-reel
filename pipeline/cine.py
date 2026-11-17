@@ -112,7 +112,7 @@ JS = r"""
       for (let r = 0; r < 3; r++) { const ph = ((pt - 0.35) * 0.7 + r / 3) %% 1; if (pt < 0.35) break; g.globalAlpha = 0.6 * (1 - ph); g.strokeStyle = C.accent; g.lineWidth = 5; g.beginPath(); g.ellipse(p.x, p.y, 30 + ph * 150, (30 + ph * 150) * 0.35, 0, 0, 6.283); g.stroke(); }
       g.globalAlpha = 1; g.save(); g.translate(p.x, p.y + bounce); g.fillStyle = C.accent; g.beginPath(); g.moveTo(0, 0); g.bezierCurveTo(-46, -60, -46, -120, 0, -120); g.bezierCurveTo(46, -120, 46, -60, 0, 0); g.fill(); g.fillStyle = '#fff'; g.beginPath(); g.arc(0, -82, 16, 0, 6.283); g.fill(); g.restore();
       const la = cl((pt - 0.3) / 0.25); if (la > 0) { g.globalAlpha = la; g.font = '800 90px Baloo, Inter'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineWidth = 10; g.strokeStyle = 'rgba(0,0,0,0.75)'; g.strokeText(p.town, p.x, p.y - 200); g.fillStyle = '#fff'; ft(p.town, p.x, p.y - 200); g.globalAlpha = 1; } } }
-    if (C.series) { g.font = '800 36px Baloo, Inter'; const w = g.measureText(C.series).width + 44, x = 1020 - w, y = 136; g.fillStyle = C.accent; g.beginPath(); g.roundRect(x, y, w, 58, 29); g.fill(); g.fillStyle = '#111'; g.textAlign = 'left'; g.textBaseline = 'middle'; ft(C.series, x + 22, y + 31); }
+    if (C.series) { g.font = '800 36px Baloo, Inter'; const w = g.measureText(C.series).width + 44, x = 1020 - w, y = 196; g.fillStyle = C.accent; g.beginPath(); g.roundRect(x, y, w, 58, 29); g.fill(); g.fillStyle = '#111'; g.textAlign = 'left'; g.textBaseline = 'middle'; ft(C.series, x + 22, y + 31); }
     g.restore();
   };
 })();
