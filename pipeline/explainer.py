@@ -239,6 +239,9 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
             claim = html.escape(script["thumbnail_ml"].split(" · ")[0])
             for a in script.get("thumbnail_accent", []):
                 claim = claim.replace(html.escape(a), f"<b>{html.escape(a)}</b>")
+            if script.get("style") == "naadu":
+                eng = html.escape(script.get("english_sub") or " ".join(script.get("headline", [])))
+                claim += f'<span class="eng">{eng}</span>'
             body += f'<div class="claim">{claim}</div>'
         chunks = _chunks(scene.get("voiceover", ""), speech)
     else:
@@ -256,7 +259,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     globe_html = (GLOBE.replace("%(LAT)s", str(opening["lat"])).replace("%(LON)s", str(opening["lon"]))
                   .replace("%(D)s", f"{duration:.3f}").replace("ACC", accent)) if globe_on else ""
     globe_mark, globe_js = (globe_html.split("<script>", 1)[0], "<script>" + globe_html.split("<script>", 1)[1]) if globe_on else ("", "")
-    return (f'<style>{_css(accent)}{_nb_css(th) if th else ""}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
+    return (f'<style>{_css(accent)}{_nb_css(th) if th else ""}{_naadu_css() if script.get("style") == "naadu" else ""}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
             f'<div class="src">Sources: {html.escape(src)} · Animated illustration</div></div>' + JS.replace("%(STATE)s", state) + globe_js)
 
 
@@ -274,6 +277,32 @@ def clean_frame(code: str, accent: str, duration: float, out: Path, at: float = 
     return out
 
 
+NAADU_GOLD = "#F5C542"
+
+
+def _naadu_css() -> str:
+    """Naadu-style layout (docs/design-refs/06-naadu-methodology.md): white Malayalam headline top-centre,
+    small gold English ALL-CAPS line under it, subtitles mid-lower on a soft dark backing, top third clear."""
+    g = NAADU_GOLD
+    return f"""
+.claim {{ top:230px; font:800 96px/1.14 Baloo, Noto; color:#fff; text-shadow:0 4px 26px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.6); }}
+.claim b {{ color:{g}; }}
+.claim .eng {{ display:block; margin-top:22px; font:800 30px Inter; letter-spacing:6px; color:{g}; text-transform:uppercase; text-shadow:0 2px 12px rgba(0,0,0,.8); }}
+.head {{ top:200px; font:800 76px/1.12 Baloo, Noto; color:#fff; text-shadow:0 4px 22px rgba(0,0,0,.6); }}
+.head b {{ font-weight:800; color:{g}; }}
+.kicker {{ color:{g} !important; letter-spacing:6px !important; font:800 26px Inter !important; text-transform:uppercase !important; }}
+.sub {{ bottom:430px; left:110px; right:110px; font:700 52px/1.34 Baloo, Noto; background:rgba(0,0,0,.42); border-radius:24px; padding:14px 26px; }}
+.sub:empty {{ display:none; }}
+.sub span.on {{ color:{g}; }}
+.cover {{ top:210px; bottom:auto; }}
+.cover .kick {{ font-size:104px; }}
+.cover .kick b {{ color:{g}; }}
+.cover .big {{ font:800 32px/1.3 Inter; letter-spacing:7px; color:{g}; }}
+.cover .big b {{ font-weight:800; color:{g}; }}
+.bar {{ display:none; }}
+"""
+
+
 def thumbnail(script: dict, bg: Path, out: Path) -> Path:
     """Grid cover: big Malayalam headline (the hero), small English line under it."""
     from playwright.sync_api import sync_playwright
@@ -282,12 +311,13 @@ def thumbnail(script: dict, bg: Path, out: Path) -> Path:
     kick = html.escape(script.get("thumbnail_ml", ""))
     for a in script.get("thumbnail_accent", []):
         kick = kick.replace(html.escape(a), f"<b>{html.escape(a)}</b>")
-    eng = " ".join(script.get("headline", []))
+    eng = (script.get("english_sub") if script.get("style") == "naadu" else None) or " ".join(script.get("headline", []))
+    naadu = script.get("style") == "naadu"
     doc = f"""<!doctype html><meta charset=utf-8><style>{_css(accent)}
 body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve().as_uri()}') center/cover; }}
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
-{_nb_css(th) if th else ""}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
+{_nb_css(th) if th else ""}{_naadu_css() + '.shade { background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 30%, rgba(0,0,0,0) 45%, rgba(0,0,0,0) 80%, rgba(0,0,0,.35) 100%); }' if naadu else ""}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
 <div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
 <script>/* fitKick: shrink the headline until its longest word fits the width */
 document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');
