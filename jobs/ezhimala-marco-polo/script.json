@@ -1,0 +1,173 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "HISTORY",
+  "style": "naadu",
+  "english_sub": "MARCO POLO'S KINGDOM OF ELI",
+  "topic": {
+    "title": "Marco Polo saw Ezhimala: the Kingdom of Eli",
+    "category": "HISTORY",
+    "angle": "Kannur series #2: Marco Polo's account of Eli and its strange law for stray ships",
+    "key_facts": [
+      "Marco Polo, returning from China in the 1290s, described the kingdom of Eli on the Malabar coast",
+      "Eli is generally identified with Ezhimala (Mount Eli) in Kannur",
+      "He mentions abundant pepper and ginger; the hill was a landmark for sailors",
+      "Polo wrote that if a ship bound elsewhere entered their estuary, the people seized its cargo, saying God had sent it to them",
+      "Today Ezhimala hosts the Indian Naval Academy"
+    ],
+    "sources": [
+      "The Travels of Marco Polo, Book 3 ('Kingdom of Eli')"
+    ]
+  },
+  "headline": [
+    "MARCO POLO'S",
+    "EZHIMALA."
+  ],
+  "accent_words": [
+    "EZHIMALA."
+  ],
+  "thumbnail_ml": "മാർക്കോ പോളോ കണ്ട ഏഴിമല",
+  "thumbnail_accent": [
+    "ഏഴിമല"
+  ],
+  "cover_visual": "Golden-hour Ezhimala hill from the sea, an old sailing ship in the foreground",
+  "series": "കണ്ണൂർ രഹസ്യങ്ങൾ #2",
+  "pin": {
+    "scene": 1,
+    "town": "ഏഴിമല",
+    "x": 540,
+    "y": 1000
+  },
+  "twist_scene": 4,
+  "hud": {
+    "2": [
+      [
+        "YEARS AGO",
+        730,
+        "+"
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "dust",
+    "letterbox": [
+      3
+    ]
+  },
+  "hook_voiceover": "700 വർഷം മുമ്പ് മാർക്കോ പോളോ ഏഴിമലയെ കുറിച്ച് ഒരു വിചിത്ര നിയമം എഴുതി. വഴി തെറ്റി ഇവിടെ എത്തുന്ന കപ്പലുകൾക്ക് എന്ത് സംഭവിക്കും?",
+  "scenes": [
+    {
+      "voiceover": "ഇന്ന് ഏഴിമല എന്നാൽ നാവിക അക്കാദമി. പക്ഷേ കപ്പലുകൾ ഏഴിമലയ്ക്ക് പുതിയതല്ല.",
+      "caption": "ഇന്ന് · നാവിക അക്കാദമി",
+      "highlight": "ഇന്ന്",
+      "kicker": "TODAY · INDIAN NAVAL ACADEMY",
+      "loc": "EZHIMALA · KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചൈനയിൽ നിന്ന് മടങ്ങുമ്പോൾ മാർക്കോ പോളോ ഏലി എന്ന രാജ്യത്തെ കുറിച്ച് എഴുതി. അത് ഏഴിമലയാണെന്ന് ചരിത്രകാരന്മാർ കരുതുന്നു.",
+      "caption": "1290-കൾ · മാർക്കോ പോളോ",
+      "highlight": "1290-കൾ",
+      "kicker": "VENICE → CHINA → MALABAR",
+      "loc": "KINGDOM OF ELI",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കുരുമുളകും ഇഞ്ചിയും നിറഞ്ഞ നാട്. കടലിൽ നിന്ന് ദൂരെ കാണാവുന്ന ഈ മല നാവികർക്ക് വഴികാട്ടിയായിരുന്നു.",
+      "caption": "കുരുമുളക് · ഇഞ്ചി",
+      "highlight": "കുരുമുളക്",
+      "kicker": "A HILL FOR SAILORS",
+      "loc": "MOUNT ELI · ARABIAN SEA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇനി ആ നിയമം. വഴി തെറ്റി ഇവിടെ എത്തുന്ന കപ്പലിന്റെ ചരക്ക് നാട്ടുകാർ പിടിച്ചെടുക്കും. അവർ പറയും: ദൈവമാണ് നിങ്ങളെ ഞങ്ങൾക്ക് അയച്ചത്!",
+      "caption": "ട്വിസ്റ്റ് · വിചിത്ര നിയമം",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "THE STRANGE LAW",
+      "loc": "EZHIMALA ESTUARY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മാർക്കോ പോളോ പറഞ്ഞത് സത്യമോ, കെട്ടുകഥയോ? കമന്റ് ചെയ്യൂ. ഈ കഥ പയ്യന്നൂരുകാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ഉത്തരം?",
+      "highlight": "ഉത്തരം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "PAYYANUR · KANNUR",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "700 വർഷം മുമ്പ് മാർക്കോ പോളോ ഏഴിമലയെ കുറിച്ച് എഴുതിയ വിചിത്ര നിയമം! ⚓\n\nവെനീസുകാരൻ മാർക്കോ പോളോ 'ഏലി' എന്ന് വിളിച്ച രാജ്യം ഏഴിമലയാണെന്ന് ചരിത്രകാരന്മാർ കരുതുന്നു. കുരുമുളകിന്റെ നാട്, നാവികരുടെ വഴികാട്ടിയായ മല… പക്ഷേ വഴി തെറ്റി എത്തുന്ന കപ്പലുകൾക്ക് എന്ത് സംഭവിക്കുമായിരുന്നു?\n\nമാർക്കോ പോളോ പറഞ്ഞത് സത്യമോ കെട്ടുകഥയോ? കമന്റ് ചെയ്യൂ 👇\nപയ്യന്നൂരുകാരൻ ചങ്കിനും നേവിയിലുള്ള സുഹൃത്തിനും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nMarco Polo described the 'Kingdom of Eli' (Ezhimala) on the Malabar coast in the 1290s, including its strange law for ships that strayed into its port.\n\nകണ്ണൂർ രഹസ്യങ്ങൾ #2\n\nCredits: The Travels of Marco Polo (Book 3, 'Kingdom of Eli') · Animation, voice and sound: AI-generated\n\n#Ezhimala #Kannur #MarcoPolo #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "ഏഴിമല",
+    "മാർക്കോ പോളോ",
+    "കണ്ണൂർ ചരിത്രം",
+    "പയ്യന്നൂർ"
+  ],
+  "hashtags": [
+    "Ezhimala",
+    "Kannur",
+    "MarcoPolo",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Eli = Ezhimala framed as historians' view",
+    "Ship-seizing custom attributed to Marco Polo's account"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.3,
+        "count": 3
+      },
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 2,
+        "from": 0.0
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": [
+          0.1,
+          0.5
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.25,
+        "count": 4,
+        "gap": 0.7
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 196
+      }
+    ]
+  }
+}
