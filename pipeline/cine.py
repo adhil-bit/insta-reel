@@ -112,6 +112,10 @@ JS = r"""
       for (let r = 0; r < 3; r++) { const ph = ((pt - 0.35) * 0.7 + r / 3) %% 1; if (pt < 0.35) break; g.globalAlpha = 0.6 * (1 - ph); g.strokeStyle = C.accent; g.lineWidth = 5; g.beginPath(); g.ellipse(p.x, p.y, 30 + ph * 150, (30 + ph * 150) * 0.35, 0, 0, 6.283); g.stroke(); }
       g.globalAlpha = 1; g.save(); g.translate(p.x, p.y + bounce); g.fillStyle = C.accent; g.beginPath(); g.moveTo(0, 0); g.bezierCurveTo(-46, -60, -46, -120, 0, -120); g.bezierCurveTo(46, -120, 46, -60, 0, 0); g.fill(); g.fillStyle = '#fff'; g.beginPath(); g.arc(0, -82, 16, 0, 6.283); g.fill(); g.restore();
       const la = cl((pt - 0.3) / 0.25); if (la > 0) { g.globalAlpha = la; g.font = '800 90px Baloo, Inter'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.lineWidth = 10; g.strokeStyle = 'rgba(0,0,0,0.75)'; g.strokeText(p.town, p.x, p.y - 200); g.fillStyle = '#fff'; ft(p.town, p.x, p.y - 200); g.globalAlpha = 1; } } }
+    if (C.loc) { const la = cl((t - 0.25) / 0.3); if (la > 0) { g.globalAlpha = la; g.font = '800 30px Inter'; const s = C.loc.toUpperCase().split('').join(String.fromCharCode(8202)), w = g.measureText(s).width + 70, y = 1290;
+      g.fillStyle = 'rgba(0,0,0,0.6)'; g.fillRect(540 - w / 2, y, w, 56); g.fillStyle = '#F5C542'; g.fillRect(540 - w / 2, y, 6, 56); g.textAlign = 'center'; g.textBaseline = 'middle'; ft(s, 540, y + 30); g.globalAlpha = 1; } }
+    if (C.hud) { const items = C.hud, cw = 260, x0 = 540 - (items.length * cw) / 2; items.forEach((it, j) => { const p = cl((t - 0.4 - j * 0.25) / 1.2), v = Math.round(it[1] * (1 - Math.pow(1 - p, 3))), x = x0 + j * cw + cw / 2;
+      g.globalAlpha = cl(p * 4); g.fillStyle = 'rgba(0,0,0,0.45)'; g.beginPath(); g.roundRect(x - cw / 2 + 12, 470, cw - 24, 120, 18); g.fill(); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#F5C542'; g.font = '800 24px Inter'; ft(String(it[0]).toUpperCase(), x, 500); g.fillStyle = '#fff'; g.font = '800 56px Inter'; ft(v.toLocaleString('en-IN') + (it[2] || ''), x, 552); }); g.globalAlpha = 1; }
     if (C.series && C.i > 0) {   // not on the hook: it would sit on the cover text
       g.font = '800 36px Baloo, Inter'; const w = g.measureText(C.series).width + 44, x = 1020 - w, y = 196; g.fillStyle = C.accent; g.beginPath(); g.roundRect(x, y, w, 58, 29); g.fill(); g.fillStyle = '#111'; g.textAlign = 'left'; g.textBaseline = 'middle'; ft(C.series, x + 22, y + 31); }
     g.restore();
@@ -148,7 +152,9 @@ def config_for(script: dict, i: int, t0: float, n: int = 6, code: str = "") -> d
             "flash": i in flash, "letterbox": i in letterbox,
             "whipIn": i in whip, "whipOut": (i + 1) in whip,
             "layered": "CINE.layer" in (code or ""), "accent": accent,
-            "series": script.get("series"), "pin": pin}
+            "series": script.get("series"), "pin": pin,
+            "loc": ([script.get("hook_loc")] + [s.get("loc") for s in script.get("scenes", [])] + [None] * 20)[i],
+            "hud": (script.get("hud") or {}).get(str(i))}
 
 
 def wrap(code: str | None, script: dict, i: int, t0: float, n: int = 6) -> str | None:
