@@ -1,64 +1,22 @@
+/home/runner/work/insta-reel/insta-reel/pipeline/explainer.py:236: SyntaxWarning: 'str' object is not callable; perhaps you missed a comma?
+  body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>'
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
-    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 148, in gemini_narration
-    _gemini_voice(joined, full, voice_name)
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 94, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=config.GEMINI_TTS_MODEL, key_index=key_index + 1)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 95, in _gemini_voice
-    raise RuntimeError("Gemini daily voice quota used up")
-RuntimeError: Gemini daily voice quota used up
-
-The above exception was the direct cause of the following exception:
-
-Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 282, in render_pending
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 290, in render_pending
     name = render_job(job.parent).name
            ^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 241, in render_job
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 249, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 72, in build_reel
-    raise RuntimeError("Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset") from e
-RuntimeError: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
-Rendering job illikkal-kallu: Illikkal Kallu: the creeper that makes you rich
-3/6 Recording the voiceover (voice: Despina)...
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  daily limit reached on key 1; switching to key 2
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-!! illikkal-kallu failed: Gemini's free daily voice limit is used up; this reel will be voiced after the daily reset
-Rendering job konnal-papam: 'Konnal papam thinnal theerum': born from cannibalism?
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 111, in build_reel
+    wraps = [explainer.page("cover" if s.get("cover") else "scene", script, s, durations[i], durations[i] - config.SCENE_PADDING)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/work/insta-reel/insta-reel/pipeline/explainer.py", line 236, in page
+    body = (f'<div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>'
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: 'str' object is not callable
+Rendering job payyanur-salt-1930: Payyanur Salt Satyagraha 1930
 3/6 Recording the voiceover (voice: Despina)...
   whole narration recorded in one Gemini take
-  narration sped up 1.12x to keep the reel short (65s -> 59s)
-4/6 Writing and rendering 6 code animations (3 at a time)...
-    animation 1 rendered
-    animation 2 rendered
-    animation 3 rendered
-    animation 5 rendered
-    animation 6 rendered
-    animation 4 rendered
-5/6 Assembling the video...
-  follow end card added
-6/6 Sound design, thumbnail and export...
-  sound: generated pad + transitions
-  thumbnail ready
-
-Done: /home/runner/work/insta-reel/insta-reel/output/konnal-papam/reel.mp4
-
-Check these claims before posting:
-  - Script supplied by the user, who checked the Malabar Manual page
-  - Quoted words 'uncertain' / 'only one authentic instance' per user; confirm against the page
-  - Abolition dates: Malabar 1843, Travancore 1855
-
-Sources: William Logan, Malabar Manual (1887), via archive.org, Indian Slavery Act, 1843; Travancore proclamation, 1855
-
-When happy: python main.py post konnal-papam
-Rendered 1 job(s). Failed: ['illikkal-kallu']
+  narration sped up 1.15x to keep the reel short (47s -> 41s)
+!! payyanur-salt-1930 failed: 'str' object is not callable
+Rendered 0 job(s). Failed: ['payyanur-salt-1930']
