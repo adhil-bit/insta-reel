@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 17 Nov, 09:23 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 17 Nov, 09:33 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -19,7 +19,6 @@ _Updated Tue 17 Nov, 09:23 AM IST. Times are approximate: each reel posts within
 - k2-pazhassi-1805-v2
 - k2-thalassery-circus
 - k2-thalassery-circus-v2
-- payyanur-salt-1930
 
 ## Recently posted
 
