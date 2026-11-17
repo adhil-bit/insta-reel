@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 17 Nov, 10:39 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 17 Nov, 10:52 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -100,6 +100,7 @@ _Updated Tue 17 Nov, 10:39 AM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Kunjali Marakkar: the Zamorin's admirals | 2026-11-17T05:22 |
 | The 1341 flood that made Kochi | 2026-11-16T02:36 |
 | Gundert and Rajyasamacharam: the first Malayalam newspaper | 2026-11-14T02:36 |
 | Pazhassi Raja's last stand, 1805 | 2026-11-15T02:36 |
@@ -109,4 +110,3 @@ _Updated Tue 17 Nov, 10:39 AM IST. Times are approximate: each reel posts within
 | The flood of '99: the 1924 flood that took a hill | 2026-11-07T13:03 |
 | Thalassery and India's first Christmas cake (1883) | 2026-11-05T17:48 |
 | How Kerala's 14 districts got their names | 2026-11-05T07:38 |
-| Is porotta really Kerala's? Three origin theories | 2026-11-03T13:36 |
