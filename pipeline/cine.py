@@ -117,7 +117,7 @@ JS = r"""
     if (C.hud) { const items = C.hud, cw = 260, x0 = 540 - (items.length * cw) / 2; items.forEach((it, j) => { const p = cl((t - 0.4 - j * 0.25) / 1.2), v = Math.round(it[1] * (1 - Math.pow(1 - p, 3))), x = x0 + j * cw + cw / 2;
       g.globalAlpha = cl(p * 4); g.fillStyle = 'rgba(0,0,0,0.45)'; g.beginPath(); g.roundRect(x - cw / 2 + 12, 470, cw - 24, 120, 18); g.fill(); g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillStyle = '#F5C542'; g.font = '800 24px Inter'; ft(String(it[0]).toUpperCase(), x, 500); g.fillStyle = '#fff'; g.font = '800 56px Inter'; ft(v.toLocaleString('en-IN') + (it[2] || ''), x, 552); }); g.globalAlpha = 1; }
     if (C.series && C.i > 0) {   // not on the hook: it would sit on the cover text
-      g.font = '800 36px Baloo, Inter'; const w = g.measureText(C.series).width + 44, x = 1020 - w, y = 196; g.fillStyle = C.accent; g.beginPath(); g.roundRect(x, y, w, 58, 29); g.fill(); g.fillStyle = '#111'; g.textAlign = 'left'; g.textBaseline = 'middle'; ft(C.series, x + 22, y + 31); }
+      g.font = '800 36px Baloo, Inter'; const w = g.measureText(C.series).width + 44, x = 1020 - w, y = 96; g.fillStyle = C.accent; g.beginPath(); g.roundRect(x, y, w, 58, 29); g.fill(); g.fillStyle = '#111'; g.textAlign = 'left'; g.textBaseline = 'middle'; ft(C.series, x + 22, y + 31); }
     g.restore();
   };
 })();
