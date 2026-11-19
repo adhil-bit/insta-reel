@@ -47,7 +47,6 @@ _Updated Thu 19 Nov, 05:17 PM IST. Times are approximate: each reel posts within
 - janmi-kudiyan
 - jatinga-birds
 - k2-cheraman-perumal
-- k2-thalassery-fort
 - kalari-fire
 - kalari-fire-v2
 - kalari-kungfu
