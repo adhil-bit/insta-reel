@@ -91,10 +91,19 @@ def paint(z, bounds, look, outline=True):
     h, w = z.shape
     lat = (bounds[1] + bounds[3]) / 2
     px_m = (bounds[3] - bounds[1]) * 110570 / h
-    sea = z <= 0.5
+    water = z <= 0.5
+    # only water connected to the image edge is sea; the rest is backwaters / rivers (no coast glow)
+    wm = Image.fromarray((water * 255).astype(np.uint8))
+    for x, y in [(x, 0) for x in range(0, w, 7)] + [(x, h - 1) for x in range(0, w, 7)] + \
+                [(0, y) for y in range(0, h, 7)] + [(w - 1, y) for y in range(0, h, 7)]:
+        if wm.getpixel((x, y)) == 255:
+            ImageDraw.floodfill(wm, (x, y), 128)
+    wa = np.asarray(wm)
+    sea = wa == 128
+    inland = wa == 255
     stops = L["ramp"]; ev = np.array([s[0] for s in stops], np.float32); cols = np.stack([_hex(s[1]) for s in stops])
     land = np.stack([np.interp(z, ev, cols[:, k]) for k in range(3)], -1)
-    hs = shade(z, px_m, 3.0 if px_m > 200 else 1.6)[..., None]
+    hs = shade(z, px_m, 3.0 if px_m > 200 else 5.0)[..., None]
     land = land * (0.42 + 0.95 * hs)
     land += np.array([18, 8, -6], np.float32) * (hs - 0.5)                # warm lights, cool shadows
     # sea: deep colour with a lighter band hugging the coast
@@ -102,7 +111,8 @@ def paint(z, bounds, look, outline=True):
     near = np.asarray(m.filter(ImageFilter.GaussianBlur(max(6, w / 90))), np.float32)[..., None] / 255
     s0, s1 = _hex(L["sea"][0]), _hex(L["sea"][1])
     seac = s0 + (s1 - s0) * np.clip(near * 1.6, 0, 1)
-    img = np.where(sea[..., None], seac, land)
+    river = _hex(L["sea"][1]) * 0.75 + land * 0.25
+    img = np.where(sea[..., None], seac, np.where(inland[..., None], river, land))
     im = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
     # coastline glow
     edge = m.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.GaussianBlur(1.2))
@@ -135,7 +145,12 @@ def build(job: Path, force=False) -> Path:
     near_b = bounds_for(r["lat"], r["lon"], r.get("near_span", 0.30))
     meta = {"lat": r["lat"], "lon": r["lon"], "look": look}
     for name, b, glo in (("wide", wide_b, 90), ("near", near_b, 30)):
-        z = dem(b, (TEX_H, TEX_W), glo)
+        zp = out / f"{name}_z.png"
+        if zp.exists():
+            z = np.asarray(Image.open(zp), np.float32)
+        else:
+            z = dem(b, (TEX_H, TEX_W), glo)
+            Image.fromarray(np.clip(z, 0, 65535).astype(np.uint16)).save(zp, optimize=True)
         paint(z, b, look, outline=True).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip(hm / 2800 * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
