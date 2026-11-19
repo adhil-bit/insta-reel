@@ -1,12 +1,31 @@
 {
   "account": {
     "username": "unexplored.truths",
-    "followers_count": 334,
+    "followers_count": 335,
     "follows_count": 259,
-    "media_count": 37,
+    "media_count": 38,
     "id": "28876323268696257"
   },
   "reels": [
+    {
+      "id": "18137182852738457",
+      "timestamp": "2026-11-19T11:13:17+0000",
+      "like_count": 45,
+      "comments_count": 0,
+      "permalink": "https://www.instagram.com/reel/Df68iocDfb2/",
+      "title": "മാടായിപ്പാറ · ജൂതക്കുളം · പഴയങ്ങാടി · കണ്ണൂർ",
+      "views": 1366,
+      "reach": 1134,
+      "saved": 7,
+      "shares": 1,
+      "total_interactions": 56,
+      "ig_reels_avg_watch_time": 11689,
+      "ig_reels_video_view_total_time": 13536891,
+      "extra_errors": {
+        "follows": "The Media Insights API does not support the follows metric for this media product type.",
+        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
+      }
+    },
     {
       "id": "18289889734295064",
       "timestamp": "2026-11-18T01:35:28+0000",
@@ -14,13 +33,13 @@
       "comments_count": 6,
       "permalink": "https://www.instagram.com/reel/Df3VnfPjgyQ/",
       "title": "ഏഴിമല · മാർക്കോ പോളോ · കണ്ണൂർ ചരിത്രം · പയ്യന്നൂർ",
-      "views": 2023,
-      "reach": 1714,
+      "views": 2027,
+      "reach": 1716,
       "saved": 14,
       "shares": 89,
       "total_interactions": 164,
-      "ig_reels_avg_watch_time": 13069,
-      "ig_reels_video_view_total_time": 22871247,
+      "ig_reels_avg_watch_time": 13073,
+      "ig_reels_video_view_total_time": 22930394,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -33,13 +52,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/Df1CCTmiVKD/",
       "title": "പയ്യന്നൂർ · ഉപ്പ് സത്യാഗ്രഹം · കേളപ്പൻ · കണ്ണൂർ ചരിത്രം",
-      "views": 203,
-      "reach": 166,
+      "views": 204,
+      "reach": 167,
       "saved": 2,
       "shares": 2,
       "total_interactions": 13,
-      "ig_reels_avg_watch_time": 9681,
-      "ig_reels_video_view_total_time": 1665299,
+      "ig_reels_avg_watch_time": 9632,
+      "ig_reels_video_view_total_time": 1666389,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -52,13 +71,13 @@
       "comments_count": 1,
       "permalink": "https://www.instagram.com/reel/DfyMA5pCrma/",
       "title": "കണ്ണൂർ കോട്ട · അറയ്ക്കൽ · സെന്റ് ആഞ്ചലോ കോട്ട · കണ്ണൂർ ചരിത്രം",
-      "views": 1360,
-      "reach": 1186,
+      "views": 1363,
+      "reach": 1188,
       "saved": 1,
       "shares": 5,
       "total_interactions": 29,
-      "ig_reels_avg_watch_time": 11638,
-      "ig_reels_video_view_total_time": 13849823,
+      "ig_reels_avg_watch_time": 11629,
+      "ig_reels_video_view_total_time": 13862749,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -71,13 +90,13 @@
       "comments_count": 1,
       "permalink": "https://www.instagram.com/reel/DfwzG6SE2EM/",
       "title": "പാലമരം · യക്ഷി · ഏഴിലംപാല · ചോറ്റാനിക്കര",
-      "views": 1219,
-      "reach": 1137,
+      "views": 1220,
+      "reach": 1138,
       "saved": 3,
       "shares": 3,
       "total_interactions": 28,
-      "ig_reels_avg_watch_time": 6763,
-      "ig_reels_video_view_total_time": 7655976,
+      "ig_reels_avg_watch_time": 6759,
+      "ig_reels_video_view_total_time": 7659005,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -90,13 +109,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DftCbfuGXiu/",
       "title": "ധർമ്മടം തുരുത്ത് · പച്ചത്തുരുത്ത് · കണ്ണൂർ · മുഴപ്പിലങ്ങാട്",
-      "views": 254,
-      "reach": 213,
+      "views": 257,
+      "reach": 216,
       "saved": 1,
-      "shares": 2,
-      "total_interactions": 15,
-      "ig_reels_avg_watch_time": 13718,
-      "ig_reels_video_view_total_time": 3031842,
+      "shares": 3,
+      "total_interactions": 16,
+      "ig_reels_avg_watch_time": 13693,
+      "ig_reels_video_view_total_time": 3067419,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -128,13 +147,13 @@
       "comments_count": 113,
       "permalink": "https://www.instagram.com/reel/DfivmALii_c/",
       "title": "ഏഴിമല · പയ്യന്നൂർ · കണ്ണൂർ · മൂഷിക രാജവംശം",
-      "views": 67960,
-      "reach": 56226,
+      "views": 67969,
+      "reach": 56237,
       "saved": 374,
       "shares": 4511,
       "total_interactions": 7120,
-      "ig_reels_avg_watch_time": 19576,
-      "ig_reels_video_view_total_time": 1093977684,
+      "ig_reels_avg_watch_time": 19575,
+      "ig_reels_video_view_total_time": 1094069826,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -204,13 +223,13 @@
       "comments_count": 53,
       "permalink": "https://www.instagram.com/reel/DfYccpvkWz9/",
       "title": "കോതായിമുക്ക് · കള്ള കോതായി · പയ്യന്നൂർ · കണ്ണൂർ",
-      "views": 63187,
-      "reach": 53087,
+      "views": 63223,
+      "reach": 53120,
       "saved": 203,
       "shares": 6376,
       "total_interactions": 7575,
-      "ig_reels_avg_watch_time": 18044,
-      "ig_reels_video_view_total_time": 953688969,
+      "ig_reels_avg_watch_time": 18041,
+      "ig_reels_video_view_total_time": 954112183,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -356,13 +375,13 @@
       "comments_count": 0,
       "permalink": "https://www.instagram.com/reel/DfJvrBfDLaL/",
       "title": "കറുത്തച്ചനൂട്ട്: സത്യമോ കഥയോ? 🕯️",
-      "views": 1117,
-      "reach": 937,
+      "views": 1119,
+      "reach": 939,
       "saved": 12,
       "shares": 13,
       "total_interactions": 76,
-      "ig_reels_avg_watch_time": 9886,
-      "ig_reels_video_view_total_time": 9550568,
+      "ig_reels_avg_watch_time": 9877,
+      "ig_reels_video_view_total_time": 9551836,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -413,13 +432,13 @@
       "comments_count": 5,
       "permalink": "https://www.instagram.com/reel/DfGa0yyiq4P/",
       "title": "കളരിപ്പയറ്റ് · ബോധിധർമ്മൻ · കുങ്ഫു · ഏഴാം അറിവ്",
-      "views": 2260,
-      "reach": 1897,
+      "views": 2262,
+      "reach": 1899,
       "saved": 17,
       "shares": 5,
       "total_interactions": 104,
-      "ig_reels_avg_watch_time": 16925,
-      "ig_reels_video_view_total_time": 32801282,
+      "ig_reels_avg_watch_time": 16910,
+      "ig_reels_video_view_total_time": 32806849,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
@@ -553,25 +572,6 @@
       "total_interactions": 6,
       "ig_reels_avg_watch_time": 6744,
       "ig_reels_video_view_total_time": 1011603,
-      "extra_errors": {
-        "follows": "The Media Insights API does not support the follows metric for this media product type.",
-        "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
-      }
-    },
-    {
-      "id": "18159772189515254",
-      "timestamp": "2026-10-27T11:48:22+0000",
-      "like_count": 8,
-      "comments_count": 0,
-      "permalink": "https://www.instagram.com/reel/De_yRS_EwwL/",
-      "title": "പതിനെട്ടാം കൂറ്റം · ഇട്ടിക്കോരയുടെ കാണാപ്പുറങ്ങൾ",
-      "views": 187,
-      "reach": 149,
-      "saved": 1,
-      "shares": 0,
-      "total_interactions": 9,
-      "ig_reels_avg_watch_time": 5896,
-      "ig_reels_video_view_total_time": 1049491,
       "extra_errors": {
         "follows": "The Media Insights API does not support the follows metric for this media product type.",
         "profile_visits": "The Media Insights API does not support the profile_visits metric for this media product type."
