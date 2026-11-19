@@ -1,0 +1,167 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "MYSTERY",
+  "english_sub": "THE HAUNTED POND OF KARYAVATTOM",
+  "topic": {
+    "title": "Kerala University's 'haunted' pond",
+    "category": "MYSTERY",
+    "angle": "Owner's topic bank: ghost story vs two unrelated events; pond reborn",
+    "key_facts": [
+      "A pond on Kerala University's Karyavattom campus was abandoned because people believed it was haunted by a young woman's spirit",
+      "A parapsychologist says the story merged two separate events: a girl drowned accidentally in a different pond 2 km away, and an unrelated death on campus years later",
+      "A group's effort turned the pond into a freshwater source and a student hangout"
+    ],
+    "sources": [
+      "Owner's topic bank; news reports"
+    ]
+  },
+  "headline": [
+    "THE HAUNTED POND",
+    "OF KARYAVATTOM."
+  ],
+  "accent_words": [
+    "HAUNTED"
+  ],
+  "thumbnail_ml": "കാമ്പസിലെ പ്രേതക്കുളം?",
+  "thumbnail_accent": [
+    "പ്രേതക്കുളം?"
+  ],
+  "cover_visual": "Blue-hour campus pond in mist, a lamp-lit building behind, no ghost figure",
+  "series": "കേരളത്തിന്റെ രഹസ്യങ്ങൾ",
+  "pin": {
+    "scene": 1,
+    "town": "കാര്യവട്ടം",
+    "x": 540,
+    "y": 960
+  },
+  "twist_scene": 3,
+  "hud": {
+    "3": [
+      [
+        "DISTANCE (KM)",
+        2
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "fog",
+    "letterbox": [
+      4
+    ]
+  },
+  "hook_voiceover": "കേരള സർവകലാശാല കാമ്പസിലെ ഒരു കുളം. പ്രേതമുണ്ടെന്ന് പേടിച്ച് വർഷങ്ങളോളം ആരും അടുത്ത് പോയില്ല. സത്യം എന്തായിരുന്നു?",
+  "scenes": [
+    {
+      "voiceover": "തിരുവനന്തപുരം കാര്യവട്ടത്തെ കേരള സർവകലാശാല കാമ്പസ്. അവിടെ കാടുകയറിയ ഒരു പഴയ കുളം.",
+      "caption": "കാര്യവട്ടം · കാമ്പസ്",
+      "highlight": "കാര്യവട്ടം",
+      "kicker": "KERALA UNIVERSITY CAMPUS",
+      "loc": "KARYAVATTOM · THIRUVANANTHAPURAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരു പെൺകുട്ടിയുടെ ആത്മാവ് അവിടെയുണ്ടെന്ന കഥ പരന്നു. പേടി കാരണം കുളം ഉപേക്ഷിക്കപ്പെട്ടു.",
+      "caption": "പ്രേതകഥ",
+      "highlight": "പ്രേതകഥ",
+      "kicker": "A GHOST STORY",
+      "loc": "THE POND",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഒരു പാരാസൈക്കോളജിസ്റ്റ് പറയുന്നു, ഈ കഥ രണ്ട് വ്യത്യസ്ത സംഭവങ്ങൾ കൂടിക്കലർന്നതാണ്. രണ്ട് കിലോമീറ്റർ അകലെ മറ്റൊരു കുളത്തിൽ ഉണ്ടായ ഒരു അപകടം, വർഷങ്ങൾക്ക് ശേഷം കാമ്പസിലെ മറ്റൊരു മരണം.",
+      "caption": "ട്വിസ്റ്റ് · രണ്ട് സംഭവങ്ങൾ",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "TWO STORIES MERGED",
+      "loc": "2 KM APART",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്ന് ഒരു കൂട്ടായ്മയുടെ ശ്രമത്തിൽ ആ കുളം ശുദ്ധജല സ്രോതസ്സും വിദ്യാർത്ഥികളുടെ ഇഷ്ടസ്ഥലവുമാണ്.",
+      "caption": "ഇന്ന് · പുതുജീവൻ",
+      "highlight": "ഇന്ന്",
+      "kicker": "REBORN",
+      "loc": "KARYAVATTOM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങളുടെ കാമ്പസിലും ഉണ്ടോ ഇതുപോലൊരു പ്രേതകഥ? കമന്റ് ചെയ്യൂ. കാര്യവട്ടം ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ കഥ?",
+      "highlight": "കഥ?",
+      "kicker": "COMMENT BELOW",
+      "loc": "THIRUVANANTHAPURAM",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കാമ്പസിലെ പ്രേതക്കുളം? 👻🌊\n\nകേരള സർവകലാശാല കാര്യവട്ടം കാമ്പസിലെ ഒരു കുളം പ്രേതകഥ കാരണം വർഷങ്ങളോളം ഉപേക്ഷിക്കപ്പെട്ടു. പക്ഷേ ആ കഥ രണ്ട് വ്യത്യസ്ത സംഭവങ്ങൾ കൂടിക്കലർന്നതാണെന്ന് ഒരു പാരാസൈക്കോളജിസ്റ്റ്. ഇന്ന് ആ കുളം വിദ്യാർത്ഥികളുടെ ഇഷ്ടസ്ഥലം.\n\nനിങ്ങളുടെ കാമ്പസിലെ പ്രേതകഥ കമന്റ് ചെയ്യൂ 👇\nകാര്യവട്ടം ചങ്കിനും കോളേജ് ഗ്രൂപ്പിനും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nA pond on Kerala University's Karyavattom campus was abandoned over a ghost story that merged two unrelated events; today it is a freshwater source and a student hangout.\n\nകേരളത്തിന്റെ രഹസ്യങ്ങൾ\n\nCredits: Reports on the Karyavattom campus pond · Animation, voice and sound: AI-generated\n\n#Karyavattom #KeralaUniversity #KeralaMystery #MythBuster #MalayalamReels",
+  "search_ml": [
+    "കാര്യവട്ടം കുളം",
+    "കേരള സർവകലാശാല",
+    "പ്രേതകഥ"
+  ],
+  "hashtags": [
+    "Karyavattom",
+    "KeralaUniversity",
+    "KeralaMystery",
+    "MythBuster",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "No name of the girl; deaths mentioned briefly and respectfully",
+    "No ghost figure on screen"
+  ],
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.3,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.6
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.1,
+        "count": 3
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  }
+}
