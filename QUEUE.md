@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 19 Nov, 04:40 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 19 Nov, 04:43 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -30,6 +30,7 @@ _Updated Thu 19 Nov, 04:40 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Madayipara's Jootha Kulam | 2026-11-19T11:13 |
 | Marco Polo saw Ezhimala: the Kingdom of Eli | 2026-11-18T01:35 |
 | Payyanur Salt Satyagraha 1930 | 2026-11-17T04:06 |
 | The Dutch sold a Kannur fort to a Malayali royal family | 2026-11-16T01:35 |
@@ -39,4 +40,3 @@ _Updated Thu 19 Nov, 04:40 PM IST. Times are approximate: each reel posts within
 | A hacker hunting a teacher for 4 years: is your phone safe? | 2026-11-13T01:35 |
 | Ambalappuzha: the chess debt still being paid | 2026-11-12T13:38 |
 | Bhoothathankettu: the demons' dam stopped by a rooster | 2026-11-09T13:32 |
-| 'Konnal papam thinnal theerum': born from cannibalism? | 2026-11-11T13:37 |
