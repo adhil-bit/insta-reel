@@ -1,13 +1,12 @@
 # Posting queue
 
-_Updated Thu 19 Nov, 05:05 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 19 Nov, 05:13 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
-- chelembra-money-heist
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
