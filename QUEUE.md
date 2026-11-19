@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 19 Nov, 05:43 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 19 Nov, 05:44 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -47,7 +47,6 @@ _Updated Thu 19 Nov, 05:43 PM IST. Times are approximate: each reel posts within
 - janmi-kudiyan
 - jatinga-birds
 - k2-cheraman-perumal
-- k2-thalassery-fort-v2
 - kalari-fire
 - kalari-fire-v2
 - kalari-kungfu
