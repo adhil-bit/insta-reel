@@ -1,0 +1,174 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "category": "MYSTERY",
+  "style": "naadu",
+  "english_sub": "THE JEWISH POND ON A KANNUR HILL",
+  "topic": {
+    "title": "Madayipara's Jootha Kulam",
+    "category": "MYSTERY",
+    "angle": "Kannur series #3: a pond on a laterite hilltop that locals call the Jews' pond",
+    "key_facts": [
+      "Madayipara is a laterite plateau near Pazhayangadi in Kannur district",
+      "It changes colour with the seasons; in the Onam season it turns blue-violet with small flowers",
+      "On the plateau is a pond locals call Jootha Kulam (the Jews' pond), believed to have been built by Jews",
+      "Kerala's Jews are among the oldest Jewish communities in India; Kochi's Paradesi Synagogue dates to 1568"
+    ],
+    "sources": [
+      "Kerala Tourism / Kannur district descriptions of Madayipara (from knowledge)"
+    ]
+  },
+  "headline": [
+    "THE JEWISH POND",
+    "ON A KANNUR HILL."
+  ],
+  "accent_words": [
+    "JEWISH"
+  ],
+  "thumbnail_ml": "കണ്ണൂരിലെ കുന്നിൽ ജൂതക്കുളം?",
+  "thumbnail_accent": [
+    "ജൂതക്കുളം?"
+  ],
+  "cover_visual": "Golden-hour laterite plateau, an ancient stone pond glowing in the low sun",
+  "series": "കണ്ണൂർ രഹസ്യങ്ങൾ #3",
+  "pin": {
+    "scene": 1,
+    "town": "മാടായിപ്പാറ",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 3,
+  "hud": {
+    "4": [
+      [
+        "SYNAGOGUE · KOCHI",
+        1568
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "dust",
+    "letterbox": [
+      2
+    ]
+  },
+  "hook_voiceover": "കണ്ണൂരിലെ ഒരു കുന്നിന്റെ മുകളിൽ ഒരു പഴയ കുളം. നാട്ടുകാർ വിളിക്കുന്നത് ജൂതക്കുളം! ആരാണ് ഇത് പണിതത്?",
+  "scenes": [
+    {
+      "voiceover": "പഴയങ്ങാടിക്കടുത്ത് മാടായിപ്പാറ. കിലോമീറ്ററുകൾ നീളുന്ന ഒരു ചെങ്കൽപ്പാറക്കുന്ന്.",
+      "caption": "മാടായിപ്പാറ · കണ്ണൂർ",
+      "highlight": "മാടായിപ്പാറ",
+      "kicker": "A LATERITE PLATEAU",
+      "loc": "MADAYIPARA · PAZHAYANGADI",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഓരോ കാലത്തും ഈ കുന്നിന്റെ നിറം മാറും. മഴയിൽ പച്ച, ഓണക്കാലത്ത് നീലപ്പൂക്കളുടെ പരവതാനി.",
+      "caption": "നിറം മാറുന്ന കുന്ന്",
+      "highlight": "നിറം",
+      "kicker": "A HILL THAT CHANGES COLOUR",
+      "loc": "MADAYIPARA · KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഈ കുന്നിന് മുകളിലാണ് ആ കുളം. ജൂതന്മാർ പണിതതാണ് എന്നാണ് നാട്ടുവിശ്വാസം. അതുകൊണ്ട് പേര് ജൂതക്കുളം.",
+      "caption": "ട്വിസ്റ്റ് · ജൂതക്കുളം",
+      "highlight": "ജൂതക്കുളം",
+      "kicker": "THE JEWS' POND",
+      "loc": "JOOTHA KULAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കേരളത്തിലെ ജൂതന്മാർ ഇന്ത്യയിലെ ഏറ്റവും പഴയ ജൂതസമൂഹങ്ങളിൽ ഒന്നാണ്. കൊച്ചിയിലെ പരദേശി സിനഗോഗ് 1568-ൽ പണിതതാണ്.",
+      "caption": "കേരളത്തിലെ ജൂതന്മാർ",
+      "highlight": "ജൂതന്മാർ",
+      "kicker": "ONE OF INDIA'S OLDEST JEWISH COMMUNITIES",
+      "loc": "KOCHI · KERALA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ജൂതക്കുളം ശരിക്കും ജൂതന്മാർ പണിതതോ? നിങ്ങൾ കേട്ട കഥ കമന്റ് ചെയ്യൂ. പഴയങ്ങാടിക്കാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ഉത്തരം?",
+      "highlight": "ഉത്തരം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "PAZHAYANGADI · KANNUR",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കണ്ണൂരിലെ ഒരു കുന്നിൻമുകളിൽ ജൂതക്കുളം? 🤔\n\nമാടായിപ്പാറയിലെ ചെങ്കൽക്കുന്നിൽ നാട്ടുകാർ 'ജൂതക്കുളം' എന്ന് വിളിക്കുന്ന ഒരു പഴയ കുളമുണ്ട്. ജൂതന്മാർ പണിതതാണ് എന്നാണ് വിശ്വാസം. ശരിക്കും അങ്ങനെയാണോ?\n\nനിങ്ങൾ കേട്ട കഥ കമന്റ് ചെയ്യൂ 👇\nപഴയങ്ങാടിക്കാരൻ ചങ്കിനും കണ്ണൂർ ഫാമിലി ഗ്രൂപ്പിനും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nMadayipara, Kannur: a laterite plateau with a pond locals call Jootha Kulam, believed to have been built by Jews.\n\nകണ്ണൂർ രഹസ്യങ്ങൾ #3\n\nCredits: Kannur local tradition; Kerala Jewish history (Paradesi Synagogue, 1568) · Animation, voice and sound: AI-generated\n\n#Madayipara #Kannur #Pazhayangadi #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "മാടായിപ്പാറ",
+    "ജൂതക്കുളം",
+    "പഴയങ്ങാടി",
+    "കണ്ണൂർ"
+  ],
+  "hashtags": [
+    "Madayipara",
+    "Kannur",
+    "Pazhayangadi",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Jewish origin framed as local belief",
+    "No dates claimed for the pond"
+  ],
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.3,
+        "count": 3
+      },
+      {
+        "type": "crickets",
+        "clips": [
+          1,
+          2
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 2,
+        "from": 0.0
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": [
+          0.1
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.3,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.2,
+        "f": 220
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 196
+      }
+    ]
+  }
+}
