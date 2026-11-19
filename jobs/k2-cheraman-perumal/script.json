@@ -44,8 +44,7 @@
   },
   "twist_scene": 3,
   "cine": {
-    "overlay": "rain",
-    "color": "#cfe3ff",
+    "overlay": "stars",
     "letterbox": [
       4
     ]

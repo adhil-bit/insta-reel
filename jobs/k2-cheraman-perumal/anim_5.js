@@ -95,5 +95,5 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { G.sky(g, t, 1250, 'storm'); G.sea(g, t, 1250, 640, 'storm'); dhow(g, 720, 1330, 0.55, t); floor(g, 1500, t); }); chip(g, '@ കൊടുങ്ങല്ലൂർ ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
+loopZoom(g, t, D, () => { G.sky(g, t, 1250, 'blue'); G.sea(g, t, 1250, 640, 'blue'); dhow(g, 720, 1330, 0.55, t); floor(g, 1500, t); }); chip(g, '@ കൊടുങ്ങല്ലൂർ ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
 };

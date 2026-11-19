@@ -1,0 +1,171 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "MYSTERY",
+  "english_sub": "THE BURIED POT OF CHENGALAYI",
+  "topic": {
+    "title": "The Kannur treasure pot (2024)",
+    "category": "MYSTERY",
+    "angle": "Owner's topic bank: workers fear a bomb, then black magic; inside, 200-year-old treasure",
+    "key_facts": [
+      "July 2024, Chengalayi, Kannur: women workers digging a rainwater pit found a buried pot",
+      "They first feared a bomb, then black magic",
+      "Inside: gold beads, lockets, medallions, rings, earrings and silver-like coins",
+      "Reports put the 18th-century coins at around 200 years old"
+    ],
+    "sources": [
+      "News reports, July 2024 (owner's notes)"
+    ]
+  },
+  "headline": [
+    "THE BURIED POT",
+    "OF CHENGALAYI."
+  ],
+  "accent_words": [
+    "POT"
+  ],
+  "thumbnail_ml": "മഴക്കുഴിയിൽ ഒരു നിധിക്കുടം!",
+  "thumbnail_accent": [
+    "നിധിക്കുടം!"
+  ],
+  "cover_visual": "Golden-hour Kannur hillside, a clay pot half-buried in red earth glowing with gold",
+  "series": "കണ്ണൂർ രഹസ്യങ്ങൾ #4",
+  "pin": {
+    "scene": 1,
+    "town": "ചെങ്ങളായി",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 3,
+  "hud": {
+    "4": [
+      [
+        "YEARS OLD",
+        200,
+        "+"
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "rain",
+    "color": "#d6e6d0",
+    "letterbox": [
+      5
+    ]
+  },
+  "hook_voiceover": "മഴക്കുഴി കുഴിക്കുമ്പോൾ മണ്ണിനടിയിൽ ഒരു കുടം. ബോംബാണെന്ന് കരുതി എല്ലാവരും പേടിച്ചു! പക്ഷേ ഉള്ളിൽ എന്തായിരുന്നു?",
+  "scenes": [
+    {
+      "voiceover": "2024 ജൂലൈ. കണ്ണൂർ ചെങ്ങളായിയിൽ ഒരു കൂട്ടം സ്ത്രീ തൊഴിലാളികൾ മഴക്കുഴി കുഴിക്കുകയായിരുന്നു.",
+      "caption": "2024 · ചെങ്ങളായി",
+      "highlight": "2024",
+      "kicker": "A RAINWATER PIT",
+      "loc": "CHENGALAYI · KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മണ്ണിനടിയിൽ ഒരു കുടം തട്ടി. ആദ്യം ബോംബാണെന്ന് പേടിച്ചു. പിന്നെ മന്ത്രവാദമാണോ എന്നും സംശയിച്ചു.",
+      "caption": "ബോംബ്? മന്ത്രവാദം?",
+      "highlight": "ബോംബ്?",
+      "kicker": "FEAR FIRST",
+      "loc": "CHENGALAYI · KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തുറന്നപ്പോൾ എല്ലാവരും ഞെട്ടി! സ്വർണ്ണമുത്തുകൾ, ലോക്കറ്റുകൾ, പതക്കങ്ങൾ, മോതിരങ്ങൾ, കമ്മലുകൾ, പിന്നെ വെള്ളി പോലുള്ള നാണയങ്ങൾ.",
+      "caption": "ട്വിസ്റ്റ് · നിധി",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "TREASURE INSIDE",
+      "loc": "THE POT OPENS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നാണയങ്ങൾ പതിനെട്ടാം നൂറ്റാണ്ടിലേതാണെന്നും ഏകദേശം 200 വർഷം പഴക്കമുണ്ടെന്നുമാണ് റിപ്പോർട്ടുകൾ. പക്ഷേ ആര് കുഴിച്ചിട്ടു? എന്തിന്?",
+      "caption": "200 വർഷം · ആര്?",
+      "highlight": "200",
+      "kicker": "18TH-CENTURY COINS",
+      "loc": "KANNUR · 2024",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആര് കുഴിച്ചിട്ടതാകും? നിങ്ങളുടെ ഊഹം കമന്റ് ചെയ്യൂ. ഈ കഥ കണ്ണൂരുകാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ഊഹം?",
+      "highlight": "ഊഹം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "KANNUR",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "മഴക്കുഴിയിൽ ഒരു നിധിക്കുടം! 🏺✨\n\n2024 ജൂലൈയിൽ കണ്ണൂർ ചെങ്ങളായിയിൽ മഴക്കുഴി കുഴിക്കുമ്പോൾ കിട്ടിയ കുടം. ആദ്യം ബോംബാണെന്ന് പേടിച്ചു, പിന്നെ മന്ത്രവാദം എന്ന് സംശയിച്ചു. ഉള്ളിൽ സ്വർണ്ണവും 200 വർഷം പഴക്കമുള്ള നാണയങ്ങളും!\n\nആര് കുഴിച്ചിട്ടതാകും? നിങ്ങളുടെ ഊഹം കമന്റ് ചെയ്യൂ 👇\nകണ്ണൂരുകാരൻ ചങ്കിനും ഫാമിലി ഗ്രൂപ്പിനും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nJuly 2024, Chengalayi (Kannur): a buried pot feared to be a bomb turned out to hold gold ornaments and coins reported to be about 200 years old.\n\nകണ്ണൂർ രഹസ്യങ്ങൾ #4\n\nCredits: News reports, July 2024 · Animation, voice and sound: AI-generated\n\n#Kannur #Chengalayi #Treasure #KeralaMystery #MalayalamReels",
+  "search_ml": [
+    "ചെങ്ങളായി നിധി",
+    "കണ്ണൂർ നിധി",
+    "നിധിക്കുടം",
+    "കണ്ണൂർ"
+  ],
+  "hashtags": [
+    "Kannur",
+    "Chengalayi",
+    "Treasure",
+    "KeralaMystery",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Coin age framed as 'reports say'",
+    "No names of the workers"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.2,
+        "count": 4,
+        "gap": 0.7
+      },
+      {
+        "type": "crickets",
+        "clips": [
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.2,
+          0.5
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.05,
+        "f": 220
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 196
+      }
+    ]
+  }
+}
