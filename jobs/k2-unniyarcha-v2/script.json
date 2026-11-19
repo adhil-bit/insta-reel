@@ -1,0 +1,159 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "THE WARRIOR WOMAN OF THE NORTHERN BALLADS",
+  "topic": {
+    "title": "Unniyarcha of the Vadakkan Pattukal",
+    "category": "HISTORY",
+    "angle": "Owner's topic bank: ballad heroine, urumi, faces down a gang on the way to a festival",
+    "key_facts": [
+      "Unniyarcha is the heroine of the Vadakkan Pattukal (northern ballads) of north Malabar",
+      "She belonged to Puthooram veedu in Kadathanadu and was the sister of Aromal Chekavar",
+      "The ballads say she was trained in kalari and the urumi",
+      "In the best-known ballad she faces down a gang that blocks her way to the Allimalarkavu festival"
+    ],
+    "sources": [
+      "Vadakkan Pattukal (northern ballads)"
+    ]
+  },
+  "headline": [
+    "ഉണ്ണിയാർച്ച"
+  ],
+  "accent_words": [
+    "ഉണ്ണിയാർച്ച"
+  ],
+  "thumbnail_ml": "ഉണ്ണിയാർച്ച: വടക്കൻ പാട്ടിലെ പോരാളി",
+  "thumbnail_accent": [
+    "ഉണ്ണിയാർച്ച:"
+  ],
+  "cover_visual": "Golden-hour north Malabar path, a woman warrior swinging a gleaming urumi in an arc",
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 4/10",
+  "pin": {
+    "scene": 1,
+    "town": "കടത്തനാട്",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 3,
+  "cine": {
+    "overlay": "fog",
+    "letterbox": [
+      4
+    ]
+  },
+  "hook_voiceover": "വാൾ പോലെ വളയുന്ന ഉറുമി കൊണ്ട് ഒരു കൊള്ളസംഘത്തെ ഒറ്റയ്ക്ക് നേരിട്ട പെണ്ണ്! വടക്കൻ പാട്ടിലെ ഉണ്ണിയാർച്ച.",
+  "scenes": [
+    {
+      "voiceover": "കടത്തനാട്ടിലെ പുത്തൂരം വീട്ടിലെ ഉണ്ണിയാർച്ച. ആരോമൽ ചേകവരുടെ സഹോദരി എന്ന് വടക്കൻ പാട്ടുകൾ പാടുന്നു.",
+      "caption": "പുത്തൂരം വീട്",
+      "highlight": "പുത്തൂരം",
+      "kicker": "PUTHOORAM VEEDU",
+      "loc": "KADATHANADU · VADAKARA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചെറുപ്പത്തിലേ കളരി പഠിച്ചു. ഏറ്റവും പ്രയാസമുള്ള ആയുധമായ ഉറുമി, വളയുന്ന വാൾ, അവൾക്ക് വഴങ്ങി.",
+      "caption": "കളരി · ഉറുമി",
+      "highlight": "ഉറുമി",
+      "kicker": "KALARI AND THE URUMI",
+      "loc": "NORTH MALABAR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അല്ലിമലർക്കാവിലെ ഉത്സവം കാണാൻ പോകുമ്പോൾ ഒരു കൊള്ളസംഘം വഴി തടഞ്ഞു. ഉണ്ണിയാർച്ച ഉറുമി വീശി. സംഘം ഓടി രക്ഷപ്പെട്ടു!",
+      "caption": "ട്വിസ്റ്റ് · അല്ലിമലർക്കാവ്",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "SHE FACES THE GANG",
+      "loc": "ON THE ROAD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നൂറ്റാണ്ടുകളായി വടക്കൻ പാട്ടുകളിലൂടെ തലമുറകൾ ഈ വീരകഥ പാടി.",
+      "caption": "വടക്കൻ പാട്ടുകൾ",
+      "highlight": "പാട്ടുകൾ",
+      "kicker": "THE NORTHERN BALLADS",
+      "loc": "NORTH MALABAR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഉണ്ണിയാർച്ച ചരിത്രമോ ഐതിഹ്യമോ? കമന്റ് ചെയ്യൂ. നിങ്ങളുടെ ധീരയായ ചങ്കിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "ചരിത്രമോ ഐതിഹ്യമോ?",
+      "highlight": "ചരിത്രമോ",
+      "kicker": "COMMENT BELOW",
+      "loc": "VADAKARA",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഉണ്ണിയാർച്ച: വടക്കൻ പാട്ടിലെ പോരാളി ⚔️\n\nപുത്തൂരം വീട്ടിലെ ഉണ്ണിയാർച്ച. ഉറുമി വീശി ഒരു കൊള്ളസംഘത്തെ ഒറ്റയ്ക്ക് നേരിട്ട വീരകഥ നൂറ്റാണ്ടുകളായി വടക്കൻ പാട്ടുകളിൽ.\n\nഉണ്ണിയാർച്ച ചരിത്രമോ ഐതിഹ്യമോ? കമന്റ് ചെയ്യൂ 👇\nനിങ്ങളുടെ ധീരയായ ചങ്കിനെ ടാഗ് ചെയ്യൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nUnniyarcha of Puthooram veedu, heroine of the northern ballads, who faced down a gang with her urumi.\n\nകേരളത്തിന്റെ പോരാളികൾ · 4/10\n\nCredits: Vadakkan Pattukal (northern ballads) · Animation, voice and sound: AI-generated\n\n#Unniyarcha #VadakkanPattukal #Kalaripayattu #Vadakara #MalayalamReels",
+  "search_ml": [
+    "ഉണ്ണിയാർച്ച",
+    "വടക്കൻ പാട്ടുകൾ",
+    "ഉറുമി",
+    "കടത്തനാട്"
+  ],
+  "hashtags": [
+    "Unniyarcha",
+    "VadakkanPattukal",
+    "Kalaripayattu",
+    "Vadakara",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Framed as the ballads' story",
+    "The gang is not tied to any community"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clip": 0,
+        "from": 0.2
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": [
+          0.4,
+          0.6
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.55,
+        "f": 196
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  }
+}

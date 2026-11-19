@@ -227,3 +227,5 @@ Fri 13 7:04 AM cyber-teacher-hacker-v2 · Sat 14 7:04 AM Dharmadam Island · the
 കഥയും ചരിത്രവും (owner approves each video before posting): Thalassery, cradle of Indian circus (Keeleri Kunhikannan) ·
 Pazhassi Raja's last stand (1805) · 3-part series Muziris → 1341 flood → birth of Kochi (owner OK'd overlap with the main-page Muziris reel this once).
 Topics came from Claude's own knowledge (no web search available): fact-check every script; soft wording for legends.
+
+17. **Look rotation:** don't use the golden-sunset sky on every reel. Rule + moods (day, monsoon, storm, blue, dawn, gold) in `docs/design-methods.md` → "Look rotation". Kit supports `G.sky(g,t,y,'day'|'monsoon'|'storm'|…)` and `G.sea(...,'<mood>')`.

@@ -54,3 +54,13 @@ anim_0 scribe + lamp push-in; anim_1 keralaStrip pin Thalassery; anim_2 route Ge
 10. Source line clear of caption and hero.
 11. Final line = either/or question naming a tag-target town.
 12. Script has a world name and passes "would a Payyanur person forward this?"; last frame matches frame 0.
+
+## Look rotation (rule since 19 Nov 2026)
+
+Golden sunset was on almost every reel. From now on:
+- No two reels in a row (on the same page) share the main look.
+- Golden hour (`gold`) at most 1 reel in 3.
+- Rotate between: `day` (blue sky, high sun, `G.sun(..., false)` = no rays), `monsoon` (green-grey sky, `cine.overlay: "fog"`),
+  `storm` (slate sky + `G.sea(..., 'storm')`, `cine.overlay: "rain"`), `blue` (night/moon), `dawn`, `gold`.
+- Sea colour follows the mood: `G.sea(g, t, y, x, '<mood>')`.
+- Pick the look from the story's emotion: mystery/crime = blue or storm, faith/legend = dawn or monsoon, trade/discovery = day, battles = storm, nostalgia/endings = gold.
