@@ -128,11 +128,11 @@ def paint(z, bounds, look, lo, hi, kerala_only=True):
         k = _poly_mask(bounds, (w, h))[..., None]
         land = land * (k + (1 - k) * (_hex(L["other"]) / 255 * (0.8 if not L["ink"] else 1.0)))
     m = Image.fromarray((~sea * 255).astype(np.uint8))
-    near = np.asarray(m.filter(ImageFilter.GaussianBlur(max(6, w / 90))), np.float32)[..., None] / 255
+    lm = Image.fromarray((~water * 255).astype(np.uint8))        # shelf glow measured in metres, same on every tile
+    near = np.asarray(lm.filter(ImageFilter.GaussianBlur(float(np.clip(2500 / px_m, 3, 90)))), np.float32)[..., None] / 255
     s0, s1 = _hex(L["sea"][0]), _hex(L["sea"][1])
     seac = s0 + (s1 - s0) * np.clip(near * 1.6, 0, 1)
-    river = s1 * 0.7 + land * 0.3
-    img = np.where(sea[..., None], seac, np.where(inland[..., None], river, land))
+    img = np.where(water[..., None], seac, land)
     im = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
     rim = m.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.MaxFilter(3))
     im = Image.composite(Image.new("RGB", im.size, tuple(int(x) for x in _hex(L["rim"][0]))), im,
@@ -167,7 +167,7 @@ def build(job: Path, force=False) -> Path:
             hk = 0.5                                         # local range shown as 0.5 km (honest, not alpine)
         else:
             lo, hi, hk = 0.0, 2600.0, 2.6
-        paint(z, b, look, lo, hi).save(out / f"{name}.jpg", quality=86, optimize=True)
+        paint(z, b, look, lo, hi, kerala_only=(name == "wide")).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
         meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
@@ -227,6 +227,7 @@ def apply(job: Path, script: dict, codes: list) -> None:
             script.pop("pin", None)
         if 0 < i <= len(script.get("scenes", [])):        # the callout replaces the lower-third tag
             script["scenes"][i - 1].pop("loc", None)
+        (script.get("hud") or {}).pop(str(i), None)      # and the count-up chip
 
 
 if __name__ == "__main__":

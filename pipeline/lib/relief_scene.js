@@ -104,7 +104,7 @@ window.renderFrame = function (t) {
       const c0 = pts[0]; g.fillStyle = GOLD; g.beginPath(); g.arc(c0[0], c0[1], 9, 0, 6.283); g.fill();
       g.font = '700 34px Baloo'; g.textAlign = 'center'; g.fillStyle = TXT; g.fillText(RL.city.name, c0[0], c0[1] - 22);
       if (ta > 0.3) {
-        const mp = pts[Math.floor(pts.length / 2)], km = Math.round(RL.city.km * sm(0.3, 1, ta));
+        const vis = pts.filter(p => p[0] > 120 && p[0] < W - 120 && p[1] > 760 && p[1] < 1450), mp = vis.length ? vis[Math.floor(vis.length / 2)] : pts[Math.floor(pts.length / 2)], km = Math.round(RL.city.km * sm(0.3, 1, ta));
         const s = km + ' km'; g.font = '800 44px Inter'; const w = g.measureText(s).width + 40;
         g.fillStyle = PANEL; g.fillRect(mp[0] - w / 2, mp[1] - 74, w, 62); g.strokeStyle = GOLD; g.lineWidth = 2; g.strokeRect(mp[0] - w / 2 + 4, mp[1] - 70, w - 8, 54);
         g.fillStyle = GOLD; g.fillText(s, mp[0], mp[1] - 27);

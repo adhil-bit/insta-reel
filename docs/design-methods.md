@@ -64,3 +64,18 @@ Golden sunset was on almost every reel. From now on:
   `storm` (slate sky + `G.sea(..., 'storm')`, `cine.overlay: "rain"`), `blue` (night/moon), `dawn`, `gold`.
 - Sea colour follows the mood: `G.sea(g, t, y, x, '<mood>')`.
 - Pick the look from the story's emotion: mystery/crime = blue or storm, faith/legend = dawn or monsoon, trade/discovery = day, battles = storm, nostalgia/endings = gold.
+
+## 3D relief map scene (automatic, since 19 Nov 2026)
+
+Add to script.json and the location scene (usually scene 1) is replaced by a 3D map fly-in:
+
+```json
+"relief": {"scene": 1, "lat": 11.152, "lon": 75.866, "town": "ചേലേമ്പ്ര", "district": "MALAPPURAM", "kicker": "LOCATION"}
+```
+Optional: `"from": "kozhikode"` (city for the distance thread; `false` = none), `"look": "night" | "ink"`.
+
+- Data: Copernicus DEM (GLO-90 / GLO-30, © DLR/ESA) downloaded on GitHub at render time; Kerala outline from Natural Earth (public domain, `vendor/kerala.json`). Credit line is drawn automatically.
+- Build/preview: `relief-build.yml` (input job) commits `jobs/<slug>/relief/`; then `python3 tools/preview.py jobs/<slug> sheet.jpg`.
+- Design (Fable review): camera hold 0–12 % at 1400 km, log descent to 38 km by 62 %, orbit drift after; three tiles (Kerala / district / town); neighbours dimmed; live gold Kerala outline fades out below 150 km; "കേരളം / KERALA · INDIA" label in the sea; dashed marching distance thread from the nearest district town with a km counter (45–62 %); pin drops at 62 %; callout box x 90–990, y 430–680 (gold kicker chip, 120 px Baloo town, coordinates line); source line y 1500; no particles on this scene.
+- Town relief is honest: the local range is shown as 0.5 km, so lowland towns never look alpine.
+- Mixed version (next): relief to 2.8 s, match-cut on the pin into a Google Earth Studio clip (keep its credit visible).
