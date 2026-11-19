@@ -1,0 +1,152 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "PLACES",
+  "english_sub": "THE VALLEY WHERE LEAVES DON'T FALL",
+  "topic": {
+    "title": "Ilaveezhapoonchira: the valley where leaves don't fall",
+    "category": "PLACES",
+    "angle": "Film-name hook; meaning of the name; Pandava legend; simple twist (no trees)",
+    "key_facts": [
+      "Ilaveezhapoonchira is a hilltop valley in Kottayam district",
+      "The name means 'the valley/pond where leaves don't fall'",
+      "Locals link it to the Pandavas' exile (legend)",
+      "The hills around it have no trees, so there are no leaves to fall",
+      "A Malayalam film titled 'Ela Veezha Poonchira' released in July 2022"
+    ],
+    "sources": [
+      "Owner's topic bank; Kerala tourism descriptions"
+    ]
+  },
+  "headline": [
+    "THE VALLEY WHERE",
+    "LEAVES DON'T FALL."
+  ],
+  "accent_words": [
+    "LEAVES"
+  ],
+  "thumbnail_ml": "ഇലകൾ വീഴാത്ത താഴ്‌വര!",
+  "thumbnail_accent": [
+    "വീഴാത്ത"
+  ],
+  "cover_visual": "Misty grassy hills at golden hour with a small mountain pond, not a single tree",
+  "series": "കേരളത്തിന്റെ രഹസ്യങ്ങൾ",
+  "pin": {
+    "scene": 1,
+    "town": "ഇലവീഴാപൂഞ്ചിറ",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 4,
+  "cine": {
+    "overlay": "fog",
+    "letterbox": [
+      5
+    ]
+  },
+  "hook_voiceover": "ഇലവീഴാപൂഞ്ചിറ എന്ന സിനിമയുടെ പേര് കേട്ടിട്ടുണ്ടോ? അത് ശരിക്കും ഉള്ള ഒരു സ്ഥലമാണ്. ഇലകൾ വീഴാത്ത താഴ്‌വര! എങ്ങനെ?",
+  "scenes": [
+    {
+      "voiceover": "കോട്ടയം ജില്ലയിൽ, മലകൾക്ക് മുകളിൽ ഒരു താഴ്‌വര. പേര് ഇലവീഴാപൂഞ്ചിറ.",
+      "caption": "കോട്ടയം · മലമുകളിൽ",
+      "highlight": "കോട്ടയം",
+      "kicker": "A VALLEY ON THE HILLS",
+      "loc": "ILAVEEZHAPOONCHIRA · KOTTAYAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പേരിന്റെ അർത്ഥം ലളിതം. ഇല വീഴാത്ത ചിറ. ഇവിടെ ഒരിക്കലും ഇലകൾ വീഴില്ല എന്നാണ് പറയുന്നത്.",
+      "caption": "പേരിന്റെ അർത്ഥം",
+      "highlight": "അർത്ഥം",
+      "kicker": "WHAT THE NAME MEANS",
+      "loc": "KOTTAYAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പാണ്ഡവർ വനവാസകാലത്ത് ഇവിടെ എത്തിയിരുന്നു എന്നും ഒരു ഐതിഹ്യമുണ്ട്.",
+      "caption": "ഐതിഹ്യം · പാണ്ഡവർ",
+      "highlight": "ഐതിഹ്യം",
+      "kicker": "A LEGEND",
+      "loc": "THE HILLS",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ഉത്തരം വളരെ ലളിതമാണ്. ചുറ്റുമുള്ള മലകളിൽ മരങ്ങളേ ഇല്ല! മരങ്ങളില്ലെങ്കിൽ ഇലകൾ എങ്ങനെ വീഴും?",
+      "caption": "ട്വിസ്റ്റ് · മരങ്ങളില്ല",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "NO TREES, NO LEAVES",
+      "loc": "ILAVEEZHAPOONCHIRA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഐതിഹ്യമോ ശാസ്ത്രമോ, ഏതാണ് നിങ്ങൾക്ക് ഇഷ്ടം? കമന്റ് ചെയ്യൂ. ഒപ്പം യാത്ര പോകാൻ പറ്റിയ ചങ്കിനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "നിങ്ങളുടെ ഉത്തരം?",
+      "highlight": "ഉത്തരം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "KOTTAYAM",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഇലകൾ വീഴാത്ത താഴ്‌വര! 🍃⛰️\n\nകോട്ടയത്തെ ഇലവീഴാപൂഞ്ചിറ. പേരിന്റെ അർത്ഥം 'ഇല വീഴാത്ത ചിറ'. പാണ്ഡവരുടെ ഐതിഹ്യവും ഉണ്ട്. പക്ഷേ ഉത്തരം വളരെ ലളിതം!\n\nഐതിഹ്യമോ ശാസ്ത്രമോ? കമന്റ് ചെയ്യൂ 👇\nയാത്ര പോകാൻ പറ്റിയ ചങ്കിനെ ടാഗ് ചെയ്യൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nIlaveezhapoonchira (Kottayam) means 'the valley where leaves don't fall'. The simple reason: the hills around it have no trees.\n\nകേരളത്തിന്റെ രഹസ്യങ്ങൾ\n\nCredits: Kerala travel and local tradition · Animation, voice and sound: AI-generated\n\n#Ilaveezhapoonchira #Kottayam #KeralaTourism #KeralaMystery #MalayalamReels",
+  "search_ml": [
+    "ഇലവീഴാപൂഞ്ചിറ",
+    "കോട്ടയം",
+    "കേരള യാത്ര"
+  ],
+  "hashtags": [
+    "Ilaveezhapoonchira",
+    "Kottayam",
+    "KeralaTourism",
+    "KeralaMystery",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Film named only, no clips or posters",
+    "Pandava link framed as legend"
+  ],
+  "sound_plan": {
+    "drone": "A",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clip": 0,
+        "from": 0.3
+      },
+      {
+        "type": "crickets",
+        "clips": [
+          1,
+          2
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.0,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 220
+      },
+      {
+        "type": "shimmer",
+        "clip": 5,
+        "from": 0.0
+      }
+    ]
+  }
+}

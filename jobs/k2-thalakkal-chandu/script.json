@@ -1,0 +1,167 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "THE ARCHER WHO FOUGHT THE BRITISH",
+  "topic": {
+    "title": "Thalakkal Chandu, the Kurichiya archer",
+    "category": "HISTORY",
+    "angle": "Owner's topic bank: Kurichiya commander of Pazhassi; Panamaram fort 1802; executed 1805",
+    "key_facts": [
+      "Thalakkal Chandu was a Kurichiya archer and a commander in Pazhassi Raja's forces",
+      "In 1802 he led the attack that captured the British post at Panamaram",
+      "He was captured by the British and executed in 1805",
+      "A memorial to him stands at Panamaram, Wayanad"
+    ],
+    "sources": [
+      "Kerala history (Pazhassi revolts, Wayanad)"
+    ]
+  },
+  "headline": [
+    "കുറിച്യ വില്ലാളി"
+  ],
+  "accent_words": [
+    "വില്ലാളി"
+  ],
+  "thumbnail_ml": "ബ്രിട്ടീഷുകാരെ വിറപ്പിച്ച കുറിച്യ വില്ലാളി",
+  "thumbnail_accent": [
+    "വില്ലാളി"
+  ],
+  "cover_visual": "Golden-hour Wayanad forest edge, an archer drawing a bow, arrows in flight, a fort wall in the haze",
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 3/10",
+  "pin": {
+    "scene": 1,
+    "town": "പനമരം",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 3,
+  "hud": {
+    "2": [
+      [
+        "YEAR",
+        1802
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "embers"
+  },
+  "hook_voiceover": "അമ്പും വില്ലും കൊണ്ട് ഒരു ബ്രിട്ടീഷ് കോട്ട പിടിച്ചെടുത്ത വയനാട്ടുകാരൻ! ആരാണ് തലക്കൽ ചന്തു?",
+  "scenes": [
+    {
+      "voiceover": "വയനാട്ടിലെ കുറിച്യ സമുദായത്തിലെ വില്ലാളി, തലക്കൽ ചന്തു. പഴശ്ശിരാജയുടെ സൈന്യത്തിലെ പടത്തലവൻ.",
+      "caption": "കുറിച്യർ · വയനാട്",
+      "highlight": "കുറിച്യർ",
+      "kicker": "KURICHIYA ARCHER",
+      "loc": "WAYANAD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1802-ൽ ചന്തുവിന്റെ നേതൃത്വത്തിൽ കുറിച്യപ്പട പനമരത്തെ ബ്രിട്ടീഷ് താവളം ആക്രമിച്ചു പിടിച്ചെടുത്തു.",
+      "caption": "1802 · പനമരം",
+      "highlight": "1802",
+      "kicker": "THE PANAMARAM ATTACK",
+      "loc": "PANAMARAM · WAYANAD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ 1805-ൽ ബ്രിട്ടീഷുകാർ ചന്തുവിനെ പിടികൂടി. കീഴടങ്ങാൻ തയ്യാറാകാതിരുന്ന അദ്ദേഹത്തെ അവർ വധിച്ചു.",
+      "caption": "1805 · പിടിയിൽ",
+      "highlight": "1805",
+      "kicker": "CAPTURED",
+      "loc": "WAYANAD",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്ന് പനമരത്ത് തലക്കൽ ചന്തുവിന്റെ സ്മാരകമുണ്ട്. വയനാടിന്റെ വീരനായകൻ.",
+      "caption": "ഇന്ന് · സ്മാരകം",
+      "highlight": "ഇന്ന്",
+      "kicker": "REMEMBERED TODAY",
+      "loc": "PANAMARAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ചന്തുവിനെ കുറിച്ച് സ്കൂളിൽ പഠിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ. വയനാട്ടുകാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ഉത്തരം?",
+      "highlight": "ഉത്തരം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "WAYANAD",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ബ്രിട്ടീഷുകാരെ വിറപ്പിച്ച കുറിച്യ വില്ലാളി! 🏹\n\nപഴശ്ശിരാജയുടെ പടത്തലവൻ തലക്കൽ ചന്തു. 1802-ൽ പനമരത്തെ ബ്രിട്ടീഷ് താവളം പിടിച്ചെടുത്തു. 1805-ൽ പിടിക്കപ്പെട്ടു. ഇന്നും പനമരത്ത് സ്മാരകം.\n\nചന്തുവിനെ കുറിച്ച് സ്കൂളിൽ പഠിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\nവയനാട്ടുകാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nThalakkal Chandu, a Kurichiya archer and Pazhassi Raja's commander, captured the British post at Panamaram in 1802.\n\nകേരളത്തിന്റെ പോരാളികൾ · 3/10\n\nCredits: Kerala history (Pazhassi revolts) · Animation, voice and sound: AI-generated\n\n#ThalakkalChandu #Wayanad #Kurichiya #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "തലക്കൽ ചന്തു",
+    "കുറിച്യർ",
+    "പനമരം",
+    "വയനാട് ചരിത്രം"
+  ],
+  "hashtags": [
+    "ThalakkalChandu",
+    "Wayanad",
+    "Kurichiya",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Execution stated, not shown",
+    "No exact dates beyond the years"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.2,
+          0.5
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 4,
+        "gap": 0.8
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  }
+}

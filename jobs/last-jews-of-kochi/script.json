@@ -1,0 +1,172 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "HISTORY",
+  "english_sub": "THE LAST JEWS OF KOCHI",
+  "topic": {
+    "title": "The last Jews of Kochi",
+    "category": "HISTORY",
+    "angle": "Owner's topic bank: 2,000 to two; Sarah Cohen and Thaha Ibrahim",
+    "key_facts": [
+      "Kochi's Paradesi Jewish community once had about 2,000 members",
+      "When Sarah Cohen died in 2019 at 96, only two were left",
+      "The synagogue could not hold prayers for years because it lacked the required 10 men",
+      "Sarah Cohen was cared for by a Muslim man, Thaha Ibrahim"
+    ],
+    "sources": [
+      "Owner's topic bank; news reports 2019"
+    ]
+  },
+  "headline": [
+    "THE LAST JEWS",
+    "OF KOCHI."
+  ],
+  "accent_words": [
+    "LAST"
+  ],
+  "thumbnail_ml": "2,000 പേരിൽ നിന്ന് വെറും 2 പേർ",
+  "thumbnail_accent": [
+    "2"
+  ],
+  "cover_visual": "Golden-hour Jew Town street, a lit synagogue clock tower, an empty bench",
+  "series": "കേരളത്തിന്റെ രഹസ്യങ്ങൾ",
+  "pin": {
+    "scene": 1,
+    "town": "മട്ടാഞ്ചേരി",
+    "x": 540,
+    "y": 960
+  },
+  "twist_scene": 4,
+  "hud": {
+    "1": [
+      [
+        "ONCE",
+        2000
+      ]
+    ],
+    "3": [
+      [
+        "LEFT IN 2019",
+        2
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "dust",
+    "letterbox": [
+      5
+    ]
+  },
+  "hook_voiceover": "ഒരു കാലത്ത് രണ്ടായിരത്തോളം പേർ. ഇന്ന് വിരലിലെണ്ണാവുന്നവർ മാത്രം. കൊച്ചിയിലെ അവസാന ജൂതന്മാരുടെ കഥ.",
+  "scenes": [
+    {
+      "voiceover": "മട്ടാഞ്ചേരിയിലെ ജൂതത്തെരുവ്. ഇവിടത്തെ പരദേശി ജൂതസമൂഹത്തിൽ ഒരിക്കൽ രണ്ടായിരത്തോളം പേരുണ്ടായിരുന്നു.",
+      "caption": "മട്ടാഞ്ചേരി · ജൂതത്തെരുവ്",
+      "highlight": "മട്ടാഞ്ചേരി",
+      "kicker": "JEW TOWN, KOCHI",
+      "loc": "MATTANCHERRY · KOCHI",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കാലക്രമേണ മിക്കവരും മറ്റ് നാടുകളിലേക്ക് പോയി. പ്രാർത്ഥനയ്ക്ക് വേണ്ട പത്ത് പുരുഷന്മാർ പോലും ഇല്ലാതെ സിനഗോഗിൽ വർഷങ്ങളോളം പ്രാർത്ഥന നടന്നില്ല.",
+      "caption": "പത്ത് പേർ പോലുമില്ല",
+      "highlight": "പത്ത്",
+      "kicker": "NOT EVEN TEN MEN",
+      "loc": "PARADESI SYNAGOGUE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അവരിൽ ഒരാളായിരുന്നു സാറാ കോഹൻ. 2019-ൽ തൊണ്ണൂറ്റിയാറാം വയസ്സിൽ അവർ മരിക്കുമ്പോൾ ആ സമൂഹത്തിൽ രണ്ടുപേർ മാത്രം ബാക്കി.",
+      "caption": "2019 · സാറാ കോഹൻ",
+      "highlight": "2019",
+      "kicker": "SARAH COHEN, 96",
+      "loc": "JEW TOWN",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇതാണ് ട്വിസ്റ്റ്. വർഷങ്ങളോളം സാറയെ സ്വന്തം അമ്മയെപ്പോലെ നോക്കിയത് താഹ ഇബ്രാഹിം എന്ന അയൽക്കാരൻ, ഒരു മുസ്ലിം.",
+      "caption": "ട്വിസ്റ്റ് · താഹ",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "CARED FOR BY A MUSLIM NEIGHBOUR",
+      "loc": "KOCHI",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇതാണ് കൊച്ചി. ഇതുപോലൊരു സൗഹൃദം നിങ്ങൾക്കുണ്ടോ? ആ ചങ്കിനെ ടാഗ് ചെയ്യൂ. കൊച്ചിക്കാരന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ചങ്ക്?",
+      "highlight": "ചങ്ക്?",
+      "kicker": "TAG THAT FRIEND",
+      "loc": "KOCHI",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "2,000 പേരിൽ നിന്ന് വെറും 2 പേർ: കൊച്ചിയിലെ അവസാന ജൂതന്മാർ 🕯️\n\nമട്ടാഞ്ചേരിയിലെ പരദേശി ജൂതസമൂഹം. 2019-ൽ 96-ാം വയസ്സിൽ സാറാ കോഹൻ മരിക്കുമ്പോൾ രണ്ടുപേർ മാത്രം ബാക്കി. അവരെ അമ്മയെപ്പോലെ നോക്കിയത് താഹ ഇബ്രാഹിം എന്ന മുസ്ലിം അയൽക്കാരൻ.\n\nഇതുപോലൊരു സൗഹൃദം നിങ്ങൾക്കുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\nആ ചങ്കിനെ ടാഗ് ചെയ്യൂ, കൊച്ചിക്കാർക്ക് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nKochi's Paradesi Jewish community once had about 2,000 members. When Sarah Cohen died in 2019 at 96, only two were left. She was cared for by her Muslim neighbour, Thaha Ibrahim.\n\nകേരളത്തിന്റെ രഹസ്യങ്ങൾ\n\nCredits: News reports, 2019 · Animation, voice and sound: AI-generated\n\n#Kochi #Mattancherry #JewTown #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "കൊച്ചി ജൂതന്മാർ",
+    "മട്ടാഞ്ചേരി",
+    "സാറാ കോഹൻ",
+    "ജൂതത്തെരുവ്"
+  ],
+  "hashtags": [
+    "Kochi",
+    "Mattancherry",
+    "JewTown",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Respectful, warm tone",
+    "No religious imagery beyond the synagogue building"
+  ],
+  "sound_plan": {
+    "drone": "F",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clip": 0,
+        "from": 0.2
+      },
+      {
+        "type": "river",
+        "clips": [
+          1
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.3,
+        "count": 2,
+        "gap": 1.0
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.0
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.3,
+        "f": 220
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 196
+      }
+    ]
+  }
+}

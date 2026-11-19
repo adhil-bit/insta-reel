@@ -6,6 +6,8 @@ on:
   push:
     paths:
       - "jobs/**"
+  schedule:
+    - cron: "12 8 * * *"     # daily 1:42 PM IST, just after the Gemini voice quota resets: renders anything still waiting
   workflow_dispatch:
     inputs:
       wait_until_utc:
@@ -37,6 +39,12 @@ jobs:
   render:
     runs-on: ubuntu-latest
     timeout-minutes: 340
+    strategy:
+      max-parallel: 1
+      matrix:
+        account: ${{ github.event_name == 'schedule' && fromJSON('["1","2"]') || fromJSON('["1"]') }}
+    env:
+      IG_ACCOUNT: ${{ matrix.account }}
     steps:
       - uses: actions/checkout@v4
 

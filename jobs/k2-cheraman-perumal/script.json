@@ -1,0 +1,154 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "THE KING WHO VANISHED",
+  "topic": {
+    "title": "Cheraman Perumal, the king who vanished",
+    "category": "HISTORY",
+    "angle": "Owner's topic bank: many versions, no proof; respectful",
+    "key_facts": [
+      "The Chera Perumals ruled from Mahodayapuram (today's Kodungallur)",
+      "Legend says the last Cheraman Perumal divided his kingdom among his chieftains and then disappeared",
+      "The best-known version says he sailed to Mecca; other versions tell of other journeys",
+      "Historian A. Sreedhara Menon noted that no contemporary record backs the Mecca journey"
+    ],
+    "sources": [
+      "Kerala history; A. Sreedhara Menon"
+    ]
+  },
+  "headline": [
+    "ചേരമാൻ പെരുമാൾ"
+  ],
+  "accent_words": [
+    "പെരുമാൾ"
+  ],
+  "thumbnail_ml": "ചേരമാൻ പെരുമാൾ എവിടെ പോയി?",
+  "thumbnail_accent": [
+    "എവിടെ"
+  ],
+  "cover_visual": "Golden-hour Kodungallur estuary, a dhow sailing toward the sun, an empty throne on the shore",
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 6/10",
+  "pin": {
+    "scene": 1,
+    "town": "കൊടുങ്ങല്ലൂർ",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 3,
+  "cine": {
+    "overlay": "dust",
+    "letterbox": [
+      4
+    ]
+  },
+  "hook_voiceover": "ഒരു രാജാവ് തന്റെ രാജ്യം വീതിച്ചു നൽകി, പിന്നെ അപ്രത്യക്ഷനായി! ചേരമാൻ പെരുമാൾ എവിടെ പോയി?",
+  "scenes": [
+    {
+      "voiceover": "മഹോദയപുരം, ഇന്നത്തെ കൊടുങ്ങല്ലൂർ, ആസ്ഥാനമാക്കി ഭരിച്ച ചേര പെരുമാക്കന്മാർ.",
+      "caption": "മഹോദയപുരം",
+      "highlight": "മഹോദയപുരം",
+      "kicker": "THE CHERA PERUMALS",
+      "loc": "KODUNGALLUR · THRISSUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അവസാനത്തെ ചേരമാൻ പെരുമാൾ രാജ്യം നാടുവാഴികൾക്ക് വീതിച്ചു നൽകി, പിന്നെ അപ്രത്യക്ഷനായി എന്നാണ് ഐതിഹ്യം.",
+      "caption": "രാജ്യം വീതിച്ചു",
+      "highlight": "വീതിച്ചു",
+      "kicker": "THE KINGDOM DIVIDED",
+      "loc": "KERALA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഏറ്റവും പ്രശസ്തമായ കഥയനുസരിച്ച് അദ്ദേഹം കപ്പൽ കയറി മക്കയിലേക്ക് പോയി. മറ്റ് കഥകൾ മറ്റ് യാത്രകൾ പറയുന്നു.",
+      "caption": "ട്വിസ്റ്റ് · പല കഥകൾ",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "MANY VERSIONS",
+      "loc": "ARABIAN SEA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പക്ഷേ ചരിത്രകാരൻ എ. ശ്രീധരമേനോൻ ചൂണ്ടിക്കാട്ടി, ഈ യാത്രയ്ക്ക് സമകാലിക രേഖകളൊന്നും ഇല്ല. പല കഥകൾ, തെളിവില്ല.",
+      "caption": "തെളിവ്?",
+      "highlight": "തെളിവ്?",
+      "kicker": "NO CONTEMPORARY PROOF",
+      "loc": "KODUNGALLUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങൾ കേട്ട കഥ ഏതാണ്? കമന്റ് ചെയ്യൂ. കൊടുങ്ങല്ലൂരുകാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങൾ കേട്ട കഥ?",
+      "highlight": "കഥ?",
+      "kicker": "COMMENT BELOW",
+      "loc": "KODUNGALLUR",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "രാജ്യം വീതിച്ചു നൽകി അപ്രത്യക്ഷനായ രാജാവ്! 👑\n\nഅവസാനത്തെ ചേരമാൻ പെരുമാൾ എവിടെ പോയി? ഏറ്റവും പ്രശസ്തമായ കഥ മക്കയിലേക്കുള്ള യാത്ര. പക്ഷേ സമകാലിക രേഖകളില്ലെന്ന് ചരിത്രകാരൻ എ. ശ്രീധരമേനോൻ. പല കഥകൾ, തെളിവില്ല.\n\nനിങ്ങൾ കേട്ട കഥ ഏതാണ്? കമന്റ് ചെയ്യൂ 👇\nകൊടുങ്ങല്ലൂരുകാരൻ ചങ്കിനും ചരിത്രപ്രേമികൾക്കും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nThe last Cheraman Perumal divided his kingdom and vanished. Many versions exist; historian A. Sreedhara Menon noted there is no contemporary proof.\n\nകേരളത്തിന്റെ പോരാളികൾ · 6/10\n\nCredits: Kerala history; A. Sreedhara Menon · Animation, voice and sound: AI-generated\n\n#CheramanPerumal #Kodungallur #KeralaHistory #Chera #MalayalamReels",
+  "search_ml": [
+    "ചേരമാൻ പെരുമാൾ",
+    "കൊടുങ്ങല്ലൂർ",
+    "മഹോദയപുരം",
+    "കേരള ചരിത്രം"
+  ],
+  "hashtags": [
+    "CheramanPerumal",
+    "Kodungallur",
+    "KeralaHistory",
+    "Chera",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "'Many versions, no proof' framing",
+    "Respectful; no religious imagery"
+  ],
+  "sound_plan": {
+    "drone": "F",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          3
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 2,
+        "from": 0.2
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.1,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  }
+}
