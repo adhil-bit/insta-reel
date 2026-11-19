@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 19 Nov, 04:52 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 19 Nov, 05:04 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -24,6 +24,7 @@ _Updated Thu 19 Nov, 04:52 PM IST. Times are approximate: each reel posts within
 - bigg-boss-1984
 - bonacaud-bungalow
 - chandrayaan-3-south-pole
+- chelembra-money-heist
 - chundan-vallam
 - cyber-teacher-hacker
 - cyber-teacher-hacker-v2
@@ -36,6 +37,7 @@ _Updated Thu 19 Nov, 04:52 PM IST. Times are approximate: each reel posts within
 - ezhimala-marco-polo
 - ezhimala-v2
 - gobekli-tepe
+- ilaveezhapoonchira
 - illikkal-kallu
 - itty-cora-1-trader
 - itty-cora-2-madhava
@@ -44,11 +46,17 @@ _Updated Thu 19 Nov, 04:52 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
+- k2-cheraman-perumal
+- k2-thalassery-fort
+- k2-unniyarcha
 - kalari-fire
 - kalari-fire-v2
 - kalari-kungfu
 - kallanai-2000-year-dam
+- kannur-treasure-pot
+- kannur-vault-38
 - karuthachanootu
+- karyavattom-haunted-pond
 - kerala-crows-missing
 - kerala-piravi-1956
 - kerala-red-rain
@@ -64,6 +72,7 @@ _Updated Thu 19 Nov, 04:52 PM IST. Times are approximate: each reel posts within
 - kuriyedathu-thathri
 - kuttanad-below-sea-level
 - lake-nyos
+- last-jews-of-kochi
 - madayipara-jootha-kulam
 - mananchira-ink
 - mananchira-ink-v2
