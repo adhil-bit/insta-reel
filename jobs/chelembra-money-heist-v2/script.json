@@ -168,5 +168,13 @@
         "f": 220
       }
     ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 11.152,
+    "lon": 75.866,
+    "town": "ചേലേമ്പ്ര",
+    "district": "MALAPPURAM · KERALA",
+    "kicker": "LOCATION"
   }
 }

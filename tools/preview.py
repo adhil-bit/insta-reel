@@ -9,7 +9,7 @@ import sys, os, json, tempfile
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT)); os.chdir(ROOT)
-from pipeline import animate, cine
+from pipeline import animate, cine, relief
 from playwright.sync_api import sync_playwright
 from PIL import Image
 
@@ -17,10 +17,12 @@ job, out, D = Path(sys.argv[1]).resolve(), Path(sys.argv[2]).resolve(), 7.0
 script = json.loads((job / "script.json").read_text()) if (job / "script.json").exists() else {}
 files = sorted(job.glob("anim_*.js"), key=lambda f: int(f.stem.split("_")[1]))
 tmp = Path(tempfile.mkdtemp()); tiles = []
+codes = [f.read_text() for f in files]
+if script.get('relief') and (job / 'relief' / 'relief.json').exists(): relief.apply(job, script, codes)
 with sync_playwright() as p:
-    b = p.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1920})
+    b = p.chromium.launch(args=['--enable-unsafe-swiftshader']); pg = b.new_page(viewport={"width": 1080, "height": 1920})
     for i, f in enumerate(files):
-        code = cine.wrap(f.read_text(), script, i, i * D, len(files)) or ""
+        code = cine.wrap(codes[i], script, i, i * D, len(files)) or ""
         doc = animate.TEMPLATE % {"W": 1080, "H": 1920, "THREE": animate.THREE_JS, "EARTH": animate.EARTH_TEX if "earthTex" in code else "",
                                   "SCENES": animate.SCENES_JS, "ACCENT": "#c2412d", "DURATION": D, "SEED": 1}
         hp = tmp / "pv.html"; hp.write_text(doc.replace("/*CODE*/", code), encoding="utf-8")

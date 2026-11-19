@@ -1,0 +1,27 @@
+name: Build relief map (Copernicus DEM, automatic)
+
+on:
+  workflow_dispatch:
+    inputs:
+      job:
+        description: "Folder under jobs/ whose script.json has a \"relief\" block"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q numpy pillow rasterio
+      - run: python -m pipeline.relief "jobs/${{ github.event.inputs.job }}"
+      - run: |
+          git config user.name "autoreel-bot"; git config user.email "autoreel-bot@users.noreply.github.com"
+          git add "jobs/${{ github.event.inputs.job }}/relief"
+          git commit -qm "Relief map for ${{ github.event.inputs.job }}" || exit 0
+          for i in 1 2 3; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 5; done

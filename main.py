@@ -245,6 +245,9 @@ def render_job(job_dir: Path) -> Path:
     script["accent_words"] = [w.upper() for w in script.get("accent_words", [])]
     codes = [p.read_text(encoding="utf-8") if p.exists() else None
              for p in (job_dir / f"anim_{i}.js" for i in range(len(script["scenes"]) + 1))]
+    if script.get("relief"):                 # automatic 3D relief map for the location scene
+        from pipeline import relief
+        relief.apply(job_dir, script, codes)
     print(f"Rendering job {job_dir.name}: {topic['title']}")
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
 
