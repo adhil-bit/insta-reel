@@ -8,7 +8,6 @@ _Updated Thu 19 Nov, 05:05 PM IST. Times are approximate: each reel posts within
 ## Being rendered (joins the queue when done)
 
 - chelembra-money-heist
-- ilaveezhapoonchira
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
