@@ -46,7 +46,7 @@ function init() {
 function camAt(t) {
   const q = t / DURATION, dsc = ease.inOut(clamp((q - 0.12) / 0.5));
   const late = clamp((q - 0.62) / 0.38);
-  const d = Math.max(30, q < 0.62 ? Math.exp(lerp(Math.log(900), Math.log(38), dsc)) : lerp(38, 34, late));
+  const d = Math.max(30, q < 0.62 ? Math.exp(lerp(Math.log(1400), Math.log(38), dsc)) : lerp(38, 34, late));
   const pitch = (q < 0.62 ? lerp(62, 40, dsc) : 40) * Math.PI / 180;
   const yaw = (q < 0.62 ? lerp(-6, 18, dsc) : lerp(18, 24, late)) * Math.PI / 180;
   const k = ease.inOut(clamp(dsc * 1.25));
@@ -135,7 +135,7 @@ window.renderFrame = function (t) {
   // callout above the pin: box x 90-990, y 430-660; leader drawn in 0.35 s at 68%
   const tc = (q - 0.66) * DURATION;
   if (tc > 0 && RL.town) {
-    const a = clamp(tc / 0.25), x0 = 90, x1 = 990, y0 = 430, y1 = 660;
+    const a = clamp(tc / 0.25), x0 = 90, x1 = 990, y0 = 430, y1 = 680;
     g.save(); g.globalAlpha = a; g.fillStyle = PANEL; g.fillRect(x0, y0, x1 - x0, y1 - y0);
     g.strokeStyle = GOLD; g.lineWidth = 2; g.strokeRect(x0 + 6, y0 + 6, x1 - x0 - 12, y1 - y0 - 12);
     const lk = ease.out(clamp((tc - 0.1) / 0.35)), ly0 = y1, ly1 = town[1] - 150;
@@ -147,8 +147,8 @@ window.renderFrame = function (t) {
     g.textAlign = 'left';
     g.globalAlpha = a * st(0); g.font = '700 24px Inter'; const kw = g.measureText(RL.kicker).width + RL.kicker.length * 4 + 36;
     g.fillStyle = GOLD; g.fillRect(x0 + 36, y0 + 30, kw, 44); g.fillStyle = CHIPTXT; spaced(RL.kicker, x0 + 54, y0 + 61, 4);
-    g.globalAlpha = a * st(1); g.fillStyle = TXT; g.font = '800 120px Baloo'; g.fillText(RL.town, x0 + 34, y0 + 182 - 10 * (1 - st(1)));
-    g.globalAlpha = a * st(2); g.fillStyle = GOLD; g.font = '600 26px Inter'; spaced(RL.sub, x0 + 38, y0 + 212, 3);
+    g.globalAlpha = a * st(1); g.fillStyle = TXT; g.font = '800 120px Baloo'; g.fillText(RL.town, x0 + 34, y0 + 172 - 10 * (1 - st(1)));
+    g.globalAlpha = a * st(2); g.fillStyle = GOLD; g.font = '600 26px Inter'; spaced(RL.sub, x0 + 38, y0 + 220, 3);
     g.restore();
   }
   // source line: baseline y 1500, x 60, no box

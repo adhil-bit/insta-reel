@@ -163,5 +163,13 @@
         "f": 220
       }
     ]
+  },
+  "relief": {
+    "lat": 11.738,
+    "lon": 76.074,
+    "town": "പനമരം",
+    "district": "WAYANAD",
+    "scene": 1,
+    "kicker": "LOCATION"
   }
 }

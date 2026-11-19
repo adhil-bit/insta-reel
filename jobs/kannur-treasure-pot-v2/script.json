@@ -167,5 +167,13 @@
         "f": 196
       }
     ]
+  },
+  "relief": {
+    "lat": 12.03,
+    "lon": 75.46,
+    "town": "ചെങ്ങളായി",
+    "district": "KANNUR",
+    "scene": 1,
+    "kicker": "LOCATION"
   }
 }

@@ -164,7 +164,7 @@ def build(job: Path, force=False) -> Path:
             land = z[z > 0.5]
             lo, hi = (float(np.percentile(land, 2)), float(np.percentile(land, 98))) if land.size else (0.0, 100.0)
             hi = max(hi, lo + 60)
-            hk = 1.2                                         # local range shown as 1.2 km of relief
+            hk = 0.5                                         # local range shown as 0.5 km (honest, not alpine)
         else:
             lo, hi, hk = 0.0, 2600.0, 2.6
         paint(z, b, look, lo, hi).save(out / f"{name}.jpg", quality=86, optimize=True)

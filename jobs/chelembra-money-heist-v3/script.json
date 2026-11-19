@@ -1,0 +1,180 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "CRIME",
+  "english_sub": "THE REAL-LIFE DHOOM HEIST",
+  "topic": {
+    "title": "Chelembra bank robbery: Kerala's 'Money Heist'",
+    "category": "CRIME",
+    "angle": "Owner's topic bank: Dhoom-inspired gang, hole in the floor, 80 kg gold; caught later",
+    "key_facts": [
+      "Four people from Kozhikode, inspired by the film Dhoom, robbed the Chelembra branch of South Malabar Gramin Bank",
+      "The bank was on the first floor; the gang broke in through a hole in its floor",
+      "They took 80.199 kg of gold and Rs 25 lakh; it came to light on 31 December 2007",
+      "The accused were later arrested"
+    ],
+    "sources": [
+      "Owner's topic bank; news reports 2007-08"
+    ]
+  },
+  "headline": [
+    "KERALA'S OWN",
+    "MONEY HEIST."
+  ],
+  "accent_words": [
+    "HEIST."
+  ],
+  "thumbnail_ml": "ധൂം സിനിമ കണ്ട് 80 കിലോ സ്വർണ്ണം കവർന്നു!",
+  "thumbnail_accent": [
+    "ധൂം"
+  ],
+  "cover_visual": "Night street, a two-storey bank lit from inside, a glowing hole in the floor, gold bars",
+  "series": "കേരളത്തിന്റെ രഹസ്യങ്ങൾ",
+  "pin": {
+    "scene": 1,
+    "town": "ചേലേമ്പ്ര",
+    "x": 540,
+    "y": 960
+  },
+  "twist_scene": 3,
+  "hud": {
+    "3": [
+      [
+        "GOLD (KG)",
+        80
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "rain",
+    "letterbox": [
+      4
+    ]
+  },
+  "hook_voiceover": "ധൂം സിനിമ കണ്ട് ഇറങ്ങിയ കള്ളന്മാർ! കേരളത്തിലെ ഒരു ബാങ്കിൽ നിന്ന് ഒറ്റ രാത്രിയിൽ 80 കിലോ സ്വർണ്ണം അപ്രത്യക്ഷം!",
+  "scenes": [
+    {
+      "voiceover": "2007. മലപ്പുറം ചേലേമ്പ്രയിലെ സൗത്ത് മലബാർ ഗ്രാമീൺ ബാങ്ക്. ബാങ്ക് പ്രവർത്തിച്ചിരുന്നത് ഒന്നാം നിലയിൽ.",
+      "caption": "2007 · ചേലേമ്പ്ര",
+      "highlight": "2007",
+      "kicker": "A BANK ON THE FIRST FLOOR",
+      "loc": "CHELEMBRA · MALAPPURAM",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ധൂം സിനിമയിൽ നിന്ന് പ്രചോദനം കിട്ടിയ കോഴിക്കോട്ടുകാരായ നാലംഗ സംഘം. അവർ താഴെ നിന്ന് ബാങ്കിന്റെ തറ തുരന്ന് ഉള്ളിൽ കടന്നു.",
+      "caption": "താഴെ നിന്ന് മുകളിലേക്ക്",
+      "highlight": "താഴെ",
+      "kicker": "A HOLE IN THE FLOOR",
+      "loc": "CHELEMBRA",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "80.199 കിലോ സ്വർണ്ണവും 25 ലക്ഷം രൂപയും! 2007 ഡിസംബർ 31-നാണ് കവർച്ച പുറത്തറിഞ്ഞത്.",
+      "caption": "ട്വിസ്റ്റ് · 80 കിലോ",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "80.199 KG GOLD · ₹25 LAKH",
+      "loc": "DECEMBER 31, 2007",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "സിനിമാ സ്റ്റൈൽ കവർച്ച. പക്ഷേ ക്ലൈമാക്സ് സിനിമയിലേതുപോലെയായില്ല. പ്രതികൾ പിന്നീട് പോലീസിന്റെ പിടിയിലായി.",
+      "caption": "ക്ലൈമാക്സ് · പിടിയിൽ",
+      "highlight": "പിടിയിൽ",
+      "kicker": "THE ENDING",
+      "loc": "KERALA POLICE",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പോലീസ് ഈ കേസ് എങ്ങനെ തെളിയിച്ചു? പാർട്ട് 2 വേണോ? കമന്റ് ചെയ്യൂ. മലപ്പുറത്തെ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "പാർട്ട് 2 വേണോ?",
+      "highlight": "പാർട്ട്",
+      "kicker": "COMMENT BELOW",
+      "loc": "MALAPPURAM",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ധൂം സിനിമ കണ്ട് ഇറങ്ങിയ കള്ളന്മാർ, കേരളത്തിന്റെ സ്വന്തം 'മണി ഹൈസ്റ്റ്'! 🎬🏦💰\n\n2007-ൽ ചേലേമ്പ്രയിൽ ബാങ്കിന്റെ തറ തുരന്ന് 80 കിലോ സ്വർണ്ണവും 25 ലക്ഷം രൂപയും കവർന്നു. ഡിസംബർ 31-നാണ് പുറത്തറിഞ്ഞത്. പക്ഷേ ക്ലൈമാക്സ് സിനിമയിലേതുപോലെയായില്ല.\n\nപോലീസ് കേസ് എങ്ങനെ തെളിയിച്ചു? പാർട്ട് 2 വേണോ? കമന്റ് ചെയ്യൂ 👇\nമലപ്പുറത്തെ ചങ്കിനും ത്രില്ലർ ഫാൻസിനും അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nChelembra, 2007: a gang tunnelled up through the floor of a first-floor bank and took 80 kg of gold. They were later caught.\n\nകേരളത്തിന്റെ രഹസ്യങ്ങൾ\n\nCredits: News reports, 2007-08 · Animation, voice and sound: AI-generated\n\n#Chelembra #Malappuram #KeralaCrime #TrueCrime #MalayalamReels",
+  "search_ml": [
+    "ചേലേമ്പ്ര ബാങ്ക് കവർച്ച",
+    "ചേലേമ്പ്ര",
+    "മലപ്പുറം"
+  ],
+  "hashtags": [
+    "Chelembra",
+    "Malappuram",
+    "KeralaCrime",
+    "TrueCrime",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "No names of the accused",
+    "No film clips or posters",
+    "Crime not glamorised: ends with the arrest"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 4,
+        "gap": 0.7
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.2,
+          0.5,
+          0.8
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.2,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.05,
+        "f": 196
+      },
+      {
+        "type": "rumble",
+        "clip": 4,
+        "at": [
+          0.2
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 11.152,
+    "lon": 75.866,
+    "town": "ചേലേമ്പ്ര",
+    "district": "MALAPPURAM · KERALA",
+    "kicker": "LOCATION"
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "MYSTERY",
+  "english_sub": "KANNUR'S VAULT NO. 38",
+  "topic": {
+    "title": "Kannur's Vault No. 38",
+    "category": "MYSTERY",
+    "angle": "Owner's topic bank (fresh 2026 story): fear of a hidden crime, 12 days, no crime",
+    "key_facts": [
+      "A vault numbered 38 in Kannur grew into fears of a hidden crime",
+      "Police investigations, scientific tests and even a reopened decade-old missing-person case followed",
+      "After 12 days the vault turned out to have no hidden body and no crime scene"
+    ],
+    "sources": [
+      "2026 news reports (owner's notes)"
+    ]
+  },
+  "headline": [
+    "KANNUR'S",
+    "VAULT NO. 38."
+  ],
+  "accent_words": [
+    "38."
+  ],
+  "thumbnail_ml": "നിലവറ നമ്പർ 38: 12 ദിവസത്തെ ദുരൂഹത",
+  "thumbnail_accent": [
+    "38:"
+  ],
+  "cover_visual": "A heavy round vault door marked 38 in a dark corridor, a torch beam on it",
+  "series": "കണ്ണൂർ രഹസ്യങ്ങൾ #5",
+  "pin": {
+    "scene": 1,
+    "town": "കണ്ണൂർ",
+    "x": 540,
+    "y": 960
+  },
+  "twist_scene": 4,
+  "hud": {
+    "3": [
+      [
+        "DAYS",
+        12
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "dust",
+    "letterbox": [
+      5
+    ]
+  },
+  "hook_voiceover": "കണ്ണൂരിലെ ഒരു നിലവറ, നമ്പർ 38. അതിനുള്ളിൽ ഒരു കുറ്റകൃത്യം ഒളിഞ്ഞിരിപ്പുണ്ടോ? 12 ദിവസം നാട് മുഴുവൻ പേടിച്ചു!",
+  "scenes": [
+    {
+      "voiceover": "2026. കണ്ണൂരിലെ നിലവറ നമ്പർ 38 ചുറ്റിപ്പറ്റി ഒരു സംശയം ഉയർന്നു. ഉള്ളിൽ എന്തോ ഒളിപ്പിച്ചിട്ടുണ്ടോ?",
+      "caption": "2026 · നിലവറ 38",
+      "highlight": "2026",
+      "kicker": "A SEALED VAULT",
+      "loc": "KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒളിപ്പിച്ച കുറ്റകൃത്യമാണോ എന്ന ഭയം പരന്നു. പോലീസ് അന്വേഷണം തുടങ്ങി.",
+      "caption": "ഭയം · അന്വേഷണം",
+      "highlight": "ഭയം",
+      "kicker": "POLICE INVESTIGATE",
+      "loc": "KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ശാസ്ത്രീയ പരിശോധനകൾ നടന്നു. പത്ത് വർഷം പഴക്കമുള്ള ഒരു കാണാതാകൽ കേസ് പോലും വീണ്ടും തുറന്നു.",
+      "caption": "12 ദിവസം · പരിശോധന",
+      "highlight": "12",
+      "kicker": "SCIENTIFIC TESTS",
+      "loc": "KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "12 ദിവസത്തിന് ശേഷം ഉത്തരം വന്നു. ഉള്ളിൽ ശവശരീരമില്ല, കുറ്റകൃത്യവുമില്ല!",
+      "caption": "ട്വിസ്റ്റ് · ഒന്നുമില്ല",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "NO BODY. NO CRIME.",
+      "loc": "VAULT NO. 38",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഭയമാണോ ഏറ്റവും വലിയ കഥ? നിങ്ങൾ എന്ത് കരുതുന്നു? കമന്റ് ചെയ്യൂ. കണ്ണൂരുകാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "നിങ്ങളുടെ ഉത്തരം?",
+      "highlight": "ഉത്തരം?",
+      "kicker": "COMMENT BELOW",
+      "loc": "KANNUR",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "നിലവറ നമ്പർ 38: കണ്ണൂരിനെ 12 ദിവസം പേടിപ്പിച്ച ദുരൂഹത 🔒\n\nഒളിപ്പിച്ച കുറ്റകൃത്യമുണ്ടെന്ന ഭയം, പോലീസ് അന്വേഷണം, ശാസ്ത്രീയ പരിശോധന, ഒരു പഴയ കാണാതാകൽ കേസ് പോലും വീണ്ടും തുറന്നു. 12 ദിവസത്തിന് ശേഷം? ഉള്ളിൽ ഒന്നുമില്ല!\n\nഭയമാണോ ഏറ്റവും വലിയ കഥ? കമന്റ് ചെയ്യൂ 👇\nകണ്ണൂരുകാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nKannur, 2026: fears of a hidden crime around Vault No. 38 led to police and scientific checks. After 12 days, there was no body and no crime.\n\nകണ്ണൂർ രഹസ്യങ്ങൾ #5\n\nCredits: 2026 news reports · Animation, voice and sound: AI-generated\n\n#Kannur #KeralaMystery #Vault38 #KeralaNews #MalayalamReels",
+  "search_ml": [
+    "നിലവറ 38",
+    "കണ്ണൂർ ദുരൂഹത",
+    "കണ്ണൂർ"
+  ],
+  "hashtags": [
+    "Kannur",
+    "KeralaMystery",
+    "Vault38",
+    "KeralaNews",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Owner's notes only - CHECK the news report before posting (location/institution not named on purpose)",
+    "No names, no accusations"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 4,
+        "gap": 0.7
+      },
+      {
+        "type": "rumble",
+        "clip": 1,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.2,
+        "count": 4,
+        "gap": 0.6
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.2
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "lat": 11.874,
+    "lon": 75.37,
+    "town": "കണ്ണൂർ",
+    "district": "KANNUR",
+    "from": "thalassery",
+    "scene": 1,
+    "kicker": "LOCATION"
+  }
+}
