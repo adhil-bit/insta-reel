@@ -2,13 +2,16 @@
 
 script.json:
   "relief": {"scene": 1, "lat": 11.152, "lon": 75.866, "town": "ചേലേമ്പ്ര",
-             "district": "MALAPPURAM", "kicker": "LOCATION", "look": "night"}
+             "district": "MALAPPURAM", "kicker": "LOCATION"}
+  optional: "look": "night" | "ink" (default: ink for the inkwash page), "from": "kozhikode"
+            (city for the distance thread; default = nearest district town; false = none)
 
 At render time (GitHub runner, has internet) this downloads free elevation data
 (Copernicus DEM GLO-90 / GLO-30, (c) DLR/ESA, free licence, public AWS bucket),
-paints a coloured, hill-shaded relief with a glowing Kerala outline (Natural Earth,
-public domain), and replaces anim_<scene>.js with a three.js fly-in: all of Kerala ->
-down to the town, with a pin, callout and source line.
+paints three hill-shaded colour tiles (Kerala / district / town) and replaces
+anim_<scene>.js with a three.js fly-in: Kerala -> the town, Kerala outline,
+distance thread from the nearest city, pin and callout, source line.
+Design spec: docs/design-methods.md -> "3D relief map scene" (Fable review, 19 Nov 2026).
 
   python3 -m pipeline.relief jobs/<slug>        # build the map files into jobs/<slug>/relief/
 """
@@ -24,26 +27,35 @@ import numpy as np
 from PIL import Image, ImageDraw, ImageFilter
 
 ROOT = Path(__file__).resolve().parents[1]
-KERALA = (10.45, 76.15, 7.5)          # centre lat, lon, lat span of the wide view
-TEX_W, TEX_H = 1080, 1920             # texture size (portrait, same as the reel)
-HM_W, HM_H = 360, 640                 # height-map size (mesh resolution)
+KERALA = (10.45, 76.15)                                    # centre of the wide view
+TILES = (("wide", 7.5, 90, (1080, 1920)), ("mid", 1.6, 90, (1080, 1920)), ("near", 0.45, 30, (1152, 2048)))
+HM_W, HM_H = 360, 640                                      # height-map (mesh) resolution
 
-LOOKS = {   # land colour ramp by elevation (m), sea colours, outline colour
-    "night": {"ramp": [(0, "#16301f"), (40, "#1f3b27"), (200, "#34502e"), (600, "#5c6338"), (1200, "#8a7449"),
-                       (1900, "#b89668"), (2700, "#e6d3ad")], "sea": ("#06111c", "#0d2c44"), "line": "#F5C542"},
-    "day":   {"ramp": [(0, "#2f5a32"), (40, "#3d6b3a"), (200, "#5a8045"), (600, "#8a8f55"), (1200, "#a8925f"),
-                       (1900, "#c9ae84"), (2700, "#f0e4c8")], "sea": ("#0e3a5c", "#1f6f96"), "line": "#FFE08A"},
-    "ink":   {"ramp": [(0, "#d9cdb2"), (200, "#cdbf9f"), (800, "#b8a47e"), (1600, "#9c8460"), (2700, "#6f5a40")],
-              "sea": ("#efe6d2", "#e2d6bb"), "line": "#7a2e1f"},
+CITIES = {   # district towns: lat, lon, Malayalam name
+    "kasaragod": (12.50, 74.99, "കാസർഗോഡ്"), "kannur": (11.874, 75.370, "കണ്ണൂർ"),
+    "thalassery": (11.748, 75.492, "തലശ്ശേരി"), "kozhikode": (11.252, 75.768, "കോഴിക്കോട്"),
+    "kalpetta": (11.608, 76.083, "കൽപ്പറ്റ"), "malappuram": (11.073, 76.074, "മലപ്പുറം"),
+    "palakkad": (10.776, 76.654, "പാലക്കാട്"), "thrissur": (10.527, 76.214, "തൃശ്ശൂർ"),
+    "kochi": (9.967, 76.243, "കൊച്ചി"), "kottayam": (9.591, 76.522, "കോട്ടയം"),
+    "alappuzha": (9.498, 76.339, "ആലപ്പുഴ"), "pathanamthitta": (9.265, 76.787, "പത്തനംതിട്ട"),
+    "kollam": (8.893, 76.614, "കൊല്ലം"), "thiruvananthapuram": (8.524, 76.936, "തിരുവനന്തപുരം"),
 }
+
+LOOKS = {   # land ramp at 0/30/55/75/90/100 % of the tile's elevation range
+    "night": {"land": ["#0F2A1E", "#1E4A2C", "#4A6B33", "#8C7A45", "#C4925A", "#F0D9A8"],
+              "sea": ("#050B14", "#0E2A3D"), "rim": ("#3FA7B5", 0.6), "other": "#5A6470", "ink": False},
+    "ink":   {"land": ["#E4D8BC", "#CBBB95", "#A8926A", "#7C6547", "#4A3A2B", "#4A3A2B"],
+              "sea": ("#EFE6D2", "#C9CFC4"), "rim": ("#7A2E1F", 0.35), "other": "#B9B2A2", "ink": True},
+}
+STOPS = [0, .30, .55, .75, .90, 1.0]
 
 
 def _hex(c):
     c = c.lstrip("#"); return np.array([int(c[i:i + 2], 16) for i in (0, 2, 4)], dtype=np.float32)
 
 
-def bounds_for(lat, lon, lat_span):
-    lon_span = lat_span * (TEX_W / TEX_H) / math.cos(math.radians(lat))
+def bounds_for(lat, lon, lat_span, size):
+    lon_span = lat_span * (size[0] / size[1]) / math.cos(math.radians(lat))
     return (lon - lon_span / 2, lat - lat_span / 2, lon + lon_span / 2, lat + lat_span / 2)
 
 
@@ -59,77 +71,72 @@ def dem(bounds, shape, glo=90):
         for lo in range(math.floor(w), math.floor(e) + 1):
             name = (f"Copernicus_DSM_COG_{code}_{'N' if la >= 0 else 'S'}{abs(la):02d}_00_"
                     f"{'E' if lo >= 0 else 'W'}{abs(lo):03d}_00_DEM")
-            url = f"/vsicurl/https://copernicus-dem-{glo}m.s3.amazonaws.com/{name}/{name}.tif"
             try:
-                srcs.append(rasterio.open(url))
+                srcs.append(rasterio.open(f"/vsicurl/https://copernicus-dem-{glo}m.s3.amazonaws.com/{name}/{name}.tif"))
             except Exception:
                 pass                          # ocean-only tiles don't exist
+    h, wd = shape
     if not srcs:
         return np.zeros(shape, np.float32)
-    h, wd = shape
-    res = ((e - w) / wd, (n - s) / h)
     with rasterio.Env(GDAL_DISABLE_READDIR_ON_OPEN="EMPTY_DIR", GDAL_HTTP_MAX_RETRY="4", GDAL_HTTP_RETRY_DELAY="2"):
-        arr, _ = merge(srcs, bounds=bounds, res=res, nodata=0, resampling=Resampling.bilinear)
+        arr, _ = merge(srcs, bounds=bounds, res=((e - w) / wd, (n - s) / h), nodata=0, resampling=Resampling.bilinear)
     a = np.nan_to_num(arr[0].astype(np.float32))[:h, :wd]
     if a.shape != (h, wd):
         a = np.array(Image.fromarray(a).resize((wd, h), Image.BILINEAR))
     return np.clip(a, 0, 9000)
 
 
-def shade(z, px_m, exag=2.5):
+def shade(z, px_m, exag):
     gy, gx = np.gradient(z * exag, px_m)
+    slope = np.arctan(np.hypot(gx, gy)); aspect = np.arctan2(-gx, gy)
     out = np.zeros_like(z)
     for az, wgt in ((315, 0.55), (255, 0.25), (15, 0.20)):              # multi-directional hillshade
         a, alt = math.radians(az), math.radians(38)
-        slope = np.arctan(np.hypot(gx, gy)); aspect = np.arctan2(-gx, gy)
         out += wgt * (np.sin(alt) * np.cos(slope) + np.cos(alt) * np.sin(slope) * np.cos(a - aspect))
     return np.clip(out, 0, 1)
 
 
-def paint(z, bounds, look, outline=True):
-    L = LOOKS.get(look, LOOKS["night"])
+def _poly_mask(bounds, size, name="Kerala"):
+    W0, S0, E0, N0 = bounds; w, h = size
+    m = Image.new("L", size, 0); d = ImageDraw.Draw(m)
+    for poly in json.loads((ROOT / "vendor" / "kerala.json").read_text())["states"].get(name, []):
+        d.polygon([((x - W0) / (E0 - W0) * w, (N0 - y) / (N0 - S0) * h) for x, y in poly], fill=255)
+    return np.asarray(m.filter(ImageFilter.GaussianBlur(2)), np.float32) / 255
+
+
+def paint(z, bounds, look, lo, hi, kerala_only=True):
+    L = LOOKS[look]
     h, w = z.shape
-    lat = (bounds[1] + bounds[3]) / 2
     px_m = (bounds[3] - bounds[1]) * 110570 / h
     water = z <= 0.5
-    # only water connected to the image edge is sea; the rest is backwaters / rivers (no coast glow)
-    wm = Image.fromarray((water * 255).astype(np.uint8))
+    wm = Image.fromarray((water * 255).astype(np.uint8))       # water touching the edge = sea; rest = backwaters
     for x, y in [(x, 0) for x in range(0, w, 7)] + [(x, h - 1) for x in range(0, w, 7)] + \
                 [(0, y) for y in range(0, h, 7)] + [(w - 1, y) for y in range(0, h, 7)]:
         if wm.getpixel((x, y)) == 255:
             ImageDraw.floodfill(wm, (x, y), 128)
-    wa = np.asarray(wm)
-    sea = wa == 128
-    inland = wa == 255
-    stops = L["ramp"]; ev = np.array([s[0] for s in stops], np.float32); cols = np.stack([_hex(s[1]) for s in stops])
-    land = np.stack([np.interp(z, ev, cols[:, k]) for k in range(3)], -1)
-    hs = shade(z, px_m, 3.0 if px_m > 200 else 5.0)[..., None]
-    land = land * (0.42 + 0.95 * hs)
-    land += np.array([18, 8, -6], np.float32) * (hs - 0.5)                # warm lights, cool shadows
-    # sea: deep colour with a lighter band hugging the coast
+    wa = np.asarray(wm); sea = wa == 128; inland = wa == 255
+    f = np.clip((z - lo) / max(1.0, hi - lo), 0, 1)
+    cols = np.stack([_hex(c) for c in L["land"]])
+    land = np.stack([np.interp(f, STOPS, cols[:, k]) for k in range(3)], -1)
+    hs = shade(z, px_m, 2.5 if px_m > 300 else (4 if px_m > 60 else 6))[..., None]
+    if L["ink"]:
+        dark = _hex("#2A1D14") / 255
+        land = land * (1 - 0.35 * (1 - hs) * (1 - dark))
+    else:
+        land = land * (0.45 + 0.9 * hs) + np.array([14, 6, -6], np.float32) * (hs - 0.5)
+    if kerala_only:                                          # Kerala is the hero: dim the neighbours
+        k = _poly_mask(bounds, (w, h))[..., None]
+        land = land * (k + (1 - k) * (_hex(L["other"]) / 255 * (0.8 if not L["ink"] else 1.0)))
     m = Image.fromarray((~sea * 255).astype(np.uint8))
     near = np.asarray(m.filter(ImageFilter.GaussianBlur(max(6, w / 90))), np.float32)[..., None] / 255
     s0, s1 = _hex(L["sea"][0]), _hex(L["sea"][1])
     seac = s0 + (s1 - s0) * np.clip(near * 1.6, 0, 1)
-    river = _hex(L["sea"][1]) * 0.75 + land * 0.25
+    river = s1 * 0.7 + land * 0.3
     img = np.where(sea[..., None], seac, np.where(inland[..., None], river, land))
     im = Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
-    # coastline glow
-    edge = m.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.GaussianBlur(1.2))
-    glow = Image.new("RGB", im.size, tuple(int(x) for x in (s1 * 0.6 + 120)))
-    im = Image.composite(glow, im, edge.point(lambda v: min(255, v * 2)))
-    if outline:
-        st = json.loads((ROOT / "vendor" / "kerala.json").read_text())["states"]
-        W0, S0, E0, N0 = bounds
-        def xy(p): return ((p[0] - W0) / (E0 - W0) * w, (N0 - p[1]) / (N0 - S0) * h)
-        lay = Image.new("L", im.size, 0); d = ImageDraw.Draw(lay)
-        lw = max(3, int(w / 260))
-        for poly in st.get("Kerala", []):
-            d.line([xy(p) for p in poly] + [xy(poly[0])], fill=255, width=lw, joint="curve")
-        col = Image.new("RGB", im.size, tuple(int(x) for x in _hex(L["line"])))
-        halo = lay.filter(ImageFilter.GaussianBlur(lw * 4)).point(lambda v: min(255, v * 3))
-        im = Image.composite(col, im, halo.point(lambda v: v // 3))
-        im = Image.composite(col, im, lay)
+    rim = m.filter(ImageFilter.FIND_EDGES).filter(ImageFilter.MaxFilter(3))
+    im = Image.composite(Image.new("RGB", im.size, tuple(int(x) for x in _hex(L["rim"][0]))), im,
+                         rim.point(lambda v: int(min(255, v) * L["rim"][1])))
     return im
 
 
@@ -138,23 +145,32 @@ def build(job: Path, force=False) -> Path:
     r = script["relief"]
     out = job / "relief"; out.mkdir(exist_ok=True)
     meta_p = out / "relief.json"
+    look = r.get("look") or ("ink" if script.get("theme") == "inkwash" else "night")
     if meta_p.exists() and not force:
-        return out
-    look = r.get("look", "ink" if str(script.get("account")) == "2" and script.get("theme") == "inkwash" else "night")
-    wide_b = bounds_for(*KERALA)
-    near_b = bounds_for(r["lat"], r["lon"], r.get("near_span", 0.30))
-    meta = {"lat": r["lat"], "lon": r["lon"], "look": look}
-    for name, b, glo in (("wide", wide_b, 90), ("near", near_b, 30)):
-        zp = out / f"{name}_z.png"
+        m = json.loads(meta_p.read_text())
+        if m.get("v") == 2 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
+            return out
+    meta = {"v": 2, "lat": r["lat"], "lon": r["lon"], "look": look}
+    for name, span, glo, size in TILES:
+        clat, clon = (KERALA if name == "wide" else (r["lat"], r["lon"]))
+        b = bounds_for(clat, clon, span, size)
+        zp = out / f"{name}_{span}_{clat:.3f}_{clon:.3f}_z.png"
         if zp.exists():
             z = np.asarray(Image.open(zp), np.float32)
         else:
-            z = dem(b, (TEX_H, TEX_W), glo)
+            z = dem(b, (size[1], size[0]), glo)
             Image.fromarray(np.clip(z, 0, 65535).astype(np.uint16)).save(zp, optimize=True)
-        paint(z, b, look, outline=True).save(out / f"{name}.jpg", quality=86, optimize=True)
+        if name == "near":                                   # stretch the ramp to the town's own relief
+            land = z[z > 0.5]
+            lo, hi = (float(np.percentile(land, 2)), float(np.percentile(land, 98))) if land.size else (0.0, 100.0)
+            hi = max(hi, lo + 60)
+            hk = 1.2                                         # local range shown as 1.2 km of relief
+        else:
+            lo, hi, hk = 0.0, 2600.0, 2.6
+        paint(z, b, look, lo, hi).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
-        Image.fromarray(np.clip(hm / 2800 * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
-        meta[name] = {"b": [round(x, 5) for x in b], "zmax": float(z.max())}
+        Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
+        meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
     meta_p.write_text(json.dumps(meta))
     return out
 
@@ -163,21 +179,33 @@ def _uri(p: Path, mime):
     return f"data:{mime};base64," + base64.b64encode(p.read_bytes()).decode()
 
 
+def _nearest_city(lat, lon, want=None):
+    def km(c): return math.hypot((c[0] - lat) * 110.57, (c[1] - lon) * 111.32 * math.cos(math.radians(lat)))
+    if want and str(want).lower() in CITIES:
+        c = CITIES[str(want).lower()]; return {"lat": c[0], "lon": c[1], "name": c[2], "km": round(km(c))}
+    best = min((c for c in CITIES.values() if km(c) > 6), key=km, default=None)
+    return {"lat": best[0], "lon": best[1], "name": best[2], "km": round(km(best))} if best and km(best) < 120 else None
+
+
 def scene_code(job: Path, script: dict) -> str:
     """The three.js fly-in scene for script['relief'] (builds the map files if needed)."""
     out = build(job)
     meta = json.loads((out / "relief.json").read_text())
     r = script["relief"]
+    outline = json.loads((ROOT / "vendor" / "kerala.json").read_text())["states"]["Kerala"][0][::2]
+    lat, lon = r["lat"], r["lon"]
+    coords = f"{abs(lat):.2f}°{'N' if lat >= 0 else 'S'} {abs(lon):.2f}°{'E' if lon >= 0 else 'W'}"
     cfg = {
-        "lat": r["lat"], "lon": r["lon"], "kerala": [KERALA[0], KERALA[1]],
-        "wide": meta["wide"]["b"], "near": meta["near"]["b"],
-        "town": r.get("town", ""), "district": r.get("district", ""), "kicker": r.get("kicker", "LOCATION"),
+        "lat": lat, "lon": lon, "kerala": list(KERALA), "ink": meta["look"] == "ink",
+        "tiles": {k: {"b": meta[k]["b"], "hk": meta[k]["hk"]} for k in ("wide", "mid", "near")},
+        "town": r.get("town", ""), "kicker": r.get("kicker", "LOCATION"),
+        "sub": (r.get("district", "") + " · " if r.get("district") else "") + coords,
         "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH"),
-        "ink": meta.get("look") == "ink", "exag": r.get("exag", 6),
+        "outline": outline, "city": None if r.get("from") is False else _nearest_city(lat, lon, r.get("from")),
+        "exag": r.get("exag", 5),
     }
-    imgs = "".join(f'<img id="rl_{k}" src="{_uri(out / f, m)}" style="display:none">'
-                   for k, f, m in (("wide", "wide.jpg", "image/jpeg"), ("near", "near.jpg", "image/jpeg"),
-                                   ("wideh", "wide_h.png", "image/png"), ("nearh", "near_h.png", "image/png")))
+    imgs = "".join(f'<img id="rl_{k}{s}" src="{_uri(out / f"{k}{e}", m)}" style="display:none">'
+                   for k in ("wide", "mid", "near") for s, e, m in (("", ".jpg", "image/jpeg"), ("h", "_h.png", "image/png")))
     js = (Path(__file__).resolve().parent / "lib" / "relief_scene.js").read_text(encoding="utf-8")
     return "document.write(" + json.dumps(imgs) + ");\nconst RL = " + json.dumps(cfg, ensure_ascii=False) + ";\n" + js
 

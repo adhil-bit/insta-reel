@@ -142,6 +142,8 @@ def config_for(script: dict, i: int, t0: float, n: int = 6, code: str = "") -> d
     whip = cfg.get("whip", [])
     accent = cfg.get("accent") or ("#b5281f" if light else "#ffb547")
     pin = script.get("pin") if (script.get("pin") or {}).get("scene") == i else None
+    if (script.get("relief") or {}).get("scene") == i:     # 3D map scene: no particles, gentle push
+        overlay = "none"; cfg.setdefault("push", 0.03)
     return {"overlay": overlay, "color": color, "push": cfg.get("push", 0.12 if i == 0 else 0.07),
             "pan": cfg.get("pan", 60), "dir": 1 if i % 2 == 0 else -1,
             "kick": 0.10 if i == twist else cfg.get("kick", 0.04), "i": i, "t0": round(t0, 3),
