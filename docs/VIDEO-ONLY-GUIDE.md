@@ -99,7 +99,7 @@ done
 ```
 
 - 5 scenes + the hook = 6 animations (`anim_0.js` = hook … `anim_5.js` = last scene).
-- **Total voice ≤ 500 Malayalam characters** (≈ 40 s).
+- **Total voice ≤ 450 Malayalam characters** (≈ 32–35 s). Put the share line ("…അയച്ചു കൊടുക്കൂ") in the middle (scene 3), not only at the end: from 19 Nov data, hits held viewers 18–20 s and had 8–12 % shares/reach.
 - Page 2 adds `"account": "2", "theme": "inkwash"`; captions/headline in Malayalam.
 - `cine.overlay`: `dust`, `embers`, `rain`, `fog`, `stars` (dark) or `ink` (paper).
 - `sound_plan` layer types: `river`, `crickets`, `shimmer`, `heartbeat`, `rumble`, `gong` (`clip` = scene index, 0 = hook; `at` = 0–1 position in that clip).
