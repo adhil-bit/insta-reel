@@ -259,7 +259,7 @@ def page(kind: str, script: dict, scene: dict, duration: float, speech: float) -
     globe_html = (GLOBE.replace("%(LAT)s", str(opening["lat"])).replace("%(LON)s", str(opening["lon"]))
                   .replace("%(D)s", f"{duration:.3f}").replace("ACC", accent)) if globe_on else ""
     globe_mark, globe_js = (globe_html.split("<script>", 1)[0], "<script>" + globe_html.split("<script>", 1)[1]) if globe_on else ("", "")
-    return (f'<style>{_css(accent)}{_nb_css(th) if th else ""}{_naadu_css() if script.get("style") == "naadu" else ""}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
+    return (f'<style>{_css(accent)}{_nb_css(th) if th else ""}{_naadu_css() if script.get("style") == "naadu" else ""}{_design_css(script)}</style><div class="ov{' kcover' if kind == 'cover' else ''}">{globe_mark}<div class="vig"></div>{body}'
             f'<div class="src">Sources: {html.escape(src)} · Animated illustration</div></div>' + JS.replace("%(STATE)s", state) + globe_js)
 
 
@@ -317,7 +317,7 @@ def thumbnail(script: dict, bg: Path, out: Path) -> Path:
 body {{ margin:0; width:1080px; height:1920px; background:#000 url('{bg.resolve().as_uri()}') center/cover; }}
 .shade {{ position:absolute; inset:0; background:linear-gradient(180deg, rgba(0,0,0,.35) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 48%, rgba(0,0,0,.88) 78%, #000 100%); }}
 .cover {{ bottom:300px; }}
-{_nb_css(th) if th else ""}{_naadu_css() + '.shade { background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 30%, rgba(0,0,0,0) 45%, rgba(0,0,0,0) 80%, rgba(0,0,0,.35) 100%); }' if naadu else ""}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
+{_nb_css(th) if th else ""}{_naadu_css() + '.shade { background:linear-gradient(180deg, rgba(0,0,0,.55) 0%, rgba(0,0,0,.25) 30%, rgba(0,0,0,0) 45%, rgba(0,0,0,0) 80%, rgba(0,0,0,.35) 100%); }' if naadu else ""}{_design_css(script)}</style><div class="shade"></div><div class="brand">{html.escape(config.BRAND["name"])}<em>{html.escape(config.BRAND.get('category_labels', {}).get(script.get('category', ''), script.get('category', '')))}</em></div>
 <div class="cover"><div class="bar"></div><div class="kick" id="kick">{kick}</div><div class="big">{_accent_html(eng, script.get('accent_words', []))}</div></div>
 <script>/* fitKick: shrink the headline until its longest word fits the width */
 document.fonts.ready.then(function fitKick() {{ const k = document.getElementById('kick'); const cs = getComputedStyle(k), cv = document.createElement('canvas').getContext('2d');
@@ -329,3 +329,29 @@ document.fonts.ready.then(function fitKick() {{ const k = document.getElementByI
         b = pw.chromium.launch(); pg = b.new_page(viewport={"width": 1080, "height": 1920})
         pg.goto(hp.resolve().as_uri()); pg.wait_for_timeout(500); pg.screenshot(path=str(out), type="jpeg", quality=92); b.close()
     return out
+
+
+def _design_css(script: dict) -> str:
+    """Per-reel design template overrides (see pipeline/lib/designs.js and docs/design-methods.md)."""
+    d = script.get("design")
+    C = {
+        "newsprint": ("#1b1a17", "#C8302B", "none", "#F4EEDD", "#1b1a17", "border-left:12px solid #C8302B; border-radius:0; box-shadow:0 8px 22px rgba(60,40,10,.35);", "Baloo", "rgba(236,228,207,.0)"),
+        "casefile":  ("#ffffff", "#E0483E", "0 4px 22px rgba(0,0,0,.7)", "#F2EBDD", "#2a2622", "border-radius:2px; transform:rotate(-1deg); box-shadow:0 10px 24px rgba(0,0,0,.5);", "Baloo", None),
+        "album":     ("#EFE6D2", "#D9A35B", "0 3px 18px rgba(0,0,0,.8)", "rgba(10,8,7,.62)", "#EFE6D2", "border-radius:6px;", "Chilanka", None),
+        "vhs":       ("#8CFF9E", "#ffffff", "0 0 18px rgba(140,255,158,.55)", "rgba(0,0,0,.72)", "#8CFF9E", "border:2px solid #8CFF9E; border-radius:0;", "Baloo", None),
+        "forensic":  ("#ffffff", "#35E0FF", "0 0 20px rgba(53,224,255,.35)", "rgba(7,18,28,.86)", "#ffffff", "border-left:8px solid #35E0FF; border-radius:4px;", "Baloo", None),
+        "mural":     ("#140d08", "#B8341F", "none", "#F1DFB8", "#140d08", "border:4px solid #140d08; border-radius:0;", "Baloo", "rgba(0,0,0,0)"),
+    }.get(d)
+    if not C:
+        return ""
+    ink, acc, shadow, subbg, subink, subx, font, shade = C
+    css = f"""
+.claim, .head, .cover .kick {{ color:{ink} !important; text-shadow:{shadow} !important; font-family:{font}, Baloo, Noto !important; }}
+.claim b, .head b, .cover .kick b {{ color:{acc} !important; }}
+.claim .eng, .cover .big, .cover .big b, .kicker {{ color:{acc} !important; text-shadow:{shadow} !important; }}
+.sub {{ background:{subbg} !important; color:{subink} !important; font-family:{font}, Baloo, Noto !important; text-shadow:none !important; {subx} }}
+.sub span.on {{ color:{acc} !important; }}
+"""
+    if shade is not None:
+        css += f".shade {{ background:{shade} !important; }}\n"
+    return css

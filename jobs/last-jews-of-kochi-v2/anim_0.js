@@ -95,5 +95,10 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1250, 'day'); G.sun(g, t, 820, 640, 60, false); }); CINE.layer(1.0, () => { floor(g, 1250, t); synagogue(g, 600, 1560, 1.15, t); }); CINE.layer(1.6, () => { lamp(g, 200, 1780, 1.1, t); }); CINE.layer(1.8, () => { g.fillStyle = 'rgba(30,16,10,0.92)'; g.beginPath(); g.moveTo(-200, H); g.lineTo(-200, 1780); for (let x = -200; x <= W + 200; x += 70) g.lineTo(x, 1780 + Math.sin(x * 0.03 + 1) * 26); g.lineTo(W + 200, H); g.fill(); });
+ALBUM.page(g, t);
+const fade = 1 - 0.9 * ease.inOut(clamp((t - 0.8) / 1.4));
+ALBUM.photo(g, 'a0', q => { const gr = q.createLinearGradient(0, 300, 0, 1300); gr.addColorStop(0, '#9fb3c4'); gr.addColorStop(1, '#e8e2d2'); q.fillStyle = gr; q.fillRect(0, 0, W, H); synagogue(q, 540, 1260, 1.05, t); q.fillStyle = '#8b7d6b'; q.fillRect(0, 1260, W, 700);
+  q.save(); q.globalAlpha = fade; crowd(q, t, 1560, 9, 0.9, { col: '#2a2420' }); q.restore(); person(q, 470, 1620, 1.0, t, { col: '#1a1512', head: 'cap' }); person(q, 610, 1620, 0.95, t, { col: '#1a1512', head: 'bun', skirt: true }); }, 80, 640, 920, 820, -0.02, 0);
+ALBUM.write(g, 'ഒരു കാലത്ത്… 2000', 330, 1555, 54, (t - 0.2) / 0.6);
+ALBUM.write(g, 'ഇന്ന്?', 820, 1560, 64, (t - 1.8) / 0.4, '#D9A35B');
 };

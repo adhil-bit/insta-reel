@@ -57,12 +57,7 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "dust",
-    "letterbox": [
-      5
-    ]
-  },
+  "cine": {},
   "hook_voiceover": "ഒരു കാലത്ത് രണ്ടായിരത്തോളം പേർ. ഇന്ന് വിരലിലെണ്ണാവുന്നവർ. കൊച്ചിയിലെ അവസാന ജൂതന്മാർ.",
   "scenes": [
     {
@@ -176,6 +171,8 @@
     "district": "KOCHI",
     "from": false,
     "scene": 1,
-    "kicker": "LOCATION"
-  }
+    "kicker": "LOCATION",
+    "look": "ink"
+  },
+  "design": "album"
 }

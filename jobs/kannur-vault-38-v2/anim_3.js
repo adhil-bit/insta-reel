@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#0d1016'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { const days = 1 + Math.floor(11 * G.cl(t / (D * 0.85))); for (let i = 0; i < 12; i++) { const x = 170 + (i % 4) * 250, y = 1150 + Math.floor(i / 4) * 190; g.fillStyle = i < days ? '#2a2c34' : '#16181e'; g.beginPath(); g.roundRect(x - 100, y - 70, 200, 150, 16); g.fill(); g.fillStyle = i < days ? '#F5C542' : '#3a3c44'; g.font = '800 64px Inter'; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(i + 1), x, y + 4); if (i < days) { g.strokeStyle = '#d83a2b'; g.lineWidth = 6; g.beginPath(); g.moveTo(x - 60, y - 40); g.lineTo(x + 60, y + 50); g.stroke(); } } });
+LAB.bg(g, t);
+g.save(); for (let i = 0; i < 26; i++) { const y = 700 + i * 26, ph = t * 2.2 + i * 0.45, x1 = 540 + Math.sin(ph) * 150, x2 = 540 - Math.sin(ph) * 150, z = Math.cos(ph);
+  g.strokeStyle = 'rgba(53,224,255,0.35)'; g.lineWidth = 3; g.beginPath(); g.moveTo(x1, y); g.lineTo(x2, y); g.stroke(); g.fillStyle = z > 0 ? LAB.CY : '#1b6f80'; g.beginPath(); g.arc(x1, y, 10, 0, 6.283); g.fill(); g.fillStyle = z < 0 ? LAB.CY : '#1b6f80'; g.beginPath(); g.arc(x2, y, 10, 0, 6.283); g.fill(); } g.restore();
+LAB.box(g, 300, 660, 480, 720, (t - 0.2) / 0.5, 'SAMPLE 04');
+LAB.readout(g, ['ARCHIVE: -10 YEARS', 'MISSING PERSON CASE', 'STATUS: REOPENED'], 120, 1520 - 120, (t - 0.8) / 1.6, [LAB.CY, LAB.CY, LAB.TENT]);
 };

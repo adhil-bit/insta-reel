@@ -95,5 +95,10 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1200, 'blue'); g.fillStyle = '#f1f4ff'; g.beginPath(); g.arc(300, 760, 40, 0, 6.283); g.fill(); }); CINE.layer(0.35, () => { G.fort(g, 820, 1220, 0.55); G.haze(g, 1200, 70, 'rgba(160,190,230,0.18)'); }); CINE.layer(1.0, () => { floor(g, 1220, t); person(g, 440, 1720, 1.35, t, { pose: 'bow', head: 'turban' }); arrows(g, t, 600, 1420, 900, 1150, 4, 0.9); }); CINE.layer(1.8, () => { for (let i = 0; i < 3; i++) G.palm(g, 40 + i * 70, 1990, 700 + i * 80, t); });
+MURAL.wall(g, t); MURAL.band(g, 610); MURAL.panel(g, 80, 700, 920, 780); MURAL.band(g, 1500);
+g.save(); g.beginPath(); g.rect(94, 714, 892, 752); g.clip();
+g.fillStyle = MURAL.RED; g.beginPath(); g.arc(760, 900, 90, 0, 6.283); g.fill(); g.strokeStyle = MURAL.BLK; g.lineWidth = 6; g.stroke();
+FX.paint(g, 'm0f', q => G.fort(q, 780, 1440, 0.62), MURAL.BLU, MURAL.BLK, 7);
+FX.paint(g, 'm0a', q => person(q, 300, 1440, 1.55, t, { pose: 'bow', head: 'turban' }), MURAL.GRN, MURAL.BLK, 7);
+arrows(g, t, 400, 1050, 700, 1080, 4, 1); g.restore();
 };

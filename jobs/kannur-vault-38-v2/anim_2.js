@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1300, 'blue'); }); CINE.layer(1.0, () => { floor(g, 1450, t); const blink = Math.sin(t * 8) > 0; g.save(); g.globalCompositeOperation = 'screen'; g.fillStyle = blink ? 'rgba(255,40,40,0.3)' : 'rgba(40,90,255,0.3)'; g.beginPath(); g.arc(540, 1250, 600, 0, 6.283); g.fill(); g.restore(); vaultDoor(g, 540, 1250, 0.6, t, 0); for (let i = 0; i < 5; i++) person(g, 140 + i * 200, 1750 + (i % 2) * 20, 0.95, t * 0.3, { head: 'cap', ph: i, col: '#0a0c14' }); });
+LAB.bg(g, t);
+g.save(); g.strokeStyle = 'rgba(53,224,255,0.25)'; g.lineWidth = 2; for (let i = -8; i <= 8; i++) { g.beginPath(); g.moveTo(540 + i * 40, 900); g.lineTo(540 + i * 160, 1500); g.stroke(); } for (let j = 0; j < 7; j++) { const y = 900 + Math.pow(j / 6, 1.6) * 600; g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); } g.restore();
+LAB.xray(g, 'x2', q => { q.fillStyle = '#fff'; q.fillRect(0, 0, W, H); officer(q, 260, 1420, 1.0, t); officer(q, 820, 1420, 1.0, t); }, [0, 700, W, 800]);
+[[1, 430, 1300], [2, 600, 1380], [3, 700, 1240]].forEach(([n, x, y], i) => { const k = clamp((t - 0.4 - i * 0.4) / 0.2); if (k > 0) LAB.tent(g, n, x, y, 0.6 + 0.4 * ease.out(k)); });
+LAB.readout(g, ['CASE: OPEN', 'POLICE: ON SITE'], 120, 760, (t - 0.3) / 1.4);
 };

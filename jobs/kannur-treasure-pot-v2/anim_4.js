@@ -95,5 +95,15 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1200, 'day'); G.sun(g, t, 540, 700, 70, false); }); CINE.layer(1.0, () => { floor(g, 1200, t); for (let i = 0; i < 7; i++) { const x = 220 + i * 105, y = 1520 + (i % 2) * 40, r = 46; const cg = g.createRadialGradient(x - 14, y - 14, 4, x, y, r); cg.addColorStop(0, '#fff6d0'); cg.addColorStop(1, i % 2 ? '#b07a1c' : '#9a9ea8'); g.fillStyle = cg; g.beginPath(); g.ellipse(x, y, r, r * 0.92, 0, 0, 6.283); g.fill(); g.strokeStyle = 'rgba(60,30,10,0.6)'; g.lineWidth = 3; g.beginPath(); g.arc(x, y, r * 0.7, 0, 6.283); g.stroke(); } }); CINE.layer(1.8, () => { g.fillStyle = 'rgba(30,16,10,0.92)'; g.beginPath(); g.moveTo(-200, H); g.lineTo(-200, 1780); for (let x = -200; x <= W + 200; x += 70) g.lineTo(x, 1780 + Math.sin(x * 0.03 + 1) * 26); g.lineTo(W + 200, H); g.fill(); });
+NEWS.paper(g, t);
+NEWS.clip(g, 80, 620, 520, 560, -0.03, (g, x0, y0, w, h) => {
+  FX.halftone(g, 'h4', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0 + w / 2, y0 + h / 2); q.rotate(t * 0.15);
+    const r = 190; const cg = q.createRadialGradient(-50, -50, 10, 0, 0, r); cg.addColorStop(0, '#f2f2f2'); cg.addColorStop(1, '#6a6a6a'); q.fillStyle = cg; q.beginPath(); q.arc(0, 0, r, 0, 6.283); q.fill();
+    q.strokeStyle = '#333'; q.lineWidth = 8; q.beginPath(); q.arc(0, 0, r - 22, 0, 6.283); q.stroke(); q.fillStyle = '#333'; for (let i = 0; i < 24; i++) { const a = i / 24 * 6.283; q.beginPath(); q.arc(Math.cos(a) * (r - 44), Math.sin(a) * (r - 44), 6, 0, 6.283); q.fill(); }
+    q.beginPath(); for (let i = 0; i < 10; i++) { const a = i / 10 * 6.283 - 1.57, rr = i % 2 ? 40 : 95; q.lineTo(Math.cos(a) * rr, Math.sin(a) * rr); } q.closePath(); q.fill(); q.restore(); }, [x0, y0, w, h], 8);
+}, 'ഏകദേശം 200 വർഷം');
+g.save(); const p = ease.inOut(clamp((t - 0.6) / 1.2)); g.strokeStyle = NEWS.INK; g.lineWidth = 6; g.beginPath(); g.moveTo(660, 760); g.lineTo(660, 760 + 400 * p); g.stroke();
+g.font = '800 54px Inter'; g.fillStyle = NEWS.INK; g.textAlign = 'left'; g.fillText('1820s', 690, 790); if (p > 0.95) g.fillText('2024', 690, 1170);
+g.fillStyle = NEWS.RED; g.beginPath(); g.moveTo(660, 760 + 400 * p + 30); g.lineTo(640, 760 + 400 * p); g.lineTo(680, 760 + 400 * p); g.fill(); g.restore();
+NEWS.scrawl(g, 'ആര്? എന്തിന്?', 540, 1300, 96, (t - D * 0.55) / 0.4);
 };

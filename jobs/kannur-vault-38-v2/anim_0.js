@@ -95,5 +95,8 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#0b0d12'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { vaultDoor(g, 540, 1300, 1.05, t, 0); g.save(); g.globalCompositeOperation = 'screen'; const bx = 540 + Math.sin(t * 1.3) * 120; const rg = g.createRadialGradient(bx, 1250, 10, bx, 1250, 320); rg.addColorStop(0, 'rgba(255,230,170,0.45)'); rg.addColorStop(1, 'rgba(255,230,170,0)'); g.fillStyle = rg; g.fillRect(0, 800, W, 1000); g.restore(); }); CINE.layer(1.8, () => { floor(g, 1700, t); });
+LAB.bg(g, t); LAB.xray(g, 'x0', q => { q.fillStyle = '#ffffff'; q.fillRect(0, 0, W, H); vaultDoor(q, 540, 1060, 1.1, t, 0, '38'); }, [120, 640, 840, 860]);
+LAB.box(g, 170, 700, 740, 740, (t - 0.2) / 0.5, 'VAULT 38'); LAB.scan(g, 170, 700, 740, 740, (t % 1.6) / 1.6);
+const pulse = 0.5 + 0.5 * Math.sin(t * 7); g.save(); g.globalAlpha = 0.25 * pulse; g.strokeStyle = LAB.WARN; g.lineWidth = 14; g.strokeRect(20, 20, W - 40, H - 40); g.restore();
+LAB.readout(g, ['ANALYZING...', 'STATUS: UNKNOWN'], 170, 1530, (t - 0.6) / 1.2, [LAB.CY, LAB.WARN]);
 };

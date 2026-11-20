@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#0b0d12'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { vaultDoor(g, 540, 1300, 1.05, t, G.ease(G.cl(t / (D * 0.5)))); }); CINE.layer(1.8, () => { floor(g, 1720, t); });
+LAB.bg(g, t); const done = clamp((t - 0.9) / 0.3);
+LAB.xray(g, 'x4', q => { q.fillStyle = '#ffffff'; q.fillRect(0, 0, W, H); vaultDoor(q, 540, 1060, 1.1, t, ease.out(clamp((t - 0.3) / 0.8)), '38'); }, [120, 640, 840, 860]);
+LAB.box(g, 170, 700, 740, 740, 1, done > 0 ? 'SCAN COMPLETE' : 'SCANNING', done > 0 ? LAB.OK : LAB.CY); LAB.scan(g, 170, 700, 740, 740, clamp(t / 0.9));
+if (done > 0) { g.save(); g.globalAlpha = 0.12 * done; g.fillStyle = LAB.OK; g.fillRect(0, 0, W, H); g.restore(); }
+LAB.readout(g, ['✓ NO BODY', '✓ NO CRIME'], 220, 1530, (t - 1.0) / 0.8, LAB.OK, 44);
 };

@@ -25,6 +25,7 @@ script.json (all optional):
   "cine": false  -> switch the whole pass off.
 """
 import json
+from pathlib import Path
 
 LIGHT_THEMES = {"inkwash", "whiteboard", "notebook", "retro"}
 
@@ -124,12 +125,25 @@ JS = r"""
 """
 
 
+# design templates (pipeline/lib/designs.js): each sets its own finish so reels don't share one look
+DESIGNS = {
+    "newsprint": {"overlay": "none", "grade": False, "leak": False, "grain": 0.04, "vignette": 0.10, "accent": "#C8302B", "letterbox": []},
+    "casefile":  {"overlay": "dust", "grade": ["#3b2a1e", "#4a2a22", "#6b1f1a"], "leak": True, "accent": "#B3261E"},
+    "album":     {"overlay": "dust", "color": "#efe6d2", "grade": False, "leak": False, "grain": 0.09, "vignette": 0.55, "accent": "#D9A35B", "letterbox": []},
+    "vhs":       {"overlay": "none", "grade": False, "leak": False, "grain": 0.0, "vignette": 0.30, "accent": "#8CFF9E", "letterbox": []},
+    "forensic":  {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.35, "accent": "#35E0FF", "letterbox": []},
+    "mural":     {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.12, "accent": "#B8341F", "letterbox": []},
+}
+LIGHT_DESIGNS = {"newsprint", "mural"}
+DESIGN_JS = Path(__file__).resolve().parent / "lib" / "designs.js"
+
+
 def config_for(script: dict, i: int, t0: float, n: int = 6, code: str = "") -> dict | None:
     cfg = script.get("cine", {})
     if cfg is False:
         return None
-    cfg = dict(cfg or {})
-    light = (script.get("theme") or "") in LIGHT_THEMES
+    cfg = {**DESIGNS.get(script.get("design"), {}), **dict(cfg or {})}
+    light = (script.get("theme") or "") in LIGHT_THEMES or script.get("design") in LIGHT_DESIGNS
     overlay = cfg.get("overlay") or ("ink" if light else "dust")
     color = cfg.get("color") or {"ink": "#3a3029", "embers": "#ff9a3c", "rain": "#cfe3ff",
                                  "stars": "#ffffff", "fog": "#ffffff"}.get(overlay, "#ffd59a")
@@ -155,8 +169,8 @@ def config_for(script: dict, i: int, t0: float, n: int = 6, code: str = "") -> d
             "whipIn": i in whip, "whipOut": (i + 1) in whip,
             "layered": "CINE.layer" in (code or ""), "accent": accent,
             "series": script.get("series"), "pin": pin,
-            "loc": ([script.get("hook_loc")] + [s.get("loc") for s in script.get("scenes", [])] + [None] * 20)[i],
-            "hud": (script.get("hud") or {}).get(str(i))}
+            "loc": None if script.get("design") in DESIGNS else ([script.get("hook_loc")] + [s.get("loc") for s in script.get("scenes", [])] + [None] * 20)[i],
+            "hud": None if script.get("design") in DESIGNS else (script.get("hud") or {}).get(str(i))}
 
 
 def wrap(code: str | None, script: dict, i: int, t0: float, n: int = 6) -> str | None:
@@ -166,4 +180,5 @@ def wrap(code: str | None, script: dict, i: int, t0: float, n: int = 6) -> str |
     cfg = config_for(script, i, t0, n, code)
     if cfg is None:
         return code
-    return code + "\n" + JS % {"CFG": json.dumps(cfg, ensure_ascii=False)}
+    kit = DESIGN_JS.read_text(encoding="utf-8") + "\n" if script.get("design") in DESIGNS else ""
+    return kit + code + "\n" + JS % {"CFG": json.dumps(cfg, ensure_ascii=False)}

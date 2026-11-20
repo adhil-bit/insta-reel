@@ -95,5 +95,14 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-const fear = 0.5 + 0.5 * Math.sin(t * 6); CINE.layer(0.1, () => { G.sky(g, t, 1150, 'blue'); }); CINE.layer(1.0, () => { floor(g, 1150, t); pit(g, 540, 1520, 330, 90); treasurePot(g, 540, 1560, 1.0, t, 0); for (let i = 0; i < 4; i++) person(g, 140 + i * 260 + (i < 2 ? -1 : 1) * 60 * G.ease(G.cl(t / 1.2)), 1720, 0.9, t, { pose: 'walk', head: 'bun', skirt: true, ph: i }); g.save(); g.globalAlpha = 0.5 * fear; g.strokeStyle = '#d83a2b'; g.lineWidth = 10; g.beginPath(); g.arc(540, 1420, 260 + fear * 30, 0, 6.283); g.stroke(); g.restore(); }); G.txt(g, '?!', 540, 820, 150, '#ffcf7a', G.cl((t - 0.4) / 0.3));
+NEWS.paper(g, t);
+const a1 = ease.out(clamp(t / 0.5)), a2 = ease.out(clamp((t - 0.9) / 0.5));
+if (a1 > 0) NEWS.clip(g, 50 - 500 * (1 - a1), 620, 500, 640, -0.05, (g, x0, y0, w, h) => {
+  FX.halftone(g, 'h2a', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0, y0); q.fillStyle = '#8a857a'; q.fillRect(0, 300, w, h); pit(q, w / 2, 380, 170, 50); treasurePot(q, w / 2, 410, 0.55, t, 0);
+    person(q, 60, 470, 0.5, t, { pose: 'walk', head: 'bun', skirt: true, col: '#222' }); person(q, w - 70, 470, 0.5, t, { pose: 'walk', head: 'bun', skirt: true, col: '#222', ph: 1 }); q.restore(); }, [x0, y0, w, h], 9);
+}, 'ബോംബ്?');
+if (a2 > 0) NEWS.clip(g, 540 + 500 * (1 - a2), 780, 500, 620, 0.04, (g, x0, y0, w, h) => {
+  FX.halftone(g, 'h2b', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0, y0); q.fillStyle = '#3a3a3a'; q.fillRect(0, 0, w, h); lamp(q, w / 2, 400, 1.1, t); G.smoke(q, t, w / 2 - 20, 200, 1); q.restore(); }, [x0, y0, w, h], 9);
+}, 'മന്ത്രവാദം?');
+NEWS.marker(g, 300, 700, 170, 60, (t - 0.6) / 0.5); NEWS.marker(g, 790, 865, 190, 60, (t - 1.5) / 0.5);
 };

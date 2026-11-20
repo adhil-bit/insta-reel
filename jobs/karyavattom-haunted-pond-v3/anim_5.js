@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { G.sky(g, t, 1150, 'blue'); g.fillStyle = '#f1f4ff'; g.beginPath(); g.arc(780, 740, 42, 0, 6.283); g.fill(); campus(g, 540, 1180, 0.8, t); floor(g, 1180, t); pond(g, 540, 1560, 1.15, t, 0.35); mist(g, t, 1500, 0.3); }); chip(g, '@ കാര്യവട്ടം ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
+g.fillStyle = '#1f3fbf'; g.fillRect(-200, -200, W + 400, H + 400);
+g.save(); g.fillStyle = '#fff'; g.font = '700 46px "DejaVu Sans Mono", monospace'; g.textAlign = 'left';
+const items = ['▶ PLAY   TAPE 1', '▶ PLAY   TAPE 2', '● REC    നിങ്ങളുടെ കഥ']; items.forEach((s, i) => { const a = clamp((t - 0.3 - i * 0.35) / 0.2); g.globalAlpha = a; g.fillText(s, 120, 760 + i * 110); });
+g.globalAlpha = 1; if (Math.floor(t * 2) % 2 === 0) g.fillRect(120, 1070, 34, 50); g.font = '700 34px "DejaVu Sans Mono", monospace'; g.fillText('MENU', 120, 650); g.restore();
+VHS.post(g, t, 0);
 };

@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { G.sky(g, t, 1200, 'blue'); g.fillStyle = '#f1f4ff'; g.beginPath(); g.arc(300, 760, 40, 0, 6.283); g.fill(); G.fort(g, 820, 1220, 0.55); G.haze(g, 1200, 70, 'rgba(160,190,230,0.18)'); floor(g, 1220, t); person(g, 440, 1720, 1.35, t, { pose: 'bow', head: 'turban' }); arrows(g, t, 600, 1420, 900, 1150, 4, 0.9); }); chip(g, '@ വയനാട്ടുകാരൻ ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
+MURAL.wall(g, t); MURAL.band(g, 610); MURAL.band(g, 1500);
+FX.paint(g, 'm5a', q => person(q, 820, 1440, 1.4, t, { pose: 'bow', head: 'turban' }), MURAL.GRN, MURAL.BLK, 7);
+g.save(); const k = ease.out(clamp((t - 0.2) / 0.6)); g.translate(90, 780); g.fillStyle = MURAL.CRM; g.fillRect(0, 0, 560 * k, 520); g.strokeStyle = MURAL.BLK; g.lineWidth = 8; g.strokeRect(0, 0, 560 * k, 520);
+g.fillStyle = MURAL.RED; g.beginPath(); g.arc(0, 260, 40, 0, 6.283); g.fill(); g.beginPath(); g.arc(560 * k, 260, 40, 0, 6.283); g.fill();
+if (k > 0.9) { g.fillStyle = MURAL.BLK; g.font = '800 64px Baloo'; g.textAlign = 'center'; g.fillText('സ്കൂളിൽ', 280, 230); g.fillText('പഠിച്ചോ?', 280, 320); } g.restore();
 };

@@ -95,5 +95,6 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1200, 'dawn'); G.sun(g, t, 760, 1120, 100); }); CINE.layer(0.5, () => { campus(g, 540, 1220, 0.85, t); }); CINE.layer(1.0, () => { floor(g, 1220, t); pond(g, 540, 1560, 1.15, t, 1); crowd(g, t, 1820, 6, 0.6, {}); }); CINE.layer(1.8, () => { G.palm(g, 1000, 1990, 760, t); });
+VHS.cam(g, 'v4', q => { const gr = q.createLinearGradient(0, 0, 0, 1100); gr.addColorStop(0, '#5fa8de'); gr.addColorStop(1, '#d6ecf7'); q.fillStyle = gr; q.fillRect(-100, -100, W + 200, H + 200); grassHills(q, 1050, t, ['#6ea05a', '#4f8a45', '#3a6e35']); pond(q, 540, 1380, 1.15, t, 0); crowd(q, t, 1700, 6, 0.8, { col: '#2c3a4a' }); for (let i = 0; i < 4; i++) { const x = (t * 120 + i * 260) % (W + 200) - 100, y = 600 + i * 50; q.strokeStyle = '#1d2b36'; q.lineWidth = 5; q.beginPath(); q.moveTo(x - 20, y); q.quadraticCurveTo(x - 8, y - 12, x, y); q.quadraticCurveTo(x + 8, y - 12, x + 20, y); q.stroke(); } }, t, 'day');
+VHS.post(g, t, 0); VHS.hud(g, t, 'DAY MODE', 'NOV 2026', 'day');
 };

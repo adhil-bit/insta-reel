@@ -95,5 +95,15 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1100, 'monsoon'); }); CINE.layer(0.3, () => { hill(g, 300, 1120, 0.8, t, '#1f2e26'); G.haze(g, 1100, 60, 'rgba(200,214,192,0.22)'); }); CINE.layer(1.0, () => { floor(g, 1150, t); pit(g, 540, 1560, 330, 90); treasurePot(g, 540, 1600, 1.05, t, 0.35 + 0.25 * Math.sin(t * 2)); }); CINE.layer(1.8, () => { g.fillStyle = 'rgba(30,16,10,0.92)'; g.beginPath(); g.moveTo(-200, H); g.lineTo(-200, 1780); for (let x = -200; x <= W + 200; x += 70) g.lineTo(x, 1780 + Math.sin(x * 0.03 + 1) * 26); g.lineTo(W + 200, H); g.fill(); });
+NEWS.paper(g, t);
+NEWS.tab(g, '2024 · കണ്ണൂർ', 90, 612);
+NEWS.clip(g, 90, 690, 900, 780, -0.02 + 0.004 * Math.sin(t), (g, x0, y0, w, h) => {
+  FX.halftone(g, 'h0', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0, y0);
+    const gr = q.createLinearGradient(0, 0, 0, 330); gr.addColorStop(0, '#e9eef2'); gr.addColorStop(1, '#b9c4c8'); q.fillStyle = gr; q.fillRect(0, 0, w, 330);
+    q.fillStyle = '#6d6a63'; q.fillRect(0, 330, w, h); pit(q, w / 2, 560, 250, 70); treasurePot(q, w / 2, 600, 0.75, t, 0.25);
+    person(q, 150, 700, 0.75, t, { pose: 'dig', head: 'bun', skirt: true, col: '#2a2a2a' }); person(q, w - 140, 700, 0.75, t, { pose: 'dig', head: 'bun', skirt: true, col: '#2a2a2a', ph: 2 }); q.restore(); }, [x0, y0, w, h], 10);
+  g.save(); g.globalCompositeOperation = 'multiply'; g.globalAlpha = 0.55; g.fillStyle = NEWS.SPOT; g.beginPath(); g.ellipse(x0 + w / 2 + 6, y0 + 420, 120, 60, 0, 0, 6.283); g.fill(); g.restore();
+});
+NEWS.marker(g, 545, 1080, 230, 190, (t - 0.5) / 0.8);
+NEWS.scrawl(g, '?!', 860, 900, 150, (t - 1.3) / 0.4);
 };

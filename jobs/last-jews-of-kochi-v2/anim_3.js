@@ -95,5 +95,11 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#1a0f0a'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { lamp(g, 540, 1380, 1.6, t); g.save(); g.fillStyle = '#3a2418'; g.fillRect(280, 1460, 520, 30); g.restore(); person(g, 440, 1700, 1.1, t * 0.2, { head: 'bun', skirt: true, rim: true }); });
+ALBUM.page(g, t);
+g.save(); g.translate(400, 1000); g.rotate(-0.04); g.fillStyle = '#c9a66b'; g.beginPath(); g.ellipse(0, 0, 300, 380, 0, 0, 6.283); g.fill(); g.beginPath(); g.ellipse(0, 0, 268, 348, 0, 0, 6.283); g.clip();
+const k = FX.shot('a3', q => { const gr = q.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, '#e8dcc4'); gr.addColorStop(1, '#b49a78'); q.fillStyle = gr; q.fillRect(0, 0, W, H); person(q, 540, 1900, 3.0, t, { col: '#2a2018', head: 'bun', skirt: true }); }, [140, 500, 800, 1000], 0.5);
+g.filter = 'sepia(1) contrast(1.1)'; g.drawImage(k, -268, -348, 536, 696); g.filter = 'none'; g.restore();
+ALBUM.write(g, '2019 · 96', 400, 1460, 64, (t - 0.4) / 0.5);
+ALBUM.photo(g, 'a3b', q => { q.fillStyle = '#d6cbb5'; q.fillRect(0, 0, W, H); person(q, 420, 1500, 1.6, t, { col: '#2a2018', head: 'cap' }); person(q, 660, 1500, 1.55, t, { col: '#2a2018', head: 'bun', skirt: true }); }, 640, 1100, 360, 400, 0.07, 0, clamp((t - D * 0.5) / 0.4));
+ALBUM.write(g, '2 പേർ മാത്രം', 820, 1580, 50, (t - D * 0.6) / 0.4, '#D9A35B');
 };

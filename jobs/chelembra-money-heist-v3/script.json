@@ -51,12 +51,7 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "rain",
-    "letterbox": [
-      4
-    ]
-  },
+  "cine": {},
   "hook_voiceover": "ധൂം സിനിമ കണ്ട് ഇറങ്ങിയ കള്ളന്മാർ! ഒറ്റ രാത്രിയിൽ ഒരു ബാങ്കിൽ നിന്ന് 80 കിലോ സ്വർണ്ണം!",
   "scenes": [
     {
@@ -176,5 +171,6 @@
     "town": "ചേലേമ്പ്ര",
     "district": "MALAPPURAM · KERALA",
     "kicker": "LOCATION"
-  }
+  },
+  "design": "casefile"
 }

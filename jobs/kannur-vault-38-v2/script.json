@@ -50,12 +50,7 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "dust",
-    "letterbox": [
-      5
-    ]
-  },
+  "cine": {},
   "hook_voiceover": "കണ്ണൂരിലെ നിലവറ നമ്പർ 38. ഉള്ളിൽ ഒരു കുറ്റകൃത്യം? 12 ദിവസം നാട് മുഴുവൻ പേടിച്ചു!",
   "scenes": [
     {
@@ -172,5 +167,6 @@
     "from": "thalassery",
     "scene": 1,
     "kicker": "LOCATION"
-  }
+  },
+  "design": "forensic"
 }

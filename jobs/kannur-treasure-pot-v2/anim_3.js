@@ -95,5 +95,13 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#1a0d08'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { treasurePot(g, 540, 1500, 1.6, t, G.ease(G.cl(t / 0.9))); }); CINE.layer(1.6, () => { for (let i = 0; i < 26; i++) { const p = ((t * 0.35 + i / 26) % 1); g.save(); g.globalAlpha = 1 - p; g.fillStyle = i % 3 ? '#f5c542' : '#d9dde3'; g.beginPath(); g.ellipse(540 + Math.cos(i * 2.4) * (120 + p * 380), 1240 - p * 520 + Math.sin(i) * 60, 14, 8, i, 0, 6.283); g.fill(); g.restore(); } });
+NEWS.paper(g, t);
+NEWS.clip(g, 70, 610, 940, 860, 0.012, (g, x0, y0, w, h) => {
+  FX.halftone(g, 'h3', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0, y0); q.fillStyle = '#2b2b2b'; q.fillRect(0, 0, w, h); treasurePot(q, 250, 640, 0.95, t, ease.out(clamp(t / 0.8))); goldStack(q, 640, 600, 0.9, t, 9);
+    for (let i = 0; i < 9; i++) { q.fillStyle = '#d9d9d9'; q.beginPath(); q.ellipse(480 + (i % 5) * 80, 660 + Math.floor(i / 5) * 50, 34, 30, 0, 0, 6.283); q.fill(); } q.restore(); }, [x0, y0, w, h], 9);
+  g.save(); g.globalCompositeOperation = 'multiply'; g.globalAlpha = 0.75 * clamp((t - 0.6) / 0.4); g.fillStyle = NEWS.SPOT;
+  g.beginPath(); g.ellipse(x0 + 250, y0 + 470, 150, 90, 0, 0, 6.283); g.fill(); g.fillRect(x0 + 470, y0 + 430, 330, 180); g.restore();
+}, 'നിധി!');
+NEWS.marker(g, 330, 1110, 190, 150, (t - 1.0) / 0.5); NEWS.scrawl(g, 'സ്വർണ്ണം', 300, 1540, 66, (t - 1.3) / 0.3);
+NEWS.marker(g, 730, 1120, 210, 120, (t - 1.8) / 0.5); NEWS.scrawl(g, 'നാണയങ്ങൾ', 770, 1540, 66, (t - 2.1) / 0.3, NEWS.RED, 0.04);
 };

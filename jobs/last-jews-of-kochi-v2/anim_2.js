@@ -95,5 +95,10 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1250, 'blue'); g.fillStyle = '#f1f4ff'; g.beginPath(); g.arc(760, 780, 40, 0, 6.283); g.fill(); }); CINE.layer(1.0, () => { floor(g, 1250, t); synagogue(g, 540, 1560, 1.0, t); const n = Math.max(1, Math.round(10 * (1 - G.ease(G.cl(t / (D * 0.8)))))); for (let i = 0; i < 10; i++) person(g, 110 + i * 95, 1790, 0.55, t * 0.2, { ph: i, rim: false, col: i < n ? '#0d1322' : 'rgba(13,19,34,0.12)' }); });
+ALBUM.page(g, t);
+const gone = Math.floor(10 * clamp((t - 0.5) / (D * 0.6)));
+ALBUM.photo(g, 'a2', q => { q.fillStyle = '#3a2f25'; q.fillRect(0, 0, W, H); const rg = q.createRadialGradient(540, 700, 40, 540, 900, 900); rg.addColorStop(0, 'rgba(255,230,170,0.7)'); rg.addColorStop(1, 'rgba(0,0,0,0)'); q.fillStyle = rg; q.fillRect(0, 0, W, H);
+  lamp(q, 540, 640, 1.2, t); q.fillStyle = '#6d5a45'; q.fillRect(0, 1350, W, 600);
+  for (let i = 0; i < 10; i++) { const x = 150 + (i % 5) * 195, y = 1380 + Math.floor(i / 5) * 230; q.save(); q.globalAlpha = i < gone ? 0.15 : 1; q.fillStyle = '#1c1510'; q.fillRect(x - 40, y - 130, 12, 150); q.fillRect(x - 40, y - 20, 90, 14); q.fillRect(x + 38, y - 20, 10, 60); q.fillRect(x - 40, y - 20, 10, 60); q.restore(); } }, 90, 640, 900, 780, 0.015, 0);
+ALBUM.write(g, (10 - gone) + ' / 10', 540, 1555, 80, 1, '#D9A35B', 'center', 0);
 };

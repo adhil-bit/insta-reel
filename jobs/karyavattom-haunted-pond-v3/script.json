@@ -50,12 +50,7 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "fog",
-    "letterbox": [
-      4
-    ]
-  },
+  "cine": {},
   "hook_voiceover": "കേരള സർവകലാശാല കാമ്പസിലെ ഒരു കുളം. പ്രേതമുണ്ടെന്ന് പേടിച്ച് ആരും അടുത്ത് പോയില്ല. സത്യം എന്ത്?",
   "scenes": [
     {
@@ -171,5 +166,6 @@
     "district": "THIRUVANANTHAPURAM",
     "scene": 1,
     "kicker": "LOCATION"
-  }
+  },
+  "design": "vhs"
 }

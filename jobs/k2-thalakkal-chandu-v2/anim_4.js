@@ -95,5 +95,11 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1250, 'day'); G.sun(g, t, 540, 700, 70, false); }); CINE.layer(1.0, () => { floor(g, 1250, t); pillar(g, 540, 1640, 1.15); }); CINE.layer(1.8, () => { G.palm(g, 1020, 1990, 860, t); G.palm(g, 60, 1990, 760, t); });
+MURAL.wall(g, t); MURAL.band(g, 610); MURAL.panel(g, 80, 700, 920, 780); MURAL.band(g, 1500);
+g.save(); g.beginPath(); g.rect(94, 714, 892, 752); g.clip();
+const glow = g.createRadialGradient(540, 980, 20, 540, 980, 420); glow.addColorStop(0, 'rgba(255,200,90,0.55)'); glow.addColorStop(1, 'rgba(255,200,90,0)'); g.fillStyle = glow; g.fillRect(94, 714, 892, 752);
+FX.paint(g, 'm4p', q => pillar(q, 540, 1450, 1.0), MURAL.CRM, MURAL.BLK, 7);
+for (const lx of [300, 780]) { g.save(); g.translate(lx, 1440); g.fillStyle = MURAL.OCH; g.strokeStyle = MURAL.BLK; g.lineWidth = 5; g.beginPath(); g.ellipse(0, 0, 60, 16, 0, 0, 6.283); g.fill(); g.stroke(); g.fillRect(-10, -260, 20, 260); g.strokeRect(-10, -260, 20, 260); g.beginPath(); g.ellipse(0, -260, 70, 20, 0, 0, 6.283); g.fill(); g.stroke(); const f = 1 + 0.12 * Math.sin(t * 11 + lx); g.fillStyle = MURAL.RED; g.beginPath(); g.ellipse(0, -300, 16 * f, 36 * f, 0, 0, 6.283); g.fill(); g.fillStyle = '#ffd27a'; g.beginPath(); g.ellipse(0, -292, 8, 18 * f, 0, 0, 6.283); g.fill(); g.restore(); }
+for (let i = 0; i < 9; i++) { const x = 160 + i * 95, y = 1430; g.fillStyle = i % 2 ? MURAL.RED : MURAL.OCH; g.beginPath(); g.arc(x, y, 18, 0, 6.283); g.fill(); g.strokeStyle = MURAL.BLK; g.lineWidth = 4; g.stroke(); g.fillStyle = MURAL.GRN; g.beginPath(); g.ellipse(x + 24, y + 8, 18, 8, 0.5, 0, 6.283); g.fill(); }
+g.restore();
 };

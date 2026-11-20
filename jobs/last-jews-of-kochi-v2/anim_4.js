@@ -95,5 +95,11 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1250, 'day'); G.sun(g, t, 540, 700, 70, false); }); CINE.layer(1.0, () => { floor(g, 1250, t); person(g, 420, 1700, 1.2, t * 0.2, { head: 'bun', skirt: true }); person(g, 640, 1700, 1.25, t * 0.2, { head: 'cap' }); const a = G.cl((t - D * 0.4) / 0.4); g.save(); g.globalAlpha = a; g.fillStyle = '#d83a2b'; g.beginPath(); const hx = 530, hy = 1180; g.moveTo(hx, hy + 30); g.bezierCurveTo(hx - 60, hy - 20, hx - 20, hy - 60, hx, hy - 25); g.bezierCurveTo(hx + 20, hy - 60, hx + 60, hy - 20, hx, hy + 30); g.fill(); g.restore(); }); CINE.layer(1.8, () => { g.fillStyle = 'rgba(30,16,10,0.92)'; g.beginPath(); g.moveTo(-200, H); g.lineTo(-200, 1780); for (let x = -200; x <= W + 200; x += 70) g.lineTo(x, 1780 + Math.sin(x * 0.03 + 1) * 26); g.lineTo(W + 200, H); g.fill(); });
+ALBUM.page(g, t);
+const warm = ease.inOut(clamp((t - 0.8) / 1.4));
+ALBUM.photo(g, 'a4', q => { const gr = q.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, '#e9b872'); gr.addColorStop(1, '#7a4f2a'); q.fillStyle = gr; q.fillRect(0, 0, W, H); q.fillStyle = '#3d6b4a'; q.fillRect(0, 1250, W, 700);
+  q.fillStyle = '#5a3a22'; q.fillRect(250, 1350, 580, 26); q.fillRect(270, 1376, 18, 140); q.fillRect(790, 1376, 18, 140);
+  person(q, 420, 1500, 1.25, t, { col: '#1d140e', head: 'cap' }); person(q, 650, 1500, 1.15, t, { col: '#1d140e', head: 'bun', skirt: true });
+  q.save(); q.globalAlpha = warm; q.fillStyle = '#ffd38a'; q.beginPath(); q.arc(540, 820, 90, 0, 6.283); q.fill(); q.restore(); }, 80, 640, 920, 820, -0.015, warm);
+ALBUM.write(g, 'താഹ  +  സാറ', 540, 1560, 72, (t - 1.2) / 0.6, '#D9A35B', 'center', 0);
 };

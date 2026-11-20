@@ -95,5 +95,8 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { g.fillStyle = '#0b0d12'; g.fillRect(-300, -300, W + 600, H + 600); vaultDoor(g, 540, 1300, 1.05, t, 0); floor(g, 1700, t); }, 1300); chip(g, '@ കണ്ണൂർ ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
+LAB.bg(g, t);
+const k = clamp((t - 0.8) / 0.6); LAB.wave(g, 80, 1000, 920, t, 160 * (1 - k) + 6, k > 0.5 ? LAB.OK : LAB.WARN);
+LAB.readout(g, ['FEAR LEVEL', k > 0.5 ? 'NORMAL' : 'CRITICAL'], 120, 760, (t - 0.2) / 0.8, [LAB.CY, k > 0.5 ? LAB.OK : LAB.WARN], 40);
+LAB.box(g, 70, 820, 940, 360, (t - 0.1) / 0.5, 'YOUR VERDICT?');
 };

@@ -95,5 +95,7 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1150, 'blue'); g.fillStyle = '#f1f4ff'; g.beginPath(); g.arc(780, 740, 42, 0, 6.283); g.fill(); }); CINE.layer(0.4, () => { campus(g, 540, 1180, 0.8, t); }); CINE.layer(1.0, () => { floor(g, 1180, t); pond(g, 540, 1560, 1.15, t, 0.35); mist(g, t, 1500, 0.3); }); CINE.layer(1.8, () => { G.palm(g, 1000, 1990, 760, t, '#0d1322'); G.palm(g, 80, 1990, 640, t, '#0d1322'); });
+VHS.cam(g, 'v0', q => { q.fillStyle = '#0b120e'; q.fillRect(-100, -100, W + 200, H + 200); grassHills(q, 1000, t, ['#2a3a30', '#1d2a22', '#121a15']); pond(q, 540, 1350, 1.15, t, 0.4); mist(q, t, 1250, 0.45); for (let i = 0; i < 7; i++) G.palm(q, 60 + i * 170, 1180 + (i % 2) * 40, 420, t, '#0a0f0c'); }, t);
+VHS.torch(g, 540 + Math.sin(t * 1.3) * 260, 1250, 620);
+const gl = (t > 1.2 && t < 1.45) ? 1 : 0; VHS.post(g, t, gl); VHS.hud(g, t, 'CAM 2');
 };

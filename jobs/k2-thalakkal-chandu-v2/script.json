@@ -51,9 +51,7 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "embers"
-  },
+  "cine": {},
   "hook_voiceover": "അമ്പും വില്ലും കൊണ്ട് ഒരു ബ്രിട്ടീഷ് കോട്ട പിടിച്ചെടുത്ത വയനാട്ടുകാരൻ! ആരാണ് തലക്കൽ ചന്തു?",
   "scenes": [
     {
@@ -170,6 +168,8 @@
     "town": "പനമരം",
     "district": "WAYANAD",
     "scene": 1,
-    "kicker": "LOCATION"
-  }
+    "kicker": "LOCATION",
+    "look": "ink"
+  },
+  "design": "mural"
 }

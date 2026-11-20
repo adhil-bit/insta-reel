@@ -95,5 +95,7 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { G.sky(g, t, 1200, 'blue'); }); CINE.layer(1.0, () => { floor(g, 1200, t); pond(g, 540, 1520, 1.2, t, 0.2); mist(g, t, 1450, 0.45); }); CINE.layer(1.8, () => { g.fillStyle = '#0a0f16'; for (let i = 0; i < 26; i++) { const x = i * 44 - 30; g.beginPath(); g.moveTo(x, H); g.quadraticCurveTo(x + 10, 1700 - (i % 4) * 40, x + 22 + Math.sin(t + i) * 8, 1640 - (i % 5) * 30); g.quadraticCurveTo(x + 30, 1760, x + 44, H); g.fill(); } });
+VHS.cam(g, 'v2', q => { q.fillStyle = '#0b120e'; q.fillRect(-100, -100, W + 200, H + 200); grassHills(q, 1100, t, ['#26352c', '#1a261f', '#101712']); campus(q, 540, 1200, 0.9, t); q.fillStyle = '#2a2a24'; q.beginPath(); q.moveTo(420, H); q.lineTo(520, 1250); q.lineTo(560, 1250); q.lineTo(660, H); q.fill();
+  const mx = 540 + Math.sin(t * 0.8) * 160; q.save(); q.globalAlpha = 0.35 + 0.2 * Math.sin(t * 3); const rg = q.createRadialGradient(mx, 1300, 10, mx, 1300, 160); rg.addColorStop(0, 'rgba(255,255,255,0.9)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); q.fillStyle = rg; q.fillRect(mx - 200, 1100, 400, 420); q.restore(); mist(q, t, 1350, 0.4); }, t);
+const gl = (t % 2.2 > 1.9) ? 1 : 0; VHS.post(g, t, gl); VHS.hud(g, t, 'CAM 3');
 };

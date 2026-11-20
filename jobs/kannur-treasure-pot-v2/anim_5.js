@@ -95,5 +95,10 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { G.sky(g, t, 1100, 'monsoon'); hill(g, 300, 1120, 0.8, t, '#1f2e26'); G.haze(g, 1100, 60, 'rgba(200,214,192,0.22)'); floor(g, 1150, t); pit(g, 540, 1560, 330, 90); treasurePot(g, 540, 1600, 1.05, t, 0.6); }); chip(g, '@ കണ്ണൂർ ചങ്ക്', 540, 700, G.cl((t - D * 0.3) / 0.25));
+NEWS.paper(g, t);
+g.save(); g.fillStyle = NEWS.INK; g.fillRect(70, 610, 940, 8); g.fillRect(70, 760, 940, 3); g.textAlign = 'center'; g.font = '800 92px Baloo'; g.fillText('കണ്ണൂർ രഹസ്യങ്ങൾ', 540, 724); g.font = '700 26px Inter'; g.fillText('2026 · ലക്കം 4 · വായനക്കാരുടെ ഊഹം', 540, 800); g.restore();
+const p = ease.out(clamp((t - 0.3) / 0.5)); g.save(); g.globalAlpha = p; g.fillStyle = NEWS.INK; g.font = '800 118px Baloo'; g.textAlign = 'center'; g.fillText('ആര് കുഴിച്ചിട്ടു?', 540, 960); g.restore();
+g.save(); g.setLineDash([22, 14]); g.strokeStyle = NEWS.INK; g.lineWidth = 4; g.strokeRect(110, 1030, 860, 200); g.setLineDash([]); g.font = '700 46px Baloo'; g.fillStyle = NEWS.INK; g.textAlign = 'left'; g.fillText('നിങ്ങളുടെ ഊഹം:', 150, 1110);
+const w = 560 * clamp((t - 1.0) / 1.2); g.strokeStyle = NEWS.RED; g.lineWidth = 6; g.beginPath(); g.moveTo(150, 1180); for (let x = 0; x <= w; x += 12) g.lineTo(150 + x, 1180 + Math.sin(x * 0.09) * 8); g.stroke();
+g.font = '700 54px Inter'; g.fillStyle = NEWS.INK; g.fillText('✂', 80, 1048); g.restore();
 };

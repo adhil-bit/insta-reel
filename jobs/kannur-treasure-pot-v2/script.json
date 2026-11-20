@@ -52,13 +52,6 @@
       ]
     ]
   },
-  "cine": {
-    "overlay": "rain",
-    "color": "#d6e6d0",
-    "letterbox": [
-      5
-    ]
-  },
   "hook_voiceover": "മഴക്കുഴി കുഴിക്കുമ്പോൾ മണ്ണിനടിയിൽ ഒരു കുടം! ബോംബാണെന്ന് പേടിച്ചു. ഉള്ളിൽ എന്തായിരുന്നു?",
   "scenes": [
     {
@@ -174,6 +167,8 @@
     "town": "ചെങ്ങളായി",
     "district": "KANNUR",
     "scene": 1,
-    "kicker": "LOCATION"
-  }
+    "kicker": "LOCATION",
+    "look": "ink"
+  },
+  "design": "newsprint"
 }

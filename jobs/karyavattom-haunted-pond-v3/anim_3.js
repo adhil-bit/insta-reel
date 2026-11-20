@@ -95,5 +95,12 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-CINE.layer(0.1, () => { g.fillStyle = '#0b1220'; g.fillRect(-300, -300, W + 600, H + 600); }); CINE.layer(1.0, () => { pond(g, 300, 1450, 0.6, t, 0.3); pond(g, 780, 1450, 0.6, t, 0.3); const k = G.ease(G.cl(t / (D * 0.6))); g.save(); g.setLineDash([18, 14]); g.strokeStyle = '#F5C542'; g.lineWidth = 6; g.beginPath(); g.moveTo(300, 1300); g.quadraticCurveTo(540, 1100, 300 + 480 * k, 1300); g.stroke(); g.restore(); G.txt(g, '≠', 540, 1450, 140, '#F5C542', G.cl((t - D * 0.55) / 0.2)); });
+g.fillStyle = '#000'; g.fillRect(-200, -200, W + 400, H + 400);
+for (const [k, y0, lab] of [['v3a', 640, 'TAPE 1 · കാമ്പസ്'], ['v3b', 1120, 'TAPE 2 · 2 KM അകലെ']]) {
+  g.save(); g.beginPath(); g.rect(60, y0, 960, 440); g.clip(); g.translate(0, y0 - 700);
+  VHS.cam(g, k, q => { q.fillStyle = '#0b120e'; q.fillRect(-100, -100, W + 200, H + 200); grassHills(q, 820, t, ['#2a3a30', '#1d2a22', '#121a15']); pond(q, 540, 980, 1.0, t, 0.3); mist(q, t, 900, 0.4); }, t);
+  g.restore(); g.save(); g.strokeStyle = VHS.GRN; g.lineWidth = 3; g.strokeRect(60, y0, 960, 440); g.fillStyle = VHS.GRN; g.font = '700 32px "DejaVu Sans Mono", monospace'; g.fillText(lab, 84, y0 + 46); g.restore(); }
+const p = ease.inOut(clamp((t - 0.8) / 1.0)); g.save(); g.strokeStyle = '#ff3b30'; g.lineWidth = 6; g.setLineDash([16, 10]); g.beginPath(); g.moveTo(900, 900); g.lineTo(900, 900 + 460 * p); g.stroke(); g.setLineDash([]);
+if (p > 0.9) { g.fillStyle = '#ff3b30'; g.font = '800 54px Inter'; g.textAlign = 'right'; g.fillText('2 km', 870, 1140); } g.restore();
+VHS.post(g, t, (t > 0.4 && t < 0.6) ? 1 : 0); VHS.hud(g, t, 'PLAYBACK');
 };

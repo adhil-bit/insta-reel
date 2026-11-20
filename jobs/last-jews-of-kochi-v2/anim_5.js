@@ -95,5 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-loopZoom(g, t, D, () => { G.sky(g, t, 1250, 'day'); G.sun(g, t, 820, 640, 60, false); floor(g, 1250, t); synagogue(g, 600, 1560, 1.15, t); lamp(g, 200, 1780, 1.1, t); }); chip(g, '@ കൊച്ചി ചങ്ക് 🤝', 540, 700, G.cl((t - D * 0.3) / 0.25));
+ALBUM.page(g, t);
+g.save(); g.translate(540, 1010); g.rotate(0.02); g.strokeStyle = 'rgba(239,230,210,0.5)'; g.setLineDash([16, 14]); g.lineWidth = 4; g.strokeRect(-360, -330, 720, 660); g.setLineDash([]);
+g.fillStyle = '#0d0b0a'; g.strokeStyle = '#3a332c'; for (const [cx, cy, sx, sy] of [[-360, -330, 1, 1], [360, -330, -1, 1], [-360, 330, 1, -1], [360, 330, -1, -1]]) { g.fillStyle = '#2a2420'; g.beginPath(); g.moveTo(cx, cy); g.lineTo(cx + 80 * sx, cy); g.lineTo(cx, cy + 80 * sy); g.fill(); } g.restore();
+ALBUM.write(g, 'നിങ്ങളുടെ ചങ്ക്?', 540, 1010, 84, (t - 0.3) / 0.8);
+ALBUM.write(g, '@ടാഗ് ചെയ്യൂ', 540, 1120, 56, (t - 1.2) / 0.5, '#D9A35B', 'center', 0.02);
 };
