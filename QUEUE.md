@@ -1,12 +1,13 @@
 # Posting queue
 
-_Updated Thu 19 Nov, 05:55 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 20 Nov, 07:06 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
+- chelembra-money-heist-v3
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
@@ -33,11 +34,15 @@ _Updated Thu 19 Nov, 05:55 PM IST. Times are approximate: each reel posts within
 - k2-unniyarcha
 - k2-unniyarcha-v2
 - kannur-treasure-pot-v2
+- kannur-vault-38-v2
+- karyavattom-haunted-pond-v3
+- last-jews-of-kochi-v2
 
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
+| Ilaveezhapoonchira: the valley where leaves don't fall | 2026-11-20T01:36 |
 | Madayipara's Jootha Kulam | 2026-11-19T11:13 |
 | Marco Polo saw Ezhimala: the Kingdom of Eli | 2026-11-18T01:35 |
 | Payyanur Salt Satyagraha 1930 | 2026-11-17T04:06 |
@@ -47,4 +52,3 @@ _Updated Thu 19 Nov, 05:55 PM IST. Times are approximate: each reel posts within
 | Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
 | A hacker hunting a teacher for 4 years: is your phone safe? | 2026-11-13T01:35 |
 | Ambalappuzha: the chess debt still being paid | 2026-11-12T13:38 |
-| Bhoothathankettu: the demons' dam stopped by a rooster | 2026-11-09T13:32 |
