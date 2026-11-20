@@ -98,7 +98,7 @@ window.renderFrame = function (t) { const D = DURATION;
 ALBUM.page(g, t);
 const fade = 1 - 0.9 * ease.inOut(clamp((t - 0.8) / 1.4));
 ALBUM.photo(g, 'a0', q => { const gr = q.createLinearGradient(0, 300, 0, 1300); gr.addColorStop(0, '#9fb3c4'); gr.addColorStop(1, '#e8e2d2'); q.fillStyle = gr; q.fillRect(0, 0, W, H); synagogue(q, 540, 1260, 1.05, t); q.fillStyle = '#8b7d6b'; q.fillRect(0, 1260, W, 700);
-  q.save(); q.globalAlpha = fade; crowd(q, t, 1560, 9, 0.9, { col: '#2a2420' }); q.restore(); person(q, 470, 1620, 1.0, t, { col: '#1a1512', head: 'cap' }); person(q, 610, 1620, 0.95, t, { col: '#1a1512', head: 'bun', skirt: true }); }, 80, 640, 920, 820, -0.02, 0);
+  q.save(); q.globalAlpha = fade; crowd(q, t, 1560, 9, 0.9, { col: '#2a2420' }); q.restore(); person(q, 470, 1620, 1.0, t, { col: '#1a1512', head: 'cap' }); person(q, 610, 1620, 0.95, t, { col: '#1a1512', head: 'bun', skirt: true }); }, 80, 740, 920, 740, -0.02, 0);
 ALBUM.write(g, 'ഒരു കാലത്ത്… 2000', 330, 1555, 54, (t - 0.2) / 0.6);
 ALBUM.write(g, 'ഇന്ന്?', 820, 1560, 64, (t - 1.8) / 0.4, '#D9A35B');
 };

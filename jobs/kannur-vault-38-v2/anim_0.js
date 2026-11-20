@@ -95,8 +95,8 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-LAB.bg(g, t); LAB.xray(g, 'x0', q => { q.fillStyle = '#ffffff'; q.fillRect(0, 0, W, H); vaultDoor(q, 540, 1060, 1.1, t, 0, '38'); }, [120, 640, 840, 860]);
-LAB.box(g, 170, 700, 740, 740, (t - 0.2) / 0.5, 'VAULT 38'); LAB.scan(g, 170, 700, 740, 740, (t % 1.6) / 1.6);
+LAB.bg(g, t); LAB.xray(g, 'x0', q => { q.fillStyle = '#ffffff'; q.fillRect(0, 0, W, H); vaultDoor(q, 540, 1060, 1.1, t, 0, '38'); }, [120, 720, 840, 860]);
+LAB.box(g, 170, 780, 740, 740, (t - 0.2) / 0.5, 'VAULT 38'); LAB.scan(g, 170, 780, 740, 740, (t % 1.6) / 1.6);
 const pulse = 0.5 + 0.5 * Math.sin(t * 7); g.save(); g.globalAlpha = 0.25 * pulse; g.strokeStyle = LAB.WARN; g.lineWidth = 14; g.strokeRect(20, 20, W - 40, H - 40); g.restore();
 LAB.readout(g, ['ANALYZING...', 'STATUS: UNKNOWN'], 170, 1530, (t - 0.6) / 1.2, [LAB.CY, LAB.WARN]);
 };

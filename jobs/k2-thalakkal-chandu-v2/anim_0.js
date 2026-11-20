@@ -95,9 +95,9 @@ function floor(g, y, t) { const gr = g.createLinearGradient(0, y, 0, H); gr.addC
 function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((t - (D - 0.6)) / 0.6), 2); g.save(); g.translate(540, cy); g.scale(z, z); g.translate(-540, -cy); fn(); g.restore(); }
 
 window.renderFrame = function (t) { const D = DURATION;
-MURAL.wall(g, t); MURAL.band(g, 610); MURAL.panel(g, 80, 700, 920, 780); MURAL.band(g, 1500);
-g.save(); g.beginPath(); g.rect(94, 714, 892, 752); g.clip();
-g.fillStyle = MURAL.RED; g.beginPath(); g.arc(760, 900, 90, 0, 6.283); g.fill(); g.strokeStyle = MURAL.BLK; g.lineWidth = 6; g.stroke();
+MURAL.wall(g, t); MURAL.band(g, 770); MURAL.panel(g, 80, 850, 920, 640); MURAL.band(g, 1500);
+g.save(); g.beginPath(); g.rect(94, 864, 892, 612); g.clip();
+g.fillStyle = MURAL.RED; g.beginPath(); g.arc(760, 1000, 75, 0, 6.283); g.fill(); g.strokeStyle = MURAL.BLK; g.lineWidth = 6; g.stroke();
 FX.paint(g, 'm0f', q => G.fort(q, 780, 1440, 0.62), MURAL.BLU, MURAL.BLK, 7);
 FX.paint(g, 'm0a', q => person(q, 300, 1440, 1.55, t, { pose: 'bow', head: 'turban' }), MURAL.GRN, MURAL.BLK, 7);
 arrows(g, t, 400, 1050, 700, 1080, 4, 1); g.restore();

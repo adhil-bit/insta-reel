@@ -96,12 +96,12 @@ function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((
 
 function filmStrip(g, t, y) { g.save(); g.translate(540 - t * 20, y); g.rotate(-0.04); g.fillStyle = 'rgba(12,12,16,0.94)'; g.fillRect(-900, -110, 1800, 220); g.fillStyle = 'rgba(235,235,235,0.85)'; for (let x = -880; x < 900; x += 80) { g.fillRect(x, -98, 40, 22); g.fillRect(x, 76, 40, 22); } for (let k = -1; k <= 1; k++) { const fx = k * 330; g.strokeStyle = 'rgba(255,214,140,0.55)'; g.lineWidth = 3; g.strokeRect(fx - 145, -64, 290, 128); g.fillStyle = 'rgba(255,214,140,0.10)'; g.fillRect(fx - 145, -64, 290, 128); g.fillStyle = '#F5C542'; g.textAlign = 'center'; g.font = '900 76px Baloo'; g.fillText('ധൂം', fx, 26); } g.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
-CASE.desk(g, t); CASE.folder(g, 50, 640, 980, 980, -0.01);
-CASE.polaroid(g, 'p0', q => { q.fillStyle = '#0d1420'; q.fillRect(0, 0, W, H); const gr = q.createLinearGradient(0, 400, 0, 1500); gr.addColorStop(0, '#1b2a44'); gr.addColorStop(1, '#0b1018'); q.fillStyle = gr; q.fillRect(0, 0, W, 1500); q.fillStyle = '#141414'; q.fillRect(0, 1480, W, 500); bank(q, 540, 1500, 1.05, t, 0); }, 100, 700, 450, 620, -0.06, 'ചേലേമ്പ്ര · 2007');
-g.save(); g.translate(790, 900); g.rotate(0.08); g.fillStyle = '#F2E3C0'; g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 18; g.fillRect(-190, -110, 380, 220); g.shadowColor = 'transparent';
+CASE.desk(g, t); CASE.folder(g, 50, 720, 980, 980, -0.01);
+CASE.polaroid(g, 'p0', q => { q.fillStyle = '#0d1420'; q.fillRect(0, 0, W, H); const gr = q.createLinearGradient(0, 400, 0, 1500); gr.addColorStop(0, '#1b2a44'); gr.addColorStop(1, '#0b1018'); q.fillStyle = gr; q.fillRect(0, 0, W, 1500); q.fillStyle = '#141414'; q.fillRect(0, 1480, W, 500); bank(q, 540, 1500, 1.05, t, 0); }, 100, 800, 450, 620, -0.06, 'ചേലേമ്പ്ര · 2007');
+g.save(); g.translate(790, 990); g.rotate(0.08); g.fillStyle = '#F2E3C0'; g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 18; g.fillRect(-190, -110, 380, 220); g.shadowColor = 'transparent';
 g.fillStyle = '#17110c'; g.beginPath(); g.arc(-190, 0, 22, -1.57, 1.57); g.fill(); g.beginPath(); g.arc(190, 0, 22, 1.57, 4.71); g.fill();
 g.setLineDash([8, 8]); g.strokeStyle = '#9b8560'; g.lineWidth = 3; g.beginPath(); g.moveTo(90, -100); g.lineTo(90, 100); g.stroke(); g.setLineDash([]);
 g.fillStyle = CASE.RED; g.font = '900 96px Baloo'; g.textAlign = 'center'; g.fillText('ധൂം', -40, 34); g.font = '700 20px Inter'; g.fillStyle = '#5a4a35'; g.fillText('ADMIT ONE', -40, 80); g.save(); g.translate(140, 0); g.rotate(-1.5708); g.fillText('No. 0080', 0, 8); g.restore(); g.restore();
-CASE.string(g, [[690, 860], [330, 760]], (t - 0.4) / 0.6);
-CASE.stamp(g, '80 കിലോ', 760, 1400, -0.12, t - 1.2, 100);
+CASE.string(g, [[690, 950], [330, 860]], (t - 0.4) / 0.6);
+CASE.stamp(g, '80 കിലോ', 760, 1480, -0.12, t - 1.2, 100);
 };

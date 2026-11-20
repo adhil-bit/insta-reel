@@ -96,7 +96,7 @@ function loopZoom(g, t, D, fn, cy = 1450) { const z = 1 + 0.18 * Math.pow(G.cl((
 
 window.renderFrame = function (t) { const D = DURATION;
 NEWS.paper(g, t);
-NEWS.tab(g, '2024 · കണ്ണൂർ', 90, 612);
+NEWS.tab(g, '2024 · കണ്ണൂർ', 90, 1500);
 NEWS.clip(g, 90, 690, 900, 780, -0.02 + 0.004 * Math.sin(t), (g, x0, y0, w, h) => {
   FX.halftone(g, 'h0', q => { q.fillStyle = '#fff'; q.fillRect(x0, y0, w, h); q.save(); q.translate(x0, y0);
     const gr = q.createLinearGradient(0, 0, 0, 330); gr.addColorStop(0, '#e9eef2'); gr.addColorStop(1, '#b9c4c8'); q.fillStyle = gr; q.fillRect(0, 0, w, 330);
