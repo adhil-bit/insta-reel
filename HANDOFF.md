@@ -229,3 +229,5 @@ Pazhassi Raja's last stand (1805) · 3-part series Muziris → 1341 flood → bi
 Topics came from Claude's own knowledge (no web search available): fact-check every script; soft wording for legends.
 
 17. **Look rotation:** don't use the golden-sunset sky on every reel. Rule + moods (day, monsoon, storm, blue, dawn, gold) in `docs/design-methods.md` → "Look rotation". Kit supports `G.sky(g,t,y,'day'|'monsoon'|'storm'|…)` and `G.sea(...,'<mood>')`.
+
+18. **Design rotation (20 Nov):** six design templates (newsprint, casefile, album, vhs, forensic, mural) — set `"design"` per reel, never reuse the previous one. Full guide for another account: `docs/VIDEO-ONLY-GUIDE.md`. The daily auto-render (`render-jobs.yml`) is paused; render with `render-one.yml`.

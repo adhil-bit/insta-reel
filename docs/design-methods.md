@@ -79,3 +79,10 @@ Optional: `"from": "kozhikode"` (city for the distance thread; `false` = none), 
 - Design (Fable review): camera hold 0–12 % at 1400 km, log descent to 38 km by 62 %, orbit drift after; three tiles (Kerala / district / town); neighbours dimmed; live gold Kerala outline fades out below 150 km; "കേരളം / KERALA · INDIA" label in the sea; dashed marching distance thread from the nearest district town with a km counter (45–62 %); pin drops at 62 %; callout box x 90–990, y 430–680 (gold kicker chip, 120 px Baloo town, coordinates line); source line y 1500; no particles on this scene.
 - Town relief is honest: the local range is shown as 0.5 km, so lowland towns never look alpine.
 - Mixed version (next): relief to 2.8 s, match-cut on the pin into a Google Earth Studio clip (keep its credit visible).
+
+## Design rotation (rule since 20 Nov 2026)
+
+Changing only the sky colour is not a new design. Every reel sets `"design"` in script.json to one of the templates in
+`docs/VIDEO-ONLY-GUIDE.md` section 6 (newsprint, casefile, album, vhs, forensic, mural); no two reels in a row on a page share one,
+and each template appears at most once in any 5 reels. Kits: `pipeline/lib/designs.js`; finishes: `cine.DESIGNS`; subtitle/cover
+styling: `explainer._design_css`.
