@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 20 Nov, 02:09 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 20 Nov, 02:20 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -32,7 +32,6 @@ _Updated Fri 20 Nov, 02:09 PM IST. Times are approximate: each reel posts within
 - k2-thalassery-fort-v2
 - k2-unniyarcha
 - k2-unniyarcha-v2
-- kannur-vault-38-v2
 
 ## Recently posted
 

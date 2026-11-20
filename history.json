@@ -1187,5 +1187,15 @@
     "voice": "Despina",
     "post_on": "2099-01-01",
     "created": "2026-11-20T08:39"
+  },
+  {
+    "title": "Kannur's Vault No. 38",
+    "category": "MYSTERY",
+    "folder": "kannur-vault-38-v2",
+    "status": "pending",
+    "voice": "Despina",
+    "post_on": "2099-01-01",
+    "priority": 1,
+    "created": "2026-11-20T08:50"
   }
 ]
