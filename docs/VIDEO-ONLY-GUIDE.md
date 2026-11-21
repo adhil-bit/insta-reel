@@ -73,7 +73,7 @@ done
 ```
 
 - `"post_on": "2099-01-01"` stays in every script.json so **nothing posts automatically**.
-- **Voice limit:** Gemini allows about 6–8 renders a day; it resets at **1:30 PM IST**. If a render fails with *quota / RESOURCE_EXHAUSTED*, dispatch again with `-f inputs[wait_until_utc]=08:05` (waits and renders right after the reset).
+- **Voice limit:** Gemini allows about 6–8 renders a day; it resets at **1:30 PM IST**. If a render fails with *quota / RESOURCE_EXHAUSTED*, start it again after 1:30 PM IST. **Do not use `wait_until_utc`**: a waiting run is billed as GitHub Actions minutes the whole time (on 20 Nov six waiting renders used ~1,900 minutes and the account hit its limit).
 - **A release can't be overwritten.** To fix a reel, copy the folder to `<slug>-v2`, change it, render the new slug.
 - Right after a render the release can show 404 for a minute; wait and download again.
 
@@ -171,7 +171,8 @@ Topic ideas not yet built: Ananthapura lake temple crocodile, Mahe, Bekal fort, 
 
 | Problem | Fix |
 |---|---|
-| Render fails: quota / RESOURCE_EXHAUSTED | Re-run after 1:30 PM IST, or dispatch with `inputs[wait_until_utc]=08:05` |
+| Render fails: quota / RESOURCE_EXHAUSTED | Re-run after 1:30 PM IST (never use `wait_until_utc`, it burns Actions minutes) |
+| Every run fails in 2 s: "recent account payments have failed or your spending limit needs to be increased" | GitHub Actions minutes/billing: GitHub → Settings → Billing and plans → fix the payment method or raise the Actions budget, or wait for the monthly reset. Post manually meanwhile. |
 | Preview shows `errors: [...]` | A JavaScript error in that anim file (e.g. `fort` must be `G.fort`) — fix before pushing |
 | `relief map skipped` in the log | The map files are missing: run `relief-build.yml` for the job |
 | Page-2 reel shows page-1 branding | Folder must start with `k2-`, script has `"account": "2"`, render with `account=2` |
