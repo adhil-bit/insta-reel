@@ -1,4 +1,4 @@
-Rendering job k2-ayyankali-villuvandi: Ayyankali's villuvandi journey, 1893
+Rendering job ananthapura-crocodile: Ananthapura lake temple and Babiya the crocodile
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 693, in <module>
     render_job(Path(args.folder))
