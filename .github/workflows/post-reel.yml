@@ -106,6 +106,14 @@ jobs:
         run: |
           mkdir -p "output/$REEL" logs
           gh release download "$REEL" --dir "output/$REEL" --clobber
+          # speed.json: {"<reel>": factor} — speeds the finished video + audio (pitch kept) to land at 30-35 s
+          F=$(python -c "import json;print(json.load(open('speed.json')).get('$REEL',''))" 2>/dev/null || true)
+          if [ -n "$F" ]; then
+            echo "Speeding $REEL x$F"
+            ffmpeg -loglevel error -y -i "output/$REEL/reel.mp4" -filter_complex "[0:v]setpts=PTS/$F[v];[0:a]atempo=$F[a]" -map "[v]" -map "[a]" \
+              -c:v libx264 -preset veryfast -crf 18 -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart "output/$REEL/fast.mp4" \
+              && mv "output/$REEL/fast.mp4" "output/$REEL/reel.mp4"
+          fi
           python main.py post "$REEL" 2>&1 | tee logs/last-post-log.txt
           [ "${PIPESTATUS[0]}" = "0" ] || exit 1
           gh release edit "$REEL" --title "POSTED · $REEL"

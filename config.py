@@ -131,7 +131,7 @@ SCENE_PADDING = 0.18     # small pause after each voice line
 END_CARD_SECONDS = 2.0  # 'follow us' card at the end of every reel
 RENDER_LIMIT = 5        # voice at most this many reels per render run, just in time (0 = no limit)
 TARGET_SECONDS = 35     # hard rule from 15 Nov data: keep reels 35-45 s; aim for ~35 s (ig-reel: 15-45 s, keep beats under 4 s)
-MAX_SPEEDUP = 1.15      # never speed the voice up more than this (done by the voice engine itself)
+MAX_SPEEDUP = 1.25      # never speed the voice up more than this (done by the voice engine itself)
 RENDER_WORKERS = int(os.getenv("RENDER_WORKERS", "3"))  # animations rendered in parallel
 
 
