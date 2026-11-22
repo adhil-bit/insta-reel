@@ -2,6 +2,11 @@
 Usage: python scripts/cron_oneoff.py <reel-folder> "YYYY-MM-DD HH:MM" (IST)"""
 import json, os, sys, urllib.request
 from datetime import datetime, timedelta
+if sys.argv[1] == "--list":            # print all one-off jobs
+    key = os.environ["CRONJOB_API_KEY"]; H = {"Authorization": f"Bearer {key}"}
+    with urllib.request.urlopen(urllib.request.Request("https://api.cron-job.org/jobs", headers=H), timeout=30) as r:
+        for j in json.loads(r.read()).get("jobs", []): print("job:", j.get("title"), "| enabled", j.get("enabled"))
+    sys.exit(0)
 if sys.argv[1] == "--delete":          # delete one-off jobs whose title contains the given text
     key = os.environ["CRONJOB_API_KEY"]; H = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
     with urllib.request.urlopen(urllib.request.Request("https://api.cron-job.org/jobs", headers=H), timeout=30) as r:
