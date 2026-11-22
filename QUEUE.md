@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 22 Nov, 07:58 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 22 Nov, 08:12 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -12,9 +12,11 @@ _Updated Sun 22 Nov, 07:58 PM IST. Times are approximate: each reel posts within
 - alummoottil-meda
 - ambalappuzha-chess
 - ambalappuzha-chess-v2
+- ananthapura-crocodile
 - arakkal-queens
 - aranmula-kannadi
 - bathe-after-funeral
+- bekal-fort-bombay
 - beypore-1-railway
 - beypore-2-collage
 - beypore-2-uru
@@ -49,6 +51,9 @@ _Updated Sun 22 Nov, 07:58 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
+- k2-akkamma-cheriyan
+- k2-ayyankali-villuvandi
+- k2-velu-thampi-kundara
 - kalari-fire
 - kalari-fire-v2
 - kalari-kungfu
@@ -110,6 +115,7 @@ _Updated Sun 22 Nov, 07:58 PM IST. Times are approximate: each reel posts within
 - theyyam-god-for-a-night
 - two-protests-classroom
 - yakshi-pala-tree
+- zero-shadow-day
 
 ## Recently posted
 
