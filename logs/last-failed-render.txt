@@ -1,4 +1,4 @@
-Rendering job ananthapura-crocodile: Ananthapura lake temple and Babiya the crocodile
+Rendering job k2-velu-thampi-kundara: Velu Thampi and the Kundara Proclamation, 1809
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 693, in <module>
     render_job(Path(args.folder))
