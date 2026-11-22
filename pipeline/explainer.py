@@ -341,6 +341,11 @@ def _design_css(script: dict) -> str:
         "vhs":       ("#8CFF9E", "#ffffff", "0 0 18px rgba(140,255,158,.55)", "rgba(0,0,0,.72)", "#8CFF9E", "border:2px solid #8CFF9E; border-radius:0;", "Baloo", None),
         "forensic":  ("#ffffff", "#35E0FF", "0 0 20px rgba(53,224,255,.35)", "rgba(7,18,28,.86)", "#ffffff", "border-left:8px solid #35E0FF; border-radius:4px;", "Baloo", None),
         "mural":     ("#140d08", "#B8341F", "none", "#F1DFB8", "#140d08", "border:4px solid #140d08; border-radius:0;", "Baloo", "rgba(0,0,0,0)"),
+        "shadow":    ("#FFF1C9", "#FFB347", "0 4px 20px rgba(40,10,0,.85)", "rgba(26,10,4,.72)", "#FFE7B0", "border-radius:40px;", "Baloo", None),
+        "blueprint": ("#E8F1FF", "#FFD24A", "0 2px 12px rgba(0,20,60,.6)", "rgba(10,40,85,.88)", "#E8F1FF", "border:2px solid #E8F1FF; border-radius:0;", "Baloo", None),
+        "chalk":     ("#F3F1E7", "#FFE27A", "0 2px 10px rgba(0,0,0,.4)", "rgba(20,40,28,.85)", "#F3F1E7", "border:3px dashed rgba(243,241,231,.6); border-radius:10px;", "Chilanka", None),
+        "woodcut":   ("#15110d", "#B7281D", "none", "#15110d", "#EFE5CF", "border-radius:0;", "Baloo", "rgba(0,0,0,0)"),
+        "palmleaf":  ("#F6E2B8", "#E0A84F", "0 3px 16px rgba(0,0,0,.8)", "rgba(217,183,124,.95)", "#2a1a0e", "border-radius:40px; border:3px solid #8a5a2b;", "Chilanka", None),
     }.get(d)
     if not C:
         return ""

@@ -1,0 +1,153 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "'SHOOT ME FIRST' — AKKAMMA CHERIYAN",
+  "topic": {
+    "title": "Akkamma Cheriyan: 'shoot me first' (1938)",
+    "category": "HISTORY",
+    "angle": "Led the 1938 Travancore State Congress march to Kowdiar Palace; told police to shoot her first; called the 'Jhansi Rani of Travancore'",
+    "key_facts": [
+      "In 1938 Akkamma Cheriyan led a large Travancore State Congress march to Kowdiar Palace, Thiruvananthapuram",
+      "When firing was threatened she stepped forward and said to shoot her first, as she was the leader",
+      "She is remembered as the 'Jhansi Rani of Travancore', a name attributed to Gandhi"
+    ],
+    "sources": [
+      "Kerala history (Akkamma Cheriyan)",
+      "Kerala State Archives"
+    ]
+  },
+  "thumbnail_ml": "'ആദ്യം എന്നെ വെടിവയ്ക്കൂ!'",
+  "thumbnail_accent": [
+    "വെടിവയ്ക്കൂ!'"
+  ],
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 6/10",
+  "twist_scene": 3,
+  "hook_voiceover": "ആദ്യം എന്നെ വെടിവയ്ക്കൂ! തോക്കുകൾക്ക് മുന്നിൽ നിന്ന് ഒരു സ്ത്രീ പറഞ്ഞു.",
+  "scenes": [
+    {
+      "voiceover": "1938. തിരുവനന്തപുരം. കവടിയാർ കൊട്ടാരത്തിലേക്ക് ഒരു വൻ ജാഥ.",
+      "caption": "1938 · കവടിയാർ",
+      "highlight": "1938",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തിരുവിതാംകൂർ സ്റ്റേറ്റ് കോൺഗ്രസിന്റെ ആ ജാഥ നയിച്ചത് അക്കമ്മ ചെറിയാൻ.",
+      "caption": "അക്കമ്മ ചെറിയാൻ",
+      "highlight": "അക്കമ്മ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വെടിവയ്ക്കുമെന്ന ഭീഷണിക്ക് മുന്നിൽ അവർ മുന്നോട്ട് വന്നു: ഞാനാണ് നേതാവ്, ആദ്യം എന്നെ വെടിവയ്ക്കൂ! ഇത് പങ്കുവയ്ക്കൂ.",
+      "caption": "ഞാനാണ് നേതാവ്",
+      "highlight": "നേതാവ്",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "തിരുവിതാംകൂറിന്റെ ഝാൻസി റാണി എന്ന് ഗാന്ധിജി വിശേഷിപ്പിച്ചതായാണ് ചരിത്രം.",
+      "caption": "ഝാൻസി റാണി",
+      "highlight": "ഝാൻസി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇതുപോലൊരു ധീര വനിതയെ ടാഗ് ചെയ്യൂ!",
+      "caption": "ടാഗ് ചെയ്യൂ",
+      "highlight": "ധീര",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "'ആദ്യം എന്നെ വെടിവയ്ക്കൂ!' 🔥\n\n1938-ൽ കവടിയാർ കൊട്ടാരത്തിലേക്കുള്ള സ്റ്റേറ്റ് കോൺഗ്രസ് ജാഥ നയിച്ചത് അക്കമ്മ ചെറിയാൻ. തോക്കുകൾക്ക് മുന്നിൽ അവർ പറഞ്ഞു: ഞാനാണ് നേതാവ്, ആദ്യം എന്നെ വെടിവയ്ക്കൂ.\n\nഇതുപോലൊരു ധീര വനിതയെ ടാഗ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nIn 1938 Akkamma Cheriyan led the State Congress march to Kowdiar Palace and told the police to shoot her first. She is remembered as the 'Jhansi Rani of Travancore'.\n\nകേരളത്തിന്റെ പോരാളികൾ · 6/10\n\nCredits: Kerala history, Kerala State Archives · Animation, voice and sound: AI-generated\n\n#AkkammaCheriyan #Travancore #KeralaHistory #WomenInHistory #MalayalamReels",
+  "search_ml": [
+    "അക്കമ്മ ചെറിയാൻ",
+    "ഝാൻസി റാണി",
+    "കവടിയാർ ജാഥ"
+  ],
+  "hashtags": [
+    "AkkammaCheriyan",
+    "Travancore",
+    "KeralaHistory",
+    "WomenInHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Quote paraphrased in Malayalam",
+    "Gandhi attribution stated as 'history says'"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.8
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 8.523,
+    "lon": 76.962,
+    "town": "കവടിയാർ",
+    "district": "THIRUVANANTHAPURAM",
+    "kicker": "LOCATION",
+    "look": "ink",
+    "from": false
+  },
+  "design": "newsprint",
+  "headline": [
+    "'ആദ്യം"
+  ],
+  "accent_words": [
+    "വെടിവയ്ക്കൂ!'"
+  ]
+}

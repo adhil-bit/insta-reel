@@ -191,3 +191,78 @@ const MURAL = (() => {
   function panel(g, x, y, w, h, fill = CRM) { g.save(); g.fillStyle = fill; g.fillRect(x, y, w, h); g.strokeStyle = BLK; g.lineWidth = 8; g.strokeRect(x, y, w, h); g.strokeStyle = RED; g.lineWidth = 4; g.strokeRect(x + 14, y + 14, w - 28, h - 28); g.restore(); }
   return { OCH, RED, GRN, CRM, BLK, BLU, wall, band, panel };
 })();
+
+// ---------- SHADOW: Tholpavakoothu shadow-puppet screen (lamp-lit cloth, black cut-outs on sticks) ----------
+const SHADOW = (() => {
+  function screen(g, t) {
+    const f = 1 + 0.03 * Math.sin(t * 9) + 0.02 * Math.sin(t * 23);
+    const rg = g.createRadialGradient(540, 1100, 80, 540, 1000, 1150 * f); rg.addColorStop(0, '#ffd889'); rg.addColorStop(0.45, '#e8913a'); rg.addColorStop(1, '#3a1206');
+    g.fillStyle = rg; g.fillRect(-200, -200, W + 400, H + 400); FX.grainDots(g, '#5a2508', 0.25, 900, 2);
+    g.save(); g.globalAlpha = 0.12; g.strokeStyle = '#7a3a10'; g.lineWidth = 1; for (let x = 0; x < W; x += 9) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, H); g.stroke(); } g.restore();
+  }
+  function lamps(g, t, y = 1560) { for (let i = 0; i < 7; i++) { const x = 120 + i * 140, f = 1 + 0.15 * Math.sin(t * 12 + i * 2); g.save(); g.fillStyle = '#1a0a04'; g.fillRect(x - 34, y, 68, 22); const fg = g.createRadialGradient(x, y - 26, 2, x, y - 26, 60 * f); fg.addColorStop(0, 'rgba(255,240,180,0.95)'); fg.addColorStop(1, 'rgba(255,160,40,0)'); g.fillStyle = fg; g.beginPath(); g.arc(x, y - 26, 60 * f, 0, 6.283); g.fill(); g.fillStyle = '#fff4c8'; g.beginPath(); g.ellipse(x, y - 24, 9, 22 * f, 0, 0, 6.283); g.fill(); g.restore(); } }
+  function puppet(g, key, fn, sway = 0, t = 0, sticks = []) {             // fn draws figure(s); becomes a black leather cut-out with punched dots
+    const k = FX.shot(key, fn, [0, 0, W, H], 0.5); FX.tint(k, '#120804');
+    const x = k.getContext('2d'); x.save(); x.globalCompositeOperation = 'destination-out'; for (let i = 0; i < 260; i++) { const q = FX.NOISE[i * 3]; x.beginPath(); x.arc(q[0] * k.width, q[1] * k.height, 1.6 + q[2] * 2, 0, 6.283); x.fill(); } x.restore();
+    g.save(); g.translate(540, 1500); g.rotate(sway * Math.sin(t * 1.4) * 0.02); g.translate(-540, -1500); g.filter = 'blur(1.2px)'; g.drawImage(k, 0, 0, W, H); g.filter = 'none';
+    g.strokeStyle = '#120804'; g.lineWidth = 6; sticks.forEach(([sx, sy]) => { g.beginPath(); g.moveTo(sx, sy); g.lineTo(sx + 30, H + 50); g.stroke(); }); g.restore();
+  }
+  return { screen, lamps, puppet };
+})();
+
+// ---------- BLUEPRINT: architect's plan, white lines on blue, dimension arrows, title block ----------
+const BP = (() => {
+  const BL = '#0f3c72', LN = '#e8f1ff';
+  function bg(g, t) { g.fillStyle = BL; g.fillRect(-200, -200, W + 400, H + 400); g.save(); g.strokeStyle = 'rgba(232,241,255,0.10)'; g.lineWidth = 1; for (let x = 0; x <= W; x += 40) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, H); g.stroke(); } for (let y = 0; y <= H; y += 40) { g.beginPath(); g.moveTo(0, y); g.lineTo(W, y); g.stroke(); } g.strokeStyle = 'rgba(232,241,255,0.22)'; for (let x = 0; x <= W; x += 200) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, H); g.stroke(); } g.restore(); FX.grainDots(g, '#ffffff', 0.08, 600, 2); }
+  function trace(g, pts, p, w = 5, close = true) { const n = pts.length + (close ? 1 : 0); const m = n * clamp(p); if (m <= 0) return; g.save(); g.strokeStyle = LN; g.lineWidth = w; g.lineJoin = 'round'; g.beginPath(); g.moveTo(pts[0][0], pts[0][1]);
+    for (let i = 1; i < n && i <= m + 1; i++) { const a = pts[(i - 1) % pts.length], b = pts[i % pts.length], f = clamp(m - i + 1); g.lineTo(lerp(a[0], b[0], f), lerp(a[1], b[1], f)); } g.stroke(); g.restore(); }
+  function dim(g, x1, y1, x2, y2, label, p) { if (p <= 0) return; g.save(); g.globalAlpha = clamp(p * 2); g.strokeStyle = LN; g.fillStyle = LN; g.lineWidth = 2; g.beginPath(); g.moveTo(x1, y1); g.lineTo(lerp(x1, x2, clamp(p)), lerp(y1, y2, clamp(p))); g.stroke();
+    const a = Math.atan2(y2 - y1, x2 - x1); for (const [x, y, s] of [[x1, y1, 1], [x2, y2, -1]]) { g.beginPath(); g.moveTo(x, y); g.lineTo(x + s * 18 * Math.cos(a - 0.35), y + s * 18 * Math.sin(a - 0.35)); g.lineTo(x + s * 18 * Math.cos(a + 0.35), y + s * 18 * Math.sin(a + 0.35)); g.fill(); }
+    if (p > 0.6) { g.save(); g.translate((x1 + x2) / 2, (y1 + y2) / 2); g.rotate(Math.abs(a) > 1.57 ? a + Math.PI : a); g.font = '700 30px "DejaVu Sans Mono", monospace'; g.textAlign = 'center'; const w = g.measureText(label).width + 20; g.fillStyle = BL; g.fillRect(-w / 2, -24, w, 34); g.fillStyle = LN; g.fillText(label, 0, 2); g.restore(); } g.restore(); }
+  function note(g, s, x, y, p, size = 32, align = 'left') { const n = Math.ceil(s.length * clamp(p)); if (n <= 0) return; g.save(); g.fillStyle = LN; g.font = `700 ${size}px "DejaVu Sans Mono", Baloo, monospace`; g.textAlign = align; g.fillText(s.slice(0, n), x, y); g.restore(); }
+  function block(g, lines, x, y, w) { g.save(); g.strokeStyle = LN; g.lineWidth = 3; g.strokeRect(x, y, w, 44 * lines.length + 16); lines.forEach((l, i) => { if (i) { g.beginPath(); g.moveTo(x, y + 8 + i * 44); g.lineTo(x + w, y + 8 + i * 44); g.stroke(); } g.fillStyle = LN; g.font = '700 26px "DejaVu Sans Mono", Baloo, monospace'; g.fillText(l, x + 16, y + 40 + i * 44); }); g.restore(); }
+  return { BL, LN, bg, trace, dim, note, block };
+})();
+
+// ---------- CHALK: classroom blackboard, chalk lines, hand-written labels ----------
+const CHALK = (() => {
+  const WH = '#f3f1e7', YL = '#ffe27a', PK = '#ff9db0', BLU = '#9fd3ff';
+  function board(g, t) { const gr = g.createLinearGradient(0, 0, W, H); gr.addColorStop(0, '#22402f'); gr.addColorStop(1, '#17301f'); g.fillStyle = gr; g.fillRect(-200, -200, W + 400, H + 400);
+    g.save(); g.globalAlpha = 0.07; g.fillStyle = '#ffffff'; for (let i = 0; i < 14; i++) { const q = FX.NOISE[i * 17]; g.beginPath(); g.ellipse(q[0] * W, q[1] * H, 220, 60, q[2] * 3, 0, 6.283); g.fill(); } g.restore(); FX.grainDots(g, '#ffffff', 0.12, 900, 2);
+    g.fillStyle = '#6b4a2a'; g.fillRect(-200, 1880, W + 400, 60); }
+  function line(g, pts, p, col = WH, w = 7) { const n = pts.length - 1, m = n * clamp(p); if (m <= 0) return; g.save(); g.strokeStyle = col; g.lineWidth = w; g.lineCap = 'round'; g.globalAlpha = 0.92;
+    for (let pass = 0; pass < 2; pass++) { g.beginPath(); g.moveTo(pts[0][0] + pass, pts[0][1] - pass); for (let i = 1; i <= Math.ceil(m); i++) { const a = pts[i - 1], b = pts[i], f = clamp(m - i + 1); g.lineTo(lerp(a[0], b[0], f) + pass * 1.5, lerp(a[1], b[1], f) - pass); } g.stroke(); g.lineWidth = w * 0.4; g.globalAlpha = 0.5; } g.restore(); }
+  function circle(g, x, y, r, p, col = WH, w = 7, fill) { const pts = []; for (let i = 0; i <= 48; i++) { const a = -1.57 + i / 48 * 6.283; pts.push([x + Math.cos(a) * r * (1 + 0.015 * Math.sin(i)), y + Math.sin(a) * r]); } if (fill && p >= 1) { g.save(); g.globalAlpha = 0.35; g.fillStyle = fill; g.beginPath(); g.arc(x, y, r, 0, 6.283); g.fill(); g.restore(); } line(g, pts, p, col, w); }
+  function write(g, s, x, y, size, p, col = WH, align = 'center') { const n = Math.ceil(s.length * clamp(p)); if (n <= 0) return; g.save(); g.fillStyle = col; g.globalAlpha = 0.95; g.font = `700 ${size}px Hand, Chilanka`; g.textAlign = align; g.fillText(s.slice(0, n), x, y); g.globalAlpha = 0.35; g.fillText(s.slice(0, n), x + 2, y + 1); g.restore(); }
+  return { WH, YL, PK, BLU, board, line, circle, write };
+})();
+
+// ---------- WOODCUT: linocut print, black + red ink carved with white gouge lines, on cream paper ----------
+const WOOD = (() => {
+  const PAPER = '#efe5cf', INK = '#15110d', RED = '#b7281d';
+  function paper(g, t) { g.fillStyle = PAPER; g.fillRect(-200, -200, W + 400, H + 400); FX.grainDots(g, '#8a7350', 0.28, 900, 2); }
+  function ink(g, key, fn, col = INK, gouge = 0.55, ang = -0.5) {         // fn's shapes, flat ink with carved hatch lines
+    const k = FX.shot(key, fn, [0, 0, W, H], 0.5); FX.tint(k, col); const x = k.getContext('2d');
+    x.save(); x.globalCompositeOperation = 'destination-out'; x.strokeStyle = '#000'; x.lineWidth = 1.6; x.translate(k.width / 2, k.height / 2); x.rotate(ang);
+    for (let i = -k.height; i < k.height; i += 9) { const q = FX.NOISE[(i + 2000) % 900]; if (q[0] > gouge) continue; x.beginPath(); x.moveTo(-k.width, i); for (let s = -k.width; s < k.width; s += 30) x.lineTo(s, i + Math.sin(s * 0.05 + i) * 2); x.stroke(); }
+    x.restore(); g.save(); g.drawImage(k, 0, 0, W, H); g.restore();
+  }
+  function frame(g) { g.save(); g.strokeStyle = INK; g.lineWidth = 10; g.strokeRect(60, 620, 960, 900); g.lineWidth = 3; g.strokeRect(78, 638, 924, 864); g.restore(); }
+  function title(g, s, x, y, size, col = INK) { g.save(); g.fillStyle = col; g.font = `900 ${size}px Baloo`; g.textAlign = 'center'; g.fillText(s, x, y); g.restore(); }
+  return { PAPER, INK, RED, paper, ink, frame, title };
+})();
+
+// ---------- PALM: palm-leaf manuscript (thaliyola) leaves, incised text and drawings, binding cord ----------
+const PALM = (() => {
+  const LEAF = '#d9b77c', EDGE = '#8a5a2b', INC = '#2a1a0e';
+  function table(g, t) { const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, '#3a2414'); gr.addColorStop(1, '#1d120a'); g.fillStyle = gr; g.fillRect(-200, -200, W + 400, H + 400); FX.grainDots(g, '#6b4526', 0.3, 900, 2); }
+  function leaf(g, x, y, w, h, rot = 0, a = 1) { g.save(); g.globalAlpha = a; g.translate(x + w / 2, y + h / 2); g.rotate(rot); g.translate(-w / 2, -h / 2);
+    g.shadowColor = 'rgba(0,0,0,0.5)'; g.shadowBlur = 18; g.shadowOffsetY = 8; const gr = g.createLinearGradient(0, 0, 0, h); gr.addColorStop(0, '#e6c88f'); gr.addColorStop(0.5, LEAF); gr.addColorStop(1, '#c79e5f'); g.fillStyle = gr;
+    g.beginPath(); g.moveTo(h / 2, 0); g.lineTo(w - h / 2, 0); g.quadraticCurveTo(w, h / 2, w - h / 2, h); g.lineTo(h / 2, h); g.quadraticCurveTo(0, h / 2, h / 2, 0); g.fill(); g.shadowColor = 'transparent';
+    g.strokeStyle = 'rgba(120,80,40,0.35)'; g.lineWidth = 1.5; for (let i = 1; i < 6; i++) { g.beginPath(); g.moveTo(h / 2, h * i / 6); g.lineTo(w - h / 2, h * i / 6 + 2); g.stroke(); }
+    g.fillStyle = '#2a1a0e'; for (const cx of [w * 0.28, w * 0.72]) { g.beginPath(); g.arc(cx, h / 2, 9, 0, 6.283); g.fill(); } g.restore(); }
+  function cord(g, x, y1, y2) { g.save(); g.strokeStyle = '#7a1f12'; g.lineWidth = 6; g.beginPath(); g.moveTo(x, y1); g.bezierCurveTo(x - 30, (y1 + y2) / 2, x + 30, (y1 + y2) / 2, x, y2); g.stroke(); g.restore(); }
+  function incise(g, s, x, y, size, p, align = 'left') { const n = Math.ceil(s.length * clamp(p)); if (n <= 0) return; g.save(); g.fillStyle = INC; g.font = `700 ${size}px Chilanka, Baloo`; g.textAlign = align; g.fillText(s.slice(0, n), x, y); g.restore(); }
+  function etch(g, key, fn) { const k = FX.shot(key, fn, [0, 0, W, H], 0.5); FX.tint(k, INC); g.save(); g.globalAlpha = 0.9; g.drawImage(k, 0, 0, W, H); g.restore(); }
+  return { LEAF, EDGE, INC, table, leaf, cord, incise, etch };
+})();

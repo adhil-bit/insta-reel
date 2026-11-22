@@ -1,0 +1,153 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "HISTORY",
+  "english_sub": "THE KEYHOLE FORT OF BEKAL",
+  "topic": {
+    "title": "Bekal Fort, the keyhole fort by the sea",
+    "category": "HISTORY",
+    "angle": "Kerala's largest fort (~40 acres), keyhole shape from above, 1650 Shivappa Nayaka, Tipu, British; 'Uyire' song of Bombay (1995) shot here",
+    "key_facts": [
+      "Bekal Fort in Kasaragod is the largest fort in Kerala, about 40 acres",
+      "It is commonly dated to 1650 and attributed to Shivappa Nayaka of Keladi (Ikkeri)",
+      "It later came under Tipu Sultan and then the British",
+      "The song 'Uyire' from Mani Ratnam's film Bombay (1995) was shot at the fort"
+    ],
+    "sources": [
+      "Kerala Tourism (Bekal Fort)",
+      "Archaeological Survey of India"
+    ]
+  },
+  "thumbnail_ml": "ഉയിരേ പാട്ടിലെ ആ കടൽക്കോട്ട!",
+  "thumbnail_accent": [
+    "ഉയിരേ"
+  ],
+  "series": "കാസർഗോഡ് കഥകൾ #2",
+  "twist_scene": 3,
+  "hook_voiceover": "മണിരത്നത്തിന്റെ ബോംബെ സിനിമയിലെ ആ കടൽക്കോട്ട! ആകാശത്ത് നിന്ന് നോക്കിയാൽ ഒരു താക്കോൽ ദ്വാരം!",
+  "scenes": [
+    {
+      "voiceover": "കാസർഗോഡ് ബേക്കൽ. കേരളത്തിലെ ഏറ്റവും വലിയ കോട്ട, ഏകദേശം 40 ഏക്കർ.",
+      "caption": "ബേക്കൽ · 40 ഏക്കർ",
+      "highlight": "40",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1650-ൽ ഇക്കേരി നായക രാജാവ് ശിവപ്പ നായക് പണിതതെന്നാണ് ചരിത്രം.",
+      "caption": "1650",
+      "highlight": "1650",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പിന്നീട് ടിപ്പു സുൽത്താൻ, ശേഷം ബ്രിട്ടീഷുകാർ. കാസർഗോഡുകാർക്ക് അയച്ചു കൊടുക്കൂ!",
+      "caption": "ടിപ്പു · ബ്രിട്ടീഷ്",
+      "highlight": "ടിപ്പു",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1995-ൽ ബോംബെയിലെ ഉയിരേ ഗാനം ഇവിടെ ചിത്രീകരിച്ചതോടെ കോട്ട ലോകപ്രശസ്തമായി.",
+      "caption": "1995 · ഉയിരേ",
+      "highlight": "ഉയിരേ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങൾ ബേക്കൽ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "പോയിട്ടുണ്ടോ?",
+      "highlight": "ബേക്കൽ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഉയിരേ പാട്ടിലെ ആ കടൽക്കോട്ട! 🏰🌊\n\nകാസർഗോഡ് ബേക്കൽ കോട്ട, കേരളത്തിലെ ഏറ്റവും വലിയ കോട്ട. ആകാശത്ത് നിന്ന് നോക്കിയാൽ ഒരു താക്കോൽ ദ്വാരം പോലെ. ഇക്കേരി നായകർ, ടിപ്പു, ബ്രിട്ടീഷുകാർ… പിന്നെ 1995-ൽ ബോംബെ സിനിമ.\n\nനിങ്ങൾ ബേക്കൽ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\nകാസർഗോഡുകാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nBekal in Kasaragod is Kerala's largest fort, keyhole-shaped from above, and the location of the song 'Uyire' from Bombay (1995).\n\nകാസർഗോഡ് കഥകൾ #2\n\nCredits: Kerala Tourism, ASI · Animation, voice and sound: AI-generated\n\n#BekalFort #Kasaragod #Bombay #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "ബേക്കൽ കോട്ട",
+    "ഉയിരേ",
+    "കാസർഗോഡ്",
+    "ബോംബെ സിനിമ"
+  ],
+  "hashtags": [
+    "BekalFort",
+    "Kasaragod",
+    "Bombay",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Film named, no lyrics",
+    "1650 / Shivappa Nayaka stated as 'history says'"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.8
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 12.392,
+    "lon": 75.033,
+    "town": "ബേക്കൽ",
+    "district": "KASARAGOD",
+    "kicker": "LOCATION",
+    "from": "kasaragod"
+  },
+  "design": "blueprint",
+  "headline": [
+    "ഉയിരേ"
+  ],
+  "accent_words": [
+    "ഉയിരേ"
+  ]
+}

@@ -133,8 +133,13 @@ DESIGNS = {
     "vhs":       {"overlay": "none", "grade": False, "leak": False, "grain": 0.0, "vignette": 0.30, "accent": "#8CFF9E", "letterbox": []},
     "forensic":  {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.35, "accent": "#35E0FF", "letterbox": []},
     "mural":     {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.12, "accent": "#B8341F", "letterbox": []},
+    "shadow":    {"overlay": "embers", "grade": False, "leak": False, "grain": 0.05, "vignette": 0.45, "accent": "#FFD889", "letterbox": []},
+    "blueprint": {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.25, "accent": "#FFD24A", "letterbox": []},
+    "chalk":     {"overlay": "none", "grade": False, "leak": False, "grain": 0.04, "vignette": 0.30, "accent": "#FFE27A", "letterbox": []},
+    "woodcut":   {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.10, "accent": "#B7281D", "letterbox": []},
+    "palmleaf":  {"overlay": "dust", "color": "#f0d9a8", "grade": False, "leak": False, "grain": 0.05, "vignette": 0.45, "accent": "#E0A84F", "letterbox": []},
 }
-LIGHT_DESIGNS = {"newsprint", "mural"}
+LIGHT_DESIGNS = {"newsprint", "mural", "woodcut"}
 DESIGN_JS = Path(__file__).resolve().parent / "lib" / "designs.js"
 
 
