@@ -1,9 +1,9 @@
-Publishing k2-cheraman-perumal...
+Publishing k2-thalakkal-chandu-v2...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18057858491602043, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/Df8mGWKFcew/
+  container: 18058527749602043, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgDBKGKgWDX/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
