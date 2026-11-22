@@ -1,44 +1,11 @@
-Rendering job k2-thalakkal-chandu-v2: Thalakkal Chandu, the Kurichiya archer
-3/6 Recording the voiceover (voice: Despina)...
-  one-take recording couldn't be split (could not find the pauses between lines (1 of 5)); recording line by line with Despina
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  daily limit reached on key 1; switching to key 2
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  daily limit reached on key 1; switching to key 2
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  daily limit reached on key 1; switching to key 2
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
-  daily limit reached on key 1; switching to key 2
-  daily limit reached on gemini-2.5-flash-preview-tts; trying gemini-2.5-pro-preview-tts
+Rendering job k2-ayyankali-villuvandi: Ayyankali's villuvandi journey, 1893
 Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 68, in build_reel
-    media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], voice["id"])
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 155, in gemini_narration
-    raise RuntimeError(f"could not find the pauses between lines ({len(gaps)} of {len(lines) - 1})")
-RuntimeError: could not find the pauses between lines (1 of 5)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 690, in <module>
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 693, in <module>
     render_job(Path(args.folder))
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 249, in render_job
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 252, in render_job
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/main.py", line 75, in build_reel
-    media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice["id"], provider="gemini")
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 117, in generate_voice
-    return _gemini_voice(text, out_path, voice_id or config.GEMINI_VOICE_POOL[0]["id"])
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 94, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=config.GEMINI_TTS_MODEL, key_index=key_index + 1)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 91, in _gemini_voice
-    return _gemini_voice(text, out_path, voice_name, model=alt[0], key_index=key_index)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/runner/work/insta-reel/insta-reel/pipeline/media.py", line 95, in _gemini_voice
-    raise RuntimeError("Gemini daily voice quota used up")
-RuntimeError: Gemini daily voice quota used up
+  File "/home/runner/work/insta-reel/insta-reel/main.py", line 56, in build_reel
+    "visual": script["cover_visual"],
+              ~~~~~~^^^^^^^^^^^^^^^^
+KeyError: 'cover_visual'
