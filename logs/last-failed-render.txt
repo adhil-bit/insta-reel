@@ -1,4 +1,4 @@
-Rendering job bekal-fort-bombay: Bekal Fort, the keyhole fort by the sea
+Rendering job k2-akkamma-cheriyan: Akkamma Cheriyan: 'shoot me first' (1938)
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 693, in <module>
     render_job(Path(args.folder))
