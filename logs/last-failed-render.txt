@@ -1,4 +1,4 @@
-Rendering job k2-velu-thampi-kundara: Velu Thampi and the Kundara Proclamation, 1809
+Rendering job bekal-fort-bombay: Bekal Fort, the keyhole fort by the sea
 Traceback (most recent call last):
   File "/home/runner/work/insta-reel/insta-reel/main.py", line 693, in <module>
     render_job(Path(args.folder))
