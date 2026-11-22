@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 22 Nov, 08:29 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sun 22 Nov, 08:40 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -13,6 +13,7 @@ _Updated Sun 22 Nov, 08:29 PM IST. Times are approximate: each reel posts within
 - ambalappuzha-chess
 - ambalappuzha-chess-v2
 - ananthapura-crocodile
+- ananthapura-crocodile-v2
 - arakkal-queens
 - aranmula-kannadi
 - bathe-after-funeral
