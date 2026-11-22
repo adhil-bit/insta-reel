@@ -116,11 +116,11 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 CHALK.board(g, t);
-CHALK.circle(g, 540, 760, 70, clamp(t / 0.6), CHALK.YL, 8, CHALK.YL);
-for (let i = 0; i < 10; i++) { const a = i / 10 * 6.283; if (t > 0.6) CHALK.line(g, [[540 + Math.cos(a) * 95, 760 + Math.sin(a) * 95], [540 + Math.cos(a) * 130, 760 + Math.sin(a) * 130]], 1, CHALK.YL, 6); }
-CHALK.line(g, [[120, 1400], [960, 1400]], clamp(t / 0.5), CHALK.WH, 6);
+CHALK.circle(g, 540, 760, 70, 1, CHALK.YL, 8, CHALK.YL);
+for (let i = 0; i < 10; i++) { const a = i / 10 * 6.283; CHALK.line(g, [[540 + Math.cos(a) * 95, 760 + Math.sin(a) * 95], [540 + Math.cos(a) * 130, 760 + Math.sin(a) * 130]], 1, CHALK.YL, 6); }
+CHALK.line(g, [[120, 1400], [960, 1400]], 1, CHALK.WH, 6);
 CHALK.line(g, [[540, 1400], [540, 1230]], 1, CHALK.WH, 8); CHALK.circle(g, 540, 1205, 26, 1, CHALK.WH, 7);
 CHALK.line(g, [[500, 1300], [580, 1300]], 1, CHALK.WH, 7); CHALK.line(g, [[540, 1400], [500, 1470]], 1); CHALK.line(g, [[540, 1400], [580, 1470]], 1);
-const sh = 260 * (1 - ease.inOut(clamp((t - 0.6) / 1.6))); g.save(); g.globalAlpha = 0.5; g.fillStyle = '#0d1f15'; g.beginPath(); g.ellipse(540 + sh / 2, 1478, sh / 2 + 4, 14, 0, 0, 6.283); g.fill(); g.restore();
+const sh = 260 * (1 - ease.inOut(clamp((t - 0.3) / 1.6))); g.save(); g.globalAlpha = 0.5; g.fillStyle = '#0d1f15'; g.beginPath(); g.ellipse(540 + sh / 2, 1478, sh / 2 + 4, 14, 0, 0, 6.283); g.fill(); g.restore();
 CHALK.write(g, sh < 10 ? 'നിഴൽ = 0' : 'നിഴൽ', 820, 1560, 64, (t - 0.4) / 0.4, CHALK.PK);
 };

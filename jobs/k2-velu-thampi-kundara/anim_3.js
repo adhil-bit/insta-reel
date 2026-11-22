@@ -116,8 +116,7 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 PALM.table(g, t);
-const w = 940 * ease.out(clamp(t / 0.8));
-g.save(); g.beginPath(); g.rect(70, 600, w, 1000); g.clip(); PALM.leaf(g, 70, 700, 940, 640, 0); g.restore();
-['വിളംബരം', 'ജനങ്ങളേ,', 'ഒന്നിക്കുവിൻ!'].forEach((s, i) => PALM.incise(g, s, 160, 860 + i * 130, 82, (t - 0.8 - i * 0.5) / 0.5));
-const s = clamp((t - D * 0.65) / 0.2); if (s > 0) { g.save(); g.globalAlpha = s; g.fillStyle = '#8f1d12'; g.beginPath(); g.arc(840, 1180, 70 * (1.4 - 0.4 * s), 0, 6.283); g.fill(); g.fillStyle = '#c0392b'; g.beginPath(); g.arc(840, 1180, 48, 0, 6.283); g.fill(); g.restore(); }
+const lines = ['കുണ്ടറ വിളംബരം', 'ജനങ്ങളേ,', 'ഒന്നിക്കുവിൻ!'];
+lines.forEach((s, i) => { const k = ease.out(clamp((t - i * 0.6) / 0.5)); if (k <= 0) return; g.save(); g.beginPath(); g.rect(80, 600, 920 * k, 1000); g.clip(); PALM.leaf(g, 90, 700 + i * 220, 900, 180, 0); g.restore(); PALM.incise(g, s, 540, 808 + i * 220, 72, (t - i * 0.6 - 0.3) / 0.5, 'center'); });
+const s = clamp((t - D * 0.65) / 0.2); if (s > 0) { g.save(); g.globalAlpha = s; g.fillStyle = '#8f1d12'; g.beginPath(); g.arc(900, 1400, 70 * (1.4 - 0.4 * s), 0, 6.283); g.fill(); g.fillStyle = '#c0392b'; g.beginPath(); g.arc(900, 1400, 48, 0, 6.283); g.fill(); g.restore(); }
 };

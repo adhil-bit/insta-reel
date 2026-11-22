@@ -117,7 +117,7 @@ function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.sa
 window.renderFrame = function (t) { const D = DURATION;
 WOOD.paper(g, t); WOOD.frame(g);
 g.save(); g.fillStyle = WOOD.RED; g.beginPath(); g.arc(800, 860, 110, 0, 6.283); g.fill(); g.restore();
-const x = lerp(-120, 300, ease.out(clamp(t / 2)));
+const x = lerp(120, 300, ease.out(clamp(t / 2)));
 WOOD.ink(g, 'w0', q => { q.fillRect(78, 1380, 924, 120); cart(q, x + 120, 1380, 0.95, t); bull(q, x + 420, 1380, 0.85, t); bull(q, x + 470, 1395, 0.85, t + 0.5); });
 g.save(); g.strokeStyle = WOOD.PAPER; g.lineWidth = 4; for (let i = 0; i < 9; i++) { g.beginPath(); g.moveTo(90 + i * 110, 1440); g.lineTo(150 + i * 110, 1440); g.stroke(); } g.restore();
 };

@@ -116,7 +116,8 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 PALM.table(g, t);
-PALM.leaf(g, 70, 820, 940, 420, 0.01);
-PALM.etch(g, 'pe2', q => { G.warship(q, t, 560, 1170, 0.55); });
-PALM.incise(g, 'ഈസ്റ്റ് ഇന്ത്യ കമ്പനി', 540, 930, 56, (t - 0.4) / 0.8, 'center');
+[[90, 680], [90, 880], [90, 1080]].forEach(([x, y], i) => PALM.leaf(g, x, y, 900, 170, (i - 1) * 0.015));
+PALM.cord(g, 340, 640, 1300); PALM.cord(g, 740, 640, 1300);
+PALM.incise(g, 'ഈസ്റ്റ് ഇന്ത്യ', 540, 790, 70, (t - 0.2) / 0.6, 'center'); PALM.incise(g, 'കമ്പനി', 540, 990, 70, (t - 0.8) / 0.4, 'center');
+g.save(); g.strokeStyle = PALM.INC; g.fillStyle = PALM.INC; g.lineWidth = 5; const sx = 540 + Math.sin(t) * 30; g.beginPath(); g.moveTo(sx - 150, 1180); g.lineTo(sx + 150, 1180); g.lineTo(sx + 110, 1225); g.lineTo(sx - 110, 1225); g.closePath(); g.stroke(); g.beginPath(); g.moveTo(sx, 1180); g.lineTo(sx, 1100); g.stroke(); g.beginPath(); g.moveTo(sx, 1105); g.lineTo(sx + 70, 1150); g.lineTo(sx, 1150); g.fill(); g.restore();
 };

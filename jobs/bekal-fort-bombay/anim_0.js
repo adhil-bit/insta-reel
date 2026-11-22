@@ -116,9 +116,9 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 BP.bg(g, t); const K = [[540,700],[640,725],[715,790],[745,880],[730,970],[680,1030],[720,1330],[360,1330],[400,1030],[350,970],[335,880],[365,790],[440,725]];
-BP.trace(g, K, clamp(t / 1.8), 7);
+BP.trace(g, K, clamp(0.45 + t / 1.8), 7);
 g.save(); g.strokeStyle = 'rgba(232,241,255,0.5)'; g.lineWidth = 2; for (let i = 0; i < 7; i++) { g.beginPath(); for (let y = 650; y < 1420; y += 20) g.lineTo(120 + i * 18 + Math.sin(y * 0.03 + t * 2 + i) * 8, y); g.stroke(); } g.restore();
 BP.note(g, 'ARABIAN SEA', 110, 640, (t - 0.4) / 0.6, 26);
-BP.dim(g, 330, 1380, 750, 1380, 'KEYHOLE', (t - 1.6) / 0.6);
+BP.dim(g, 330, 1380, 750, 1380, 'KEYHOLE', (t - 0.8) / 0.6);
 BP.block(g, ['BEKAL FORT', 'KASARAGOD'], 620, 1420, 360);
 };

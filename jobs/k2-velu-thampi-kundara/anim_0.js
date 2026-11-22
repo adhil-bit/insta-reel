@@ -117,8 +117,8 @@ function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.sa
 window.renderFrame = function (t) { const D = DURATION;
 PALM.table(g, t);
 const L = [[90, 700, -0.03], [110, 930, 0.02], [80, 1160, -0.015]];
-L.forEach(([x, y, r], i) => PALM.leaf(g, x, y, 900, 170, r, clamp((t - i * 0.25) / 0.3)));
+L.forEach(([x, y, r], i) => PALM.leaf(g, x, y, 900, 170, r, 0.65 + 0.35 * clamp((t - i * 0.2) / 0.3)));
 PALM.cord(g, 340, 640, 1400); PALM.cord(g, 740, 640, 1400);
-PALM.incise(g, 'കുണ്ടറ · 1809', 540, 1035, 78, (t - 0.8) / 0.8, 'center');
+PALM.incise(g, 'കുണ്ടറ · 1809', 540, 1035, 78, (t - 0.1) / 0.8, 'center');
 PALM.etch(g, 'pe0', q => { person(q, 200, 1320, 0.7, t, { pose: 'urumi', head: 'turban' }); person(q, 880, 1320, 0.7, t, { pose: 'urumi', head: 'turban', ph: 1 }); });
 };

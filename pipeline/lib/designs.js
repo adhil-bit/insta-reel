@@ -196,7 +196,7 @@ const MURAL = (() => {
 const SHADOW = (() => {
   function screen(g, t) {
     const f = 1 + 0.03 * Math.sin(t * 9) + 0.02 * Math.sin(t * 23);
-    const rg = g.createRadialGradient(540, 1100, 80, 540, 1000, 1150 * f); rg.addColorStop(0, '#ffd889'); rg.addColorStop(0.45, '#e8913a'); rg.addColorStop(1, '#3a1206');
+    const rg = g.createRadialGradient(540, 1100, 80, 540, 1000, 1150 * f); rg.addColorStop(0, '#fff6df'); rg.addColorStop(0.5, '#f1d3a0'); rg.addColorStop(1, '#3b1c0c');
     g.fillStyle = rg; g.fillRect(-200, -200, W + 400, H + 400); FX.grainDots(g, '#5a2508', 0.25, 900, 2);
     g.save(); g.globalAlpha = 0.12; g.strokeStyle = '#7a3a10'; g.lineWidth = 1; for (let x = 0; x < W; x += 9) { g.beginPath(); g.moveTo(x, 0); g.lineTo(x, H); g.stroke(); } g.restore();
   }

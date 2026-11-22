@@ -116,8 +116,9 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 PALM.table(g, t);
-PALM.leaf(g, 90, 860, 900, 300, -0.01, 0.9);
-PALM.etch(g, 'pe4', q => lamp(q, 540, 1130, 0.7, t));
-PALM.incise(g, 'മണ്ണടി · 1809', 540, 1300, 70, (t - 0.5) / 0.6, 'center');
-g.save(); g.globalAlpha = 0.5; const f = 1 + 0.1 * Math.sin(t * 10); const rg = g.createRadialGradient(540, 980, 5, 540, 980, 220 * f); rg.addColorStop(0, 'rgba(255,200,100,0.5)'); rg.addColorStop(1, 'rgba(255,200,100,0)'); g.fillStyle = rg; g.fillRect(0, 700, W, 600); g.restore();
+const f = 1 + 0.1 * Math.sin(t * 10); const rg = g.createRadialGradient(540, 900, 5, 540, 900, 320 * f); rg.addColorStop(0, 'rgba(255,200,100,0.45)'); rg.addColorStop(1, 'rgba(255,200,100,0)'); g.fillStyle = rg; g.fillRect(0, 600, W, 700);
+g.save(); g.fillStyle = '#c99a3c'; g.fillRect(526, 860, 28, 220); g.beginPath(); g.ellipse(540, 860, 80, 20, 0, 0, 6.283); g.fill(); g.beginPath(); g.ellipse(540, 1080, 90, 22, 0, 0, 6.283); g.fill();
+g.fillStyle = '#ffcf6a'; g.beginPath(); g.ellipse(540, 820, 14 * f, 34 * f, 0, 0, 6.283); g.fill(); g.restore();
+PALM.leaf(g, 90, 1160, 900, 170, -0.01, 0.95);
+PALM.incise(g, 'മണ്ണടി · 1809', 540, 1268, 72, (t - 0.5) / 0.6, 'center');
 };
