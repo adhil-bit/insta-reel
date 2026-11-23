@@ -1,9 +1,9 @@
-Publishing k2-unniyarcha-v2...
+Publishing karyavattom-haunted-pond-v3...
   uguu: link serves video/mp4
-  temporary video link ready (h.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18058664384602043, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DgEUg9dj-C1/
+  container: 18141704755694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgFEJ-6jnbB/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
