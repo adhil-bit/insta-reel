@@ -91,7 +91,30 @@ window.renderFrame = function (t) {
   }
   // distance thread: nearest city -> town, dashed marching arc + counter chip (45-62%)
   const town = scr(0, hAt(S.near, RL.lon, RL.lat) + 0.05, 0);
-  if (RL.city && q > 0.45) {
+  if (RL.road && RL.city && q > 0.40) {                // real road from the nearest town: glowing blue line + van (40-62%)
+    const ta = ease.inOut(sm(0.40, 0.62, q)), Lr = RL.road.line, n = Math.max(2, Math.round(Lr.length * ta)), nb = RL.tiles.near.b;
+    const hR = (lat, lon) => (lon > nb[0] && lon < nb[2] && lat > nb[1] && lat < nb[3]) ? hAt(S.near, lon, lat) : hAt(S.mid, lon, lat) * ex;
+    const pts = []; for (let i = 0; i < n; i++) pts.push(scr(wx(Lr[i][1]), hR(Lr[i][0], Lr[i][1]) + 0.03, wz(Lr[i][0])));
+    g.save(); g.lineJoin = 'round'; g.lineCap = 'round'; g.globalAlpha = 1 - sm(0.92, 1.0, q) * 0.4;
+    g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1]));
+    g.strokeStyle = 'rgba(30,120,255,0.35)'; g.lineWidth = 24; g.stroke();
+    g.strokeStyle = '#2f8bff'; g.lineWidth = 11; g.stroke(); g.strokeStyle = '#cfe6ff'; g.lineWidth = 3; g.stroke();
+    const c0 = pts[0];
+    g.fillStyle = '#fff'; g.strokeStyle = '#2f8bff'; g.lineWidth = 5; g.beginPath(); g.arc(c0[0], c0[1], 11, 0, 6.283); g.fill(); g.stroke();
+    const lx = clamp(c0[0] + 22, 40, W - 300), ly = clamp(c0[1], 760, 1380);
+    g.shadowColor = 'rgba(0,0,0,0.9)'; g.shadowBlur = 12; g.fillStyle = '#fff'; g.textAlign = 'left';
+    g.font = '800 30px Inter'; spaced(RL.city.en || '', lx, ly - 6, 3); g.font = '700 30px Baloo'; g.fillText(RL.city.name, lx, ly + 30); g.shadowColor = 'transparent';
+    if (ta < 0.995) {
+      const a1 = pts[pts.length - 1], a0 = pts[Math.max(0, pts.length - 5)], ang = Math.atan2(a1[1] - a0[1], a1[0] - a0[0]);
+      g.save(); g.translate(a1[0], a1[1]); g.rotate(ang); g.shadowColor = 'rgba(0,0,0,0.6)'; g.shadowBlur = 14;
+      g.fillStyle = '#f4f6f8'; g.beginPath(); g.roundRect(-32, -17, 64, 34, 9); g.fill(); g.shadowColor = 'transparent';
+      g.fillStyle = '#25384d'; g.beginPath(); g.roundRect(10, -13, 15, 26, 4); g.fill(); g.fillStyle = '#2f8bff'; g.fillRect(-26, -3, 30, 6); g.restore();
+    }
+    const kmS = (RL.road.km * ta).toFixed(1) + ' km by road'; g.font = '800 38px Inter'; const kw = g.measureText(kmS).width + 48;
+    g.fillStyle = 'rgba(8,16,28,0.78)'; g.beginPath(); g.roundRect(60, 1380, kw, 60, 30); g.fill();
+    g.fillStyle = '#2f8bff'; g.beginPath(); g.arc(88, 1410, 8, 0, 6.283); g.fill(); g.fillStyle = '#fff'; g.fillText(kmS, 108, 1423);
+    g.restore();
+  } else if (RL.city && q > 0.45) {
     const ta = sm(0.45, 0.62, q), N = 48, Hm = hz(C.d < 120 ? S.mid : S.wide), cx = wx(RL.city.lon), cz = wz(RL.city.lat);
     const lift = 0.12 * RL.city.km, pts = [];
     for (let i = 0; i <= Math.round(N * ta); i++) {
@@ -153,5 +176,7 @@ window.renderFrame = function (t) {
   }
   // source line: baseline y 1500, x 60, no box
   g.save(); g.globalAlpha = 0.7; g.fillStyle = RL.ink ? '#2A1D14' : '#FFFFFF'; g.font = '500 20px Inter'; g.textAlign = 'left';
-  g.fillText(RL.source, 60, 1500); g.restore();
+  const sw = [], parts = RL.source.split(' · '); let ln = '';
+  parts.forEach(s => { const tr = ln ? ln + ' · ' + s : s; if (g.measureText(tr).width > W - 120 && ln) { sw.push(ln); ln = s; } else ln = tr; }); sw.push(ln);
+  sw.forEach((s, i) => g.fillText(s, 60, 1500 - (sw.length - 1 - i) * 26)); g.restore();
 };

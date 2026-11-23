@@ -148,9 +148,9 @@ def build(job: Path, force=False) -> Path:
     look = r.get("look") or ("ink" if script.get("theme") == "inkwash" else "night")
     if meta_p.exists() and not force:
         m = json.loads(meta_p.read_text())
-        if m.get("v") == 3 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
+        if m.get("v") == 4 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
             return out
-    meta = {"v": 3, "lat": r["lat"], "lon": r["lon"], "look": look}
+    meta = {"v": 4, "lat": r["lat"], "lon": r["lon"], "look": look}
     for name, span, glo, size in TILES:
         clat, clon = (KERALA if name == "wide" else (r["lat"], r["lon"]))
         b = bounds_for(clat, clon, span, size)
@@ -179,6 +179,15 @@ def build(job: Path, force=False) -> Path:
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
         meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
+    if look == "night" and r.get("sat", True) and r.get("from") is not False:    # real road from the nearest town
+        c = _nearest_city(r["lat"], r["lon"], r.get("from"))
+        if c:
+            try:
+                from pipeline.route import osrm
+                line, rkm, _ = osrm([(c["lat"], c["lon"]), (r["lat"], r["lon"])])
+                meta["road"] = {"line": [[round(x, 5), round(y, 5)] for x, y in line[::max(1, len(line) // 600)]], "km": round(rkm, 1)}
+            except Exception as e:
+                print("road skipped", e)
     meta_p.write_text(json.dumps(meta))
     return out
 
@@ -190,9 +199,9 @@ def _uri(p: Path, mime):
 def _nearest_city(lat, lon, want=None):
     def km(c): return math.hypot((c[0] - lat) * 110.57, (c[1] - lon) * 111.32 * math.cos(math.radians(lat)))
     if want and str(want).lower() in CITIES:
-        c = CITIES[str(want).lower()]; return {"lat": c[0], "lon": c[1], "name": c[2], "km": round(km(c))}
-    best = min((c for c in CITIES.values() if km(c) > 6), key=km, default=None)
-    return {"lat": best[0], "lon": best[1], "name": best[2], "km": round(km(best))} if best and km(best) < 120 else None
+        k = str(want).lower(); c = CITIES[k]; return {"lat": c[0], "lon": c[1], "name": c[2], "en": k.upper(), "km": round(km(c))}
+    best = min((kc for kc in CITIES.items() if km(kc[1]) > 6), key=lambda kc: km(kc[1]), default=None)
+    return {"lat": best[1][0], "lon": best[1][1], "name": best[1][2], "en": best[0].upper(), "km": round(km(best[1]))} if best and km(best[1]) < 120 else None
 
 
 def scene_code(job: Path, script: dict) -> str:
@@ -208,9 +217,9 @@ def scene_code(job: Path, script: dict) -> str:
         "tiles": {k: {"b": meta[k]["b"], "hk": meta[k]["hk"]} for k in ("wide", "mid", "near")},
         "town": r.get("town", ""), "kicker": r.get("kicker", "LOCATION"),
         "sub": (r.get("district", "") + " · " if r.get("district") else "") + coords,
-        "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH"),
+        "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH" + (" · CONTAINS MODIFIED COPERNICUS SENTINEL DATA · © OPENSTREETMAP" if meta.get("road") or meta.get("look") == "night" else "")),
         "outline": outline, "city": None if r.get("from") is False else _nearest_city(lat, lon, r.get("from")),
-        "exag": r.get("exag", 5),
+        "exag": r.get("exag", 5), "road": meta.get("road"),
     }
     imgs = "".join(f'<img id="rl_{k}{s}" src="{_uri(out / f"{k}{e}", m)}" style="display:none">'
                    for k in ("wide", "mid", "near") for s, e, m in (("", ".jpg", "image/jpeg"), ("h", "_h.png", "image/png")))
