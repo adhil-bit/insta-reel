@@ -48,11 +48,16 @@ def _get(url, params=None, data=None, timeout=60):
 def geocode(p):
     if "lat" in p and "lon" in p:
         return p["lat"], p["lon"]
-    js = _get("https://nominatim.openstreetmap.org/search", {"q": p["q"], "format": "json", "limit": 1, "countrycodes": "in"})
-    time.sleep(1.2)
-    if not js:
-        raise RuntimeError(f"geocode failed: {p['q']}")
-    return float(js[0]["lat"]), float(js[0]["lon"])
+    parts = [x.strip() for x in p["q"].split(",")]
+    tries = [", ".join(parts[k:]) for k in range(len(parts) - 1)] + [f"{p['en'].title()}, Kerala"]
+    tries[1:1] = [", ".join([parts[0].split()[0]] + parts[1:])] if len(parts[0].split()) > 1 else []
+    for q in tries:
+        js = _get("https://nominatim.openstreetmap.org/search", {"q": q, "format": "json", "limit": 1, "countrycodes": "in"})
+        time.sleep(1.2)
+        if js:
+            print(f"geocode {p['en']}: '{q}' -> {js[0]['lat']}, {js[0]['lon']} ({js[0].get('display_name','')[:80]})")
+            return float(js[0]["lat"]), float(js[0]["lon"])
+    raise RuntimeError(f"geocode failed: {p['q']}")
 
 
 def osrm(points):
