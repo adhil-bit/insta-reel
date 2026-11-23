@@ -50,7 +50,7 @@ function camera(t) {
   let tx, tz, d, pitch, yaw;
   if (SC.mode === 'overview' || SC.mode === 'final') {
     tx = 0; tz = SC.mode === 'overview' ? -0.2 * (B[3] - B[1]) * KY : 0; d = fitD * (SC.mode === 'final' ? lerp(0.62, 0.72, ease.inOut(q)) : lerp(0.9, 0.7, ease.out(q)));
-    pitch = 62 * Math.PI / 180; yaw = (SC.mode === 'final' ? -10 + 14 * q : 10 - 12 * q) * Math.PI / 180;
+    pitch = (SC.mode === 'overview' ? 74 : 62) * Math.PI / 180; yaw = (SC.mode === 'final' ? -10 + 14 * q : 10 - 12 * q) * Math.PI / 180;
   } else {
     const p = lerp(SC.from, SC.to, ease.inOut(clamp(q / 0.92))), a = at(p);
     tx = wx(a[1]); tz = wz(a[0]); d = SC.dist || 7.5; pitch = (SC.pitch || 52) * Math.PI / 180;
@@ -62,7 +62,7 @@ function camera(t) {
 }
 
 function label(lat, lon, en, ml, a = 1, big = false) {
-  const p = scr(lat, lon); if (p[2] > 1 || p[0] < -50 || p[0] > W + 50 || p[1] < (SC.mode === 'overview' ? 740 : 260) || p[1] > H - 260) return;
+  const p = scr(lat, lon); if (p[2] > 1 || p[0] < -50 || p[0] > W + 50 || p[1] < (SC.mode === 'overview' ? 950 : 260) || p[1] > H - 260) return;
   g.save(); g.globalAlpha = a; g.fillStyle = '#ffffff'; g.strokeStyle = '#1f6feb'; g.lineWidth = 5; g.beginPath(); g.arc(p[0], p[1], big ? 13 : 9, 0, 6.283); g.fill(); g.stroke();
   g.shadowColor = 'rgba(0,0,0,0.85)'; g.shadowBlur = 10; g.textAlign = 'left'; g.fillStyle = '#ffffff';
   g.font = `800 ${big ? 36 : 28}px Inter`; g.fillText(en, p[0] + 22, p[1] - 4); g.font = `700 ${big ? 30 : 24}px Baloo`; g.fillText(ml, p[0] + 22, p[1] + (big ? 30 : 24)); g.restore();
