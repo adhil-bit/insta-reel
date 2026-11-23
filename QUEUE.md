@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sun 22 Nov, 08:42 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 23 Nov, 07:06 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -41,6 +41,7 @@ _Updated Sun 22 Nov, 08:42 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| The Kannur treasure pot (2024) | 2026-11-23T01:35 |
 | Ilaveezhapoonchira: the valley where leaves don't fall | 2026-11-20T01:36 |
 | Madayipara's Jootha Kulam | 2026-11-19T11:13 |
 | Marco Polo saw Ezhimala: the Kingdom of Eli | 2026-11-18T01:35 |
@@ -50,4 +51,3 @@ _Updated Sun 22 Nov, 08:42 PM IST. Times are approximate: each reel posts within
 | Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
 | Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
 | A hacker hunting a teacher for 4 years: is your phone safe? | 2026-11-13T01:35 |
-| Ambalappuzha: the chess debt still being paid | 2026-11-12T13:38 |
