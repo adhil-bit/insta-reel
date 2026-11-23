@@ -1,0 +1,165 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "THE FORT WHERE BRITISH MALABAR BEGAN",
+  "topic": {
+    "title": "Thalassery Fort, 1708",
+    "category": "HISTORY",
+    "angle": "Owner's topic bank: the East India Company's Malabar base; Mysore siege; tunnel legend",
+    "key_facts": [
+      "The British East India Company built Thalassery Fort in 1708",
+      "It became the Company's main base on the Malabar coast for the pepper and spice trade",
+      "Mysore forces besieged Thalassery for years (1779-82) but the fort did not fall",
+      "Locals still tell of secret tunnels from the fort to the sea (legend)"
+    ],
+    "sources": [
+      "Kerala history (Tellicherry Fort)"
+    ]
+  },
+  "headline": [
+    "തലശ്ശേരി കോട്ട"
+  ],
+  "accent_words": [
+    "കോട്ട"
+  ],
+  "thumbnail_ml": "മലബാർ പിടിക്കാൻ ബ്രിട്ടീഷുകാർ പണിത കോട്ട",
+  "thumbnail_accent": [
+    "കോട്ട"
+  ],
+  "cover_visual": "Golden-hour laterite fort on a cliff over the sea, an East India ship anchored below",
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 5/10",
+  "pin": {
+    "scene": 1,
+    "town": "തലശ്ശേരി",
+    "x": 540,
+    "y": 980
+  },
+  "twist_scene": 4,
+  "hud": {
+    "1": [
+      [
+        "YEAR",
+        1708
+      ]
+    ]
+  },
+  "cine": {
+    "overlay": "rain",
+    "color": "#cfe3ff",
+    "letterbox": [
+      3
+    ]
+  },
+  "hook_voiceover": "ബ്രിട്ടീഷുകാർ മലബാർ പിടിക്കാൻ തുടങ്ങിയത് ഈ ഒരു കോട്ടയിൽ നിന്നാണ്! കടലിലേക്കുള്ള രഹസ്യ തുരങ്കം സത്യമോ?",
+  "scenes": [
+    {
+      "voiceover": "1708-ൽ ബ്രിട്ടീഷ് ഈസ്റ്റ് ഇന്ത്യ കമ്പനി തലശ്ശേരിയിൽ ഒരു കോട്ട പണിതു.",
+      "caption": "1708 · തലശ്ശേരി",
+      "highlight": "1708",
+      "kicker": "THE COMPANY'S FORT",
+      "loc": "THALASSERY · KANNUR",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ലക്ഷ്യം കുരുമുളകും സുഗന്ധവ്യഞ്ജനങ്ങളും. മലബാർ തീരത്തെ കമ്പനിയുടെ പ്രധാന താവളമായി ഈ കോട്ട മാറി.",
+      "caption": "കുരുമുളക് · വ്യാപാരം",
+      "highlight": "കുരുമുളക്",
+      "kicker": "THE PEPPER TRADE",
+      "loc": "MALABAR COAST",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മൈസൂർ സൈന്യം വർഷങ്ങളോളം തലശ്ശേരി ഉപരോധിച്ചു. പക്ഷേ കോട്ട വീണില്ല.",
+      "caption": "ഉപരോധം",
+      "highlight": "ഉപരോധം",
+      "kicker": "THE SIEGE",
+      "loc": "THALASSERY",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കോട്ടയിൽ നിന്ന് കടലിലേക്ക് രഹസ്യ തുരങ്കങ്ങൾ ഉണ്ടെന്ന് ഇന്നും നാട്ടുകാർ പറയുന്നു.",
+      "caption": "ട്വിസ്റ്റ് · രഹസ്യ തുരങ്കം",
+      "highlight": "ട്വിസ്റ്റ്",
+      "kicker": "SECRET TUNNELS?",
+      "loc": "THALASSERY FORT",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "രഹസ്യ തുരങ്കം സത്യമോ കഥയോ? കമന്റ് ചെയ്യൂ. തലശ്ശേരിക്കാരൻ ചങ്കിന് അയച്ചു കൊടുക്കൂ!",
+      "caption": "സത്യമോ കഥയോ?",
+      "highlight": "സത്യമോ",
+      "kicker": "COMMENT BELOW",
+      "loc": "THALASSERY",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "മലബാർ പിടിക്കാൻ ബ്രിട്ടീഷുകാർ പണിത കോട്ട 🏰\n\n1708-ൽ ഈസ്റ്റ് ഇന്ത്യ കമ്പനി പണിത തലശ്ശേരി കോട്ട. കുരുമുളക് വ്യാപാരത്തിന്റെ താവളം, മൈസൂർ ഉപരോധത്തിലും വീഴാത്ത കോട്ട. കടലിലേക്കുള്ള രഹസ്യ തുരങ്കം?\n\nരഹസ്യ തുരങ്കം സത്യമോ കഥയോ? കമന്റ് ചെയ്യൂ 👇\nതലശ്ശേരിക്കാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nThalassery Fort, built by the East India Company in 1708, became its main Malabar base and held out against a long Mysore siege.\n\nകേരളത്തിന്റെ പോരാളികൾ · 5/10\n\nCredits: Kerala history (Tellicherry Fort) · Animation, voice and sound: AI-generated\n\n#ThalasseryFort #Thalassery #Kannur #KeralaHistory #MalayalamReels",
+  "search_ml": [
+    "തലശ്ശേരി കോട്ട",
+    "തലശ്ശേരി",
+    "കണ്ണൂർ ചരിത്രം"
+  ],
+  "hashtags": [
+    "ThalasseryFort",
+    "Thalassery",
+    "Kannur",
+    "KeralaHistory",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Tunnels framed as what locals say",
+    "Siege without exact dates on screen"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          2
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 3,
+        "at": [
+          0.1,
+          0.35,
+          0.6
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 4,
+        "at": 0.1,
+        "count": 3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.5,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  }
+}

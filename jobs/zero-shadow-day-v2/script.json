@@ -1,0 +1,142 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "SCIENCE",
+  "english_sub": "THE DAY YOUR SHADOW DISAPPEARS",
+  "topic": {
+    "title": "Zero Shadow Day in Kerala",
+    "category": "SCIENCE",
+    "angle": "Twice a year at noon the sun is directly overhead in Kerala (April and August); shadows vanish",
+    "key_facts": [
+      "Zero Shadow Day happens where the noon sun is directly overhead",
+      "It happens only between the Tropic of Cancer and the Tropic of Capricorn",
+      "In Kerala (about 8°–12.5°N) the dates fall in April and in August, varying by place",
+      "A vertical stick casts no shadow at local noon on that day"
+    ],
+    "sources": [
+      "Astronomical Society of India (Zero Shadow Day)"
+    ]
+  },
+  "thumbnail_ml": "നിങ്ങളുടെ നിഴൽ അപ്രത്യക്ഷമാകുന്ന ദിവസം!",
+  "thumbnail_accent": [
+    "നിഴൽ"
+  ],
+  "series": "ശാസ്ത്ര രഹസ്യങ്ങൾ #1",
+  "twist_scene": 3,
+  "hook_voiceover": "വർഷത്തിൽ രണ്ടു ദിവസം, ഉച്ചയ്ക്ക് കേരളത്തിൽ നിങ്ങളുടെ നിഴൽ അപ്രത്യക്ഷമാകും!",
+  "scenes": [
+    {
+      "voiceover": "സൂര്യൻ കൃത്യം തലയ്ക്ക് മുകളിൽ വരുമ്പോൾ നിഴൽ കാലിനടിയിലാകും. അതാണ് സീറോ ഷാഡോ ഡേ.",
+      "caption": "സീറോ ഷാഡോ ഡേ",
+      "highlight": "സീറോ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഭൂമധ്യരേഖയ്ക്കും ഉഷ്ണമേഖലാ രേഖകൾക്കും ഇടയിലുള്ള സ്ഥലങ്ങളിൽ മാത്രമാണ് ഇത് സംഭവിക്കുന്നത്.",
+      "caption": "ഉഷ്ണമേഖല",
+      "highlight": "ഉഷ്ണമേഖല",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കേരളത്തിൽ ഏപ്രിലിലും ഓഗസ്റ്റിലുമാണ് ഈ ദിവസങ്ങൾ. ഓരോ സ്ഥലത്തും തീയതി അല്പം മാറും. കൂട്ടുകാർക്ക് അയച്ചു കൊടുക്കൂ!",
+      "caption": "ഏപ്രിൽ · ഓഗസ്റ്റ്",
+      "highlight": "ഏപ്രിൽ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരു വടി നേരെ നാട്ടി നോക്കൂ. ആ ഉച്ചയ്ക്ക് വടിക്ക് നിഴലുണ്ടാകില്ല!",
+      "caption": "വടി പരീക്ഷണം",
+      "highlight": "വടി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അടുത്ത ഏപ്രിലിൽ നിങ്ങൾ പരീക്ഷിക്കുമോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "പരീക്ഷിക്കുമോ?",
+      "highlight": "പരീക്ഷിക്കുമോ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "നിഴൽ അപ്രത്യക്ഷമാകുന്ന ദിവസം! ☀️\n\nവർഷത്തിൽ രണ്ടു ദിവസം ഉച്ചയ്ക്ക് സൂര്യൻ കൃത്യം തലയ്ക്ക് മുകളിൽ. കേരളത്തിൽ ഏപ്രിലിലും ഓഗസ്റ്റിലും. നിങ്ങളുടെ നാട്ടിലെ തീയതി അല്പം മാറും.\n\nഅടുത്ത ഏപ്രിലിൽ പരീക്ഷിക്കുമോ? കമന്റ് ചെയ്യൂ 👇\nശാസ്ത്രപ്രേമിയായ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nTwice a year the noon sun is directly overhead in Kerala (April and August) and vertical objects cast no shadow.\n\nശാസ്ത്ര രഹസ്യങ്ങൾ #1\n\nCredits: Astronomical Society of India · Animation, voice and sound: AI-generated\n\n#ZeroShadowDay #Kerala #Astronomy #Science #MalayalamReels",
+  "search_ml": [
+    "സീറോ ഷാഡോ ഡേ",
+    "നിഴൽ ഇല്ലാത്ത ദിവസം",
+    "ശാസ്ത്രം"
+  ],
+  "hashtags": [
+    "ZeroShadowDay",
+    "Kerala",
+    "Astronomy",
+    "Science",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Months only, no exact dates"
+  ],
+  "sound_plan": {
+    "drone": "E",
+    "layers": [
+      {
+        "type": "shimmer",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.8
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "design": "chalk",
+  "headline": [
+    "നിങ്ങളുടെ"
+  ],
+  "accent_words": [
+    "നിഴൽ"
+  ],
+  "cover_visual": "Chalkboard: sun overhead, stick figure with no shadow"
+}
