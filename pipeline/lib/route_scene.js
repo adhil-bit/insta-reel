@@ -27,7 +27,7 @@ function hAt(lat, lon) { const u = (lon - B[0]) / (B[2] - B[0]), v = (B[3] - lat
 function init() {
   const gl = document.createElement('canvas'); gl.width = W; gl.height = H;
   const r = new THREE.WebGLRenderer({ canvas: gl, antialias: true, preserveDrawingBuffer: true }); r.setSize(W, H, false); r.outputEncoding = THREE.sRGBEncoding;
-  const sc = new THREE.Scene(); sc.background = new THREE.Color(0x0b1622); sc.fog = new THREE.Fog(0x9fb4c4, 30, 120);
+  const sc = new THREE.Scene(); sc.background = new THREE.Color(0x0b1622); sc.fog = new THREE.Fog(0x1b2a36, 30, 120);
   const hm = hmap(), img = document.getElementById('rt_sat');
   const tex = new THREE.Texture(img); tex.needsUpdate = true; tex.encoding = THREE.sRGBEncoding; tex.anisotropy = 8; tex.minFilter = THREE.LinearMipmapLinearFilter;
   const geo = new THREE.PlaneGeometry((B[2] - B[0]) * KX, (B[3] - B[1]) * KY, hm.w - 1, hm.h - 1); geo.rotateX(-Math.PI / 2);
@@ -40,7 +40,7 @@ function init() {
   // satellite crop source for bubbles
   const crop = document.createElement('canvas'); crop.width = img.naturalWidth; crop.height = img.naturalHeight; crop.getContext('2d').drawImage(img, 0, 0);
   S = { r, gl, sc, cam, hm, crop, cl: [] };
-  for (let i = 0; i < 7; i++) { const q = FX.NOISE[i * 37]; S.cl.push([q[0] * W, 450 + q[1] * 1000, 160 + q[2] * 220, 0.5 + q[2]]); }
+  for (let i = 0; i < 4; i++) { const q = FX.NOISE[i * 37]; S.cl.push([q[0] * W, i % 2 ? 1380 + q[1] * 120 : 560 + q[1] * 160, 140 + q[2] * 120, 0.5 + q[2]]); }
 }
 function scr(lat, lon, lift = 0.02) { const v = new THREE.Vector3(wx(lon), hAt(lat, lon) + lift, wz(lat)).project(S.cam); return [(v.x + 1) / 2 * W, (1 - v.y) / 2 * H, v.z]; }
 
@@ -58,7 +58,7 @@ function camera(t) {
     S.p = p;
   }
   cam.position.set(tx + d * Math.cos(pitch) * Math.sin(yaw), d * Math.sin(pitch), tz + d * Math.cos(pitch) * Math.cos(yaw));
-  cam.lookAt(tx, 0, tz); S.sc.fog.near = d * 1.4; S.sc.fog.far = d * 4.5; return { q, d };
+  cam.lookAt(tx, 0, tz); S.sc.fog.near = d * 2.6; S.sc.fog.far = d * 8; return { q, d };
 }
 
 function label(lat, lon, en, ml, a = 1, big = false) {
@@ -97,14 +97,14 @@ function bubble(b, k, side) {                       // satellite close-up bubble
 }
 function title(en, ml, a) { if (!en || a <= 0) return; g.save(); g.globalAlpha = a; g.textAlign = 'center'; g.shadowColor = 'rgba(0,0,0,0.8)'; g.shadowBlur = 18; g.fillStyle = '#fff';
   g.font = '900 78px Inter'; g.fillText(en, 540, 400); g.font = '800 54px Baloo'; g.fillText(ml, 540, 468); g.restore(); }
-function clouds(t) { g.save(); for (const [x0, y, r, sp] of S.cl) { const x = ((x0 + t * 40 * sp) % (W + 2 * r)) - r; const rg = g.createRadialGradient(x, y, 10, x, y, r); rg.addColorStop(0, 'rgba(255,255,255,0.42)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = rg; g.beginPath(); g.ellipse(x, y, r * 1.6, r * 0.7, 0, 0, 6.283); g.fill(); } g.restore(); }
+function clouds(t) { for (const [x0, y, r, sp] of S.cl) { const x = ((x0 + t * 30 * sp) % (W + 4 * r)) - 2 * r; g.save(); g.translate(x, y); g.scale(1.8, 0.75); for (let k = 0; k < 3; k++) { const ox = (k - 1) * r * 0.55, rr = r * (0.75 + 0.25 * (k === 1)); const rg = g.createRadialGradient(ox, 0, 1, ox, 0, rr); rg.addColorStop(0, 'rgba(255,255,255,0.30)'); rg.addColorStop(0.6, 'rgba(255,255,255,0.12)'); rg.addColorStop(1, 'rgba(255,255,255,0)'); g.fillStyle = rg; g.beginPath(); g.arc(ox, 0, rr, 0, 6.283); g.fill(); } g.restore(); } }
 
 window.renderFrame = function (t) {
   if (!S) init();
   const C = camera(t), q = C.q;
   S.r.render(S.sc, S.cam);
   g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = '#0b1622'; g.fillRect(0, 0, W, H); g.restore();
-  g.drawImage(S.gl, 0, 0);
+  g.filter = 'brightness(1.14) contrast(1.06) saturate(1.18)'; g.drawImage(S.gl, 0, 0); g.filter = 'none';
   const vg = g.createLinearGradient(0, 0, 0, H); vg.addColorStop(0, 'rgba(5,12,20,0.55)'); vg.addColorStop(0.3, 'rgba(5,12,20,0)'); vg.addColorStop(0.75, 'rgba(5,12,20,0)'); vg.addColorStop(1, 'rgba(5,12,20,0.6)'); g.fillStyle = vg; g.fillRect(0, 0, W, H);
   const overview = SC.mode === 'overview' || SC.mode === 'final';
   if (overview) routeLine(SC.mode === 'final' ? 1 : clamp(0.25 + q * 1.4), 1, SC.mode !== 'final');
