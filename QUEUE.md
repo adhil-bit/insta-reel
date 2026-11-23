@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 23 Nov, 04:04 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 23 Nov, 04:06 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -41,7 +41,6 @@ _Updated Mon 23 Nov, 04:04 PM IST. Times are approximate: each reel posts within
 - k2-unniyarcha-v2
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
-- zero-shadow-day-v2
 
 ## Recently posted
 
