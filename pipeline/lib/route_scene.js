@@ -49,7 +49,7 @@ function camera(t) {
   const fitD = Math.max((B[3] - B[1]) * KY, (B[2] - B[0]) * KX * H / W) * 0.95;
   let tx, tz, d, pitch, yaw;
   if (SC.mode === 'overview' || SC.mode === 'final') {
-    tx = 0; tz = 0; d = fitD * (SC.mode === 'final' ? lerp(0.62, 0.72, ease.inOut(q)) : lerp(0.9, 0.7, ease.out(q)));
+    tx = 0; tz = SC.mode === 'overview' ? -0.2 * (B[3] - B[1]) * KY : 0; d = fitD * (SC.mode === 'final' ? lerp(0.62, 0.72, ease.inOut(q)) : lerp(0.9, 0.7, ease.out(q)));
     pitch = 62 * Math.PI / 180; yaw = (SC.mode === 'final' ? -10 + 14 * q : 10 - 12 * q) * Math.PI / 180;
   } else {
     const p = lerp(SC.from, SC.to, ease.inOut(clamp(q / 0.92))), a = at(p);
@@ -62,7 +62,7 @@ function camera(t) {
 }
 
 function label(lat, lon, en, ml, a = 1, big = false) {
-  const p = scr(lat, lon); if (p[2] > 1 || p[0] < -50 || p[0] > W + 50 || p[1] < 260 || p[1] > H - 260) return;
+  const p = scr(lat, lon); if (p[2] > 1 || p[0] < -50 || p[0] > W + 50 || p[1] < (SC.mode === 'overview' ? 740 : 260) || p[1] > H - 260) return;
   g.save(); g.globalAlpha = a; g.fillStyle = '#ffffff'; g.strokeStyle = '#1f6feb'; g.lineWidth = 5; g.beginPath(); g.arc(p[0], p[1], big ? 13 : 9, 0, 6.283); g.fill(); g.stroke();
   g.shadowColor = 'rgba(0,0,0,0.85)'; g.shadowBlur = 10; g.textAlign = 'left'; g.fillStyle = '#ffffff';
   g.font = `800 ${big ? 36 : 28}px Inter`; g.fillText(en, p[0] + 22, p[1] - 4); g.font = `700 ${big ? 30 : 24}px Baloo`; g.fillText(ml, p[0] + 22, p[1] + (big ? 30 : 24)); g.restore();
@@ -116,8 +116,8 @@ window.renderFrame = function (t) {
   if (SC.title !== undefined) { const P = M.stops[SC.title]; title(P.en, P.ml, ease.out(clamp(q / 0.15))); }
   if (!overview || SC.mode === 'final') {
     const km = SC.mode === 'final' ? M.km : M.km * (S.p || 0);
-    g.save(); g.font = '800 40px Inter'; const s = km.toFixed(1) + ' km'; const w = g.measureText(s).width + 40; g.fillStyle = 'rgba(10,20,30,0.72)'; g.beginPath(); g.roundRect(60, 1520, w, 64, 32); g.fill();
-    g.fillStyle = '#ffffff'; g.textAlign = 'left'; g.fillText(s, 80, 1566); g.restore();
+    g.save(); g.font = '800 40px Inter'; const s = km.toFixed(1) + ' km'; const w = g.measureText(s).width + 40; g.fillStyle = 'rgba(10,20,30,0.72)'; g.beginPath(); g.roundRect(60, 92, w, 64, 32); g.fill();
+    g.fillStyle = '#ffffff'; g.textAlign = 'left'; g.fillText(s, 80, 138); g.restore();
   }
-  g.save(); g.globalAlpha = 0.75; g.fillStyle = '#ffffff'; g.font = '500 18px Inter'; g.textAlign = 'right'; g.fillText(RT.credit, W - 40, 1612); g.restore();
+  
 };
