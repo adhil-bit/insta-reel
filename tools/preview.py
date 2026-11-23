@@ -19,6 +19,8 @@ files = sorted(job.glob("anim_*.js"), key=lambda f: int(f.stem.split("_")[1]))
 tmp = Path(tempfile.mkdtemp()); tiles = []
 codes = [f.read_text() for f in files]
 if script.get('relief') and (job / 'relief' / 'relief.json').exists(): relief.apply(job, script, codes)
+if script.get('route') and (job / 'route' / 'route.json').exists():
+    from pipeline import route as _route; _route.apply(job, script, codes)
 with sync_playwright() as p:
     b = p.chromium.launch(args=['--enable-unsafe-swiftshader']); pg = b.new_page(viewport={"width": 1080, "height": 1920})
     for i, f in enumerate(files):

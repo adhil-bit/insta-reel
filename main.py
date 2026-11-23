@@ -248,6 +248,9 @@ def render_job(job_dir: Path) -> Path:
     if script.get("relief"):                 # automatic 3D relief map for the location scene
         from pipeline import relief
         relief.apply(job_dir, script, codes)
+    if script.get("route"):                  # satellite route journey (design "route")
+        from pipeline import route
+        route.apply(job_dir, script, codes)
     print(f"Rendering job {job_dir.name}: {topic['title']}")
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
 

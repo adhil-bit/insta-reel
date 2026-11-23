@@ -346,6 +346,7 @@ def _design_css(script: dict) -> str:
         "blueprint": ("#E8F1FF", "#FFD24A", "0 2px 12px rgba(0,20,60,.6)", "rgba(10,40,85,.88)", "#E8F1FF", "border:2px solid #E8F1FF; border-radius:0;", "Baloo", None),
         "chalk":     ("#F3F1E7", "#FFE27A", "0 2px 10px rgba(0,0,0,.4)", "rgba(20,40,28,.85)", "#F3F1E7", "border:3px dashed rgba(243,241,231,.6); border-radius:10px;", "Chilanka", None),
         "woodcut":   ("#15110d", "#B7281D", "none", "#15110d", "#EFE5CF", "border-radius:0;", "Baloo", "rgba(0,0,0,0)"),
+        "route":     ("#ffffff", "#7FC1FF", "0 4px 20px rgba(0,0,0,.75)", "rgba(10,20,30,.72)", "#ffffff", "border-radius:28px;", "Baloo", None),
         "palmleaf":  ("#F6E2B8", "#E0A84F", "0 3px 16px rgba(0,0,0,.8)", "rgba(217,183,124,.95)", "#2a1a0e", "border-radius:40px; border:3px solid #8a5a2b;", "Chilanka", None),
     }.get(d)
     if not C:

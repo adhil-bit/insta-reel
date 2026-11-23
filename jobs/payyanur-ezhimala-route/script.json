@@ -1,0 +1,214 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "TRAVEL",
+  "english_sub": "PAYYANUR → EZHIMALA → MADAYIPARA",
+  "topic": {
+    "title": "Payyanur to Madayipara: 3 places, 2,000 years",
+    "category": "TRAVEL",
+    "angle": "A short drive through North Kannur's history: Payyanur, Ezhimala, Madayipara",
+    "key_facts": [
+      "Payyanur is known for the 1930 salt satyagraha",
+      "Ezhimala was the seat of the Ezhimala (Mushika) kingdom and King Nannan of Sangam literature",
+      "Ezhimala today hosts the Indian Naval Academy, often described as the largest in Asia",
+      "Madayipara is a laterite plateau near Pazhayangadi with a 'Jootha Kulam' (Jews' pond) and flowers around Onam"
+    ],
+    "sources": [
+      "Kerala Tourism",
+      "Kannur district history"
+    ]
+  },
+  "thumbnail_ml": "ഒരു ചെറിയ യാത്ര, രണ്ടായിരം വർഷത്തെ ചരിത്രം!",
+  "thumbnail_accent": [
+    "ചരിത്രം!"
+  ],
+  "series": "കണ്ണൂർ യാത്രകൾ #1",
+  "twist_scene": 3,
+  "hook_voiceover": "പയ്യന്നൂരിൽ നിന്ന് ഒരു ചെറിയ യാത്ര. മൂന്ന് സ്ഥലങ്ങൾ, രണ്ടായിരം വർഷത്തെ ചരിത്രം!",
+  "scenes": [
+    {
+      "voiceover": "യാത്ര തുടങ്ങുന്നത് പയ്യന്നൂരിൽ നിന്ന്. ഉപ്പ് സത്യാഗ്രഹത്തിന്റെ നാട്.",
+      "caption": "",
+      "highlight": "",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കവ്വായി കായൽ കടന്ന് ആദ്യ സ്റ്റോപ്പ് ഏഴിമല. സംഘകാലത്ത് നന്നൻ രാജാവ് ഭരിച്ച മല.",
+      "caption": "",
+      "highlight": "",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇന്ന് അവിടെ ഏഷ്യയിലെ ഏറ്റവും വലിയ നാവിക അക്കാദമി എന്നാണ് പറയപ്പെടുന്നത്. പയ്യന്നൂരുകാർക്ക് അയച്ചു കൊടുക്കൂ!",
+      "caption": "",
+      "highlight": "",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അടുത്തത് മാടായിപ്പാറ. കുന്നിന് മുകളിൽ ഒരു ജൂതക്കുളം, ഓണക്കാലത്ത് പൂക്കളുടെ പരവതാനി.",
+      "caption": "",
+      "highlight": "",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഈ റൂട്ടിൽ നിങ്ങൾ പോയിട്ടുണ്ടോ? അടുത്ത യാത്ര ഏത് റൂട്ടിൽ? കമന്റ് ചെയ്യൂ!",
+      "caption": "",
+      "highlight": "",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "പയ്യന്നൂർ → ഏഴിമല → മാടായിപ്പാറ 🗺️🚐\n\nഒരു ചെറിയ യാത്ര, രണ്ടായിരം വർഷത്തെ ചരിത്രം. ഉപ്പ് സത്യാഗ്രഹത്തിന്റെ പയ്യന്നൂർ, നന്നൻ രാജാവിന്റെ ഏഴിമല, ജൂതക്കുളമുള്ള മാടായിപ്പാറ.\n\nഅടുത്ത യാത്ര ഏത് റൂട്ടിൽ? കമന്റ് ചെയ്യൂ 👇\nപയ്യന്നൂരുകാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nA short drive through North Kannur's history: Payyanur, Ezhimala and Madayipara.\n\nകണ്ണൂർ യാത്രകൾ #1\n\nCredits: Contains modified Copernicus Sentinel data, © OpenStreetMap contributors, Kerala Tourism · Animation, voice and sound: AI-generated\n\n#Payyanur #Ezhimala #Madayipara #Kannur #MalayalamReels",
+  "search_ml": [
+    "പയ്യന്നൂർ",
+    "ഏഴിമല",
+    "മാടായിപ്പാറ",
+    "കണ്ണൂർ യാത്ര"
+  ],
+  "hashtags": [
+    "Payyanur",
+    "Ezhimala",
+    "Madayipara",
+    "Kannur",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "'Largest in Asia' stated as 'said to be'",
+    "Jootha Kulam name only, no origin claim"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "river",
+        "clips": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "design": "route",
+  "headline": [
+    "PAYYANUR"
+  ],
+  "accent_words": [
+    "ചരിത്രം!"
+  ],
+  "cover_visual": "Satellite 3D map of North Kannur with a blue route line and town labels",
+  "route": {
+    "stops": [
+      {
+        "en": "PAYYANUR",
+        "ml": "പയ്യന്നൂർ",
+        "q": "Payyanur railway station, Kannur, Kerala"
+      },
+      {
+        "en": "EZHIMALA",
+        "ml": "ഏഴിമല",
+        "q": "Ezhimala railway station, Kannur, Kerala"
+      },
+      {
+        "en": "MADAYIPARA",
+        "ml": "മാടായിപ്പാറ",
+        "q": "Madayipara, Kannur, Kerala"
+      }
+    ],
+    "pois": [
+      {
+        "en": "KAVVAYI BACKWATERS",
+        "ml": "കവ്വായി കായൽ",
+        "q": "Kavvayi, Kannur, Kerala",
+        "bubble": true,
+        "zoom": 0.14
+      }
+    ],
+    "scenes": {
+      "0": {
+        "mode": "overview"
+      },
+      "1": {
+        "from": "s0",
+        "to": 0.16,
+        "title": 0,
+        "dist": 6.5,
+        "bubbles": [
+          {
+            "stop": 0,
+            "at": 0.35,
+            "side": 1
+          }
+        ]
+      },
+      "2": {
+        "from": 0.16,
+        "to": "s1",
+        "dist": 7.5,
+        "bubbles": [
+          {
+            "poi": 0,
+            "at": 0.2,
+            "side": -1
+          }
+        ]
+      },
+      "3": {
+        "from": "s1",
+        "to": "s1",
+        "title": 1,
+        "dist": 5.5,
+        "orbit": 40,
+        "bubbles": [
+          {
+            "stop": 1,
+            "at": 0.25,
+            "side": 1
+          }
+        ]
+      },
+      "4": {
+        "from": "s1",
+        "to": "s2",
+        "title": 2,
+        "dist": 7.0,
+        "bubbles": [
+          {
+            "stop": 2,
+            "at": 0.55,
+            "side": -1
+          }
+        ]
+      },
+      "5": {
+        "mode": "final"
+      }
+    }
+  }
+}
