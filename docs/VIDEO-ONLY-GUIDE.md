@@ -179,3 +179,10 @@ Topic ideas not yet built: Ananthapura lake temple crocodile, Mahe, Bekal fort, 
 | Release 404 right after render | Wait 1–2 minutes and download again |
 | Need to change a rendered reel | New folder `<slug>-v2`, render again |
 | Git push rejected | `git pull --rebase origin main` then push again |
+
+
+## Location map with real road (night look, Nov 2026)
+The relief location scene (`"relief": {...}` in script.json, night look) now zooms into real Sentinel-2 satellite land and draws the real road (OSRM) from the nearest district town: glowing blue line, white van, bilingual town label ("FROM THALASSERY / തലശ്ശേരി" when the town is off-screen), "xx km by road" chip, Copernicus Sentinel + OpenStreetMap credit.
+- Override the start town with `"from": "thalassery"` (a CITIES key) or switch the road off with `"from": false`. `"sat": false` keeps the painted relief.
+- Build once with relief-build.yml (job=<slug>); meta version 4 caches the tiles and road.
+- Use it as the in-between location scene of story reels. Do not make whole travel/route reels (user said no).

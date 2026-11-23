@@ -101,9 +101,11 @@ window.renderFrame = function (t) {
     g.strokeStyle = '#2f8bff'; g.lineWidth = 11; g.stroke(); g.strokeStyle = '#cfe6ff'; g.lineWidth = 3; g.stroke();
     const c0 = pts[0];
     g.fillStyle = '#fff'; g.strokeStyle = '#2f8bff'; g.lineWidth = 5; g.beginPath(); g.arc(c0[0], c0[1], 11, 0, 6.283); g.fill(); g.stroke();
-    const lx = clamp(c0[0] + 22, 40, W - 300), ly = clamp(c0[1], 760, 1380);
+    const onS = p => p[0] > 40 && p[0] < W - 40 && p[1] > 700 && p[1] < 1360, off = !onS(c0), e0 = off ? (pts.find(onS) || c0) : c0;
+    if (off && e0 !== c0) { g.fillStyle = '#2f8bff'; g.beginPath(); g.arc(e0[0], e0[1], 9, 0, 6.283); g.fill(); }
+    const lx = clamp(e0[0] + (e0[0] > W - 320 ? -360 : 22), 40, W - 320), ly = clamp(e0[1] + (off ? 50 : 0), 760, 1350);
     g.shadowColor = 'rgba(0,0,0,0.9)'; g.shadowBlur = 12; g.fillStyle = '#fff'; g.textAlign = 'left';
-    g.font = '800 30px Inter'; spaced(RL.city.en || '', lx, ly - 6, 3); g.font = '700 30px Baloo'; g.fillText(RL.city.name, lx, ly + 30); g.shadowColor = 'transparent';
+    g.font = '800 30px Inter'; spaced((off ? 'FROM ' : '') + (RL.city.en || ''), lx, ly - 6, 3); g.font = '700 30px Baloo'; g.fillText(RL.city.name, lx, ly + 30); g.shadowColor = 'transparent';
     if (ta < 0.995) {
       const a1 = pts[pts.length - 1], a0 = pts[Math.max(0, pts.length - 5)], ang = Math.atan2(a1[1] - a0[1], a1[0] - a0[0]);
       g.save(); g.translate(a1[0], a1[1]); g.rotate(ang); g.shadowColor = 'rgba(0,0,0,0.6)'; g.shadowBlur = 14;
