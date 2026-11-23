@@ -121,7 +121,7 @@ done
 
 Ideas for the next new templates (build one when the rotation needs it): **blueprint** (white lines on blue, measurements), **comic panels** (halftone + speech balloons), **shadow puppet** (Tholpavakoothu: lamp-lit screen, cut-out figures), **museum label** (object on plinth + catalogue card), **chalkboard** (teacher diagrams).
 
-Layout rules for every template: keep **y 180–600** free of drawings (headline / scene caption sits there); main art **y 620–1480**; subtitles sit around **y 1250–1490**; the series badge is top-right at y 118. Check the cover (`cover.jpg` is made from the hook frame): nothing may touch the headline or the English line.
+Layout rules for every template: Instagram's feed shows reels cropped to 4:5 (only y ≈ 285–1635 is visible) and the profile grid to 3:4 (y ≈ 240–1680), so all text sits inside **y 300–1500**. Keep **y 300–700** free of drawings in the hook (headline sits there); main art **y 720–1480**; subtitles sit around **y 1250–1490**; the series badge is top-right at y 118. Check the cover (`cover.jpg` is made from the hook frame): nothing may touch the headline or the English line.
 
 ---
 

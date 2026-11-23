@@ -285,16 +285,17 @@ def _naadu_css() -> str:
     small gold English ALL-CAPS line under it, subtitles mid-lower on a soft dark backing, top third clear."""
     g = NAADU_GOLD
     return f"""
-.claim {{ top:230px; font:800 96px/1.14 Baloo, Noto; color:#fff; text-shadow:0 4px 26px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.6); }}
+.claim {{ top:300px; font:800 96px/1.14 Baloo, Noto; color:#fff; text-shadow:0 4px 26px rgba(0,0,0,.65), 0 0 2px rgba(0,0,0,.6); }}
 .claim b {{ color:{g}; }}
 .claim .eng {{ display:block; margin-top:22px; font:800 30px Inter; letter-spacing:6px; color:{g}; text-transform:uppercase; text-shadow:0 2px 12px rgba(0,0,0,.8); }}
-.head {{ top:200px; font:800 76px/1.12 Baloo, Noto; color:#fff; text-shadow:0 4px 22px rgba(0,0,0,.6); }}
+.head {{ top:300px; font:800 76px/1.12 Baloo, Noto; color:#fff; text-shadow:0 4px 22px rgba(0,0,0,.6); }}
 .head b {{ font-weight:800; color:{g}; }}
 .kicker {{ color:{g} !important; letter-spacing:6px !important; font:800 26px Inter !important; text-transform:uppercase !important; }}
 .sub {{ bottom:430px; left:110px; right:110px; font:700 52px/1.34 Baloo, Noto; background:rgba(0,0,0,.42); border-radius:24px; padding:14px 26px; }}
 .sub:empty {{ display:none; }}
 .sub span.on {{ color:{g}; }}
-.cover {{ top:210px; bottom:auto; }}
+.cover {{ top:310px; bottom:auto; }}
+.brand {{ top:250px; }}
 .cover .kick {{ font-size:104px; }}
 .cover .kick b {{ color:{g}; }}
 .cover .big {{ font:800 32px/1.3 Inter; letter-spacing:7px; color:{g}; }}
