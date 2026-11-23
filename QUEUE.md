@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 23 Nov, 05:25 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Mon 23 Nov, 05:33 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
