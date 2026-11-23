@@ -148,9 +148,9 @@ def build(job: Path, force=False) -> Path:
     look = r.get("look") or ("ink" if script.get("theme") == "inkwash" else "night")
     if meta_p.exists() and not force:
         m = json.loads(meta_p.read_text())
-        if m.get("v") == 2 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
+        if m.get("v") == 3 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
             return out
-    meta = {"v": 2, "lat": r["lat"], "lon": r["lon"], "look": look}
+    meta = {"v": 3, "lat": r["lat"], "lon": r["lon"], "look": look}
     for name, span, glo, size in TILES:
         clat, clon = (KERALA if name == "wide" else (r["lat"], r["lon"]))
         b = bounds_for(clat, clon, span, size)
@@ -167,7 +167,15 @@ def build(job: Path, force=False) -> Path:
             hk = 0.5                                         # local range shown as 0.5 km (honest, not alpine)
         else:
             lo, hi, hk = 0.0, 2600.0, 2.6
-        paint(z, b, look, lo, hi, kerala_only=(name == "wide")).save(out / f"{name}.jpg", quality=86, optimize=True)
+        if name != "wide" and look == "night" and r.get("sat", True):     # real satellite land for the zoom-in
+            sp = out / f"{name}_{span}_{clat:.3f}_{clon:.3f}_sat.jpg"
+            if not sp.exists():
+                from pipeline.route import sentinel_mosaic, grade
+                img, _ = sentinel_mosaic(b, (size[1], size[0]))
+                grade(img).save(sp, quality=88, optimize=True)
+            Image.open(sp).save(out / f"{name}.jpg", quality=88, optimize=True)
+        else:
+            paint(z, b, look, lo, hi, kerala_only=(name == "wide")).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
         meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
