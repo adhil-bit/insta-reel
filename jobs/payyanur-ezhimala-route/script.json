@@ -128,17 +128,37 @@
       {
         "en": "PAYYANUR",
         "ml": "പയ്യന്നൂർ",
-        "q": "Payyanur railway station, Kannur, Kerala"
+        "q": "Payyanur railway station, Kannur, Kerala",
+        "near": [
+          12.05,
+          75.2,
+          20
+        ]
       },
       {
         "en": "EZHIMALA",
         "ml": "ഏഴിമല",
-        "q": "Ezhimala railway station, Kannur, Kerala"
+        "q": "Ezhimala railway station, Kannur, Kerala",
+        "near": [
+          12.05,
+          75.2,
+          20
+        ]
       },
       {
         "en": "MADAYIPARA",
         "ml": "മാടായിപ്പാറ",
-        "q": "Madayipara, Kannur, Kerala"
+        "q": "Madayippara, Kannur, Kerala",
+        "alts": [
+          "Madayipara, Kerala",
+          "Madayi, Kannur, Kerala",
+          "Pazhayangadi, Kannur, Kerala"
+        ],
+        "near": [
+          12.03,
+          75.21,
+          15
+        ]
       }
     ],
     "pois": [
@@ -147,7 +167,12 @@
         "ml": "കവ്വായി കായൽ",
         "q": "Kavvayi, Kannur, Kerala",
         "bubble": true,
-        "zoom": 0.14
+        "zoom": 0.14,
+        "near": [
+          12.05,
+          75.2,
+          20
+        ]
       }
     ],
     "scenes": {

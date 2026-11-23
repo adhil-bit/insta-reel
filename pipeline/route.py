@@ -49,11 +49,13 @@ def geocode(p):
     if "lat" in p and "lon" in p:
         return p["lat"], p["lon"]
     parts = [x.strip() for x in p["q"].split(",")]
-    tries = [", ".join(parts[k:]) for k in range(len(parts) - 1)] + [f"{p['en'].title()}, Kerala"]
-    tries[1:1] = [", ".join([parts[0].split()[0]] + parts[1:])] if len(parts[0].split()) > 1 else []
+    tries = list(p.get("alts", [])) + [p["q"]] + [f"{p['en'].title()}, Kerala"]
+    tries = [p["q"]] + list(p.get("alts", [])) + [f"{p['en'].title()}, Kerala"]
     for q in tries:
-        js = _get("https://nominatim.openstreetmap.org/search", {"q": q, "format": "json", "limit": 1, "countrycodes": "in"})
+        js = _get("https://nominatim.openstreetmap.org/search", {"q": q, "format": "json", "limit": 5, "countrycodes": "in"})
         time.sleep(1.2)
+        if js and p.get("near"):
+            la, lo, km = p["near"]; js = [x for x in js if math.hypot((float(x["lat"]) - la) * 110.57, (float(x["lon"]) - lo) * 108) <= km]
         if js:
             print(f"geocode {p['en']}: '{q}' -> {js[0]['lat']}, {js[0]['lon']} ({js[0].get('display_name','')[:80]})")
             return float(js[0]["lat"]), float(js[0]["lon"])
