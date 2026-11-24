@@ -114,12 +114,12 @@ window.renderFrame = function (t) { const D = DURATION;
 MURAL.wall(g, t, '#8A5A2B'); MURAL.band(g, 610); MURAL.panel(g, 80, 700, 920, 780, '#1E2A3C'); MURAL.band(g, 1500);
 g.save(); g.beginPath(); g.rect(94, 714, 892, 752); g.clip();
 g.fillStyle = MURAL.CRM; g.beginPath(); g.arc(800, 860, 60, 0, 6.283); g.fill(); g.fillStyle = '#1E2A3C'; g.beginPath(); g.arc(828, 845, 54, 0, 6.283); g.fill();
-FX.paint(g, 'k4h', q => hill(q, 760, 1480, 0.95, t), '#2F4A3E', MURAL.BLK, 6);
-ring(g, 620, 1420, 0.7, t);
-const wk = clamp(t / (D * 0.7)); g.save(); g.translate(lerp(0, 200, wk), 0); FX.paint(g, 'k4m', q => person(q, 230, 1460, 1.25, t, { pose: 'stand', head: 'turban' }), MURAL.RED, MURAL.BLK, 7); g.restore();
 const ek = ease.out(clamp((t - D * 0.45) / (D * 0.35)));
 g.save(); g.translate(0, (1 - ek) * 260); FX.paint(g, 'k4e', q => { soldier(q, 700, 1300, 0.9, t, 0); soldier(q, 860, 1320, 0.9, t, 1); }, MURAL.BLK, '#E9B23C', 3); g.restore();
 for (let i = 0; i < 2; i++) { g.save(); g.globalAlpha = ek; g.strokeStyle = MURAL.CRM; g.lineWidth = 6; g.beginPath(); g.moveTo(700 + i * 160, 1060 + (1 - ek) * 260); g.lineTo(700 + i * 160 - 40, 900 + (1 - ek) * 260); g.stroke(); g.restore(); }
+FX.paint(g, 'k4h', q => hill(q, 760, 1480, 0.95, t), '#2F4A3E', MURAL.BLK, 6);
+ring(g, 620, 1420, 0.7, t);
+const wk = clamp(t / (D * 0.7)); g.save(); g.translate(lerp(0, 200, wk), 0); FX.paint(g, 'k4m', q => person(q, 230, 1460, 1.25, t, { pose: 'stand', head: 'turban' }), MURAL.RED, MURAL.BLK, 7); g.restore();
 const fl = clamp((t - (D - 0.45)) / 0.15) * (1 - clamp((t - (D - 0.2)) / 0.2)); if (fl > 0) { g.fillStyle = 'rgba(184,52,31,' + (0.7 * fl) + ')'; g.fillRect(94, 714, 892, 752); }
 g.restore();
 };

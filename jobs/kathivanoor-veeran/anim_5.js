@@ -115,6 +115,6 @@ MURAL.wall(g, t); MURAL.band(g, 610); MURAL.panel(g, 80, 700, 920, 780, '#2A1A14
 g.save(); g.beginPath(); g.rect(94, 714, 892, 752); g.clip();
 torch(g, 220, 1460, 1.0, t); torch(g, 860, 1460, 1.0, t);
 const k = ease.out(clamp(t / 0.8)), sw = Math.sin(t * 2.2) * 14;
-g.save(); g.translate(sw, (1 - k) * 80); FX.paint(g, 'k5t', q => theyyam(q, 540, 1460, 1.0, 0), MURAL.RED, MURAL.BLK, 7); mudiRays(g, 540, 1460, 1.0, t); g.restore();
+g.save(); g.translate(sw, (1 - k) * 80); FX.paint(g, 'k5t', q => theyyam(q, 540, 1460, 1.0, 0), MURAL.RED, MURAL.BLK, 7); mudiRays(g, 540, 1460, 1.0, t); g.strokeStyle = '#E9B23C'; g.lineWidth = 5; for (let i = -6; i <= 6; i++) { const sx = 540 + i * 13, bx = 540 + i * 28 + Math.sin(t * 3 + i) * 6; g.beginPath(); g.moveTo(sx, 1175); g.lineTo(bx, 1455); g.stroke(); } g.fillStyle = MURAL.CRM; g.fillRect(470, 1150, 140, 26); g.restore();
 g.restore();
 };
