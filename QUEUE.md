@@ -1,13 +1,12 @@
 # Posting queue
 
-_Updated Tue 24 Nov, 11:44 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 24 Nov, 11:47 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
-- bekal-fort-bombay-v3
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
