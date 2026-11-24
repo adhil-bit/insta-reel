@@ -182,5 +182,5 @@ window.renderFrame = function (t) {
   const sw = [], parts = RL.source.split(' · '); let ln = '';
   parts.forEach(s => { const tr = ln ? ln + ' · ' + s : s; if (g.measureText(tr).width > W - 120 && ln) { sw.push(ln); ln = s; } else ln = tr; }); sw.push(ln);
   sw.forEach((s, i) => g.fillText(s, 60, 1650 - (sw.length - 1 - i) * 26)); g.restore();
-  if (RL.light) { g.save(); g.fillStyle = 'rgba(241,223,184,0.9)'; g.beginPath(); g.roundRect(80, 328, W - 160, 116, 24); g.fill(); g.restore(); }   // light designs: cream plate under the dark scene title
+  if (RL.light) { g.save(); g.setTransform(1, 0, 0, 1, 0, 0); g.fillStyle = 'rgba(241,223,184,0.9)'; g.beginPath(); g.roundRect(80, 272, W - 160, 128, 24); g.fill(); g.restore(); }   // light designs: cream plate under the dark scene title
 };
