@@ -154,7 +154,9 @@
     "district": "KANNUR",
     "kicker": "LEGEND",
     "from": "kannur",
-    "look": "night"
+    "look": "night",
+    "lat": 11.9767,
+    "lon": 75.3734
   },
   "design": "mural",
   "headline": [
