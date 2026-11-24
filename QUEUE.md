@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Mon 23 Nov, 05:33 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 24 Nov, 07:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -40,11 +40,13 @@ _Updated Mon 23 Nov, 05:33 PM IST. Times are approximate: each reel posts within
 - k2-unniyarcha-v2
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
+- test-sat-map
 
 ## Recently posted
 
 | Reel | Posted (UTC) |
 |---|---|
+| Kannur's Vault No. 38 | 2026-11-24T01:35 |
 | Kerala University's 'haunted' pond | 2026-11-23T09:32 |
 | The Kannur treasure pot (2024) | 2026-11-23T01:35 |
 | Ilaveezhapoonchira: the valley where leaves don't fall | 2026-11-20T01:36 |
@@ -54,4 +56,3 @@ _Updated Mon 23 Nov, 05:33 PM IST. Times are approximate: each reel posts within
 | The Dutch sold a Kannur fort to a Malayali royal family | 2026-11-16T01:35 |
 | Why Malayalis fear the pala tree | 2026-11-15T12:38 |
 | Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
-| Dharmadam Island: the island you can walk to at low tide | 2026-11-14T01:35 |
