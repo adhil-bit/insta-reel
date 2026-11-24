@@ -7,7 +7,6 @@ _Updated Tue 24 Nov, 11:44 AM IST. Times are approximate: each reel posts within
 
 ## Being rendered (joins the queue when done)
 
-- ananthapura-crocodile-v4
 - bekal-fort-bombay-v3
 - k2-1341-kochi
 - k2-1341-kochi-v2
