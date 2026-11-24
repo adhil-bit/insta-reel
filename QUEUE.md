@@ -1,12 +1,13 @@
 # Posting queue
 
-_Updated Tue 24 Nov, 11:47 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 24 Nov, 11:53 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
+- ananthapura-crocodile-v5
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
@@ -40,6 +41,7 @@ _Updated Tue 24 Nov, 11:47 AM IST. Times are approximate: each reel posts within
 - k2-unniyarcha-v2
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
+- kathivanoor-veeran-v2
 - test-sat-map
 
 ## Recently posted
