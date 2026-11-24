@@ -143,6 +143,10 @@ def paint(z, bounds, look, lo, hi, kerala_only=True):
 def build(job: Path, force=False) -> Path:
     script = json.loads((job / "script.json").read_text(encoding="utf-8"))
     r = script["relief"]
+    if "lat" not in r and r.get("q"):                     # place name only: geocode once, save into script.json
+        from pipeline.route import geocode
+        r["lat"], r["lon"] = [round(v, 4) for v in geocode({"q": r["q"], "en": r.get("en", r["q"].split(",")[0]), "alts": r.get("alts", []), "near": r.get("near")})]
+        (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
     out = job / "relief"; out.mkdir(exist_ok=True)
     meta_p = out / "relief.json"
     look = r.get("look") or ("ink" if script.get("theme") == "inkwash" else "night")
