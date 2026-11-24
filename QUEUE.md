@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 24 Nov, 11:54 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Tue 24 Nov, 11:56 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -41,7 +41,6 @@ _Updated Tue 24 Nov, 11:54 AM IST. Times are approximate: each reel posts within
 - k2-unniyarcha-v2
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
-- kathivanoor-veeran-v2
 - test-sat-map
 
 ## Recently posted
