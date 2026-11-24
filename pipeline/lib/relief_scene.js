@@ -113,8 +113,8 @@ window.renderFrame = function (t) {
       g.fillStyle = '#25384d'; g.beginPath(); g.roundRect(10, -13, 15, 26, 4); g.fill(); g.fillStyle = '#2f8bff'; g.fillRect(-26, -3, 30, 6); g.restore();
     }
     const kmS = (RL.road.km * ta).toFixed(1) + ' km by road'; g.font = '800 38px Inter'; const kw = g.measureText(kmS).width + 48;
-    g.fillStyle = 'rgba(8,16,28,0.78)'; g.beginPath(); g.roundRect(60, 1380, kw, 60, 30); g.fill();
-    g.fillStyle = '#2f8bff'; g.beginPath(); g.arc(88, 1410, 8, 0, 6.283); g.fill(); g.fillStyle = '#fff'; g.fillText(kmS, 108, 1423);
+    g.fillStyle = 'rgba(8,16,28,0.78)'; g.beginPath(); g.roundRect(60, 1200, kw, 60, 30); g.fill();
+    g.fillStyle = '#2f8bff'; g.beginPath(); g.arc(88, 1230, 8, 0, 6.283); g.fill(); g.fillStyle = '#fff'; g.fillText(kmS, 108, 1243);
     g.restore();
   } else if (RL.city && q > 0.45) {
     const ta = sm(0.45, 0.62, q), N = 48, Hm = hz(C.d < 120 ? S.mid : S.wide), cx = wx(RL.city.lon), cz = wz(RL.city.lat);
@@ -177,9 +177,10 @@ window.renderFrame = function (t) {
     g.restore();
   }
   // source line: baseline y 1500, x 60, no box
-  if (!RL.ink) { const sg = g.createLinearGradient(0, 1340, 0, 1620); sg.addColorStop(0, 'rgba(0,0,0,0)'); sg.addColorStop(0.55, 'rgba(0,0,0,0.5)'); sg.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = sg; g.fillRect(0, 1340, W, 280); }
+  if (!RL.ink) { const sg = g.createLinearGradient(0, 1500, 0, 1720); sg.addColorStop(0, 'rgba(0,0,0,0)'); sg.addColorStop(0.5, 'rgba(0,0,0,0.5)'); sg.addColorStop(1, 'rgba(0,0,0,0)'); g.fillStyle = sg; g.fillRect(0, 1500, W, 220); }
   g.save(); g.globalAlpha = 0.7; g.fillStyle = RL.ink ? '#2A1D14' : '#FFFFFF'; g.font = '500 20px Inter'; g.textAlign = 'left';
   const sw = [], parts = RL.source.split(' · '); let ln = '';
   parts.forEach(s => { const tr = ln ? ln + ' · ' + s : s; if (g.measureText(tr).width > W - 120 && ln) { sw.push(ln); ln = s; } else ln = tr; }); sw.push(ln);
-  sw.forEach((s, i) => g.fillText(s, 60, 1500 - (sw.length - 1 - i) * 26)); g.restore();
+  sw.forEach((s, i) => g.fillText(s, 60, 1650 - (sw.length - 1 - i) * 26)); g.restore();
+  if (RL.light) { g.save(); g.fillStyle = 'rgba(241,223,184,0.9)'; g.beginPath(); g.roundRect(70, 268, W - 140, 140, 24); g.fill(); g.restore(); }   // light designs: cream plate under the dark scene title
 };

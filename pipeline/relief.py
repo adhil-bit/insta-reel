@@ -224,6 +224,7 @@ def scene_code(job: Path, script: dict) -> str:
         "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH" + (" · CONTAINS MODIFIED COPERNICUS SENTINEL DATA · © OPENSTREETMAP" if meta.get("road") or meta.get("look") == "night" else "")),
         "outline": outline, "city": None if r.get("from") is False else _nearest_city(lat, lon, r.get("from")),
         "exag": r.get("exag", 5), "road": meta.get("road"),
+        "light": script.get("design") in {"newsprint", "mural", "woodcut"},
     }
     imgs = "".join(f'<img id="rl_{k}{s}" src="{_uri(out / f"{k}{e}", m)}" style="display:none">'
                    for k in ("wide", "mid", "near") for s, e, m in (("", ".jpg", "image/jpeg"), ("h", "_h.png", "image/png")))
