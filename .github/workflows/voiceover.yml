@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
     inputs:
       account:
-        description: "1 = @unexplored.truths, 2 = @kathayum.psychologiyum"
+        description: "1 = @unexplored.truths, 2 = @kathayum.sathyangalum"
         type: choice
         options: ["1", "2"]
         default: "1"

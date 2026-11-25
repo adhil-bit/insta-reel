@@ -26,9 +26,9 @@ Owner's notes are kept as given; check facts again before scripting, and frame a
    "Ela Veezha Poonchira" (Malayalam film, released 15 July 2022) — use the film name in the hook if it works (name only, no clips/posters).
    The name means "the valley where leaves don't fall". Twist: the hills around it have no trees, so there are no leaves to fall. Locals also link it to the Pandavas' exile (legend).
 
-## @kathayum.psychologiyum (account 2, renamed from @kathayum.charithravum, 25 Nov 2026)
+## @kathayum.sathyangalum (account 2, renamed from @kathayum.charithravum, 25 Nov 2026)
 
-New genre: psychology through stories. The old Kerala-history topics of this page are paused; Velu Thampi, Akkamma Cheriyan and Bhangarh moved to @unexplored.truths.
+New genre: stories that reveal truths about the mind, behaviour and everyday science (psychology, brain, strange-but-true). Brief: see the account summary doc; monthly plan in the topic spreadsheet. The old Kerala-history topics of this page are paused; Velu Thampi, Akkamma Cheriyan and Bhangarh moved to @unexplored.truths.
 
 ### Old list (history, paused)
 

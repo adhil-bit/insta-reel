@@ -69,7 +69,7 @@ OPENAI_TTS_VOICE = os.getenv("OPENAI_TTS_VOICE", "onyx")
 
 IG_USER_ID = os.getenv("IG_USER_ID")
 IG_ACCESS_TOKEN = os.getenv("IG_ACCESS_TOKEN")
-ACCOUNT = os.getenv("IG_ACCOUNT", "1")          # "1" = @unexplored.truths, "2" = @kathayum.psychologiyum
+ACCOUNT = os.getenv("IG_ACCOUNT", "1")          # "1" = @unexplored.truths, "2" = @kathayum.sathyangalum
 if ACCOUNT == "2":
     IG_USER_ID, IG_ACCESS_TOKEN = os.getenv("IG_USER_ID_2"), os.getenv("IG_ACCESS_TOKEN_2")
     HISTORY_FILE = ROOT / "history_2.json"          # separate queue/history: nothing mixes with account 1
@@ -120,8 +120,8 @@ BRAND = {
     "broad_hashtags": [],   # none: only topic hashtags (max 5)  # 0.0-1.0, background music under the voice
 }
 if ACCOUNT == "2":
-    BRAND["name"] = "കഥയും സൈക്കോളജിയും"
-    BRAND["handle"] = "@kathayum.psychologiyum"
+    BRAND["name"] = "കഥയും സത്യങ്ങളും"
+    BRAND["handle"] = "@kathayum.sathyangalum"
     BRAND["category_labels"] = {"HISTORY": "ചരിത്രം", "CULTURE": "സംസ്കാരം", "MYSTERY": "രഹസ്യം", "SCIENCE": "ശാസ്ത്രം", "NATURE": "പ്രകൃതി", "MYTH": "ഐതിഹ്യം"}
 
 # ---------------- Video ----------------
