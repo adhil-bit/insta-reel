@@ -1,0 +1,126 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "PSYCHOLOGY",
+  "english_sub": "ONLINE DISINHIBITION",
+  "topic": {
+    "title": "കമന്റിൽ സിംഹം, നേരിൽ മൗനം",
+    "category": "PSYCHOLOGY",
+    "angle": "Online disinhibition (ഒരു സിദ്ധാന്തം): മുഖം കാണാത്തതും പേരില്ലാത്തതും സ്ക്രീനിലെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം ആളിന്റേതു തന്നെ.",
+    "key_facts": [
+      "Online disinhibition (ഒരു സിദ്ധാന്തം): മുഖം കാണാത്തതും പേരില്ലാത്തതും സ്ക്രീനിലെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം ആളിന്റേതു തന്നെ."
+    ],
+    "sources": [
+      "Suler (2004), CyberPsychology & Behavior"
+    ]
+  },
+  "headline": [
+    "കമന്റിൽ",
+    "സിംഹം"
+  ],
+  "accent_words": [
+    "സിംഹം"
+  ],
+  "thumbnail_ml": "നേരിൽ മൗനം, കമന്റിൽ സിംഹം",
+  "thumbnail_accent": [
+    "സിംഹം"
+  ],
+  "cover_visual": "ബസിൽ നിശബ്ദനായ ആൾ, രാത്രി ഫോണിൽ കടുത്ത കമന്റുകൾ.",
+  "series": "സത്യം #10",
+  "twist_scene": 4,
+  "hook_voiceover": "ബസിൽ മൗനം. കമന്റിൽ സിംഹം. ഒരേ ആൾ.",
+  "scenes": [
+    {
+      "voiceover": "നേരിൽ കണ്ടാൽ മിണ്ടാത്തയാൾ, രാത്രി ഫോണിൽ ആരെയും വെറുതെ വിടില്ല.",
+      "caption": "നേരിൽ മൗനം",
+      "highlight": "രാത്രി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഇങ്ങനെ ഒരാൾ നിങ്ങളുടെ ലിസ്റ്റിലുണ്ടോ? അയാൾക്ക് തന്നെ അയച്ചു കൊടുക്കൂ!",
+      "caption": "ലിസ്റ്റിലുണ്ടോ?",
+      "highlight": "അയാൾക്ക്",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മനശാസ്ത്രജ്ഞർ ഇതിനെ ഓൺലൈൻ ഡിസിൻഹിബിഷൻ എന്ന് വിളിക്കുന്നു.",
+      "caption": "Online disinhibition",
+      "highlight": "ഡിസിൻഹിബിഷൻ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "മുഖം കാണുന്നില്ല, പേരില്ല, ഉടനെ മറുപടി വേണ്ട. സ്ക്രീൻ നമ്മുടെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം നമ്മുടേത് തന്നെ.",
+      "caption": "സ്ക്രീനിലെ ബ്രേക്ക്",
+      "highlight": "ഉത്തരവാദിത്വം",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഓൺലൈനിൽ നിങ്ങൾ വേറൊരു ആളാണോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "നിങ്ങൾ വേറെയാണോ?",
+      "highlight": "വേറൊരു",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "കമന്റിൽ സിംഹം, നേരിൽ മൗനം\n\nബസിൽ നിശബ്ദനായ ആൾ, രാത്രി ഫോണിൽ കടുത്ത കമന്റുകൾ. Online disinhibition (ഒരു സിദ്ധാന്തം): മുഖം കാണാത്തതും പേരില്ലാത്തതും സ്ക്രീനിലെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം ആളിന്റേതു തന്നെ.\n\nഓൺലൈനിൽ നിങ്ങൾ വേറെ ആളാണോ? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #10\n\nCredits: Suler (2004), CyberPsychology & Behavior · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "search_ml": [
+    "കമന്റിൽ സിംഹം, നേരിൽ മൗനം"
+  ],
+  "hashtags": [
+    "KathayumSathyangalum",
+    "MalayalamReels",
+    "Psychology",
+    "MalayalamFacts",
+    "KeralaReels"
+  ],
+  "fact_check": [
+    "ആരെയും പേരെടുത്ത് പറയരുത്"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  },
+  "design": "mind",
+  "voice_status": "pending: record in ElevenLabs (Jijo), save as narration.mp3 in this folder, set narration_cuts"
+}

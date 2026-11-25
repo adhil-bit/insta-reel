@@ -1,0 +1,126 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "PSYCHOLOGY",
+  "english_sub": "THE BYSTANDER MYTH",
+  "topic": {
+    "title": "മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിടാത്തത് എന്തുകൊണ്ട്?",
+    "category": "PSYCHOLOGY",
+    "angle": "'ആരും സഹായിക്കില്ല' എന്ന പഴയ കഥ പകുതി തെറ്റാണ്: 'നമ്മുടെ ആൾ' എന്ന തോന്നലുള്ളവർ ഇടപെടും. CCTV പഠനത്തിൽ പൊതുസ്ഥലത്തെ 91% തർക്കങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു.",
+    "key_facts": [
+      "'ആരും സഹായിക്കില്ല' എന്ന പഴയ കഥ പകുതി തെറ്റാണ്: 'നമ്മുടെ ആൾ' എന്ന തോന്നലുള്ളവർ ഇടപെടും. CCTV പഠനത്തിൽ പൊതുസ്ഥലത്തെ 91% തർക്കങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു."
+    ],
+    "sources": [
+      "Philpot et al. (2020), American Psychologist; Levine et al. (2005)"
+    ]
+  },
+  "headline": [
+    "ആരും",
+    "ഓടിയില്ല"
+  ],
+  "accent_words": [
+    "ഓടിയില്ല"
+  ],
+  "thumbnail_ml": "മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിട്ടില്ല",
+  "thumbnail_accent": [
+    "കയർ"
+  ],
+  "cover_visual": "കുഴിയിൽ വീണ കൂട്ടുകാരനു വേണ്ടി സംഘം മുഴുവൻ കൈകോർത്തു.",
+  "series": "സത്യം #6",
+  "twist_scene": 4,
+  "hook_voiceover": "കുഴിയിൽ ഒരാൾ. കയറിൽ കൂട്ടുകാർ. ആരും ഓടിയില്ല.",
+  "scenes": [
+    {
+      "voiceover": "മഞ്ഞുമ്മൽ ബോയ്സ്. ഗുണ കേവിന്റെ ആഴത്തിൽ വീണ കൂട്ടുകാരനു വേണ്ടി, സംഘം കയർ വിട്ടില്ല.",
+      "caption": "മഞ്ഞുമ്മൽ ബോയ്സ് · 2024",
+      "highlight": "കയർ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ആൾക്കൂട്ടത്തിൽ ആരും സഹായിക്കില്ല എന്നാണ് നമ്മൾ കേട്ടിട്ടുള്ളത്. ശരിക്കും അങ്ങനെയാണോ? കൂട്ടുകാർക്ക് അയക്കൂ!",
+      "caption": "ആരും സഹായിക്കില്ലേ?",
+      "highlight": "സഹായിക്കില്ല",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ബൈസ്റ്റാൻഡർ ഇഫക്ട് എന്ന ആ പഴയ കഥ പകുതി മാത്രം ശരിയാണ്.",
+      "caption": "Bystander effect",
+      "highlight": "പകുതി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പൊതുസ്ഥലത്തെ സിസിടിവി ദൃശ്യങ്ങൾ പഠിച്ചപ്പോൾ, പത്തിൽ ഒമ്പതു സംഭവങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു. നമ്മുടെ ആൾ എന്ന തോന്നലാണ് ശക്തി.",
+      "caption": "10-ൽ 9 തവണ",
+      "highlight": "ഒമ്പതു",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങൾക്ക് വേണ്ടി കുഴിയിലിറങ്ങുന്ന ആ കൂട്ടുകാരനെ ടാഗ് ചെയ്യൂ!",
+      "caption": "ടാഗ് ചെയ്യൂ",
+      "highlight": "കൂട്ടുകാരനെ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിടാത്തത് എന്തുകൊണ്ട്?\n\nകുഴിയിൽ വീണ കൂട്ടുകാരനു വേണ്ടി സംഘം മുഴുവൻ കൈകോർത്തു. 'ആരും സഹായിക്കില്ല' എന്ന പഴയ കഥ പകുതി തെറ്റാണ്: 'നമ്മുടെ ആൾ' എന്ന തോന്നലുള്ളവർ ഇടപെടും. CCTV പഠനത്തിൽ പൊതുസ്ഥലത്തെ 91% തർക്കങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു.\n\nനിങ്ങൾക്ക് വേണ്ടി ഇറങ്ങുന്ന ആ കൂട്ടുകാരനെ ടാഗ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #6\n\nCredits: Philpot et al. (2020), American Psychologist; Levine et al. (2005) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "search_ml": [
+    "മഞ്ഞുമ്മൽ ബോയ്സ്"
+  ],
+  "hashtags": [
+    "KathayumSathyangalum",
+    "MalayalamReels",
+    "Psychology",
+    "MalayalamFacts",
+    "KeralaReels"
+  ],
+  "fact_check": [
+    "യഥാർത്ഥ (2006) വ്യക്തികളെ പേരെടുത്ത് പറയുകയോ വരയ്ക്കുകയോ വേണ്ട"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  },
+  "design": "vhs",
+  "voice_status": "pending: record in ElevenLabs (Jijo), save as narration.mp3 in this folder, set narration_cuts"
+}

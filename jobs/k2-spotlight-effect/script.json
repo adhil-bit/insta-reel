@@ -1,0 +1,124 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "PSYCHOLOGY",
+  "english_sub": "THE SPOTLIGHT EFFECT",
+  "topic": {
+    "title": "എല്ലാവരും എന്നെ നോക്കുന്നു!",
+    "category": "PSYCHOLOGY",
+    "angle": "Spotlight effect: നിങ്ങൾ കരുതുന്നതിന്റെ ഏകദേശം പകുതി പേർ മാത്രമേ ശ്രദ്ധിക്കൂ.",
+    "key_facts": [
+      "Spotlight effect: നിങ്ങൾ കരുതുന്നതിന്റെ ഏകദേശം പകുതി പേർ മാത്രമേ ശ്രദ്ധിക്കൂ."
+    ],
+    "sources": [
+      "Gilovich, Medvec & Savitsky (2000)"
+    ]
+  },
+  "headline": [
+    "ആരും",
+    "നോക്കുന്നില്ല"
+  ],
+  "accent_words": [
+    "നോക്കുന്നില്ല"
+  ],
+  "thumbnail_ml": "ഷർട്ടിലെ കറ ആരും കണ്ടില്ല",
+  "thumbnail_accent": [
+    "കറ"
+  ],
+  "cover_visual": "കല്യാണത്തിന് ഷർട്ടിൽ കറ; ദിവസം മുഴുവൻ ടെൻഷൻ. ആരും ശ്രദ്ധിച്ചില്ല.",
+  "series": "സത്യം #8",
+  "twist_scene": 4,
+  "hook_voiceover": "ഷർട്ടിൽ ഒരു കറ. എല്ലാവരും കണ്ടോ? ഇല്ല.",
+  "scenes": [
+    {
+      "voiceover": "കല്യാണത്തിന് പോയപ്പോൾ ഷർട്ടിൽ ഒരു കറ. ദിവസം മുഴുവൻ കൈകൊണ്ട് മറച്ചു നടന്നു.",
+      "caption": "കല്യാണത്തിലെ കറ",
+      "highlight": "കറ.",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "എല്ലാവരും എന്നെ നോക്കുന്നു എന്ന തോന്നൽ. ഇങ്ങനെ ടെൻഷനടിക്കുന്ന ഒരാൾക്ക് അയച്ചു കൊടുക്കൂ!",
+      "caption": "എല്ലാവരും നോക്കുന്നു?",
+      "highlight": "നോക്കുന്നു",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരു പരീക്ഷണത്തിൽ, വിചിത്രമായ ടീ ഷർട്ട് ഇട്ട് വിദ്യാർത്ഥികളെ ഒരു മുറിയിലേക്ക് വിട്ടു.",
+      "caption": "ടീ ഷർട്ട് പരീക്ഷണം",
+      "highlight": "ടീ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പകുതി പേർ ശ്രദ്ധിക്കും എന്നാണ് അവർ കരുതിയത്. ശ്രദ്ധിച്ചത് നാലിൽ ഒന്ന് മാത്രം. ഇതാണ് സ്പോട്ട്ലൈറ്റ് ഇഫക്ട്.",
+      "caption": "Spotlight effect",
+      "highlight": "നാലിൽ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നമ്മൾ കരുതുന്നത്ര ആരും നമ്മളെ നോക്കുന്നില്ല. ഇങ്ങനെ ടെൻഷനടിച്ച അനുഭവം കമന്റ് ചെയ്യൂ!",
+      "caption": "നിങ്ങളുടെ അനുഭവം?",
+      "highlight": "നോക്കുന്നില്ല.",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "എല്ലാവരും എന്നെ നോക്കുന്നു!\n\nകല്യാണത്തിന് ഷർട്ടിൽ കറ; ദിവസം മുഴുവൻ ടെൻഷൻ. ആരും ശ്രദ്ധിച്ചില്ല. Spotlight effect: നിങ്ങൾ കരുതുന്നതിന്റെ ഏകദേശം പകുതി പേർ മാത്രമേ ശ്രദ്ധിക്കൂ.\n\nഇങ്ങനെ ടെൻഷനടിച്ച ഒരു സംഭവം കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #8\n\nCredits: Gilovich, Medvec & Savitsky (2000) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "search_ml": [
+    "എല്ലാവരും എന്നെ നോക്കുന്നു!"
+  ],
+  "hashtags": [
+    "KathayumSathyangalum",
+    "MalayalamReels",
+    "Psychology",
+    "MalayalamFacts",
+    "KeralaReels"
+  ],
+  "fact_check": [],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  },
+  "design": "shadow",
+  "voice_status": "pending: record in ElevenLabs (Jijo), save as narration.mp3 in this folder, set narration_cuts"
+}

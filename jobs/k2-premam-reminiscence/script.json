@@ -1,0 +1,124 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "PSYCHOLOGY",
+  "english_sub": "THE REMINISCENCE BUMP",
+  "topic": {
+    "title": "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?",
+    "category": "PSYCHOLOGY",
+    "angle": "Reminiscence bump: 10 മുതൽ 30 വയസ്സ് വരെയുള്ള ഓർമ്മകളാണ് ജീവിതകാലം മുഴുവൻ ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്.",
+    "key_facts": [
+      "Reminiscence bump: 10 മുതൽ 30 വയസ്സ് വരെയുള്ള ഓർമ്മകളാണ് ജീവിതകാലം മുഴുവൻ ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്."
+    ],
+    "sources": [
+      "Rubin, Wetzler & Nebes (1986); Krumhansl & Zupnick (2013)"
+    ]
+  },
+  "headline": [
+    "പതിനേഴിലെ",
+    "ഓർമ്മ"
+  ],
+  "accent_words": [
+    "ഓർമ്മ"
+  ],
+  "thumbnail_ml": "പ്രേമം കാലത്തെ ഓർമ്മകൾ മായാത്തത്",
+  "thumbnail_accent": [
+    "മായാത്തത്"
+  ],
+  "cover_visual": "കോളേജ് പാട്ട് കേട്ടപ്പോൾ ഒരു അച്ഛൻ പഴയ കൂട്ടുകാരെ വിളിച്ചു.",
+  "series": "സത്യം #9",
+  "twist_scene": 4,
+  "hook_voiceover": "ഇന്നലത്തെ ഊണ് ഓർമ്മയില്ല. പതിനേഴിലെ പാട്ട് മറന്നിട്ടില്ല.",
+  "scenes": [
+    {
+      "voiceover": "പ്രേമം കണ്ടപ്പോൾ, പലർക്കും സ്വന്തം സ്കൂളും കോളേജും ഓർമ്മ വന്നു.",
+      "caption": "പ്രേമം · 2015",
+      "highlight": "കോളേജും",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അമ്പതാം വയസ്സിലും ആ കാലം ഇന്നലത്തെ പോലെ. പഴയ കൂട്ടുകാരന് ഇത് അയച്ചു കൊടുക്കൂ!",
+      "caption": "ഇന്നലത്തെ പോലെ",
+      "highlight": "ഇന്നലത്തെ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ശാസ്ത്രം ഇതിനെ റെമിനിസെൻസ് ബമ്പ് എന്ന് വിളിക്കുന്നു.",
+      "caption": "Reminiscence bump",
+      "highlight": "റെമിനിസെൻസ്",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "പത്തു മുതൽ മുപ്പതു വയസ്സു വരെയുള്ള ഓർമ്മകളാണ് ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്. പലതും ആദ്യമായി സംഭവിക്കുന്ന കാലം.",
+      "caption": "10 മുതൽ 30 വരെ",
+      "highlight": "ആദ്യമായി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "നിങ്ങളുടെ ആ മലർ ഓർമ്മ ഏത് വർഷമാണ്? കമന്റ് ചെയ്യൂ!",
+      "caption": "നിങ്ങളുടെ വർഷം?",
+      "highlight": "മലർ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?\n\nകോളേജ് പാട്ട് കേട്ടപ്പോൾ ഒരു അച്ഛൻ പഴയ കൂട്ടുകാരെ വിളിച്ചു. Reminiscence bump: 10 മുതൽ 30 വയസ്സ് വരെയുള്ള ഓർമ്മകളാണ് ജീവിതകാലം മുഴുവൻ ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്.\n\nനിങ്ങളുടെ 'മലർ' ഓർമ്മ ഏത് വർഷമാണ്? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #9\n\nCredits: Rubin, Wetzler & Nebes (1986); Krumhansl & Zupnick (2013) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "search_ml": [
+    "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?"
+  ],
+  "hashtags": [
+    "KathayumSathyangalum",
+    "MalayalamReels",
+    "Psychology",
+    "MalayalamFacts",
+    "KeralaReels"
+  ],
+  "fact_check": [],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  },
+  "design": "album",
+  "voice_status": "pending: record in ElevenLabs (Jijo), save as narration.mp3 in this folder, set narration_cuts"
+}
