@@ -1,0 +1,150 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "category": "LEGEND",
+  "english_sub": "THE ISLAND THAT ROSE AT MIDNIGHT",
+  "topic": {
+    "title": "Pathiramanal: the island that rose at midnight",
+    "category": "LEGEND",
+    "angle": "Legend: a young man dived into Vembanad lake for his evening prayers, the water parted and sand rose; hence 'Pathira-manal', midnight sand; today a bird island reached only by boat",
+    "key_facts": [
+      "Pathiramanal is a small island in Vembanad lake, Alappuzha district",
+      "Legend: a young Brahmin dived into the lake for his evening prayers (sandhyavandanam), the water parted and land rose",
+      "The name means 'sand of midnight'",
+      "Today it is known for resident and migratory birds and is reached only by boat"
+    ],
+    "sources": [
+      "Kerala Tourism: Pathiramanal",
+      "Local legend"
+    ]
+  },
+  "headline": [
+    "THE ISLAND",
+    "THAT ROSE."
+  ],
+  "accent_words": [
+    "ROSE."
+  ],
+  "thumbnail_ml": "ഒറ്റ രാത്രിയിൽ പൊങ്ങിയ ദ്വീപ്",
+  "thumbnail_accent": [
+    "ദ്വീപ്"
+  ],
+  "cover_visual": "Kerala mural panel: a sand island with palms rising from a dark lake under the moon",
+  "series": "കേരള ഐതിഹ്യങ്ങൾ",
+  "twist_scene": 4,
+  "scenes": [
+    {
+      "voiceover": "ആലപ്പുഴ. വേമ്പനാട്ട് കായലിനു നടുവിൽ പാതിരാമണൽ.",
+      "caption": "പാതിരാമണൽ · ആലപ്പുഴ",
+      "highlight": "പാതിരാമണൽ.",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഐതിഹ്യം: സന്ധ്യാവന്ദനത്തിനായി ഒരു യുവാവ് കായലിലേക്ക് ചാടി.",
+      "caption": "ഐതിഹ്യം",
+      "highlight": "സന്ധ്യാവന്ദനത്തിനായി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വെള്ളം വഴിമാറി, നടുവിൽ മണൽ പൊങ്ങി വന്നു. ആലപ്പുഴക്കാർക്ക് അയച്ചു കൊടുക്കൂ!",
+      "caption": "മണൽ പൊങ്ങി",
+      "highlight": "മണൽ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "അങ്ങനെ പേര് വന്നു: പാതിരാമണൽ, പാതിരാത്രിയിലെ മണൽ. ഇന്ന് ഇത് ദേശാടനപ്പക്ഷികളുടെ താവളം.",
+      "caption": "പാതിരാ + മണൽ",
+      "highlight": "പാതിരാത്രിയിലെ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ബോട്ടിൽ മാത്രം എത്താവുന്ന ഈ ദ്വീപിൽ നിങ്ങൾ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "പോയിട്ടുണ്ടോ?",
+      "highlight": "ബോട്ടിൽ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ഒറ്റ രാത്രിയിൽ കായലിൽ പൊങ്ങിയ ദ്വീപ് 🌙🏝️\n\nവേമ്പനാട്ട് കായലിനു നടുവിലെ പാതിരാമണൽ. ഐതിഹ്യം: സന്ധ്യാവന്ദനത്തിനായി ഒരു യുവാവ് കായലിലേക്ക് ചാടി, വെള്ളം വഴിമാറി മണൽ പൊങ്ങി വന്നു. അങ്ങനെ പേര്: പാതിരാമണൽ. ഇന്ന് ദേശാടനപ്പക്ഷികളുടെ താവളം.\n\nനിങ്ങൾ ഇവിടെ പോയിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\nആലപ്പുഴക്കാർക്ക് അയച്ചു കൊടുക്കൂ 📩\n\nPathiramanal ('midnight sand') in Vembanad lake: legend says it rose when a young man dived in for his evening prayers. Today a bird island reached only by boat.\n\nകേരള ഐതിഹ്യങ്ങൾ\n\nCredits: Kerala Tourism · local legend · Animation, voice and sound: AI-generated\n\n#Pathiramanal #Vembanad #Alappuzha #KeralaLegends #UnexploredTruths",
+  "search_ml": [
+    "പാതിരാമണൽ",
+    "വേമ്പനാട് കായൽ",
+    "ആലപ്പുഴ",
+    "പാതിരാമണൽ ദ്വീപ്"
+  ],
+  "hashtags": [
+    "Pathiramanal",
+    "Vembanad",
+    "Alappuzha",
+    "KeralaLegends",
+    "UnexploredTruths"
+  ],
+  "fact_check": [
+    "Told as legend",
+    "Island reached by boat only"
+  ],
+  "sound_plan": {
+    "drone": "D",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1,
+          2
+        ]
+      },
+      {
+        "type": "shimmer",
+        "clip": 3,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 3,
+        "at": 0.3,
+        "f": 196
+      },
+      {
+        "type": "river",
+        "clips": [
+          4,
+          5
+        ]
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 9.6197,
+    "lon": 76.3925,
+    "town": "പാതിരാമണൽ",
+    "district": "ALAPPUZHA",
+    "kicker": "LEGEND",
+    "from": "alappuzha",
+    "look": "night"
+  },
+  "design": "mural",
+  "hook_voiceover": "ഒറ്റ രാത്രി കൊണ്ട് കായലിനു നടുവിൽ ഒരു ദ്വീപ് പൊങ്ങി വന്നു. അതാണ് ഐതിഹ്യം!"
+}
