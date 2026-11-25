@@ -104,9 +104,27 @@ def _poly_mask(bounds, size, name="Kerala"):
     return np.asarray(m.filter(ImageFilter.GaussianBlur(2)), np.float32) / 255
 
 
-def paint(z, bounds, look, lo, hi, kerala_only=True):
+_EARTH = []
+def _earth(bounds, size):
+    """Colour of the world texture (vendor/earth_hd.jpg, equirectangular) over bounds, resized to size (w, h)."""
+    if not _EARTH:
+        Image.MAX_IMAGE_PIXELS = None
+        f = ROOT / "vendor" / "earth_hd.jpg"
+        _EARTH.append(Image.open(f if f.exists() else ROOT / "vendor" / "earth_2048.jpg").convert("RGB"))
+    im = _EARTH[0]; W0, S0, E0, N0 = bounds; sx, sy = im.width / 360, im.height / 180
+    c = im.crop((int((W0 + 180) * sx), int((90 - N0) * sy), int((E0 + 180) * sx) + 1, int((90 - S0) * sy) + 1))
+    return np.asarray(c.resize(size, Image.BICUBIC).filter(ImageFilter.GaussianBlur(3)), np.float32)
+
+
+def paint(z, bounds, look, lo, hi, kerala_only=True, earth=False):
     L = LOOKS[look]
     h, w = z.shape
+    if earth:                                                # DEM tile seams show as 1-px "water" lines: close them
+        wm0 = Image.fromarray(((z <= 0.5) * 255).astype(np.uint8))
+        thin = (np.asarray(wm0) > 0) & (np.asarray(wm0.filter(ImageFilter.MinFilter(5)).filter(ImageFilter.MaxFilter(5))) == 0)
+        if thin.any():
+            zmax = np.asarray(Image.fromarray(z).filter(ImageFilter.MaxFilter(5)), np.float32)
+            z = np.where(thin, zmax, z)
     px_m = (bounds[3] - bounds[1]) * 110570 / h
     water = z <= 0.5
     wm = Image.fromarray((water * 255).astype(np.uint8))       # water touching the edge = sea; rest = backwaters
@@ -123,6 +141,8 @@ def paint(z, bounds, look, lo, hi, kerala_only=True):
         dark = _hex("#2A1D14") / 255
         land = land * (1 - 0.35 * (1 - hs) * (1 - dark))
     else:
+        if earth:                                          # outside Kerala: real land colours + hill shade
+            land = _earth(bounds, (w, h)) * 1.25
         land = land * (0.45 + 0.9 * hs) + np.array([14, 6, -6], np.float32) * (hs - 0.5)
     if kerala_only:                                          # Kerala is the hero: dim the neighbours
         k = _poly_mask(bounds, (w, h))[..., None]
@@ -177,11 +197,12 @@ def build(job: Path, force=False) -> Path:
             sp = out / f"{name}_{span}_{clat:.3f}_{clon:.3f}_sat.jpg"
             if not sp.exists():
                 from pipeline.route import sentinel_mosaic, grade
-                img, _ = sentinel_mosaic(b, (size[1], size[0]))
+                fb = np.asarray(paint(z, b, look, lo, hi, kerala_only=False, earth=bool(reg)), np.float32)   # gaps (open sea) -> painted map
+                img, _ = sentinel_mosaic(b, (size[1], size[0]), fill=fb)
                 grade(img).save(sp, quality=88, optimize=True)
             Image.open(sp).save(out / f"{name}.jpg", quality=88, optimize=True)
         else:
-            paint(z, b, look, lo, hi, kerala_only=(name == "wide" and not reg)).save(out / f"{name}.jpg", quality=86, optimize=True)
+            paint(z, b, look, lo, hi, kerala_only=(name == "wide" and not reg), earth=bool(reg) and not LOOKS[look]["ink"]).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
         meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
@@ -224,7 +245,7 @@ def scene_code(job: Path, script: dict) -> str:
         "tiles": {k: {"b": meta[k]["b"], "hk": meta[k]["hk"]} for k in ("wide", "mid", "near")},
         "town": r.get("town", ""), "kicker": r.get("kicker", "LOCATION"),
         "sub": (r.get("district", "") + " · " if r.get("district") else "") + coords,
-        "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH" + (" · CONTAINS MODIFIED COPERNICUS SENTINEL DATA · © OPENSTREETMAP" if meta.get("road") or meta.get("look") == "night" else "")),
+        "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH" + (" · IMAGERY: NASA BLUE MARBLE" if reg else "") + (" · CONTAINS MODIFIED COPERNICUS SENTINEL DATA · © OPENSTREETMAP" if meta.get("road") or meta.get("look") == "night" else "")),
         "label": [reg.get("ml", "കേരളം"), reg.get("en", "KERALA · INDIA")], "labelOff": reg.get("off", [0, -1.3] if not reg else [0, 0]),
         "outline": outline, "city": None if (r.get("from") is False or reg) else _nearest_city(lat, lon, r.get("from")),
         "exag": r.get("exag", 5), "road": meta.get("road"),

@@ -69,7 +69,7 @@ def osrm(points):
     return [(c[1], c[0]) for c in r["geometry"]["coordinates"]], r["distance"] / 1000.0, [l["distance"] / 1000.0 for l in r["legs"]]
 
 
-def sentinel_mosaic(bounds, shape):
+def sentinel_mosaic(bounds, shape, fill=None):
     """Least-cloudy Sentinel-2 L2A true-colour mosaic over bounds (w,s,e,n) -> uint8 (h,w,3)."""
     import rasterio
     from rasterio.vrt import WarpedVRT
@@ -101,7 +101,10 @@ def sentinel_mosaic(bounds, shape):
             take = good & ~have
             out[take] = rgb[take]; have |= take; used.append(it["id"])
             print(f"scene {it['id']} cloud {it['properties'].get('eo:cloud_cover')}: filled {have.mean():.3f}")
-    if not have.all():                                      # any gaps: blur-fill from neighbours
+    if fill is not None and not have.all():                 # caller's fallback image for gaps (e.g. open sea)
+        soft = np.asarray(Image.fromarray((have * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(6)), np.float32)[..., None] / 255
+        out = out * soft + np.asarray(fill, np.float32) * (1 - soft)
+    elif not have.all():                                      # any gaps: blur-fill from neighbours
         fill = np.asarray(Image.fromarray(out.astype(np.uint8)).filter(ImageFilter.GaussianBlur(25)), np.float32)
         out[~have] = fill[~have]
     return np.clip(out, 0, 255).astype(np.uint8), used
