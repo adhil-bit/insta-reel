@@ -1,13 +1,14 @@
 # Posting queue
 
-_Updated Wed 25 Nov, 05:58 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 06:05 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
-- dyatlov-pass
+- hanno-pope-elephant
+- ibn-battuta-calicut
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
@@ -42,7 +43,9 @@ _Updated Wed 25 Nov, 05:58 PM IST. Times are approximate: each reel posts within
 - k2-unniyarcha-v2
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
+- pathiramanal-island
 - test-sat-map
+- zheng-he-kozhikode
 
 ## Recently posted
 
