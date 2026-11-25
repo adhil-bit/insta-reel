@@ -352,12 +352,13 @@ def _design_css(script: dict) -> str:
     if not C:
         return ""
     ink, acc, shadow, subbg, subink, subx, font, shade = C
+    SUBHI = {"palmleaf": "#8f1d12"}          # highlight word inside the subtitle box (the leaf-coloured box hides the gold accent)
     css = f"""
 .claim, .head, .cover .kick {{ color:{ink} !important; text-shadow:{shadow} !important; font-family:{font}, Baloo, Noto !important; }}
 .claim b, .head b, .cover .kick b {{ color:{acc} !important; }}
 .claim .eng, .cover .big, .cover .big b, .kicker {{ color:{acc} !important; text-shadow:{shadow} !important; }}
 .sub {{ background:{subbg} !important; color:{subink} !important; font-family:{font}, Baloo, Noto !important; text-shadow:none !important; {subx} }}
-.sub span.on {{ color:{acc} !important; }}
+.sub span.on {{ color:{SUBHI.get(d, acc)} !important; }}
 """
     if shade is not None:
         css += f".shade {{ background:{shade} !important; }}\n"

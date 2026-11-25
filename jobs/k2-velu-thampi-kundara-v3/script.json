@@ -1,0 +1,153 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "HISTORY",
+  "english_sub": "THE KUNDARA PROCLAMATION",
+  "topic": {
+    "title": "Velu Thampi and the Kundara Proclamation, 1809",
+    "category": "HISTORY",
+    "angle": "Dalawa of Travancore; Kundara Proclamation (Jan 1809) calling people to unite against the British; died at Mannadi rather than surrender",
+    "key_facts": [
+      "Velu Thampi was the Dalawa (chief minister) of Travancore",
+      "In January 1809 he issued the Kundara Proclamation calling people to rise against the British East India Company",
+      "Rather than surrender, he gave up his life at Mannadi in 1809"
+    ],
+    "sources": [
+      "Kerala history (Velu Thampi Dalawa)",
+      "Kerala State Archives"
+    ]
+  },
+  "thumbnail_ml": "ബ്രിട്ടീഷുകാർക്കെതിരെ ഒരു വിളംബരം!",
+  "thumbnail_accent": [
+    "വിളംബരം!"
+  ],
+  "series": "കേരളത്തിന്റെ പോരാളികൾ · 5/10",
+  "twist_scene": 3,
+  "hook_voiceover": "1809-ൽ കുണ്ടറയിൽ നിന്ന് ഒരു വിളംബരം. ബ്രിട്ടീഷുകാർക്കെതിരെ ജനങ്ങളെ വിളിച്ചുണർത്തിയ ദളവ!",
+  "scenes": [
+    {
+      "voiceover": "തിരുവിതാംകൂറിന്റെ ദളവ, വേലുത്തമ്പി.",
+      "caption": "വേലുത്തമ്പി ദളവ",
+      "highlight": "ദളവ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഈസ്റ്റ് ഇന്ത്യ കമ്പനിയുടെ ഇടപെടലുകൾക്കെതിരെ അദ്ദേഹം പോരാടാൻ തീരുമാനിച്ചു.",
+      "caption": "കമ്പനിക്കെതിരെ",
+      "highlight": "കമ്പനി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "1809 ജനുവരിയിൽ കുണ്ടറ വിളംബരം. ബ്രിട്ടീഷുകാർക്കെതിരെ ഒന്നിക്കാൻ ആഹ്വാനം. കൊല്ലംകാർക്ക് അയച്ചു കൊടുക്കൂ.",
+      "caption": "കുണ്ടറ വിളംബരം",
+      "highlight": "വിളംബരം",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ശത്രുവിന് കീഴടങ്ങാതെ മണ്ണടിയിൽ അദ്ദേഹം ജീവൻ വെടിഞ്ഞു.",
+      "caption": "മണ്ണടി · 1809",
+      "highlight": "മണ്ണടി",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കുണ്ടറ വിളംബരം സ്കൂളിൽ പഠിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ!",
+      "caption": "പഠിച്ചിട്ടുണ്ടോ?",
+      "highlight": "വിളംബരം",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "ബ്രിട്ടീഷുകാർക്കെതിരെ ഒരു വിളംബരം! 📜\n\n1809 ജനുവരിയിൽ തിരുവിതാംകൂർ ദളവ വേലുത്തമ്പി കുണ്ടറയിൽ നിന്ന് ജനങ്ങളെ ബ്രിട്ടീഷുകാർക്കെതിരെ വിളിച്ചുണർത്തി. കീഴടങ്ങാതെ മണ്ണടിയിൽ ജീവൻ വെടിഞ്ഞു.\n\nകുണ്ടറ വിളംബരം സ്കൂളിൽ പഠിച്ചിട്ടുണ്ടോ? കമന്റ് ചെയ്യൂ 👇\nകൊല്ലംകാരൻ ചങ്കിന് അയക്കൂ 📩 സേവ് ചെയ്യാൻ മറക്കല്ലേ 🔖\n\nIn January 1809 Velu Thampi Dalawa issued the Kundara Proclamation against the British East India Company.\n\nകേരളത്തിന്റെ പോരാളികൾ · 5/10\n\nCredits: Kerala history, Kerala State Archives · Animation, voice and sound: AI-generated\n\n#VeluThampi #Kundara #KeralaHistory #Travancore #MalayalamReels",
+  "search_ml": [
+    "വേലുത്തമ്പി ദളവ",
+    "കുണ്ടറ വിളംബരം",
+    "മണ്ണടി"
+  ],
+  "hashtags": [
+    "VeluThampi",
+    "Kundara",
+    "KeralaHistory",
+    "Travancore",
+    "MalayalamReels"
+  ],
+  "fact_check": [
+    "Death stated gently, not shown"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "crickets",
+        "clips": [
+          0,
+          1
+        ]
+      },
+      {
+        "type": "rumble",
+        "clip": 2,
+        "at": [
+          0.3
+        ]
+      },
+      {
+        "type": "heartbeat",
+        "clip": 3,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.8
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.1
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.1,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.5,
+        "f": 220
+      }
+    ]
+  },
+  "relief": {
+    "scene": 1,
+    "lat": 8.957,
+    "lon": 76.672,
+    "town": "കുണ്ടറ",
+    "district": "KOLLAM",
+    "kicker": "LOCATION",
+    "look": "ink",
+    "from": "kollam"
+  },
+  "design": "palmleaf",
+  "headline": [
+    "ബ്രിട്ടീഷുകാർക്കെതിരെ"
+  ],
+  "accent_words": [
+    "വിളംബരം!"
+  ],
+  "cover_visual": "Palm-leaf manuscript leaves with incised text, red cord"
+}
