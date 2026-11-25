@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 25 Nov, 07:56 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 07:58 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -146,6 +146,7 @@ _Updated Wed 25 Nov, 07:56 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Drishyam: how Georgekutty edited memories (misinformation effect) | 2026-11-25T14:28 |
 | Ayyankali's villuvandi journey, 1893 | 2026-11-25T02:35 |
 | Thalassery Fort, 1708 | 2026-11-24T02:36 |
 | Thalakkal Chandu, the Kurichiya archer | 2026-11-22T14:28 |
@@ -155,4 +156,3 @@ _Updated Wed 25 Nov, 07:56 PM IST. Times are approximate: each reel posts within
 | Kunjali Marakkar: the Zamorin's admirals | 2026-11-17T05:22 |
 | The 1341 flood that made Kochi | 2026-11-16T02:36 |
 | Gundert and Rajyasamacharam: the first Malayalam newspaper | 2026-11-14T02:36 |
-| Pazhassi Raja's last stand, 1805 | 2026-11-15T02:36 |
