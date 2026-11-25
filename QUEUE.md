@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 25 Nov, 06:14 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 06:20 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -8,7 +8,6 @@ _Updated Wed 25 Nov, 06:14 PM IST. Times are approximate: each reel posts within
 ## Being rendered (joins the queue when done)
 
 - hanno-pope-elephant
-- ibn-battuta-calicut
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
