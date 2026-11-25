@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്?\n\nരാത്രി മുഴുവൻ പുസ്തകം വായിച്ച കുട്ടി; ചോദ്യപേപ്പർ കണ്ടപ്പോൾ ഒന്നും ഓർമ്മയില്ല. Testing effect: വീണ്ടും വായിക്കുന്നതിനേക്കാൾ, പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിക്കുന്നതാണ് ഓർമ്മയിൽ നിൽക്കുന്നത്.\n\nപരീക്ഷയുള്ള ഒരാൾക്ക് അയച്ചു കൊടുക്കൂ · നിങ്ങളുടെ പഠന ട്രിക്ക് കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #2\n\nCredits: Roediger & Karpicke (2006), Psychological Science; Dunlosky et al. (2013) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്?\n\nരാത്രി മുഴുവൻ പുസ്തകം വായിച്ച കുട്ടി; ചോദ്യപേപ്പർ കണ്ടപ്പോൾ ഒന്നും ഓർമ്മയില്ല. Testing effect: വീണ്ടും വായിക്കുന്നതിനേക്കാൾ, പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിക്കുന്നതാണ് ഓർമ്മയിൽ നിൽക്കുന്നത്.\n\nപരീക്ഷയുള്ള ഒരാൾക്ക് അയച്ചു കൊടുക്കൂ · നിങ്ങളുടെ പഠന ട്രിക്ക് കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #2\n\nCredits: Roediger & Karpicke (2006), Psychological Science; Dunlosky et al. (2013) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "പരീക്ഷ"
   ],
@@ -123,5 +123,5 @@
   },
   "design": "mind",
   "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_provider": "edge"
 }
