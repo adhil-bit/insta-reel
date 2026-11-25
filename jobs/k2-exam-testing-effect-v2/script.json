@@ -1,0 +1,127 @@
+{
+  "priority": 0,
+  "post_on": "2099-01-01",
+  "template": "explainer",
+  "opening": {
+    "type": "hero"
+  },
+  "voice_lock": "Despina",
+  "style": "naadu",
+  "account": "2",
+  "category": "PSYCHOLOGY",
+  "english_sub": "THE TESTING EFFECT",
+  "topic": {
+    "title": "പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്?",
+    "category": "PSYCHOLOGY",
+    "angle": "Testing effect: വീണ്ടും വായിക്കുന്നതിനേക്കാൾ, പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിക്കുന്നതാണ് ഓർമ്മയിൽ നിൽക്കുന്നത്.",
+    "key_facts": [
+      "Testing effect: വീണ്ടും വായിക്കുന്നതിനേക്കാൾ, പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിക്കുന്നതാണ് ഓർമ്മയിൽ നിൽക്കുന്നത്."
+    ],
+    "sources": [
+      "Roediger & Karpicke (2006), Psychological Science; Dunlosky et al. (2013)"
+    ]
+  },
+  "headline": [
+    "പഠിച്ചിട്ടും",
+    "മറക്കുന്നോ?"
+  ],
+  "accent_words": [
+    "മറക്കുന്നോ?"
+  ],
+  "thumbnail_ml": "വായിച്ചിട്ടും മറക്കുന്നോ?",
+  "thumbnail_accent": [
+    "മറക്കുന്നോ?"
+  ],
+  "cover_visual": "രാത്രി മുഴുവൻ പുസ്തകം വായിച്ച കുട്ടി; ചോദ്യപേപ്പർ കണ്ടപ്പോൾ ഒന്നും ഓർമ്മയില്ല.",
+  "series": "സത്യം #2",
+  "twist_scene": 4,
+  "hook_voiceover": "പത്തു തവണ വായിച്ചു. ഹാളിൽ കയറി. ശൂന്യം.",
+  "scenes": [
+    {
+      "voiceover": "ഒരു രാത്രി മുഴുവൻ വായിച്ചു പഠിച്ചിട്ടും, ചോദ്യപേപ്പർ കണ്ടപ്പോൾ ഒന്നും ഓർമ്മ വന്നില്ല.",
+      "caption": "രാത്രി മുഴുവൻ വായിച്ചിട്ടും",
+      "highlight": "ചോദ്യപേപ്പർ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "കുഴപ്പം നിങ്ങളുടെ തലയല്ല, പഠിക്കുന്ന രീതിയാണ്. പരീക്ഷയുള്ളവർക്ക് ഇത് അയച്ചു കൊടുക്കൂ!",
+      "caption": "പഠിക്കുന്ന രീതി",
+      "highlight": "രീതിയാണ്.",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "രണ്ടായിരത്തി ആറിലെ ഒരു പഠനം. ഒരു കൂട്ടർ വീണ്ടും വീണ്ടും വായിച്ചു. മറ്റേ കൂട്ടർ പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിച്ചു.",
+      "caption": "2006-ലെ പഠനം",
+      "highlight": "ഓർത്തെടുക്കാൻ",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "ഒരാഴ്ച കഴിഞ്ഞ്, ഓർത്തെടുത്തവർക്കാണ് കൂടുതൽ ഓർമ്മ നിന്നത്. ഇതാണ് ടെസ്റ്റിങ് ഇഫക്ട്.",
+      "caption": "Testing effect",
+      "highlight": "ടെസ്റ്റിങ്",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    },
+    {
+      "voiceover": "വായിച്ച ശേഷം പുസ്തകം അടയ്ക്കൂ, സ്വയം ചോദിക്കൂ. നിങ്ങളുടെ പഠന ട്രിക്ക് എന്താണ്? കമന്റ് ചെയ്യൂ!",
+      "caption": "നിങ്ങളുടെ ട്രിക്ക്?",
+      "highlight": "അടയ്ക്കൂ,",
+      "kicker": "",
+      "labels": [],
+      "visual": ""
+    }
+  ],
+  "instagram_caption": "പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്?\n\nരാത്രി മുഴുവൻ പുസ്തകം വായിച്ച കുട്ടി; ചോദ്യപേപ്പർ കണ്ടപ്പോൾ ഒന്നും ഓർമ്മയില്ല. Testing effect: വീണ്ടും വായിക്കുന്നതിനേക്കാൾ, പുസ്തകം അടച്ച് ഓർത്തെടുക്കാൻ ശ്രമിക്കുന്നതാണ് ഓർമ്മയിൽ നിൽക്കുന്നത്.\n\nപരീക്ഷയുള്ള ഒരാൾക്ക് അയച്ചു കൊടുക്കൂ · നിങ്ങളുടെ പഠന ട്രിക്ക് കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #2\n\nCredits: Roediger & Karpicke (2006), Psychological Science; Dunlosky et al. (2013) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "search_ml": [
+    "പരീക്ഷ"
+  ],
+  "hashtags": [
+    "KathayumSathyangalum",
+    "MalayalamReels",
+    "Psychology",
+    "MalayalamFacts",
+    "KeralaReels"
+  ],
+  "fact_check": [
+    "ശതമാനങ്ങൾ പറയുന്നെങ്കിൽ ഉറപ്പാക്കുക; ദൃശ്യം റീൽ 25 നവംബറിന് പോസ്റ്റ് ചെയ്തു"
+  ],
+  "sound_plan": {
+    "drone": "C",
+    "layers": [
+      {
+        "type": "heartbeat",
+        "clip": 0,
+        "at": 0.0,
+        "count": 3,
+        "gap": 0.7
+      },
+      {
+        "type": "shimmer",
+        "clip": 4,
+        "from": 0.3
+      },
+      {
+        "type": "gong",
+        "clip": 4,
+        "at": 0.4,
+        "f": 196
+      },
+      {
+        "type": "gong",
+        "clip": 5,
+        "at": 0.6,
+        "f": 220
+      }
+    ]
+  },
+  "design": "mind",
+  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
+  "voice_provider": "edge"
+}
