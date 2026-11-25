@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 25 Nov, 06:05 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 06:14 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -45,7 +45,6 @@ _Updated Wed 25 Nov, 06:05 PM IST. Times are approximate: each reel posts within
 - k2-velu-thampi-kundara-v2
 - pathiramanal-island
 - test-sat-map
-- zheng-he-kozhikode
 
 ## Recently posted
 
