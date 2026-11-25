@@ -19,11 +19,11 @@ Secrets in use: `IG_ACCESS_TOKEN`, `IG_USER_ID` (page 1) · `IG_ACCESS_TOKEN_2`,
 
 | | Page 1 | Page 2 |
 |---|---|---|
-| Handle | **@unexplored.truths** | **@kathayum.charithravum** (created 3 Nov 2026) |
+| Handle | **@unexplored.truths** | **@kathayum.psychologiyum** (created 3 Nov 2026) |
 | `IG_ACCOUNT` | `"1"` (default) | `"2"` |
 | Focus | Mysteries, legends, "the real story behind…" | Kerala's people, places, food and history, as stories |
 | On-screen text | English titles + Malayalam subtitles | **Everything in Malayalam** (brand, headlines, scene titles, chips) |
-| Brand line on video | `UNEXPLORED TRUTHS · <CATEGORY>` | `കഥയും ചരിത്രവും · <Malayalam category>` |
+| Brand line on video | `UNEXPLORED TRUTHS · <CATEGORY>` | `കഥയും സൈക്കോളജിയും · <Malayalam category>` |
 | Posts per day | **2**: 7:07 AM + 8:07 PM (Sat/Sun 10:07 AM + 8:07 PM) | **1**: 1:07 PM (first post Tue 3 Nov) |
 | History file | `history.json` | `history_2.json` |
 | Job folders | `jobs/<slug>` | `jobs/k2-<slug>` (the `k2-` prefix routes everything to page 2) |
@@ -37,7 +37,7 @@ Secrets in use: `IG_ACCESS_TOKEN`, `IG_USER_ID` (page 1) · `IG_ACCESS_TOKEN_2`,
 
 ## 3. How the multi-account lane works
 
-- `config.py`: `ACCOUNT = os.getenv("IG_ACCOUNT", "1")`. For `"2"` it swaps in `IG_USER_ID_2` / `IG_ACCESS_TOKEN_2`, uses `HISTORY_FILE = history_2.json`, sets `BRAND["name"] = "കഥയും ചരിത്രവും"` and `BRAND["category_labels"]` (HISTORY→ചരിത്രം, CULTURE→സംസ്കാരം, MYSTERY→രഹസ്യം, SCIENCE→ശാസ്ത്രം, NATURE→പ്രകൃതി, MYTH→ഐതിഹ്യം).
+- `config.py`: `ACCOUNT = os.getenv("IG_ACCOUNT", "1")`. For `"2"` it swaps in `IG_USER_ID_2` / `IG_ACCESS_TOKEN_2`, uses `HISTORY_FILE = history_2.json`, sets `BRAND["name"] = "കഥയും സൈക്കോളജിയും"` and `BRAND["category_labels"]` (HISTORY→ചരിത്രം, CULTURE→സംസ്കാരം, MYSTERY→രഹസ്യം, SCIENCE→ശാസ്ത്രം, NATURE→പ്രകൃതി, MYTH→ഐതിഹ്യം).
 - `post-reel.yml` and `render-one.yml` take an input **`account`** (`"1"`/`"2"`). They set `IG_ACCOUNT`, `HISTORY_PATH` and expose the `_2` secrets. `scripts/save_history.sh` saves `$HISTORY_PATH`.
 - `pipeline/explainer.py`: the brand and category come from config. On page 2, kicker and brand letter-spacing is 0 (letter-spacing breaks Malayalam).
 - `pipeline/animate.py`: the animation template loads Inter, Baloo and Noto Malayalam, so canvas text can be Malayalam. Use `'800 40px Inter, Baloo, Noto'` in canvas fonts.
@@ -80,7 +80,7 @@ curl -X POST -H "Authorization: Bearer $T" $A/actions/workflows/fetch-images.yml
 
 ## 5. Schedule (triggers set ✅ / still to build 🛠)
 
-| Day | @unexplored.truths | @kathayum.charithravum |
+| Day | @unexplored.truths | @kathayum.psychologiyum |
 |---|---|---|
 | Tue 3 | ✅ Photography Prohibited (posted 7:09 AM) · ✅ **Bigg Boss & Orwell's 1984, 8:07 PM** | ✅ Thathri (posted) · ✅ Porotta (posted 7:06 PM) |
 | Wed 4 | ✅ 7:07 Silent Valley · ✅ 8:07 Pathinettam Koottam Part 5 | ✅ 1:07 PM Who owned Kerala's land? (`k2-janmi-kudiyan`) |
@@ -224,7 +224,7 @@ page's watermark, name, hashtags or artwork. How to apply them in this pipeline:
 @unexplored.truths, 7:05 PM daily: Wed 11 konnal-papam-v2 (proverb) · Thu 12 ambalappuzha-chess (rendered, scheduled) ·
 Fri 13 7:04 AM cyber-teacher-hacker-v2 · Sat 14 7:04 AM Dharmadam Island · then Muziris, St. Angelo (mornings).
 (Thalassery circus posted on page 2, 12 Nov.)
-കഥയും ചരിത്രവും (owner approves each video before posting): Thalassery, cradle of Indian circus (Keeleri Kunhikannan) ·
+കഥയും സൈക്കോളജിയും (owner approves each video before posting): Thalassery, cradle of Indian circus (Keeleri Kunhikannan) ·
 Pazhassi Raja's last stand (1805) · 3-part series Muziris → 1341 flood → birth of Kochi (owner OK'd overlap with the main-page Muziris reel this once).
 Topics came from Claude's own knowledge (no web search available): fact-check every script; soft wording for legends.
 

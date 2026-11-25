@@ -23,13 +23,13 @@ Last updated: 20 Nov 2026.
 > I only need **videos**. **Never post or schedule anything**: I post manually.
 > **Never reuse the previous reel's design**: pick a different design template from section 6 for every reel (rotation rules in section 6).
 > For each reel: write `jobs/<slug>/script.json` + `anim_0.js … anim_5.js` (copy the job folder listed for the chosen template in section 6), add the `relief` map block (section 7), preview with `python3 tools/preview.py jobs/<slug> /tmp/sheet.jpg` and look at the sheet, fix problems, then push and render with the `render-one.yml` workflow, download `reel.mp4` + `cover.jpg` + `caption.txt` from the GitHub release named after the slug, check the cover, and send me all three.
-> Today's topic: **<write the topic here>** for **<@unexplored.truths or @kathayum.charithravum>**.
+> Today's topic: **<write the topic here>** for **<@unexplored.truths or @kathayum.psychologiyum>**.
 
 ---
 
 ## 3. The two pages
 
-| | @unexplored.truths (account **1**) | @kathayum.charithravum (account **2**) |
+| | @unexplored.truths (account **1**) | @kathayum.psychologiyum (account **2**) |
 |---|---|---|
 | Folder name | `jobs/<slug>` | `jobs/k2-<slug>` (**must** start with `k2-`) |
 | Render with | `account=1` | `account=2` |
