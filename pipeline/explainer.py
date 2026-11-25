@@ -347,12 +347,13 @@ def _design_css(script: dict) -> str:
         "chalk":     ("#F3F1E7", "#FFE27A", "0 2px 10px rgba(0,0,0,.4)", "rgba(20,40,28,.85)", "#F3F1E7", "border:3px dashed rgba(243,241,231,.6); border-radius:10px;", "Chilanka", None),
         "woodcut":   ("#15110d", "#B7281D", "none", "#15110d", "#EFE5CF", "border-radius:0;", "Baloo", "rgba(0,0,0,0)"),
         "route":     ("#ffffff", "#7FC1FF", "0 4px 20px rgba(0,0,0,.75)", "rgba(10,20,30,.72)", "#ffffff", "border-radius:28px;", "Baloo", None),
+        "mind":      ("#F4F7FF", "#FFB23E", "0 4px 24px rgba(3,6,16,.8)", "rgba(7,12,30,.90)", "#F4F7FF", "border-radius:18px; border:2px solid rgba(46,123,255,.55);", "Baloo", None),
         "palmleaf":  ("#F6E2B8", "#E0A84F", "0 3px 16px rgba(0,0,0,.8)", "rgba(217,183,124,.95)", "#2a1a0e", "border-radius:40px; border:3px solid #8a5a2b;", "Chilanka", None),
     }.get(d)
     if not C:
         return ""
     ink, acc, shadow, subbg, subink, subx, font, shade = C
-    SUBHI = {"palmleaf": "#8f1d12"}          # highlight word inside the subtitle box (the leaf-coloured box hides the gold accent)
+    SUBHI = {"palmleaf": "#8f1d12", "mind": "#7FB2FF"}          # highlight word inside the subtitle box (the leaf-coloured box hides the gold accent)
     css = f"""
 .claim, .head, .cover .kick {{ color:{ink} !important; text-shadow:{shadow} !important; font-family:{font}, Baloo, Noto !important; }}
 .claim b, .head b, .cover .kick b {{ color:{acc} !important; }}

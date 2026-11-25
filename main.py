@@ -61,7 +61,11 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
     provider = voice.get("provider", config.VOICE_PROVIDER)
-    if provider == "gemini":
+    if script.get("narration_file"):                    # ready-made narration: cut it at the pauses, no TTS call
+        media.split_narration(Path(script["narration_file"]), [work / f"voice_{i}.mp3" for i in range(len(scenes))], script.get("narration_cuts"))
+        provider = "file"
+        print("  using the recorded narration file (cut at the pauses between lines)")
+    elif provider == "gemini":
         if not config.GEMINI_API_KEY:
             raise RuntimeError("No Gemini key: can't voice this reel")
         try:
@@ -251,6 +255,8 @@ def render_job(job_dir: Path) -> Path:
     if script.get("route"):                  # satellite route journey (design "route")
         from pipeline import route
         route.apply(job_dir, script, codes)
+    if (job_dir / "narration.mp3").exists():            # voice recorded elsewhere (e.g. ElevenLabs web app)
+        script["narration_file"] = str((job_dir / "narration.mp3").resolve())
     print(f"Rendering job {job_dir.name}: {topic['title']}")
     return build_reel(topic, script, config.OUTPUT_DIR / job_dir.name, codes)
 

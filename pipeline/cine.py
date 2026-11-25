@@ -138,6 +138,7 @@ DESIGNS = {
     "chalk":     {"overlay": "none", "grade": False, "leak": False, "grain": 0.04, "vignette": 0.30, "accent": "#FFE27A", "letterbox": []},
     "woodcut":   {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.10, "accent": "#B7281D", "letterbox": []},
     "route":     {"overlay": "none", "grade": False, "leak": False, "grain": 0.02, "vignette": 0.15, "accent": "#2F8BFF", "letterbox": [], "push": 0.0},
+    "mind":      {"overlay": "none", "grade": False, "leak": False, "grain": 0.03, "vignette": 0.40, "accent": "#FFB23E", "letterbox": []},
     "palmleaf":  {"overlay": "dust", "color": "#f0d9a8", "grade": False, "leak": False, "grain": 0.05, "vignette": 0.45, "accent": "#E0A84F", "letterbox": []},
 }
 LIGHT_DESIGNS = {"newsprint", "mural", "woodcut"}

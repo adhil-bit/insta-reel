@@ -142,10 +142,23 @@ def generate_voice(text: str, out_path: Path, voice_id: str | None = None, provi
 def gemini_narration(lines: list[str], outs: list[Path], voice_name: str) -> list[Path]:
     """Record every line of a reel in ONE Gemini request (saves free quota), then cut the
     recording at the pauses between lines."""
-    import re, subprocess
     joined = "\n\n".join(f"{l.strip()} ..." for l in lines)
     full = outs[0].parent / "narration_full.mp3"
     _gemini_voice(joined, full, voice_name)
+    return split_narration(full, outs)
+
+
+def split_narration(full: Path, outs: list[Path], cuts: list[float] | None = None) -> list[Path]:
+    """Cut one recording of all lines (hook + scenes) at its longest pauses (or at the given
+    cut times in seconds, one per line boundary), one clip per line."""
+    import re, subprocess
+    lines = outs
+    if cuts:
+        probe = subprocess.run(["ffmpeg", "-i", str(full), "-f", "null", "-"], capture_output=True, text=True).stderr
+        m = re.search(r"Duration: (\d+):(\d+):([\d.]+)", probe); total = 60 * float(m.group(2)) + float(m.group(3))
+        bounds = [0.0] + [float(c) for c in cuts] + [total]
+        assert len(bounds) == len(outs) + 1, f"narration_cuts needs {len(outs) - 1} values"
+        return _cut(full, outs, bounds)
     probe = subprocess.run(["ffmpeg", "-i", str(full), "-af", "silencedetect=noise=-38dB:d=0.45", "-f", "null", "-"],
                            capture_output=True, text=True).stderr
     starts = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", probe)]
@@ -156,6 +169,11 @@ def gemini_narration(lines: list[str], outs: list[Path], voice_name: str) -> lis
     gaps.sort()
     total = float(re.search(r"Duration: (\d+):(\d+):([\d.]+)", probe).group(3)) + 60 * float(re.search(r"Duration: (\d+):(\d+):", probe).group(2))
     cuts = [0.0] + [(a + b) / 2 for a, b in gaps] + [total]
+    return _cut(full, outs, cuts)
+
+
+def _cut(full: Path, outs: list[Path], cuts: list[float]) -> list[Path]:
+    import subprocess
     for i, out in enumerate(outs):
         subprocess.run(["ffmpeg", "-y", "-v", "error", "-i", str(full), "-ss", f"{cuts[i]:.3f}", "-to", f"{cuts[i + 1]:.3f}",
                         "-af", "silenceremove=start_periods=1:start_threshold=-50dB:start_silence=0.12,areverse,"

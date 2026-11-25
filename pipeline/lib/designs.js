@@ -266,3 +266,62 @@ const PALM = (() => {
   function etch(g, key, fn) { const k = FX.shot(key, fn, [0, 0, W, H], 0.5); FX.tint(k, INC); g.save(); g.globalAlpha = 0.9; g.drawImage(k, 0, 0, W, H); g.restore(); }
   return { LEAF, EDGE, INC, table, leaf, cord, incise, etch };
 })();
+
+// ---------- MIND: @kathayum.sathyangalum signature (navy + electric blue, one amber accent; the knot that becomes a line) ----------
+const MIND = (() => {
+  const NIGHT = '#05070F', NAVY = '#0B1530', PANEL = '#142350', FIG = '#1B2F66', BLUE = '#2E7BFF', ICE = '#7FB2FF', AMBER = '#FFB23E', WHITE = '#F4F7FF', MUTE = '#8A97B8';
+  function bg(g, t, focus = [540, 900], floor = 1210) {
+    const gr = g.createLinearGradient(0, 0, 0, H); gr.addColorStop(0, NIGHT); gr.addColorStop(0.36, NAVY); gr.addColorStop(1, '#0A1228'); g.fillStyle = gr; g.fillRect(-200, -200, W + 400, H + 400);
+    const rg = g.createRadialGradient(focus[0], focus[1], 20, focus[0], focus[1], 700); rg.addColorStop(0, 'rgba(46,123,255,0.16)'); rg.addColorStop(1, 'rgba(46,123,255,0)'); g.fillStyle = rg; g.fillRect(-200, -200, W + 400, H + 400);
+    g.save(); const pts = []; for (let i = 0; i < 60; i++) { const q = FX.NOISE[i * 13 % FX.NOISE.length]; pts.push([q[0] * W + 4 * Math.sin(t * 0.4 + i), q[1] * H * 0.9 + 4 * Math.cos(t * 0.37 + i)]); }
+    g.strokeStyle = 'rgba(127,178,255,0.10)'; g.lineWidth = 1; for (let i = 0; i < 8; i++) { const a = pts[i * 3], b = pts[i * 3 + 1]; g.beginPath(); g.moveTo(a[0], a[1]); g.lineTo(b[0], b[1]); g.stroke(); }
+    pts.forEach((p, i) => { g.globalAlpha = 0.08 + 0.17 * ((i * 37) % 10) / 10; g.fillStyle = ICE; g.beginPath(); g.arc(p[0], p[1], 2 + (i % 2), 0, 6.283); g.fill(); }); g.restore();
+    if (floor) { g.fillStyle = NIGHT; g.fillRect(-200, floor, W + 400, H); g.fillStyle = 'rgba(46,123,255,0.25)'; g.fillRect(0, floor, W, 2); }
+  }
+  function glow(g, path, truth, w = 1) { const core = truth ? '#FFD58A' : ICE, halo = truth ? AMBER : BLUE;
+    for (const [lw, a, c] of [[18 * w, 0.12, halo], [8 * w, 0.35, halo], [4 * w, 1, core]]) { g.save(); g.globalAlpha = a; g.strokeStyle = c; g.lineWidth = lw; g.lineCap = 'round'; g.lineJoin = 'round'; path(); g.stroke(); g.restore(); } }
+  function thread(g, pts, p, truth = false) { if (p <= 0 || pts.length < 2) return; let tot = 0; const seg = []; for (let i = 1; i < pts.length; i++) { const l = Math.hypot(pts[i][0] - pts[i - 1][0], pts[i][1] - pts[i - 1][1]); seg.push(l); tot += l; }
+    glow(g, () => { g.beginPath(); g.moveTo(pts[0][0], pts[0][1]); let rem = tot * clamp(p); for (let i = 1; i < pts.length && rem > 0; i++) { const f = Math.min(1, rem / seg[i - 1]); g.lineTo(lerp(pts[i - 1][0], pts[i][0], f), lerp(pts[i - 1][1], pts[i][1], f)); rem -= seg[i - 1]; } }, truth); }
+  function knot(g, x, y, r, t, s = 0, truth = false) {           // s 0 = tangled knot, 1 = straight line (length 2.6r)
+    glow(g, () => { g.beginPath(); for (let i = 0; i <= 120; i++) { const a = i / 120 * 6.283, rot = t * 0.6;
+      const kx = Math.sin(2 * a + rot) * r, ky = Math.sin(3 * a) * r * 0.62, lx = (i / 120 - 0.5) * r * 2.6, ly = 0;
+      const px = lerp(kx, lx, s), py = lerp(ky, ly, s); i ? g.lineTo(x + px, y + py) : g.moveTo(x + px, y + py); } }, truth || s > 0.9); }
+  function node(g, x, y, p = 1, truth = false) { if (p <= 0) return; const c = truth ? AMBER : ICE; g.save(); g.fillStyle = c; g.beginPath(); g.arc(x, y, 10 * clamp(p * 2), 0, 6.283); g.fill();
+    g.globalAlpha = 0.3 * (1 - clamp(p - 0.2)); g.strokeStyle = c; g.lineWidth = 3; g.beginPath(); g.arc(x, y, 22 + 30 * clamp(p), 0, 6.283); g.stroke(); g.restore(); }
+  function observer(g, x, y, s = 1, pose = 'stand', o = {}) {      // faceless Malayali everyman: half-sleeve shirt, mundu with amber kara
+    const rim = o.truth ? AMBER : ICE, fill = o.fill || FIG; g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = fill; g.strokeStyle = fill; g.lineCap = 'round';
+    if (pose === 'sit') { g.fillRect(-150, -250, 40, 250); g.fillRect(-150, -270, 230, 26); }   // chair
+    const sitDy = pose === 'sit' ? 150 : 0; g.translate(0, sitDy);
+    if (pose === 'sit') { g.beginPath(); g.moveTo(-60, -260); g.lineTo(90, -250); g.lineTo(110, -100 - sitDy + 150); g.lineTo(70, -110); g.lineTo(-60, -200); g.fill(); g.fillRect(70, -260, 40, 260 - sitDy + 0); }
+    else { g.beginPath(); g.moveTo(-58, -300); g.lineTo(58, -300); g.lineTo(70, 0); g.lineTo(-70, 0); g.closePath(); g.fill();
+      g.strokeStyle = AMBER; g.lineWidth = 6; g.beginPath(); g.moveTo(40, -296); g.lineTo(50, -4); g.lineTo(-68, -4); g.stroke(); g.strokeStyle = fill; }
+    g.beginPath(); g.moveTo(-74, -520); g.lineTo(74, -520); g.lineTo(62, -300); g.lineTo(-62, -300); g.closePath(); g.fill();          // shirt
+    g.beginPath(); g.moveTo(-74, -520); g.lineTo(-104, -470); g.lineTo(-84, -450); g.lineTo(-66, -480); g.fill(); g.beginPath(); g.moveTo(74, -520); g.lineTo(104, -470); g.lineTo(84, -450); g.lineTo(66, -480); g.fill();
+    g.lineWidth = 22; if (pose === 'phone') { g.beginPath(); g.moveTo(90, -470); g.lineTo(70, -560); g.stroke(); } else if (pose === 'think') { g.beginPath(); g.moveTo(90, -470); g.lineTo(40, -560); g.stroke(); }
+    else { g.beginPath(); g.moveTo(-94, -462); g.lineTo(-102, -320); g.moveTo(94, -462); g.lineTo(102, -320); g.stroke(); }
+    g.fillRect(-16, -560, 32, 44); g.beginPath(); g.ellipse(0, -612, 46, 54, 0, 0, 6.283); g.fill();                                  // neck + head (no face)
+    g.beginPath(); g.ellipse(8, -650, 48, 24, 0.15, Math.PI, 0); g.fill();                                                              // hair cap
+    g.strokeStyle = rim; g.lineWidth = 3; g.globalAlpha = 0.9; g.beginPath(); g.ellipse(0, -612, 46, 54, 0, -1.2, 1.0); g.stroke(); g.beginPath(); g.moveTo(74, -520); g.lineTo(62, -300); g.stroke();
+    g.restore(); return [x, y + (sitDy - 612) * s - 80 * s]; }                                                                          // point above the head
+  function chip(g, label, x, y, kind = 'katha', a = 1) { if (a <= 0) return; g.save(); g.globalAlpha = a; const truth = kind === 'sathyam';
+    g.font = (kind === 'katha' ? '700 46px Chilanka, Baloo' : '800 42px Baloo'); const w = g.measureText(label).width + 56;
+    g.fillStyle = truth ? 'rgba(255,178,62,0.16)' : 'rgba(20,35,80,0.92)'; g.strokeStyle = truth ? AMBER : BLUE; g.lineWidth = 3; g.beginPath(); g.roundRect(x, y - 44, w, 72, 36); g.fill(); g.stroke();
+    g.fillStyle = truth ? AMBER : WHITE; g.textAlign = 'left'; g.fillText(label, x + 28, y + 8); g.restore(); return w; }
+  function label(g, s, x, y, size = 36, col = ICE, align = 'center', font = 'Baloo') { g.save(); g.font = `700 ${size}px ${font}`; g.fillStyle = col; g.textAlign = align; g.fillText(s, x, y); g.restore(); }
+  function hall(g, t, inner, screen = [120, 440, 840, 460]) {        // cinema hall from the back row; inner(g, x, y, w, h) draws on the screen
+    const [sx, sy, sw, sh] = screen; g.save(); const cone = g.createLinearGradient(960, 300, 540, 900); cone.addColorStop(0, 'rgba(127,178,255,0.20)'); cone.addColorStop(1, 'rgba(127,178,255,0)');
+    g.fillStyle = cone; g.beginPath(); g.moveTo(1000, 330); g.lineTo(sx, sy + sh); g.lineTo(sx + sw, sy); g.closePath(); g.fill();
+    g.fillStyle = '#0F1C40'; g.fillRect(sx - 10, sy - 10, sw + 20, sh + 20); g.fillStyle = '#18306A'; g.fillRect(sx, sy, sw, sh);
+    g.save(); g.beginPath(); g.rect(sx, sy, sw, sh); g.clip(); inner && inner(g, sx, sy, sw, sh); g.restore();
+    for (let r = 0; r < 2; r++) for (let i = 0; i < 7; i++) { const hx = 90 + i * 150 + (r % 2) * 60, hy = 1060 + r * 110; g.fillStyle = r ? NIGHT : '#0A1430';
+      g.beginPath(); g.ellipse(hx, hy, 40, 48, 0, 0, 6.283); g.fill(); g.beginPath(); g.ellipse(hx, hy + 120, 80, 70, 0, Math.PI, 0); g.fill(); g.fillRect(hx - 80, hy + 120, 160, 120); }
+    g.restore(); }
+  function cal(g, x, y, s, text, col = WHITE) { g.save(); g.translate(x, y); g.scale(s, s); g.fillStyle = '#E9EEF9'; g.fillRect(-90, -100, 180, 200); g.fillStyle = BLUE; g.fillRect(-90, -100, 180, 50);
+    g.fillStyle = WHITE; g.fillRect(-60, -112, 10, 28); g.fillRect(50, -112, 10, 28); g.fillStyle = '#0B1530'; g.font = '800 92px Baloo'; g.textAlign = 'center'; g.fillText(text, 0, 70); g.restore(); }
+  function bubble(g, x, y, r, inner, a = 1) { if (a <= 0) return; g.save(); g.globalAlpha = a; g.fillStyle = PANEL; g.strokeStyle = ICE; g.lineWidth = 3; g.beginPath(); g.arc(x, y, r, 0, 6.283); g.fill(); g.stroke();
+    for (const [dx, dy, rr] of [[-r * 0.4, r * 1.25, r * 0.16], [-r * 0.55, r * 1.6, r * 0.09]]) { g.beginPath(); g.arc(x + dx, y + dy, rr, 0, 6.283); g.fill(); g.stroke(); }
+    inner && inner(); g.restore(); }
+  function glyph(g, x, y, r = 44, p = 1, t = 0) { g.save(); g.strokeStyle = BLUE; g.lineWidth = 5; g.beginPath(); g.arc(x, y, r, 0, 6.283); g.stroke(); g.restore();
+    knot(g, x, y, r * 0.45, t, 0); thread(g, [[x + r, y], [x + r + 120, y]], p, true); node(g, x + r + 120, y, p, true); }
+  return { NIGHT, NAVY, PANEL, FIG, BLUE, ICE, AMBER, WHITE, MUTE, bg, glow, thread, knot, node, observer, chip, label, hall, cal, bubble, glyph };
+})();
