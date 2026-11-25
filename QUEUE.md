@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Wed 25 Nov, 08:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 05:51 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -17,6 +17,7 @@ _Updated Wed 25 Nov, 08:05 AM IST. Times are approximate: each reel posts within
 - ananthapura-crocodile-v3
 - ananthapura-crocodile-v4
 - ananthapura-crocodile-v5
+- antikythera-computer
 - arakkal-queens
 - aranmula-kannadi
 - bathe-after-funeral
@@ -42,6 +43,7 @@ _Updated Wed 25 Nov, 08:05 AM IST. Times are approximate: each reel posts within
 - dhanushkodi-ghost-town
 - dharmadam-island
 - district-foods
+- dyatlov-pass
 - edakkal-caves
 - emden-chempakaraman
 - ezhimala
