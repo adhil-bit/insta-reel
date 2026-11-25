@@ -65,6 +65,14 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         media.split_narration(Path(script["narration_file"]), [work / f"voice_{i}.mp3" for i in range(len(scenes))], script.get("narration_cuts"))
         provider = "file"
         print("  using the recorded narration file (cut at the pauses between lines)")
+    elif script.get("voice_provider") == "elevenlabs":      # page 2: ElevenLabs voice (Jijo) via the API, one call per line
+        vid = script.get("eleven_voice_id") or config.ELEVENLABS_VOICE_ID
+        if not (config.ELEVENLABS_API_KEY and vid):
+            raise RuntimeError("This reel needs the ElevenLabs voice: add the repo secrets ELEVENLABS_API_KEY and ELEVENLABS_VOICE_ID (or narration.mp3)")
+        for i, s in enumerate(scenes):
+            media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", vid, provider="elevenlabs")
+        provider = "elevenlabs"
+        print("  voiced with ElevenLabs, line by line")
     elif provider == "gemini":
         if not config.GEMINI_API_KEY:
             raise RuntimeError("No Gemini key: can't voice this reel")

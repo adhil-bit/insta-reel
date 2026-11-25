@@ -120,5 +120,6 @@
     ]
   },
   "design": "album",
-  "voice_status": "pending: record in ElevenLabs (Jijo), save as narration.mp3 in this folder, set narration_cuts"
+  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
+  "voice_provider": "elevenlabs"
 }
