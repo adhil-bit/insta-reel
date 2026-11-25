@@ -73,7 +73,7 @@ window.renderFrame = function (t) {
   const hz = m => (lon, lat) => hAt(m, lon, lat) * (m === S.near ? 1 : ex);
 
   // Kerala outline: drawn live so it can fade (wide view only)
-  const oa = sm(70, 150, C.d);
+  const oa = RL.outline.length ? sm(70, 150, C.d) : 0;
   if (oa > 0) {
     const H0 = hz(S.wide), pts = RL.outline.map(p => scr(wx(p[0]), H0(p[0], p[1]) + 0.3, wz(p[1])));
     g.save(); g.lineJoin = 'round'; g.strokeStyle = GOLD; g.beginPath(); pts.forEach((p, i) => i ? g.lineTo(p[0], p[1]) : g.moveTo(p[0], p[1])); g.closePath();
@@ -85,9 +85,9 @@ window.renderFrame = function (t) {
   // state label in the sea: കേരളം / KERALA · INDIA
   const la = 1 - sm(0.25, 0.35, q);
   if (la > 0) {
-    const p = scr(wx(RL.kerala[1] - 1.3), 0, wz(RL.kerala[0]));
-    g.save(); g.globalAlpha = la; g.textAlign = 'center'; g.fillStyle = TXT; g.font = '800 88px Baloo'; g.fillText('കേരളം', p[0], p[1]);
-    g.fillStyle = GOLD; g.font = '600 24px Inter'; spaced('KERALA · INDIA', p[0], p[1] + 44, 8); g.restore();
+    const p = scr(wx(RL.kerala[1] + RL.labelOff[1]), 0, wz(RL.kerala[0] + RL.labelOff[0]));
+    g.save(); g.globalAlpha = la; g.textAlign = 'center'; g.fillStyle = TXT; g.font = '800 88px Baloo'; if (!RL.outline.length) { g.shadowColor = 'rgba(0,0,0,0.8)'; g.shadowBlur = 24; } g.fillText(RL.label[0], p[0], p[1]);
+    g.fillStyle = GOLD; g.font = '600 24px Inter'; spaced(RL.label[1], p[0], p[1] + 44, 8); g.restore();
   }
   // distance thread: nearest city -> town, dashed marching arc + counter chip (45-62%)
   const town = scr(0, hAt(S.near, RL.lon, RL.lat) + 0.05, 0);

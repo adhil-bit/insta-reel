@@ -186,3 +186,17 @@ The relief location scene (`"relief": {...}` in script.json, night look) now zoo
 - Override the start town with `"from": "thalassery"` (a CITIES key) or switch the road off with `"from": false`. `"sat": false` keeps the painted relief.
 - Build once with relief-build.yml (job=<slug>); meta version 4 caches the tiles and road.
 - Use it as the in-between location scene of story reels. Do not make whole travel/route reels (user said no).
+
+## Location map outside Kerala (Nov 2026)
+
+The satellite map scene also works for places outside Kerala. Add a `region` to the relief block:
+
+```json
+"relief": {"scene": 1, "lat": 35.875, "lon": 23.305, "town": "ആന്റികിതേര", "district": "GREECE", "kicker": "SHIPWRECK",
+           "from": false, "look": "night",
+           "region": {"c": [37.3, 23.6], "ml": "ഗ്രീസ്", "en": "GREECE · EUROPE", "off": [0.4, 1.2]}}
+```
+
+- `c` = centre of the opening wide view (instead of Kerala); `ml` / `en` = the big label; `off` = label offset in degrees [lat, lon].
+- No Kerala outline and no road line are drawn when `region` is set. Elevation (Copernicus DEM) and Sentinel-2 imagery are worldwide.
+- Examples: `jobs/antikythera-computer` (Greece), `jobs/dyatlov-pass` (Urals), `jobs/k2-bhangarh-fort` (Rajasthan).

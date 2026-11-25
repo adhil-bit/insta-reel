@@ -149,14 +149,16 @@ def build(job: Path, force=False) -> Path:
         (job / "script.json").write_text(json.dumps(script, ensure_ascii=False, indent=2), encoding="utf-8")
     out = job / "relief"; out.mkdir(exist_ok=True)
     meta_p = out / "relief.json"
+    reg = r.get("region") or {}                           # outside Kerala: {"c": [lat, lon], "ml": .., "en": ..}
+    centre = tuple(reg["c"]) if reg.get("c") else KERALA
     look = r.get("look") or ("ink" if script.get("theme") == "inkwash" else "night")
     if meta_p.exists() and not force:
         m = json.loads(meta_p.read_text())
-        if m.get("v") == 4 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"]:
+        if m.get("v") == 4 and m.get("look") == look and m.get("lat") == r["lat"] and m.get("lon") == r["lon"] and m.get("c", list(KERALA)) == list(centre):
             return out
-    meta = {"v": 4, "lat": r["lat"], "lon": r["lon"], "look": look}
+    meta = {"v": 4, "lat": r["lat"], "lon": r["lon"], "look": look, "c": list(centre)}
     for name, span, glo, size in TILES:
-        clat, clon = (KERALA if name == "wide" else (r["lat"], r["lon"]))
+        clat, clon = (centre if name == "wide" else (r["lat"], r["lon"]))
         b = bounds_for(clat, clon, span, size)
         zp = out / f"{name}_{span}_{clat:.3f}_{clon:.3f}_z.png"
         if zp.exists():
@@ -179,7 +181,7 @@ def build(job: Path, force=False) -> Path:
                 grade(img).save(sp, quality=88, optimize=True)
             Image.open(sp).save(out / f"{name}.jpg", quality=88, optimize=True)
         else:
-            paint(z, b, look, lo, hi, kerala_only=(name == "wide")).save(out / f"{name}.jpg", quality=86, optimize=True)
+            paint(z, b, look, lo, hi, kerala_only=(name == "wide" and not reg)).save(out / f"{name}.jpg", quality=86, optimize=True)
         hm = np.array(Image.fromarray(z).resize((HM_W, HM_H), Image.BILINEAR))
         Image.fromarray(np.clip((hm - lo) / (hi - lo) * 255, 0, 255).astype(np.uint8)).save(out / f"{name}_h.png", optimize=True)
         meta[name] = {"b": [round(x, 5) for x in b], "hk": hk, "zmax": float(z.max())}
@@ -213,16 +215,18 @@ def scene_code(job: Path, script: dict) -> str:
     out = build(job)
     meta = json.loads((out / "relief.json").read_text())
     r = script["relief"]
-    outline = json.loads((ROOT / "vendor" / "kerala.json").read_text())["states"]["Kerala"][0][::2]
+    reg = r.get("region") or {}
+    outline = [] if reg else json.loads((ROOT / "vendor" / "kerala.json").read_text())["states"]["Kerala"][0][::2]
     lat, lon = r["lat"], r["lon"]
     coords = f"{abs(lat):.2f}°{'N' if lat >= 0 else 'S'} {abs(lon):.2f}°{'E' if lon >= 0 else 'W'}"
     cfg = {
-        "lat": lat, "lon": lon, "kerala": list(KERALA), "ink": meta["look"] == "ink",
+        "lat": lat, "lon": lon, "kerala": list(reg["c"]) if reg.get("c") else list(KERALA), "ink": meta["look"] == "ink",
         "tiles": {k: {"b": meta[k]["b"], "hk": meta[k]["hk"]} for k in ("wide", "mid", "near")},
         "town": r.get("town", ""), "kicker": r.get("kicker", "LOCATION"),
         "sub": (r.get("district", "") + " · " if r.get("district") else "") + coords,
         "source": r.get("source", "MAP: COPERNICUS DEM © DLR/ESA · NATURAL EARTH" + (" · CONTAINS MODIFIED COPERNICUS SENTINEL DATA · © OPENSTREETMAP" if meta.get("road") or meta.get("look") == "night" else "")),
-        "outline": outline, "city": None if r.get("from") is False else _nearest_city(lat, lon, r.get("from")),
+        "label": [reg.get("ml", "കേരളം"), reg.get("en", "KERALA · INDIA")], "labelOff": reg.get("off", [0, -1.3] if not reg else [0, 0]),
+        "outline": outline, "city": None if (r.get("from") is False or reg) else _nearest_city(lat, lon, r.get("from")),
         "exag": r.get("exag", 5), "road": meta.get("road"),
         "light": script.get("design") in {"newsprint", "mural", "woodcut"},
     }
