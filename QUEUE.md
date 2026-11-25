@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Tue 24 Nov, 01:45 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Wed 25 Nov, 07:05 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -46,6 +46,7 @@ _Updated Tue 24 Nov, 01:45 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Kathivanoor Veeran: Mandappan of Mangad, Kannur | 2026-11-25T01:35 |
 | Kannur's Vault No. 38 | 2026-11-24T01:35 |
 | Kerala University's 'haunted' pond | 2026-11-23T09:32 |
 | The Kannur treasure pot (2024) | 2026-11-23T01:35 |
@@ -55,4 +56,3 @@ _Updated Tue 24 Nov, 01:45 PM IST. Times are approximate: each reel posts within
 | Payyanur Salt Satyagraha 1930 | 2026-11-17T04:06 |
 | The Dutch sold a Kannur fort to a Malayali royal family | 2026-11-16T01:35 |
 | Why Malayalis fear the pala tree | 2026-11-15T12:38 |
-| Muziris: Rome's lost pepper port in Kerala | 2026-11-15T01:35 |
