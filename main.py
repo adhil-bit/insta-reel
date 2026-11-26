@@ -61,6 +61,8 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
     print(f"3/6 Recording the voiceover (voice: {voice['name']})...")
     durations = []
     provider = voice.get("provider", config.VOICE_PROVIDER)
+    if config.ACCOUNT == "2" and not script.get("voice_provider"):
+        script["voice_provider"] = "auto"   # page 2: past-reel Gemini voice first, free Microsoft voice if the quota is out
     if script.get("narration_file"):                    # ready-made narration: cut it at the pauses, no TTS call
         media.split_narration(Path(script["narration_file"]), [work / f"voice_{i}.mp3" for i in range(len(scenes))], script.get("narration_cuts"))
         provider = "file"
