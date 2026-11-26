@@ -68,7 +68,6 @@ _Updated Thu 26 Nov, 05:28 PM IST. Times are approximate: each reel posts within
 - jatinga-birds
 - k2-iffk-scarcity
 - k2-premam-reminiscence
-- k2-romancham-ideomotor
 - k2-spotlight-effect
 - kalari-fire
 - kalari-fire-v2
