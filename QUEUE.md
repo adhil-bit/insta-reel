@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 05:23 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 05:24 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -155,6 +155,7 @@ _Updated Thu 26 Nov, 05:23 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്? | 2026-11-26T11:54 |
 | പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്? | 2026-11-26T01:32 |
 | Drishyam: how Georgekutty edited memories (misinformation effect) | 2026-11-25T14:28 |
 | Ayyankali's villuvandi journey, 1893 | 2026-11-25T02:35 |
@@ -164,4 +165,3 @@ _Updated Thu 26 Nov, 05:23 PM IST. Times are approximate: each reel posts within
 | Unniyarcha of the Vadakkan Pattukal | 2026-11-23T02:36 |
 | Battle of Colachel 1741 | 2026-11-19T11:22 |
 | Kunjali Marakkar: the Zamorin's admirals | 2026-11-17T05:22 |
-| The 1341 flood that made Kochi | 2026-11-16T02:36 |
