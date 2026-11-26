@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 05:24 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 05:27 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -66,7 +66,6 @@ _Updated Thu 26 Nov, 05:24 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
-- k2-comment-lion
 - k2-contagious-yawn
 - k2-hypnic-jerk
 - k2-iffk-scarcity
