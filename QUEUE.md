@@ -67,7 +67,6 @@ _Updated Thu 26 Nov, 05:27 PM IST. Times are approximate: each reel posts within
 - janmi-kudiyan
 - jatinga-birds
 - k2-contagious-yawn
-- k2-hypnic-jerk
 - k2-iffk-scarcity
 - k2-premam-reminiscence
 - k2-romancham-ideomotor
