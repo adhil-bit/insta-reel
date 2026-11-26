@@ -116,7 +116,7 @@ function palace(q, x, y, s, col = '#111') { q.save(); q.translate(x, y); q.scale
 function rifleman(q, x, y, s, t, col = '#111') { soldier(q, x, y, s, t, 0); q.save(); q.fillStyle = col; q.translate(x, y); q.scale(s, s); q.fillRect(-10, -150, 120, 10); q.restore(); }
 window.renderFrame = function (t) { const D = DURATION;
 NEWS.paper(g, t);
-g.save(); g.fillStyle = NEWS.INK; g.fillRect(70, 640, 940, 8); g.fillRect(70, 790, 940, 3); g.textAlign = 'center'; g.font = '800 92px Baloo'; g.fillText('അൺഎക്സ്പ്ലോർഡ് ട്രൂത്ത്സ്', 540, 754); g.restore();
+g.save(); g.fillStyle = NEWS.INK; g.fillRect(70, 640, 940, 8); g.fillRect(70, 790, 940, 3); g.textAlign = 'center'; g.font = '800 92px Baloo'; g.fillText('Unexplored Truths', 540, 754); g.restore();
 const p = ease.out(clamp((t - 0.3) / 0.5)); g.save(); g.globalAlpha = p; g.fillStyle = NEWS.INK; g.font = '800 120px Baloo'; g.textAlign = 'center'; g.fillText('ധീര വനിതകൾ', 540, 980); g.restore();
 g.save(); g.setLineDash([22, 14]); g.strokeStyle = NEWS.INK; g.lineWidth = 4; g.strokeRect(110, 1040, 860, 180); g.setLineDash([]); g.font = '700 54px Baloo'; g.fillStyle = NEWS.RED; g.textAlign = 'center'; g.fillText('@ ടാഗ് ചെയ്യൂ', 540, 1150); g.restore();
 };
