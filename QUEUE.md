@@ -1,13 +1,12 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 02:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 02:11 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
-- akkamma-cheriyan
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
