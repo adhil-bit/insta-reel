@@ -1,12 +1,13 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 02:11 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 02:17 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
 
 ## Being rendered (joins the queue when done)
 
+- akkamma-cheriyan-v2
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
@@ -56,7 +57,6 @@ _Updated Thu 26 Nov, 02:11 PM IST. Times are approximate: each reel posts within
 - k2-velu-thampi-kundara
 - k2-velu-thampi-kundara-v2
 - k2-velu-thampi-kundara-v3
-- roopkund-skeleton-lake-v2
 - test-sat-map
 
 ## Recently posted
