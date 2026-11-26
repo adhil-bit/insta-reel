@@ -108,6 +108,7 @@ Dropped (moved to `jobs/_dropped/`): Kottayam literacy, Roopkund, Indus script, 
 
 ## 6. House rules for every reel
 
+- **Reach checklist (26 Nov 2026, both pages):** every script is scored on the owner's 7 sharing rules in `docs/reach-checklist.md` (relatability, emotion, usefulness, identity, conversation starter, curiosity, simplicity). Minimum 5/7; curiosity, simplicity and the closing question are required. Record it in `script.json` → `"reach"`.
 - **Hook:** short (**under 10 words** in the v2 format), ends with a question or claim. Use **"നിങ്ങൾക്കറിയാമോ?"**; never "ഊഹിക്കില്ല".
 - **v2 format (from 3 Nov):** about **30 s, so ≤ ~38 Malayalam words** at our narrator's pace; 4 beats; **motion in frame 1** (no still photo as the opening); a **debate or share line**; a loop ending.
 - **Facts:** research first (`research.yml`, `fetch-images.yml`). Label legends, claims and theories clearly; give both sides on contested history (Tipu/Mysore, 1921, caste). Example correction: Tipu died in 1799, not 1792.

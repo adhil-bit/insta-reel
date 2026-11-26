@@ -80,6 +80,16 @@ CAPTION: bilingual. First line a Malayalam hook + emoji, then the English line; 
 each Malayalam followed by English; end with a personal question ("Which story did your grandmother tell
 you?") and ONE share line ("Share this with that friend who loves history."); at most 5 hashtags, all about the topic (no #viral/#explorepage/#reels or other generic tags). Also give \"search_ml\": 3-4 Malayalam words people would search for this topic.
 
+REACH CHECKLIST (owner's rule, docs/reach-checklist.md). Score the script on these 7 and rewrite until it scores
+at least 5, with 5, 6 and 7 always present:
+1 Relatability: open in a moment from the viewer's own life (Sunday at home, family WhatsApp group, exam hall, bus).
+2 Emotion: aim at ONE feeling: humour, surprise, nostalgia, happiness or inspiration.
+3 Usefulness: one thing the viewer can use or tell someone today.
+4 Identity: let someone say "this is so me"; the share line names that person ("send this to your overthinker friend").
+5 Conversation starter: the last scene asks a question people answer in one word; the caption ends with the same question, then the share line.
+6 Curiosity: the hook holds back the answer until the end.
+7 Simplicity: one idea, plain words, any technical term explained once.
+
 DESIGN PLAN (you are the video designer as well as the writer)
 - opening: decide how the reel opens.
   * "globe" = a 3D globe spins and zooms to the location with a pin, then the cover visual appears.
@@ -110,7 +120,8 @@ Reply with ONLY a JSON object, no other text:
   ],
   "thumbnail_ml": "a short, curiosity-driving question or claim in Malayalam for the cover (max 8 words)",
   "thumbnail_accent": ["1-2 words from thumbnail_ml to colour"],
-  "instagram_caption": "first line under 60 chars with a name or number; 2-3 sentences; ONE ask only, phrased 'Share this with someone from <place>'; at most 5 topic hashtags at the end",
+  "instagram_caption": "first line under 60 chars with a name or number; 2-3 sentences; end with the conversation question, then ONE share line naming the person to send it to; at most 5 topic hashtags at the end",
+  "reach": {{"relatable": "...", "emotion": "humour|surprise|nostalgia|happiness|inspiration", "useful": "...", "identity": "...", "question": "the closing question in Malayalam", "curiosity": "what the hook holds back", "score": 5}},
   "search_ml": ["3-4 Malayalam search words for this topic"],
   "fact_check": ["each factual claim in the script -> which fact/source supports it"]
 }}

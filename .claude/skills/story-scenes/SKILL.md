@@ -19,6 +19,11 @@ which is loaded into every animation page.
 
 - **Malayalam phrasing:** end a held-back hook with **'നിങ്ങൾക്കറിയാമോ?'** (do you know?). Never use 'നിങ്ങൾ ഊഹിക്കില്ല' (you'd never guess): it can sound negative.
 
+## 1b. Reach checklist (owner's rule, both pages)
+Before writing scenes, score the script on `docs/reach-checklist.md`: relatability, ONE emotion,
+usefulness, identity ("send this to your ___ friend"), a closing one-word-answer question (spoken in the
+last scene and last in the caption), a held-back hook, and one simple idea. 5/7 minimum; the last three are required.
+
 ## 2. The look
 - One warm palette per reel: `SK.sky(g, 'sunset' | 'dusk' | 'dawn' | 'day' | 'night' | 'temple')`.
 - Flat silhouettes in near-black (`SK.ink`) against glowing skies; Kerala motifs: palms, sloped-roof
