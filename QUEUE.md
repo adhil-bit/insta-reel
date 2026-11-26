@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 01:54 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 01:58 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -60,7 +60,6 @@ _Updated Thu 26 Nov, 01:54 PM IST. Times are approximate: each reel posts within
 - k2-velu-thampi-kundara-v3
 - roopkund-skeleton-lake-v2
 - test-sat-map
-- velu-thampi-kundara
 
 ## Recently posted
 
