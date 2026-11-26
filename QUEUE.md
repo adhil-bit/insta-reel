@@ -68,7 +68,6 @@ _Updated Thu 26 Nov, 05:23 PM IST. Times are approximate: each reel posts within
 - jatinga-birds
 - k2-comment-lion
 - k2-contagious-yawn
-- k2-damu-meme-laugh
 - k2-hypnic-jerk
 - k2-iffk-scarcity
 - k2-premam-reminiscence
