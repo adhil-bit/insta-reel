@@ -66,7 +66,6 @@ _Updated Thu 26 Nov, 05:28 PM IST. Times are approximate: each reel posts within
 - itty-cora-5-europe
 - janmi-kudiyan
 - jatinga-birds
-- k2-iffk-scarcity
 - k2-spotlight-effect
 - kalari-fire
 - kalari-fire-v2
