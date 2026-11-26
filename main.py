@@ -65,7 +65,9 @@ def build_reel(topic: dict, script: dict, folder: Path, codes: list[str] | None 
         media.split_narration(Path(script["narration_file"]), [work / f"voice_{i}.mp3" for i in range(len(scenes))], script.get("narration_cuts"))
         provider = "file"
         print("  using the recorded narration file (cut at the pauses between lines)")
-    elif script.get("voice_provider") == "edge":            # free Microsoft Malayalam voice (Midhun), no quota
+    elif script.get("voice_provider") == "auto" and config.GEMINI_API_KEY and _try_gemini(script, scenes, work):
+        provider = "gemini"                                  # same Gemini voice as the past reels
+    elif script.get("voice_provider") in ("edge", "auto"):  # free Microsoft Malayalam voice (Midhun), no quota
         voice = dict(config.EDGE_VOICE_POOL[0], provider="edge")
         for i, s in enumerate(scenes):
             media.generate_voice(s["voiceover"], work / f"voice_{i}.mp3", voice["id"], provider="edge")
@@ -325,6 +327,18 @@ def render_pending() -> None:
     print(f"Rendered {ok} job(s). Failed: {failed or 'none'}")
     if failed:
         raise SystemExit(1)
+
+
+def _try_gemini(script, scenes, work) -> bool:
+    """Record all lines with the Gemini voice used by the past reels; False when the daily quota is out."""
+    try:
+        v = pick_voice(script, [])
+        media.gemini_narration([s["voiceover"] for s in scenes], [work / f"voice_{i}.mp3" for i in range(len(scenes))], v["id"])
+        print(f"  voiced with Gemini {v['name']} (same voice as past reels)")
+        return True
+    except Exception as e:
+        print(f"  Gemini voice unavailable ({str(e)[:120]}); using Microsoft Midhun instead")
+        return False
 
 
 def pick_voice(script: dict, hist: list) -> dict:
