@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്?\n\nഅമ്മ ഉപ്പ് എടുക്കാൻ പോയി, വാതിൽ കടന്നതും മറന്നു; തിരിച്ചു വന്നപ്പോൾ ഓർമ്മ വന്നു. Doorway effect: വാതിൽ കടക്കുമ്പോൾ തലച്ചോർ ഒരു 'പുതിയ രംഗം' തുടങ്ങുന്നു; പഴയ രംഗത്തിലെ ചിന്ത പിന്നിലാകും. തല നിറയെ കാര്യങ്ങളുള്ളപ്പോൾ കൂടുതൽ.\n\nഇന്ന് എത്ര തവണ ഇത് സംഭവിച്ചു? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #3\n\nCredits: Radvansky, Krawietz & Tamplin (2011) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്?\n\nഅമ്മ ഉപ്പ് എടുക്കാൻ പോയി, വാതിൽ കടന്നതും മറന്നു; തിരിച്ചു വന്നപ്പോൾ ഓർമ്മ വന്നു. Doorway effect: വാതിൽ കടക്കുമ്പോൾ തലച്ചോർ ഒരു 'പുതിയ രംഗം' തുടങ്ങുന്നു; പഴയ രംഗത്തിലെ ചിന്ത പിന്നിലാകും. തല നിറയെ കാര്യങ്ങളുള്ളപ്പോൾ കൂടുതൽ.\n\nഇന്ന് എത്ര തവണ ഇത് സംഭവിച്ചു? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #3\n\nCredits: Radvansky, Krawietz & Tamplin (2011) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്?"
   ],
@@ -120,6 +120,6 @@
     ]
   },
   "design": "chalk",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

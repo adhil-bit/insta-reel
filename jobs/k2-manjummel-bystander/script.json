@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിടാത്തത് എന്തുകൊണ്ട്?\n\nകുഴിയിൽ വീണ കൂട്ടുകാരനു വേണ്ടി സംഘം മുഴുവൻ കൈകോർത്തു. 'ആരും സഹായിക്കില്ല' എന്ന പഴയ കഥ പകുതി തെറ്റാണ്: 'നമ്മുടെ ആൾ' എന്ന തോന്നലുള്ളവർ ഇടപെടും. CCTV പഠനത്തിൽ പൊതുസ്ഥലത്തെ 91% തർക്കങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു.\n\nനിങ്ങൾക്ക് വേണ്ടി ഇറങ്ങുന്ന ആ കൂട്ടുകാരനെ ടാഗ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #6\n\nCredits: Philpot et al. (2020), American Psychologist; Levine et al. (2005) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിടാത്തത് എന്തുകൊണ്ട്?\n\nകുഴിയിൽ വീണ കൂട്ടുകാരനു വേണ്ടി സംഘം മുഴുവൻ കൈകോർത്തു. 'ആരും സഹായിക്കില്ല' എന്ന പഴയ കഥ പകുതി തെറ്റാണ്: 'നമ്മുടെ ആൾ' എന്ന തോന്നലുള്ളവർ ഇടപെടും. CCTV പഠനത്തിൽ പൊതുസ്ഥലത്തെ 91% തർക്കങ്ങളിലും ആരെങ്കിലും ഇടപെട്ടു.\n\nനിങ്ങൾക്ക് വേണ്ടി ഇറങ്ങുന്ന ആ കൂട്ടുകാരനെ ടാഗ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #6\n\nCredits: Philpot et al. (2020), American Psychologist; Levine et al. (2005) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "മഞ്ഞുമ്മൽ ബോയ്സ്"
   ],
@@ -122,6 +122,6 @@
     ]
   },
   "design": "vhs",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "കമന്റിൽ സിംഹം, നേരിൽ മൗനം\n\nബസിൽ നിശബ്ദനായ ആൾ, രാത്രി ഫോണിൽ കടുത്ത കമന്റുകൾ. Online disinhibition (ഒരു സിദ്ധാന്തം): മുഖം കാണാത്തതും പേരില്ലാത്തതും സ്ക്രീനിലെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം ആളിന്റേതു തന്നെ.\n\nഓൺലൈനിൽ നിങ്ങൾ വേറെ ആളാണോ? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #10\n\nCredits: Suler (2004), CyberPsychology & Behavior · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "കമന്റിൽ സിംഹം, നേരിൽ മൗനം\n\nബസിൽ നിശബ്ദനായ ആൾ, രാത്രി ഫോണിൽ കടുത്ത കമന്റുകൾ. Online disinhibition (ഒരു സിദ്ധാന്തം): മുഖം കാണാത്തതും പേരില്ലാത്തതും സ്ക്രീനിലെ ബ്രേക്ക് കുറയ്ക്കും. പക്ഷേ ഉത്തരവാദിത്വം ആളിന്റേതു തന്നെ.\n\nഓൺലൈനിൽ നിങ്ങൾ വേറെ ആളാണോ? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #10\n\nCredits: Suler (2004), CyberPsychology & Behavior · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "കമന്റിൽ സിംഹം, നേരിൽ മൗനം"
   ],
@@ -122,6 +122,6 @@
     ]
   },
   "design": "mind",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "ദശമൂലം ദാമു: ഇത്ര വർഷം കഴിഞ്ഞിട്ടും ചിരിക്കുന്നത് എന്തുകൊണ്ട്?\n\nഒരു സീരിയസ് വാർത്തയുടെ താഴെ ദാമുവിന്റെ മുഖം. എല്ലാവരും ചിരിച്ചു. Benign violation theory (ഒരു സിദ്ധാന്തം): എന്തെങ്കിലും 'തെറ്റാണ്', പക്ഷേ അപകടമില്ല എന്ന് തോന്നുമ്പോഴാണ് നമ്മൾ ചിരിക്കുന്നത്.\n\nനിങ്ങളുടെ ഫേവറിറ്റ് മലയാളം മീം ഏത്? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #4\n\nCredits: McGraw & Warren (2010), Psychological Science · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "ദശമൂലം ദാമു: ഇത്ര വർഷം കഴിഞ്ഞിട്ടും ചിരിക്കുന്നത് എന്തുകൊണ്ട്?\n\nഒരു സീരിയസ് വാർത്തയുടെ താഴെ ദാമുവിന്റെ മുഖം. എല്ലാവരും ചിരിച്ചു. Benign violation theory (ഒരു സിദ്ധാന്തം): എന്തെങ്കിലും 'തെറ്റാണ്', പക്ഷേ അപകടമില്ല എന്ന് തോന്നുമ്പോഴാണ് നമ്മൾ ചിരിക്കുന്നത്.\n\nനിങ്ങളുടെ ഫേവറിറ്റ് മലയാളം മീം ഏത്? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #4\n\nCredits: McGraw & Warren (2010), Psychological Science · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "ദശമൂലം ദാമു"
   ],
@@ -122,6 +122,6 @@
     ]
   },
   "design": "newsprint",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

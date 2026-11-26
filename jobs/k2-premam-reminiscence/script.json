@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?\n\nകോളേജ് പാട്ട് കേട്ടപ്പോൾ ഒരു അച്ഛൻ പഴയ കൂട്ടുകാരെ വിളിച്ചു. Reminiscence bump: 10 മുതൽ 30 വയസ്സ് വരെയുള്ള ഓർമ്മകളാണ് ജീവിതകാലം മുഴുവൻ ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്.\n\nനിങ്ങളുടെ 'മലർ' ഓർമ്മ ഏത് വർഷമാണ്? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #9\n\nCredits: Rubin, Wetzler & Nebes (1986); Krumhansl & Zupnick (2013) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?\n\nകോളേജ് പാട്ട് കേട്ടപ്പോൾ ഒരു അച്ഛൻ പഴയ കൂട്ടുകാരെ വിളിച്ചു. Reminiscence bump: 10 മുതൽ 30 വയസ്സ് വരെയുള്ള ഓർമ്മകളാണ് ജീവിതകാലം മുഴുവൻ ഏറ്റവും തെളിഞ്ഞു നിൽക്കുന്നത്.\n\nനിങ്ങളുടെ 'മലർ' ഓർമ്മ ഏത് വർഷമാണ്? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #9\n\nCredits: Rubin, Wetzler & Nebes (1986); Krumhansl & Zupnick (2013) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "പ്രേമം കണ്ടപ്പോൾ സ്കൂൾ ഓർമ്മ വന്നത് എന്തുകൊണ്ട്?"
   ],
@@ -120,6 +120,6 @@
     ]
   },
   "design": "album",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

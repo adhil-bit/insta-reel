@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "ഉറങ്ങാൻ തുടങ്ങുമ്പോൾ ഒരു വീഴ്ച!\n\nഉറക്കത്തിലേക്ക് വഴുതുമ്പോൾ കാൽ ഒന്ന് വെട്ടി, ഹൃദയം പിടച്ചു. Hypnic jerk: ഉറക്കത്തിലേക്ക് കടക്കുമ്പോൾ പേശികൾ പെട്ടെന്ന് ചുരുങ്ങുന്നത്. മിക്കവർക്കും ഉണ്ടാകും, സാധാരണയായി അപകടമില്ല. കാരണം കൃത്യമായി അറിയില്ല.\n\nഇന്നലെ രാത്രി ഇത് ഉണ്ടായോ? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #13\n\nCredits: American Academy of Sleep Medicine (ICSD-3: sleep starts) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "ഉറങ്ങാൻ തുടങ്ങുമ്പോൾ ഒരു വീഴ്ച!\n\nഉറക്കത്തിലേക്ക് വഴുതുമ്പോൾ കാൽ ഒന്ന് വെട്ടി, ഹൃദയം പിടച്ചു. Hypnic jerk: ഉറക്കത്തിലേക്ക് കടക്കുമ്പോൾ പേശികൾ പെട്ടെന്ന് ചുരുങ്ങുന്നത്. മിക്കവർക്കും ഉണ്ടാകും, സാധാരണയായി അപകടമില്ല. കാരണം കൃത്യമായി അറിയില്ല.\n\nഇന്നലെ രാത്രി ഇത് ഉണ്ടായോ? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #13\n\nCredits: American Academy of Sleep Medicine (ICSD-3: sleep starts) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "ഉറങ്ങാൻ തുടങ്ങുമ്പോൾ ഒരു വീഴ്ച!"
   ],
@@ -122,6 +122,6 @@
     ]
   },
   "design": "mind",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

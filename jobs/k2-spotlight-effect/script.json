@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "എല്ലാവരും എന്നെ നോക്കുന്നു!\n\nകല്യാണത്തിന് ഷർട്ടിൽ കറ; ദിവസം മുഴുവൻ ടെൻഷൻ. ആരും ശ്രദ്ധിച്ചില്ല. Spotlight effect: നിങ്ങൾ കരുതുന്നതിന്റെ ഏകദേശം പകുതി പേർ മാത്രമേ ശ്രദ്ധിക്കൂ.\n\nഇങ്ങനെ ടെൻഷനടിച്ച ഒരു സംഭവം കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #8\n\nCredits: Gilovich, Medvec & Savitsky (2000) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "എല്ലാവരും എന്നെ നോക്കുന്നു!\n\nകല്യാണത്തിന് ഷർട്ടിൽ കറ; ദിവസം മുഴുവൻ ടെൻഷൻ. ആരും ശ്രദ്ധിച്ചില്ല. Spotlight effect: നിങ്ങൾ കരുതുന്നതിന്റെ ഏകദേശം പകുതി പേർ മാത്രമേ ശ്രദ്ധിക്കൂ.\n\nഇങ്ങനെ ടെൻഷനടിച്ച ഒരു സംഭവം കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #8\n\nCredits: Gilovich, Medvec & Savitsky (2000) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "എല്ലാവരും എന്നെ നോക്കുന്നു!"
   ],
@@ -120,6 +120,6 @@
     ]
   },
   "design": "shadow",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }

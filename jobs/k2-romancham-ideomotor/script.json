@@ -78,7 +78,7 @@
       "visual": ""
     }
   ],
-  "instagram_caption": "രോമാഞ്ചം: ഓജോ ബോർഡ് എങ്ങനെ 'നീങ്ങുന്നു'?\n\nബെംഗളൂരുവിലെ വാടക വീട്ടിൽ കൂട്ടുകാരുടെ ഓജോ കളി. Ideomotor effect: നമ്മൾ അറിയാതെ തന്നെ പേശികൾ ചെറുതായി ചലിക്കും; കൂട്ടായി അത് 'ഉത്തരങ്ങൾ' ആകും.\n\nഓജോ കളിച്ചിട്ടുണ്ടോ? എന്ത് സംഭവിച്ചു? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #12\n\nCredits: Carpenter (1852); Gauchou, Rensink & Fels (2012) · Animation: AI-generated · Voice: ElevenLabs\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
+  "instagram_caption": "രോമാഞ്ചം: ഓജോ ബോർഡ് എങ്ങനെ 'നീങ്ങുന്നു'?\n\nബെംഗളൂരുവിലെ വാടക വീട്ടിൽ കൂട്ടുകാരുടെ ഓജോ കളി. Ideomotor effect: നമ്മൾ അറിയാതെ തന്നെ പേശികൾ ചെറുതായി ചലിക്കും; കൂട്ടായി അത് 'ഉത്തരങ്ങൾ' ആകും.\n\nഓജോ കളിച്ചിട്ടുണ്ടോ? എന്ത് സംഭവിച്ചു? കമന്റ് ചെയ്യൂ 👇\nഅയച്ചു കൊടുക്കൂ 📩\n\nസത്യം #12\n\nCredits: Carpenter (1852); Gauchou, Rensink & Fels (2012) · Animation: AI-generated · Voice: Microsoft (Midhun)\n\n#KathayumSathyangalum #MalayalamReels #Psychology #MalayalamFacts #KeralaReels",
   "search_ml": [
     "രോമാഞ്ചം"
   ],
@@ -122,6 +122,6 @@
     ]
   },
   "design": "vhs",
-  "voice_status": "voiced on GitHub with ElevenLabs (secrets ELEVENLABS_API_KEY + ELEVENLABS_VOICE_ID = Jijo), or drop narration.mp3 here and run scripts/narration_cuts.py --write",
-  "voice_provider": "elevenlabs"
+  "voice_status": "Microsoft Midhun (edge); switch to elevenlabs when the secrets exist",
+  "voice_provider": "edge"
 }
