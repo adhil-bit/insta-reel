@@ -1,9 +1,9 @@
-Publishing ananthapura-crocodile-v5...
+Publishing zheng-he-kozhikode...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18142236508694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DgL8BbXgr9l/
+  container: 18142293580694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgMyhz9BkUx/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.

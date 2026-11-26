@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 02:24 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 03:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -62,6 +62,7 @@ _Updated Thu 26 Nov, 02:24 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Zheng He's treasure fleet at Kozhikode | 2026-11-26T09:32 |
 | Kathivanoor Veeran: Mandappan of Mangad, Kannur | 2026-11-25T01:35 |
 | Ananthapura lake temple and Babiya the crocodile | 2026-11-26T01:35 |
 | Kannur's Vault No. 38 | 2026-11-24T01:35 |
@@ -71,4 +72,3 @@ _Updated Thu 26 Nov, 02:24 PM IST. Times are approximate: each reel posts within
 | Madayipara's Jootha Kulam | 2026-11-19T11:13 |
 | Marco Polo saw Ezhimala: the Kingdom of Eli | 2026-11-18T01:35 |
 | Payyanur Salt Satyagraha 1930 | 2026-11-17T04:06 |
-| The Dutch sold a Kannur fort to a Malayali royal family | 2026-11-16T01:35 |
