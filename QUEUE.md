@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 01:49 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Thu 26 Nov, 01:54 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -9,7 +9,6 @@ _Updated Thu 26 Nov, 01:49 PM IST. Times are approximate: each reel posts within
 
 - akkamma-cheriyan
 - bhangarh-fort
-- hanno-pope-elephant
 - k2-1341-kochi
 - k2-1341-kochi-v2
 - k2-1341-kochi-v3
