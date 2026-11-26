@@ -444,6 +444,8 @@ def post(folder_name: str) -> None:
     # ig-caption: exactly one clear ask ("share this") so the post has a single job
     text = re.sub(r"\bSend this to\b", "Share this with", text)
     sc = {**load_json(folder / "script.json", {}), **load_json(config.ROOT / "jobs" / folder_name / "script.json", {})}   # latest job file wins
+    if sc.get("caption_final"):          # caption updated after the render (e.g. reach checklist); no re-render needed
+        text = sc["caption_final"].rstrip()
     if sc.get("thumbnail_ml") and not re.search(r"[\u0D00-\u0D7F]", text.split("\n")[0]):   # bilingual: Malayalam hook first
         text = f"{sc['thumbnail_ml']} 🔥\n{text}"
     text = tidy_caption(text, sc)
