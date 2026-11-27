@@ -1,9 +1,9 @@
-Publishing ibn-battuta-calicut-v2...
+Publishing k2-digital-arrest-scam...
   uguu: link serves video/mp4
-  temporary video link ready (h.uguu.se)
+  temporary video link ready (d.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18142489783694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DgPXWIctqAj/
+  container: 18059865896602043, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgPlCpFAF0u/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
