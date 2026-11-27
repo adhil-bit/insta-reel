@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Thu 26 Nov, 05:28 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 27 Nov, 07:02 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -148,6 +148,7 @@ _Updated Thu 26 Nov, 05:28 PM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| ദശമൂലം ദാമു: ഇത്ര വർഷം കഴിഞ്ഞിട്ടും ചിരിക്കുന്നത് എന്തുകൊണ്ട്? | 2026-11-27T01:32 |
 | എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്? | 2026-11-26T11:54 |
 | പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്? | 2026-11-26T01:32 |
 | Drishyam: how Georgekutty edited memories (misinformation effect) | 2026-11-25T14:28 |
@@ -157,4 +158,3 @@ _Updated Thu 26 Nov, 05:28 PM IST. Times are approximate: each reel posts within
 | Cheraman Perumal, the king who vanished | 2026-11-20T02:36 |
 | Unniyarcha of the Vadakkan Pattukal | 2026-11-23T02:36 |
 | Battle of Colachel 1741 | 2026-11-19T11:22 |
-| Kunjali Marakkar: the Zamorin's admirals | 2026-11-17T05:22 |
