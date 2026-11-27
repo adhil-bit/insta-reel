@@ -1,9 +1,9 @@
-Publishing bekal-fort-bombay-v4...
+Publishing ibn-battuta-calicut-v2...
   uguu: link serves video/mp4
-  temporary video link ready (n.uguu.se)
+  temporary video link ready (h.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18142438822694745, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DgOg5N2yYf0/
+  container: 18142489783694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgPXWIctqAj/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.

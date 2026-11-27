@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 27 Nov, 07:06 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Fri 27 Nov, 03:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -62,6 +62,7 @@ _Updated Fri 27 Nov, 07:06 AM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Ibn Battuta's shipwreck at Calicut, 1342 | 2026-11-27T09:32 |
 | Zheng He's treasure fleet at Kozhikode | 2026-11-26T09:32 |
 | Kathivanoor Veeran: Mandappan of Mangad, Kannur | 2026-11-25T01:35 |
 | Ananthapura lake temple and Babiya the crocodile | 2026-11-26T01:35 |
@@ -71,4 +72,3 @@ _Updated Fri 27 Nov, 07:06 AM IST. Times are approximate: each reel posts within
 | The Kannur treasure pot (2024) | 2026-11-23T01:35 |
 | Ilaveezhapoonchira: the valley where leaves don't fall | 2026-11-20T01:36 |
 | Madayipara's Jootha Kulam | 2026-11-19T11:13 |
-| Marco Polo saw Ezhimala: the Kingdom of Eli | 2026-11-18T01:35 |
