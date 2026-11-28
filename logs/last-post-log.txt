@@ -1,9 +1,9 @@
-Publishing k2-manjummel-bystander...
+Publishing zero-shadow-day-v2...
   uguu: link serves video/mp4
-  temporary video link ready (d.uguu.se)
+  temporary video link ready (n.uguu.se)
   uguu: link serves image/jpeg
   thumbnail link ready
-  container: 18060055364602043, waiting for Instagram to process...
-  live: https://www.instagram.com/reel/DgRFMBhSgE0/
+  container: 18142625371694745, waiting for Instagram to process...
+  live: https://www.instagram.com/reel/DgRFnGgCA2O/
 Posted.
 YouTube not configured (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN): skipping.
