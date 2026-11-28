@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Fri 27 Nov, 05:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 28 Nov, 07:02 AM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -149,6 +149,7 @@ _Updated Fri 27 Nov, 05:02 PM IST. Times are approximate: each reel posts within
 | Reel | Posted (UTC) |
 |---|---|
 | ദശമൂലം ദാമു: ഇത്ര വർഷം കഴിഞ്ഞിട്ടും ചിരിക്കുന്നത് എന്തുകൊണ്ട്? | 2026-11-27T01:32 |
+| മഞ്ഞുമ്മൽ ബോയ്സ്: കൂട്ടുകാർ കയർ വിടാത്തത് എന്തുകൊണ്ട്? | 2026-11-28T01:32 |
 | എന്തിനാ ഈ മുറിയിലേക്ക് വന്നത്? | 2026-11-26T11:54 |
 | ഡിജിറ്റൽ അറസ്റ്റ്: പഠിച്ചവരും വീഴുന്നത് എന്തുകൊണ്ട്? | 2026-11-27T11:32 |
 | പരീക്ഷ: പത്തു തവണ വായിച്ചിട്ടും മറക്കുന്നത് എന്തുകൊണ്ട്? | 2026-11-26T01:32 |
@@ -157,4 +158,3 @@ _Updated Fri 27 Nov, 05:02 PM IST. Times are approximate: each reel posts within
 | Thalassery Fort, 1708 | 2026-11-24T02:36 |
 | Thalakkal Chandu, the Kurichiya archer | 2026-11-22T14:28 |
 | Cheraman Perumal, the king who vanished | 2026-11-20T02:36 |
-| Unniyarcha of the Vadakkan Pattukal | 2026-11-23T02:36 |
