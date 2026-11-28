@@ -1,6 +1,6 @@
 # Posting queue
 
-_Updated Sat 28 Nov, 07:06 AM IST. Times are approximate: each reel posts within about an hour of its slot._
+_Updated Sat 28 Nov, 03:02 PM IST. Times are approximate: each reel posts within about an hour of its slot._
 
 | # | Expected slot (IST) | Reel | Voice |
 |---|---|---|---|
@@ -62,6 +62,7 @@ _Updated Sat 28 Nov, 07:06 AM IST. Times are approximate: each reel posts within
 
 | Reel | Posted (UTC) |
 |---|---|
+| Pathiramanal: the island that rose at midnight | 2026-11-28T09:32 |
 | Ibn Battuta's shipwreck at Calicut, 1342 | 2026-11-27T09:32 |
 | Zheng He's treasure fleet at Kozhikode | 2026-11-26T09:32 |
 | Kathivanoor Veeran: Mandappan of Mangad, Kannur | 2026-11-25T01:35 |
@@ -71,4 +72,3 @@ _Updated Sat 28 Nov, 07:06 AM IST. Times are approximate: each reel posts within
 | Kannur's Vault No. 38 | 2026-11-24T01:35 |
 | Kerala University's 'haunted' pond | 2026-11-23T09:32 |
 | The Kannur treasure pot (2024) | 2026-11-23T01:35 |
-| Ilaveezhapoonchira: the valley where leaves don't fall | 2026-11-20T01:36 |
